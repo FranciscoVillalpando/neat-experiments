@@ -1,0 +1,832 @@
+Starting python script!
+Observation space shape:(224, 320, 3)
+Start: 2018-12-29 10:42:59.639305
+Using the following config file: config-feedforward.txt
+[NEAT]
+fitness_criterion     = max
+fitness_threshold     = 9000
+pop_size              = 60
+reset_on_extinction   = False
+
+[DefaultGenome]
+# node activation options
+activation_default      = sigmoid
+activation_mutate_rate  = 0.00
+activation_options      = sigmoid 
+#abs clamped cube exp gauss hat identity inv log relu sigmoid sin softplus square tanh
+
+# node aggregation options
+aggregation_default     = sum
+aggregation_mutate_rate = 0.00
+aggregation_options     = sum product min max mean median maxabs
+
+# node bias options
+bias_init_mean          = 0.05
+bias_init_stdev         = 1.0
+bias_max_value          = 50.0
+bias_min_value          = -50.0
+bias_mutate_power       = 0.5
+bias_mutate_rate        = 0.7
+bias_replace_rate       = 0.1
+
+# genome compatibility options
+compatibility_disjoint_coefficient = 1.0
+compatibility_weight_coefficient   = 0.5
+
+# connection add/remove rates
+conn_add_prob           = 0.6
+conn_delete_prob        = 0.1
+
+# connection enable options
+enabled_default         = True
+enabled_mutate_rate     = 0.05
+
+feed_forward            = True
+#initial_connection      = unconnected
+initial_connection     = partial_nodirect 0.6
+
+# node add/remove rates
+node_add_prob           = 0.7
+node_delete_prob        = 0.1
+
+# network parameters
+num_hidden              = 0
+num_inputs              = 1121
+num_outputs             = 12
+
+# node response options
+response_init_mean      = 1.0
+response_init_stdev     = 0.05
+response_max_value      = 30.0
+response_min_value      = -30.0
+response_mutate_power   = 0.1
+response_mutate_rate    = 0.75
+response_replace_rate   = 0.1
+
+# connection weight options
+weight_init_mean        = 0.1
+weight_init_stdev       = 1.0
+weight_max_value        = 30
+weight_min_value        = -30
+weight_mutate_power     = 0.5
+weight_mutate_rate      = 0.8
+weight_replace_rate     = 0.1
+
+[DefaultSpeciesSet]
+compatibility_threshold = 2.8
+
+[DefaultStagnation]
+species_fitness_func = max
+max_stagnation       = 8
+species_elitism      = 0
+
+[DefaultReproduction]
+elitism            = 3
+survival_threshold = 0.3
+
+
+
+End of config file
+
+ ****** Running generation 0 ****** 
+
+1 0
+Saving genome to file best_genome_gen0_1.pkl
+2 80
+3 80
+4 80
+5 80
+6 80
+7 80
+8 80
+9 80
+10 80
+11 80
+12 80
+13 80
+14 80
+15 80
+16 80
+17 80
+18 80
+19 80
+20 80
+21 80
+22 80
+23 80
+24 80
+25 945
+Saving genome to file best_genome_gen0_25.pkl
+26 80
+27 80
+28 80
+29 80
+30 80
+31 80
+32 218
+33 80
+34 80
+35 80
+36 80
+37 80
+38 80
+39 303
+40 80
+41 80
+42 80
+43 80
+44 80
+45 80
+46 80
+47 80
+48 80
+49 80
+50 80
+51 80
+52 80
+53 80
+54 80
+55 80
+56 80
+57 80
+58 80
+59 80
+60 80
+Population's average fitness: 111.31667 stdev: 140.50878
+Best fitness: 945.00000 - size: (12, 8071) - species 1 - id 25
+Average adjusted fitness: 0.036
+Mean genetic distance 1.637, standard deviation 0.337
+Population of 60 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    0    60    945.0    0.036     0
+Total extinctions: 0
+Generation time: 186.473 sec
+
+ ****** Running generation 1 ****** 
+
+25 945
+Saving genome to file best_genome_gen1_25.pkl
+1 0
+39 303
+61 80
+62 80
+63 147
+64 80
+65 80
+66 80
+67 80
+68 80
+69 182
+70 80
+71 16
+72 80
+73 80
+74 80
+75 80
+76 80
+77 80
+78 80
+79 94
+80 80
+81 176
+82 80
+83 80
+84 80
+85 182
+86 80
+87 80
+88 80
+89 80
+90 16
+91 80
+92 80
+93 80
+94 80
+95 80
+96 229
+97 80
+98 80
+99 369
+100 80
+101 0
+102 80
+103 75
+104 80
+105 0
+106 2165
+Saving genome to file best_genome_gen1_106.pkl
+107 80
+108 80
+109 80
+110 0
+111 80
+112 80
+113 80
+114 80
+115 80
+116 0
+117 80
+Population's average fitness: 202.51667 stdev: 332.71877
+Best fitness: 2165.00000 - size: (12, 7894) - species 1 - id 106
+Average adjusted fitness: 0.059
+Mean genetic distance 1.739, standard deviation 0.365
+Population of 60 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    1    60   2165.0    0.059     0
+Total extinctions: 0
+Generation time: 227.565 sec (207.019 average)
+Saving checkpoint to neat-checkpoint-1
+
+ ****** Running generation 2 ****** 
+
+106 2165
+Saving genome to file best_genome_gen2_106.pkl
+25 945
+116 0
+118 0
+119 165
+120 0
+121 80
+122 80
+123 0
+124 0
+125 80
+126 80
+127 259
+128 1499
+129 80
+130 80
+131 269
+132 80
+133 80
+134 0
+135 0
+136 68
+137 0
+138 85
+139 0
+140 0
+141 180
+142 170
+143 0
+144 89
+145 287
+146 282
+147 80
+148 466
+149 272
+150 81
+151 80
+152 189
+153 0
+154 195
+155 80
+156 80
+157 80
+158 0
+159 183
+160 0
+161 80
+162 0
+163 259
+164 80
+165 230
+166 80
+167 80
+168 0
+169 0
+170 80
+171 228
+172 80
+173 80
+174 80
+Population's average fitness: 386.73333 stdev: 409.86335
+Best fitness: 2165.00000 - size: (12, 7894) - species 1 - id 106
+Average adjusted fitness: 0.147
+Mean genetic distance 1.891, standard deviation 0.267
+Population of 60 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    2    60   2165.0    0.147     1
+Total extinctions: 0
+Generation time: 286.358 sec (233.465 average)
+
+ ****** Running generation 3 ****** 
+
+106 2165
+Saving genome to file best_genome_gen3_106.pkl
+128 1499
+134 0
+175 207
+176 0
+177 1046
+178 0
+179 0
+180 56
+181 0
+182 0
+183 0
+184 0
+185 0
+186 87
+187 442
+188 0
+189 0
+190 164
+191 0
+192 0
+193 80
+194 0
+195 80
+196 0
+197 0
+198 0
+199 0
+200 0
+201 0
+202 0
+203 0
+204 492
+205 0
+206 0
+207 0
+208 0
+209 0
+210 0
+211 0
+212 0
+213 0
+214 0
+215 214
+216 95
+217 176
+218 0
+219 101
+220 379
+221 0
+222 0
+223 0
+224 0
+225 0
+226 0
+227 0
+228 0
+229 0
+230 0
+231 249
+Population's average fitness: 660.08333 stdev: 347.34221
+Best fitness: 2165.00000 - size: (12, 7894) - species 1 - id 106
+Average adjusted fitness: 0.278
+Mean genetic distance 2.032, standard deviation 0.215
+Population of 60 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    3    60   2165.0    0.278     2
+Total extinctions: 0
+Generation time: 316.090 sec (254.122 average)
+Saving checkpoint to neat-checkpoint-3
+
+ ****** Running generation 4 ****** 
+
+106 2165
+Saving genome to file best_genome_gen4_106.pkl
+128 1499
+201 0
+232 92
+233 0
+234 0
+235 0
+236 0
+237 80
+238 0
+239 0
+240 0
+241 0
+242 0
+243 0
+244 0
+245 0
+246 493
+247 439
+248 0
+249 0
+250 0
+251 0
+252 0
+253 0
+254 0
+255 0
+256 863
+257 0
+258 0
+259 0
+260 0
+261 1027
+262 0
+263 80
+264 458
+265 0
+266 80
+267 0
+268 0
+269 0
+270 0
+271 80
+272 0
+273 0
+274 0
+275 0
+276 0
+277 0
+278 0
+279 0
+280 0
+281 0
+282 0
+283 0
+284 0
+285 698
+286 0
+287 0
+288 80
+Population's average fitness: 724.03333 stdev: 309.71976
+Best fitness: 2165.00000 - size: (12, 7894) - species 1 - id 106
+Average adjusted fitness: 0.309
+Mean genetic distance 2.059, standard deviation 0.196
+Population of 60 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    4    60   2165.0    0.309     3
+Total extinctions: 0
+Generation time: 284.829 sec (260.263 average)
+
+ ****** Running generation 5 ****** 
+
+106 2165
+Saving genome to file best_genome_gen5_106.pkl
+128 1499
+201 0
+289 0
+290 0
+291 0
+292 0
+293 0
+294 0
+295 0
+296 167
+297 1137
+298 0
+299 0
+300 0
+301 438
+302 16
+303 347
+304 0
+305 0
+306 0
+307 0
+308 0
+309 0
+310 0
+311 0
+312 0
+313 1074
+314 80
+315 0
+316 0
+317 1373
+318 0
+319 440
+320 1570
+321 0
+322 0
+323 1568
+324 0
+325 0
+326 0
+327 61
+328 0
+329 0
+330 80
+331 0
+332 0
+333 0
+334 688
+335 16
+336 0
+337 0
+338 0
+339 0
+340 0
+341 0
+342 0
+343 0
+344 0
+345 0
+Population's average fitness: 770.85000 stdev: 368.62541
+Best fitness: 2165.00000 - size: (12, 7894) - species 1 - id 106
+Average adjusted fitness: 0.331
+Mean genetic distance 1.725, standard deviation 0.409
+Population of 60 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    5    60   2165.0    0.331     4
+Total extinctions: 0
+Generation time: 345.142 sec (274.410 average)
+Saving checkpoint to neat-checkpoint-5
+
+ ****** Running generation 6 ****** 
+
+106 2165
+Saving genome to file best_genome_gen6_106.pkl
+320 1570
+323 1568
+346 2095
+347 0
+348 0
+349 0
+350 0
+351 449
+352 0
+353 0
+354 0
+355 0
+356 0
+357 0
+358 0
+359 166
+360 0
+361 465
+362 0
+363 0
+364 349
+365 0
+366 0
+367 0
+368 0
+369 0
+370 80
+371 0
+372 80
+373 0
+374 80
+375 248
+376 0
+377 95
+378 365
+379 0
+380 80
+381 2084
+382 0
+383 0
+384 0
+385 434
+386 1011
+387 0
+388 0
+389 178
+390 0
+391 0
+392 0
+393 0
+394 0
+395 0
+396 382
+397 0
+398 0
+399 0
+400 230
+401 0
+402 0
+Population's average fitness: 724.23333 stdev: 449.77218
+Best fitness: 2165.00000 - size: (12, 7894) - species 1 - id 106
+Average adjusted fitness: 0.309
+Mean genetic distance 1.362, standard deviation 0.233
+Population of 60 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    6    60   2165.0    0.309     5
+Total extinctions: 0
+Generation time: 346.369 sec (284.689 average)
+Saving checkpoint to neat-checkpoint-6
+
+ ****** Running generation 7 ****** 
+
+106 2165
+Saving genome to file best_genome_gen7_106.pkl
+346 2095
+381 2084
+403 0
+404 0
+405 0
+406 89
+407 520
+408 451
+409 0
+410 2086
+411 421
+412 0
+413 0
+414 0
+415 0
+416 0
+417 0
+418 0
+419 0
+420 0
+421 1008
+422 2126
+423 0
+424 28
+425 0
+426 0
+427 2165
+428 0
+429 0
+430 0
+431 80
+432 0
+433 0
+434 0
+435 0
+436 0
+437 414
+438 0
+439 0
+440 0
+441 492
+442 0
+443 0
+444 2165
+445 2138
+446 0
+447 0
+448 0
+449 221
+450 2165
+451 0
+452 0
+453 0
+454 2076
+455 0
+456 211
+457 2165
+458 0
+459 0
+Population's average fitness: 952.45000 stdev: 610.32817
+Best fitness: 2165.00000 - size: (12, 7894) - species 1 - id 106
+Average adjusted fitness: 0.418
+Mean genetic distance 1.425, standard deviation 0.238
+Population of 60 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    7    60   2165.0    0.418     6
+Total extinctions: 0
+Generation time: 365.991 sec (294.852 average)
+Saving checkpoint to neat-checkpoint-7
+
+ ****** Running generation 8 ****** 
+
+106 2165
+Saving genome to file best_genome_gen8_106.pkl
+410 2086
+422 2126
+460 80
+461 80
+462 0
+463 0
+464 0
+465 495
+466 0
+467 0
+468 1013
+469 0
+470 0
+471 2165
+472 1561
+473 0
+474 0
+475 0
+476 0
+477 0
+478 2125
+479 2152
+480 80
+481 0
+482 258
+483 80
+484 2150
+485 0
+486 0
+487 0
+488 0
+489 0
+490 0
+491 0
+492 226
+493 0
+494 991
+495 0
+496 0
+497 0
+498 1373
+499 0
+500 0
+501 422
+502 0
+503 0
+504 0
+505 0
+506 2150
+507 275
+508 243
+509 0
+510 0
+511 0
+512 0
+513 2165
+514 1589
+515 455
+516 0
+Population's average fitness: 940.78333 stdev: 599.76887
+Best fitness: 2165.00000 - size: (12, 7894) - species 1 - id 106
+Average adjusted fitness: 0.413
+Mean genetic distance 1.460, standard deviation 0.270
+Population of 60 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    8    60   2165.0    0.413     7
+Total extinctions: 0
+Generation time: 383.105 sec (304.658 average)
+Saving checkpoint to neat-checkpoint-8
+
+ ****** Running generation 9 ****** 
+
+106 2165
+Saving genome to file best_genome_gen9_106.pkl
+513 2165
+410 2086
+517 0
+518 80
+519 0
+520 0
+521 189
+522 0
+523 0
+524 0
+525 0
+526 238
+527 2165
+528 0
+529 0
+530 663
+531 797
+532 2106
+533 0
+534 0
+535 0
+536 0
+537 0
+538 0
+539 0
+540 195
+541 0
+542 0
+543 0
+544 0
+545 2158
+546 0
+547 0
+548 438
+549 0
+550 690
+551 188
+552 0
+553 0
+554 0
+555 80
+556 0
+557 0
+558 0
+559 422
+560 0
+561 0
+562 23
+563 701
+564 80
+565 0
+566 0
+567 437
+568 0
+569 159
+570 0
+571 913
+572 0
+573 0
+Population's average fitness: 799.51667 stdev: 523.33210
+Best fitness: 2165.00000 - size: (12, 7894) - species 1 - id 106
+
+Species 1 with 60 members is stagnated: removing it
+All species extinct.

@@ -1,0 +1,1326 @@
+Starting python script!
+Observation space shape:(224, 320, 3)
+Start: 2018-12-28 22:39:45.669230
+Using the following config file: config-feedforward.txt
+[NEAT]
+fitness_criterion     = max
+fitness_threshold     = 9000
+pop_size              = 80
+reset_on_extinction   = False
+
+[DefaultGenome]
+# node activation options
+activation_default      = sigmoid
+activation_mutate_rate  = 0.00
+activation_options      = sigmoid 
+#abs clamped cube exp gauss hat identity inv log relu sigmoid sin softplus square tanh
+
+# node aggregation options
+aggregation_default     = sum
+aggregation_mutate_rate = 0.00
+aggregation_options     = sum product min max mean median maxabs
+
+# node bias options
+bias_init_mean          = 0.05
+bias_init_stdev         = 1.0
+bias_max_value          = 50.0
+bias_min_value          = -50.0
+bias_mutate_power       = 0.5
+bias_mutate_rate        = 0.7
+bias_replace_rate       = 0.1
+
+# genome compatibility options
+compatibility_disjoint_coefficient = 1.0
+compatibility_weight_coefficient   = 0.5
+
+# connection add/remove rates
+conn_add_prob           = 0.6
+conn_delete_prob        = 0.1
+
+# connection enable options
+enabled_default         = True
+enabled_mutate_rate     = 0.05
+
+feed_forward            = True
+#initial_connection      = unconnected
+initial_connection     = partial_nodirect 0.6
+
+# node add/remove rates
+node_add_prob           = 0.7
+node_delete_prob        = 0.1
+
+# network parameters
+num_hidden              = 0
+num_inputs              = 1121
+num_outputs             = 12
+
+# node response options
+response_init_mean      = 1.0
+response_init_stdev     = 0.05
+response_max_value      = 30.0
+response_min_value      = -30.0
+response_mutate_power   = 0.1
+response_mutate_rate    = 0.75
+response_replace_rate   = 0.1
+
+# connection weight options
+weight_init_mean        = 0.1
+weight_init_stdev       = 1.0
+weight_max_value        = 30
+weight_min_value        = -30
+weight_mutate_power     = 0.5
+weight_mutate_rate      = 0.8
+weight_replace_rate     = 0.1
+
+[DefaultSpeciesSet]
+compatibility_threshold = 2.8
+
+[DefaultStagnation]
+species_fitness_func = max
+max_stagnation       = 8
+species_elitism      = 0
+
+[DefaultReproduction]
+elitism            = 3
+survival_threshold = 0.3
+
+
+
+End of config file
+
+ ****** Running generation 0 ****** 
+
+1 80
+2 80
+3 80
+4 80
+5 80
+6 80
+7 80
+8 80
+9 80
+10 80
+11 80
+12 80
+13 80
+14 80
+15 80
+16 80
+17 16
+18 80
+19 80
+20 80
+21 76
+22 80
+23 80
+24 229
+25 80
+26 80
+27 80
+28 80
+29 47
+30 80
+31 80
+32 80
+33 80
+34 80
+35 163
+36 80
+37 80
+38 80
+39 80
+40 80
+41 80
+42 0
+43 80
+44 80
+45 80
+46 80
+47 80
+48 80
+49 80
+50 80
+51 80
+52 80
+53 80
+54 80
+55 80
+56 80
+57 80
+58 80
+59 80
+60 80
+61 16
+62 80
+63 80
+64 80
+65 80
+66 80
+67 80
+68 235
+69 80
+70 80
+71 80
+72 80
+73 80
+74 80
+75 80
+76 80
+77 80
+78 80
+79 80
+80 80
+Population's average fitness: 81.77500 stdev: 29.27455
+Best fitness: 235.00000 - size: (12, 8071) - species 1 - id 68
+Average adjusted fitness: 0.348
+Mean genetic distance 1.815, standard deviation 0.169
+Population of 80 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    0    80    235.0    0.348     0
+Total extinctions: 0
+Generation time: 245.021 sec
+Saving checkpoint to neat-checkpoint-0
+
+ ****** Running generation 1 ****** 
+
+68 235
+24 229
+35 163
+81 80
+82 80
+83 80
+84 80
+85 80
+86 80
+87 100
+88 80
+89 80
+90 80
+91 80
+92 62
+93 80
+94 80
+95 80
+96 16
+97 80
+98 80
+99 80
+100 0
+101 80
+102 67
+103 80
+104 80
+105 80
+106 80
+107 16
+108 80
+109 87
+110 68
+111 80
+112 80
+113 30
+114 102
+115 80
+116 37
+117 80
+118 80
+119 80
+120 448
+121 80
+122 80
+123 80
+124 80
+125 33
+126 177
+127 80
+128 80
+129 80
+130 80
+131 16
+132 80
+133 80
+134 80
+135 80
+136 80
+137 80
+138 80
+139 80
+140 80
+141 80
+142 80
+143 80
+144 80
+145 80
+146 380
+147 80
+148 80
+149 80
+150 80
+151 80
+152 80
+153 80
+154 80
+155 80
+156 80
+157 80
+Population's average fitness: 89.32500 stdev: 62.02898
+Best fitness: 448.00000 - size: (13, 7870) - species 1 - id 120
+Average adjusted fitness: 0.199
+Mean genetic distance 1.792, standard deviation 0.269
+Population of 80 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    1    80    448.0    0.199     0
+Total extinctions: 0
+Generation time: 260.326 sec (252.674 average)
+Saving checkpoint to neat-checkpoint-1
+
+ ****** Running generation 2 ****** 
+
+120 448
+146 380
+68 235
+158 93
+159 80
+160 0
+161 80
+162 80
+163 80
+164 80
+165 80
+166 80
+167 80
+168 80
+169 80
+170 80
+171 80
+172 79
+173 80
+174 80
+175 80
+176 80
+177 80
+178 80
+179 80
+180 80
+181 80
+182 78
+183 80
+184 80
+185 80
+186 16
+187 80
+188 229
+189 170
+190 80
+191 80
+192 80
+193 80
+194 79
+195 80
+196 80
+197 80
+198 80
+199 80
+200 80
+201 80
+202 359
+203 16
+204 80
+205 16
+206 80
+207 80
+208 80
+209 80
+210 80
+211 80
+212 80
+213 80
+214 80
+215 80
+216 80
+217 80
+218 80
+219 83
+220 80
+221 179
+222 80
+223 224
+224 80
+225 80
+226 80
+227 80
+228 80
+229 232
+230 168
+231 80
+232 0
+233 80
+234 79
+Population's average fitness: 98.53750 stdev: 72.17668
+Best fitness: 448.00000 - size: (13, 7870) - species 1 - id 120
+Average adjusted fitness: 0.220
+Mean genetic distance 1.798, standard deviation 0.297
+Population of 80 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    2    80    448.0    0.220     1
+Total extinctions: 0
+Generation time: 275.259 sec (260.202 average)
+Saving checkpoint to neat-checkpoint-2
+
+ ****** Running generation 3 ****** 
+
+120 448
+146 380
+202 359
+235 80
+236 0
+237 92
+238 46
+239 80
+240 80
+241 80
+242 80
+243 80
+244 80
+245 80
+246 76
+247 384
+248 0
+249 80
+250 80
+251 162
+252 0
+253 329
+254 0
+255 80
+256 86
+257 80
+258 80
+259 80
+260 372
+261 80
+262 80
+263 80
+264 80
+265 172
+266 224
+267 0
+268 190
+269 80
+270 80
+271 82
+272 80
+273 80
+274 277
+275 203
+276 80
+277 0
+278 0
+279 174
+280 80
+281 16
+282 80
+283 80
+284 80
+285 82
+286 80
+287 80
+288 80
+289 80
+290 58
+291 216
+292 0
+293 80
+294 80
+295 344
+296 90
+297 82
+298 80
+299 80
+300 80
+301 392
+302 0
+303 80
+304 80
+305 80
+306 52
+307 80
+308 80
+309 80
+310 80
+311 0
+Population's average fitness: 110.35000 stdev: 102.25081
+Best fitness: 448.00000 - size: (13, 7870) - species 1 - id 120
+Average adjusted fitness: 0.246
+Mean genetic distance 1.889, standard deviation 0.281
+Population of 80 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    3    80    448.0    0.246     2
+Total extinctions: 0
+Generation time: 330.955 sec (277.890 average)
+Saving checkpoint to neat-checkpoint-3
+
+ ****** Running generation 4 ****** 
+
+120 448
+301 392
+247 384
+312 80
+313 80
+314 404
+315 80
+316 80
+317 0
+318 456
+319 87
+320 80
+321 80
+322 0
+323 0
+324 82
+325 80
+326 80
+327 80
+328 387
+329 0
+330 0
+331 80
+332 364
+333 80
+334 80
+335 329
+336 85
+337 1548
+338 0
+339 80
+340 80
+341 80
+342 80
+343 0
+344 16
+345 206
+346 0
+347 208
+348 80
+349 80
+350 0
+351 80
+352 0
+353 222
+354 80
+355 201
+356 0
+357 0
+358 167
+359 181
+360 83
+361 80
+362 190
+363 80
+364 231
+365 80
+366 369
+367 355
+368 80
+369 194
+370 80
+371 0
+372 80
+373 353
+374 0
+375 0
+376 80
+377 16
+378 80
+379 80
+380 230
+381 456
+382 83
+383 93
+384 66
+385 0
+386 80
+387 80
+388 145
+Population's average fitness: 143.88750 stdev: 202.56166
+Best fitness: 1548.00000 - size: (14, 7405) - species 1 - id 337
+Average adjusted fitness: 0.093
+Mean genetic distance 2.061, standard deviation 0.271
+Population of 80 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    4    80   1548.0    0.093     0
+Total extinctions: 0
+Generation time: 403.689 sec (303.050 average)
+Saving checkpoint to neat-checkpoint-4
+
+ ****** Running generation 5 ****** 
+
+337 1548
+318 456
+381 456
+389 183
+390 80
+391 91
+392 421
+393 1383
+394 80
+395 0
+396 80
+397 0
+398 0
+399 0
+400 199
+401 80
+402 968
+403 80
+404 80
+405 108
+406 80
+407 32
+408 367
+409 229
+410 0
+411 164
+412 80
+413 16
+414 0
+415 0
+416 90
+417 0
+418 83
+419 0
+420 80
+421 16
+422 0
+423 80
+424 414
+425 0
+426 279
+427 0
+428 0
+429 271
+430 80
+431 80
+432 0
+433 2147
+434 80
+435 261
+436 0
+437 91
+438 80
+439 0
+440 235
+441 0
+442 0
+443 264
+444 80
+445 154
+446 233
+447 0
+448 83
+449 344
+450 80
+451 80
+452 106
+453 91
+454 107
+455 80
+456 80
+457 0
+458 80
+459 190
+460 230
+461 80
+462 80
+463 94
+464 0
+465 80
+Population's average fitness: 178.05000 stdev: 339.84213
+Best fitness: 2147.00000 - size: (16, 7243) - species 1 - id 433
+Average adjusted fitness: 0.083
+Mean genetic distance 2.142, standard deviation 0.259
+Population of 80 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    5    80   2147.0    0.083     0
+Total extinctions: 0
+Generation time: 438.661 sec (325.652 average)
+Saving checkpoint to neat-checkpoint-5
+
+ ****** Running generation 6 ****** 
+
+433 2147
+337 1548
+393 1383
+466 982
+467 90
+468 0
+469 360
+470 0
+471 0
+472 80
+473 0
+474 0
+475 0
+476 80
+477 622
+478 198
+479 167
+480 451
+481 868
+482 0
+483 83
+484 0
+485 265
+486 193
+487 1374
+488 192
+489 204
+490 349
+491 0
+492 80
+493 0
+494 16
+495 80
+496 0
+497 363
+498 16
+499 0
+500 169
+501 167
+502 16
+503 80
+504 244
+505 30
+506 0
+507 87
+508 114
+509 177
+510 80
+511 0
+512 0
+513 244
+514 0
+515 0
+516 348
+517 0
+518 16
+519 0
+520 342
+521 168
+522 80
+523 360
+524 345
+525 80
+526 80
+527 80
+528 0
+529 80
+530 558
+531 0
+532 170
+533 343
+534 169
+535 354
+536 247
+537 80
+538 1378
+539 190
+540 169
+541 0
+542 80
+Population's average fitness: 241.45000 stdev: 396.32168
+Best fitness: 2147.00000 - size: (16, 7243) - species 1 - id 433
+Average adjusted fitness: 0.112
+Mean genetic distance 2.085, standard deviation 0.299
+Population of 80 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    6    80   2147.0    0.112     1
+Total extinctions: 0
+Generation time: 411.569 sec (337.926 average)
+Saving checkpoint to neat-checkpoint-6
+
+ ****** Running generation 7 ****** 
+
+433 2147
+337 1548
+393 1383
+543 0
+544 80
+545 80
+546 0
+547 200
+548 164
+549 309
+550 16
+551 80
+552 80
+553 178
+554 0
+555 0
+556 0
+557 0
+558 80
+559 80
+560 0
+561 83
+562 218
+563 80
+564 0
+565 112
+566 1368
+567 626
+568 964
+569 0
+570 184
+571 363
+572 0
+573 435
+574 2165
+575 426
+576 191
+577 0
+578 0
+579 159
+580 110
+581 80
+582 0
+583 0
+584 1361
+585 0
+586 343
+587 69
+588 0
+589 0
+590 0
+591 378
+592 159
+593 204
+594 201
+595 236
+596 2144
+597 0
+598 0
+599 80
+600 694
+601 205
+602 0
+603 80
+604 80
+605 0
+606 694
+607 278
+608 1372
+609 660
+610 16
+611 80
+612 0
+613 80
+614 80
+615 80
+616 202
+617 0
+618 16
+619 0
+Population's average fitness: 297.26250 stdev: 512.54160
+Best fitness: 2165.00000 - size: (17, 7088) - species 1 - id 574
+Average adjusted fitness: 0.137
+Mean genetic distance 1.998, standard deviation 0.256
+Population of 80 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    7    80   2165.0    0.137     0
+Total extinctions: 0
+Generation time: 467.339 sec (354.102 average)
+Saving checkpoint to neat-checkpoint-7
+
+ ****** Running generation 8 ****** 
+
+574 2165
+433 2147
+596 2144
+620 2148
+621 84
+622 80
+623 1365
+624 80
+625 80
+626 0
+627 0
+628 80
+629 0
+630 331
+631 80
+632 278
+633 80
+634 80
+635 83
+636 83
+637 0
+638 546
+639 0
+640 0
+641 162
+642 0
+643 1308
+644 919
+645 0
+646 0
+647 0
+648 0
+649 968
+650 0
+651 80
+652 80
+653 500
+654 184
+655 198
+656 269
+657 197
+658 1082
+659 917
+660 1009
+661 16
+662 471
+663 510
+664 0
+665 663
+666 227
+667 864
+668 0
+669 247
+670 130
+671 0
+672 2089
+673 235
+674 0
+675 237
+676 80
+677 1019
+678 0
+679 242
+680 962
+681 178
+682 0
+683 80
+684 1370
+685 0
+686 0
+687 172
+688 16
+689 0
+690 223
+691 80
+692 494
+693 0
+694 80
+695 218
+696 80
+Population's average fitness: 384.87500 stdev: 577.42431
+Best fitness: 2165.00000 - size: (17, 7088) - species 1 - id 574
+Average adjusted fitness: 0.178
+Mean genetic distance 1.731, standard deviation 0.464
+Population of 80 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    8    80   2165.0    0.178     1
+Total extinctions: 0
+Generation time: 487.380 sec (368.911 average)
+Saving checkpoint to neat-checkpoint-8
+
+ ****** Running generation 9 ****** 
+
+574 2165
+620 2148
+433 2147
+697 150
+698 346
+699 626
+700 1355
+701 0
+702 80
+703 16
+704 80
+705 0
+706 0
+707 370
+708 99
+709 0
+710 0
+711 163
+712 89
+713 60
+714 236
+715 0
+716 0
+717 102
+718 0
+719 2150
+720 60
+721 661
+722 1372
+723 291
+724 0
+725 0
+726 474
+727 0
+728 0
+729 0
+730 218
+731 0
+732 0
+733 0
+734 0
+735 1560
+736 80
+737 80
+738 80
+739 0
+740 0
+741 950
+742 0
+743 2153
+744 936
+745 80
+746 932
+747 16
+748 80
+749 641
+750 739
+751 0
+752 0
+753 0
+754 1370
+755 0
+756 2157
+757 605
+758 441
+759 80
+760 0
+761 80
+762 0
+763 2131
+764 0
+765 981
+766 2165
+767 0
+768 0
+769 0
+770 0
+771 140
+772 390
+773 0
+Population's average fitness: 429.06250 stdev: 682.73628
+Best fitness: 2165.00000 - size: (17, 7088) - species 1 - id 574
+Average adjusted fitness: 0.198
+Mean genetic distance 1.448, standard deviation 0.348
+Population of 80 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    9    80   2165.0    0.198     2
+Total extinctions: 0
+Generation time: 502.070 sec (382.227 average)
+Saving checkpoint to neat-checkpoint-9
+
+ ****** Running generation 10 ****** 
+
+574 2165
+766 2165
+756 2157
+774 0
+775 190
+776 1376
+777 1079
+778 0
+779 472
+780 0
+781 675
+782 0
+783 0
+784 0
+785 391
+786 241
+787 0
+788 0
+789 649
+790 0
+791 949
+792 261
+793 613
+794 259
+795 2112
+796 90
+797 2147
+798 0
+799 0
+800 1568
+801 0
+802 2147
+803 80
+804 1371
+805 260
+806 2162
+807 0
+808 261
+809 0
+810 0
+811 0
+812 0
+813 0
+814 0
+815 0
+816 235
+817 0
+818 1047
+819 58
+820 0
+821 442
+822 453
+823 1278
+824 80
+825 908
+826 0
+827 1411
+828 466
+829 0
+830 0
+831 92
+832 80
+833 2165
+834 0
+835 667
+836 0
+837 0
+838 699
+839 0
+840 0
+841 962
+842 0
+843 1377
+844 1298
+845 0
+846 149
+847 0
+848 0
+849 241
+850 0
+Population's average fitness: 499.35000 stdev: 699.88617
+Best fitness: 2165.00000 - size: (17, 7088) - species 1 - id 574
+Average adjusted fitness: 0.231
+Mean genetic distance 1.674, standard deviation 0.353
+Population of 80 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   10    80   2165.0    0.231     3
+Total extinctions: 0
+Generation time: 535.677 sec (411.292 average)
+Saving checkpoint to neat-checkpoint-10
+
+ ****** Running generation 11 ****** 
+
+574 2165
+833 2165
+766 2165
+851 2143
+852 482
+853 198
+854 237
+855 216
+856 80
+857 688
+858 0
+859 0
+860 80
+861 918
+862 0
+863 250
+864 80
+865 0
+866 1048
+867 2152
+868 669
+869 2165
+870 1251
+871 684
+872 0
+873 0
+874 2165
+875 0
+876 924
+877 80
+878 246
+879 0
+880 0
+881 16
+882 90
+883 0
+884 701
+885 0
+886 936
+887 1092
+888 2075
+889 0
+890 80
+891 80
+892 2158
+893 276
+894 0
+895 503
+896 80
+897 238
+898 0
+899 566
+900 0
+901 0
+902 0
+903 0
+904 81
+905 0
+906 0
+907 260
+908 80
+909 0
+910 0
+911 269
+912 0
+913 220
+914 80
+915 0
+916 0
+917 764
+918 0
+919 0
+920 80
+921 0
+922 2165
+923 0
+924 0
+925 80
+926 0
+927 246
+Population's average fitness: 455.83750 stdev: 708.13520
+Best fitness: 2165.00000 - size: (17, 7088) - species 1 - id 574
+Average adjusted fitness: 0.211
+Mean genetic distance 1.834, standard deviation 0.328
+Population of 80 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   11    80   2165.0    0.211     4
+Total extinctions: 0
+Generation time: 548.844 sec (440.144 average)
+Saving checkpoint to neat-checkpoint-11
+
+ ****** Running generation 12 ****** 
+
+922 2165
+574 2165
+833 2165
+928 0
+929 0
+930 167
+931 82
+932 343
+933 0
+934 786
+935 2077
+936 0
+937 0
+938 0
+939 80
+940 0
+941 2165
+942 218
+943 225
+944 0
+945 0
+946 181
+947 73
+948 198
+949 102
+950 0
+951 0
+952 181
+953 80
+954 224
+955 122
+956 224
+957 0
+958 628
+959 958
+960 0
+961 713
+962 1301
+963 0
+964 0
+965 701
+966 80
+967 1537
+968 2165
+969 2147
+970 0
+971 0
+972 0
+973 80
+974 80
+975 262
+976 91
+977 2165
+978 938
+979 0
+980 0
+981 80
+982 2156
+983 0
+984 0
+985 252
+986 0
+987 0
+988 1373
+989 0
+990 80
+991 0
+992 87
+993 80
+994 203
+995 0
+996 0
+997 80
+998 0
+999 0
+1000 0
+1001 93
+1002 0
+1003 244
+1004 647
+Population's average fitness: 415.55000 stdev: 696.86839
+Best fitness: 2165.00000 - size: (17, 6566) - species 1 - id 922
+Average adjusted fitness: 0.192
+Mean genetic distance 1.751, standard deviation 0.377
+Population of 80 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   12    80   2165.0    0.192     5
+Total extinctions: 0
+Generation time: 556.248 sec (468.243 average)
+Saving checkpoint to neat-checkpoint-12
+
+ ****** Running generation 13 ****** 
+
+922 2165
+941 2165
+574 2165
+1005 0
+1006 313
+1007 80
+1008 0
+1009 0
+1010 134
+1011 0
+1012 455
+1013 1089
