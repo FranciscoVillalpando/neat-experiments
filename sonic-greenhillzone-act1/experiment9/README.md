@@ -8,4 +8,4 @@ initial nodes unconnected
 
 New in this experiment:
 
-tanh activation instead of Sigmoid
+hat activation instead of Sigmoid

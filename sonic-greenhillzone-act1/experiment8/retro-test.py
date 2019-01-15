@@ -51,7 +51,7 @@ def eval_genomes(genomes, config):
             #imgarray = np.append(imgarray, 1) # Input Layer bias?
 
             nnOutput = net.activate(imgarray)
-            
+
             ob, rew, done, info = env.step(nnOutput)
             fitness_current += info['x'] - fitness_current
 

@@ -8,4 +8,4 @@ initial nodes unconnected
 
 New in this experiment:
 
-Relu activation instead of Sigmoid
+Gauss activation instead of Sigmoid
