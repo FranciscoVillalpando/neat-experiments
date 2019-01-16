@@ -1,0 +1,2 @@
+Removed reshaping
+Optimized cv2 operations

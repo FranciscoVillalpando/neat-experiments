@@ -1,0 +1,3736 @@
+Starting python script!
+Observation space shape:(224, 320, 3)
+Start: 2018-12-27 14:25:49.152217
+Using the following config file: config-feedforward.txt
+[NEAT]
+fitness_criterion     = max
+fitness_threshold     = 1000
+pop_size              = 50
+reset_on_extinction   = False
+
+[DefaultGenome]
+# node activation options
+activation_default      = sigmoid
+activation_mutate_rate  = 0.00
+activation_options      = sigmoid 
+#abs clamped cube exp gauss hat identity inv log relu sigmoid sin softplus square tanh
+
+# node aggregation options
+aggregation_default     = sum
+aggregation_mutate_rate = 0.05
+aggregation_options     = sum product min max mean median maxabs
+
+# node bias options
+bias_init_mean          = 0.05
+bias_init_stdev         = 1.0
+bias_max_value          = 50.0
+bias_min_value          = -50.0
+bias_mutate_power       = 0.5
+bias_mutate_rate        = 0.7
+bias_replace_rate       = 0.1
+
+# genome compatibility options
+compatibility_disjoint_coefficient = 1.0
+compatibility_weight_coefficient   = 0.5
+
+# connection add/remove rates
+conn_add_prob           = 0.7
+conn_delete_prob        = 0.05
+
+# connection enable options
+enabled_default         = True
+enabled_mutate_rate     = 0.05
+
+feed_forward            = True
+#initial_connection      = unconnected
+initial_connection      = partial_nodirect 0.5
+
+# node add/remove rates
+node_add_prob           = 0.7
+node_delete_prob        = 0.05
+
+# network parameters
+num_hidden              = 0
+num_inputs              = 1121
+num_outputs             = 12
+
+# node response options
+response_init_mean      = 1.0
+response_init_stdev     = 0.05
+response_max_value      = 30.0
+response_min_value      = -30.0
+response_mutate_power   = 0.1
+response_mutate_rate    = 0.75
+response_replace_rate   = 0.1
+
+# connection weight options
+weight_init_mean        = 0.1
+weight_init_stdev       = 1.0
+weight_max_value        = 30
+weight_min_value        = -30
+weight_mutate_power     = 0.5
+weight_mutate_rate      = 0.8
+weight_replace_rate     = 0.1
+
+[DefaultSpeciesSet]
+compatibility_threshold = 2.8
+
+[DefaultStagnation]
+species_fitness_func = max
+max_stagnation       = 8
+species_elitism      = 0
+
+[DefaultReproduction]
+elitism            = 3
+survival_threshold = 0.3
+
+
+
+End of config file
+
+ ****** Running generation 0 ****** 
+
+New genome at : 2018-12-27 14:25:51.924318
+1 0.0
+New genome at : 2018-12-27 14:25:53.914453
+2 0.0
+New genome at : 2018-12-27 14:25:57.392251
+3 0.0
+New genome at : 2018-12-27 14:25:59.701425
+4 0.0
+New genome at : 2018-12-27 14:26:02.134321
+5 0.0
+New genome at : 2018-12-27 14:26:04.381998
+6 0.0
+New genome at : 2018-12-27 14:26:06.391153
+7 0.0
+New genome at : 2018-12-27 14:26:08.639335
+8 0.0
+New genome at : 2018-12-27 14:26:10.870478
+9 0.0
+New genome at : 2018-12-27 14:26:14.152045
+10 0.0
+New genome at : 2018-12-27 14:26:17.393282
+11 0.0
+New genome at : 2018-12-27 14:26:20.822519
+12 0.0
+New genome at : 2018-12-27 14:26:24.140228
+13 0.0
+New genome at : 2018-12-27 14:26:26.225713
+14 0.0
+New genome at : 2018-12-27 14:26:28.276311
+15 0.0
+New genome at : 2018-12-27 14:26:30.267780
+16 0.0
+New genome at : 2018-12-27 14:26:33.546214
+17 0.0
+New genome at : 2018-12-27 14:26:35.512455
+18 40.0
+New genome at : 2018-12-27 14:26:38.053590
+19 0.0
+New genome at : 2018-12-27 14:26:40.039773
+20 0.0
+New genome at : 2018-12-27 14:26:43.359466
+21 0.0
+New genome at : 2018-12-27 14:26:45.776069
+22 0.0
+New genome at : 2018-12-27 14:26:48.104978
+23 20.0
+New genome at : 2018-12-27 14:26:50.375839
+24 0.0
+New genome at : 2018-12-27 14:26:52.569386
+25 0.0
+New genome at : 2018-12-27 14:26:56.264594
+26 0.0
+New genome at : 2018-12-27 14:26:58.783530
+27 0.0
+New genome at : 2018-12-27 14:27:01.483124
+28 0.0
+New genome at : 2018-12-27 14:27:03.741151
+29 0.0
+New genome at : 2018-12-27 14:27:07.153316
+30 40.0
+New genome at : 2018-12-27 14:27:11.630926
+31 0.0
+New genome at : 2018-12-27 14:27:13.578896
+32 0.0
+New genome at : 2018-12-27 14:27:15.742755
+33 0.0
+New genome at : 2018-12-27 14:27:19.110215
+34 20.0
+New genome at : 2018-12-27 14:27:22.434570
+35 0.0
+New genome at : 2018-12-27 14:27:24.383854
+36 20.0
+New genome at : 2018-12-27 14:27:27.712783
+37 0.0
+New genome at : 2018-12-27 14:27:29.809797
+38 20.0
+New genome at : 2018-12-27 14:27:32.174641
+39 0.0
+New genome at : 2018-12-27 14:27:34.455012
+40 0.0
+New genome at : 2018-12-27 14:27:36.453591
+41 20.0
+New genome at : 2018-12-27 14:27:42.740985
+42 0.0
+New genome at : 2018-12-27 14:27:44.819292
+43 0.0
+New genome at : 2018-12-27 14:27:48.143064
+44 20.0
+New genome at : 2018-12-27 14:27:51.383563
+45 0.0
+New genome at : 2018-12-27 14:27:53.364830
+46 0.0
+New genome at : 2018-12-27 14:27:55.282520
+47 0.0
+New genome at : 2018-12-27 14:27:57.468329
+48 0.0
+New genome at : 2018-12-27 14:27:59.870894
+49 0.0
+New genome at : 2018-12-27 14:28:01.860367
+50 0.0
+Population's average fitness: 4.00000 stdev: 9.79796
+Best fitness: 40.00000 - size: (12, 6726) - species 1 - id 18
+Average adjusted fitness: 0.100
+Mean genetic distance 1.895, standard deviation 0.284
+Population of 50 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    0    50     40.0    0.100     0
+Total extinctions: 0
+Generation time: 134.478 sec
+
+ ****** Running generation 1 ****** 
+
+New genome at : 2018-12-27 14:28:06.402135
+18 40.0
+New genome at : 2018-12-27 14:28:08.861813
+30 40.0
+New genome at : 2018-12-27 14:28:13.056632
+23 20.0
+New genome at : 2018-12-27 14:28:15.021183
+51 0.0
+New genome at : 2018-12-27 14:28:16.966868
+52 0.0
+New genome at : 2018-12-27 14:28:20.109427
+53 20.0
+New genome at : 2018-12-27 14:28:21.988042
+54 0.0
+New genome at : 2018-12-27 14:28:25.199314
+55 0.0
+New genome at : 2018-12-27 14:28:27.684857
+56 20.0
+New genome at : 2018-12-27 14:28:33.455048
+57 0.0
+New genome at : 2018-12-27 14:28:36.691665
+58 0.0
+New genome at : 2018-12-27 14:28:39.854256
+59 0.0
+New genome at : 2018-12-27 14:28:42.077084
+60 0.0
+New genome at : 2018-12-27 14:28:45.258515
+61 0.0
+New genome at : 2018-12-27 14:28:47.186678
+62 0.0
+New genome at : 2018-12-27 14:28:49.456856
+63 0.0
+New genome at : 2018-12-27 14:28:51.417535
+64 0.0
+New genome at : 2018-12-27 14:28:53.342237
+65 20.0
+New genome at : 2018-12-27 14:28:55.679143
+66 0.0
+New genome at : 2018-12-27 14:28:57.892274
+67 0.0
+New genome at : 2018-12-27 14:29:00.005676
+68 0.0
+New genome at : 2018-12-27 14:29:03.179779
+69 0.0
+New genome at : 2018-12-27 14:29:05.145570
+70 0.0
+New genome at : 2018-12-27 14:29:07.384655
+71 0.0
+New genome at : 2018-12-27 14:29:10.728191
+72 20.0
+New genome at : 2018-12-27 14:29:14.507812
+73 20.0
+New genome at : 2018-12-27 14:29:17.796270
+74 0.0
+New genome at : 2018-12-27 14:29:21.073119
+75 0.0
+New genome at : 2018-12-27 14:29:23.676903
+76 60.0
+New genome at : 2018-12-27 14:29:26.992349
+77 20.0
+New genome at : 2018-12-27 14:29:28.914815
+78 20.0
+New genome at : 2018-12-27 14:29:33.848683
+79 0.0
+New genome at : 2018-12-27 14:29:35.857115
+80 20.0
+New genome at : 2018-12-27 14:29:40.090034
+81 0.0
+New genome at : 2018-12-27 14:29:43.296874
+82 0.0
+New genome at : 2018-12-27 14:29:46.562713
+83 0.0
+New genome at : 2018-12-27 14:29:48.553764
+84 0.0
+New genome at : 2018-12-27 14:29:51.765147
+85 0.0
+New genome at : 2018-12-27 14:29:54.146898
+86 0.0
+New genome at : 2018-12-27 14:29:57.406469
+87 0.0
+New genome at : 2018-12-27 14:30:00.648528
+88 0.0
+New genome at : 2018-12-27 14:30:02.550432
+89 0.0
+New genome at : 2018-12-27 14:30:04.902864
+90 40.0
+New genome at : 2018-12-27 14:30:07.146526
+91 20.0
+New genome at : 2018-12-27 14:30:09.229296
+92 0.0
+New genome at : 2018-12-27 14:30:11.535622
+93 0.0
+New genome at : 2018-12-27 14:30:13.861658
+94 20.0
+New genome at : 2018-12-27 14:30:16.117936
+95 0.0
+New genome at : 2018-12-27 14:30:19.363991
+96 0.0
+New genome at : 2018-12-27 14:30:21.315737
+97 20.0
+Population's average fitness: 8.40000 stdev: 13.90827
+Best fitness: 60.00000 - size: (12, 6561) - species 1 - id 76
+Average adjusted fitness: 0.140
+Mean genetic distance 2.115, standard deviation 0.184
+Population of 50 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    1    50     60.0    0.140     0
+Total extinctions: 0
+Generation time: 141.672 sec (138.075 average)
+Saving checkpoint to neat-checkpoint-1
+
+ ****** Running generation 2 ****** 
+
+New genome at : 2018-12-27 14:30:29.023157
+76 60.0
+New genome at : 2018-12-27 14:30:32.440285
+18 40.0
+New genome at : 2018-12-27 14:30:34.830235
+30 40.0
+New genome at : 2018-12-27 14:30:39.149440
+98 20.0
+New genome at : 2018-12-27 14:30:41.302514
+99 0.0
+New genome at : 2018-12-27 14:30:43.241777
+100 20.0
+New genome at : 2018-12-27 14:30:45.430334
+101 0.0
+New genome at : 2018-12-27 14:30:47.725425
+102 0.0
+New genome at : 2018-12-27 14:30:50.276901
+103 0.0
+New genome at : 2018-12-27 14:30:52.194653
+104 0.0
+New genome at : 2018-12-27 14:30:55.452255
+105 20.0
+New genome at : 2018-12-27 14:31:01.460144
+106 20.0
+New genome at : 2018-12-27 14:31:03.633529
+107 20.0
+New genome at : 2018-12-27 14:31:05.531984
+108 20.0
+New genome at : 2018-12-27 14:31:08.828817
+109 20.0
+New genome at : 2018-12-27 14:31:10.733307
+110 0.0
+New genome at : 2018-12-27 14:31:13.903150
+111 0.0
+New genome at : 2018-12-27 14:31:16.076967
+112 40.0
+New genome at : 2018-12-27 14:31:18.413967
+113 0.0
+New genome at : 2018-12-27 14:31:20.478506
+114 20.0
+New genome at : 2018-12-27 14:31:22.433030
+115 0.0
+New genome at : 2018-12-27 14:31:25.610717
+116 20.0
+New genome at : 2018-12-27 14:31:27.523468
+117 0.0
+New genome at : 2018-12-27 14:31:29.370304
+118 0.0
+New genome at : 2018-12-27 14:31:31.391007
+119 0.0
+New genome at : 2018-12-27 14:31:34.592342
+120 0.0
+New genome at : 2018-12-27 14:31:36.765241
+121 20.0
+New genome at : 2018-12-27 14:31:40.076588
+122 0.0
+New genome at : 2018-12-27 14:31:43.258529
+123 0.0
+New genome at : 2018-12-27 14:31:45.324292
+124 0.0
+New genome at : 2018-12-27 14:31:47.666879
+125 0.0
+New genome at : 2018-12-27 14:31:49.790572
+126 20.0
+New genome at : 2018-12-27 14:31:52.146635
+127 0.0
+New genome at : 2018-12-27 14:31:54.288043
+128 0.0
+New genome at : 2018-12-27 14:31:56.548266
+129 20.0
+New genome at : 2018-12-27 14:31:58.796182
+130 20.0
+New genome at : 2018-12-27 14:32:02.915913
+131 20.0
+New genome at : 2018-12-27 14:32:04.819962
+132 0.0
+New genome at : 2018-12-27 14:32:07.045972
+133 0.0
+New genome at : 2018-12-27 14:32:10.216382
+134 0.0
+New genome at : 2018-12-27 14:32:12.711306
+135 20.0
+New genome at : 2018-12-27 14:32:14.866464
+136 0.0
+New genome at : 2018-12-27 14:32:17.056433
+137 0.0
+New genome at : 2018-12-27 14:32:19.013954
+138 0.0
+New genome at : 2018-12-27 14:32:21.170280
+139 20.0
+New genome at : 2018-12-27 14:32:25.456253
+140 0.0
+New genome at : 2018-12-27 14:32:27.549239
+141 20.0
+New genome at : 2018-12-27 14:32:29.527262
+142 0.0
+New genome at : 2018-12-27 14:32:31.425172
+143 40.0
+New genome at : 2018-12-27 14:32:34.647776
+144 0.0
+Population's average fitness: 11.20000 stdev: 14.51069
+Best fitness: 60.00000 - size: (12, 6561) - species 1 - id 76
+Average adjusted fitness: 0.187
+Mean genetic distance 2.224, standard deviation 0.205
+Population of 50 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    2    50     60.0    0.187     1
+Total extinctions: 0
+Generation time: 130.169 sec (135.440 average)
+
+ ****** Running generation 3 ****** 
+
+New genome at : 2018-12-27 14:32:39.192330
+76 60.0
+New genome at : 2018-12-27 14:32:42.409279
+143 40.0
+New genome at : 2018-12-27 14:32:45.623739
+18 40.0
+New genome at : 2018-12-27 14:32:48.153114
+145 0.0
+New genome at : 2018-12-27 14:32:50.005245
+146 20.0
+New genome at : 2018-12-27 14:32:52.218584
+147 0.0
+New genome at : 2018-12-27 14:32:54.305676
+148 0.0
+New genome at : 2018-12-27 14:32:56.787417
+149 20.0
+New genome at : 2018-12-27 14:32:58.665340
+150 0.0
+New genome at : 2018-12-27 14:33:01.859775
+151 40.0
+New genome at : 2018-12-27 14:33:04.111906
+152 0.0
+New genome at : 2018-12-27 14:33:07.284742
+153 20.0
+New genome at : 2018-12-27 14:33:13.278340
+154 0.0
+New genome at : 2018-12-27 14:33:15.227378
+155 20.0
+New genome at : 2018-12-27 14:33:17.690866
+156 20.0
+New genome at : 2018-12-27 14:33:19.658488
+157 0.0
+New genome at : 2018-12-27 14:33:21.567588
+158 60.0
+New genome at : 2018-12-27 14:33:25.883672
+159 20.0
+New genome at : 2018-12-27 14:33:28.241918
+160 20.0
+New genome at : 2018-12-27 14:33:32.090890
+161 40.0
+New genome at : 2018-12-27 14:33:35.097849
+162 20.0
+New genome at : 2018-12-27 14:33:39.284833
+163 20.0
+New genome at : 2018-12-27 14:33:43.970179
+164 0.0
+New genome at : 2018-12-27 14:33:46.288275
+165 40.0
+New genome at : 2018-12-27 14:33:49.548793
+166 0.0
+New genome at : 2018-12-27 14:33:52.723295
+167 20.0
+New genome at : 2018-12-27 14:33:54.979656
+168 20.0
+New genome at : 2018-12-27 14:33:57.099365
+169 20.0
+New genome at : 2018-12-27 14:33:59.476227
+170 20.0
+New genome at : 2018-12-27 14:34:01.399841
+171 0.0
+New genome at : 2018-12-27 14:34:03.450366
+172 0.0
+New genome at : 2018-12-27 14:34:05.332528
+173 0.0
+New genome at : 2018-12-27 14:34:07.805731
+174 40.0
+New genome at : 2018-12-27 14:34:11.478933
+175 0.0
+New genome at : 2018-12-27 14:34:13.704720
+176 20.0
+New genome at : 2018-12-27 14:34:15.739612
+177 40.0
+New genome at : 2018-12-27 14:34:17.884965
+178 40.0
+New genome at : 2018-12-27 14:34:21.008772
+179 0.0
+New genome at : 2018-12-27 14:34:23.465465
+180 0.0
+New genome at : 2018-12-27 14:34:25.388769
+181 20.0
+New genome at : 2018-12-27 14:34:27.936349
+182 20.0
+New genome at : 2018-12-27 14:34:30.287645
+183 60.0
+New genome at : 2018-12-27 14:34:32.387214
+184 0.0
+New genome at : 2018-12-27 14:34:34.543881
+185 0.0
+New genome at : 2018-12-27 14:34:37.934309
+186 0.0
+New genome at : 2018-12-27 14:34:40.322806
+187 0.0
+New genome at : 2018-12-27 14:34:42.333908
+188 20.0
+New genome at : 2018-12-27 14:34:44.241922
+189 20.0
+New genome at : 2018-12-27 14:34:48.915936
+190 0.0
+New genome at : 2018-12-27 14:34:50.812926
+191 0.0
+Population's average fitness: 17.20000 stdev: 17.89302
+Best fitness: 60.00000 - size: (12, 6561) - species 1 - id 76
+Average adjusted fitness: 0.287
+Mean genetic distance 2.116, standard deviation 0.364
+Population of 50 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    3    50     60.0    0.287     2
+Total extinctions: 0
+Generation time: 136.146 sec (135.616 average)
+Saving checkpoint to neat-checkpoint-3
+
+ ****** Running generation 4 ****** 
+
+New genome at : 2018-12-27 14:34:56.312182
+158 60.0
+New genome at : 2018-12-27 14:35:00.750601
+183 60.0
+New genome at : 2018-12-27 14:35:02.880053
+76 60.0
+New genome at : 2018-12-27 14:35:06.177793
+192 20.0
+New genome at : 2018-12-27 14:35:09.501144
+193 20.0
+New genome at : 2018-12-27 14:35:14.532444
+194 0.0
+New genome at : 2018-12-27 14:35:16.896641
+195 40.0
+New genome at : 2018-12-27 14:35:18.861489
+196 20.0
+New genome at : 2018-12-27 14:35:20.752358
+197 0.0
+New genome at : 2018-12-27 14:35:23.842659
+198 0.0
+New genome at : 2018-12-27 14:35:25.896557
+199 40.0
+New genome at : 2018-12-27 14:35:28.247844
+200 20.0
+New genome at : 2018-12-27 14:35:31.327021
+201 0.0
+New genome at : 2018-12-27 14:35:33.439507
+202 20.0
+New genome at : 2018-12-27 14:35:35.273631
+203 40.0
+New genome at : 2018-12-27 14:35:37.732226
+204 0.0
+New genome at : 2018-12-27 14:35:39.874860
+205 20.0
+New genome at : 2018-12-27 14:35:41.774647
+206 0.0
+New genome at : 2018-12-27 14:35:44.959709
+207 0.0
+New genome at : 2018-12-27 14:35:48.034319
+208 0.0
+New genome at : 2018-12-27 14:35:50.151598
+209 40.0
+New genome at : 2018-12-27 14:35:54.259776
+210 40.0
+New genome at : 2018-12-27 14:35:56.364555
+211 40.0
+New genome at : 2018-12-27 14:36:00.534889
+212 40.0
+New genome at : 2018-12-27 14:36:04.465232
+213 0.0
+New genome at : 2018-12-27 14:36:06.335102
+214 0.0
+New genome at : 2018-12-27 14:36:09.462629
+215 20.0
+New genome at : 2018-12-27 14:36:11.554390
+216 0.0
+New genome at : 2018-12-27 14:36:13.460173
+217 20.0
+New genome at : 2018-12-27 14:36:15.629061
+218 20.0
+New genome at : 2018-12-27 14:36:18.497342
+219 0.0
+New genome at : 2018-12-27 14:36:20.525823
+220 0.0
+New genome at : 2018-12-27 14:36:22.975912
+221 40.0
+New genome at : 2018-12-27 14:36:25.234536
+222 0.0
+New genome at : 2018-12-27 14:36:28.434743
+223 0.0
+New genome at : 2018-12-27 14:36:30.599009
+224 0.0
+New genome at : 2018-12-27 14:36:32.689254
+225 40.0
+New genome at : 2018-12-27 14:36:37.155682
+226 0.0
+New genome at : 2018-12-27 14:36:39.308156
+227 40.0
+New genome at : 2018-12-27 14:36:41.792848
+228 0.0
+New genome at : 2018-12-27 14:36:43.972801
+229 40.0
+New genome at : 2018-12-27 14:36:46.468756
+230 20.0
+New genome at : 2018-12-27 14:36:48.615909
+231 40.0
+New genome at : 2018-12-27 14:36:51.552203
+232 40.0
+New genome at : 2018-12-27 14:36:56.369188
+233 0.0
+New genome at : 2018-12-27 14:36:58.731768
+234 20.0
+New genome at : 2018-12-27 14:37:00.702591
+235 40.0
+New genome at : 2018-12-27 14:37:04.157776
+236 0.0
+New genome at : 2018-12-27 14:37:07.315196
+237 20.0
+New genome at : 2018-12-27 14:37:13.236530
+238 20.0
+Population's average fitness: 20.00000 stdev: 19.18333
+Best fitness: 60.00000 - size: (13, 6469) - species 1 - id 158
+Average adjusted fitness: 0.333
+Mean genetic distance 2.172, standard deviation 0.419
+Population of 50 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    4    50     60.0    0.333     3
+Total extinctions: 0
+Generation time: 145.317 sec (137.556 average)
+
+ ****** Running generation 5 ****** 
+
+New genome at : 2018-12-27 14:37:21.629647
+158 60.0
+New genome at : 2018-12-27 14:37:25.971316
+183 60.0
+New genome at : 2018-12-27 14:37:28.111989
+76 60.0
+New genome at : 2018-12-27 14:37:31.348312
+239 40.0
+New genome at : 2018-12-27 14:37:34.037697
+240 40.0
+New genome at : 2018-12-27 14:37:36.358942
+241 40.0
+New genome at : 2018-12-27 14:37:38.781974
+242 20.0
+New genome at : 2018-12-27 14:37:40.578680
+243 40.0
+New genome at : 2018-12-27 14:37:44.871225
+244 0.0
+New genome at : 2018-12-27 14:37:47.026558
+245 0.0
+New genome at : 2018-12-27 14:37:50.167744
+246 0.0
+New genome at : 2018-12-27 14:37:52.220874
+247 40.0
+New genome at : 2018-12-27 14:37:57.051211
+248 40.0
+New genome at : 2018-12-27 14:38:01.504172
+249 40.0
+New genome at : 2018-12-27 14:38:05.633873
+250 0.0
+New genome at : 2018-12-27 14:38:07.490161
+251 60.0
+New genome at : 2018-12-27 14:38:09.553341
+252 40.0
+New genome at : 2018-12-27 14:38:11.850529
+253 60.0
+New genome at : 2018-12-27 14:38:14.710586
+254 0.0
+New genome at : 2018-12-27 14:38:17.767971
+255 40.0
+New genome at : 2018-12-27 14:38:21.227504
+256 20.0
+New genome at : 2018-12-27 14:38:23.110570
+257 0.0
+New genome at : 2018-12-27 14:38:24.982278
+258 20.0
+New genome at : 2018-12-27 14:38:27.264890
+259 60.0
+New genome at : 2018-12-27 14:38:33.057128
+260 20.0
+New genome at : 2018-12-27 14:38:35.088274
+261 0.0
+New genome at : 2018-12-27 14:38:37.172708
+262 40.0
+New genome at : 2018-12-27 14:38:41.630409
+263 0.0
+New genome at : 2018-12-27 14:38:43.482877
+264 20.0
+New genome at : 2018-12-27 14:38:47.504829
+265 0.0
+New genome at : 2018-12-27 14:38:49.558893
+266 20.0
+New genome at : 2018-12-27 14:38:51.398404
+267 20.0
+New genome at : 2018-12-27 14:38:53.299966
+268 0.0
+New genome at : 2018-12-27 14:38:55.552188
+269 0.0
+New genome at : 2018-12-27 14:38:58.629970
+270 20.0
+New genome at : 2018-12-27 14:39:00.694290
+271 20.0
+New genome at : 2018-12-27 14:39:03.242076
+272 0.0
+New genome at : 2018-12-27 14:39:05.055578
+273 20.0
+New genome at : 2018-12-27 14:39:06.872762
+274 20.0
+New genome at : 2018-12-27 14:39:08.695015
+275 0.0
+New genome at : 2018-12-27 14:39:11.245135
+276 0.0
+New genome at : 2018-12-27 14:39:14.466600
+277 60.0
+New genome at : 2018-12-27 14:39:17.774357
+278 40.0
+New genome at : 2018-12-27 14:39:19.837854
+279 40.0
+New genome at : 2018-12-27 14:39:22.414065
+280 0.0
+New genome at : 2018-12-27 14:39:24.511109
+281 0.0
+New genome at : 2018-12-27 14:39:26.394403
+282 40.0
+New genome at : 2018-12-27 14:39:29.014038
+283 0.0
+New genome at : 2018-12-27 14:39:30.880378
+284 0.0
+New genome at : 2018-12-27 14:39:32.821377
+285 0.0
+Population's average fitness: 23.20000 stdev: 21.67395
+Best fitness: 60.00000 - size: (13, 6469) - species 1 - id 158
+Average adjusted fitness: 0.387
+Mean genetic distance 2.002, standard deviation 0.498
+Population of 50 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    5    50     60.0    0.387     4
+Total extinctions: 0
+Generation time: 135.886 sec (137.278 average)
+Saving checkpoint to neat-checkpoint-5
+
+ ****** Running generation 6 ****** 
+
+New genome at : 2018-12-27 14:39:38.527607
+259 60.0
+New genome at : 2018-12-27 14:39:44.404005
+277 60.0
+New genome at : 2018-12-27 14:39:47.716834
+158 60.0
+New genome at : 2018-12-27 14:39:52.201227
+286 0.0
+New genome at : 2018-12-27 14:39:54.385654
+287 0.0
+New genome at : 2018-12-27 14:39:56.587919
+288 0.0
+New genome at : 2018-12-27 14:39:58.777482
+289 40.0
+New genome at : 2018-12-27 14:40:00.980410
+290 0.0
+New genome at : 2018-12-27 14:40:03.019508
+291 20.0
+New genome at : 2018-12-27 14:40:07.613457
+292 40.0
+New genome at : 2018-12-27 14:40:09.881672
+293 40.0
+New genome at : 2018-12-27 14:40:13.149055
+294 40.0
+New genome at : 2018-12-27 14:40:15.368164
+295 0.0
+New genome at : 2018-12-27 14:40:17.194564
+296 20.0
+New genome at : 2018-12-27 14:40:21.834399
+297 20.0
+New genome at : 2018-12-27 14:40:25.889651
+298 20.0
+New genome at : 2018-12-27 14:40:27.744596
+299 0.0
+New genome at : 2018-12-27 14:40:29.689997
+300 0.0
+New genome at : 2018-12-27 14:40:32.811592
+301 0.0
+New genome at : 2018-12-27 14:40:35.123685
+302 0.0
+New genome at : 2018-12-27 14:40:37.237430
+303 0.0
+New genome at : 2018-12-27 14:40:39.283224
+304 40.0
+New genome at : 2018-12-27 14:40:42.610759
+305 20.0
+New genome at : 2018-12-27 14:40:44.454807
+306 60.0
+New genome at : 2018-12-27 14:40:46.637463
+307 40.0
+New genome at : 2018-12-27 14:40:49.063508
+308 60.0
+New genome at : 2018-12-27 14:40:54.923653
+309 0.0
+New genome at : 2018-12-27 14:40:56.947013
+310 0.0
+New genome at : 2018-12-27 14:40:59.325553
+311 80.0
+New genome at : 2018-12-27 14:41:01.871956
+312 40.0
+New genome at : 2018-12-27 14:41:04.366409
+313 0.0
+New genome at : 2018-12-27 14:41:06.228657
+314 20.0
+New genome at : 2018-12-27 14:41:08.041653
+315 20.0
+New genome at : 2018-12-27 14:41:11.116143
+316 20.0
+New genome at : 2018-12-27 14:41:13.182605
+317 60.0
+New genome at : 2018-12-27 14:41:15.301061
+318 0.0
+New genome at : 2018-12-27 14:41:18.293888
+319 20.0
+New genome at : 2018-12-27 14:41:20.324285
+320 20.0
+New genome at : 2018-12-27 14:41:26.260759
+321 0.0
+New genome at : 2018-12-27 14:41:28.201126
+322 40.0
+New genome at : 2018-12-27 14:41:30.466919
+323 20.0
+New genome at : 2018-12-27 14:41:33.527620
+324 20.0
+New genome at : 2018-12-27 14:41:37.633577
+325 0.0
+New genome at : 2018-12-27 14:41:40.611704
+326 20.0
+New genome at : 2018-12-27 14:41:46.454036
+327 20.0
+New genome at : 2018-12-27 14:41:52.601775
+328 20.0
+New genome at : 2018-12-27 14:41:56.754060
+329 0.0
+New genome at : 2018-12-27 14:41:58.559866
+330 0.0
+New genome at : 2018-12-27 14:42:00.691204
+331 20.0
+New genome at : 2018-12-27 14:42:02.744925
+332 60.0
+Population's average fitness: 22.80000 stdev: 22.27465
+Best fitness: 80.00000 - size: (13, 6208) - species 1 - id 311
+Average adjusted fitness: 0.285
+Mean genetic distance 1.888, standard deviation 0.553
+Population of 50 members in 2 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    6    49     80.0    0.285     0
+     2    0     1       --       --     0
+Total extinctions: 0
+Generation time: 149.289 sec (138.994 average)
+
+ ****** Running generation 7 ****** 
+
+New genome at : 2018-12-27 14:42:07.816735
+311 80.0
+New genome at : 2018-12-27 14:42:10.337685
+259 60.0
+New genome at : 2018-12-27 14:42:16.106179
+277 60.0
+New genome at : 2018-12-27 14:42:19.322690
+333 20.0
+New genome at : 2018-12-27 14:42:21.785112
+334 0.0
+New genome at : 2018-12-27 14:42:23.562223
+335 40.0
+New genome at : 2018-12-27 14:42:29.126336
+336 0.0
+New genome at : 2018-12-27 14:42:30.895337
+337 0.0
+New genome at : 2018-12-27 14:42:32.864095
+338 20.0
+New genome at : 2018-12-27 14:42:36.758057
+339 40.0
+New genome at : 2018-12-27 14:42:38.578026
+340 60.0
+New genome at : 2018-12-27 14:42:41.609493
+341 0.0
+New genome at : 2018-12-27 14:42:43.495183
+342 20.0
+New genome at : 2018-12-27 14:42:46.732475
+343 0.0
+New genome at : 2018-12-27 14:42:48.513380
+344 40.0
+New genome at : 2018-12-27 14:42:50.538853
+345 0.0
+New genome at : 2018-12-27 14:42:52.591384
+346 60.0
+New genome at : 2018-12-27 14:42:56.051646
+347 60.0
+New genome at : 2018-12-27 14:42:59.174315
+348 60.0
+New genome at : 2018-12-27 14:43:04.749360
+349 0.0
+New genome at : 2018-12-27 14:43:06.937579
+350 40.0
+New genome at : 2018-12-27 14:43:10.498924
+351 40.0
+New genome at : 2018-12-27 14:43:14.535472
+352 40.0
+New genome at : 2018-12-27 14:43:16.624144
+353 40.0
+New genome at : 2018-12-27 14:43:18.891970
+354 20.0
+New genome at : 2018-12-27 14:43:20.666556
+355 20.0
+New genome at : 2018-12-27 14:43:25.082694
+356 20.0
+New genome at : 2018-12-27 14:43:26.947497
+357 40.0
+New genome at : 2018-12-27 14:43:28.980703
+358 40.0
+New genome at : 2018-12-27 14:43:32.283565
+359 60.0
+New genome at : 2018-12-27 14:43:37.272523
+360 20.0
+New genome at : 2018-12-27 14:43:39.059111
+361 0.0
+New genome at : 2018-12-27 14:43:40.826172
+362 20.0
+New genome at : 2018-12-27 14:43:43.508806
+363 20.0
+New genome at : 2018-12-27 14:43:45.349201
+364 0.0
+New genome at : 2018-12-27 14:43:48.401787
+365 0.0
+New genome at : 2018-12-27 14:43:51.383075
+366 20.0
+New genome at : 2018-12-27 14:43:53.183851
+367 0.0
+New genome at : 2018-12-27 14:43:55.240726
+368 20.0
+New genome at : 2018-12-27 14:43:57.440345
+369 20.0
+New genome at : 2018-12-27 14:43:59.474197
+370 0.0
+New genome at : 2018-12-27 14:44:01.703373
+371 20.0
+New genome at : 2018-12-27 14:44:03.539290
+372 40.0
+New genome at : 2018-12-27 14:44:05.623552
+373 60.0
+New genome at : 2018-12-27 14:44:08.791596
+374 0.0
+New genome at : 2018-12-27 14:44:11.787024
+375 0.0
+New genome at : 2018-12-27 14:44:13.739219
+376 0.0
+New genome at : 2018-12-27 14:44:15.492580
+377 60.0
+New genome at : 2018-12-27 14:44:17.972433
+378 20.0
+New genome at : 2018-12-27 14:44:22.850308
+379 0.0
+Population's average fitness: 26.00000 stdev: 23.06513
+Best fitness: 80.00000 - size: (13, 6208) - species 1 - id 311
+Average adjusted fitness: 0.166
+Mean genetic distance 2.213, standard deviation 0.702
+Population of 51 members in 2 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    7    47     80.0    0.332     1
+     2    1     4      0.0    0.000     0
+Total extinctions: 0
+Generation time: 139.546 sec (139.063 average)
+Saving checkpoint to neat-checkpoint-7
+
+ ****** Running generation 8 ****** 
+
+New genome at : 2018-12-27 14:44:28.413021
+375 0.0
+New genome at : 2018-12-27 14:44:30.438391
+380 0.0
+New genome at : 2018-12-27 14:44:32.303461
+381 0.0
+New genome at : 2018-12-27 14:44:34.075788
+311 80.0
+New genome at : 2018-12-27 14:44:36.643164
+259 60.0
+New genome at : 2018-12-27 14:44:42.418707
+277 60.0
+New genome at : 2018-12-27 14:44:45.629266
+382 20.0
+New genome at : 2018-12-27 14:44:47.479776
+383 0.0
+New genome at : 2018-12-27 14:44:50.401240
+384 40.0
+New genome at : 2018-12-27 14:44:52.318416
+385 0.0
+New genome at : 2018-12-27 14:44:54.181825
+386 0.0
+New genome at : 2018-12-27 14:44:55.944443
+387 20.0
+New genome at : 2018-12-27 14:44:57.936907
+388 20.0
+New genome at : 2018-12-27 14:45:03.932276
+389 40.0
+New genome at : 2018-12-27 14:45:06.209921
+390 20.0
+New genome at : 2018-12-27 14:45:11.928158
+391 60.0
+New genome at : 2018-12-27 14:45:14.013133
+392 0.0
+New genome at : 2018-12-27 14:45:15.827800
+393 0.0
+New genome at : 2018-12-27 14:45:17.937590
+394 0.0
+New genome at : 2018-12-27 14:45:19.953369
+395 40.0
+New genome at : 2018-12-27 14:45:22.059468
+396 20.0
+New genome at : 2018-12-27 14:45:27.849988
+397 60.0
+New genome at : 2018-12-27 14:45:31.403918
+398 20.0
+New genome at : 2018-12-27 14:45:33.571154
+399 0.0
+New genome at : 2018-12-27 14:45:35.624145
+400 20.0
+New genome at : 2018-12-27 14:45:37.462206
+401 20.0
+New genome at : 2018-12-27 14:45:43.144660
+402 40.0
+New genome at : 2018-12-27 14:45:45.670464
+403 20.0
+New genome at : 2018-12-27 14:45:47.664577
+404 20.0
+New genome at : 2018-12-27 14:45:49.632487
+405 20.0
+New genome at : 2018-12-27 14:45:53.922354
+406 40.0
+New genome at : 2018-12-27 14:45:56.234345
+407 80.0
+New genome at : 2018-12-27 14:46:04.724709
+408 60.0
+New genome at : 2018-12-27 14:46:09.216612
+409 20.0
+New genome at : 2018-12-27 14:46:12.344107
+410 80.0
+New genome at : 2018-12-27 14:46:19.479703
+411 40.0
+New genome at : 2018-12-27 14:46:23.841347
+412 0.0
+New genome at : 2018-12-27 14:46:27.182153
+413 40.0
+New genome at : 2018-12-27 14:46:32.131038
+414 40.0
+New genome at : 2018-12-27 14:46:36.316560
+415 60.0
+New genome at : 2018-12-27 14:46:46.914940
+416 20.0
+New genome at : 2018-12-27 14:46:49.896196
+417 0.0
+New genome at : 2018-12-27 14:46:53.994737
+418 0.0
+New genome at : 2018-12-27 14:46:57.563983
+419 60.0
+New genome at : 2018-12-27 14:47:08.692906
+420 20.0
+New genome at : 2018-12-27 14:47:19.385207
+421 20.0
+New genome at : 2018-12-27 14:47:23.718786
+422 20.0
+New genome at : 2018-12-27 14:47:26.961613
+423 40.0
+New genome at : 2018-12-27 14:47:32.062501
+424 0.0
+New genome at : 2018-12-27 14:47:36.583117
+425 0.0
+New genome at : 2018-12-27 14:47:39.945187
+426 40.0
+Population's average fitness: 27.05882 stdev: 24.03381
+Best fitness: 80.00000 - size: (13, 6208) - species 1 - id 311
+Average adjusted fitness: 0.184
+Mean genetic distance 2.163, standard deviation 0.526
+Population of 50 members in 2 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    8    47     80.0    0.367     2
+     2    2     3      0.0    0.000     1
+Total extinctions: 0
+Generation time: 202.020 sec (146.058 average)
+
+ ****** Running generation 9 ****** 
+
+New genome at : 2018-12-27 14:47:50.433234
+375 0.0
+New genome at : 2018-12-27 14:47:54.808042
+417 0.0
+New genome at : 2018-12-27 14:47:58.364139
+380 0.0
+New genome at : 2018-12-27 14:48:01.976011
+407 80.0
+New genome at : 2018-12-27 14:48:10.778420
+410 80.0
+New genome at : 2018-12-27 14:48:15.442137
+311 80.0
+New genome at : 2018-12-27 14:48:18.966499
+427 20.0
+New genome at : 2018-12-27 14:48:21.256401
+428 40.0
+New genome at : 2018-12-27 14:48:24.255540
+429 20.0
+New genome at : 2018-12-27 14:48:27.829041
+430 20.0
+New genome at : 2018-12-27 14:48:33.975572
+431 40.0
+New genome at : 2018-12-27 14:48:36.593526
+432 80.0
+New genome at : 2018-12-27 14:48:39.767102
+433 40.0
+New genome at : 2018-12-27 14:48:42.137691
+434 0.0
+New genome at : 2018-12-27 14:48:44.252350
+435 0.0
+New genome at : 2018-12-27 14:48:46.606973
+436 0.0
+New genome at : 2018-12-27 14:48:48.985000
+437 0.0
+New genome at : 2018-12-27 14:48:51.529112
+438 40.0
+New genome at : 2018-12-27 14:48:54.043142
+439 0.0
+New genome at : 2018-12-27 14:48:56.557300
+440 0.0
+New genome at : 2018-12-27 14:48:58.673162
+441 60.0
+New genome at : 2018-12-27 14:49:03.196539
+442 0.0
+New genome at : 2018-12-27 14:49:05.944694
+443 0.0
+New genome at : 2018-12-27 14:49:08.062721
+444 40.0
+New genome at : 2018-12-27 14:49:10.606948
+445 20.0
+New genome at : 2018-12-27 14:49:12.668135
+446 40.0
+New genome at : 2018-12-27 14:49:15.699806
+447 0.0
+New genome at : 2018-12-27 14:49:17.804523
+448 20.0
+New genome at : 2018-12-27 14:49:20.404198
+449 0.0
+New genome at : 2018-12-27 14:49:22.603916
+450 0.0
+New genome at : 2018-12-27 14:49:25.562863
+451 20.0
+New genome at : 2018-12-27 14:49:29.608645
+452 60.0
+New genome at : 2018-12-27 14:49:31.804305
+453 20.0
+New genome at : 2018-12-27 14:49:37.498232
+454 20.0
+New genome at : 2018-12-27 14:49:43.928744
+455 20.0
+New genome at : 2018-12-27 14:49:45.670160
+456 60.0
+New genome at : 2018-12-27 14:49:51.121365
+457 40.0
+New genome at : 2018-12-27 14:49:53.735072
+458 0.0
+New genome at : 2018-12-27 14:49:56.573954
+459 0.0
+New genome at : 2018-12-27 14:49:59.502299
+460 40.0
+New genome at : 2018-12-27 14:50:01.921715
+461 40.0
+New genome at : 2018-12-27 14:50:05.674340
+462 40.0
+New genome at : 2018-12-27 14:50:07.992414
+463 20.0
+New genome at : 2018-12-27 14:50:10.256816
+464 0.0
+New genome at : 2018-12-27 14:50:12.236079
+465 60.0
+New genome at : 2018-12-27 14:50:14.314842
+466 40.0
+New genome at : 2018-12-27 14:50:16.672642
+467 0.0
+New genome at : 2018-12-27 14:50:18.861438
+468 40.0
+New genome at : 2018-12-27 14:50:20.966592
+469 0.0
+New genome at : 2018-12-27 14:50:23.249480
+470 60.0
+Population's average fitness: 26.00000 stdev: 25.69047
+Best fitness: 80.00000 - size: (13, 5707) - species 1 - id 407
+Average adjusted fitness: 0.173
+Mean genetic distance 2.240, standard deviation 0.509
+Population of 50 members in 2 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    9    46     80.0    0.346     3
+     2    3     4      0.0    0.000     2
+Total extinctions: 0
+Generation time: 157.557 sec (147.208 average)
+Saving checkpoint to neat-checkpoint-9
+
+ ****** Running generation 10 ****** 
+
+New genome at : 2018-12-27 14:50:29.067137
+375 0.0
+New genome at : 2018-12-27 14:50:31.082133
+417 0.0
+New genome at : 2018-12-27 14:50:32.960073
+380 0.0
+New genome at : 2018-12-27 14:50:34.729869
+407 80.0
+New genome at : 2018-12-27 14:50:39.140787
+410 80.0
+New genome at : 2018-12-27 14:50:42.616243
+432 80.0
+New genome at : 2018-12-27 14:50:45.257687
+471 40.0
+New genome at : 2018-12-27 14:50:47.221696
+472 60.0
+New genome at : 2018-12-27 14:50:49.512554
+473 20.0
+New genome at : 2018-12-27 14:50:51.254139
+474 0.0
+New genome at : 2018-12-27 14:50:53.177442
+475 20.0
+New genome at : 2018-12-27 14:50:57.509307
+476 60.0
+New genome at : 2018-12-27 14:51:02.952816
+477 60.0
+New genome at : 2018-12-27 14:51:05.373123
+478 20.0
+New genome at : 2018-12-27 14:51:07.389098
+479 40.0
+New genome at : 2018-12-27 14:51:11.973072
+480 20.0
+New genome at : 2018-12-27 14:51:16.065785
+481 60.0
+New genome at : 2018-12-27 14:51:20.395936
+482 40.0
+New genome at : 2018-12-27 14:51:22.589222
+483 60.0
+New genome at : 2018-12-27 14:51:26.422350
+484 0.0
+New genome at : 2018-12-27 14:51:28.900568
+485 20.0
+New genome at : 2018-12-27 14:51:33.382243
+486 0.0
+New genome at : 2018-12-27 14:51:35.575809
+487 20.0
+New genome at : 2018-12-27 14:51:37.388778
+488 20.0
+New genome at : 2018-12-27 14:51:39.841489
+489 20.0
+New genome at : 2018-12-27 14:51:45.252530
+490 40.0
+New genome at : 2018-12-27 14:51:47.793377
+491 80.0
+New genome at : 2018-12-27 14:51:53.244786
+492 0.0
+New genome at : 2018-12-27 14:51:55.317328
+493 40.0
+New genome at : 2018-12-27 14:51:59.775344
+494 80.0
+New genome at : 2018-12-27 14:52:05.490775
+495 20.0
+New genome at : 2018-12-27 14:52:08.862776
+496 40.0
+New genome at : 2018-12-27 14:52:10.897343
+497 0.0
+New genome at : 2018-12-27 14:52:13.908122
+498 0.0
+New genome at : 2018-12-27 14:52:15.781993
+499 40.0
+New genome at : 2018-12-27 14:52:17.783818
+500 40.0
+New genome at : 2018-12-27 14:52:20.332678
+501 60.0
+New genome at : 2018-12-27 14:52:22.529869
+502 40.0
+New genome at : 2018-12-27 14:52:24.507278
+503 0.0
+New genome at : 2018-12-27 14:52:26.194912
+504 60.0
+New genome at : 2018-12-27 14:52:29.233506
+505 20.0
+New genome at : 2018-12-27 14:52:31.044261
+506 20.0
+New genome at : 2018-12-27 14:52:36.699755
+507 20.0
+New genome at : 2018-12-27 14:52:38.358732
+508 20.0
+New genome at : 2018-12-27 14:52:40.099504
+509 40.0
+New genome at : 2018-12-27 14:52:42.278686
+510 80.0
+New genome at : 2018-12-27 14:52:45.704125
+511 60.0
+New genome at : 2018-12-27 14:52:49.215357
+512 40.0
+New genome at : 2018-12-27 14:52:51.477668
+513 60.0
+New genome at : 2018-12-27 14:52:54.964053
+514 0.0
+Population's average fitness: 34.40000 stdev: 26.24195
+Best fitness: 80.00000 - size: (13, 5707) - species 1 - id 407
+Average adjusted fitness: 0.262
+Mean genetic distance 2.337, standard deviation 0.491
+Population of 50 members in 2 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   10    40     80.0    0.462     4
+     2    4    10     20.0    0.062     0
+Total extinctions: 0
+Generation time: 150.800 sec (148.840 average)
+
+ ****** Running generation 11 ****** 
+
+New genome at : 2018-12-27 14:52:59.867050
+487 20.0
+New genome at : 2018-12-27 14:53:01.659460
+375 0.0
+New genome at : 2018-12-27 14:53:03.604526
+417 0.0
+New genome at : 2018-12-27 14:53:05.401151
+515 40.0
+New genome at : 2018-12-27 14:53:09.398311
+516 0.0
+New genome at : 2018-12-27 14:53:12.353036
+407 80.0
+New genome at : 2018-12-27 14:53:16.755226
+410 80.0
+New genome at : 2018-12-27 14:53:20.314634
+432 80.0
+New genome at : 2018-12-27 14:53:23.021969
+517 40.0
+New genome at : 2018-12-27 14:53:25.338547
+518 60.0
+New genome at : 2018-12-27 14:53:28.137536
+519 60.0
+New genome at : 2018-12-27 14:53:32.869649
+520 20.0
+New genome at : 2018-12-27 14:53:34.884680
+521 20.0
+New genome at : 2018-12-27 14:53:37.230128
+522 20.0
+New genome at : 2018-12-27 14:53:42.165466
+523 60.0
+New genome at : 2018-12-27 14:53:44.181154
+524 40.0
+New genome at : 2018-12-27 14:53:46.460363
+525 60.0
+New genome at : 2018-12-27 14:53:50.742944
+526 40.0
+New genome at : 2018-12-27 14:53:54.801629
+527 20.0
+New genome at : 2018-12-27 14:53:56.669276
+528 40.0
+New genome at : 2018-12-27 14:53:58.662171
+529 60.0
+New genome at : 2018-12-27 14:54:00.975340
+530 20.0
+New genome at : 2018-12-27 14:54:02.928512
+531 20.0
+New genome at : 2018-12-27 14:54:04.954089
+532 0.0
+New genome at : 2018-12-27 14:54:07.207628
+533 40.0
+New genome at : 2018-12-27 14:54:11.830455
+534 40.0
+New genome at : 2018-12-27 14:54:13.877977
+535 40.0
+New genome at : 2018-12-27 14:54:18.093561
+536 40.0
+New genome at : 2018-12-27 14:54:20.277748
+537 20.0
+New genome at : 2018-12-27 14:54:25.955299
+538 20.0
+New genome at : 2018-12-27 14:54:27.990544
+539 40.0
+New genome at : 2018-12-27 14:54:29.970277
+540 0.0
+New genome at : 2018-12-27 14:54:31.950536
+541 40.0
+New genome at : 2018-12-27 14:54:34.117622
+542 60.0
+New genome at : 2018-12-27 14:54:38.878334
+543 60.0
+New genome at : 2018-12-27 14:54:40.855271
+544 40.0
+New genome at : 2018-12-27 14:54:42.827673
+545 80.0
+New genome at : 2018-12-27 14:54:46.681196
+546 0.0
+New genome at : 2018-12-27 14:54:48.703221
+547 40.0
+New genome at : 2018-12-27 14:54:50.841324
+548 60.0
+New genome at : 2018-12-27 14:54:55.664074
+549 0.0
+New genome at : 2018-12-27 14:54:57.543861
+550 20.0
+New genome at : 2018-12-27 14:54:59.260824
+551 40.0
+New genome at : 2018-12-27 14:55:01.165273
+552 60.0
+New genome at : 2018-12-27 14:55:03.471353
+553 0.0
+New genome at : 2018-12-27 14:55:06.336684
+554 60.0
+New genome at : 2018-12-27 14:55:08.368840
+555 20.0
+New genome at : 2018-12-27 14:55:11.238786
+556 0.0
+New genome at : 2018-12-27 14:55:13.155714
+557 60.0
+New genome at : 2018-12-27 14:55:16.610858
+558 40.0
+Population's average fitness: 36.00000 stdev: 24.00000
+Best fitness: 80.00000 - size: (13, 5707) - species 1 - id 407
+Average adjusted fitness: 0.441
+Mean genetic distance 2.261, standard deviation 0.519
+Population of 50 members in 2 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   11    25     80.0    0.456     5
+     2    5    25     80.0    0.425     0
+Total extinctions: 0
+Generation time: 141.754 sec (148.848 average)
+Saving checkpoint to neat-checkpoint-11
+
+ ****** Running generation 12 ****** 
+
+New genome at : 2018-12-27 14:55:22.753052
+545 80.0
+New genome at : 2018-12-27 14:55:26.707689
+543 60.0
+New genome at : 2018-12-27 14:55:28.654816
+552 60.0
+New genome at : 2018-12-27 14:55:30.930647
+559 40.0
+New genome at : 2018-12-27 14:55:36.505295
+560 20.0
+New genome at : 2018-12-27 14:55:41.027608
+561 60.0
+New genome at : 2018-12-27 14:55:42.729159
+562 20.0
+New genome at : 2018-12-27 14:55:46.999818
+563 40.0
+New genome at : 2018-12-27 14:55:49.237485
+564 60.0
+New genome at : 2018-12-27 14:55:53.996704
+565 80.0
+New genome at : 2018-12-27 14:55:58.269287
+566 20.0
+New genome at : 2018-12-27 14:55:59.966829
+567 20.0
+New genome at : 2018-12-27 14:56:04.021926
+568 20.0
+New genome at : 2018-12-27 14:56:05.765346
+569 40.0
+New genome at : 2018-12-27 14:56:08.831605
+570 80.0
+New genome at : 2018-12-27 14:56:12.633999
+571 20.0
+New genome at : 2018-12-27 14:56:15.515805
+572 40.0
+New genome at : 2018-12-27 14:56:19.814102
+407 80.0
+New genome at : 2018-12-27 14:56:24.190226
+410 80.0
+New genome at : 2018-12-27 14:56:27.755525
+432 80.0
+New genome at : 2018-12-27 14:56:30.477754
+573 20.0
+New genome at : 2018-12-27 14:56:32.193455
+574 40.0
+New genome at : 2018-12-27 14:56:35.453678
+575 20.0
+New genome at : 2018-12-27 14:56:38.418128
+576 0.0
+New genome at : 2018-12-27 14:56:40.639519
+577 20.0
+New genome at : 2018-12-27 14:56:44.436580
+578 20.0
+New genome at : 2018-12-27 14:56:46.195287
+579 40.0
+New genome at : 2018-12-27 14:56:48.715673
+580 0.0
+New genome at : 2018-12-27 14:56:51.242295
+581 0.0
+New genome at : 2018-12-27 14:56:52.962262
+582 0.0
+New genome at : 2018-12-27 14:56:54.628860
+583 40.0
+New genome at : 2018-12-27 14:56:56.746678
+584 40.0
+New genome at : 2018-12-27 14:56:58.773224
+585 20.0
+New genome at : 2018-12-27 14:57:00.538809
+586 20.0
+New genome at : 2018-12-27 14:57:04.020931
+587 20.0
+New genome at : 2018-12-27 14:57:05.802003
+588 20.0
+New genome at : 2018-12-27 14:57:07.771281
+589 40.0
+New genome at : 2018-12-27 14:57:10.667194
+590 40.0
+New genome at : 2018-12-27 14:57:15.467897
+591 60.0
+New genome at : 2018-12-27 14:57:19.761093
+592 20.0
+New genome at : 2018-12-27 14:57:21.531710
+593 0.0
+New genome at : 2018-12-27 14:57:23.257431
+594 20.0
+New genome at : 2018-12-27 14:57:24.942789
+595 40.0
+New genome at : 2018-12-27 14:57:29.144975
+596 60.0
+New genome at : 2018-12-27 14:57:32.511432
+597 20.0
+New genome at : 2018-12-27 14:57:34.226443
+598 20.0
+New genome at : 2018-12-27 14:57:38.814648
+599 0.0
+New genome at : 2018-12-27 14:57:41.608143
+600 0.0
+New genome at : 2018-12-27 14:57:43.275745
+601 20.0
+New genome at : 2018-12-27 14:57:46.264950
+602 20.0
+Population's average fitness: 33.60000 stdev: 24.14622
+Best fitness: 80.00000 - size: (14, 5689) - species 2 - id 545
+Average adjusted fitness: 0.420
+Mean genetic distance 2.090, standard deviation 0.529
+Population of 50 members in 2 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   12    23     80.0    0.350     6
+     2    6    27     80.0    0.490     1
+Total extinctions: 0
+Generation time: 148.516 sec (150.683 average)
+
+ ****** Running generation 13 ****** 
+
+New genome at : 2018-12-27 14:57:51.268629
+545 80.0
+New genome at : 2018-12-27 14:57:55.132146
+565 80.0
+New genome at : 2018-12-27 14:57:59.465494
+570 80.0
+New genome at : 2018-12-27 14:58:03.295463
+603 20.0
+New genome at : 2018-12-27 14:58:07.893202
+604 80.0
+New genome at : 2018-12-27 14:58:11.660087
+605 0.0
+New genome at : 2018-12-27 14:58:13.358328
+606 20.0
+New genome at : 2018-12-27 14:58:17.914017
+607 40.0
+New genome at : 2018-12-27 14:58:19.799720
+608 0.0
+New genome at : 2018-12-27 14:58:21.669909
+609 20.0
+New genome at : 2018-12-27 14:58:23.358177
+610 60.0
+New genome at : 2018-12-27 14:58:27.289610
+611 20.0
+New genome at : 2018-12-27 14:58:30.105092
+612 0.0
+New genome at : 2018-12-27 14:58:32.955961
+613 60.0
+New genome at : 2018-12-27 14:58:37.537633
+614 20.0
+New genome at : 2018-12-27 14:58:42.952642
+615 60.0
+New genome at : 2018-12-27 14:58:46.419247
+616 60.0
+New genome at : 2018-12-27 14:58:48.166158
+617 60.0
+New genome at : 2018-12-27 14:58:52.846832
+618 80.0
+New genome at : 2018-12-27 14:58:55.052738
+619 40.0
+New genome at : 2018-12-27 14:58:57.603221
+620 80.0
+New genome at : 2018-12-27 14:59:01.844969
+621 20.0
+New genome at : 2018-12-27 14:59:04.096660
+622 100.0
+New genome at : 2018-12-27 14:59:08.175361
+623 20.0
+New genome at : 2018-12-27 14:59:12.812864
+624 20.0
+New genome at : 2018-12-27 14:59:14.499176
+625 0.0
+New genome at : 2018-12-27 14:59:16.644849
+626 80.0
+New genome at : 2018-12-27 14:59:21.935671
+407 80.0
+New genome at : 2018-12-27 14:59:26.583393
+410 80.0
+New genome at : 2018-12-27 14:59:30.156915
+596 60.0
+New genome at : 2018-12-27 14:59:33.574173
+627 40.0
+New genome at : 2018-12-27 14:59:35.605395
+628 40.0
+New genome at : 2018-12-27 14:59:37.324731
+629 0.0
+New genome at : 2018-12-27 14:59:40.090085
+630 20.0
+New genome at : 2018-12-27 14:59:41.830130
+631 20.0
+New genome at : 2018-12-27 14:59:46.258210
+632 40.0
+New genome at : 2018-12-27 14:59:48.454489
+633 20.0
+New genome at : 2018-12-27 14:59:51.497916
+634 60.0
+New genome at : 2018-12-27 14:59:56.969245
+635 20.0
+New genome at : 2018-12-27 14:59:59.016632
+636 0.0
+New genome at : 2018-12-27 15:00:00.890617
+637 40.0
+New genome at : 2018-12-27 15:00:03.978318
+638 20.0
+New genome at : 2018-12-27 15:00:09.506306
+639 40.0
+New genome at : 2018-12-27 15:00:13.165523
+640 0.0
+New genome at : 2018-12-27 15:00:15.931326
+641 20.0
+New genome at : 2018-12-27 15:00:18.088579
+642 80.0
+New genome at : 2018-12-27 15:00:22.107893
+643 60.0
+New genome at : 2018-12-27 15:00:26.211528
+644 60.0
+New genome at : 2018-12-27 15:00:30.576808
+645 60.0
+New genome at : 2018-12-27 15:00:33.508898
+646 20.0
+Population's average fitness: 41.60000 stdev: 28.52087
+Best fitness: 100.00000 - size: (14, 5528) - species 2 - id 622
+Average adjusted fitness: 0.414
+Mean genetic distance 2.155, standard deviation 0.569
+Population of 50 members in 2 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   13    24     80.0    0.383     7
+     2    7    26    100.0    0.444     0
+Total extinctions: 0
+Generation time: 166.571 sec (153.726 average)
+Saving checkpoint to neat-checkpoint-13
+
+ ****** Running generation 14 ****** 
+
+New genome at : 2018-12-27 15:00:38.999048
+407 80.0
+New genome at : 2018-12-27 15:00:43.589361
+642 80.0
+New genome at : 2018-12-27 15:00:47.511129
+410 80.0
+New genome at : 2018-12-27 15:00:51.019372
+647 40.0
+New genome at : 2018-12-27 15:00:53.480731
+648 80.0
+New genome at : 2018-12-27 15:00:58.693908
+649 40.0
+New genome at : 2018-12-27 15:01:00.554350
+650 0.0
+New genome at : 2018-12-27 15:01:02.424041
+651 20.0
+New genome at : 2018-12-27 15:01:04.298878
+652 60.0
+New genome at : 2018-12-27 15:01:06.519605
+653 60.0
+New genome at : 2018-12-27 15:01:08.892903
+654 40.0
+New genome at : 2018-12-27 15:01:10.740741
+655 20.0
+New genome at : 2018-12-27 15:01:15.065473
+656 0.0
+New genome at : 2018-12-27 15:01:17.075159
+657 20.0
+New genome at : 2018-12-27 15:01:21.240201
+658 20.0
+New genome at : 2018-12-27 15:01:24.926335
+659 120.0
+New genome at : 2018-12-27 15:01:33.138244
+660 20.0
+New genome at : 2018-12-27 15:01:34.996615
+661 20.0
+New genome at : 2018-12-27 15:01:40.217982
+662 0.0
+New genome at : 2018-12-27 15:01:42.126232
+663 40.0
+New genome at : 2018-12-27 15:01:44.050065
+664 60.0
+New genome at : 2018-12-27 15:01:48.694667
+665 40.0
+New genome at : 2018-12-27 15:01:52.706300
+666 60.0
+New genome at : 2018-12-27 15:01:58.014138
+667 80.0
+New genome at : 2018-12-27 15:02:00.595214
+622 100.0
+New genome at : 2018-12-27 15:02:04.495785
+545 80.0
+New genome at : 2018-12-27 15:02:08.386107
+565 80.0
+New genome at : 2018-12-27 15:02:12.709984
+668 20.0
+New genome at : 2018-12-27 15:02:14.382168
+669 60.0
+New genome at : 2018-12-27 15:02:16.308229
+670 0.0
+New genome at : 2018-12-27 15:02:19.128145
+671 60.0
+New genome at : 2018-12-27 15:02:23.091292
+672 20.0
+New genome at : 2018-12-27 15:02:27.830173
+673 20.0
+New genome at : 2018-12-27 15:02:31.575757
+674 20.0
+New genome at : 2018-12-27 15:02:35.840047
+675 60.0
+New genome at : 2018-12-27 15:02:39.915186
+676 0.0
+New genome at : 2018-12-27 15:02:41.855398
+677 20.0
+New genome at : 2018-12-27 15:02:46.941104
+678 20.0
+New genome at : 2018-12-27 15:02:52.145633
+679 20.0
+New genome at : 2018-12-27 15:02:53.912549
+680 20.0
+New genome at : 2018-12-27 15:02:58.251584
+681 20.0
+New genome at : 2018-12-27 15:02:59.900849
+682 20.0
+New genome at : 2018-12-27 15:03:01.621196
+683 20.0
+New genome at : 2018-12-27 15:03:06.192691
+684 20.0
+New genome at : 2018-12-27 15:03:08.063140
+685 0.0
+New genome at : 2018-12-27 15:03:09.717609
+686 40.0
+New genome at : 2018-12-27 15:03:12.121339
+687 20.0
+New genome at : 2018-12-27 15:03:17.553410
+688 20.0
+New genome at : 2018-12-27 15:03:22.134328
+689 40.0
+New genome at : 2018-12-27 15:03:24.126691
+690 20.0
+Population's average fitness: 38.00000 stdev: 28.91366
+Best fitness: 120.00000 - size: (15, 5463) - species 1 - id 659
+Average adjusted fitness: 0.319
+Mean genetic distance 2.202, standard deviation 0.580
+Population of 50 members in 2 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   14    27    120.0    0.375     0
+     2    8    23    100.0    0.263     1
+Total extinctions: 0
+Generation time: 172.484 sec (156.442 average)
+
+ ****** Running generation 15 ****** 
+
+New genome at : 2018-12-27 15:03:31.483139
+622 100.0
+New genome at : 2018-12-27 15:03:35.325007
+545 80.0
+New genome at : 2018-12-27 15:03:39.232192
+565 80.0
+New genome at : 2018-12-27 15:03:43.490274
+691 40.0
+New genome at : 2018-12-27 15:03:48.089297
+692 40.0
+New genome at : 2018-12-27 15:03:51.982264
+693 20.0
+New genome at : 2018-12-27 15:03:55.665403
+694 20.0
+New genome at : 2018-12-27 15:03:57.360814
+695 80.0
+New genome at : 2018-12-27 15:04:01.143367
+696 0.0
+New genome at : 2018-12-27 15:04:03.985199
+697 40.0
+New genome at : 2018-12-27 15:04:05.921057
+698 100.0
+New genome at : 2018-12-27 15:04:10.562808
+699 40.0
+New genome at : 2018-12-27 15:04:13.551435
+700 20.0
+New genome at : 2018-12-27 15:04:17.214261
+701 40.0
+New genome at : 2018-12-27 15:04:21.002820
+702 20.0
+New genome at : 2018-12-27 15:04:24.905665
+703 20.0
+New genome at : 2018-12-27 15:04:26.597449
+704 20.0
+New genome at : 2018-12-27 15:04:31.078891
+705 40.0
+New genome at : 2018-12-27 15:04:34.118654
+706 20.0
+New genome at : 2018-12-27 15:04:35.785860
+707 20.0
+New genome at : 2018-12-27 15:04:40.810922
+708 40.0
+New genome at : 2018-12-27 15:04:42.735605
+709 20.0
+New genome at : 2018-12-27 15:04:47.279050
+710 20.0
+New genome at : 2018-12-27 15:04:50.987477
+659 120.0
+New genome at : 2018-12-27 15:04:59.207394
+407 80.0
+New genome at : 2018-12-27 15:05:03.729680
+642 80.0
+New genome at : 2018-12-27 15:05:07.670273
+711 0.0
+New genome at : 2018-12-27 15:05:10.453044
+712 20.0
+New genome at : 2018-12-27 15:05:14.889431
+713 0.0
+New genome at : 2018-12-27 15:05:16.761505
+714 0.0
+New genome at : 2018-12-27 15:05:18.825811
+715 40.0
+New genome at : 2018-12-27 15:05:20.736732
+716 40.0
+New genome at : 2018-12-27 15:05:26.257135
+717 20.0
+New genome at : 2018-12-27 15:05:31.701853
+718 0.0
+New genome at : 2018-12-27 15:05:34.433518
+719 80.0
+New genome at : 2018-12-27 15:05:39.964730
+720 40.0
+New genome at : 2018-12-27 15:05:42.483512
+721 40.0
+New genome at : 2018-12-27 15:05:44.650445
+722 0.0
+New genome at : 2018-12-27 15:05:46.304912
+723 0.0
+New genome at : 2018-12-27 15:05:48.152545
+724 120.0
+New genome at : 2018-12-27 15:05:56.535745
+725 0.0
+New genome at : 2018-12-27 15:05:58.326114
+726 40.0
+New genome at : 2018-12-27 15:06:02.104867
+727 40.0
+New genome at : 2018-12-27 15:06:04.310568
+728 20.0
+New genome at : 2018-12-27 15:06:07.370101
+729 20.0
+New genome at : 2018-12-27 15:06:09.175983
+730 40.0
+New genome at : 2018-12-27 15:06:11.222592
+731 40.0
+New genome at : 2018-12-27 15:06:15.962453
+732 40.0
+New genome at : 2018-12-27 15:06:17.948610
+733 20.0
+New genome at : 2018-12-27 15:06:23.421324
+734 40.0
+Population's average fitness: 38.00000 stdev: 31.04835
+Best fitness: 120.00000 - size: (15, 5463) - species 1 - id 659
+Average adjusted fitness: 0.318
+Mean genetic distance 2.143, standard deviation 0.601
+Population of 50 members in 2 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   15    25    120.0    0.302     1
+     2    9    25    100.0    0.333     2
+Total extinctions: 0
+Generation time: 176.669 sec (160.521 average)
+Saving checkpoint to neat-checkpoint-15
+
+ ****** Running generation 16 ****** 
+
+New genome at : 2018-12-27 15:06:29.360489
+698 100.0
+New genome at : 2018-12-27 15:06:33.968587
+622 100.0
+New genome at : 2018-12-27 15:06:37.882067
+545 80.0
+New genome at : 2018-12-27 15:06:41.812080
+735 20.0
+New genome at : 2018-12-27 15:06:43.502398
+736 0.0
+New genome at : 2018-12-27 15:06:45.131840
+737 20.0
+New genome at : 2018-12-27 15:06:49.020515
+738 0.0
+New genome at : 2018-12-27 15:06:50.702731
+739 20.0
+New genome at : 2018-12-27 15:06:54.644041
+740 40.0
+New genome at : 2018-12-27 15:06:56.915288
+741 40.0
+New genome at : 2018-12-27 15:07:00.971650
+742 20.0
+New genome at : 2018-12-27 15:07:04.582432
+743 20.0
+New genome at : 2018-12-27 15:07:06.247251
+744 20.0
+New genome at : 2018-12-27 15:07:08.024460
+745 40.0
+New genome at : 2018-12-27 15:07:12.421126
+746 20.0
+New genome at : 2018-12-27 15:07:17.032040
+747 100.0
+New genome at : 2018-12-27 15:07:21.206113
+748 20.0
+New genome at : 2018-12-27 15:07:22.915569
+749 0.0
+New genome at : 2018-12-27 15:07:25.422763
+750 0.0
+New genome at : 2018-12-27 15:07:27.130973
+751 20.0
+New genome at : 2018-12-27 15:07:29.148751
+752 40.0
+New genome at : 2018-12-27 15:07:31.333816
+753 60.0
+New genome at : 2018-12-27 15:07:35.055247
+754 20.0
+New genome at : 2018-12-27 15:07:36.842003
+755 80.0
+New genome at : 2018-12-27 15:07:40.503500
+756 0.0
+New genome at : 2018-12-27 15:07:42.220999
+659 120.0
+New genome at : 2018-12-27 15:07:50.456909
+724 120.0
+New genome at : 2018-12-27 15:07:58.831699
+407 80.0
+New genome at : 2018-12-27 15:08:03.240395
+757 80.0
+New genome at : 2018-12-27 15:08:06.397765
+758 40.0
+New genome at : 2018-12-27 15:08:08.281123
+759 20.0
+New genome at : 2018-12-27 15:08:09.935290
+760 0.0
+New genome at : 2018-12-27 15:08:12.755320
+761 40.0
+New genome at : 2018-12-27 15:08:18.109352
+762 80.0
+New genome at : 2018-12-27 15:08:25.723263
+763 60.0
+New genome at : 2018-12-27 15:08:30.882138
+764 20.0
+New genome at : 2018-12-27 15:08:32.553218
+765 60.0
+New genome at : 2018-12-27 15:08:37.776346
+766 20.0
+New genome at : 2018-12-27 15:08:39.932648
+767 40.0
+New genome at : 2018-12-27 15:08:41.797301
+768 20.0
+New genome at : 2018-12-27 15:08:46.459104
+769 40.0
+New genome at : 2018-12-27 15:08:50.682813
+770 60.0
+New genome at : 2018-12-27 15:08:52.588482
+771 60.0
+New genome at : 2018-12-27 15:08:56.720741
+772 20.0
+New genome at : 2018-12-27 15:08:58.423826
+773 20.0
+New genome at : 2018-12-27 15:09:00.404244
+774 40.0
+New genome at : 2018-12-27 15:09:02.375496
+775 40.0
+New genome at : 2018-12-27 15:09:04.252337
+776 40.0
+New genome at : 2018-12-27 15:09:08.172522
+777 0.0
+New genome at : 2018-12-27 15:09:10.036714
+778 60.0
+Population's average fitness: 41.20000 stdev: 32.10234
+Best fitness: 120.00000 - size: (15, 5463) - species 1 - id 659
+Average adjusted fitness: 0.343
+Mean genetic distance 2.121, standard deviation 0.620
+Population of 50 members in 2 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   16    27    120.0    0.393     2
+     2   10    23    100.0    0.293     3
+Total extinctions: 0
+Generation time: 168.910 sec (162.483 average)
+
+ ****** Running generation 17 ****** 
+
+New genome at : 2018-12-27 15:09:18.270967
+698 100.0
+New genome at : 2018-12-27 15:09:22.926481
+747 100.0
+New genome at : 2018-12-27 15:09:26.999504
+622 100.0
+New genome at : 2018-12-27 15:09:30.894458
+779 20.0
+New genome at : 2018-12-27 15:09:32.557469
+780 20.0
+New genome at : 2018-12-27 15:09:34.180869
+781 20.0
+New genome at : 2018-12-27 15:09:35.879331
+782 60.0
+New genome at : 2018-12-27 15:09:39.640007
+783 40.0
+New genome at : 2018-12-27 15:09:41.677843
+784 20.0
+New genome at : 2018-12-27 15:09:45.509790
+785 80.0
+New genome at : 2018-12-27 15:09:54.091856
+786 20.0
+New genome at : 2018-12-27 15:10:03.390239
+787 0.0
+New genome at : 2018-12-27 15:10:06.836366
+788 0.0
+New genome at : 2018-12-27 15:10:10.762071
+789 0.0
+New genome at : 2018-12-27 15:10:13.604231
+790 20.0
+New genome at : 2018-12-27 15:10:23.028950
+791 20.0
+New genome at : 2018-12-27 15:10:26.295690
+792 80.0
+New genome at : 2018-12-27 15:10:34.859616
+793 40.0
+New genome at : 2018-12-27 15:10:39.745983
+794 40.0
+New genome at : 2018-12-27 15:10:43.666348
+795 20.0
+New genome at : 2018-12-27 15:10:47.884847
+796 60.0
+New genome at : 2018-12-27 15:10:55.721437
+797 100.0
+New genome at : 2018-12-27 15:11:03.736885
+798 20.0
+New genome at : 2018-12-27 15:11:07.735722
+659 120.0
+New genome at : 2018-12-27 15:11:24.822173
+724 120.0
+New genome at : 2018-12-27 15:11:41.635743
+407 80.0
+New genome at : 2018-12-27 15:11:50.589367
+799 20.0
+New genome at : 2018-12-27 15:11:54.753855
+800 100.0
+New genome at : 2018-12-27 15:12:11.039822
+801 40.0
+New genome at : 2018-12-27 15:12:19.829133
+802 40.0
+New genome at : 2018-12-27 15:12:23.994904
+803 0.0
+New genome at : 2018-12-27 15:12:27.215295
+804 40.0
+New genome at : 2018-12-27 15:12:33.514137
+805 0.0
+New genome at : 2018-12-27 15:12:38.055146
+806 0.0
+New genome at : 2018-12-27 15:12:41.677579
+807 100.0
+New genome at : 2018-12-27 15:12:49.439303
+808 40.0
+New genome at : 2018-12-27 15:12:54.127701
+809 40.0
+New genome at : 2018-12-27 15:12:57.378992
+810 20.0
+New genome at : 2018-12-27 15:13:01.244797
+811 40.0
+New genome at : 2018-12-27 15:13:09.117237
+812 20.0
+New genome at : 2018-12-27 15:13:12.681448
+813 20.0
+New genome at : 2018-12-27 15:13:20.743211
+814 40.0
+New genome at : 2018-12-27 15:13:28.738418
+815 0.0
+New genome at : 2018-12-27 15:13:32.889644
+816 0.0
+New genome at : 2018-12-27 15:13:36.498574
+817 20.0
+New genome at : 2018-12-27 15:13:44.524179
+818 20.0
+New genome at : 2018-12-27 15:13:49.918773
+819 20.0
+New genome at : 2018-12-27 15:13:54.337268
+820 60.0
+New genome at : 2018-12-27 15:14:00.328617
+821 40.0
+New genome at : 2018-12-27 15:14:04.228188
+822 40.0
+Population's average fitness: 41.20000 stdev: 34.50449
+Best fitness: 120.00000 - size: (15, 5463) - species 1 - id 659
+Average adjusted fitness: 0.344
+Mean genetic distance 2.145, standard deviation 0.588
+Population of 50 members in 2 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   17    26    120.0    0.333     3
+     2   11    24    100.0    0.355     4
+Total extinctions: 0
+Generation time: 297.942 sec (178.322 average)
+Saving checkpoint to neat-checkpoint-17
+
+ ****** Running generation 18 ****** 
+
+New genome at : 2018-12-27 15:14:18.728881
+797 100.0
+New genome at : 2018-12-27 15:14:28.225386
+698 100.0
+New genome at : 2018-12-27 15:14:39.251453
+747 100.0
+New genome at : 2018-12-27 15:14:47.374759
+823 20.0
+New genome at : 2018-12-27 15:14:56.158025
+824 20.0
+New genome at : 2018-12-27 15:15:00.037655
+825 20.0
+New genome at : 2018-12-27 15:15:08.018768
+826 40.0
+New genome at : 2018-12-27 15:15:15.425570
+827 20.0
+New genome at : 2018-12-27 15:15:18.289298
+828 20.0
+New genome at : 2018-12-27 15:15:22.108287
+829 20.0
+New genome at : 2018-12-27 15:15:30.237421
+830 0.0
+New genome at : 2018-12-27 15:15:33.505237
+831 40.0
+New genome at : 2018-12-27 15:15:42.049027
+832 20.0
+New genome at : 2018-12-27 15:15:45.831318
+833 60.0
+New genome at : 2018-12-27 15:15:54.154201
+834 20.0
+New genome at : 2018-12-27 15:15:57.286221
+835 80.0
+New genome at : 2018-12-27 15:16:06.219063
+836 20.0
+New genome at : 2018-12-27 15:16:09.418952
+837 20.0
+New genome at : 2018-12-27 15:16:13.305982
+838 40.0
+New genome at : 2018-12-27 15:16:17.069907
+839 20.0
+New genome at : 2018-12-27 15:16:20.777984
+840 20.0
+New genome at : 2018-12-27 15:16:23.740043
+841 0.0
+New genome at : 2018-12-27 15:16:29.654597
+842 20.0
+New genome at : 2018-12-27 15:16:32.541566
+843 20.0
+New genome at : 2018-12-27 15:16:36.649564
+724 120.0
+New genome at : 2018-12-27 15:16:53.128177
+659 120.0
+New genome at : 2018-12-27 15:17:09.482427
+800 100.0
+New genome at : 2018-12-27 15:17:24.690422
+844 0.0
+New genome at : 2018-12-27 15:17:29.660367
+845 60.0
+New genome at : 2018-12-27 15:17:33.130353
+846 40.0
+New genome at : 2018-12-27 15:17:37.498824
+847 140.0
+New genome at : 2018-12-27 15:17:53.419768
+848 20.0
+New genome at : 2018-12-27 15:17:56.496591
+849 0.0
+New genome at : 2018-12-27 15:18:00.241208
+850 40.0
+New genome at : 2018-12-27 15:18:03.327459
+851 20.0
+New genome at : 2018-12-27 15:18:07.302419
+852 20.0
+New genome at : 2018-12-27 15:18:16.549517
+853 80.0
+New genome at : 2018-12-27 15:18:23.608515
+854 80.0
+New genome at : 2018-12-27 15:18:29.369338
+855 0.0
+New genome at : 2018-12-27 15:18:35.875100
+856 20.0
+New genome at : 2018-12-27 15:18:39.391155
+857 20.0
+New genome at : 2018-12-27 15:18:43.454620
+858 100.0
+New genome at : 2018-12-27 15:19:00.519533
+859 0.0
+New genome at : 2018-12-27 15:19:04.354509
+860 40.0
+New genome at : 2018-12-27 15:19:08.723136
+861 40.0
+New genome at : 2018-12-27 15:19:19.575090
+862 40.0
+New genome at : 2018-12-27 15:19:29.701186
+863 60.0
+New genome at : 2018-12-27 15:19:39.756735
+864 80.0
+New genome at : 2018-12-27 15:19:46.419149
+865 0.0
+New genome at : 2018-12-27 15:19:50.702368
+866 60.0
+Population's average fitness: 42.80000 stdev: 36.66279
+Best fitness: 140.00000 - size: (16, 5362) - species 1 - id 847
+Average adjusted fitness: 0.304
+Mean genetic distance 2.128, standard deviation 0.673
+Population of 50 members in 2 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   18    28    140.0    0.357     0
+     2   12    22    100.0    0.250     5
+Total extinctions: 0
+Generation time: 350.631 sec (193.183 average)
+Saving checkpoint to neat-checkpoint-18
+
+ ****** Running generation 19 ****** 
+
+New genome at : 2018-12-27 15:20:12.743741
+797 100.0
+New genome at : 2018-12-27 15:20:20.640777
+698 100.0
+New genome at : 2018-12-27 15:20:30.334830
+747 100.0
+New genome at : 2018-12-27 15:20:39.077927
+867 20.0
+New genome at : 2018-12-27 15:20:43.097295
+868 40.0
+New genome at : 2018-12-27 15:20:47.097229
+869 20.0
+New genome at : 2018-12-27 15:20:56.664029
+870 20.0
+New genome at : 2018-12-27 15:21:00.034558
+871 40.0
+New genome at : 2018-12-27 15:21:08.756224
+872 20.0
+New genome at : 2018-12-27 15:21:12.517854
+873 40.0
+New genome at : 2018-12-27 15:21:19.915102
+874 60.0
+New genome at : 2018-12-27 15:21:29.477312
+875 0.0
+New genome at : 2018-12-27 15:21:32.854390
+876 0.0
+New genome at : 2018-12-27 15:21:36.614824
+877 40.0
+New genome at : 2018-12-27 15:21:45.289341
+878 60.0
+New genome at : 2018-12-27 15:21:53.135037
+879 40.0
+New genome at : 2018-12-27 15:22:02.868520
+880 20.0
+New genome at : 2018-12-27 15:22:11.651340
+881 20.0
+New genome at : 2018-12-27 15:22:14.782640
+882 0.0
+New genome at : 2018-12-27 15:22:18.608202
+883 100.0
+New genome at : 2018-12-27 15:22:26.735612
+884 60.0
+New genome at : 2018-12-27 15:22:34.262392
+885 0.0
+New genome at : 2018-12-27 15:22:37.457464
+847 140.0
+New genome at : 2018-12-27 15:22:54.145271
+659 120.0
+New genome at : 2018-12-27 15:23:11.636016
+724 120.0
+New genome at : 2018-12-27 15:23:26.810511
+886 0.0
+New genome at : 2018-12-27 15:23:29.877698
+887 80.0
+New genome at : 2018-12-27 15:23:36.618052
+888 40.0
+New genome at : 2018-12-27 15:23:40.058734
+889 60.0
+New genome at : 2018-12-27 15:23:46.797175
+890 0.0
+New genome at : 2018-12-27 15:23:50.677459
+891 40.0
+New genome at : 2018-12-27 15:23:56.441998
+892 20.0
+New genome at : 2018-12-27 15:23:59.145005
+893 40.0
+New genome at : 2018-12-27 15:24:02.794066
+894 0.0
+New genome at : 2018-12-27 15:24:05.626193
+895 60.0
+New genome at : 2018-12-27 15:24:10.688281
+896 60.0
+New genome at : 2018-12-27 15:24:17.075008
+897 20.0
+New genome at : 2018-12-27 15:24:20.072301
+898 60.0
+New genome at : 2018-12-27 15:24:23.442967
+899 60.0
+New genome at : 2018-12-27 15:24:31.160248
+900 60.0
+New genome at : 2018-12-27 15:24:37.859745
+901 60.0
+New genome at : 2018-12-27 15:24:41.690592
+902 40.0
+New genome at : 2018-12-27 15:24:44.750262
+903 60.0
+New genome at : 2018-12-27 15:24:51.540939
+904 60.0
+New genome at : 2018-12-27 15:24:55.193653
+905 0.0
+New genome at : 2018-12-27 15:24:58.544066
+906 20.0
+New genome at : 2018-12-27 15:25:05.225219
+907 0.0
+New genome at : 2018-12-27 15:25:08.265004
+908 40.0
+New genome at : 2018-12-27 15:25:16.749690
+909 80.0
+New genome at : 2018-12-27 15:25:22.680260
+910 40.0
+Population's average fitness: 45.60000 stdev: 35.10897
+Best fitness: 140.00000 - size: (16, 5362) - species 1 - id 847
+Average adjusted fitness: 0.322
+Mean genetic distance 2.092, standard deviation 0.699
+Population of 50 members in 2 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   19    27    140.0    0.352     1
+     2   13    23    100.0    0.292     6
+Total extinctions: 0
+Generation time: 320.347 sec (209.462 average)
+Saving checkpoint to neat-checkpoint-19
+
+ ****** Running generation 20 ****** 
+
+New genome at : 2018-12-27 15:25:35.799410
+698 100.0
+New genome at : 2018-12-27 15:25:45.058488
+797 100.0
+New genome at : 2018-12-27 15:25:52.633172
+747 100.0
+New genome at : 2018-12-27 15:26:01.434560
+911 20.0
+New genome at : 2018-12-27 15:26:04.950918
+912 20.0
+New genome at : 2018-12-27 15:26:12.723909
+913 40.0
+New genome at : 2018-12-27 15:26:16.975172
+914 0.0
+New genome at : 2018-12-27 15:26:20.209489
+915 0.0
+New genome at : 2018-12-27 15:26:24.088479
+916 0.0
+New genome at : 2018-12-27 15:26:29.665783
+917 60.0
+New genome at : 2018-12-27 15:26:39.236322
+918 20.0
+New genome at : 2018-12-27 15:26:42.532767
+919 60.0
+New genome at : 2018-12-27 15:26:50.262327
+920 60.0
+New genome at : 2018-12-27 15:26:58.081352
+921 0.0
+New genome at : 2018-12-27 15:27:01.946895
+922 80.0
+New genome at : 2018-12-27 15:27:05.953336
+923 60.0
+New genome at : 2018-12-27 15:27:16.219368
+924 60.0
+New genome at : 2018-12-27 15:27:25.141246
+925 20.0
+New genome at : 2018-12-27 15:27:34.662079
+926 100.0
+New genome at : 2018-12-27 15:27:44.575786
+927 40.0
+New genome at : 2018-12-27 15:27:50.821322
+928 20.0
+New genome at : 2018-12-27 15:28:00.760586
+929 20.0
+New genome at : 2018-12-27 15:28:10.338705
+930 0.0
+New genome at : 2018-12-27 15:28:15.837323
+847 140.0
+New genome at : 2018-12-27 15:28:39.263496
+659 120.0
+New genome at : 2018-12-27 15:28:58.655445
+724 120.0
+New genome at : 2018-12-27 15:29:17.192001
+931 40.0
+New genome at : 2018-12-27 15:29:26.160666
+932 120.0
+New genome at : 2018-12-27 15:29:46.576246
+933 40.0
+New genome at : 2018-12-27 15:29:50.472403
+934 20.0
+New genome at : 2018-12-27 15:29:54.512294
+935 120.0
+New genome at : 2018-12-27 15:30:11.445906
+936 20.0
+New genome at : 2018-12-27 15:30:15.917150
+937 0.0
+New genome at : 2018-12-27 15:30:21.616029
+938 20.0
+New genome at : 2018-12-27 15:30:25.618092
+939 0.0
+New genome at : 2018-12-27 15:30:31.784761
+940 60.0
+New genome at : 2018-12-27 15:30:41.738965
+941 40.0
+New genome at : 2018-12-27 15:30:46.273036
+942 20.0
+New genome at : 2018-12-27 15:30:49.335167
+943 60.0
+New genome at : 2018-12-27 15:30:57.580134
+944 160.0
+New genome at : 2018-12-27 15:31:16.178084
+945 20.0
+New genome at : 2018-12-27 15:31:19.191463
+946 0.0
+New genome at : 2018-12-27 15:31:24.949208
+947 80.0
+New genome at : 2018-12-27 15:31:31.222224
+948 40.0
+New genome at : 2018-12-27 15:31:34.701157
+949 20.0
+New genome at : 2018-12-27 15:31:38.989382
+950 0.0
+New genome at : 2018-12-27 15:31:42.052560
+951 0.0
+New genome at : 2018-12-27 15:31:46.311826
+952 100.0
+New genome at : 2018-12-27 15:31:55.895827
+953 40.0
+New genome at : 2018-12-27 15:32:00.560538
+954 120.0
+Population's average fitness: 50.00000 stdev: 43.86342
+Best fitness: 160.00000 - size: (16, 5225) - species 1 - id 944
+Average adjusted fitness: 0.309
+Mean genetic distance 1.997, standard deviation 0.779
+Population of 50 members in 2 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   20    28    160.0    0.352     0
+     2   14    22    100.0    0.266     7
+Total extinctions: 0
+Generation time: 407.496 sec (235.132 average)
+Saving checkpoint to neat-checkpoint-20
+
+ ****** Running generation 21 ****** 
+
+New genome at : 2018-12-27 15:32:25.877372
+698 100.0
+New genome at : 2018-12-27 15:32:35.085295
+797 100.0
+New genome at : 2018-12-27 15:32:43.029129
+926 100.0
+New genome at : 2018-12-27 15:32:51.758148
+955 100.0
+New genome at : 2018-12-27 15:32:59.927833
+956 0.0
+New genome at : 2018-12-27 15:33:03.044913
+957 20.0
+New genome at : 2018-12-27 15:33:06.980291
+958 0.0
+New genome at : 2018-12-27 15:33:10.116487
+959 20.0
+New genome at : 2018-12-27 15:33:17.548191
+960 40.0
+New genome at : 2018-12-27 15:33:22.053362
+961 20.0
+New genome at : 2018-12-27 15:33:27.263359
+962 40.0
+New genome at : 2018-12-27 15:33:37.720083
+963 60.0
+New genome at : 2018-12-27 15:33:49.313393
+964 60.0
+New genome at : 2018-12-27 15:33:56.620827
+965 0.0
+New genome at : 2018-12-27 15:34:00.491163
+966 60.0
+New genome at : 2018-12-27 15:34:08.460864
+967 40.0
+New genome at : 2018-12-27 15:34:12.820647
+968 20.0
+New genome at : 2018-12-27 15:34:20.212522
+969 40.0
+New genome at : 2018-12-27 15:34:25.322732
+970 60.0
+New genome at : 2018-12-27 15:34:34.213637
+971 20.0
+New genome at : 2018-12-27 15:34:41.594107
+972 100.0
+New genome at : 2018-12-27 15:34:50.010946
+973 60.0
+New genome at : 2018-12-27 15:34:59.627898
+944 160.0
+New genome at : 2018-12-27 15:35:16.519268
+847 140.0
+New genome at : 2018-12-27 15:35:32.172476
+932 120.0
+New genome at : 2018-12-27 15:35:47.594414
+974 0.0
+New genome at : 2018-12-27 15:35:52.082610
+975 20.0
+New genome at : 2018-12-27 15:35:54.900989
+976 0.0
+New genome at : 2018-12-27 15:35:59.349614
+977 0.0
+New genome at : 2018-12-27 15:36:02.889734
+978 60.0
+New genome at : 2018-12-27 15:36:08.008946
+979 120.0
+New genome at : 2018-12-27 15:36:23.362087
+980 120.0
+New genome at : 2018-12-27 15:36:38.950201
+981 20.0
+New genome at : 2018-12-27 15:36:46.199948
+982 40.0
+New genome at : 2018-12-27 15:36:50.333134
+983 0.0
+New genome at : 2018-12-27 15:36:54.067082
+984 60.0
+New genome at : 2018-12-27 15:37:04.411750
+985 20.0
+New genome at : 2018-12-27 15:37:07.968750
+986 0.0
+New genome at : 2018-12-27 15:37:11.629629
+987 20.0
+New genome at : 2018-12-27 15:37:19.239940
+988 0.0
+New genome at : 2018-12-27 15:37:22.477609
+989 0.0
+New genome at : 2018-12-27 15:37:25.689337
+990 60.0
+New genome at : 2018-12-27 15:37:32.260581
+991 0.0
+New genome at : 2018-12-27 15:37:37.057491
+992 80.0
+New genome at : 2018-12-27 15:37:47.639393
+993 60.0
+New genome at : 2018-12-27 15:37:57.392196
+994 40.0
+New genome at : 2018-12-27 15:38:06.069633
+995 40.0
+New genome at : 2018-12-27 15:38:12.155089
+996 40.0
+New genome at : 2018-12-27 15:38:21.614765
+997 40.0
+New genome at : 2018-12-27 15:38:30.992901
+998 0.0
+Population's average fitness: 46.40000 stdev: 41.84543
+Best fitness: 160.00000 - size: (16, 5225) - species 1 - id 944
+
+Species 2 with 22 members is stagnated: removing it
+Average adjusted fitness: 0.281
+Mean genetic distance 1.257, standard deviation 0.285
+Population of 50 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   21    50    160.0    0.281     1
+Total extinctions: 0
+Generation time: 376.697 sec (258.626 average)
+Saving checkpoint to neat-checkpoint-21
+
+ ****** Running generation 22 ****** 
+
+New genome at : 2018-12-27 15:38:45.354228
+944 160.0
+New genome at : 2018-12-27 15:39:04.555290
+847 140.0
+New genome at : 2018-12-27 15:39:20.561115
+932 120.0
+New genome at : 2018-12-27 15:39:29.265224
+999 0.0
+New genome at : 2018-12-27 15:39:31.688548
+1000 0.0
+New genome at : 2018-12-27 15:39:33.827238
+1001 40.0
+New genome at : 2018-12-27 15:39:35.787114
+1002 0.0
+New genome at : 2018-12-27 15:39:38.353349
+1003 0.0
+New genome at : 2018-12-27 15:39:40.134233
+1004 20.0
+New genome at : 2018-12-27 15:39:41.811355
+1005 40.0
+New genome at : 2018-12-27 15:39:46.240140
+1006 0.0
+New genome at : 2018-12-27 15:39:48.547767
+1007 0.0
+New genome at : 2018-12-27 15:39:50.730301
+1008 0.0
+New genome at : 2018-12-27 15:39:53.787410
+1009 40.0
+New genome at : 2018-12-27 15:39:58.385716
+1010 40.0
+New genome at : 2018-12-27 15:40:01.129544
+1011 60.0
+New genome at : 2018-12-27 15:40:05.700007
+1012 0.0
+New genome at : 2018-12-27 15:40:08.823343
+1013 20.0
+New genome at : 2018-12-27 15:40:13.808133
+1014 20.0
+New genome at : 2018-12-27 15:40:18.318174
+1015 60.0
+New genome at : 2018-12-27 15:40:23.415287
+1016 40.0
+New genome at : 2018-12-27 15:40:27.224714
+1017 20.0
+New genome at : 2018-12-27 15:40:29.751188
+1018 20.0
+New genome at : 2018-12-27 15:40:31.459269
+1019 0.0
+New genome at : 2018-12-27 15:40:33.228067
+1020 20.0
+New genome at : 2018-12-27 15:40:34.820765
+1021 80.0
+New genome at : 2018-12-27 15:40:40.223689
+1022 20.0
+New genome at : 2018-12-27 15:40:42.573686
+1023 0.0
+New genome at : 2018-12-27 15:40:45.517396
+1024 0.0
+New genome at : 2018-12-27 15:40:47.455356
+1025 20.0
+New genome at : 2018-12-27 15:40:49.085196
+1026 160.0
+New genome at : 2018-12-27 15:40:57.133849
+1027 140.0
+New genome at : 2018-12-27 15:41:05.218578
+1028 120.0
+New genome at : 2018-12-27 15:41:12.900553
+1029 0.0
+New genome at : 2018-12-27 15:41:14.616144
+1030 40.0
+New genome at : 2018-12-27 15:41:18.956212
+1031 40.0
+New genome at : 2018-12-27 15:41:20.804630
+1032 0.0
+New genome at : 2018-12-27 15:41:22.785963
+1033 40.0
+New genome at : 2018-12-27 15:41:27.193729
+1034 0.0
+New genome at : 2018-12-27 15:41:29.152025
+1035 40.0
+New genome at : 2018-12-27 15:41:32.730228
+1036 20.0
+New genome at : 2018-12-27 15:41:34.832300
+1037 40.0
+New genome at : 2018-12-27 15:41:39.531632
+1038 40.0
+New genome at : 2018-12-27 15:41:41.754602
+1039 20.0
+New genome at : 2018-12-27 15:41:45.518426
+1040 60.0
+New genome at : 2018-12-27 15:41:50.137267
+1041 80.0
+New genome at : 2018-12-27 15:41:55.405595
+1042 20.0
+New genome at : 2018-12-27 15:41:59.021774
+1043 0.0
+New genome at : 2018-12-27 15:42:00.822719
+1044 20.0
+New genome at : 2018-12-27 15:42:04.481471
+1045 0.0
+Population's average fitness: 37.20000 stdev: 43.81963
+Best fitness: 160.00000 - size: (16, 5225) - species 1 - id 944
+Average adjusted fitness: 0.233
+Mean genetic distance 1.269, standard deviation 0.235
+Population of 50 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   22    50    160.0    0.233     2
+Total extinctions: 0
+Generation time: 203.388 sec (264.114 average)
+
+ ****** Running generation 23 ****** 
+
+New genome at : 2018-12-27 15:42:08.742620
+1026 160.0
+New genome at : 2018-12-27 15:42:16.844622
+944 160.0
+New genome at : 2018-12-27 15:42:25.618330
+847 140.0
+New genome at : 2018-12-27 15:42:33.543474
+1046 0.0
+New genome at : 2018-12-27 15:42:35.359135
+1047 20.0
+New genome at : 2018-12-27 15:42:37.041524
+1048 120.0
+New genome at : 2018-12-27 15:42:44.742955
+1049 120.0
+New genome at : 2018-12-27 15:42:52.790826
+1050 40.0
+New genome at : 2018-12-27 15:42:54.653458
+1051 0.0
+New genome at : 2018-12-27 15:42:57.320903
+1052 120.0
+New genome at : 2018-12-27 15:43:05.692615
+1053 0.0
+New genome at : 2018-12-27 15:43:07.371093
+1054 180.0
+New genome at : 2018-12-27 15:43:18.635183
+1055 40.0
+New genome at : 2018-12-27 15:43:20.767731
+1056 20.0
+New genome at : 2018-12-27 15:43:24.724570
+1057 120.0
+New genome at : 2018-12-27 15:43:32.467743
+1058 20.0
+New genome at : 2018-12-27 15:43:34.139782
+1059 20.0
+New genome at : 2018-12-27 15:43:35.800348
+1060 40.0
+New genome at : 2018-12-27 15:43:40.419609
+1061 0.0
+New genome at : 2018-12-27 15:43:43.184294
+1062 40.0
+New genome at : 2018-12-27 15:43:45.609478
+1063 0.0
+New genome at : 2018-12-27 15:43:47.580013
+1064 100.0
+New genome at : 2018-12-27 15:43:53.121732
+1065 40.0
+New genome at : 2018-12-27 15:43:57.323713
+1066 40.0
+New genome at : 2018-12-27 15:44:02.172749
+1067 40.0
+New genome at : 2018-12-27 15:44:06.741817
+1068 80.0
+New genome at : 2018-12-27 15:44:08.779188
+1069 0.0
+New genome at : 2018-12-27 15:44:10.360884
+1070 0.0
+New genome at : 2018-12-27 15:44:12.390302
+1071 20.0
+New genome at : 2018-12-27 15:44:16.282228
+1072 40.0
+New genome at : 2018-12-27 15:44:19.119563
+1073 20.0
+New genome at : 2018-12-27 15:44:20.865866
+1074 40.0
+New genome at : 2018-12-27 15:44:25.350196
+1075 0.0
+New genome at : 2018-12-27 15:44:27.347689
+1076 20.0
+New genome at : 2018-12-27 15:44:32.174628
+1077 0.0
+New genome at : 2018-12-27 15:44:33.788671
+1078 40.0
+New genome at : 2018-12-27 15:44:38.129298
+1079 20.0
+New genome at : 2018-12-27 15:44:40.164773
+1080 40.0
+New genome at : 2018-12-27 15:44:42.024849
+1081 40.0
+New genome at : 2018-12-27 15:44:46.753610
+1082 40.0
+New genome at : 2018-12-27 15:44:48.995483
+1083 20.0
+New genome at : 2018-12-27 15:44:53.052985
+1084 20.0
+New genome at : 2018-12-27 15:44:57.682234
+1085 20.0
+New genome at : 2018-12-27 15:44:59.833363
+1086 0.0
+New genome at : 2018-12-27 15:45:01.851341
+1087 0.0
+New genome at : 2018-12-27 15:45:04.560436
+1088 80.0
+New genome at : 2018-12-27 15:45:09.110119
+1089 0.0
+New genome at : 2018-12-27 15:45:11.093458
+1090 40.0
+New genome at : 2018-12-27 15:45:12.983184
+1091 40.0
+New genome at : 2018-12-27 15:45:15.865554
+1092 120.0
+Population's average fitness: 46.40000 stdev: 48.73438
+Best fitness: 180.00000 - size: (16, 5099) - species 1 - id 1054
+Average adjusted fitness: 0.258
+Mean genetic distance 1.415, standard deviation 0.194
+Population of 50 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   23    50    180.0    0.258     0
+Total extinctions: 0
+Generation time: 197.345 sec (267.191 average)
+Saving checkpoint to neat-checkpoint-23
+
+ ****** Running generation 24 ****** 
+
+New genome at : 2018-12-27 15:45:27.466128
+1054 180.0
+New genome at : 2018-12-27 15:45:38.871453
+1026 160.0
+New genome at : 2018-12-27 15:45:47.166571
+944 160.0
+New genome at : 2018-12-27 15:45:55.780813
+1093 40.0
+New genome at : 2018-12-27 15:45:58.612335
+1094 20.0
+New genome at : 2018-12-27 15:46:00.782375
+1095 40.0
+New genome at : 2018-12-27 15:46:05.024749
+1096 60.0
+New genome at : 2018-12-27 15:46:09.442872
+1097 20.0
+New genome at : 2018-12-27 15:46:13.388668
+1098 80.0
+New genome at : 2018-12-27 15:46:16.897517
+1099 120.0
+New genome at : 2018-12-27 15:46:24.629763
+1100 100.0
+New genome at : 2018-12-27 15:46:29.748246
+1101 0.0
+New genome at : 2018-12-27 15:46:31.384286
+1102 20.0
+New genome at : 2018-12-27 15:46:33.023370
+1103 0.0
+New genome at : 2018-12-27 15:46:34.771904
+1104 40.0
+New genome at : 2018-12-27 15:46:39.139513
+1105 40.0
+New genome at : 2018-12-27 15:46:43.603141
+1106 40.0
+New genome at : 2018-12-27 15:46:47.947914
+1107 20.0
+New genome at : 2018-12-27 15:46:51.552441
+1108 0.0
+New genome at : 2018-12-27 15:46:53.228084
+1109 20.0
+New genome at : 2018-12-27 15:46:55.003949
+1110 20.0
+New genome at : 2018-12-27 15:46:58.524500
+1111 0.0
+New genome at : 2018-12-27 15:47:01.220952
+1112 0.0
+New genome at : 2018-12-27 15:47:03.083559
+1113 40.0
+New genome at : 2018-12-27 15:47:07.329097
+1114 40.0
+New genome at : 2018-12-27 15:47:11.667670
+1115 40.0
+New genome at : 2018-12-27 15:47:15.883420
+1116 20.0
+New genome at : 2018-12-27 15:47:20.154328
+1117 20.0
+New genome at : 2018-12-27 15:47:21.931289
+1118 20.0
+New genome at : 2018-12-27 15:47:23.538849
+1119 0.0
+New genome at : 2018-12-27 15:47:25.360518
+1120 20.0
+New genome at : 2018-12-27 15:47:30.443949
+1121 120.0
+New genome at : 2018-12-27 15:47:38.591108
+1122 80.0
+New genome at : 2018-12-27 15:47:43.584078
+1123 40.0
+New genome at : 2018-12-27 15:47:48.667560
+1124 20.0
+New genome at : 2018-12-27 15:47:50.304448
+1125 20.0
+New genome at : 2018-12-27 15:47:52.747463
+1126 20.0
+New genome at : 2018-12-27 15:47:54.944954
+1127 120.0
+New genome at : 2018-12-27 15:48:02.246524
+1128 60.0
+New genome at : 2018-12-27 15:48:05.124097
+1129 40.0
+New genome at : 2018-12-27 15:48:09.408579
+1130 0.0
+New genome at : 2018-12-27 15:48:11.383728
+1131 40.0
+New genome at : 2018-12-27 15:48:15.611812
+1132 40.0
+New genome at : 2018-12-27 15:48:17.759872
+1133 60.0
+New genome at : 2018-12-27 15:48:19.609078
+1134 40.0
+New genome at : 2018-12-27 15:48:22.064216
+1135 40.0
+New genome at : 2018-12-27 15:48:26.283529
+1136 60.0
+New genome at : 2018-12-27 15:48:30.470001
+1137 40.0
+New genome at : 2018-12-27 15:48:34.549429
+1138 20.0
+New genome at : 2018-12-27 15:48:36.673184
+1139 20.0
+Population's average fitness: 45.20000 stdev: 42.85977
+Best fitness: 180.00000 - size: (16, 5099) - species 1 - id 1054
+Average adjusted fitness: 0.251
+Mean genetic distance 1.456, standard deviation 0.195
+Population of 50 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   24    50    180.0    0.251     1
+Total extinctions: 0
+Generation time: 193.580 sec (269.301 average)
+
+ ****** Running generation 25 ****** 
+
+New genome at : 2018-12-27 15:48:41.046135
+1054 180.0
+New genome at : 2018-12-27 15:48:52.320899
+1026 160.0
+New genome at : 2018-12-27 15:49:00.563137
+944 160.0
+New genome at : 2018-12-27 15:49:09.208814
+1140 20.0
+New genome at : 2018-12-27 15:49:10.773180
+1141 40.0
+New genome at : 2018-12-27 15:49:14.463738
+1142 0.0
+New genome at : 2018-12-27 15:49:16.418478
+1143 0.0
+New genome at : 2018-12-27 15:49:18.281759
+1144 0.0
+New genome at : 2018-12-27 15:49:19.839443
+1145 80.0
+New genome at : 2018-12-27 15:49:23.716321
+1146 60.0
+New genome at : 2018-12-27 15:49:26.659784
+1147 60.0
+New genome at : 2018-12-27 15:49:28.633161
+1148 40.0
+New genome at : 2018-12-27 15:49:30.385411
+1149 0.0
+New genome at : 2018-12-27 15:49:32.025259
+1150 40.0
+New genome at : 2018-12-27 15:49:33.976884
+1151 40.0
+New genome at : 2018-12-27 15:49:36.041979
+1152 20.0
+New genome at : 2018-12-27 15:49:40.689775
+1153 20.0
+New genome at : 2018-12-27 15:49:45.511109
+1154 0.0
+New genome at : 2018-12-27 15:49:47.485502
+1155 20.0
+New genome at : 2018-12-27 15:49:49.253900
+1156 0.0
+New genome at : 2018-12-27 15:49:51.378487
+1157 40.0
+New genome at : 2018-12-27 15:49:55.679040
+1158 40.0
+New genome at : 2018-12-27 15:49:59.738225
+1159 20.0
+New genome at : 2018-12-27 15:50:04.530683
+1160 120.0
+New genome at : 2018-12-27 15:50:12.539988
+1161 60.0
+New genome at : 2018-12-27 15:50:16.494597
+1162 120.0
+New genome at : 2018-12-27 15:50:24.006337
+1163 40.0
+New genome at : 2018-12-27 15:50:25.996934
+1164 60.0
+New genome at : 2018-12-27 15:50:29.055348
+1165 20.0
+New genome at : 2018-12-27 15:50:32.692899
+1166 40.0
+New genome at : 2018-12-27 15:50:36.508538
+1167 40.0
+New genome at : 2018-12-27 15:50:41.455785
+1168 80.0
+New genome at : 2018-12-27 15:50:48.887029
+1169 0.0
+New genome at : 2018-12-27 15:50:50.874213
+1170 20.0
+New genome at : 2018-12-27 15:50:52.557427
+1171 20.0
+New genome at : 2018-12-27 15:50:56.524058
+1172 0.0
+New genome at : 2018-12-27 15:50:58.406953
+1173 20.0
+New genome at : 2018-12-27 15:51:00.003951
+1174 20.0
+New genome at : 2018-12-27 15:51:05.167609
+1175 40.0
+New genome at : 2018-12-27 15:51:09.632970
+1176 120.0
+New genome at : 2018-12-27 15:51:18.148494
+1177 60.0
+New genome at : 2018-12-27 15:51:20.204349
+1178 20.0
+New genome at : 2018-12-27 15:51:21.819584
+1179 20.0
+New genome at : 2018-12-27 15:51:23.724106
+1180 140.0
+New genome at : 2018-12-27 15:51:31.328350
+1181 20.0
+New genome at : 2018-12-27 15:51:33.029180
+1182 40.0
+New genome at : 2018-12-27 15:51:35.217393
+1183 40.0
+New genome at : 2018-12-27 15:51:37.574162
+1184 40.0
+New genome at : 2018-12-27 15:51:41.516084
+1185 0.0
+New genome at : 2018-12-27 15:51:43.065922
+1186 20.0
+Population's average fitness: 45.20000 stdev: 45.04398
+Best fitness: 180.00000 - size: (16, 5099) - species 1 - id 1054
+Average adjusted fitness: 0.251
+Mean genetic distance 1.452, standard deviation 0.238
+Population of 50 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   25    50    180.0    0.251     2
+Total extinctions: 0
+Generation time: 186.217 sec (270.255 average)
+Saving checkpoint to neat-checkpoint-25
+
+ ****** Running generation 26 ****** 
+
+New genome at : 2018-12-27 15:51:48.678758
+1054 180.0
+New genome at : 2018-12-27 15:52:00.088317
+944 160.0
+New genome at : 2018-12-27 15:52:08.691381
+1026 160.0
+New genome at : 2018-12-27 15:52:16.955423
+1187 40.0
+New genome at : 2018-12-27 15:52:21.069532
+1188 20.0
+New genome at : 2018-12-27 15:52:24.618173
+1189 60.0
+New genome at : 2018-12-27 15:52:27.469809
+1190 20.0
+New genome at : 2018-12-27 15:52:30.185551
+1191 20.0
+New genome at : 2018-12-27 15:52:35.273869
+1192 100.0
+New genome at : 2018-12-27 15:52:42.404191
+1193 60.0
+New genome at : 2018-12-27 15:52:46.678982
+1194 20.0
+New genome at : 2018-12-27 15:52:48.282201
+1195 40.0
+New genome at : 2018-12-27 15:52:52.423441
+1196 60.0
+New genome at : 2018-12-27 15:52:56.140269
+1197 40.0
+New genome at : 2018-12-27 15:53:00.556727
+1198 40.0
+New genome at : 2018-12-27 15:53:02.412646
+1199 20.0
+New genome at : 2018-12-27 15:53:05.144373
+1200 40.0
+New genome at : 2018-12-27 15:53:07.055746
+1201 40.0
+New genome at : 2018-12-27 15:53:08.831079
+1202 0.0
+New genome at : 2018-12-27 15:53:11.503535
+1203 60.0
+New genome at : 2018-12-27 15:53:13.378117
+1204 0.0
+New genome at : 2018-12-27 15:53:15.335232
+1205 0.0
+New genome at : 2018-12-27 15:53:17.223851
+1206 120.0
+New genome at : 2018-12-27 15:53:25.031300
+1207 20.0
+New genome at : 2018-12-27 15:53:27.131421
+1208 0.0
+New genome at : 2018-12-27 15:53:28.921787
+1209 40.0
+New genome at : 2018-12-27 15:53:33.285930
+1210 160.0
+New genome at : 2018-12-27 15:53:41.324054
+1211 0.0
+New genome at : 2018-12-27 15:53:43.121503
+1212 20.0
+New genome at : 2018-12-27 15:53:44.719012
+1213 40.0
+New genome at : 2018-12-27 15:53:46.981128
+1214 0.0
+New genome at : 2018-12-27 15:53:48.600867
+1215 20.0
+New genome at : 2018-12-27 15:53:53.713348
+1216 140.0
+New genome at : 2018-12-27 15:54:00.789520
+1217 40.0
+New genome at : 2018-12-27 15:54:02.794371
+1218 40.0
+New genome at : 2018-12-27 15:54:06.596018
+1219 20.0
+New genome at : 2018-12-27 15:54:08.409263
+1220 0.0
+New genome at : 2018-12-27 15:54:11.047906
+1221 20.0
+New genome at : 2018-12-27 15:54:12.649562
+1222 60.0
+New genome at : 2018-12-27 15:54:14.426680
+1223 40.0
+New genome at : 2018-12-27 15:54:17.722334
+1224 20.0
+New genome at : 2018-12-27 15:54:20.132604
+1225 0.0
+New genome at : 2018-12-27 15:54:22.262629
+1226 60.0
+New genome at : 2018-12-27 15:54:26.589187
+1227 40.0
+New genome at : 2018-12-27 15:54:30.298625
+1228 120.0
+New genome at : 2018-12-27 15:54:38.226384
+1229 60.0
+New genome at : 2018-12-27 15:54:42.316739
+1230 120.0
+New genome at : 2018-12-27 15:54:50.219067
+1231 20.0
+New genome at : 2018-12-27 15:54:54.249963
+1232 40.0
+New genome at : 2018-12-27 15:54:58.628595
+1233 20.0
+Population's average fitness: 49.20000 stdev: 47.36412
+Best fitness: 180.00000 - size: (16, 5099) - species 1 - id 1054
+Average adjusted fitness: 0.273
+Mean genetic distance 1.397, standard deviation 0.290
+Population of 50 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   26    50    180.0    0.273     3
+Total extinctions: 0
+Generation time: 194.267 sec (272.791 average)
+
+ ****** Running generation 27 ****** 
+
+New genome at : 2018-12-27 15:55:02.946098
+1054 180.0
+New genome at : 2018-12-27 15:55:14.313044
+944 160.0
+New genome at : 2018-12-27 15:55:22.874373
+1026 160.0
+New genome at : 2018-12-27 15:55:31.105094
+1234 140.0
+New genome at : 2018-12-27 15:55:38.883704
+1235 20.0
+New genome at : 2018-12-27 15:55:40.472385
+1236 20.0
+New genome at : 2018-12-27 15:55:44.393212
+1237 0.0
+New genome at : 2018-12-27 15:55:46.316640
+1238 0.0
+New genome at : 2018-12-27 15:55:49.058247
+1239 40.0
+New genome at : 2018-12-27 15:55:53.116914
+1240 0.0
+New genome at : 2018-12-27 15:55:54.795026
+1241 20.0
+New genome at : 2018-12-27 15:55:59.852847
+1242 80.0
+New genome at : 2018-12-27 15:56:02.434690
+1243 40.0
+New genome at : 2018-12-27 15:56:06.611173
+1244 40.0
+New genome at : 2018-12-27 15:56:09.505526
+1245 140.0
+New genome at : 2018-12-27 15:56:17.086399
+1246 80.0
+New genome at : 2018-12-27 15:56:21.035071
+1247 0.0
+New genome at : 2018-12-27 15:56:22.951755
+1248 40.0
+New genome at : 2018-12-27 15:56:26.402981
+1249 100.0
+New genome at : 2018-12-27 15:56:30.755086
+1250 20.0
+New genome at : 2018-12-27 15:56:35.153236
+1251 40.0
+New genome at : 2018-12-27 15:56:38.814012
+1252 40.0
+New genome at : 2018-12-27 15:56:42.985862
+1253 120.0
+New genome at : 2018-12-27 15:56:50.740870
+1254 100.0
+New genome at : 2018-12-27 15:56:56.021060
+1255 0.0
+New genome at : 2018-12-27 15:56:57.611255
+1256 60.0
+New genome at : 2018-12-27 15:57:00.721867
+1257 20.0
+New genome at : 2018-12-27 15:57:02.335373
+1258 20.0
+New genome at : 2018-12-27 15:57:05.949611
+1259 0.0
+New genome at : 2018-12-27 15:57:07.908411
+1260 0.0
+New genome at : 2018-12-27 15:57:10.486077
+1261 40.0
+New genome at : 2018-12-27 15:57:13.110381
+1262 60.0
+New genome at : 2018-12-27 15:57:17.784248
+1263 40.0
+New genome at : 2018-12-27 15:57:22.025070
+1264 20.0
+New genome at : 2018-12-27 15:57:23.841957
+1265 0.0
+New genome at : 2018-12-27 15:57:25.580620
+1266 20.0
+New genome at : 2018-12-27 15:57:27.146804
+1267 40.0
+New genome at : 2018-12-27 15:57:28.894755
+1268 40.0
+New genome at : 2018-12-27 15:57:30.917089
+1269 60.0
+New genome at : 2018-12-27 15:57:35.762857
+1270 40.0
+New genome at : 2018-12-27 15:57:37.739992
+1271 0.0
+New genome at : 2018-12-27 15:57:39.316852
+1272 20.0
+New genome at : 2018-12-27 15:57:41.412834
+1273 100.0
+New genome at : 2018-12-27 15:57:48.415478
+1274 0.0
+New genome at : 2018-12-27 15:57:51.143075
+1275 100.0
+New genome at : 2018-12-27 15:57:55.205983
+1276 0.0
+New genome at : 2018-12-27 15:57:56.926481
+1277 20.0
+New genome at : 2018-12-27 15:57:58.536844
+1278 20.0
+New genome at : 2018-12-27 15:58:00.161842
+1279 20.0
+New genome at : 2018-12-27 15:58:01.908613
+1280 40.0
+Population's average fitness: 47.20000 stdev: 47.62520
+Best fitness: 180.00000 - size: (16, 5099) - species 1 - id 1054
+Average adjusted fitness: 0.262
+Mean genetic distance 1.408, standard deviation 0.264
+Population of 50 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   27    50    180.0    0.262     4
+Total extinctions: 0
+Generation time: 183.356 sec (261.332 average)
+Saving checkpoint to neat-checkpoint-27
+
+ ****** Running generation 28 ****** 
+
+New genome at : 2018-12-27 15:58:07.736083
+1054 180.0
+New genome at : 2018-12-27 15:58:19.065347
+944 160.0
+New genome at : 2018-12-27 15:58:27.648031
+1026 160.0
+New genome at : 2018-12-27 15:58:35.866802
+1281 0.0
+New genome at : 2018-12-27 15:58:37.602594
+1282 40.0
+New genome at : 2018-12-27 15:58:39.794096
+1283 40.0
+New genome at : 2018-12-27 15:58:43.342961
+1284 40.0
+New genome at : 2018-12-27 15:58:45.405142
+1285 20.0
+New genome at : 2018-12-27 15:58:49.659654
+1286 60.0
+New genome at : 2018-12-27 15:58:52.484991
+1287 20.0
+New genome at : 2018-12-27 15:58:54.115994
+1288 40.0
+New genome at : 2018-12-27 15:58:55.925132
+1289 80.0
+New genome at : 2018-12-27 15:58:59.407571
+1290 80.0
+New genome at : 2018-12-27 15:59:03.241202
+1291 0.0
+New genome at : 2018-12-27 15:59:06.090912
+1292 100.0
+New genome at : 2018-12-27 15:59:13.405103
+1293 20.0
+New genome at : 2018-12-27 15:59:15.082769
+1294 40.0
+New genome at : 2018-12-27 15:59:17.092646
+1295 20.0
+New genome at : 2018-12-27 15:59:18.670236
+1296 0.0
+New genome at : 2018-12-27 15:59:21.468748
+1297 80.0
+New genome at : 2018-12-27 15:59:25.405820
+1298 20.0
+New genome at : 2018-12-27 15:59:29.542113
+1299 40.0
+New genome at : 2018-12-27 15:59:33.774876
+1300 0.0
+New genome at : 2018-12-27 15:59:35.895658
+1301 120.0
+New genome at : 2018-12-27 15:59:42.997640
+1302 100.0
+New genome at : 2018-12-27 15:59:48.127790
+1303 40.0
+New genome at : 2018-12-27 15:59:50.315517
+1304 40.0
+New genome at : 2018-12-27 15:59:54.617880
+1305 40.0
+New genome at : 2018-12-27 15:59:57.333692
+1306 40.0
+New genome at : 2018-12-27 16:00:01.380764
+1307 40.0
+New genome at : 2018-12-27 16:00:05.809919
+1308 60.0
+New genome at : 2018-12-27 16:00:08.680528
+1309 40.0
+New genome at : 2018-12-27 16:00:10.973378
+1310 100.0
+New genome at : 2018-12-27 16:00:18.741229
+1311 20.0
+New genome at : 2018-12-27 16:00:22.664214
+1312 20.0
+New genome at : 2018-12-27 16:00:24.239510
+1313 20.0
+New genome at : 2018-12-27 16:00:26.051387
+1314 140.0
+New genome at : 2018-12-27 16:00:34.399713
+1315 60.0
+New genome at : 2018-12-27 16:00:41.183904
+1316 40.0
+New genome at : 2018-12-27 16:00:45.437902
+1317 60.0
+New genome at : 2018-12-27 16:00:48.248335
+1318 20.0
+New genome at : 2018-12-27 16:00:50.051637
+1319 40.0
+New genome at : 2018-12-27 16:00:56.782776
+1320 20.0
+New genome at : 2018-12-27 16:00:59.570647
+1321 60.0
+New genome at : 2018-12-27 16:01:09.812796
+1322 20.0
+New genome at : 2018-12-27 16:01:12.862081
+1323 20.0
+New genome at : 2018-12-27 16:01:16.382344
+1324 120.0
+New genome at : 2018-12-27 16:01:32.188725
+1325 20.0
+New genome at : 2018-12-27 16:01:34.982787
+1326 20.0
+New genome at : 2018-12-27 16:01:38.500500
+1327 80.0
+Population's average fitness: 52.80000 stdev: 43.40691
+Best fitness: 180.00000 - size: (16, 5099) - species 1 - id 1054
+Average adjusted fitness: 0.293
+Mean genetic distance 1.445, standard deviation 0.254
+Population of 50 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   28    50    180.0    0.293     5
+Total extinctions: 0
+Generation time: 222.454 sec (248.515 average)
+
+ ****** Running generation 29 ****** 
+
+New genome at : 2018-12-27 16:01:50.189616
+1054 180.0
+New genome at : 2018-12-27 16:02:12.477511
+944 160.0
+New genome at : 2018-12-27 16:02:28.962779
+1026 160.0
+New genome at : 2018-12-27 16:02:46.161997
+1328 20.0
+New genome at : 2018-12-27 16:02:49.867987
+1329 40.0
+New genome at : 2018-12-27 16:02:54.201178
+1330 40.0
+New genome at : 2018-12-27 16:03:00.078189
+1331 40.0
+New genome at : 2018-12-27 16:03:05.838571
+1332 40.0
+New genome at : 2018-12-27 16:03:10.819919
+1333 20.0
+New genome at : 2018-12-27 16:03:13.941154
+1334 60.0
+New genome at : 2018-12-27 16:03:28.939241
+1335 40.0
+New genome at : 2018-12-27 16:03:39.412211
+1336 20.0
+New genome at : 2018-12-27 16:03:47.610301
+1337 0.0
+New genome at : 2018-12-27 16:03:53.602216
+1338 60.0
+New genome at : 2018-12-27 16:04:01.273493
+1339 20.0
+New genome at : 2018-12-27 16:04:04.461094
+1340 40.0
+New genome at : 2018-12-27 16:04:12.454997
+1341 20.0
+New genome at : 2018-12-27 16:04:16.582317
+1342 0.0
+New genome at : 2018-12-27 16:04:20.823482
+1343 60.0
+New genome at : 2018-12-27 16:04:32.302449
+1344 60.0
+New genome at : 2018-12-27 16:04:36.858921
+1345 60.0
+New genome at : 2018-12-27 16:04:46.265791
+1346 40.0
+New genome at : 2018-12-27 16:04:55.808732
+1347 60.0
+New genome at : 2018-12-27 16:05:01.590615
+1348 0.0
+New genome at : 2018-12-27 16:05:05.094099
+1349 20.0
+New genome at : 2018-12-27 16:05:09.511220
+1350 60.0
+New genome at : 2018-12-27 16:05:14.236067
+1351 60.0
+New genome at : 2018-12-27 16:05:22.749216
+1352 60.0
+New genome at : 2018-12-27 16:05:30.632087
+1353 20.0
+New genome at : 2018-12-27 16:05:34.838268
+1354 0.0
+New genome at : 2018-12-27 16:05:38.705691
+1355 20.0
+New genome at : 2018-12-27 16:05:47.019471
+1356 40.0
+New genome at : 2018-12-27 16:05:54.371571
+1357 20.0
+New genome at : 2018-12-27 16:06:00.790065
+1358 60.0
+New genome at : 2018-12-27 16:06:06.806350
+1359 60.0
+New genome at : 2018-12-27 16:06:10.506965
+1360 0.0
+New genome at : 2018-12-27 16:06:13.075947
+1361 60.0
+New genome at : 2018-12-27 16:06:15.165892
+1362 40.0
+New genome at : 2018-12-27 16:06:16.853271
+1363 20.0
+New genome at : 2018-12-27 16:06:20.405641
+1364 20.0
+New genome at : 2018-12-27 16:06:22.312747
+1365 0.0
+New genome at : 2018-12-27 16:06:24.841464
+1366 20.0
+New genome at : 2018-12-27 16:06:28.957364
+1367 80.0
+New genome at : 2018-12-27 16:06:33.044861
+1368 0.0
+New genome at : 2018-12-27 16:06:34.792164
+1369 40.0
+New genome at : 2018-12-27 16:06:38.453766
+1370 140.0
+New genome at : 2018-12-27 16:06:45.996415
+1371 40.0
+New genome at : 2018-12-27 16:06:47.954759
+1372 100.0
+New genome at : 2018-12-27 16:06:54.829217
+1373 20.0
+New genome at : 2018-12-27 16:06:58.921590
+1374 0.0
+Population's average fitness: 44.80000 stdev: 41.29116
+Best fitness: 180.00000 - size: (16, 5099) - species 1 - id 1054
+Average adjusted fitness: 0.249
+Mean genetic distance 1.518, standard deviation 0.265
+Population of 50 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   29    50    180.0    0.249     6
+Total extinctions: 0
+Generation time: 312.645 sec (247.745 average)
+Saving checkpoint to neat-checkpoint-29
+
+ ****** Running generation 30 ****** 
+
+New genome at : 2018-12-27 16:07:04.264768
+1054 180.0
+New genome at : 2018-12-27 16:07:15.508532
+944 160.0
+New genome at : 2018-12-27 16:07:24.023745
+1026 160.0
+New genome at : 2018-12-27 16:07:32.164353
+1375 0.0
+New genome at : 2018-12-27 16:07:33.702272
+1376 40.0
+New genome at : 2018-12-27 16:07:35.428808
+1377 20.0
+New genome at : 2018-12-27 16:07:37.213986
+1378 20.0
+New genome at : 2018-12-27 16:07:41.042549
+1379 20.0
+New genome at : 2018-12-27 16:07:44.500435
+1380 40.0
+New genome at : 2018-12-27 16:07:46.453956
+1381 20.0
+New genome at : 2018-12-27 16:07:51.423327
+1382 40.0
+New genome at : 2018-12-27 16:07:53.196955
+1383 40.0
+New genome at : 2018-12-27 16:07:55.021543
+1384 40.0
+New genome at : 2018-12-27 16:08:00.197501
+1385 0.0
+New genome at : 2018-12-27 16:08:02.774177
+1386 80.0
+New genome at : 2018-12-27 16:08:06.532345
+1387 0.0
+New genome at : 2018-12-27 16:08:09.086527
+1388 40.0
+New genome at : 2018-12-27 16:08:11.200178
+1389 20.0
+New genome at : 2018-12-27 16:08:12.749249
+1390 40.0
+New genome at : 2018-12-27 16:08:15.176718
+1391 60.0
+New genome at : 2018-12-27 16:08:19.145826
+1392 40.0
+New genome at : 2018-12-27 16:08:20.877844
+1393 40.0
+New genome at : 2018-12-27 16:08:24.747186
+1394 60.0
+New genome at : 2018-12-27 16:08:29.115397
+1395 20.0
+New genome at : 2018-12-27 16:08:30.680609
+1396 40.0
+New genome at : 2018-12-27 16:08:33.277985
+1397 80.0
+New genome at : 2018-12-27 16:08:35.392094
+1398 40.0
+New genome at : 2018-12-27 16:08:37.197662
+1399 60.0
+New genome at : 2018-12-27 16:08:40.739395
+1400 20.0
+New genome at : 2018-12-27 16:08:44.252512
+1401 40.0
+New genome at : 2018-12-27 16:08:47.604947
+1402 80.0
+New genome at : 2018-12-27 16:08:51.256834
+1403 60.0
+New genome at : 2018-12-27 16:08:54.567559
+1404 20.0
+New genome at : 2018-12-27 16:08:59.839913
+1405 60.0
+New genome at : 2018-12-27 16:09:02.684148
+1406 20.0
+New genome at : 2018-12-27 16:09:06.681325
+1407 20.0
+New genome at : 2018-12-27 16:09:08.290762
+1408 40.0
+New genome at : 2018-12-27 16:09:10.047256
+1409 40.0
+New genome at : 2018-12-27 16:09:13.828021
+1410 20.0
+New genome at : 2018-12-27 16:09:15.313992
+1411 20.0
+New genome at : 2018-12-27 16:09:16.925816
+1412 80.0
+New genome at : 2018-12-27 16:09:18.891108
+1413 0.0
+New genome at : 2018-12-27 16:09:20.701864
+1414 120.0
+New genome at : 2018-12-27 16:09:27.911239
+1415 60.0
+New genome at : 2018-12-27 16:09:31.354850
+1416 140.0
+New genome at : 2018-12-27 16:09:39.070939
+1417 40.0
+New genome at : 2018-12-27 16:09:41.907467
+1418 60.0
+New genome at : 2018-12-27 16:09:45.228046
+1419 0.0
+New genome at : 2018-12-27 16:09:47.877275
+1420 60.0
+New genome at : 2018-12-27 16:09:51.272107
+1421 60.0
+Population's average fitness: 49.20000 stdev: 40.83332
+Best fitness: 180.00000 - size: (16, 5099) - species 1 - id 1054
+Average adjusted fitness: 0.273
+Mean genetic distance 1.568, standard deviation 0.275
+Population of 50 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   30    50    180.0    0.273     7
+Total extinctions: 0
+Generation time: 171.383 sec (224.133 average)
+
+ ****** Running generation 31 ****** 
+
+New genome at : 2018-12-27 16:09:55.647645
+1054 180.0
+New genome at : 2018-12-27 16:10:06.935933
+944 160.0
+New genome at : 2018-12-27 16:10:15.502411
+1026 160.0
+New genome at : 2018-12-27 16:10:24.070811
+1422 20.0
+New genome at : 2018-12-27 16:10:28.091161
+1423 0.0
+New genome at : 2018-12-27 16:10:29.953868
+1424 40.0
+New genome at : 2018-12-27 16:10:31.844768
+1425 0.0
+New genome at : 2018-12-27 16:10:34.396437
+1426 20.0
+New genome at : 2018-12-27 16:10:38.406708
+1427 20.0
+New genome at : 2018-12-27 16:10:42.045426
+1428 60.0
+New genome at : 2018-12-27 16:10:45.684511
+1429 60.0
+New genome at : 2018-12-27 16:10:48.225362
+1430 40.0
+New genome at : 2018-12-27 16:10:50.036543
+1431 160.0
+New genome at : 2018-12-27 16:10:57.282788
+1432 60.0
+New genome at : 2018-12-27 16:11:00.731184
+1433 40.0
+New genome at : 2018-12-27 16:11:02.523084
+1434 0.0
+New genome at : 2018-12-27 16:11:04.468597
+1435 60.0
+New genome at : 2018-12-27 16:11:08.973347
+1436 20.0
+New genome at : 2018-12-27 16:11:10.499764
+1437 60.0
+New genome at : 2018-12-27 16:11:14.702668
+1438 40.0
+New genome at : 2018-12-27 16:11:17.799949
+1439 40.0
+New genome at : 2018-12-27 16:11:21.136403
+1440 20.0
+New genome at : 2018-12-27 16:11:22.696126
+1441 80.0
+New genome at : 2018-12-27 16:11:24.956676
+1442 40.0
+New genome at : 2018-12-27 16:11:28.880081
+1443 60.0
+New genome at : 2018-12-27 16:11:33.163454
+1444 80.0
+New genome at : 2018-12-27 16:11:37.171664
+1445 100.0
+New genome at : 2018-12-27 16:11:41.132590
+1446 60.0
+New genome at : 2018-12-27 16:11:45.531486
+1447 0.0
+New genome at : 2018-12-27 16:11:47.110868
+1448 20.0
+New genome at : 2018-12-27 16:11:51.159831
+1449 20.0
+New genome at : 2018-12-27 16:11:52.704113
+1450 60.0
+New genome at : 2018-12-27 16:11:56.193349
+1451 120.0
+New genome at : 2018-12-27 16:12:02.940347
+1452 20.0
+New genome at : 2018-12-27 16:12:04.937917
+1453 20.0
+New genome at : 2018-12-27 16:12:06.618419
+1454 40.0
+New genome at : 2018-12-27 16:12:08.471303
+1455 140.0
+New genome at : 2018-12-27 16:12:16.085394
+1456 0.0
+New genome at : 2018-12-27 16:12:18.037210
+1457 40.0
+New genome at : 2018-12-27 16:12:21.228692
+1458 40.0
+New genome at : 2018-12-27 16:12:25.614044
+1459 40.0
+New genome at : 2018-12-27 16:12:27.764956
+1460 60.0
+New genome at : 2018-12-27 16:12:32.270675
+1461 40.0
+New genome at : 2018-12-27 16:12:36.715543
+1462 60.0
+New genome at : 2018-12-27 16:12:40.084190
+1463 20.0
+New genome at : 2018-12-27 16:12:44.123362
+1464 0.0
+New genome at : 2018-12-27 16:12:45.646242
+1465 0.0
+New genome at : 2018-12-27 16:12:48.274044
+1466 60.0
+New genome at : 2018-12-27 16:12:50.063394
+1467 60.0
+New genome at : 2018-12-27 16:12:53.135820
+1468 40.0
+Population's average fitness: 51.60000 stdev: 44.55828
+Best fitness: 180.00000 - size: (16, 5099) - species 1 - id 1054
+
+Species 1 with 50 members is stagnated: removing it
+All species extinct.
