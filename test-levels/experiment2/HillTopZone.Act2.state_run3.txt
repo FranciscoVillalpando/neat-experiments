@@ -1,0 +1,2323 @@
+Starting python script!
+Using env(SonicTheHedgehog2-Genesis, HillTopZone.Act2.state)
+Observation space shape:(224, 320, 3)
+Start: 2019-03-23 20:16:07.870539
+Using the following config file: config.txt
+[NEAT]
+fitness_criterion     = max
+fitness_threshold     = 9000
+pop_size              = 60
+reset_on_extinction   = False
+
+[DefaultGenome]
+# node activation options
+activation_default      = sigmoid
+activation_mutate_rate  = 0.00
+activation_options      = sigmoid 
+#abs clamped cube exp gauss hat identity inv log relu sigmoid sin softplus square tanh
+
+# node aggregation options
+aggregation_default     = sum
+aggregation_mutate_rate = 0.00
+aggregation_options     = sum product min max mean median maxabs
+
+# node bias options
+bias_init_mean          = 0.05
+bias_init_stdev         = 1.0
+bias_max_value          = 50.0
+bias_min_value          = -50.0
+bias_mutate_power       = 0.5
+bias_mutate_rate        = 0.7
+bias_replace_rate       = 0.1
+
+# genome compatibility options
+compatibility_disjoint_coefficient = 1.0
+compatibility_weight_coefficient   = 0.5
+
+# connection add/remove rates
+conn_add_prob           = 0.6
+conn_delete_prob        = 0.1
+
+# connection enable options
+enabled_default         = True
+enabled_mutate_rate     = 0.05
+
+feed_forward            = False
+initial_connection      = fs_neat_nohidden
+#initial_connection      = unconnected
+#initial_connection     = partial_nodirect 0.4
+
+# node add/remove rates
+node_add_prob           = 0.7
+node_delete_prob        = 0.1
+
+# network parameters
+num_hidden              = 0
+num_inputs              = 17920
+num_outputs             = 7
+
+# node response options
+response_init_mean      = 1.0
+response_init_stdev     = 0.05
+response_max_value      = 30.0
+response_min_value      = -30.0
+response_mutate_power   = 0.1
+response_mutate_rate    = 0.75
+response_replace_rate   = 0.1
+
+# connection weight options
+weight_init_mean        = 0.1
+weight_init_stdev       = 1.0
+weight_max_value        = 30
+weight_min_value        = -30
+weight_mutate_power     = 0.5
+weight_mutate_rate      = 0.8
+weight_replace_rate     = 0.1
+
+[DefaultSpeciesSet]
+compatibility_threshold = 2.8
+
+[DefaultStagnation]
+species_fitness_func = max
+max_stagnation       = 200
+species_elitism      = 0
+
+[DefaultReproduction]
+elitism            = 3
+survival_threshold = 0.3
+
+
+
+End of config file
+
+ ****** Running generation 0 ****** 
+
+Gen timestep at time: 2019-03-23 20:16:07.880798
+1 341
+achieved fitness: 341 at timestep 447 time: 2019-03-23 20:16:08.478066
+Saving genome to file ./genomes/best_genome_run3_HillTopZone.Act2.state_gen0.pkl
+2 277
+3 96
+4 341
+5 341
+6 96
+7 341
+8 96
+9 341
+10 341
+11 96
+12 341
+13 341
+14 96
+15 96
+16 201
+17 96
+18 341
+19 96
+20 1408
+achieved fitness: 1408 at timestep 8679 time: 2019-03-23 20:16:19.453169
+Saving genome to file ./genomes/best_genome_run3_HillTopZone.Act2.state_gen0.pkl
+21 341
+22 250
+23 332
+24 96
+25 341
+26 96
+27 341
+28 260
+29 171
+30 341
+31 341
+32 96
+33 96
+34 341
+35 96
+36 341
+37 341
+38 341
+39 96
+40 463
+41 341
+42 341
+43 332
+44 341
+45 337
+46 341
+47 341
+48 341
+49 96
+50 341
+51 96
+52 341
+53 341
+54 341
+55 96
+56 96
+57 96
+58 318
+59 341
+60 341
+Total timesteps at end of gen: 25314
+Population's average fitness: 273.38333 stdev: 186.53294
+Best fitness: 1408.00000 - size: (7, 7) - species 1 - id 20
+Average adjusted fitness: 0.145
+Mean genetic distance 2.541, standard deviation 0.335
+Population of 60 members in 3 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    0    25   1408.0    0.154     0
+     2    0    16    341.0    0.098     0
+     3    0    19    341.0    0.183     0
+Total extinctions: 0
+Generation time: 33.769 sec (33.769 average)
+
+ ****** Running generation 1 ****** 
+
+Gen timestep at time: 2019-03-23 20:16:41.650003
+13 341
+achieved fitness: 341 at timestep 25761 time: 2019-03-23 20:16:42.246378
+Saving genome to file ./genomes/best_genome_run3_HillTopZone.Act2.state_gen1.pkl
+21 341
+27 341
+61 341
+62 341
+63 341
+64 341
+65 96
+66 341
+67 341
+68 341
+69 96
+70 341
+71 341
+72 341
+73 341
+74 96
+48 341
+43 332
+75 323
+76 341
+77 341
+78 113
+79 341
+80 341
+81 341
+82 96
+83 341
+84 96
+85 96
+86 341
+20 1408
+achieved fitness: 1408 at timestep 39834 time: 2019-03-23 20:17:01.027602
+Saving genome to file ./genomes/best_genome_run3_HillTopZone.Act2.state_gen1.pkl
+40 463
+1 341
+87 341
+88 340
+89 341
+90 96
+91 341
+92 341
+93 341
+94 341
+95 1408
+96 341
+97 341
+98 341
+99 341
+100 341
+101 96
+102 96
+103 341
+104 96
+105 341
+106 341
+107 341
+108 341
+109 330
+110 96
+111 341
+112 341
+Total timesteps at end of gen: 53397
+Population's average fitness: 329.23333 stdev: 223.47038
+Best fitness: 1408.00000 - size: (7, 7) - species 2 - id 20
+Average adjusted fitness: 0.180
+Mean genetic distance 2.534, standard deviation 0.383
+Population of 61 members in 3 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    1    40   1408.0    0.182     1
+     2    1     8   1408.0    0.232     0
+     3    1    13    341.0    0.127     1
+Total extinctions: 0
+Generation time: 37.490 sec (35.630 average)
+
+ ****** Running generation 2 ****** 
+
+Gen timestep at time: 2019-03-23 20:17:19.140016
+48 341
+achieved fitness: 341 at timestep 53844 time: 2019-03-23 20:17:19.737821
+Saving genome to file ./genomes/best_genome_run3_HillTopZone.Act2.state_gen2.pkl
+62 341
+67 341
+113 341
+114 196
+115 341
+116 96
+117 341
+118 341
+119 341
+120 341
+121 341
+122 341
+123 341
+124 341
+125 341
+126 341
+20 1408
+achieved fitness: 1408 at timestep 62235 time: 2019-03-23 20:17:30.953825
+Saving genome to file ./genomes/best_genome_run3_HillTopZone.Act2.state_gen2.pkl
+40 463
+72 341
+127 341
+128 96
+129 96
+130 1408
+131 96
+132 1408
+133 341
+134 341
+135 341
+136 96
+137 341
+138 341
+139 1398
+140 341
+141 341
+142 463
+143 341
+144 96
+95 1408
+1 341
+63 341
+145 341
+146 96
+147 341
+148 96
+149 341
+150 341
+151 96
+152 341
+153 337
+154 336
+155 1408
+156 341
+157 340
+158 341
+159 341
+160 96
+161 96
+162 341
+163 96
+164 341
+Total timesteps at end of gen: 84762
+Population's average fitness: 399.04918 stdev: 347.71566
+Best fitness: 1408.00000 - size: (7, 7) - species 3 - id 20
+Average adjusted fitness: 0.223
+Mean genetic distance 2.560, standard deviation 0.437
+Population of 60 members in 3 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    2    32   1408.0    0.225     2
+     2    2     9    341.0    0.140     1
+     3    2    19   1408.0    0.305     0
+Total extinctions: 0
+Generation time: 41.859 sec (37.706 average)
+
+ ****** Running generation 3 ****** 
+
+Gen timestep at time: 2019-03-23 20:18:00.998868
+72 341
+achieved fitness: 341 at timestep 85209 time: 2019-03-23 20:18:01.597164
+Saving genome to file ./genomes/best_genome_run3_HillTopZone.Act2.state_gen3.pkl
+134 341
+137 341
+165 341
+166 96
+167 341
+168 341
+169 341
+170 341
+171 341
+20 1408
+achieved fitness: 1408 at timestep 90537 time: 2019-03-23 20:18:08.731339
+Saving genome to file ./genomes/best_genome_run3_HillTopZone.Act2.state_gen3.pkl
+155 1408
+40 463
+172 341
+173 341
+174 341
+175 333
+176 96
+177 96
+178 96
+179 341
+180 2252
+achieved fitness: 2252 at timestep 96735 time: 2019-03-23 20:18:17.014415
+Saving genome to file ./genomes/best_genome_run3_HillTopZone.Act2.state_gen3.pkl
+181 96
+182 341
+183 341
+184 341
+185 96
+186 317
+187 96
+188 317
+130 1408
+132 1408
+95 1408
+189 96
+190 96
+191 96
+192 341
+193 1408
+194 341
+195 96
+196 2341
+achieved fitness: 2341 at timestep 108888 time: 2019-03-23 20:18:33.260863
+Saving genome to file ./genomes/best_genome_run3_HillTopZone.Act2.state_gen3.pkl
+197 337
+198 96
+199 96
+200 341
+201 341
+202 341
+203 2252
+204 187
+205 341
+206 96
+207 340
+208 341
+209 341
+210 341
+211 341
+212 103
+213 1408
+214 341
+215 341
+Total timesteps at end of gen: 119169
+Population's average fitness: 499.83333 stdev: 558.21756
+Best fitness: 2341.00000 - size: (9, 11) - species 1 - id 196
+Average adjusted fitness: 0.162
+Mean genetic distance 2.456, standard deviation 0.463
+Population of 60 members in 3 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    3    46   2341.0    0.197     0
+     2    3     8    341.0    0.097     2
+     3    3     6   2252.0    0.191     0
+Total extinctions: 0
+Generation time: 46.008 sec (39.781 average)
+
+ ****** Running generation 4 ****** 
+
+Gen timestep at time: 2019-03-23 20:18:47.006687
+72 341
+achieved fitness: 341 at timestep 119616 time: 2019-03-23 20:18:47.607761
+Saving genome to file ./genomes/best_genome_run3_HillTopZone.Act2.state_gen4.pkl
+134 341
+137 341
+216 96
+217 341
+218 341
+219 341
+220 341
+221 341
+222 341
+223 341
+180 2252
+achieved fitness: 2252 at timestep 124839 time: 2019-03-23 20:18:54.625032
+Saving genome to file ./genomes/best_genome_run3_HillTopZone.Act2.state_gen4.pkl
+20 1408
+155 1408
+224 341
+225 341
+226 341
+227 1408
+228 341
+229 96
+230 96
+231 341
+232 331
+233 96
+234 96
+235 1408
+236 96
+237 341
+238 1408
+239 1408
+240 96
+241 1408
+196 2341
+achieved fitness: 2341 at timestep 141114 time: 2019-03-23 20:19:16.400168
+Saving genome to file ./genomes/best_genome_run3_HillTopZone.Act2.state_gen4.pkl
+203 2252
+130 1408
+242 341
+243 96
+244 341
+245 341
+246 341
+247 317
+248 96
+249 1408
+250 341
+251 341
+252 1408
+253 96
+254 341
+255 341
+256 331
+257 341
+258 341
+259 341
+260 341
+261 317
+262 96
+263 341
+264 341
+265 341
+266 317
+Total timesteps at end of gen: 156033
+Population's average fitness: 569.41667 stdev: 580.52397
+Best fitness: 2341.00000 - size: (9, 11) - species 1 - id 196
+Average adjusted fitness: 0.139
+Mean genetic distance 2.275, standard deviation 0.535
+Population of 60 members in 3 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    4    39   2341.0    0.249     1
+     2    4    11    341.0    0.095     3
+     3    4    10    341.0    0.073     1
+Total extinctions: 0
+Generation time: 49.459 sec (41.717 average)
+Saving checkpoint to neat-checkpoint-4
+
+ ****** Running generation 5 ****** 
+
+Gen timestep at time: 2019-03-23 20:19:36.472763
+72 341
+achieved fitness: 341 at timestep 156480 time: 2019-03-23 20:19:37.072707
+Saving genome to file ./genomes/best_genome_run3_HillTopZone.Act2.state_gen5.pkl
+137 341
+217 341
+267 341
+268 341
+269 96
+270 341
+271 96
+272 341
+273 341
+274 341
+224 341
+257 341
+263 341
+275 96
+276 341
+277 96
+278 341
+279 341
+196 2341
+achieved fitness: 2341 at timestep 165063 time: 2019-03-23 20:19:48.611517
+Saving genome to file ./genomes/best_genome_run3_HillTopZone.Act2.state_gen5.pkl
+180 2252
+203 2252
+280 96
+281 341
+282 96
+283 96
+284 341
+285 341
+286 96
+287 341
+288 96
+289 341
+290 341
+291 96
+292 341
+293 1408
+294 341
+295 1408
+296 333
+297 96
+298 341
+299 341
+300 341
+301 341
+302 341
+303 341
+304 341
+305 1408
+306 96
+307 96
+308 341
+309 333
+310 1398
+311 341
+312 1408
+313 96
+314 1408
+315 1408
+316 96
+317 341
+Total timesteps at end of gen: 188544
+Population's average fitness: 500.83333 stdev: 557.07160
+Best fitness: 2341.00000 - size: (9, 11) - species 1 - id 196
+Average adjusted fitness: 0.135
+Mean genetic distance 2.332, standard deviation 0.523
+Population of 60 members in 3 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    5    33   2341.0    0.230     2
+     2    5    12    341.0    0.089     4
+     3    5    15    341.0    0.087     2
+Total extinctions: 0
+Generation time: 43.663 sec (42.041 average)
+
+ ****** Running generation 6 ****** 
+
+Gen timestep at time: 2019-03-23 20:20:20.136123
+72 341
+achieved fitness: 341 at timestep 188991 time: 2019-03-23 20:20:20.733665
+Saving genome to file ./genomes/best_genome_run3_HillTopZone.Act2.state_gen6.pkl
+137 341
+267 341
+318 341
+319 96
+320 96
+321 341
+322 96
+323 341
+324 341
+325 341
+326 96
+224 341
+257 341
+263 341
+327 96
+328 341
+329 341
+330 341
+331 341
+332 341
+333 341
+334 341
+196 2341
+achieved fitness: 2341 at timestep 199218 time: 2019-03-23 20:20:34.484777
+Saving genome to file ./genomes/best_genome_run3_HillTopZone.Act2.state_gen6.pkl
+180 2252
+203 2252
+335 341
+336 96
+337 341
+338 333
+339 317
+340 96
+341 341
+342 333
+343 1408
+344 333
+345 341
+346 341
+347 2252
+348 96
+349 96
+350 317
+351 1408
+352 341
+353 96
+354 1408
+355 96
+356 317
+357 96
+358 333
+359 341
+360 2252
+361 341
+362 341
+363 1408
+364 96
+365 341
+366 341
+367 96
+368 341
+Total timesteps at end of gen: 219729
+Population's average fitness: 513.96667 stdev: 608.39853
+Best fitness: 2341.00000 - size: (9, 11) - species 1 - id 196
+Average adjusted fitness: 0.144
+Mean genetic distance 2.307, standard deviation 0.526
+Population of 60 members in 3 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    6    34   2341.0    0.272     3
+     2    6    11    341.0    0.073     5
+     3    6    15    341.0    0.087     3
+Total extinctions: 0
+Generation time: 41.932 sec (42.026 average)
+
+ ****** Running generation 7 ****** 
+
+Gen timestep at time: 2019-03-23 20:21:02.068424
+72 341
+achieved fitness: 341 at timestep 220176 time: 2019-03-23 20:21:02.666956
+Saving genome to file ./genomes/best_genome_run3_HillTopZone.Act2.state_gen7.pkl
+137 341
+267 341
+369 341
+370 96
+371 341
+372 330
+373 341
+374 142
+375 341
+376 341
+224 341
+257 341
+263 341
+377 341
+378 96
+379 341
+380 341
+381 341
+382 341
+383 341
+384 96
+385 96
+386 341
+387 341
+196 2341
+achieved fitness: 2341 at timestep 231321 time: 2019-03-23 20:21:17.639975
+Saving genome to file ./genomes/best_genome_run3_HillTopZone.Act2.state_gen7.pkl
+203 2252
+180 2252
+388 340
+389 317
+390 96
+391 2261
+392 96
+393 96
+394 341
+395 341
+396 2261
+397 341
+398 333
+399 96
+400 1408
+401 1408
+402 2252
+403 326
+404 333
+405 1398
+406 2252
+407 1408
+408 96
+409 341
+410 341
+411 341
+412 341
+413 1408
+414 96
+415 341
+416 341
+417 96
+418 331
+419 341
+Total timesteps at end of gen: 253557
+Population's average fitness: 604.96667 stdev: 685.22517
+Best fitness: 2341.00000 - size: (9, 11) - species 1 - id 196
+Average adjusted fitness: 0.170
+Mean genetic distance 2.233, standard deviation 0.553
+Population of 60 members in 3 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    7    28   2341.0    0.332     4
+     2    7    10    341.0    0.091     6
+     3    7    22    341.0    0.087     4
+Total extinctions: 0
+Generation time: 45.458 sec (42.455 average)
+
+ ****** Running generation 8 ****** 
+
+Gen timestep at time: 2019-03-23 20:21:47.526858
+72 341
+achieved fitness: 341 at timestep 254004 time: 2019-03-23 20:21:48.124198
+Saving genome to file ./genomes/best_genome_run3_HillTopZone.Act2.state_gen8.pkl
+137 341
+267 341
+420 96
+421 341
+422 96
+423 341
+424 341
+425 341
+426 341
+224 341
+257 341
+386 341
+427 341
+428 96
+429 341
+430 341
+431 341
+432 96
+433 341
+434 341
+435 463
+achieved fitness: 463 at timestep 263097 time: 2019-03-23 20:22:00.325594
+Saving genome to file ./genomes/best_genome_run3_HillTopZone.Act2.state_gen8.pkl
+436 96
+196 2341
+achieved fitness: 2341 at timestep 264513 time: 2019-03-23 20:22:02.245680
+Saving genome to file ./genomes/best_genome_run3_HillTopZone.Act2.state_gen8.pkl
+391 2261
+396 2261
+437 1408
+438 2341
+439 2261
+440 96
+441 2252
+442 341
+443 96
+444 341
+445 96
+446 1408
+447 341
+448 341
+449 96
+450 2261
+451 341
+452 317
+453 1408
+454 1408
+455 337
+456 341
+457 2252
+458 341
+459 96
+460 96
+461 96
+462 341
+463 219
+464 96
+465 1408
+466 1408
+467 341
+468 333
+469 341
+470 1408
+Total timesteps at end of gen: 290931
+Population's average fitness: 670.16667 stdev: 734.03647
+Best fitness: 2341.00000 - size: (9, 11) - species 3 - id 196
+Average adjusted fitness: 0.217
+Mean genetic distance 2.250, standard deviation 0.476
+Population of 60 members in 3 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    8    39   2341.0    0.349     5
+     2    8    11    341.0    0.087     7
+     3    8    10   2341.0    0.214     0
+Total extinctions: 0
+Generation time: 50.250 sec (43.321 average)
+
+ ****** Running generation 9 ****** 
+
+Gen timestep at time: 2019-03-23 20:22:37.777160
+72 341
+achieved fitness: 341 at timestep 291378 time: 2019-03-23 20:22:38.377773
+Saving genome to file ./genomes/best_genome_run3_HillTopZone.Act2.state_gen9.pkl
+137 341
+267 341
+471 334
+472 341
+473 96
+474 341
+475 96
+476 96
+196 2341
+achieved fitness: 2341 at timestep 295614 time: 2019-03-23 20:22:44.070662
+Saving genome to file ./genomes/best_genome_run3_HillTopZone.Act2.state_gen9.pkl
+391 2261
+454 1408
+477 341
+478 96
+479 337
+480 96
+481 341
+482 96
+483 463
+484 96
+485 1408
+486 341
+487 341
+488 96
+489 1408
+490 333
+491 341
+492 111
+493 463
+494 1408
+438 2341
+450 2261
+396 2261
+495 337
+496 96
+497 341
+498 96
+499 1408
+500 341
+501 1408
+502 96
+503 341
+504 341
+505 96
+506 1408
+507 341
+508 96
+509 341
+510 317
+511 96
+512 96
+513 96
+514 341
+515 341
+516 2252
+517 2252
+518 340
+519 96
+520 2252
+521 2261
+Total timesteps at end of gen: 329166
+Population's average fitness: 685.71667 stdev: 770.76614
+Best fitness: 2341.00000 - size: (9, 11) - species 1 - id 196
+Average adjusted fitness: 0.192
+Mean genetic distance 2.302, standard deviation 0.516
+Population of 60 members in 3 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    9    34   2341.0    0.340     6
+     2    9    10   2261.0    0.147     0
+     3    9    16    463.0    0.087     1
+Total extinctions: 0
+Generation time: 51.424 sec (44.131 average)
+Saving checkpoint to neat-checkpoint-9
+
+ ****** Running generation 10 ****** 
+
+Gen timestep at time: 2019-03-23 20:23:29.209362
+483 463
+achieved fitness: 463 at timestep 329895 time: 2019-03-23 20:23:30.186979
+Saving genome to file ./genomes/best_genome_run3_HillTopZone.Act2.state_gen10.pkl
+493 463
+481 341
+522 341
+523 341
+524 341
+525 334
+526 341
+527 463
+391 2261
+achieved fitness: 2261 at timestep 335547 time: 2019-03-23 20:23:37.783072
+Saving genome to file ./genomes/best_genome_run3_HillTopZone.Act2.state_gen10.pkl
+72 341
+137 341
+528 96
+529 341
+530 96
+531 341
+532 341
+533 96
+534 96
+535 341
+536 96
+537 341
+438 2341
+achieved fitness: 2341 at timestep 341505 time: 2019-03-23 20:23:45.801895
+Saving genome to file ./genomes/best_genome_run3_HillTopZone.Act2.state_gen10.pkl
+196 2341
+450 2261
+538 96
+539 341
+540 341
+541 96
+542 96
+543 941
+544 2252
+545 341
+546 96
+547 1408
+548 341
+549 96
+550 96
+551 96
+552 96
+553 96
+554 96
+555 96
+556 1408
+557 96
+558 341
+559 96
+560 341
+561 1408
+562 96
+563 341
+564 96
+565 341
+566 341
+567 96
+568 96
+569 1408
+570 341
+571 341
+572 96
+Total timesteps at end of gen: 361617
+Population's average fitness: 496.71667 stdev: 631.25658
+Best fitness: 2341.00000 - size: (9, 7) - species 1 - id 438
+Average adjusted fitness: 0.170
+Mean genetic distance 2.401, standard deviation 0.432
+Population of 61 members in 3 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   10    42   2341.0    0.196     7
+     2   10    16   2261.0    0.162     1
+     3   10     3   1408.0    0.152     2
+Total extinctions: 0
+Generation time: 43.614 sec (45.116 average)
+
+ ****** Running generation 11 ****** 
+
+Gen timestep at time: 2019-03-23 20:24:12.823737
+569 1408
+achieved fitness: 1408 at timestep 363066 time: 2019-03-23 20:24:14.770549
+Saving genome to file ./genomes/best_genome_run3_HillTopZone.Act2.state_gen11.pkl
+543 941
+527 463
+573 1408
+574 96
+575 333
+576 96
+577 339
+578 333
+579 1205
+580 341
+581 96
+582 341
+583 341
+584 341
+585 96
+586 941
+391 2261
+achieved fitness: 2261 at timestep 373737 time: 2019-03-23 20:24:29.176292
+Saving genome to file ./genomes/best_genome_run3_HillTopZone.Act2.state_gen11.pkl
+72 341
+137 341
+587 96
+588 96
+589 1398
+590 2244
+591 96
+592 96
+593 341
+594 1408
+595 96
+596 341
+597 341
+598 96
+438 2341
+achieved fitness: 2341 at timestep 382452 time: 2019-03-23 20:24:40.931102
+Saving genome to file ./genomes/best_genome_run3_HillTopZone.Act2.state_gen11.pkl
+196 2341
+450 2261
+599 341
+600 341
+601 341
+602 338
+603 96
+604 341
+605 1408
+606 96
+607 317
+608 333
+609 341
+610 317
+611 341
+612 331
+613 341
+614 1408
+615 1408
+616 96
+617 2252
+618 96
+619 96
+620 341
+621 341
+622 341
+623 341
+624 341
+Total timesteps at end of gen: 399186
+Population's average fitness: 628.49180 stdev: 676.73010
+Best fitness: 2341.00000 - size: (9, 7) - species 1 - id 438
+Average adjusted fitness: 0.193
+Mean genetic distance 2.345, standard deviation 0.480
+Population of 60 members in 3 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   11    16   2341.0    0.245     8
+     2   11    38   2261.0    0.245     2
+     3   11     6    463.0    0.091     3
+Total extinctions: 0
+Generation time: 50.637 sec (46.430 average)
+
+ ****** Running generation 12 ****** 
+
+Gen timestep at time: 2019-03-23 20:25:03.460430
+527 463
+achieved fitness: 463 at timestep 399915 time: 2019-03-23 20:25:04.434003
+Saving genome to file ./genomes/best_genome_run3_HillTopZone.Act2.state_gen12.pkl
+584 341
+585 96
+625 341
+626 341
+627 96
+391 2261
+achieved fitness: 2261 at timestep 403281 time: 2019-03-23 20:25:08.961157
+Saving genome to file ./genomes/best_genome_run3_HillTopZone.Act2.state_gen12.pkl
+590 2244
+589 1398
+628 96
+629 341
+630 1398
+631 96
+632 96
+633 96
+634 339
+635 341
+636 96
+637 96
+638 341
+639 941
+640 96
+641 333
+642 96
+643 1408
+644 341
+645 338
+438 2341
+achieved fitness: 2341 at timestep 415488 time: 2019-03-23 20:25:25.394665
+Saving genome to file ./genomes/best_genome_run3_HillTopZone.Act2.state_gen12.pkl
+196 2341
+450 2261
+646 341
+647 1408
+648 96
+649 331
+650 341
+651 3283
+achieved fitness: 3283 at timestep 422637 time: 2019-03-23 20:25:35.036026
+Saving genome to file ./genomes/best_genome_run3_HillTopZone.Act2.state_gen12.pkl
+652 1408
+653 333
+654 341
+655 341
+656 341
+657 96
+658 333
+659 96
+660 341
+661 341
+662 96
+663 96
+664 96
+665 333
+666 341
+667 337
+668 341
+669 96
+670 324
+671 341
+672 341
+673 96
+674 96
+675 96
+Total timesteps at end of gen: 433554
+Population's average fitness: 570.23333 stdev: 727.12586
+Best fitness: 3283.00000 - size: (11, 13) - species 1 - id 651
+Average adjusted fitness: 0.131
+Mean genetic distance 2.320, standard deviation 0.588
+Population of 60 members in 3 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   12    18   3283.0    0.187     0
+     2   12    35   2341.0    0.147     0
+     3   12     7    463.0    0.058     4
+Total extinctions: 0
+Generation time: 46.183 sec (46.863 average)
+
+ ****** Running generation 13 ****** 
+
+Gen timestep at time: 2019-03-23 20:25:49.643196
+527 463
+achieved fitness: 463 at timestep 434283 time: 2019-03-23 20:25:50.620807
+Saving genome to file ./genomes/best_genome_run3_HillTopZone.Act2.state_gen13.pkl
+584 341
+625 341
+676 341
+677 463
+678 341
+679 341
+196 2341
+achieved fitness: 2341 at timestep 438369 time: 2019-03-23 20:25:56.118276
+Saving genome to file ./genomes/best_genome_run3_HillTopZone.Act2.state_gen13.pkl
+391 2261
+590 2244
+680 341
+681 96
+682 96
+683 96
+684 96
+685 96
+686 96
+687 96
+688 341
+689 1408
+690 341
+691 333
+692 341
+693 1398
+694 1408
+695 341
+696 341
+697 96
+698 333
+699 96
+700 341
+701 341
+702 1408
+703 96
+704 341
+705 339
+706 341
+707 333
+651 3283
+achieved fitness: 3283 at timestep 457728 time: 2019-03-23 20:26:22.186726
+Saving genome to file ./genomes/best_genome_run3_HillTopZone.Act2.state_gen13.pkl
+438 2341
+450 2261
+708 341
+709 1398
+710 341
+711 341
+712 341
+713 96
+714 341
+715 96
+716 96
+717 341
+718 341
+719 96
+720 341
+721 331
+722 317
+723 96
+724 1408
+725 96
+726 341
+Total timesteps at end of gen: 468714
+Population's average fitness: 596.51667 stdev: 724.70386
+Best fitness: 3283.00000 - size: (11, 13) - species 2 - id 651
+Average adjusted fitness: 0.137
+Mean genetic distance 2.185, standard deviation 0.682
+Population of 60 members in 3 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   13    20   2341.0    0.146     1
+     2   13    30   3283.0    0.177     0
+     3   13    10    463.0    0.088     5
+Total extinctions: 0
+Generation time: 47.250 sec (46.987 average)
+
+ ****** Running generation 14 ****** 
+
+Gen timestep at time: 2019-03-23 20:26:36.893303
+527 463
+achieved fitness: 463 at timestep 469443 time: 2019-03-23 20:26:37.867858
+Saving genome to file ./genomes/best_genome_run3_HillTopZone.Act2.state_gen14.pkl
+677 463
+676 341
+727 463
+728 341
+729 341
+730 337
+731 341
+732 96
+733 96
+438 2341
+achieved fitness: 2341 at timestep 474810 time: 2019-03-23 20:26:45.081626
+Saving genome to file ./genomes/best_genome_run3_HillTopZone.Act2.state_gen14.pkl
+450 2261
+724 1408
+734 341
+735 341
+736 104
+737 341
+738 96
+739 341
+740 96
+741 341
+742 96
+743 2341
+744 333
+745 341
+746 96
+747 340
+748 341
+749 341
+750 341
+651 3283
+achieved fitness: 3283 at timestep 487251 time: 2019-03-23 20:27:01.789708
+Saving genome to file ./genomes/best_genome_run3_HillTopZone.Act2.state_gen14.pkl
+196 2341
+391 2261
+751 341
+752 341
+753 341
+754 1408
+755 341
+756 2261
+757 96
+758 96
+759 341
+760 1408
+761 341
+762 341
+763 341
+764 1408
+765 1408
+766 341
+767 317
+768 341
+769 111
+770 96
+771 317
+772 333
+773 2341
+774 96
+775 341
+776 1398
+777 1408
+Total timesteps at end of gen: 510909
+Population's average fitness: 700.01667 stdev: 781.92537
+Best fitness: 3283.00000 - size: (11, 13) - species 2 - id 651
+Average adjusted fitness: 0.161
+Mean genetic distance 2.186, standard deviation 0.657
+Population of 60 members in 3 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   14    19   2341.0    0.167     2
+     2   14    32   3283.0    0.243     1
+     3   14     9    463.0    0.073     6
+Total extinctions: 0
+Generation time: 56.769 sec (47.718 average)
+Saving checkpoint to neat-checkpoint-14
+
+ ****** Running generation 15 ****** 
+
+Gen timestep at time: 2019-03-23 20:27:33.670380
+527 463
+achieved fitness: 463 at timestep 511638 time: 2019-03-23 20:27:34.644853
+Saving genome to file ./genomes/best_genome_run3_HillTopZone.Act2.state_gen15.pkl
+677 463
+727 463
+778 341
+779 341
+780 463
+781 96
+782 341
+783 96
+438 2341
+achieved fitness: 2341 at timestep 517008 time: 2019-03-23 20:27:41.867236
+Saving genome to file ./genomes/best_genome_run3_HillTopZone.Act2.state_gen15.pkl
+743 2341
+450 2261
+784 2261
+785 1408
+786 1408
+787 341
+788 96
+789 310
+790 1408
+791 333
+792 96
+793 341
+794 1408
+795 96
+796 96
+797 1408
+798 1408
+799 96
+800 317
+801 341
+651 3283
+achieved fitness: 3283 at timestep 535935 time: 2019-03-23 20:28:07.384859
+Saving genome to file ./genomes/best_genome_run3_HillTopZone.Act2.state_gen15.pkl
+773 2341
+196 2341
+802 331
+803 341
+804 341
+805 96
+806 316
+807 341
+808 337
+809 341
+810 96
+811 1408
+812 96
+813 96
+814 96
+815 96
+816 340
+817 341
+818 341
+819 96
+820 96
+821 96
+822 1398
+823 96
+824 96
+825 96
+826 341
+827 341
+828 341
+Total timesteps at end of gen: 550860
+Population's average fitness: 658.30000 stdev: 777.56492
+Best fitness: 3283.00000 - size: (11, 13) - species 2 - id 651
+Average adjusted fitness: 0.164
+Mean genetic distance 2.223, standard deviation 0.668
+Population of 60 members in 3 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   15    28   2341.0    0.262     3
+     2   15    22   3283.0    0.154     2
+     3   15    10    463.0    0.077     7
+Total extinctions: 0
+Generation time: 53.807 sec (48.732 average)
+
+ ****** Running generation 16 ****** 
+
+Gen timestep at time: 2019-03-23 20:28:27.477619
+527 463
+achieved fitness: 463 at timestep 551589 time: 2019-03-23 20:28:28.451592
+Saving genome to file ./genomes/best_genome_run3_HillTopZone.Act2.state_gen16.pkl
+780 463
+677 463
+829 463
+830 341
+831 96
+832 341
+833 341
+834 96
+835 96
+743 2341
+achieved fitness: 2341 at timestep 557232 time: 2019-03-23 20:28:36.030722
+Saving genome to file ./genomes/best_genome_run3_HillTopZone.Act2.state_gen16.pkl
+450 2261
+784 2261
+836 341
+837 317
+838 2252
+839 341
+840 2252
+841 180
+842 341
+843 317
+844 1408
+845 96
+846 96
+847 2261
+848 1408
+849 96
+850 341
+851 341
+852 341
+853 96
+854 341
+855 341
+856 1408
+857 341
+651 3283
+achieved fitness: 3283 at timestep 575586 time: 2019-03-23 20:29:00.748526
+Saving genome to file ./genomes/best_genome_run3_HillTopZone.Act2.state_gen16.pkl
+773 2341
+438 2341
+858 333
+859 317
+860 341
+861 96
+862 341
+863 341
+864 96
+865 341
+866 1408
+867 310
+868 341
+869 1398
+870 341
+871 1408
+872 333
+873 341
+874 96
+875 2341
+876 341
+877 331
+878 333
+879 341
+Total timesteps at end of gen: 591573
+Population's average fitness: 751.93333 stdev: 820.41469
+Best fitness: 3283.00000 - size: (11, 13) - species 2 - id 651
+Average adjusted fitness: 0.178
+Mean genetic distance 2.207, standard deviation 0.711
+Population of 60 members in 3 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   16    29   2341.0    0.241     4
+     2   16    22   3283.0    0.224     3
+     3   16     9    463.0    0.069     8
+Total extinctions: 0
+Generation time: 54.830 sec (50.022 average)
+
+ ****** Running generation 17 ****** 
+
+Gen timestep at time: 2019-03-23 20:29:22.307505
+527 463
+achieved fitness: 463 at timestep 592302 time: 2019-03-23 20:29:23.280555
+Saving genome to file ./genomes/best_genome_run3_HillTopZone.Act2.state_gen17.pkl
+780 463
+677 463
+880 341
+881 463
+882 96
+883 96
+884 341
+885 341
+743 2341
+achieved fitness: 2341 at timestep 597789 time: 2019-03-23 20:29:30.647578
+Saving genome to file ./genomes/best_genome_run3_HillTopZone.Act2.state_gen17.pkl
+450 2261
+784 2261
+886 96
+887 96
+888 341
+889 341
+890 341
+891 331
+892 317
+893 341
+894 96
+895 341
+896 341
+897 187
+898 96
+899 341
+900 96
+901 317
+902 1408
+903 341
+904 96
+905 341
+906 341
+907 1408
+908 96
+909 341
+651 3283
+achieved fitness: 3283 at timestep 613761 time: 2019-03-23 20:29:52.115760
+Saving genome to file ./genomes/best_genome_run3_HillTopZone.Act2.state_gen17.pkl
+773 2341
+438 2341
+910 341
+911 341
+912 333
+913 2261
+914 2261
+915 2261
+916 341
+917 1408
+918 96
+919 341
+920 1408
+921 333
+922 341
+923 339
+924 333
+925 341
+926 96
+927 341
+928 341
+929 333
+930 180
+Total timesteps at end of gen: 629148
+Population's average fitness: 677.60000 stdev: 791.77339
+Best fitness: 3283.00000 - size: (11, 13) - species 2 - id 651
+Average adjusted fitness: 0.164
+Mean genetic distance 2.261, standard deviation 0.700
+Population of 60 members in 3 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   17    29   2341.0    0.163     5
+     2   17    21   3283.0    0.251     4
+     3   17    10    463.0    0.077     9
+Total extinctions: 0
+Generation time: 50.528 sec (50.529 average)
+
+ ****** Running generation 18 ****** 
+
+Gen timestep at time: 2019-03-23 20:30:12.835469
+527 463
+achieved fitness: 463 at timestep 629877 time: 2019-03-23 20:30:13.808159
+Saving genome to file ./genomes/best_genome_run3_HillTopZone.Act2.state_gen18.pkl
+780 463
+677 463
+931 341
+932 341
+933 96
+934 96
+935 96
+936 341
+937 96
+743 2341
+achieved fitness: 2341 at timestep 635097 time: 2019-03-23 20:30:20.818075
+Saving genome to file ./genomes/best_genome_run3_HillTopZone.Act2.state_gen18.pkl
+450 2261
+784 2261
+938 96
+939 2341
+940 329
+941 341
+942 2261
+943 341
+944 317
+945 337
+946 341
+947 2261
+948 1408
+949 341
+950 2261
+951 1408
+952 341
+953 1408
+954 333
+955 340
+956 341
+957 96
+958 2261
+651 3283
+achieved fitness: 3283 at timestep 655416 time: 2019-03-23 20:30:48.147407
+Saving genome to file ./genomes/best_genome_run3_HillTopZone.Act2.state_gen18.pkl
+773 2341
+438 2341
+959 96
+960 1205
+961 96
+962 1408
+963 96
+964 341
+965 96
+966 187
+967 1408
+968 333
+969 219
+970 96
+971 96
+972 2677
+973 333
+974 333
+975 96
+976 333
+977 331
+978 1408
+979 317
+980 96
+981 96
+Total timesteps at end of gen: 670890
+Population's average fitness: 813.73333 stdev: 888.67731
+Best fitness: 3283.00000 - size: (11, 13) - species 2 - id 651
+Average adjusted fitness: 0.189
+Mean genetic distance 2.278, standard deviation 0.680
+Population of 61 members in 3 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   18    35   2341.0    0.278     6
+     2   18    18   3283.0    0.232     5
+     3   18     8    463.0    0.058    10
+Total extinctions: 0
+Generation time: 56.166 sec (51.121 average)
+
+ ****** Running generation 19 ****** 
+
+Gen timestep at time: 2019-03-23 20:31:09.001791
+527 463
+achieved fitness: 463 at timestep 671619 time: 2019-03-23 20:31:09.975545
+Saving genome to file ./genomes/best_genome_run3_HillTopZone.Act2.state_gen19.pkl
+780 463
+677 463
+982 96
+983 96
+984 96
+985 341
+986 941
+achieved fitness: 941 at timestep 675264 time: 2019-03-23 20:31:14.853123
+Saving genome to file ./genomes/best_genome_run3_HillTopZone.Act2.state_gen19.pkl
+939 2341
+achieved fitness: 2341 at timestep 676470 time: 2019-03-23 20:31:16.492351
+Saving genome to file ./genomes/best_genome_run3_HillTopZone.Act2.state_gen19.pkl
+743 2341
+450 2261
+987 317
+988 341
+989 96
+990 1408
+991 180
+992 337
+993 1408
+994 1408
+995 96
+996 341
+997 2252
+998 187
+999 96
+1000 333
+1001 341
+1002 2252
+1003 341
+1004 341
+1005 1408
+1006 1408
+1007 337
+1008 1408
+1009 341
+1010 341
+1011 96
+1012 96
+1013 339
+651 3283
+achieved fitness: 3283 at timestep 699201 time: 2019-03-23 20:31:47.127921
+Saving genome to file ./genomes/best_genome_run3_HillTopZone.Act2.state_gen19.pkl
+972 2677
+773 2341
+1014 96
+1015 180
+1016 341
+1017 96
+1018 96
+1019 341
+1020 341
+1021 2261
+1022 96
+1023 2252
+1024 306
+1025 317
+1026 1408
+1027 2261
+1028 333
+1029 96
+1030 317
+1031 96
+1032 341
+1033 341
+Total timesteps at end of gen: 712632
+Population's average fitness: 786.36066 stdev: 861.95746
+Best fitness: 3283.00000 - size: (11, 13) - species 2 - id 651
+Average adjusted fitness: 0.186
+Mean genetic distance 2.206, standard deviation 0.688
+Population of 61 members in 3 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   19    30   2341.0    0.238     7
+     2   19    22   3283.0    0.233     6
+     3   19     9    941.0    0.086    11
+Total extinctions: 0
+Generation time: 56.309 sec (51.609 average)
+Saving checkpoint to neat-checkpoint-19
+
+ ****** Running generation 20 ****** 
+
+Gen timestep at time: 2019-03-23 20:32:05.320322
+986 941
+achieved fitness: 941 at timestep 713463 time: 2019-03-23 20:32:06.442985
+Saving genome to file ./genomes/best_genome_run3_HillTopZone.Act2.state_gen20.pkl
+527 463
+780 463
+1034 96
+1035 96
+1036 96
+1037 96
+1038 96
+1039 341
+939 2341
+achieved fitness: 2341 at timestep 718089 time: 2019-03-23 20:32:12.668044
+Saving genome to file ./genomes/best_genome_run3_HillTopZone.Act2.state_gen20.pkl
+743 2341
+450 2261
+1040 1408
+1041 96
+1042 341
+1043 317
+1044 1408
+1045 341
+1046 317
+1047 1398
+1048 341
+1049 341
+1050 2261
+1051 96
+1052 1408
+1053 96
+1054 317
+1055 96
+1056 1408
+1057 341
+1058 317
+1059 310
+1060 341
+1061 96
+1062 1408
+1063 317
+1064 2341
+1065 1408
+1066 2261
+651 3283
+achieved fitness: 3283 at timestep 742038 time: 2019-03-23 20:32:44.996313
+Saving genome to file ./genomes/best_genome_run3_HillTopZone.Act2.state_gen20.pkl
+972 2677
+773 2341
+1067 96
+1068 320
+1069 341
+1070 317
+1071 96
+1072 340
+1073 1398
+1074 1408
+1075 96
+1076 341
+1077 333
+1078 341
+1079 333
+1080 333
+1081 2341
+1082 96
+1083 331
+1084 1408
+1085 321
+Total timesteps at end of gen: 755688
+Population's average fitness: 813.96721 stdev: 850.30334
+Best fitness: 3283.00000 - size: (11, 13) - species 2 - id 651
+Average adjusted fitness: 0.189
+Mean genetic distance 2.138, standard deviation 0.644
+Population of 61 members in 3 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   20    29   2341.0    0.263     8
+     2   20    24   3283.0    0.239     7
+     3   20     8    941.0    0.064    12
+Total extinctions: 0
+Generation time: 58.139 sec (53.062 average)
+
+ ****** Running generation 21 ****** 
+
+Gen timestep at time: 2019-03-23 20:33:03.458963
+986 941
+achieved fitness: 941 at timestep 756519 time: 2019-03-23 20:33:04.578796
+Saving genome to file ./genomes/best_genome_run3_HillTopZone.Act2.state_gen21.pkl
+527 463
+780 463
+1086 96
+1087 96
+1088 96
+1089 96
+1090 96
+1064 2341
+achieved fitness: 2341 at timestep 760698 time: 2019-03-23 20:33:10.193859
+Saving genome to file ./genomes/best_genome_run3_HillTopZone.Act2.state_gen21.pkl
+939 2341
+743 2341
+1091 341
+1092 317
+1093 317
+1094 2261
+1095 1408
+1096 1408
+1097 96
+1098 341
+1099 96
+1100 339
+1101 341
+1102 96
+1103 1408
+1104 96
+1105 96
+1106 96
+1107 96
+1108 317
+1109 1408
+1110 341
+1111 1408
+1112 341
+1113 317
+1114 2261
+1115 96
+1116 219
+651 3283
+achieved fitness: 3283 at timestep 781980 time: 2019-03-23 20:33:38.916385
+Saving genome to file ./genomes/best_genome_run3_HillTopZone.Act2.state_gen21.pkl
+972 2677
+773 2341
+1117 96
+1118 341
+1119 317
+1120 96
+1121 96
+1122 341
+1123 199
+1124 96
+1125 341
+1126 317
+1127 317
+1128 96
+1129 317
+1130 1408
+1131 333
+1132 1398
+1133 341
+1134 341
+1135 341
+1136 1408
+1137 340
+Total timesteps at end of gen: 796446
+Population's average fitness: 695.27869 stdev: 814.07051
+Best fitness: 3283.00000 - size: (11, 13) - species 2 - id 651
+Average adjusted fitness: 0.158
+Mean genetic distance 2.294, standard deviation 0.587
+Population of 60 members in 3 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   21    27   2341.0    0.217     9
+     2   21    26   3283.0    0.195     8
+     3   21     7    941.0    0.062    13
+Total extinctions: 0
+Generation time: 55.033 sec (53.501 average)
+
+ ****** Running generation 22 ****** 
+
+Gen timestep at time: 2019-03-23 20:33:58.491483
+986 941
+achieved fitness: 941 at timestep 797277 time: 2019-03-23 20:33:59.612802
+Saving genome to file ./genomes/best_genome_run3_HillTopZone.Act2.state_gen22.pkl
+527 463
+780 463
+1138 463
+1139 96
+1140 463
+1141 941
+1064 2341
+achieved fitness: 2341 at timestep 802533 time: 2019-03-23 20:34:06.669623
+Saving genome to file ./genomes/best_genome_run3_HillTopZone.Act2.state_gen22.pkl
+939 2341
+743 2341
+1142 341
+1143 96
+1144 317
+1145 335
+1146 341
+1147 317
+1148 341
+1149 96
+1150 341
+1151 333
+1152 96
+1153 341
+1154 96
+1155 341
+1156 317
+1157 1408
+1158 2261
+1159 341
+1160 310
+1161 96
+1162 96
+1163 96
+1164 341
+1165 341
+1166 341
+651 3283
+achieved fitness: 3283 at timestep 819633 time: 2019-03-23 20:34:29.769982
+Saving genome to file ./genomes/best_genome_run3_HillTopZone.Act2.state_gen22.pkl
+972 2677
+773 2341
+1167 2261
+1168 341
+1169 96
+1170 317
+1171 96
+1172 317
+1173 341
+1174 96
+1175 96
+1176 2261
+1177 317
+1178 331
+1179 2677
+1180 96
+1181 96
+1182 341
+1183 1408
+1184 96
+1185 331
+1186 341
+1187 96
+1188 2341
+Total timesteps at end of gen: 835398
+Population's average fitness: 725.45000 stdev: 873.51664
+Best fitness: 3283.00000 - size: (11, 13) - species 2 - id 651
+Average adjusted fitness: 0.184
+Mean genetic distance 2.342, standard deviation 0.688
+Population of 60 members in 3 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   22    22   2341.0    0.160    10
+     2   22    27   3283.0    0.251     9
+     3   22    11    941.0    0.142    14
+Total extinctions: 0
+Generation time: 52.668 sec (54.150 average)
+
+ ****** Running generation 23 ****** 
+
+Gen timestep at time: 2019-03-23 20:34:51.159887
+986 941
+achieved fitness: 941 at timestep 836229 time: 2019-03-23 20:34:52.279112
+Saving genome to file ./genomes/best_genome_run3_HillTopZone.Act2.state_gen23.pkl
+1141 941
+527 463
+1189 96
+1190 341
+1191 96
+1192 96
+1193 941
+1194 341
+1195 341
+1196 341
+1064 2341
+achieved fitness: 2341 at timestep 842493 time: 2019-03-23 20:35:00.720197
+Saving genome to file ./genomes/best_genome_run3_HillTopZone.Act2.state_gen23.pkl
+939 2341
+743 2341
+1197 341
+1198 96
+1199 2341
+1200 341
+1201 2341
+1202 317
+1203 341
+1204 96
+1205 337
+1206 341
+1207 341
+1208 96
+1209 96
+1210 1408
+1211 187
+1212 341
+1213 96
+1214 341
+1215 341
+651 3283
+achieved fitness: 3283 at timestep 857166 time: 2019-03-23 20:35:20.571242
+Saving genome to file ./genomes/best_genome_run3_HillTopZone.Act2.state_gen23.pkl
+1179 2677
+972 2677
+1216 2252
+1217 337
+1218 310
+1219 96
+1220 341
+1221 341
+1222 96
+1223 1408
+1224 331
+1225 96
+1226 2341
+1227 96
+1228 317
+1229 341
+1230 1408
+1231 96
+1232 341
+1233 333
+1234 96
+1235 329
+1236 1398
+1237 337
+1238 317
+1239 96
+Total timesteps at end of gen: 872976
+Population's average fitness: 736.51667 stdev: 860.13378
+Best fitness: 3283.00000 - size: (11, 13) - species 2 - id 651
+Average adjusted fitness: 0.184
+Mean genetic distance 2.406, standard deviation 0.685
+Population of 61 members in 3 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   23    23   2341.0    0.215    11
+     2   23    26   3283.0    0.227    10
+     3   23    12    941.0    0.111    15
+Total extinctions: 0
+Generation time: 51.296 sec (54.554 average)
+
+ ****** Running generation 24 ****** 
+
+Gen timestep at time: 2019-03-23 20:35:42.456099
+1193 941
+achieved fitness: 941 at timestep 873807 time: 2019-03-23 20:35:43.575207
+Saving genome to file ./genomes/best_genome_run3_HillTopZone.Act2.state_gen24.pkl
+986 941
+1141 941
+1240 941
+1241 334
+1242 341
+1243 96
+1244 941
+1245 463
+1246 96
+1247 941
+1248 941
+743 2341
+achieved fitness: 2341 at timestep 882324 time: 2019-03-23 20:35:55.052928
+Saving genome to file ./genomes/best_genome_run3_HillTopZone.Act2.state_gen24.pkl
+1064 2341
+939 2341
+1249 2341
+1250 96
+1251 1408
+1252 341
+1253 96
+1254 317
+1255 341
+1256 96
+1257 341
+1258 317
+1259 96
+1260 96
+1261 1408
+1262 187
+1263 341
+1264 333
+1265 341
+1266 341
+1267 97
+1268 96
+651 3283
+achieved fitness: 3283 at timestep 897498 time: 2019-03-23 20:36:15.548065
+Saving genome to file ./genomes/best_genome_run3_HillTopZone.Act2.state_gen24.pkl
+1179 2677
+972 2677
+1269 341
+1270 341
+1271 96
+1272 96
+1273 96
+1274 341
+1275 96
+1276 341
+1277 1408
+1278 341
+1279 96
+1280 2261
+1281 96
+1282 341
+1283 317
+1284 340
+1285 1408
+1286 1408
+1287 317
+1288 338
+1289 331
+1290 317
+1291 1408
+Total timesteps at end of gen: 914166
+Population's average fitness: 739.04918 stdev: 808.59164
+Best fitness: 3283.00000 - size: (11, 13) - species 2 - id 651
+Average adjusted fitness: 0.197
+Mean genetic distance 2.412, standard deviation 0.784
+Population of 60 members in 3 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   24    21   2341.0    0.189    12
+     2   24    24   3283.0    0.225    11
+     3   24    15    941.0    0.177    16
+Total extinctions: 0
+Generation time: 55.649 sec (54.443 average)
+Saving checkpoint to neat-checkpoint-24
+
+ ****** Running generation 25 ****** 
+
+Gen timestep at time: 2019-03-23 20:36:38.116065
+1193 941
+achieved fitness: 941 at timestep 914997 time: 2019-03-23 20:36:39.235988
+Saving genome to file ./genomes/best_genome_run3_HillTopZone.Act2.state_gen25.pkl
+1240 941
+986 941
+1292 941
+1293 96
+1294 96
+1295 96
+1296 96
+1297 96
+1298 96
+1299 96
+1300 941
+1301 96
+1302 338
+1303 334
+743 2341
+achieved fitness: 2341 at timestep 922920 time: 2019-03-23 20:36:49.878925
+Saving genome to file ./genomes/best_genome_run3_HillTopZone.Act2.state_gen25.pkl
+1064 2341
+939 2341
+1304 2252
+1305 2261
+1306 341
+1307 317
+1308 1408
+1309 96
+1310 317
+1311 341
+1312 335
+1313 1408
+1314 96
+1315 310
+1316 1408
+1317 1408
+1318 341
+1319 96
+1320 341
+1321 1408
+651 3283
+achieved fitness: 3283 at timestep 941289 time: 2019-03-23 20:37:14.691662
+Saving genome to file ./genomes/best_genome_run3_HillTopZone.Act2.state_gen25.pkl
+1179 2677
+972 2677
+1322 2261
+1323 333
+1324 310
+1325 96
+1326 96
+1327 1408
+1328 96
+1329 1408
+1330 96
+1331 2341
+1332 2252
+1333 2261
+1334 96
+1335 2252
+1336 96
+1337 1408
+1338 96
+1339 341
+1340 341
+1341 1408
+1342 341
+Total timesteps at end of gen: 958722
+Population's average fitness: 927.10000 stdev: 913.81444
+Best fitness: 3283.00000 - size: (11, 13) - species 2 - id 651
+Average adjusted fitness: 0.242
+Mean genetic distance 2.313, standard deviation 0.891
+Population of 61 members in 3 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   25    23   2341.0    0.291    13
+     2   25    26   3283.0    0.336    12
+     3   25    12    941.0    0.098    17
+Total extinctions: 0
+Generation time: 60.274 sec (55.089 average)
+
+ ****** Running generation 26 ****** 
+
+Gen timestep at time: 2019-03-23 20:37:38.390144
+1193 941
+achieved fitness: 941 at timestep 959553 time: 2019-03-23 20:37:39.508669
+Saving genome to file ./genomes/best_genome_run3_HillTopZone.Act2.state_gen26.pkl
+1292 941
+1300 941
+1343 341
+1344 96
+1345 941
+1346 341
+1347 341
+1348 341
+1349 341
+1350 941
+1351 96
+743 2341
+achieved fitness: 2341 at timestep 966927 time: 2019-03-23 20:37:49.482975
+Saving genome to file ./genomes/best_genome_run3_HillTopZone.Act2.state_gen26.pkl
+1064 2341
+939 2341
+1352 96
+1353 2341
+1354 1408
+1355 341
+1356 341
+1357 96
+1358 341
+1359 2341
+1360 1408
+1361 96
+1362 96
+1363 1408
+1364 96
+1365 310
+1366 341
+1367 341
+1368 1408
+1369 312
+1370 310
+1371 341
+651 3283
+achieved fitness: 3283 at timestep 986316 time: 2019-03-23 20:38:15.785920
+Saving genome to file ./genomes/best_genome_run3_HillTopZone.Act2.state_gen26.pkl
+1179 2677
+972 2677
+1372 2261
+1373 1398
+1374 341
+1375 338
+1376 333
+1377 341
+1378 333
+1379 1398
+1380 341
+1381 317
+1382 1408
+1383 324
+1384 96
+1385 341
+1386 317
+1387 96
+1388 341
+1389 333
+1390 96
+1391 96
+1392 96
+1393 96
+Finished timestepMax at time: 2019-03-23 20:38:34.352525

@@ -1,0 +1,2425 @@
+Starting python script!
+Using env(SonicTheHedgehog-Genesis, GreenHillZone.Act2.state)
+Observation space shape:(224, 320, 3)
+Start: 2019-03-22 16:51:23.052615
+Using the following config file: config.txt
+[NEAT]
+fitness_criterion     = max
+fitness_threshold     = 9000
+pop_size              = 60
+reset_on_extinction   = False
+
+[DefaultGenome]
+# node activation options
+activation_default      = sigmoid
+activation_mutate_rate  = 0.00
+activation_options      = sigmoid 
+#abs clamped cube exp gauss hat identity inv log relu sigmoid sin softplus square tanh
+
+# node aggregation options
+aggregation_default     = sum
+aggregation_mutate_rate = 0.00
+aggregation_options     = sum product min max mean median maxabs
+
+# node bias options
+bias_init_mean          = 0.05
+bias_init_stdev         = 1.0
+bias_max_value          = 50.0
+bias_min_value          = -50.0
+bias_mutate_power       = 0.5
+bias_mutate_rate        = 0.7
+bias_replace_rate       = 0.1
+
+# genome compatibility options
+compatibility_disjoint_coefficient = 1.0
+compatibility_weight_coefficient   = 0.5
+
+# connection add/remove rates
+conn_add_prob           = 0.6
+conn_delete_prob        = 0.1
+
+# connection enable options
+enabled_default         = True
+enabled_mutate_rate     = 0.05
+
+feed_forward            = True
+initial_connection      = unconnected
+#initial_connection     = partial_nodirect 0.4
+
+# node add/remove rates
+node_add_prob           = 0.7
+node_delete_prob        = 0.1
+
+# network parameters
+num_hidden              = 0
+num_inputs              = 17920
+num_outputs             = 12
+
+# node response options
+response_init_mean      = 1.0
+response_init_stdev     = 0.05
+response_max_value      = 30.0
+response_min_value      = -30.0
+response_mutate_power   = 0.1
+response_mutate_rate    = 0.75
+response_replace_rate   = 0.1
+
+# connection weight options
+weight_init_mean        = 0.1
+weight_init_stdev       = 1.0
+weight_max_value        = 30
+weight_min_value        = -30
+weight_mutate_power     = 0.5
+weight_mutate_rate      = 0.8
+weight_replace_rate     = 0.1
+
+[DefaultSpeciesSet]
+compatibility_threshold = 2.8
+
+[DefaultStagnation]
+species_fitness_func = max
+max_stagnation       = 200
+species_elitism      = 0
+
+[DefaultReproduction]
+elitism            = 3
+survival_threshold = 0.3
+
+
+
+End of config file
+
+ ****** Running generation 0 ****** 
+
+Gen timestep at time: 2019-03-22 16:51:23.061742
+1 80
+achieved fitness: 80 at timestep 303 time: 2019-03-22 16:51:23.480822
+Saving genome to file ./genomes/best_genome_run3_GreenHillZone.Act2.state_gen0.pkl
+2 80
+3 80
+4 80
+5 80
+6 80
+7 80
+8 80
+9 80
+10 80
+11 80
+12 80
+13 80
+14 80
+15 80
+16 80
+17 80
+18 80
+19 80
+20 80
+21 80
+22 80
+23 80
+24 80
+25 80
+26 80
+27 80
+28 80
+29 80
+30 80
+31 80
+32 80
+33 80
+34 80
+35 80
+36 80
+37 80
+38 80
+39 80
+40 80
+41 80
+42 80
+43 80
+44 80
+45 80
+46 80
+47 80
+48 80
+49 80
+50 80
+51 80
+52 80
+53 80
+54 80
+55 80
+56 80
+57 80
+58 80
+59 80
+60 80
+Total timesteps at end of gen: 18180
+Population's average fitness: 80.00000 stdev: 0.00000
+Best fitness: 80.00000 - size: (12, 0) - species 1 - id 1
+Average adjusted fitness: 0.000
+Mean genetic distance 1.040, standard deviation 0.531
+Population of 60 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    0    60     80.0    0.000     0
+Total extinctions: 0
+Generation time: 24.616 sec (24.616 average)
+
+ ****** Running generation 1 ****** 
+
+Gen timestep at time: 2019-03-22 16:51:47.677713
+1 80
+achieved fitness: 80 at timestep 18483 time: 2019-03-22 16:51:48.087097
+Saving genome to file ./genomes/best_genome_run3_GreenHillZone.Act2.state_gen1.pkl
+2 80
+3 80
+61 80
+62 80
+63 80
+64 80
+65 80
+66 80
+67 80
+68 80
+69 80
+70 80
+71 80
+72 80
+73 80
+74 80
+75 80
+76 80
+77 80
+78 80
+79 80
+80 80
+81 80
+82 80
+83 80
+84 80
+85 80
+86 80
+87 80
+88 80
+89 80
+90 80
+91 80
+92 80
+93 80
+94 80
+95 80
+96 80
+97 80
+98 80
+99 80
+100 80
+101 80
+102 80
+103 80
+104 80
+105 80
+106 80
+107 80
+108 80
+109 80
+110 80
+111 80
+112 80
+113 80
+114 80
+115 80
+116 80
+117 80
+Total timesteps at end of gen: 36360
+Population's average fitness: 80.00000 stdev: 0.00000
+Best fitness: 80.00000 - size: (12, 0) - species 1 - id 1
+Average adjusted fitness: 0.000
+Mean genetic distance 1.302, standard deviation 0.543
+Population of 60 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    1    60     80.0    0.000     1
+Total extinctions: 0
+Generation time: 24.713 sec (24.664 average)
+
+ ****** Running generation 2 ****** 
+
+Gen timestep at time: 2019-03-22 16:52:12.390499
+1 80
+achieved fitness: 80 at timestep 36663 time: 2019-03-22 16:52:12.800908
+Saving genome to file ./genomes/best_genome_run3_GreenHillZone.Act2.state_gen2.pkl
+2 80
+3 80
+118 80
+119 80
+120 80
+121 80
+122 80
+123 80
+124 80
+125 80
+126 80
+127 80
+128 80
+129 80
+130 80
+131 80
+132 80
+133 80
+134 80
+135 80
+136 80
+137 80
+138 80
+139 80
+140 80
+141 80
+142 80
+143 80
+144 80
+145 80
+146 80
+147 80
+148 80
+149 80
+150 80
+151 80
+152 80
+153 80
+154 80
+155 80
+156 80
+157 80
+158 80
+159 80
+160 80
+161 80
+162 203
+achieved fitness: 203 at timestep 51000 time: 2019-03-22 16:52:32.286655
+Saving genome to file ./genomes/best_genome_run3_GreenHillZone.Act2.state_gen2.pkl
+163 203
+164 80
+165 80
+166 80
+167 80
+168 80
+169 80
+170 80
+171 80
+172 80
+173 80
+174 80
+Total timesteps at end of gen: 54732
+Population's average fitness: 84.10000 stdev: 22.07918
+Best fitness: 203.00000 - size: (12, 1) - species 1 - id 162
+Average adjusted fitness: 0.033
+Mean genetic distance 1.431, standard deviation 0.527
+Population of 60 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    2    60    203.0    0.033     0
+Total extinctions: 0
+Generation time: 24.998 sec (24.776 average)
+
+ ****** Running generation 3 ****** 
+
+Gen timestep at time: 2019-03-22 16:52:37.388652
+162 203
+achieved fitness: 203 at timestep 55131 time: 2019-03-22 16:52:37.932765
+Saving genome to file ./genomes/best_genome_run3_GreenHillZone.Act2.state_gen3.pkl
+163 203
+1 80
+175 80
+176 80
+177 80
+178 203
+179 80
+180 80
+181 80
+182 80
+183 80
+184 80
+185 80
+186 80
+187 80
+188 80
+189 80
+190 80
+191 80
+192 80
+193 80
+194 80
+195 80
+196 80
+197 80
+198 80
+199 80
+200 80
+201 80
+202 80
+203 80
+204 203
+205 80
+206 80
+207 80
+208 80
+209 80
+210 80
+211 80
+212 80
+213 80
+214 80
+215 80
+216 80
+217 80
+218 80
+219 80
+220 80
+221 80
+222 80
+223 80
+224 80
+225 80
+226 1077
+achieved fitness: 1077 at timestep 72042 time: 2019-03-22 16:53:00.967037
+Saving genome to file ./genomes/best_genome_run3_GreenHillZone.Act2.state_gen3.pkl
+227 80
+228 80
+229 80
+230 80
+231 80
+Total timesteps at end of gen: 73557
+Population's average fitness: 104.81667 stdev: 130.22884
+Best fitness: 1077.00000 - size: (12, 2) - species 1 - id 226
+Average adjusted fitness: 0.025
+Mean genetic distance 1.620, standard deviation 0.323
+Population of 60 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    3    60   1077.0    0.025     0
+Total extinctions: 0
+Generation time: 25.659 sec (24.996 average)
+
+ ****** Running generation 4 ****** 
+
+Gen timestep at time: 2019-03-22 16:53:03.047514
+226 1077
+achieved fitness: 1077 at timestep 74121 time: 2019-03-22 16:53:03.820022
+Saving genome to file ./genomes/best_genome_run3_GreenHillZone.Act2.state_gen4.pkl
+162 203
+163 203
+232 80
+233 80
+234 1077
+235 80
+236 80
+237 80
+238 80
+239 80
+240 80
+241 80
+242 80
+243 80
+244 80
+245 80
+246 80
+247 80
+248 80
+249 80
+250 203
+251 80
+252 80
+253 203
+254 80
+255 80
+256 80
+257 1077
+258 80
+259 80
+260 80
+261 80
+262 80
+263 80
+264 80
+265 80
+266 80
+267 80
+268 80
+269 80
+270 80
+271 80
+272 203
+273 80
+274 80
+275 80
+276 80
+277 203
+278 203
+279 80
+280 80
+281 80
+282 80
+283 1077
+284 203
+285 80
+286 80
+287 80
+288 80
+Total timesteps at end of gen: 93549
+Population's average fitness: 162.86667 stdev: 247.82571
+Best fitness: 1077.00000 - size: (12, 2) - species 1 - id 226
+Average adjusted fitness: 0.083
+Mean genetic distance 1.722, standard deviation 0.174
+Population of 60 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    4    60   1077.0    0.083     1
+Total extinctions: 0
+Generation time: 27.269 sec (25.451 average)
+Saving checkpoint to neat-checkpoint-4
+
+ ****** Running generation 5 ****** 
+
+Gen timestep at time: 2019-03-22 16:53:30.323871
+257 1077
+achieved fitness: 1077 at timestep 94113 time: 2019-03-22 16:53:31.097304
+Saving genome to file ./genomes/best_genome_run3_GreenHillZone.Act2.state_gen5.pkl
+283 1077
+226 1077
+289 80
+290 203
+291 1077
+292 80
+293 80
+294 203
+295 80
+296 203
+297 80
+298 203
+299 203
+300 203
+301 203
+302 203
+303 203
+304 1077
+305 1077
+306 80
+307 80
+308 80
+309 203
+310 80
+311 80
+312 80
+313 80
+314 203
+315 203
+316 80
+317 203
+318 203
+319 80
+320 80
+321 80
+322 80
+323 80
+324 2382
+achieved fitness: 2382 at timestep 108888 time: 2019-03-22 16:53:51.382374
+Saving genome to file ./genomes/best_genome_run3_GreenHillZone.Act2.state_gen5.pkl
+325 203
+326 80
+327 80
+328 203
+329 80
+330 1077
+331 203
+332 80
+333 80
+334 203
+335 203
+336 80
+337 80
+338 80
+339 80
+340 80
+341 203
+342 80
+343 80
+344 80
+345 203
+Total timesteps at end of gen: 116184
+Population's average fitness: 277.73333 stdev: 412.89764
+Best fitness: 2382.00000 - size: (13, 4) - species 1 - id 324
+Average adjusted fitness: 0.086
+Mean genetic distance 1.703, standard deviation 0.283
+Population of 60 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    5    60   2382.0    0.086     0
+Total extinctions: 0
+Generation time: 31.078 sec (26.389 average)
+
+ ****** Running generation 6 ****** 
+
+Gen timestep at time: 2019-03-22 16:54:01.401500
+324 2382
+achieved fitness: 2382 at timestep 117099 time: 2019-03-22 16:54:02.667549
+Saving genome to file ./genomes/best_genome_run3_GreenHillZone.Act2.state_gen6.pkl
+257 1077
+283 1077
+346 80
+347 203
+348 1077
+349 203
+350 203
+351 203
+352 80
+353 80
+354 1077
+355 203
+356 203
+357 203
+358 203
+359 203
+360 2021
+361 80
+362 1077
+363 203
+364 203
+365 2405
+achieved fitness: 2405 at timestep 127272 time: 2019-03-22 16:54:16.649961
+Saving genome to file ./genomes/best_genome_run3_GreenHillZone.Act2.state_gen6.pkl
+366 203
+367 203
+368 80
+369 80
+370 80
+371 2405
+372 80
+373 80
+374 80
+375 80
+376 203
+377 203
+378 203
+379 2398
+380 80
+381 203
+382 203
+383 1077
+384 1077
+385 203
+386 80
+387 203
+388 203
+389 203
+390 1077
+391 203
+392 80
+393 2021
+394 203
+395 80
+396 80
+397 203
+398 2404
+399 203
+400 203
+401 203
+402 80
+Total timesteps at end of gen: 143568
+Population's average fitness: 528.26667 stdev: 715.75857
+Best fitness: 2405.00000 - size: (14, 7) - species 1 - id 365
+Average adjusted fitness: 0.193
+Mean genetic distance 1.747, standard deviation 0.390
+Population of 60 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    6    60   2405.0    0.193     0
+Total extinctions: 0
+Generation time: 37.655 sec (27.998 average)
+
+ ****** Running generation 7 ****** 
+
+Gen timestep at time: 2019-03-22 16:54:39.056603
+365 2405
+achieved fitness: 2405 at timestep 144465 time: 2019-03-22 16:54:40.296672
+Saving genome to file ./genomes/best_genome_run3_GreenHillZone.Act2.state_gen7.pkl
+371 2405
+398 2404
+403 80
+404 80
+405 2021
+406 364
+407 203
+408 1077
+409 1077
+410 203
+411 80
+412 203
+413 203
+414 203
+415 80
+416 2021
+417 80
+418 2398
+419 203
+420 203
+421 80
+422 80
+423 2453
+achieved fitness: 2453 at timestep 156381 time: 2019-03-22 16:54:56.763173
+Saving genome to file ./genomes/best_genome_run3_GreenHillZone.Act2.state_gen7.pkl
+424 80
+425 80
+426 2021
+427 203
+428 80
+429 203
+430 203
+431 203
+432 2021
+433 203
+434 203
+435 203
+436 1077
+437 2021
+438 432
+439 203
+440 2021
+441 203
+442 2021
+443 203
+444 1077
+445 203
+446 1077
+447 203
+448 80
+449 1077
+450 203
+451 80
+452 203
+453 80
+454 2405
+455 1077
+456 203
+457 80
+458 203
+459 203
+Total timesteps at end of gen: 173721
+Population's average fitness: 715.73333 stdev: 839.35270
+Best fitness: 2453.00000 - size: (12, 4) - species 1 - id 423
+Average adjusted fitness: 0.268
+Mean genetic distance 1.830, standard deviation 0.471
+Population of 60 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    7    60   2453.0    0.268     0
+Total extinctions: 0
+Generation time: 41.697 sec (29.711 average)
+
+ ****** Running generation 8 ****** 
+
+Gen timestep at time: 2019-03-22 16:55:20.753873
+423 2453
+achieved fitness: 2453 at timestep 174591 time: 2019-03-22 16:55:21.959461
+Saving genome to file ./genomes/best_genome_run3_GreenHillZone.Act2.state_gen8.pkl
+454 2405
+365 2405
+460 80
+461 203
+462 2021
+463 203
+464 203
+465 203
+466 203
+467 203
+468 203
+469 80
+470 203
+471 2404
+472 203
+473 2021
+474 2021
+475 203
+476 80
+477 203
+478 80
+479 2021
+480 2021
+481 203
+482 80
+483 1077
+484 203
+485 203
+486 80
+487 2021
+488 203
+489 2453
+490 203
+491 2021
+492 203
+493 2405
+494 80
+495 80
+496 2474
+achieved fitness: 2474 at timestep 196767 time: 2019-03-22 16:55:52.530115
+Saving genome to file ./genomes/best_genome_run3_GreenHillZone.Act2.state_gen8.pkl
+497 2021
+498 80
+499 203
+500 80
+501 80
+502 2021
+503 80
+504 80
+505 2405
+506 1077
+507 80
+508 80
+509 1077
+510 203
+511 2021
+512 2021
+513 203
+514 80
+515 2382
+516 80
+Total timesteps at end of gen: 207288
+Population's average fitness: 877.80000 stdev: 964.83143
+Best fitness: 2474.00000 - size: (13, 5) - species 1 - id 496
+Average adjusted fitness: 0.333
+Mean genetic distance 1.720, standard deviation 0.527
+Population of 60 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    8    60   2474.0    0.333     0
+Total extinctions: 0
+Generation time: 46.314 sec (31.555 average)
+
+ ****** Running generation 9 ****** 
+
+Gen timestep at time: 2019-03-22 16:56:07.067402
+496 2474
+achieved fitness: 2474 at timestep 208116 time: 2019-03-22 16:56:08.219649
+Saving genome to file ./genomes/best_genome_run3_GreenHillZone.Act2.state_gen9.pkl
+423 2453
+489 2453
+517 2405
+518 203
+519 80
+520 80
+521 203
+522 2021
+523 3524
+achieved fitness: 3524 at timestep 214368 time: 2019-03-22 16:56:16.851107
+Saving genome to file ./genomes/best_genome_run3_GreenHillZone.Act2.state_gen9.pkl
+524 2021
+525 429
+526 2398
+527 203
+528 1077
+529 203
+530 2405
+531 2021
+532 203
+533 80
+534 80
+535 2021
+536 2021
+537 80
+538 203
+539 2021
+540 2021
+541 80
+542 80
+543 80
+544 2398
+545 1077
+546 80
+547 203
+548 80
+549 203
+550 2405
+551 2021
+552 203
+553 80
+554 80
+555 203
+556 203
+557 2404
+558 2405
+559 203
+560 203
+561 203
+562 1077
+563 1077
+564 203
+565 2475
+566 2021
+567 80
+568 3524
+569 1077
+570 203
+571 2021
+572 2405
+573 2021
+Total timesteps at end of gen: 244227
+Population's average fitness: 1141.01667 stdev: 1071.27618
+Best fitness: 3524.00000 - size: (13, 6) - species 1 - id 523
+Average adjusted fitness: 0.308
+Mean genetic distance 1.654, standard deviation 0.328
+Population of 60 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    9    60   3524.0    0.308     0
+Total extinctions: 0
+Generation time: 51.043 sec (33.504 average)
+Saving checkpoint to neat-checkpoint-9
+
+ ****** Running generation 10 ****** 
+
+Gen timestep at time: 2019-03-22 16:56:58.118824
+523 3524
+achieved fitness: 3524 at timestep 245259 time: 2019-03-22 16:56:59.544289
+Saving genome to file ./genomes/best_genome_run3_GreenHillZone.Act2.state_gen10.pkl
+568 3524
+565 2475
+574 203
+575 80
+576 2021
+577 2021
+578 203
+579 203
+580 1077
+581 2398
+582 80
+583 2405
+584 80
+585 2021
+586 80
+587 2021
+588 3524
+589 2398
+590 203
+591 3524
+592 2404
+593 203
+594 203
+595 2456
+596 2453
+597 203
+598 2405
+599 203
+600 203
+601 2398
+602 2021
+603 2453
+604 203
+605 1077
+606 2021
+607 1077
+608 203
+609 2021
+610 3524
+611 203
+612 203
+613 2453
+614 203
+615 80
+616 203
+617 80
+618 203
+619 80
+620 203
+621 80
+622 2021
+623 80
+624 2021
+625 203
+626 80
+627 314
+628 80
+629 2405
+630 203
+Total timesteps at end of gen: 286929
+Population's average fitness: 1219.90000 stdev: 1187.34250
+Best fitness: 3524.00000 - size: (13, 6) - species 1 - id 523
+Average adjusted fitness: 0.331
+Mean genetic distance 1.720, standard deviation 0.234
+Population of 60 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   10    60   3524.0    0.331     1
+Total extinctions: 0
+Generation time: 58.939 sec (36.936 average)
+
+ ****** Running generation 11 ****** 
+
+Gen timestep at time: 2019-03-22 16:57:57.057788
+523 3524
+achieved fitness: 3524 at timestep 287961 time: 2019-03-22 16:57:58.491490
+Saving genome to file ./genomes/best_genome_run3_GreenHillZone.Act2.state_gen11.pkl
+568 3524
+588 3524
+631 1077
+632 432
+633 2456
+634 2405
+635 203
+636 2021
+637 80
+638 80
+639 80
+640 3524
+641 2405
+642 203
+643 3524
+644 2405
+645 203
+646 1077
+647 2387
+648 2400
+649 80
+650 80
+651 1077
+652 3514
+653 3524
+654 2384
+655 3524
+656 80
+657 3524
+658 80
+659 80
+660 2021
+661 80
+662 203
+663 1077
+664 2470
+665 80
+666 80
+667 203
+668 203
+669 1079
+670 203
+671 1077
+672 2404
+673 80
+674 80
+675 203
+676 2405
+677 2405
+678 2405
+679 2453
+680 2453
+681 1077
+682 3524
+683 2398
+684 80
+685 1077
+686 1077
+687 203
+Total timesteps at end of gen: 326289
+Population's average fitness: 1476.35000 stdev: 1291.90254
+Best fitness: 3524.00000 - size: (13, 6) - species 1 - id 523
+Average adjusted fitness: 0.405
+Mean genetic distance 1.923, standard deviation 0.166
+Population of 60 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   11    60   3524.0    0.405     2
+Total extinctions: 0
+Generation time: 54.404 sec (39.906 average)
+
+ ****** Running generation 12 ****** 
+
+Gen timestep at time: 2019-03-22 16:58:51.461530
+640 3524
+achieved fitness: 3524 at timestep 327315 time: 2019-03-22 16:58:52.881065
+Saving genome to file ./genomes/best_genome_run3_GreenHillZone.Act2.state_gen12.pkl
+643 3524
+523 3524
+688 2405
+689 80
+690 80
+691 1077
+692 203
+693 80
+694 203
+695 203
+696 203
+697 2398
+698 1077
+699 203
+700 432
+701 203
+702 1346
+703 3524
+704 80
+705 2405
+706 203
+707 203
+708 1077
+709 2453
+710 2403
+711 203
+712 2404
+713 203
+714 80
+715 203
+716 203
+717 3524
+718 2405
+719 1077
+720 80
+721 3524
+722 1077
+723 4249
+achieved fitness: 4249 at timestep 351765 time: 2019-03-22 16:59:26.720991
+Saving genome to file ./genomes/best_genome_run3_GreenHillZone.Act2.state_gen12.pkl
+724 2456
+725 203
+726 1077
+727 80
+728 2456
+729 203
+730 2453
+731 203
+732 203
+733 2404
+734 2453
+735 203
+736 203
+737 1077
+738 203
+739 203
+740 1077
+741 2453
+742 2404
+743 1077
+744 203
+Total timesteps at end of gen: 363951
+Population's average fitness: 1260.65000 stdev: 1244.36253
+Best fitness: 4249.00000 - size: (15, 9) - species 1 - id 723
+Average adjusted fitness: 0.283
+Mean genetic distance 1.946, standard deviation 0.222
+Population of 60 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   12    60   4249.0    0.283     0
+Total extinctions: 0
+Generation time: 52.122 sec (42.618 average)
+
+ ****** Running generation 13 ****** 
+
+Gen timestep at time: 2019-03-22 16:59:43.583500
+723 4249
+achieved fitness: 4249 at timestep 365136 time: 2019-03-22 16:59:45.227466
+Saving genome to file ./genomes/best_genome_run3_GreenHillZone.Act2.state_gen13.pkl
+640 3524
+643 3524
+745 80
+746 203
+747 203
+748 203
+749 80
+750 203
+751 431
+752 80
+753 80
+754 80
+755 1389
+756 2453
+757 3521
+758 203
+759 2405
+760 1077
+761 203
+762 1077
+763 80
+764 2398
+765 2404
+766 80
+767 3524
+768 1077
+769 203
+770 2405
+771 203
+772 3524
+773 80
+774 80
+775 80
+776 80
+777 2453
+778 203
+779 1077
+780 2392
+781 80
+782 2453
+783 1077
+784 203
+785 203
+786 203
+787 2405
+788 203
+789 203
+790 2405
+791 203
+792 203
+793 1077
+794 203
+795 2453
+796 2405
+797 1077
+798 203
+799 203
+800 80
+801 2453
+Total timesteps at end of gen: 398766
+Population's average fitness: 1126.76667 stdev: 1233.61102
+Best fitness: 4249.00000 - size: (15, 9) - species 1 - id 723
+Average adjusted fitness: 0.251
+Mean genetic distance 1.925, standard deviation 0.361
+Population of 60 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   13    60   4249.0    0.251     1
+Total extinctions: 0
+Generation time: 48.198 sec (44.872 average)
+
+ ****** Running generation 14 ****** 
+
+Gen timestep at time: 2019-03-22 17:00:31.781608
+723 4249
+achieved fitness: 4249 at timestep 399951 time: 2019-03-22 17:00:33.433107
+Saving genome to file ./genomes/best_genome_run3_GreenHillZone.Act2.state_gen14.pkl
+640 3524
+643 3524
+802 80
+803 2453
+804 80
+805 80
+806 1077
+807 80
+808 2453
+809 2405
+810 2453
+811 2405
+812 203
+813 2405
+814 80
+815 80
+816 2404
+817 203
+818 1079
+819 203
+820 1077
+821 2021
+822 1077
+823 1077
+824 80
+825 2021
+826 1077
+827 203
+828 80
+829 3524
+830 3524
+831 80
+832 1077
+833 80
+834 2405
+835 2405
+836 2404
+837 2470
+838 80
+839 80
+840 2405
+841 2405
+842 1077
+843 203
+844 203
+845 80
+846 1077
+847 203
+848 80
+849 80
+850 3524
+851 80
+852 203
+853 203
+854 203
+855 1081
+856 3524
+857 1077
+858 2405
+Total timesteps at end of gen: 436038
+Population's average fitness: 1307.91667 stdev: 1247.43330
+Best fitness: 4249.00000 - size: (15, 9) - species 1 - id 723
+Average adjusted fitness: 0.295
+Mean genetic distance 2.105, standard deviation 0.339
+Population of 60 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   14    60   4249.0    0.295     2
+Total extinctions: 0
+Generation time: 51.704 sec (47.315 average)
+Saving checkpoint to neat-checkpoint-14
+
+ ****** Running generation 15 ****** 
+
+Gen timestep at time: 2019-03-22 17:01:23.494988
+723 4249
+achieved fitness: 4249 at timestep 437223 time: 2019-03-22 17:01:25.142235
+Saving genome to file ./genomes/best_genome_run3_GreenHillZone.Act2.state_gen15.pkl
+640 3524
+643 3524
+859 1077
+860 2390
+861 203
+862 203
+863 1077
+864 1077
+865 80
+866 203
+867 203
+868 80
+869 80
+870 203
+871 1077
+872 80
+873 80
+874 3524
+875 203
+876 2453
+877 3524
+878 80
+879 80
+880 3524
+881 80
+882 2021
+883 80
+884 80
+885 2398
+886 203
+887 3524
+888 203
+889 1077
+890 203
+891 203
+892 80
+893 80
+894 2405
+895 2474
+896 203
+897 2474
+898 2405
+899 80
+900 1079
+901 203
+902 203
+903 203
+904 80
+905 203
+906 203
+907 80
+908 203
+909 203
+910 80
+911 2392
+912 80
+913 3524
+914 203
+915 2405
+Total timesteps at end of gen: 470478
+Population's average fitness: 1073.58333 stdev: 1294.63035
+Best fitness: 4249.00000 - size: (15, 9) - species 1 - id 723
+Average adjusted fitness: 0.238
+Mean genetic distance 2.198, standard deviation 0.315
+Population of 60 members in 2 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   15    49   4249.0    0.238     3
+     2    0    11       --       --     0
+Total extinctions: 0
+Generation time: 47.931 sec (49.001 average)
+
+ ****** Running generation 16 ****** 
+
+Gen timestep at time: 2019-03-22 17:02:11.425544
+723 4249
+achieved fitness: 4249 at timestep 471663 time: 2019-03-22 17:02:13.069498
+Saving genome to file ./genomes/best_genome_run3_GreenHillZone.Act2.state_gen16.pkl
+640 3524
+643 3524
+916 80
+917 3521
+918 80
+919 3524
+920 203
+921 2405
+922 80
+923 2021
+924 1077
+925 2405
+926 203
+927 203
+928 80
+929 2453
+930 2021
+931 203
+932 80
+933 80
+934 2021
+935 2474
+936 3521
+937 203
+938 80
+939 203
+940 80
+941 2474
+942 80
+943 203
+944 80
+945 203
+946 2404
+947 3524
+948 80
+949 2453
+950 203
+951 2405
+952 1077
+953 203
+954 203
+955 203
+956 80
+957 3524
+958 80
+959 203
+960 203
+961 80
+962 1079
+963 80
+964 203
+965 1077
+966 203
+967 2405
+968 203
+969 203
+970 203
+971 1077
+972 203
+Total timesteps at end of gen: 505473
+Population's average fitness: 1124.98333 stdev: 1298.55727
+Best fitness: 4249.00000 - size: (15, 9) - species 2 - id 723
+Average adjusted fitness: 0.243
+Mean genetic distance 2.255, standard deviation 0.344
+Population of 60 members in 2 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   16    15   3524.0    0.255     4
+     2    1    45   4249.0    0.231     0
+Total extinctions: 0
+Generation time: 48.662 sec (50.101 average)
+
+ ****** Running generation 17 ****** 
+
+Gen timestep at time: 2019-03-22 17:03:00.087213
+640 3524
+achieved fitness: 3524 at timestep 506499 time: 2019-03-22 17:03:01.502531
+Saving genome to file ./genomes/best_genome_run3_GreenHillZone.Act2.state_gen17.pkl
+643 3524
+919 3524
+973 1077
+974 203
+975 80
+976 203
+977 203
+978 2453
+979 203
+980 203
+981 203
+982 203
+983 1077
+984 80
+985 3524
+986 80
+987 80
+988 203
+989 203
+990 2403
+991 203
+992 80
+993 203
+994 1077
+995 203
+996 80
+997 80
+998 80
+999 2405
+1000 203
+1001 2398
+1002 2405
+1003 203
+1004 80
+1005 1077
+1006 203
+1007 2405
+1008 80
+1009 1077
+723 4249
+achieved fitness: 4249 at timestep 528525 time: 2019-03-22 17:03:32.049887
+Saving genome to file ./genomes/best_genome_run3_GreenHillZone.Act2.state_gen17.pkl
+949 2453
+967 2405
+1010 203
+1011 203
+1012 203
+1013 80
+1014 1077
+1015 80
+1016 80
+1017 2021
+1018 203
+1019 203
+1020 3524
+1021 203
+1022 203
+1023 1077
+1024 1077
+1025 203
+1026 1077
+Total timesteps at end of gen: 538602
+Population's average fitness: 976.98333 stdev: 1191.12856
+Best fitness: 4249.00000 - size: (15, 9) - species 2 - id 723
+Average adjusted fitness: 0.225
+Mean genetic distance 2.087, standard deviation 0.467
+Population of 60 members in 2 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   17    50   3524.0    0.243     5
+     2    2    10   4249.0    0.206     1
+Total extinctions: 0
+Generation time: 45.993 sec (50.531 average)
+
+ ****** Running generation 18 ****** 
+
+Gen timestep at time: 2019-03-22 17:03:46.079928
+919 3524
+achieved fitness: 3524 at timestep 539628 time: 2019-03-22 17:03:47.512914
+Saving genome to file ./genomes/best_genome_run3_GreenHillZone.Act2.state_gen18.pkl
+999 2405
+1007 2405
+1027 3524
+1028 3524
+1029 2405
+1030 2398
+1031 203
+1032 203
+1033 2453
+1034 1077
+1035 1077
+1036 203
+1037 1077
+1038 203
+1039 203
+1040 3524
+1041 1346
+1042 2470
+1043 3524
+1044 1077
+1045 203
+1046 80
+1047 80
+723 4249
+achieved fitness: 4249 at timestep 556959 time: 2019-03-22 17:04:11.782426
+Saving genome to file ./genomes/best_genome_run3_GreenHillZone.Act2.state_gen18.pkl
+640 3524
+643 3524
+1048 1077
+1049 80
+1050 203
+1051 80
+1052 203
+1053 1077
+1054 80
+1055 80
+1056 1077
+1057 3524
+1058 203
+1059 2453
+1060 1077
+1061 203
+1062 3520
+1063 2453
+1064 1077
+1065 1077
+1066 80
+1067 2405
+1068 203
+1069 1077
+1070 2405
+1071 80
+1072 203
+1073 80
+1074 2405
+1075 3524
+1076 203
+1077 203
+1078 203
+1079 2453
+1080 203
+Total timesteps at end of gen: 577794
+Population's average fitness: 1429.26667 stdev: 1326.37075
+Best fitness: 4249.00000 - size: (15, 9) - species 1 - id 723
+Average adjusted fitness: 0.315
+Mean genetic distance 1.835, standard deviation 0.527
+Population of 60 members in 2 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   18    41   4249.0    0.328     6
+     2    3    19   3524.0    0.303     2
+Total extinctions: 0
+Generation time: 54.878 sec (51.387 average)
+
+ ****** Running generation 19 ****** 
+
+Gen timestep at time: 2019-03-22 17:04:40.957853
+1057 3524
+achieved fitness: 3524 at timestep 578826 time: 2019-03-22 17:04:42.400130
+Saving genome to file ./genomes/best_genome_run3_GreenHillZone.Act2.state_gen19.pkl
+1075 3524
+1063 2453
+1081 1077
+1082 80
+1083 3524
+1084 203
+1085 432
+1086 80
+1087 432
+1088 3524
+1089 203
+1090 1079
+1091 3524
+1092 1079
+1093 2474
+1094 2453
+1095 203
+1096 203
+723 4249
+achieved fitness: 4249 at timestep 591234 time: 2019-03-22 17:04:59.707604
+Saving genome to file ./genomes/best_genome_run3_GreenHillZone.Act2.state_gen19.pkl
+643 3524
+640 3524
+1097 2405
+1098 80
+1099 80
+1100 2405
+1101 3524
+1102 203
+1103 1077
+1104 2474
+1105 80
+1106 203
+1107 3524
+1108 80
+1109 1077
+1110 2405
+1111 433
+1112 203
+1113 80
+1114 80
+1115 80
+1116 203
+1117 80
+1118 3524
+1119 2405
+1120 203
+1121 203
+1122 80
+1123 80
+1124 1077
+1125 203
+1126 3524
+1127 80
+1128 203
+1129 1077
+1130 203
+1131 203
+1132 80
+1133 2474
+1134 3524
+Total timesteps at end of gen: 614553
+Population's average fitness: 1354.78333 stdev: 1413.26204
+Best fitness: 4249.00000 - size: (15, 9) - species 1 - id 723
+Average adjusted fitness: 0.320
+Mean genetic distance 1.867, standard deviation 0.466
+Population of 60 members in 2 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   19    34   4249.0    0.281     7
+     2    4    26   3524.0    0.359     3
+Total extinctions: 0
+Generation time: 51.235 sec (51.407 average)
+Saving checkpoint to neat-checkpoint-19
+
+ ****** Running generation 20 ****** 
+
+Gen timestep at time: 2019-03-22 17:05:32.204139
+1057 3524
+achieved fitness: 3524 at timestep 615585 time: 2019-03-22 17:05:33.643041
+Saving genome to file ./genomes/best_genome_run3_GreenHillZone.Act2.state_gen20.pkl
+1075 3524
+1083 3524
+1135 1077
+1136 2474
+1137 1077
+1138 2453
+1139 3524
+1140 2474
+1141 80
+1142 3524
+1143 3524
+1144 3524
+1145 2453
+1146 203
+1147 2474
+1148 203
+1149 203
+1150 2405
+1151 203
+1152 80
+1153 80
+1154 3524
+1155 3524
+1156 203
+1157 441
+723 4249
+achieved fitness: 4249 at timestep 635058 time: 2019-03-22 17:06:00.846636
+Saving genome to file ./genomes/best_genome_run3_GreenHillZone.Act2.state_gen20.pkl
+643 3524
+640 3524
+1158 203
+1159 3524
+1160 203
+1161 203
+1162 2474
+1163 1077
+1164 80
+1165 2404
+1166 80
+1167 3524
+1168 203
+1169 1077
+1170 428
+1171 2453
+1172 80
+1173 1077
+1174 3522
+1175 80
+1176 3524
+1177 80
+1178 80
+1179 1077
+1180 1077
+1181 2405
+1182 203
+1183 80
+1184 203
+1185 2404
+1186 203
+1187 203
+1188 80
+Total timesteps at end of gen: 655923
+Population's average fitness: 1598.45000 stdev: 1447.87259
+Best fitness: 4249.00000 - size: (15, 9) - species 1 - id 723
+Average adjusted fitness: 0.369
+Mean genetic distance 1.939, standard deviation 0.441
+Population of 60 members in 2 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   20    39   4249.0    0.336     8
+     2    5    21   3524.0    0.402     4
+Total extinctions: 0
+Generation time: 57.740 sec (51.287 average)
+
+ ****** Running generation 21 ****** 
+
+Gen timestep at time: 2019-03-22 17:06:29.944222
+1154 3524
+achieved fitness: 3524 at timestep 656976 time: 2019-03-22 17:06:31.413014
+Saving genome to file ./genomes/best_genome_run3_GreenHillZone.Act2.state_gen21.pkl
+1155 3524
+1057 3524
+1189 3524
+1190 203
+1191 121
+1192 2405
+1193 80
+1194 3524
+1195 2378
+1196 2405
+1197 80
+1198 203
+1199 3524
+1200 80
+1201 3524
+1202 2405
+1203 2405
+1204 1079
+1205 203
+1206 203
+1207 203
+1208 80
+1209 2398
+1210 2453
+1211 203
+1212 80
+1213 80
+1214 1077
+723 4249
+achieved fitness: 4249 at timestep 677706 time: 2019-03-22 17:07:00.293503
+Saving genome to file ./genomes/best_genome_run3_GreenHillZone.Act2.state_gen21.pkl
+643 3524
+640 3524
+1215 80
+1216 203
+1217 80
+1218 3524
+1219 80
+1220 2475
+1221 203
+1222 203
+1223 1077
+1224 203
+1225 80
+1226 1077
+1227 80
+1228 2470
+1229 80
+1230 203
+1231 80
+1232 3524
+1233 203
+1234 3524
+1235 203
+1236 80
+1237 432
+1238 3524
+1239 2405
+1240 80
+1241 2453
+1242 80
+Total timesteps at end of gen: 695118
+Population's average fitness: 1424.91667 stdev: 1459.12077
+Best fitness: 4249.00000 - size: (15, 9) - species 1 - id 723
+Average adjusted fitness: 0.326
+Mean genetic distance 1.838, standard deviation 0.441
+Population of 60 members in 2 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   21    38   4249.0    0.314     9
+     2    6    22   3524.0    0.338     5
+Total extinctions: 0
+Generation time: 54.599 sec (51.306 average)
+
+ ****** Running generation 22 ****** 
+
+Gen timestep at time: 2019-03-22 17:07:24.543614
+1194 3524
+achieved fitness: 3524 at timestep 696144 time: 2019-03-22 17:07:25.967399
+Saving genome to file ./genomes/best_genome_run3_GreenHillZone.Act2.state_gen22.pkl
+1155 3524
+1189 3524
+1243 203
+1244 2456
+1245 203
+1246 80
+1247 3524
+1248 2398
+1249 203
+1250 2405
+1251 2405
+1252 2405
+1253 203
+1254 1077
+1255 1079
+1256 2479
+1257 3524
+1258 3524
+1259 2021
+1260 1077
+1261 80
+1262 2405
+1263 80
+1264 1077
+1265 203
+723 4249
+achieved fitness: 4249 at timestep 715374 time: 2019-03-22 17:07:52.812446
+Saving genome to file ./genomes/best_genome_run3_GreenHillZone.Act2.state_gen22.pkl
+643 3524
+640 3524
+1266 203
+1267 2456
+1268 3524
+1269 203
+1270 203
+1271 80
+1272 3524
+1273 2405
+1274 2398
+1275 203
+1276 1079
+1277 3524
+1278 80
+1279 2453
+1280 203
+1281 2021
+1282 80
+1283 203
+1284 2405
+1285 2405
+1286 80
+1287 203
+1288 203
+1289 1077
+1290 80
+1291 80
+1292 203
+1293 3524
+1294 203
+1295 80
+1296 80
+Total timesteps at end of gen: 736440
+Population's average fitness: 1540.75000 stdev: 1394.53337
+Best fitness: 4249.00000 - size: (15, 9) - species 1 - id 723
+Average adjusted fitness: 0.357
+Mean genetic distance 1.801, standard deviation 0.468
+Population of 60 members in 2 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   22    36   4249.0    0.333    10
+     2    7    24   3524.0    0.380     6
+Total extinctions: 0
+Generation time: 57.551 sec (51.849 average)
+
+ ****** Running generation 23 ****** 
+
+Gen timestep at time: 2019-03-22 17:08:22.094298
+1194 3524
+achieved fitness: 3524 at timestep 737466 time: 2019-03-22 17:08:23.524289
+Saving genome to file ./genomes/best_genome_run3_GreenHillZone.Act2.state_gen23.pkl
+1155 3524
+1189 3524
+1297 3524
+1298 203
+1299 1077
+1300 203
+1301 2405
+1302 1077
+1303 3524
+1304 80
+1305 80
+1306 80
+1307 80
+1308 2404
+1309 1077
+1310 2405
+1311 2453
+1312 3523
+1313 2405
+1314 2453
+1315 1077
+1316 3524
+1317 1079
+1318 3514
+1319 80
+1320 203
+723 4249
+achieved fitness: 4249 at timestep 757476 time: 2019-03-22 17:08:51.429566
+Saving genome to file ./genomes/best_genome_run3_GreenHillZone.Act2.state_gen23.pkl
+643 3524
+640 3524
+1321 1077
+1322 203
+1323 2021
+1324 203
+1325 203
+1326 2453
+1327 80
+1328 428
+1329 80
+1330 203
+1331 80
+1332 203
+1333 3524
+1334 80
+1335 203
+1336 2387
+1337 1077
+1338 80
+1339 203
+1340 2453
+1341 1077
+1342 80
+1343 203
+1344 80
+1345 80
+1346 3524
+1347 3524
+1348 3520
+1349 80
+1350 2021
+Total timesteps at end of gen: 776421
+Population's average fitness: 1530.48333 stdev: 1427.94907
+Best fitness: 4249.00000 - size: (15, 9) - species 1 - id 723
+Average adjusted fitness: 0.365
+Mean genetic distance 1.834, standard deviation 0.438
+Population of 60 members in 2 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   23    31   4249.0    0.280    11
+     2    8    29   3524.0    0.450     7
+Total extinctions: 0
+Generation time: 56.368 sec (52.666 average)
+
+ ****** Running generation 24 ****** 
+
+Gen timestep at time: 2019-03-22 17:09:18.462275
+1194 3524
+achieved fitness: 3524 at timestep 777447 time: 2019-03-22 17:09:19.894084
+Saving genome to file ./genomes/best_genome_run3_GreenHillZone.Act2.state_gen24.pkl
+1155 3524
+1297 3524
+1351 203
+1352 429
+1353 3524
+1354 432
+1355 80
+1356 2597
+1357 203
+1358 2405
+1359 2456
+1360 203
+1361 2453
+1362 203
+1363 3524
+1364 2453
+1365 203
+1366 203
+1367 203
+1368 203
+1369 80
+1370 1077
+1371 203
+1372 80
+1373 203
+1374 2381
+1375 2405
+1376 203
+1377 1077
+1378 2404
+723 4249
+achieved fitness: 4249 at timestep 796944 time: 2019-03-22 17:09:47.084099
+Saving genome to file ./genomes/best_genome_run3_GreenHillZone.Act2.state_gen24.pkl
+643 3524
+640 3524
+1379 2456
+1380 2021
+1381 80
+1382 203
+1383 3524
+1384 203
+1385 203
+1386 389
+1387 3524
+1388 3524
+1389 3524
+1390 2403
+1391 2453
+1392 2453
+1393 3524
+1394 1077
+1395 203
+1396 2405
+1397 80
+1398 80
+1399 80
+1400 203
+1401 2404
+1402 203
+1403 80
+1404 80
+Total timesteps at end of gen: 815631
+Population's average fitness: 1522.30000 stdev: 1414.85356
+Best fitness: 4249.00000 - size: (15, 9) - species 1 - id 723
+Average adjusted fitness: 0.346
+Mean genetic distance 1.817, standard deviation 0.470
+Population of 60 members in 2 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   24    31   4249.0    0.349    12
+     2    9    29   3524.0    0.342     8
+Total extinctions: 0
+Generation time: 54.655 sec (52.961 average)
+Saving checkpoint to neat-checkpoint-24
+
+ ****** Running generation 25 ****** 
+
+Gen timestep at time: 2019-03-22 17:10:13.128472
+1194 3524
+achieved fitness: 3524 at timestep 816657 time: 2019-03-22 17:10:14.646716
+Saving genome to file ./genomes/best_genome_run3_GreenHillZone.Act2.state_gen25.pkl
+1155 3524
+1297 3524
+1405 3524
+1406 203
+1407 1077
+1408 203
+1409 2453
+1410 1077
+1411 203
+1412 203
+1413 3524
+1414 3524
+1415 2453
+1416 1077
+1417 2474
+1418 2405
+1419 2021
+1420 2405
+1421 203
+1422 2021
+1423 203
+1424 1077
+1425 2453
+1426 3524
+1427 3524
+1428 80
+1429 203
+1430 3524
+1431 3524
+723 4249
+achieved fitness: 4249 at timestep 839481 time: 2019-03-22 17:10:46.734441
+Saving genome to file ./genomes/best_genome_run3_GreenHillZone.Act2.state_gen25.pkl
+643 3524
+640 3524
+1432 80
+1433 80
+1434 1077
+1435 203
+1436 80
+1437 3524
+1438 80
+1439 2405
+1440 203
+1441 3524
+1442 203
+1443 2453
+1444 80
+1445 80
+1446 80
+1447 80
+1448 80
+1449 2474
+1450 2453
+1451 2474
+1452 203
+1453 203
+1454 3524
+1455 80
+1456 80
+1457 1077
+1458 203
+Total timesteps at end of gen: 856110
+Population's average fitness: 1635.23333 stdev: 1445.88196
+Best fitness: 4249.00000 - size: (15, 9) - species 1 - id 723
+Average adjusted fitness: 0.376
+Mean genetic distance 1.827, standard deviation 0.431
+Population of 60 members in 2 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   25    28   4249.0    0.286    13
+     2   10    32   3524.0    0.466     9
+Total extinctions: 0
+Generation time: 56.779 sec (53.846 average)
+
+ ****** Running generation 26 ****** 
+
+Gen timestep at time: 2019-03-22 17:11:09.907968
+1194 3524
+achieved fitness: 3524 at timestep 857136 time: 2019-03-22 17:11:11.336987
+Saving genome to file ./genomes/best_genome_run3_GreenHillZone.Act2.state_gen26.pkl
+1155 3524
+1413 3524
+1459 2405
+1460 80
+1461 2021
+1462 2371
+1463 3524
+1464 1077
+1465 432
+1466 1077
+1467 3524
+1468 3524
+1469 80
+1470 3524
+1471 3524
+1472 203
+1473 2405
+1474 2405
+1475 80
+1476 2383
+1477 3524
+1478 1077
+1479 1077
+1480 2405
+1481 2405
+1482 3524
+1483 203
+1484 203
+1485 3524
+1486 203
+1487 203
+1488 1077
+723 4249
+achieved fitness: 4249 at timestep 882201 time: 2019-03-22 17:11:46.386514
+Saving genome to file ./genomes/best_genome_run3_GreenHillZone.Act2.state_gen26.pkl
+643 3524
+640 3524
+1489 80
+1490 80
+1491 203
+1492 80
+1493 203
+1494 2405
+1495 80
+1496 203
+1497 121
+1498 3524
+1499 203
+1500 1077
+1501 80
+1502 80
+1503 203
+1504 203
+1505 203
+1506 80
+1507 3524
+1508 203
+1509 80
+1510 80
+1511 203
+1512 2456
+Total timesteps at end of gen: 895728
+Population's average fitness: 1526.45000 stdev: 1463.24461
+Best fitness: 4249.00000 - size: (15, 9) - species 1 - id 723
+Average adjusted fitness: 0.340
+Mean genetic distance 1.839, standard deviation 0.412
+Population of 60 members in 2 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   26    26   4249.0    0.231    14
+     2   11    34   3524.0    0.448    10
+Total extinctions: 0
+Generation time: 55.274 sec (54.507 average)
+
+ ****** Running generation 27 ****** 
+
+Gen timestep at time: 2019-03-22 17:12:05.181817
+1194 3524
+achieved fitness: 3524 at timestep 896754 time: 2019-03-22 17:12:06.614129
+Saving genome to file ./genomes/best_genome_run3_GreenHillZone.Act2.state_gen27.pkl
+1155 3524
+1413 3524
+1513 2453
+1514 2474
+1515 2475
+1516 3524
+1517 203
+1518 3524
+1519 2453
+1520 1077
+1521 1077
+1522 2021
+1523 3524
+1524 2405
+1525 203
+1526 1077
+1527 432
+1528 3524
+1529 1077
+1530 80
+1531 3524
+1532 3524
+1533 203
+1534 203
+1535 1077
+1536 203
+1537 1077
+1538 2453
+1539 2453
+1540 80
+1541 2405
+1542 3523
+1543 203
+1544 2021
+1545 2453
+723 4249
+achieved fitness: 4249 at timestep 924552 time: 2019-03-22 17:12:45.453710
+Saving genome to file ./genomes/best_genome_run3_GreenHillZone.Act2.state_gen27.pkl
+643 3524
+640 3524
+1546 203
+1547 80
+1548 80
+1549 92
+1550 80
+1551 80
+1552 80
+1553 80
+1554 203
+1555 2474
+1556 2453
+1557 80
+1558 1077
+1559 2453
+1560 80
+1561 3524
+1562 3524
+1563 2453
+1564 80
+1565 203
+1566 203
+Total timesteps at end of gen: 937431
+Population's average fitness: 1674.26667 stdev: 1406.86145
+Best fitness: 4249.00000 - size: (15, 9) - species 1 - id 723
+Average adjusted fitness: 0.374
+Mean genetic distance 1.928, standard deviation 0.424
+Population of 60 members in 2 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   27    28   4249.0    0.310    15
+     2   12    32   3524.0    0.438    11
+Total extinctions: 0
+Generation time: 58.185 sec (55.726 average)
+
+ ****** Running generation 28 ****** 
+
+Gen timestep at time: 2019-03-22 17:13:03.366794
+1194 3524
+achieved fitness: 3524 at timestep 938457 time: 2019-03-22 17:13:04.800344
+Saving genome to file ./genomes/best_genome_run3_GreenHillZone.Act2.state_gen28.pkl
+1155 3524
+1413 3524
+1567 1077
+1568 203
+1569 2405
+1570 203
+1571 2405
+1572 203
+1573 1077
+1574 1077
+1575 432
+1576 1077
+1577 3524
+1578 1077
+1579 1077
+1580 203
+1581 1077
+1582 2405
+1583 1077
+1584 155
+1585 2378
+1586 2405
+1587 3524
+1588 203
+1589 80
+1590 203
+1591 203
+1592 203
+1593 203
+1594 203
+1595 2405
+1596 2405
+1597 3524
+1598 2453
+723 4249
+achieved fitness: 4249 at timestep 961959 time: 2019-03-22 17:13:37.743878
+Saving genome to file ./genomes/best_genome_run3_GreenHillZone.Act2.state_gen28.pkl
+643 3524
+640 3524
+1599 80
+1600 80
+1601 1077
+1602 2398
+1603 80
+1604 203
+1605 203
+1606 2453
+1607 80
+1608 2404
+1609 2453
+1610 80
+1611 203
+1612 203
+1613 2405
+1614 80
+1615 2453
+1616 3524
+1617 80
+1618 80
+1619 1077
+1620 203
+Total timesteps at end of gen: 975894
+Population's average fitness: 1415.23333 stdev: 1315.77132
+Best fitness: 4249.00000 - size: (15, 9) - species 1 - id 723
+Average adjusted fitness: 0.318
+Mean genetic distance 1.930, standard deviation 0.442
+Population of 60 members in 2 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   28    25   4249.0    0.285    16
+     2   13    35   3524.0    0.351    12
+Total extinctions: 0
+Generation time: 53.794 sec (55.618 average)
+
+ ****** Running generation 29 ****** 
+
+Gen timestep at time: 2019-03-22 17:13:57.160373
+1194 3524
+achieved fitness: 3524 at timestep 976920 time: 2019-03-22 17:13:58.587563
+Saving genome to file ./genomes/best_genome_run3_GreenHillZone.Act2.state_gen29.pkl
+1155 3524
+1413 3524
+1621 80
+1622 203
+1623 2405
+1624 203
+1625 203
+1626 80
+1627 80
+1628 1077
+1629 3524
+1630 428
+1631 203
+1632 203
+1633 2453
+1634 2405
+1635 2453
+1636 80
+1637 2453
+1638 203
+1639 2405
+1640 3524
+1641 203
+1642 3524
+1643 3524
+1644 203
+1645 203
+1646 80
+1647 2021
+1648 2405
+1649 3524
+1650 80
+723 4249
+achieved fitness: 4249 at timestep 999039 time: 2019-03-22 17:14:29.455246
+Saving genome to file ./genomes/best_genome_run3_GreenHillZone.Act2.state_gen29.pkl
+Finished timestepMax at time: 2019-03-22 17:14:30.790793

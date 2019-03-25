@@ -1,0 +1,2264 @@
+Starting python script!
+Using env(SonicTheHedgehog2-Genesis, CasinoNightZone.Act2.state)
+Observation space shape:(224, 320, 3)
+Start: 2019-03-22 21:46:42.918214
+Using the following config file: config.txt
+[NEAT]
+fitness_criterion     = max
+fitness_threshold     = 9000
+pop_size              = 60
+reset_on_extinction   = False
+
+[DefaultGenome]
+# node activation options
+activation_default      = sigmoid
+activation_mutate_rate  = 0.00
+activation_options      = sigmoid 
+#abs clamped cube exp gauss hat identity inv log relu sigmoid sin softplus square tanh
+
+# node aggregation options
+aggregation_default     = sum
+aggregation_mutate_rate = 0.00
+aggregation_options     = sum product min max mean median maxabs
+
+# node bias options
+bias_init_mean          = 0.05
+bias_init_stdev         = 1.0
+bias_max_value          = 50.0
+bias_min_value          = -50.0
+bias_mutate_power       = 0.5
+bias_mutate_rate        = 0.7
+bias_replace_rate       = 0.1
+
+# genome compatibility options
+compatibility_disjoint_coefficient = 1.0
+compatibility_weight_coefficient   = 0.5
+
+# connection add/remove rates
+conn_add_prob           = 0.6
+conn_delete_prob        = 0.1
+
+# connection enable options
+enabled_default         = True
+enabled_mutate_rate     = 0.05
+
+feed_forward            = True
+initial_connection      = unconnected
+#initial_connection     = partial_nodirect 0.4
+
+# node add/remove rates
+node_add_prob           = 0.7
+node_delete_prob        = 0.1
+
+# network parameters
+num_hidden              = 0
+num_inputs              = 17920
+num_outputs             = 12
+
+# node response options
+response_init_mean      = 1.0
+response_init_stdev     = 0.05
+response_max_value      = 30.0
+response_min_value      = -30.0
+response_mutate_power   = 0.1
+response_mutate_rate    = 0.75
+response_replace_rate   = 0.1
+
+# connection weight options
+weight_init_mean        = 0.1
+weight_init_stdev       = 1.0
+weight_max_value        = 30
+weight_min_value        = -30
+weight_mutate_power     = 0.5
+weight_mutate_rate      = 0.8
+weight_replace_rate     = 0.1
+
+[DefaultSpeciesSet]
+compatibility_threshold = 2.8
+
+[DefaultStagnation]
+species_fitness_func = max
+max_stagnation       = 200
+species_elitism      = 0
+
+[DefaultReproduction]
+elitism            = 3
+survival_threshold = 0.3
+
+
+
+End of config file
+
+ ****** Running generation 0 ****** 
+
+Gen timestep at time: 2019-03-22 21:46:42.927400
+1 96
+achieved fitness: 96 at timestep 303 time: 2019-03-22 21:46:43.335781
+Saving genome to file ./genomes/best_genome_run1_CasinoNightZone.Act2.state_gen0.pkl
+2 96
+3 96
+4 96
+5 96
+6 96
+7 96
+8 96
+9 96
+10 96
+11 96
+12 96
+13 96
+14 96
+15 96
+16 96
+17 96
+18 96
+19 96
+20 96
+21 96
+22 96
+23 96
+24 96
+25 96
+26 96
+27 96
+28 96
+29 96
+30 96
+31 96
+32 96
+33 96
+34 96
+35 96
+36 96
+37 96
+38 96
+39 96
+40 96
+41 96
+42 96
+43 96
+44 96
+45 96
+46 96
+47 96
+48 96
+49 96
+50 96
+51 96
+52 96
+53 96
+54 96
+55 96
+56 96
+57 96
+58 96
+59 96
+60 96
+Total timesteps at end of gen: 18180
+Population's average fitness: 96.00000 stdev: 0.00000
+Best fitness: 96.00000 - size: (12, 0) - species 1 - id 1
+Average adjusted fitness: 0.000
+Mean genetic distance 1.147, standard deviation 0.509
+Population of 60 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    0    60     96.0    0.000     0
+Total extinctions: 0
+Generation time: 24.525 sec (24.525 average)
+
+ ****** Running generation 1 ****** 
+
+Gen timestep at time: 2019-03-22 21:47:07.452220
+1 96
+achieved fitness: 96 at timestep 18483 time: 2019-03-22 21:47:07.859471
+Saving genome to file ./genomes/best_genome_run1_CasinoNightZone.Act2.state_gen1.pkl
+2 96
+3 96
+61 96
+62 96
+63 96
+64 96
+65 96
+66 96
+67 96
+68 96
+69 96
+70 96
+71 96
+72 96
+73 96
+74 96
+75 96
+76 96
+77 96
+78 96
+79 96
+80 96
+81 96
+82 96
+83 96
+84 95
+85 96
+86 96
+87 96
+88 96
+89 96
+90 96
+91 96
+92 96
+93 96
+94 96
+95 96
+96 96
+97 96
+98 96
+99 96
+100 96
+101 96
+102 96
+103 96
+104 95
+105 96
+106 96
+107 96
+108 96
+109 96
+110 96
+111 96
+112 96
+113 96
+114 96
+115 96
+116 96
+117 96
+Total timesteps at end of gen: 36360
+Population's average fitness: 95.96667 stdev: 0.17951
+Best fitness: 96.00000 - size: (12, 0) - species 1 - id 1
+Average adjusted fitness: 0.967
+Mean genetic distance 1.360, standard deviation 0.490
+Population of 60 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    1    60     96.0    0.967     1
+Total extinctions: 0
+Generation time: 24.674 sec (24.599 average)
+
+ ****** Running generation 2 ****** 
+
+Gen timestep at time: 2019-03-22 21:47:32.125928
+1 96
+achieved fitness: 96 at timestep 36663 time: 2019-03-22 21:47:32.534008
+Saving genome to file ./genomes/best_genome_run1_CasinoNightZone.Act2.state_gen2.pkl
+2 96
+3 96
+118 96
+119 96
+120 96
+121 96
+122 96
+123 96
+124 96
+125 96
+126 96
+127 95
+128 96
+129 96
+130 96
+131 96
+132 96
+133 96
+134 96
+135 96
+136 96
+137 96
+138 96
+139 96
+140 96
+141 96
+142 96
+143 96
+144 96
+145 96
+146 96
+147 96
+148 96
+149 96
+150 96
+151 96
+152 96
+153 96
+154 96
+155 96
+156 96
+157 96
+158 96
+159 96
+160 96
+161 96
+162 96
+163 96
+164 96
+165 96
+166 96
+167 96
+168 96
+169 96
+170 96
+171 96
+172 96
+173 96
+174 96
+Total timesteps at end of gen: 54540
+Population's average fitness: 95.98333 stdev: 0.12802
+Best fitness: 96.00000 - size: (12, 0) - species 1 - id 1
+Average adjusted fitness: 0.983
+Mean genetic distance 1.572, standard deviation 0.373
+Population of 60 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    2    60     96.0    0.983     2
+Total extinctions: 0
+Generation time: 24.616 sec (24.605 average)
+
+ ****** Running generation 3 ****** 
+
+Gen timestep at time: 2019-03-22 21:47:56.741580
+1 96
+achieved fitness: 96 at timestep 54843 time: 2019-03-22 21:47:57.148287
+Saving genome to file ./genomes/best_genome_run1_CasinoNightZone.Act2.state_gen3.pkl
+128 96
+2 96
+175 96
+176 96
+177 96
+178 96
+179 96
+180 96
+181 96
+182 96
+183 96
+184 96
+185 96
+186 96
+187 96
+188 96
+189 96
+190 96
+191 96
+192 96
+193 96
+194 96
+195 96
+196 96
+197 96
+198 96
+199 96
+200 96
+201 96
+202 96
+203 96
+204 96
+205 96
+206 96
+207 96
+208 96
+209 96
+210 96
+211 96
+212 96
+213 96
+214 96
+215 96
+216 96
+217 96
+218 96
+219 96
+220 96
+221 96
+222 96
+223 96
+224 96
+225 96
+226 96
+227 96
+228 96
+229 96
+230 95
+231 96
+Total timesteps at end of gen: 72720
+Population's average fitness: 95.98333 stdev: 0.12802
+Best fitness: 96.00000 - size: (12, 0) - species 1 - id 1
+Average adjusted fitness: 0.983
+Mean genetic distance 1.654, standard deviation 0.285
+Population of 60 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    3    60     96.0    0.983     3
+Total extinctions: 0
+Generation time: 24.677 sec (24.623 average)
+
+ ****** Running generation 4 ****** 
+
+Gen timestep at time: 2019-03-22 21:48:21.418547
+1 96
+achieved fitness: 96 at timestep 73023 time: 2019-03-22 21:48:21.828020
+Saving genome to file ./genomes/best_genome_run1_CasinoNightZone.Act2.state_gen4.pkl
+128 96
+2 96
+232 96
+233 96
+234 96
+235 96
+236 96
+237 96
+238 96
+239 96
+240 96
+241 96
+242 96
+243 96
+244 96
+245 96
+246 838
+achieved fitness: 838 at timestep 78408 time: 2019-03-22 21:48:29.169048
+Saving genome to file ./genomes/best_genome_run1_CasinoNightZone.Act2.state_gen4.pkl
+247 96
+248 96
+249 96
+250 96
+251 96
+252 96
+253 96
+254 96
+255 96
+256 96
+257 96
+258 96
+259 96
+260 96
+261 96
+262 96
+263 96
+264 95
+265 96
+266 96
+267 96
+268 96
+269 96
+270 96
+271 96
+272 96
+273 96
+274 96
+275 96
+276 96
+277 96
+278 96
+279 96
+280 96
+281 96
+282 147
+283 96
+284 96
+285 96
+286 96
+287 96
+288 96
+Total timesteps at end of gen: 91197
+Population's average fitness: 109.20000 stdev: 95.10622
+Best fitness: 838.00000 - size: (14, 5) - species 1 - id 246
+Average adjusted fitness: 0.019
+Mean genetic distance 1.701, standard deviation 0.275
+Population of 60 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    4    60    838.0    0.019     0
+Total extinctions: 0
+Generation time: 25.202 sec (24.739 average)
+Saving checkpoint to neat-checkpoint-4
+
+ ****** Running generation 5 ****** 
+
+Gen timestep at time: 2019-03-22 21:48:46.628261
+246 838
+achieved fitness: 838 at timestep 91734 time: 2019-03-22 21:48:47.374499
+Saving genome to file ./genomes/best_genome_run1_CasinoNightZone.Act2.state_gen5.pkl
+282 147
+1 96
+289 96
+290 96
+291 96
+292 96
+293 96
+294 96
+295 96
+296 96
+297 838
+298 96
+299 96
+300 96
+301 838
+302 96
+303 96
+304 96
+305 147
+306 96
+307 96
+308 96
+309 96
+310 96
+311 96
+312 96
+313 96
+314 96
+315 96
+316 96
+317 96
+318 838
+319 96
+320 147
+321 838
+322 96
+323 838
+324 96
+325 96
+326 96
+327 96
+328 306
+329 96
+330 96
+331 96
+332 96
+333 96
+334 96
+335 96
+336 96
+337 96
+338 96
+339 96
+340 96
+341 96
+342 838
+343 96
+344 96
+345 96
+Total timesteps at end of gen: 111369
+Population's average fitness: 188.61667 stdev: 237.73866
+Best fitness: 838.00000 - size: (14, 5) - species 1 - id 246
+Average adjusted fitness: 0.125
+Mean genetic distance 1.756, standard deviation 0.154
+Population of 60 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    5    60    838.0    0.125     1
+Total extinctions: 0
+Generation time: 27.620 sec (25.219 average)
+
+ ****** Running generation 6 ****** 
+
+Gen timestep at time: 2019-03-22 21:49:14.247986
+297 838
+achieved fitness: 838 at timestep 111906 time: 2019-03-22 21:49:15.000490
+Saving genome to file ./genomes/best_genome_run1_CasinoNightZone.Act2.state_gen6.pkl
+301 838
+318 838
+346 838
+347 1364
+achieved fitness: 1364 at timestep 114306 time: 2019-03-22 21:49:18.330345
+Saving genome to file ./genomes/best_genome_run1_CasinoNightZone.Act2.state_gen6.pkl
+348 838
+349 147
+350 838
+351 838
+352 147
+353 96
+354 839
+355 96
+356 147
+357 96
+358 838
+359 838
+360 147
+361 309
+362 838
+363 96
+364 147
+365 147
+366 96
+367 838
+368 838
+369 96
+370 838
+371 838
+372 838
+373 838
+374 838
+375 147
+376 838
+377 96
+378 96
+379 838
+380 838
+381 96
+382 96
+383 147
+384 838
+385 838
+386 838
+387 838
+388 96
+389 96
+390 96
+391 96
+392 96
+393 838
+394 96
+395 96
+396 838
+397 96
+398 96
+399 838
+400 838
+401 171
+402 838
+Total timesteps at end of gen: 137814
+Population's average fitness: 499.75000 stdev: 374.54833
+Best fitness: 1364.00000 - size: (16, 8) - species 1 - id 347
+Average adjusted fitness: 0.318
+Mean genetic distance 2.121, standard deviation 0.469
+Population of 60 members in 2 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    6    53   1364.0    0.318     0
+     2    0     7       --       --     0
+Total extinctions: 0
+Generation time: 36.673 sec (26.855 average)
+
+ ****** Running generation 7 ****** 
+
+Gen timestep at time: 2019-03-22 21:49:50.921263
+347 1364
+achieved fitness: 1364 at timestep 138603 time: 2019-03-22 21:49:52.005637
+Saving genome to file ./genomes/best_genome_run1_CasinoNightZone.Act2.state_gen7.pkl
+354 839
+384 838
+403 838
+404 838
+405 1078
+406 96
+407 838
+408 1119
+409 835
+410 838
+411 838
+412 838
+413 96
+414 838
+415 838
+416 838
+417 838
+418 838
+419 96
+420 838
+421 839
+422 838
+423 1115
+424 96
+425 96
+426 838
+427 838
+428 838
+429 838
+430 838
+431 838
+432 838
+433 96
+434 838
+435 839
+436 838
+437 838
+438 839
+439 96
+440 837
+441 838
+442 96
+443 838
+444 838
+445 838
+446 96
+447 757
+448 838
+449 1118
+450 838
+451 1078
+452 838
+453 838
+454 96
+455 838
+456 1364
+457 96
+458 838
+459 838
+Total timesteps at end of gen: 168849
+Population's average fitness: 740.11667 stdev: 326.35748
+Best fitness: 1364.00000 - size: (16, 8) - species 1 - id 347
+Average adjusted fitness: 0.469
+Mean genetic distance 2.358, standard deviation 0.493
+Population of 60 members in 2 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    7    42   1364.0    0.520     1
+     2    1    18    839.0    0.418     0
+Total extinctions: 0
+Generation time: 43.317 sec (28.913 average)
+
+ ****** Running generation 8 ****** 
+
+Gen timestep at time: 2019-03-22 21:50:34.238188
+421 839
+achieved fitness: 839 at timestep 169386 time: 2019-03-22 21:50:34.988425
+Saving genome to file ./genomes/best_genome_run1_CasinoNightZone.Act2.state_gen8.pkl
+435 839
+438 839
+460 839
+461 835
+462 839
+463 96
+464 96
+465 839
+466 834
+467 96
+468 96
+469 96
+470 839
+471 839
+472 815
+473 839
+456 1364
+achieved fitness: 1364 at timestep 177804 time: 2019-03-22 21:50:46.691935
+Saving genome to file ./genomes/best_genome_run1_CasinoNightZone.Act2.state_gen8.pkl
+347 1364
+408 1119
+474 96
+475 1119
+476 838
+477 838
+478 1781
+achieved fitness: 1781 at timestep 181974 time: 2019-03-22 21:50:52.469448
+Saving genome to file ./genomes/best_genome_run1_CasinoNightZone.Act2.state_gen8.pkl
+479 96
+480 1119
+481 1122
+482 838
+483 838
+484 96
+485 1119
+486 838
+487 96
+488 838
+489 1118
+490 1120
+491 1117
+492 1118
+493 838
+494 96
+495 1120
+496 96
+497 838
+498 1118
+499 1118
+500 1119
+501 96
+502 96
+503 838
+504 1119
+505 838
+506 1078
+507 838
+508 838
+509 96
+510 838
+511 838
+512 839
+513 838
+Total timesteps at end of gen: 200460
+Population's average fitness: 767.33333 stdev: 408.53285
+Best fitness: 1781.00000 - size: (18, 13) - species 1 - id 478
+Average adjusted fitness: 0.375
+Mean genetic distance 2.265, standard deviation 0.595
+Population of 60 members in 2 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    8    38   1781.0    0.433     0
+     2    2    22    839.0    0.317     1
+Total extinctions: 0
+Generation time: 44.008 sec (30.590 average)
+
+ ****** Running generation 9 ****** 
+
+Gen timestep at time: 2019-03-22 21:51:18.245784
+421 839
+achieved fitness: 839 at timestep 200997 time: 2019-03-22 21:51:18.995053
+Saving genome to file ./genomes/best_genome_run1_CasinoNightZone.Act2.state_gen9.pkl
+435 839
+438 839
+514 794
+515 96
+516 839
+517 839
+518 839
+519 839
+520 839
+521 738
+522 752
+523 839
+524 839
+525 839
+526 833
+527 838
+528 839
+529 745
+530 835
+531 839
+532 96
+478 1781
+achieved fitness: 1781 at timestep 212916 time: 2019-03-22 21:51:35.643239
+Saving genome to file ./genomes/best_genome_run1_CasinoNightZone.Act2.state_gen9.pkl
+456 1364
+347 1364
+533 1119
+534 1119
+535 1364
+536 1364
+537 838
+538 96
+539 839
+540 1121
+541 96
+542 1118
+543 1364
+544 1781
+545 1119
+546 1119
+547 838
+548 838
+549 1120
+550 1119
+551 96
+552 838
+553 838
+554 1364
+555 1119
+556 1119
+557 838
+558 838
+559 1119
+560 1119
+561 838
+562 1364
+563 1119
+564 1124
+565 96
+566 1118
+567 831
+Total timesteps at end of gen: 235914
+Population's average fitness: 921.55000 stdev: 360.91723
+Best fitness: 1781.00000 - size: (18, 13) - species 1 - id 478
+Average adjusted fitness: 0.469
+Mean genetic distance 2.092, standard deviation 0.689
+Population of 60 members in 2 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    9    36   1781.0    0.547     1
+     2    3    24    839.0    0.392     2
+Total extinctions: 0
+Generation time: 49.449 sec (32.476 average)
+Saving checkpoint to neat-checkpoint-9
+
+ ****** Running generation 10 ****** 
+
+Gen timestep at time: 2019-03-22 21:52:07.704739
+421 839
+achieved fitness: 839 at timestep 236451 time: 2019-03-22 21:52:08.457244
+Saving genome to file ./genomes/best_genome_run1_CasinoNightZone.Act2.state_gen10.pkl
+516 839
+517 839
+568 1119
+achieved fitness: 1119 at timestep 238158 time: 2019-03-22 21:52:10.842128
+Saving genome to file ./genomes/best_genome_run1_CasinoNightZone.Act2.state_gen10.pkl
+569 839
+570 960
+571 835
+572 839
+573 757
+574 839
+575 834
+576 839
+577 839
+578 839
+579 746
+580 839
+581 839
+582 811
+583 834
+584 751
+585 837
+586 839
+587 1781
+achieved fitness: 1781 at timestep 249111 time: 2019-03-22 21:52:26.159943
+Saving genome to file ./genomes/best_genome_run1_CasinoNightZone.Act2.state_gen10.pkl
+588 839
+544 1781
+478 1781
+347 1364
+589 752
+590 1364
+591 1121
+592 1364
+593 96
+594 1781
+595 839
+596 1121
+597 1118
+598 1121
+599 838
+600 1117
+601 840
+602 1364
+603 1117
+604 752
+605 1121
+606 822
+607 1121
+608 838
+609 1121
+610 1117
+611 1781
+612 1119
+613 96
+614 1781
+615 96
+616 839
+617 96
+618 757
+619 753
+620 1781
+621 96
+Total timesteps at end of gen: 273843
+Population's average fitness: 968.96667 stdev: 409.72779
+Best fitness: 1781.00000 - size: (17, 10) - species 2 - id 587
+Average adjusted fitness: 0.509
+Mean genetic distance 2.248, standard deviation 0.511
+Population of 60 members in 2 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   10    34   1781.0    0.552     2
+     2    4    26   1781.0    0.467     0
+Total extinctions: 0
+Generation time: 52.993 sec (35.323 average)
+
+ ****** Running generation 11 ****** 
+
+Gen timestep at time: 2019-03-22 21:53:00.697529
+587 1781
+achieved fitness: 1781 at timestep 274860 time: 2019-03-22 21:53:02.110872
+Saving genome to file ./genomes/best_genome_run1_CasinoNightZone.Act2.state_gen11.pkl
+568 1119
+570 960
+622 817
+623 839
+624 757
+625 1124
+626 1122
+627 96
+628 1000
+629 96
+630 96
+631 1118
+632 1120
+633 1118
+634 815
+635 96
+636 1124
+637 839
+638 839
+639 839
+640 839
+641 96
+642 839
+643 1124
+644 839
+544 1781
+594 1781
+478 1781
+645 1122
+646 838
+647 838
+648 1121
+649 1119
+650 1781
+651 1781
+652 1078
+653 96
+654 1781
+655 96
+656 838
+657 711
+658 1781
+659 1119
+660 1117
+661 1364
+662 1078
+663 1781
+664 1781
+665 1364
+666 830
+667 838
+668 1781
+669 753
+670 1119
+671 1364
+672 839
+673 1781
+674 1119
+675 838
+Total timesteps at end of gen: 312984
+Population's average fitness: 1044.03333 stdev: 486.33020
+Best fitness: 1781.00000 - size: (17, 10) - species 2 - id 587
+Average adjusted fitness: 0.547
+Mean genetic distance 2.404, standard deviation 0.520
+Population of 60 members in 2 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   11    35   1781.0    0.662     3
+     2    5    25   1781.0    0.433     1
+Total extinctions: 0
+Generation time: 54.785 sec (38.334 average)
+
+ ****** Running generation 12 ****** 
+
+Gen timestep at time: 2019-03-22 21:53:55.482557
+587 1781
+achieved fitness: 1781 at timestep 314001 time: 2019-03-22 21:53:56.894421
+Saving genome to file ./genomes/best_genome_run1_CasinoNightZone.Act2.state_gen12.pkl
+643 1124
+625 1124
+676 1124
+677 1117
+678 744
+679 1124
+680 96
+681 96
+682 96
+683 1124
+684 1124
+685 96
+686 757
+687 96
+688 744
+689 1118
+690 305
+691 1781
+692 96
+693 839
+694 1124
+695 839
+696 96
+697 96
+650 1781
+651 1781
+654 1781
+698 1119
+699 96
+700 835
+701 1781
+702 1781
+703 835
+704 1119
+705 756
+706 1781
+707 838
+708 1364
+709 1078
+710 1781
+711 96
+712 96
+713 1364
+714 1780
+715 1116
+716 968
+717 1781
+718 96
+719 1781
+720 1119
+721 96
+722 1781
+723 1781
+724 838
+725 1364
+726 96
+727 1781
+728 1119
+729 1781
+Total timesteps at end of gen: 350826
+Population's average fitness: 1000.03333 stdev: 615.09135
+Best fitness: 1781.00000 - size: (17, 10) - species 2 - id 587
+Average adjusted fitness: 0.515
+Mean genetic distance 2.549, standard deviation 0.580
+Population of 60 members in 2 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   12    36   1781.0    0.644     4
+     2    6    24   1781.0    0.386     2
+Total extinctions: 0
+Generation time: 52.863 sec (41.159 average)
+
+ ****** Running generation 13 ****** 
+
+Gen timestep at time: 2019-03-22 21:54:48.345384
+691 1781
+achieved fitness: 1781 at timestep 351666 time: 2019-03-22 21:54:49.514157
+Saving genome to file ./genomes/best_genome_run1_CasinoNightZone.Act2.state_gen13.pkl
+587 1781
+643 1124
+730 1115
+731 1781
+732 847
+733 1119
+734 96
+735 1124
+736 1124
+737 1781
+738 1360
+739 1124
+740 757
+741 1124
+742 1781
+743 1118
+744 839
+745 1781
+746 1124
+747 820
+748 1781
+749 1124
+750 757
+654 1781
+650 1781
+651 1781
+751 1121
+752 96
+753 838
+754 1781
+755 1781
+756 798
+757 1781
+758 1119
+759 96
+760 1781
+761 1781
+762 1781
+763 96
+764 1781
+765 1781
+766 835
+767 1781
+768 756
+769 96
+770 835
+771 1781
+772 1781
+773 1781
+774 1119
+775 1781
+776 96
+777 96
+778 1364
+779 1119
+780 756
+781 1781
+782 1781
+783 1781
+Total timesteps at end of gen: 392787
+Population's average fitness: 1237.30000 stdev: 564.34890
+Best fitness: 1781.00000 - size: (17, 9) - species 2 - id 691
+Average adjusted fitness: 0.675
+Mean genetic distance 2.376, standard deviation 0.630
+Population of 60 members in 2 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   13    33   1781.0    0.686     5
+     2    7    27   1781.0    0.664     3
+Total extinctions: 0
+Generation time: 58.611 sec (44.552 average)
+
+ ****** Running generation 14 ****** 
+
+Gen timestep at time: 2019-03-22 21:55:46.956501
+691 1781
+achieved fitness: 1781 at timestep 393627 time: 2019-03-22 21:55:48.122383
+Saving genome to file ./genomes/best_genome_run1_CasinoNightZone.Act2.state_gen14.pkl
+587 1781
+731 1781
+784 722
+785 1781
+786 1781
+787 96
+788 839
+789 839
+790 837
+791 837
+792 958
+793 1115
+794 1781
+795 1781
+796 1781
+797 837
+798 1124
+799 1781
+800 1781
+801 1781
+802 1781
+803 96
+804 1781
+805 1781
+806 96
+807 96
+654 1781
+771 1781
+772 1781
+808 1078
+809 1121
+810 1781
+811 1781
+812 1119
+813 1122
+814 1118
+815 1781
+816 784
+817 96
+818 838
+819 96
+820 756
+821 1781
+822 1078
+823 835
+824 1781
+825 1781
+826 1781
+827 1781
+828 1781
+829 835
+830 1364
+831 742
+832 1117
+833 1117
+834 1078
+835 1119
+836 1781
+837 1781
+Total timesteps at end of gen: 435891
+Population's average fitness: 1262.88333 stdev: 556.45141
+Best fitness: 1781.00000 - size: (17, 9) - species 2 - id 691
+Average adjusted fitness: 0.691
+Mean genetic distance 2.148, standard deviation 0.726
+Population of 60 members in 2 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   14    32   1781.0    0.705     6
+     2    8    28   1781.0    0.678     4
+Total extinctions: 0
+Generation time: 60.180 sec (48.050 average)
+Saving checkpoint to neat-checkpoint-14
+
+ ****** Running generation 15 ****** 
+
+Gen timestep at time: 2019-03-22 21:56:47.147992
+587 1781
+achieved fitness: 1781 at timestep 436908 time: 2019-03-22 21:56:48.552830
+Saving genome to file ./genomes/best_genome_run1_CasinoNightZone.Act2.state_gen15.pkl
+785 1781
+786 1781
+838 1781
+839 1781
+840 1117
+841 1781
+842 96
+843 96
+844 1775
+845 839
+846 1780
+847 1781
+848 1781
+849 96
+850 1014
+851 839
+852 1781
+853 1118
+854 1781
+855 1781
+856 757
+857 797
+858 1781
+859 817
+860 1781
+861 1781
+862 96
+654 1781
+771 1781
+772 1781
+863 1364
+864 1781
+865 1781
+866 96
+867 1364
+868 1781
+869 96
+870 1119
+871 96
+872 838
+873 1781
+874 1781
+875 1118
+876 1364
+877 1781
+878 1781
+879 1781
+880 1119
+881 1781
+882 1781
+883 1781
+884 1781
+885 96
+886 1781
+887 1781
+888 1364
+889 1078
+890 1781
+891 1781
+Total timesteps at end of gen: 480591
+Population's average fitness: 1352.03333 stdev: 595.22788
+Best fitness: 1781.00000 - size: (17, 10) - species 2 - id 587
+Average adjusted fitness: 0.743
+Mean genetic distance 2.139, standard deviation 0.724
+Population of 60 members in 2 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   15    31   1781.0    0.777     7
+     2    9    29   1781.0    0.710     5
+Total extinctions: 0
+Generation time: 62.855 sec (51.573 average)
+
+ ****** Running generation 16 ****** 
+
+Gen timestep at time: 2019-03-22 21:57:50.002768
+587 1781
+achieved fitness: 1781 at timestep 481608 time: 2019-03-22 21:57:51.412535
+Saving genome to file ./genomes/best_genome_run1_CasinoNightZone.Act2.state_gen16.pkl
+785 1781
+786 1781
+892 96
+893 1772
+894 96
+895 1781
+896 1781
+897 1781
+898 840
+899 1781
+900 748
+901 1781
+902 96
+903 815
+904 1781
+905 1781
+906 96
+907 1121
+908 96
+909 1781
+910 1781
+911 1781
+912 757
+913 96
+914 1781
+915 811
+916 1781
+917 1781
+654 1781
+771 1781
+772 1781
+918 1781
+919 1781
+920 1781
+921 1781
+922 1321
+923 1781
+924 1781
+925 96
+926 1125
+927 1364
+928 755
+929 1781
+930 838
+931 1116
+932 1781
+933 96
+934 1781
+935 1781
+936 1781
+937 1781
+938 1781
+939 1078
+940 1364
+941 1781
+942 1781
+943 1781
+944 1364
+945 840
+Total timesteps at end of gen: 525384
+Population's average fitness: 1352.20000 stdev: 604.42755
+Best fitness: 1781.00000 - size: (17, 10) - species 2 - id 587
+Average adjusted fitness: 0.743
+Mean genetic distance 2.190, standard deviation 0.696
+Population of 60 members in 2 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   16    32   1781.0    0.808     8
+     2   10    28   1781.0    0.678     6
+Total extinctions: 0
+Generation time: 62.777 sec (54.184 average)
+
+ ****** Running generation 17 ****** 
+
+Gen timestep at time: 2019-03-22 21:58:52.779364
+587 1781
+achieved fitness: 1781 at timestep 526401 time: 2019-03-22 21:58:54.183808
+Saving genome to file ./genomes/best_genome_run1_CasinoNightZone.Act2.state_gen17.pkl
+896 1781
+897 1781
+946 1117
+947 714
+948 729
+949 1781
+950 815
+951 96
+952 1121
+953 96
+954 1781
+955 839
+956 1781
+957 1781
+958 838
+959 838
+960 1781
+961 1781
+962 837
+963 837
+964 1781
+965 837
+966 1781
+967 1781
+968 837
+969 1781
+970 1123
+654 1781
+918 1781
+919 1781
+971 1781
+972 835
+973 1781
+974 1781
+975 1781
+976 830
+977 1781
+978 1781
+979 1781
+980 838
+981 1781
+982 1781
+983 1781
+984 838
+985 1116
+986 1781
+987 1781
+988 96
+989 1781
+990 1781
+991 1364
+992 1781
+993 757
+994 1364
+995 742
+996 1781
+997 1118
+998 1781
+999 1781
+Total timesteps at end of gen: 570984
+Population's average fitness: 1368.76667 stdev: 515.99733
+Best fitness: 1781.00000 - size: (17, 10) - species 2 - id 587
+Average adjusted fitness: 0.751
+Mean genetic distance 2.184, standard deviation 0.686
+Population of 60 members in 2 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   17    33   1781.0    0.820     9
+     2   11    27   1781.0    0.681     7
+Total extinctions: 0
+Generation time: 63.971 sec (56.249 average)
+
+ ****** Running generation 18 ****** 
+
+Gen timestep at time: 2019-03-22 21:59:56.750080
+587 1781
+achieved fitness: 1781 at timestep 572001 time: 2019-03-22 21:59:58.153079
+Saving genome to file ./genomes/best_genome_run1_CasinoNightZone.Act2.state_gen18.pkl
+896 1781
+897 1781
+1000 757
+1001 96
+1002 839
+1003 96
+1004 839
+1005 1781
+1006 815
+1007 1781
+1008 194
+1009 815
+1010 1781
+1011 1124
+1012 966
+1013 1781
+1014 1781
+1015 839
+1016 839
+1017 96
+1018 729
+1019 1780
+1020 1781
+1021 96
+1022 1119
+1023 368
+654 1781
+918 1781
+919 1781
+1024 96
+1025 838
+1026 1781
+1027 1781
+1028 1078
+1029 1781
+1030 1781
+1031 756
+1032 1078
+1033 1781
+1034 1118
+1035 1781
+1036 1781
+1037 1781
+1038 1120
+1039 1364
+1040 835
+1041 1781
+1042 1120
+1043 1364
+1044 1364
+1045 1781
+1046 1364
+1047 1781
+1048 1781
+1049 789
+1050 1781
+1051 1781
+1052 1781
+1053 1781
+Total timesteps at end of gen: 615120
+Population's average fitness: 1275.98333 stdev: 567.59961
+Best fitness: 1781.00000 - size: (17, 10) - species 2 - id 587
+Average adjusted fitness: 0.688
+Mean genetic distance 2.115, standard deviation 0.726
+Population of 60 members in 2 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   18    34   1781.0    0.808    10
+     2   12    26   1781.0    0.568     8
+Total extinctions: 0
+Generation time: 61.849 sec (58.033 average)
+
+ ****** Running generation 19 ****** 
+
+Gen timestep at time: 2019-03-22 22:00:58.598758
+587 1781
+achieved fitness: 1781 at timestep 616137 time: 2019-03-22 22:01:00.002717
+Saving genome to file ./genomes/best_genome_run1_CasinoNightZone.Act2.state_gen19.pkl
+896 1781
+897 1781
+1054 1781
+1055 1781
+1056 96
+1057 96
+1058 1118
+1059 1781
+1060 1118
+1061 815
+1062 839
+1063 1364
+1064 1781
+1065 1781
+1066 1781
+1067 757
+1068 96
+1069 757
+1070 1781
+1071 1781
+1072 820
+1073 1364
+1074 958
+1075 1363
+1076 757
+654 1781
+1026 1781
+1027 1781
+1077 835
+1078 1122
+1079 96
+1080 1119
+1081 840
+1082 1781
+1083 834
+1084 1364
+1085 742
+1086 96
+1087 1078
+1088 1781
+1089 1078
+1090 1781
+1091 1781
+1092 1118
+1093 1781
+1094 1781
+1095 1781
+1096 96
+1097 1781
+1098 1781
+1099 1781
+1100 1781
+1101 1781
+1102 1781
+1103 1119
+1104 1781
+1105 1781
+1106 1781
+1107 1364
+Total timesteps at end of gen: 658926
+Population's average fitness: 1310.81667 stdev: 556.52204
+Best fitness: 1781.00000 - size: (17, 10) - species 2 - id 587
+Average adjusted fitness: 0.715
+Mean genetic distance 2.199, standard deviation 0.671
+Population of 60 members in 2 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   19    33   1781.0    0.759    11
+     2   13    27   1781.0    0.671     9
+Total extinctions: 0
+Generation time: 61.302 sec (59.218 average)
+Saving checkpoint to neat-checkpoint-19
+
+ ****** Running generation 20 ****** 
+
+Gen timestep at time: 2019-03-22 22:01:59.913281
+587 1781
+achieved fitness: 1781 at timestep 659943 time: 2019-03-22 22:02:01.322648
+Saving genome to file ./genomes/best_genome_run1_CasinoNightZone.Act2.state_gen20.pkl
+896 1781
+897 1781
+1108 839
+1109 1781
+1110 1118
+1111 1781
+1112 756
+1113 1781
+1114 1781
+1115 1781
+1116 96
+1117 839
+1118 757
+1119 820
+1120 1781
+1121 96
+1122 1364
+1123 1781
+1124 804
+1125 1781
+1126 757
+1127 839
+1128 837
+1129 96
+1130 839
+1131 96
+654 1781
+1026 1781
+1027 1781
+1132 1781
+1133 1364
+1134 1364
+1135 835
+1136 1364
+1137 1120
+1138 829
+1139 96
+1140 96
+1141 96
+1142 96
+1143 1781
+1144 96
+1145 1781
+1146 1781
+1147 1119
+1148 757
+1149 1781
+1150 1781
+1151 96
+1152 1364
+1153 1781
+1154 1781
+1155 1364
+1156 835
+1157 96
+1158 1781
+1159 1781
+1160 1781
+1161 1781
+Total timesteps at end of gen: 701658
+Population's average fitness: 1170.76667 stdev: 638.45635
+Best fitness: 1781.00000 - size: (17, 10) - species 2 - id 587
+Average adjusted fitness: 0.636
+Mean genetic distance 2.216, standard deviation 0.732
+Population of 60 members in 2 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   20    32   1781.0    0.657    12
+     2   14    28   1781.0    0.614    10
+Total extinctions: 0
+Generation time: 59.888 sec (59.908 average)
+
+ ****** Running generation 21 ****** 
+
+Gen timestep at time: 2019-03-22 22:02:59.800813
+587 1781
+achieved fitness: 1781 at timestep 702675 time: 2019-03-22 22:03:01.210201
+Saving genome to file ./genomes/best_genome_run1_CasinoNightZone.Act2.state_gen21.pkl
+896 1781
+897 1781
+1162 1781
+1163 1781
+1164 839
+1165 96
+1166 96
+1167 1781
+1168 96
+1169 1781
+1170 1781
+1171 757
+1172 1781
+1173 96
+1174 987
+1175 731
+1176 757
+1177 1781
+1178 839
+1179 1781
+1180 839
+1181 96
+1182 1781
+1183 1781
+1184 837
+1185 96
+1186 1118
+654 1781
+1026 1781
+1027 1781
+1187 1781
+1188 1781
+1189 1078
+1190 1781
+1191 838
+1192 1781
+1193 1781
+1194 96
+1195 1781
+1196 118
+1197 96
+1198 1364
+1199 1781
+1200 1781
+1201 1119
+1202 1781
+1203 1364
+1204 1781
+1205 1781
+1206 1119
+1207 1781
+1208 1781
+1209 835
+1210 1781
+1211 1078
+1212 1781
+1213 1781
+1214 1781
+1215 1119
+Total timesteps at end of gen: 745392
+Population's average fitness: 1287.95000 stdev: 621.17428
+Best fitness: 1781.00000 - size: (17, 10) - species 2 - id 587
+Average adjusted fitness: 0.701
+Mean genetic distance 2.193, standard deviation 0.696
+Population of 60 members in 2 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   21    33   1781.0    0.793    13
+     2   15    27   1781.0    0.609    11
+Total extinctions: 0
+Generation time: 61.237 sec (60.553 average)
+
+ ****** Running generation 22 ****** 
+
+Gen timestep at time: 2019-03-22 22:04:01.037888
+587 1781
+achieved fitness: 1781 at timestep 746409 time: 2019-03-22 22:04:02.453951
+Saving genome to file ./genomes/best_genome_run1_CasinoNightZone.Act2.state_gen22.pkl
+896 1781
+897 1781
+1216 727
+1217 96
+1218 1781
+1219 839
+1220 1781
+1221 1781
+1222 1121
+1223 839
+1224 1781
+1225 96
+1226 96
+1227 1781
+1228 835
+1229 839
+1230 1118
+1231 96
+1232 841
+1233 839
+1234 1781
+1235 1781
+1236 1781
+1237 1781
+1238 1781
+1239 731
+654 1781
+1026 1781
+1027 1781
+1240 1781
+1241 838
+1242 1781
+1243 96
+1244 1119
+1245 1781
+1246 1364
+1247 835
+1248 1781
+1249 1364
+1250 96
+1251 838
+1252 1781
+1253 757
+1254 1781
+1255 96
+1256 96
+1257 1781
+1258 1781
+1259 1781
+1260 96
+1261 1781
+1262 1781
+1263 977
+1264 757
+1265 1781
+1266 1119
+1267 1781
+1268 1078
+1269 1781
+Total timesteps at end of gen: 787083
+Population's average fitness: 1234.48333 stdev: 621.61364
+Best fitness: 1781.00000 - size: (17, 10) - species 2 - id 587
+Average adjusted fitness: 0.674
+Mean genetic distance 2.197, standard deviation 0.685
+Population of 60 members in 2 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   22    32   1781.0    0.695    14
+     2   16    28   1781.0    0.652    12
+Total extinctions: 0
+Generation time: 58.568 sec (61.124 average)
+
+ ****** Running generation 23 ****** 
+
+Gen timestep at time: 2019-03-22 22:04:59.605620
+587 1781
+achieved fitness: 1781 at timestep 788100 time: 2019-03-22 22:05:01.012121
+Saving genome to file ./genomes/best_genome_run1_CasinoNightZone.Act2.state_gen23.pkl
+896 1781
+897 1781
+1270 1781
+1271 839
+1272 1772
+1273 1781
+1274 815
+1275 748
+1276 96
+1277 1781
+1278 1781
+1279 1781
+1280 746
+1281 837
+1282 1781
+1283 1118
+1284 1781
+1285 96
+1286 839
+1287 1781
+1288 837
+1289 1781
+1290 1781
+1291 1781
+1292 757
+1293 1781
+1294 1781
+654 1781
+1026 1781
+1027 1781
+1295 1364
+1296 1781
+1297 1781
+1298 835
+1299 1119
+1300 96
+1301 1781
+1302 1119
+1303 1119
+1304 835
+1305 96
+1306 1781
+1307 1781
+1308 1364
+1309 1781
+1310 835
+1311 835
+1312 1781
+1313 835
+1314 96
+1315 1781
+1316 1781
+1317 1781
+1318 1781
+1319 822
+1320 96
+1321 96
+1322 1781
+1323 1078
+Total timesteps at end of gen: 830751
+Population's average fitness: 1289.18333 stdev: 592.01961
+Best fitness: 1781.00000 - size: (17, 10) - species 2 - id 587
+Average adjusted fitness: 0.711
+Mean genetic distance 2.202, standard deviation 0.697
+Population of 60 members in 2 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   23    30   1781.0    0.673    15
+     2   17    30   1781.0    0.748    13
+Total extinctions: 0
+Generation time: 61.383 sec (61.401 average)
+
+ ****** Running generation 24 ****** 
+
+Gen timestep at time: 2019-03-22 22:06:00.988947
+587 1781
+achieved fitness: 1781 at timestep 831768 time: 2019-03-22 22:06:02.396661
+Saving genome to file ./genomes/best_genome_run1_CasinoNightZone.Act2.state_gen24.pkl
+896 1781
+897 1781
+1324 1781
+1325 1781
+1326 1115
+1327 757
+1328 835
+1329 1781
+1330 1781
+1331 757
+1332 106
+1333 837
+1334 837
+1335 1364
+1336 96
+1337 1781
+1338 96
+1339 837
+1340 4027
+achieved fitness: 4027 at timestep 846756 time: 2019-03-22 22:06:23.389743
+Saving genome to file ./genomes/best_genome_run1_CasinoNightZone.Act2.state_gen24.pkl
+1341 1781
+1342 777
+1343 1781
+1344 839
+1345 1781
+1346 757
+1347 1781
+1348 838
+1349 1781
+1350 96
+654 1781
+1296 1781
+1297 1781
+1351 1781
+1352 1119
+1353 1781
+1354 1781
+1355 1364
+1356 1781
+1357 1119
+1358 1781
+1359 1781
+1360 1781
+1361 1781
+1362 1364
+1363 1781
+1364 1781
+1365 1781
+1366 1119
+1367 1781
+1368 1781
+1369 96
+1370 1781
+1371 1364
+1372 1119
+1373 1781
+1374 1781
+1375 835
+1376 1364
+1377 96
+Total timesteps at end of gen: 878754
+Population's average fitness: 1382.03333 stdev: 657.71544
+Best fitness: 4027.00000 - size: (21, 17) - species 2 - id 1340
+Average adjusted fitness: 0.327
+Mean genetic distance 2.224, standard deviation 0.654
+Population of 60 members in 2 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   24    31   1781.0    0.355    16
+     2   18    29   4027.0    0.299     0
+Total extinctions: 0
+Generation time: 67.398 sec (62.123 average)
+Saving checkpoint to neat-checkpoint-24
+
+ ****** Running generation 25 ****** 
+
+Gen timestep at time: 2019-03-22 22:07:08.400262
+654 1781
+achieved fitness: 1781 at timestep 879630 time: 2019-03-22 22:07:09.620736
+Saving genome to file ./genomes/best_genome_run1_CasinoNightZone.Act2.state_gen25.pkl
+1296 1781
+1297 1781
+1378 1364
+1379 835
+1380 1781
+1381 1781
+1382 1781
+1383 96
+1384 96
+1385 1781
+1386 1781
+1387 1781
+1388 1781
+1389 835
+1390 1781
+1391 757
+1392 1781
+1393 1364
+1394 96
+1395 1122
+1396 1781
+1397 835
+1398 1781
+1399 1781
+1400 1781
+1401 1078
+1402 1781
+1403 1781
+1404 96
+1405 1781
+1340 4027
+achieved fitness: 4027 at timestep 903996 time: 2019-03-22 22:07:43.992005
+Saving genome to file ./genomes/best_genome_run1_CasinoNightZone.Act2.state_gen25.pkl
+587 1781
+896 1781
+1406 1119
+1407 739
+1408 1781
+1409 1122
+1410 838
+1411 1781
+1412 106
+1413 1123
+1414 837
+1415 96
+1416 1781
+1417 1781
+1418 1015
+1419 1781
+1420 1781
+1421 839
+1422 841
+1423 843
+1424 1781
+1425 1781
+1426 1364
+1427 1781
+1428 1781
+1429 1781
+1430 756
+1431 757
+Total timesteps at end of gen: 925809
+Population's average fitness: 1366.46667 stdev: 663.67508
+Best fitness: 4027.00000 - size: (21, 17) - species 2 - id 1340
+Average adjusted fitness: 0.323
+Mean genetic distance 2.160, standard deviation 0.699
+Population of 60 members in 2 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   25    30   1781.0    0.324    17
+     2   19    30   4027.0    0.323     1
+Total extinctions: 0
+Generation time: 66.100 sec (62.447 average)
+
+ ****** Running generation 26 ****** 
+
+Gen timestep at time: 2019-03-22 22:08:14.500438
+654 1781
+achieved fitness: 1781 at timestep 926685 time: 2019-03-22 22:08:15.721883
+Saving genome to file ./genomes/best_genome_run1_CasinoNightZone.Act2.state_gen26.pkl
+1296 1781
+1297 1781
+1432 1781
+1433 1119
+1434 1781
+1435 1781
+1436 835
+1437 96
+1438 1781
+1439 96
+1440 1781
+1441 1781
+1442 1781
+1443 835
+1444 835
+1445 1781
+1446 1781
+1447 96
+1448 96
+1449 1781
+1450 1781
+1451 1078
+1452 1364
+1453 1781
+1454 1781
+1455 96
+1456 1364
+1457 96
+1458 1781
+1340 4027
+achieved fitness: 4027 at timestep 949656 time: 2019-03-22 22:08:48.106633
+Saving genome to file ./genomes/best_genome_run1_CasinoNightZone.Act2.state_gen26.pkl
+587 1781
+896 1781
+1459 96
+1460 1119
+1461 1781
+1462 757
+1463 1118
+1464 1122
+1465 96
+1466 96
+1467 96
+1468 96
+1469 748
+1470 1781
+1471 1781
+1472 1781
+1473 96
+1474 96
+1475 96
+1476 1781
+1477 839
+1478 1781
+1479 839
+1480 1781
+1481 1781
+1482 1772
+1483 96
+1484 731
+1485 1772
+Total timesteps at end of gen: 968427
+Population's average fitness: 1196.68333 stdev: 789.69890
+Best fitness: 4027.00000 - size: (21, 17) - species 2 - id 1340
+Average adjusted fitness: 0.280
+Mean genetic distance 2.123, standard deviation 0.689
+Population of 60 members in 2 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   26    31   1781.0    0.300    18
+     2   20    29   4027.0    0.260     2
+Total extinctions: 0
+Generation time: 59.848 sec (62.154 average)
+
+ ****** Running generation 27 ****** 
+
+Gen timestep at time: 2019-03-22 22:09:14.348402
+654 1781
+achieved fitness: 1781 at timestep 969303 time: 2019-03-22 22:09:15.570680
+Saving genome to file ./genomes/best_genome_run1_CasinoNightZone.Act2.state_gen27.pkl
+1296 1781
+1297 1781
+1486 1781
+1487 835
+1488 1124
+1489 1781
+1490 96
+1491 1119
+1492 757
+1493 1781
+1494 835
+1495 1781
+1496 1781
+1497 1781
+1498 1781
+1499 1119
+1500 1781
+1501 1781
+1502 1781
+1503 1781
+1504 1781
+1505 1781
+1506 1119
+1507 1781
+1508 752
+1509 96
+1510 1119
+1511 1781
+1512 1781
+1513 1781
+1340 4027
+achieved fitness: 4027 at timestep 994638 time: 2019-03-22 22:09:51.249115
+Saving genome to file ./genomes/best_genome_run1_CasinoNightZone.Act2.state_gen27.pkl
+587 1781
+896 1781
+1514 1781
+1515 839
+1516 96
+1517 757
+1518 96
+1519 757
+Finished timestepMax at time: 2019-03-22 22:09:58.743143

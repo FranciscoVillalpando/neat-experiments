@@ -1,0 +1,1828 @@
+Starting python script!
+Using env(SonicAndKnuckles3-Genesis, FlyingBatteryZone.Act2.state)
+Observation space shape:(224, 320, 3)
+Start: 2019-03-23 21:48:27.854753
+Using the following config file: config.txt
+[NEAT]
+fitness_criterion     = max
+fitness_threshold     = 9000
+pop_size              = 60
+reset_on_extinction   = False
+
+[DefaultGenome]
+# node activation options
+activation_default      = sigmoid
+activation_mutate_rate  = 0.00
+activation_options      = sigmoid 
+#abs clamped cube exp gauss hat identity inv log relu sigmoid sin softplus square tanh
+
+# node aggregation options
+aggregation_default     = sum
+aggregation_mutate_rate = 0.00
+aggregation_options     = sum product min max mean median maxabs
+
+# node bias options
+bias_init_mean          = 0.05
+bias_init_stdev         = 1.0
+bias_max_value          = 50.0
+bias_min_value          = -50.0
+bias_mutate_power       = 0.5
+bias_mutate_rate        = 0.7
+bias_replace_rate       = 0.1
+
+# genome compatibility options
+compatibility_disjoint_coefficient = 1.0
+compatibility_weight_coefficient   = 0.5
+
+# connection add/remove rates
+conn_add_prob           = 0.6
+conn_delete_prob        = 0.1
+
+# connection enable options
+enabled_default         = True
+enabled_mutate_rate     = 0.05
+
+feed_forward            = False
+initial_connection      = fs_neat_nohidden
+#initial_connection      = unconnected
+#initial_connection     = partial_nodirect 0.4
+
+# node add/remove rates
+node_add_prob           = 0.7
+node_delete_prob        = 0.1
+
+# network parameters
+num_hidden              = 0
+num_inputs              = 17920
+num_outputs             = 7
+
+# node response options
+response_init_mean      = 1.0
+response_init_stdev     = 0.05
+response_max_value      = 30.0
+response_min_value      = -30.0
+response_mutate_power   = 0.1
+response_mutate_rate    = 0.75
+response_replace_rate   = 0.1
+
+# connection weight options
+weight_init_mean        = 0.1
+weight_init_stdev       = 1.0
+weight_max_value        = 30
+weight_min_value        = -30
+weight_mutate_power     = 0.5
+weight_mutate_rate      = 0.8
+weight_replace_rate     = 0.1
+
+[DefaultSpeciesSet]
+compatibility_threshold = 2.8
+
+[DefaultStagnation]
+species_fitness_func = max
+max_stagnation       = 200
+species_elitism      = 0
+
+[DefaultReproduction]
+elitism            = 3
+survival_threshold = 0.3
+
+
+
+End of config file
+
+ ****** Running generation 0 ****** 
+
+Gen timestep at time: 2019-03-23 21:48:27.865483
+1 96
+achieved fitness: 96 at timestep 303 time: 2019-03-23 21:48:28.302690
+Saving genome to file ./genomes/best_genome_run1_FlyingBatteryZone.Act2.state_gen0.pkl
+2 96
+3 1649
+achieved fitness: 1649 at timestep 1344 time: 2019-03-23 21:48:29.792324
+Saving genome to file ./genomes/best_genome_run1_FlyingBatteryZone.Act2.state_gen0.pkl
+4 96
+5 1365
+6 1365
+7 96
+8 1365
+9 96
+10 96
+11 96
+12 96
+13 1365
+14 1628
+15 96
+16 96
+17 96
+18 96
+19 1365
+20 1365
+21 219
+22 96
+23 96
+24 219
+25 1365
+26 96
+27 96
+28 1365
+29 99
+30 1365
+31 96
+32 1365
+33 1365
+34 1365
+35 96
+36 1365
+37 96
+38 96
+39 1365
+40 1365
+41 2165
+achieved fitness: 2165 at timestep 19686 time: 2019-03-23 21:48:56.145220
+Saving genome to file ./genomes/best_genome_run1_FlyingBatteryZone.Act2.state_gen0.pkl
+42 96
+43 96
+44 96
+45 1365
+46 96
+47 96
+48 96
+49 96
+50 1365
+51 1365
+52 104
+53 1365
+54 96
+55 96
+56 96
+57 1269
+58 96
+59 1365
+60 1365
+Total timesteps at end of gen: 28152
+Population's average fitness: 649.88333 stdev: 656.45805
+Best fitness: 2165.00000 - size: (7, 7) - species 2 - id 41
+Average adjusted fitness: 0.320
+Mean genetic distance 2.521, standard deviation 0.365
+Population of 61 members in 3 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    0    13   1649.0    0.237     0
+     2    0    15   2165.0    0.515     0
+     3    0    33   1628.0    0.210     0
+Total extinctions: 0
+Generation time: 40.419 sec (40.419 average)
+
+ ****** Running generation 1 ****** 
+
+Gen timestep at time: 2019-03-23 21:49:08.284277
+14 1628
+achieved fitness: 1628 at timestep 29517 time: 2019-03-23 21:49:10.236780
+Saving genome to file ./genomes/best_genome_run1_FlyingBatteryZone.Act2.state_gen1.pkl
+8 1365
+19 1365
+61 96
+62 1365
+63 1365
+64 1260
+65 96
+66 96
+67 1365
+68 96
+69 96
+70 1365
+71 1365
+72 1365
+73 1365
+74 96
+75 1365
+76 1365
+3 1649
+achieved fitness: 1649 at timestep 39453 time: 2019-03-23 21:49:24.477585
+Saving genome to file ./genomes/best_genome_run1_FlyingBatteryZone.Act2.state_gen1.pkl
+5 1365
+13 1365
+77 1365
+78 1365
+79 1260
+80 1365
+81 96
+82 1365
+83 1365
+84 1365
+85 96
+86 96
+87 1365
+88 1365
+89 1653
+achieved fitness: 1653 at timestep 47844 time: 2019-03-23 21:49:36.500368
+Saving genome to file ./genomes/best_genome_run1_FlyingBatteryZone.Act2.state_gen1.pkl
+90 96
+91 1365
+92 1643
+93 1365
+94 96
+41 2165
+achieved fitness: 2165 at timestep 51486 time: 2019-03-23 21:49:41.721673
+Saving genome to file ./genomes/best_genome_run1_FlyingBatteryZone.Act2.state_gen1.pkl
+6 1365
+20 1365
+95 1260
+96 1365
+97 1365
+98 96
+99 1365
+100 1260
+101 96
+102 96
+103 1260
+104 1365
+105 1365
+106 2165
+107 1365
+108 1365
+109 1260
+110 96
+111 1365
+112 1365
+Total timesteps at end of gen: 62700
+Population's average fitness: 1087.09836 stdev: 588.14280
+Best fitness: 2165.00000 - size: (7, 7) - species 1 - id 41
+Average adjusted fitness: 0.494
+Mean genetic distance 2.481, standard deviation 0.447
+Population of 61 members in 3 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    1     8   2165.0    0.529     0
+     2    1    22   2165.0    0.506     1
+     3    1    31   1643.0    0.447     0
+Total extinctions: 0
+Generation time: 49.530 sec (44.974 average)
+
+ ****** Running generation 2 ****** 
+
+Gen timestep at time: 2019-03-23 21:49:57.814211
+92 1643
+achieved fitness: 1643 at timestep 63465 time: 2019-03-23 21:49:58.906417
+Saving genome to file ./genomes/best_genome_run1_FlyingBatteryZone.Act2.state_gen2.pkl
+8 1365
+19 1365
+113 1365
+114 96
+115 1365
+116 96
+117 1365
+118 1365
+119 1365
+120 96
+121 1365
+122 96
+123 1365
+124 1365
+125 96
+126 1365
+127 1365
+128 96
+129 1365
+130 96
+131 96
+132 1365
+133 1365
+134 1365
+135 1365
+41 2165
+achieved fitness: 2165 at timestep 77481 time: 2019-03-23 21:50:19.038926
+Saving genome to file ./genomes/best_genome_run1_FlyingBatteryZone.Act2.state_gen2.pkl
+89 1653
+3 1649
+136 2165
+137 96
+138 2165
+139 104
+140 1649
+141 1365
+142 1261
+143 176
+144 1261
+145 96
+146 2165
+147 1242
+148 96
+149 1365
+106 2165
+6 1365
+20 1365
+150 1365
+151 1365
+152 1365
+153 1365
+154 1269
+155 1365
+156 1365
+157 1365
+158 1365
+159 96
+160 1365
+161 1365
+162 96
+163 1365
+164 1365
+Total timesteps at end of gen: 98409
+Population's average fitness: 1131.55738 stdev: 629.62165
+Best fitness: 2165.00000 - size: (7, 7) - species 1 - id 41
+Average adjusted fitness: 0.491
+Mean genetic distance 2.445, standard deviation 0.407
+Population of 61 members in 3 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    2     7   2165.0    0.471     1
+     2    2    33   2165.0    0.479     2
+     3    2    21   2165.0    0.523     0
+Total extinctions: 0
+Generation time: 51.283 sec (47.077 average)
+
+ ****** Running generation 3 ****** 
+
+Gen timestep at time: 2019-03-23 21:50:49.097688
+136 2165
+achieved fitness: 2165 at timestep 99429 time: 2019-03-23 21:50:50.584331
+Saving genome to file ./genomes/best_genome_run1_FlyingBatteryZone.Act2.state_gen3.pkl
+146 2165
+140 1649
+165 2165
+166 1260
+167 1365
+168 1636
+169 1365
+170 2165
+171 2165
+172 96
+173 1365
+174 96
+175 1365
+176 1651
+177 2165
+178 2165
+179 1365
+180 96
+181 2165
+182 2165
+183 2165
+184 1365
+185 96
+186 1365
+187 1365
+41 2165
+89 1653
+3 1649
+188 2165
+189 1365
+190 2165
+191 1365
+192 96
+193 1365
+194 1265
+195 2165
+196 196
+197 2165
+198 96
+138 2165
+106 2165
+6 1365
+199 1365
+200 96
+201 96
+202 96
+203 96
+204 96
+205 1365
+206 2165
+207 1365
+208 1365
+209 96
+210 96
+211 1365
+212 1248
+213 2165
+214 1365
+215 332
+216 1269
+Total timesteps at end of gen: 140286
+Population's average fitness: 1323.95082 stdev: 766.82204
+Best fitness: 2165.00000 - size: (7, 8) - species 1 - id 136
+Average adjusted fitness: 0.622
+Mean genetic distance 2.234, standard deviation 0.447
+Population of 61 members in 3 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    3     2   2165.0    0.669     2
+     2    3    17   2165.0    0.530     3
+     3    3    42   2165.0    0.667     1
+Total extinctions: 0
+Generation time: 60.490 sec (50.430 average)
+
+ ****** Running generation 4 ****** 
+
+Gen timestep at time: 2019-03-23 21:51:49.587309
+146 2165
+achieved fitness: 2165 at timestep 141303 time: 2019-03-23 21:51:51.057959
+Saving genome to file ./genomes/best_genome_run1_FlyingBatteryZone.Act2.state_gen4.pkl
+165 2165
+170 2165
+217 2165
+218 1652
+219 1260
+220 2165
+221 176
+222 96
+223 2165
+224 2165
+225 2165
+226 2165
+227 2165
+228 1365
+229 1365
+230 1365
+231 1365
+232 1365
+233 1365
+234 1365
+235 2165
+136 2165
+41 2165
+89 1653
+236 96
+237 1365
+238 2165
+239 96
+240 1365
+241 2165
+242 1365
+243 1365
+244 2165
+245 2165
+246 2165
+138 2165
+171 2165
+177 2165
+247 96
+248 96
+249 1365
+250 96
+251 96
+252 2165
+253 1365
+254 2165
+255 2165
+256 1365
+257 2165
+258 1365
+259 2165
+260 96
+261 2165
+262 1365
+263 96
+264 1365
+265 1252
+266 2165
+267 1365
+268 2165
+Total timesteps at end of gen: 187095
+Population's average fitness: 1544.45902 stdev: 732.07026
+Best fitness: 2165.00000 - size: (8, 9) - species 3 - id 146
+Average adjusted fitness: 0.688
+Mean genetic distance 2.039, standard deviation 0.637
+Population of 60 members in 3 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    4    11   1653.0    0.683     3
+     2    4    10   2165.0    0.664     4
+     3    4    39   2165.0    0.715     2
+Total extinctions: 0
+Generation time: 67.675 sec (53.879 average)
+Saving checkpoint to neat-checkpoint-4
+
+ ****** Running generation 5 ****** 
+
+Gen timestep at time: 2019-03-23 21:52:57.269426
+89 1653
+achieved fitness: 1653 at timestep 187878 time: 2019-03-23 21:52:58.403432
+Saving genome to file ./genomes/best_genome_run1_FlyingBatteryZone.Act2.state_gen5.pkl
+240 1365
+269 1365
+270 1365
+271 1365
+272 1365
+273 96
+274 96
+275 1365
+276 1365
+277 1365
+257 2165
+achieved fitness: 2165 at timestep 194421 time: 2019-03-23 21:53:07.886359
+Saving genome to file ./genomes/best_genome_run1_FlyingBatteryZone.Act2.state_gen5.pkl
+261 2165
+136 2165
+278 2165
+279 1365
+280 96
+281 104
+282 1365
+283 2165
+284 1365
+285 1365
+286 2165
+287 1365
+288 1365
+289 1365
+290 2165
+291 1365
+292 96
+293 1365
+294 1365
+295 96
+296 1365
+297 196
+298 98
+299 1269
+300 1365
+301 1365
+302 2165
+303 1365
+304 1365
+305 1365
+268 2165
+259 2165
+138 2165
+306 1365
+307 2165
+308 2165
+309 2165
+310 1365
+311 2165
+312 1365
+313 1365
+314 96
+315 2165
+316 1365
+317 1365
+318 1365
+319 1365
+320 1365
+Total timesteps at end of gen: 228069
+Population's average fitness: 1393.01667 stdev: 639.12963
+Best fitness: 2165.00000 - size: (9, 10) - species 3 - id 257
+Average adjusted fitness: 0.620
+Mean genetic distance 1.972, standard deviation 0.624
+Population of 60 members in 3 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    5    14   1653.0    0.514     4
+     2    5     8   2165.0    0.707     5
+     3    5    38   2165.0    0.638     3
+Total extinctions: 0
+Generation time: 59.303 sec (54.783 average)
+
+ ****** Running generation 6 ****** 
+
+Gen timestep at time: 2019-03-23 21:53:56.572806
+89 1653
+achieved fitness: 1653 at timestep 228852 time: 2019-03-23 21:53:57.709336
+Saving genome to file ./genomes/best_genome_run1_FlyingBatteryZone.Act2.state_gen6.pkl
+269 1365
+270 1365
+321 1634
+322 98
+323 1365
+324 1365
+325 1365
+326 1365
+327 1365
+328 1365
+329 1365
+330 1365
+331 1365
+257 2165
+achieved fitness: 2165 at timestep 238383 time: 2019-03-23 21:54:11.480255
+Saving genome to file ./genomes/best_genome_run1_FlyingBatteryZone.Act2.state_gen6.pkl
+261 2165
+136 2165
+332 1365
+333 1365
+334 1365
+335 2165
+336 1260
+337 2165
+338 96
+339 1365
+340 104
+341 1365
+342 1260
+343 96
+344 2165
+345 2165
+346 2165
+347 1268
+348 2165
+349 2165
+350 1365
+351 96
+352 2165
+353 196
+354 2165
+355 1260
+356 2165
+357 1365
+358 104
+268 2165
+259 2165
+308 2165
+359 2165
+360 96
+361 2165
+362 1260
+363 96
+364 1365
+365 96
+366 1260
+367 1265
+368 2165
+369 191
+370 2165
+371 1365
+Total timesteps at end of gen: 270822
+Population's average fitness: 1399.81667 stdev: 708.86812
+Best fitness: 2165.00000 - size: (9, 10) - species 3 - id 257
+Average adjusted fitness: 0.644
+Mean genetic distance 1.951, standard deviation 0.681
+Population of 60 members in 3 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    6    16   1653.0    0.589     5
+     2    6    15   2165.0    0.717     6
+     3    6    29   2165.0    0.627     4
+Total extinctions: 0
+Generation time: 61.814 sec (55.788 average)
+
+ ****** Running generation 7 ****** 
+
+Gen timestep at time: 2019-03-23 21:54:58.387119
+89 1653
+achieved fitness: 1653 at timestep 271605 time: 2019-03-23 21:54:59.521019
+Saving genome to file ./genomes/best_genome_run1_FlyingBatteryZone.Act2.state_gen7.pkl
+321 1634
+269 1365
+372 1365
+373 96
+374 104
+375 1365
+376 1365
+377 1365
+378 1365
+379 1365
+380 1365
+381 1365
+382 1365
+383 1365
+384 1365
+136 2165
+achieved fitness: 2165 at timestep 281547 time: 2019-03-23 21:55:13.871891
+Saving genome to file ./genomes/best_genome_run1_FlyingBatteryZone.Act2.state_gen7.pkl
+257 2165
+259 2165
+385 1365
+386 1365
+387 2165
+388 1365
+389 1269
+390 96
+391 1365
+392 1365
+393 2165
+394 96
+395 1365
+396 2165
+397 1365
+398 2165
+399 1365
+400 96
+401 1365
+402 2165
+403 2165
+404 1236
+405 1365
+406 2165
+407 2165
+408 96
+409 2165
+410 1365
+268 2165
+359 2165
+361 2165
+411 1365
+412 2165
+413 2165
+414 2165
+415 1365
+416 2165
+417 2165
+418 1260
+419 2165
+420 1365
+421 1260
+422 2165
+Total timesteps at end of gen: 315060
+Population's average fitness: 1533.60000 stdev: 608.54444
+Best fitness: 2165.00000 - size: (7, 8) - species 3 - id 136
+Average adjusted fitness: 0.701
+Mean genetic distance 1.950, standard deviation 0.664
+Population of 59 members in 3 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    7    15   1653.0    0.554     6
+     2    7    20   2165.0    0.864     7
+     3    7    24   2165.0    0.685     5
+Total extinctions: 0
+Generation time: 64.078 sec (56.824 average)
+
+ ****** Running generation 8 ****** 
+
+Gen timestep at time: 2019-03-23 21:56:02.464772
+89 1653
+achieved fitness: 1653 at timestep 315843 time: 2019-03-23 21:56:03.596245
+Saving genome to file ./genomes/best_genome_run1_FlyingBatteryZone.Act2.state_gen8.pkl
+321 1634
+384 1365
+423 1365
+424 1653
+425 1365
+426 1365
+427 178
+428 1365
+429 1365
+430 96
+431 1365
+432 96
+433 1638
+434 1365
+136 2165
+achieved fitness: 2165 at timestep 331119 time: 2019-03-23 21:56:25.556936
+Saving genome to file ./genomes/best_genome_run1_FlyingBatteryZone.Act2.state_gen8.pkl
+257 2165
+259 2165
+435 1365
+436 2165
+437 2165
+438 2165
+439 2165
+440 96
+441 96
+442 2165
+443 1365
+444 2165
+445 2165
+446 1365
+447 1365
+448 1365
+449 2165
+450 2165
+451 2165
+452 2165
+453 2165
+454 96
+455 1365
+268 2165
+412 2165
+413 2165
+456 1365
+457 2165
+458 1365
+459 2165
+460 1260
+461 1365
+462 1260
+463 2165
+464 96
+465 2165
+466 2165
+467 1365
+468 2165
+469 2165
+470 1365
+471 2165
+472 96
+Total timesteps at end of gen: 365970
+Population's average fitness: 1562.25424 stdev: 680.98482
+Best fitness: 2165.00000 - size: (7, 8) - species 3 - id 136
+Average adjusted fitness: 0.689
+Mean genetic distance 1.961, standard deviation 0.665
+Population of 60 members in 3 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    8    16   1653.0    0.529     7
+     2    8    21   2165.0    0.760     8
+     3    8    23   2165.0    0.778     6
+Total extinctions: 0
+Generation time: 73.650 sec (58.694 average)
+
+ ****** Running generation 9 ****** 
+
+Gen timestep at time: 2019-03-23 21:57:16.114485
+89 1653
+achieved fitness: 1653 at timestep 366753 time: 2019-03-23 21:57:17.244249
+Saving genome to file ./genomes/best_genome_run1_FlyingBatteryZone.Act2.state_gen9.pkl
+424 1653
+433 1638
+473 1637
+474 1631
+475 1638
+476 1365
+477 1365
+478 1365
+479 96
+480 1638
+481 1365
+482 1365
+483 1365
+484 1365
+485 1638
+136 2165
+achieved fitness: 2165 at timestep 378144 time: 2019-03-23 21:57:33.786583
+Saving genome to file ./genomes/best_genome_run1_FlyingBatteryZone.Act2.state_gen9.pkl
+257 2165
+259 2165
+486 2165
+487 2165
+488 178
+489 1365
+490 228
+491 240
+492 1365
+493 1365
+494 2165
+495 2165
+496 96
+497 2165
+498 1329
+499 2165
+500 1365
+501 2165
+502 2165
+503 2165
+504 2165
+505 2165
+268 2165
+412 2165
+413 2165
+506 2165
+507 96
+508 2165
+509 1260
+510 1365
+511 2165
+512 1365
+513 1260
+514 176
+515 96
+516 2165
+517 185
+518 96
+519 1260
+520 96
+521 1269
+522 96
+523 2165
+Total timesteps at end of gen: 410199
+Population's average fitness: 1442.63333 stdev: 735.03657
+Best fitness: 2165.00000 - size: (7, 8) - species 3 - id 136
+Average adjusted fitness: 0.647
+Mean genetic distance 2.010, standard deviation 0.639
+Population of 61 members in 3 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    9    18   1653.0    0.642     8
+     2    9    19   2165.0    0.551     9
+     3    9    24   2165.0    0.749     7
+Total extinctions: 0
+Generation time: 64.270 sec (59.251 average)
+Saving checkpoint to neat-checkpoint-9
+
+ ****** Running generation 10 ****** 
+
+Gen timestep at time: 2019-03-23 21:58:20.392914
+89 1653
+achieved fitness: 1653 at timestep 410982 time: 2019-03-23 21:58:21.527180
+Saving genome to file ./genomes/best_genome_run1_FlyingBatteryZone.Act2.state_gen10.pkl
+424 1653
+433 1638
+524 1365
+525 1653
+526 1653
+527 1638
+528 1365
+529 1365
+530 1365
+531 1653
+532 96
+533 1638
+534 1365
+535 1365
+536 2165
+achieved fitness: 2165 at timestep 421728 time: 2019-03-23 21:58:37.065145
+Saving genome to file ./genomes/best_genome_run1_FlyingBatteryZone.Act2.state_gen10.pkl
+537 96
+538 1636
+136 2165
+257 2165
+259 2165
+539 2165
+540 2165
+541 315
+542 2165
+543 2165
+544 1653
+545 1265
+546 96
+547 2165
+548 2165
+549 1365
+550 2165
+551 96
+552 2165
+553 1365
+554 2165
+555 96
+556 2165
+557 1365
+558 96
+559 1269
+268 2165
+516 2165
+523 2165
+560 2165
+561 2165
+562 1365
+563 1365
+564 1365
+565 1365
+566 591
+567 1365
+568 2165
+569 1269
+570 1365
+571 2165
+572 2165
+573 98
+574 2165
+575 96
+Total timesteps at end of gen: 457185
+Population's average fitness: 1511.75410 stdev: 687.22265
+Best fitness: 2165.00000 - size: (9, 10) - species 1 - id 536
+Average adjusted fitness: 0.682
+Mean genetic distance 1.992, standard deviation 0.673
+Population of 61 members in 3 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   10    19   2165.0    0.635     9
+     2   10    20   2165.0    0.710    10
+     3   10    22   2165.0    0.701     8
+Total extinctions: 0
+Generation time: 68.017 sec (62.011 average)
+
+ ****** Running generation 11 ****** 
+
+Gen timestep at time: 2019-03-23 21:59:28.409905
+536 2165
+achieved fitness: 2165 at timestep 458268 time: 2019-03-23 21:59:29.980172
+Saving genome to file ./genomes/best_genome_run1_FlyingBatteryZone.Act2.state_gen11.pkl
+89 1653
+525 1653
+576 103
+577 1365
+578 96
+579 1623
+580 96
+581 96
+582 96
+583 1640
+584 96
+585 96
+586 1365
+587 96
+588 96
+589 1639
+590 2165
+591 1365
+136 2165
+257 2165
+259 2165
+592 2165
+593 2165
+594 1365
+595 1365
+596 1365
+597 1653
+598 2165
+599 2165
+600 2165
+601 1365
+602 2165
+603 1365
+604 2165
+605 2165
+606 2165
+607 2165
+608 1365
+609 2165
+610 1365
+268 2165
+516 2165
+523 2165
+611 1365
+612 1260
+613 2165
+614 2165
+615 96
+616 2165
+617 2165
+618 1365
+619 96
+620 96
+621 1365
+622 1365
+623 2165
+624 1365
+625 1260
+626 96
+627 1260
+Total timesteps at end of gen: 525108
+Population's average fitness: 1431.65574 stdev: 773.59207
+Best fitness: 2165.00000 - size: (9, 10) - species 1 - id 536
+Average adjusted fitness: 0.634
+Mean genetic distance 2.018, standard deviation 0.619
+Population of 59 members in 3 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   11    15   2165.0    0.399    10
+     2   11    19   2165.0    0.638    11
+     3   11    25   2165.0    0.866     9
+Total extinctions: 0
+Generation time: 97.751 sec (66.833 average)
+
+ ****** Running generation 12 ****** 
+
+Gen timestep at time: 2019-03-23 22:01:06.161300
+536 2165
+achieved fitness: 2165 at timestep 526191 time: 2019-03-23 22:01:07.719051
+Saving genome to file ./genomes/best_genome_run1_FlyingBatteryZone.Act2.state_gen12.pkl
+590 2165
+89 1653
+628 1365
+629 1365
+630 1640
+631 1640
+632 96
+633 1640
+634 1365
+635 1365
+636 96
+637 96
+638 2165
+639 96
+136 2165
+257 2165
+259 2165
+640 2165
+641 2165
+642 1365
+643 2165
+644 2165
+645 1365
+646 2165
+647 2165
+648 96
+649 2165
+650 2165
+651 2165
+652 2165
+653 1365
+654 2165
+655 2165
+656 2165
+657 2165
+658 1365
+659 104
+660 2165
+268 2165
+516 2165
+523 2165
+661 2165
+662 197
+663 1365
+664 96
+665 1260
+666 1365
+667 1269
+668 2165
+669 2165
+670 96
+671 1365
+672 2165
+673 2165
+674 2165
+675 2165
+676 1365
+677 2165
+Total timesteps at end of gen: 573135
+Population's average fitness: 1622.62712 stdev: 726.27445
+Best fitness: 2165.00000 - size: (9, 10) - species 1 - id 536
+Average adjusted fitness: 0.715
+Mean genetic distance 2.158, standard deviation 0.595
+Population of 60 members in 3 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   12    16   2165.0    0.563    11
+     2   12    20   2165.0    0.738    12
+     3   12    24   2165.0    0.843    10
+Total extinctions: 0
+Generation time: 69.421 sec (68.647 average)
+
+ ****** Running generation 13 ****** 
+
+Gen timestep at time: 2019-03-23 22:02:15.582411
+536 2165
+achieved fitness: 2165 at timestep 574218 time: 2019-03-23 22:02:17.144691
+Saving genome to file ./genomes/best_genome_run1_FlyingBatteryZone.Act2.state_gen13.pkl
+590 2165
+638 2165
+678 1653
+679 1365
+680 1365
+681 96
+682 1365
+683 1365
+684 96
+685 96
+686 96
+687 1365
+688 1365
+689 1365
+690 1365
+136 2165
+640 2165
+257 2165
+691 2165
+692 2165
+693 1260
+694 2165
+695 1365
+696 2165
+697 96
+698 96
+699 1256
+700 1365
+701 96
+702 1264
+703 2165
+704 1365
+705 1365
+706 2165
+707 96
+708 1365
+709 1365
+710 2165
+711 1365
+268 2165
+661 2165
+668 2165
+712 96
+713 2165
+714 1365
+715 2165
+716 2165
+717 1365
+718 96
+719 2165
+720 1260
+721 2165
+722 1365
+723 1260
+724 2165
+725 1260
+726 1365
+727 1365
+728 2165
+Total timesteps at end of gen: 637326
+Population's average fitness: 1454.46667 stdev: 712.88708
+Best fitness: 2165.00000 - size: (9, 10) - species 1 - id 536
+Average adjusted fitness: 0.648
+Mean genetic distance 2.259, standard deviation 0.622
+Population of 60 members in 3 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   13    16   2165.0    0.541    12
+     2   13    21   2165.0    0.738    13
+     3   13    23   2165.0    0.666    11
+Total extinctions: 0
+Generation time: 91.998 sec (71.798 average)
+Saving checkpoint to neat-checkpoint-13
+
+ ****** Running generation 14 ****** 
+
+Gen timestep at time: 2019-03-23 22:03:47.588640
+536 2165
+achieved fitness: 2165 at timestep 638409 time: 2019-03-23 22:03:49.147532
+Saving genome to file ./genomes/best_genome_run1_FlyingBatteryZone.Act2.state_gen14.pkl
+590 2165
+638 2165
+729 1260
+730 96
+731 1365
+732 96
+733 96
+734 1299
+735 2165
+736 1365
+737 1365
+738 96
+739 1365
+740 1640
+741 1365
+742 1365
+136 2165
+640 2165
+257 2165
+743 2165
+744 197
+745 96
+746 1365
+747 1365
+748 1260
+749 1365
+750 1365
+751 2165
+752 96
+753 1365
+754 1365
+755 1365
+756 96
+757 1365
+758 1365
+759 1260
+760 1365
+761 2165
+268 2165
+661 2165
+668 2165
+762 2165
+763 2165
+764 2165
+765 2165
+766 2165
+767 1365
+768 2165
+769 2165
+770 2165
+771 2165
+772 1365
+773 99
+774 2165
+775 2165
+776 2165
+777 2165
+778 2165
+779 2165
+Total timesteps at end of gen: 683196
+Population's average fitness: 1547.95000 stdev: 710.21500
+Best fitness: 2165.00000 - size: (9, 10) - species 1 - id 536
+Average adjusted fitness: 0.697
+Mean genetic distance 2.255, standard deviation 0.628
+Population of 61 members in 3 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   14    17   2165.0    0.598    13
+     2   14    22   2165.0    0.916    14
+     3   14    22   2165.0    0.579    12
+Total extinctions: 0
+Generation time: 66.278 sec (71.658 average)
+
+ ****** Running generation 15 ****** 
+
+Gen timestep at time: 2019-03-23 22:04:53.867086
+536 2165
+achieved fitness: 2165 at timestep 684279 time: 2019-03-23 22:04:55.425691
+Saving genome to file ./genomes/best_genome_run1_FlyingBatteryZone.Act2.state_gen15.pkl
+590 2165
+735 2165
+780 1230
+781 2165
+782 96
+783 104
+784 1365
+785 1365
+786 1365
+787 1365
+788 1365
+789 96
+790 1653
+791 96
+792 1365
+793 104
+136 2165
+640 2165
+257 2165
+794 2165
+795 1365
+796 2165
+797 2165
+798 2165
+799 96
+800 1365
+801 1365
+802 96
+803 1365
+804 1365
+805 2165
+806 96
+807 1365
+808 2165
+809 1365
+810 1365
+268 2165
+768 2165
+769 2165
+811 1365
+812 2165
+813 2165
+814 2165
+815 1365
+816 1260
+817 1260
+818 2165
+819 2165
+820 1365
+821 1365
+822 2165
+823 1365
+824 96
+825 2165
+826 96
+827 2165
+828 2165
+829 2165
+830 2165
+831 1365
+Total timesteps at end of gen: 729246
+Population's average fitness: 1510.39344 stdev: 726.28467
+Best fitness: 2165.00000 - size: (9, 10) - species 1 - id 536
+Average adjusted fitness: 0.672
+Mean genetic distance 2.089, standard deviation 0.675
+Population of 60 members in 3 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   15    16   2165.0    0.529    14
+     2   15    20   2165.0    0.781    15
+     3   15    24   2165.0    0.705    13
+Total extinctions: 0
+Generation time: 66.559 sec (72.384 average)
+
+ ****** Running generation 16 ****** 
+
+Gen timestep at time: 2019-03-23 22:06:00.426170
+536 2165
+achieved fitness: 2165 at timestep 730329 time: 2019-03-23 22:06:01.990771
+Saving genome to file ./genomes/best_genome_run1_FlyingBatteryZone.Act2.state_gen16.pkl
+781 2165
+590 2165
+832 96
+833 96
+834 104
+835 1365
+836 96
+837 96
+838 1365
+839 96
+840 96
+841 1365
+842 1653
+843 1365
+844 96
+136 2165
+640 2165
+257 2165
+845 96
+846 1365
+847 2165
+848 1365
+849 1365
+850 2165
+851 1365
+852 2165
+853 2165
+854 1260
+855 141
+856 1260
+857 2165
+858 2165
+859 1269
+860 96
+861 1365
+862 1365
+268 2165
+768 2165
+769 2165
+863 96
+864 1365
+865 1255
+866 2165
+867 2165
+868 1365
+869 2165
+870 2165
+871 2165
+872 1365
+873 1365
+874 2165
+875 2165
+876 2165
+877 2165
+878 2165
+879 2165
+880 1365
+881 178
+882 2165
+Total timesteps at end of gen: 773745
+Population's average fitness: 1450.16667 stdev: 791.32783
+Best fitness: 2165.00000 - size: (9, 10) - species 1 - id 536
+Average adjusted fitness: 0.633
+Mean genetic distance 2.100, standard deviation 0.648
+Population of 60 members in 3 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   16    14   2165.0    0.388    15
+     2   16    20   2165.0    0.803    16
+     3   16    26   2165.0    0.709    14
+Total extinctions: 0
+Generation time: 64.480 sec (72.650 average)
+
+ ****** Running generation 17 ****** 
+
+Gen timestep at time: 2019-03-23 22:07:04.906351
+536 2165
+achieved fitness: 2165 at timestep 774828 time: 2019-03-23 22:07:06.464364
+Saving genome to file ./genomes/best_genome_run1_FlyingBatteryZone.Act2.state_gen17.pkl
+781 2165
+590 2165
+883 1365
+884 1826
+885 1365
+886 96
+887 1365
+888 589
+889 1365
+890 2165
+891 1365
+892 1653
+893 1365
+136 2165
+640 2165
+257 2165
+894 2165
+895 1365
+896 1365
+897 2165
+898 2165
+899 2165
+900 2165
+901 2165
+902 1365
+903 1365
+904 96
+905 2165
+906 1365
+907 1365
+908 1365
+909 1365
+910 1365
+911 96
+912 1265
+913 96
+268 2165
+768 2165
+769 2165
+914 96
+915 96
+916 1365
+917 177
+918 2165
+919 1260
+920 2165
+921 2165
+922 2165
+923 96
+924 1365
+925 2165
+926 1365
+927 2165
+928 1365
+929 2165
+930 104
+931 2165
+932 2165
+933 1269
+Total timesteps at end of gen: 819966
+Population's average fitness: 1517.33333 stdev: 712.38505
+Best fitness: 2165.00000 - size: (9, 10) - species 1 - id 536
+Average adjusted fitness: 0.690
+Mean genetic distance 2.137, standard deviation 0.624
+Population of 60 members in 3 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   17    16   2165.0    0.679    16
+     2   17    21   2165.0    0.749    17
+     3   17    23   2165.0    0.644    15
+Total extinctions: 0
+Generation time: 66.949 sec (72.937 average)
+
+ ****** Running generation 18 ****** 
+
+Gen timestep at time: 2019-03-23 22:08:11.855047
+536 2165
+achieved fitness: 2165 at timestep 821049 time: 2019-03-23 22:08:13.414422
+Saving genome to file ./genomes/best_genome_run1_FlyingBatteryZone.Act2.state_gen18.pkl
+781 2165
+590 2165
+934 1365
+935 2165
+936 1640
+937 96
+938 1269
+939 96
+940 96
+941 96
+942 96
+943 1365
+944 96
+945 96
+946 1365
+947 1365
+136 2165
+640 2165
+257 2165
+948 2165
+949 2165
+950 1260
+951 1260
+952 114
+953 2165
+954 2165
+955 2165
+956 2165
+957 1365
+958 1265
+959 96
+960 1365
+961 2165
+962 1259
+963 2165
+964 2165
+965 104
+966 1365
+268 2165
+768 2165
+918 2165
+967 2165
+968 2165
+969 1365
+970 2165
+971 2165
+972 2165
+973 2165
+974 2165
+975 96
+976 1365
+977 2165
+978 2165
+979 2165
+980 2165
+981 2165
+982 2165
+983 1365
+984 2165
+Total timesteps at end of gen: 868572
+Population's average fitness: 1568.83333 stdev: 778.92679
+Best fitness: 2165.00000 - size: (9, 10) - species 1 - id 536
+Average adjusted fitness: 0.694
+Mean genetic distance 2.080, standard deviation 0.642
+Population of 60 members in 3 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   18    14   2165.0    0.485    17
+     2   18    21   2165.0    0.897    18
+     3   18    25   2165.0    0.700    16
+Total extinctions: 0
+Generation time: 70.180 sec (72.590 average)
+Saving checkpoint to neat-checkpoint-18
+
+ ****** Running generation 19 ****** 
+
+Gen timestep at time: 2019-03-23 22:09:22.043294
+536 2165
+achieved fitness: 2165 at timestep 869655 time: 2019-03-23 22:09:23.603840
+Saving genome to file ./genomes/best_genome_run1_FlyingBatteryZone.Act2.state_gen19.pkl
+781 2165
+935 2165
+985 96
+986 1365
+987 96
+988 1365
+989 1365
+990 2165
+991 96
+992 1260
+993 96
+994 2165
+995 96
+996 411
+136 2165
+640 2165
+257 2165
+997 1365
+998 2165
+999 96
+1000 1260
+1001 2165
+1002 1365
+1003 96
+1004 1260
+1005 2165
+1006 1260
+1007 2165
+1008 96
+1009 1365
+1010 2165
+1011 2165
+1012 96
+1013 1260
+1014 2165
+1015 2165
+268 2165
+768 2165
+918 2165
+1016 96
+1017 1365
+1018 96
+1019 1365
+1020 2165
+1021 2165
+1022 2165
+1023 2165
+1024 177
+1025 1365
+1026 2165
+1027 2165
+1028 2165
+1029 1365
+1030 2165
+1031 2165
+1032 96
+1033 2165
+1034 2165
+1035 1365
+Total timesteps at end of gen: 913221
+Population's average fitness: 1466.75000 stdev: 819.34662
+Best fitness: 2165.00000 - size: (9, 10) - species 1 - id 536
+Average adjusted fitness: 0.648
+Mean genetic distance 2.060, standard deviation 0.648
+Population of 60 members in 3 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   19    14   2165.0    0.529    18
+     2   19    22   2165.0    0.767    19
+     3   19    24   2165.0    0.650    17
+Total extinctions: 0
+Generation time: 64.644 sec (72.628 average)
+
+ ****** Running generation 20 ****** 
+
+Gen timestep at time: 2019-03-23 22:10:26.687045
+536 2165
+achieved fitness: 2165 at timestep 914304 time: 2019-03-23 22:10:28.249313
+Saving genome to file ./genomes/best_genome_run1_FlyingBatteryZone.Act2.state_gen20.pkl
+781 2165
+935 2165
+1036 1365
+1037 96
+1038 96
+1039 163
+1040 1365
+1041 1911
+1042 96
+1043 2165
+1044 1365
+1045 1634
+1046 1365
+1047 1365
+136 2165
+640 2165
+257 2165
+1048 2165
+1049 2165
+1050 2165
+1051 2165
+1052 1365
+1053 1365
+1054 2165
+1055 2165
+1056 2165
+1057 1365
+1058 96
+1059 1365
+1060 96
+1061 2165
+1062 1365
+1063 2165
+1064 96
+1065 1365
+1066 1365
+1067 2165
+268 2165
+768 2165
+1026 2165
+1068 2165
+1069 1260
+1070 1365
+1071 1365
+1072 1365
+1073 2165
+1074 2165
+1075 2165
+1076 96
+1077 2165
+1078 2165
+1079 1365
+1080 2165
+1081 2165
+1082 1260
+1083 2165
+1084 1365
+1085 1260
+1086 1365
+Total timesteps at end of gen: 960009
+Population's average fitness: 1591.91667 stdev: 690.30685
+Best fitness: 2165.00000 - size: (9, 10) - species 1 - id 536
+Average adjusted fitness: 0.705
+Mean genetic distance 2.071, standard deviation 0.660
+Population of 61 members in 3 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   20    15   2165.0    0.579    19
+     2   20    21   2165.0    0.789    20
+     3   20    25   2165.0    0.746    18
+Total extinctions: 0
+Generation time: 67.574 sec (72.583 average)
+
+ ****** Running generation 21 ****** 
+
+Gen timestep at time: 2019-03-23 22:11:34.261435
+536 2165
+achieved fitness: 2165 at timestep 961092 time: 2019-03-23 22:11:35.819369
+Saving genome to file ./genomes/best_genome_run1_FlyingBatteryZone.Act2.state_gen21.pkl
+781 2165
+1043 2165
+1087 96
+1088 1653
+1089 96
+1090 96
+1091 96
+1092 96
+1093 96
+1094 176
+1095 1260
+1096 1299
+1097 1365
+1098 96
+136 2165
+640 2165
+257 2165
+1099 2165
+1100 96
+1101 1501
+1102 1365
+1103 96
+1104 1365
+1105 2165
+1106 1365
+1107 1260
+1108 96
+1109 2165
+1110 2165
+1111 2165
+1112 1365
+1113 1365
+1114 1365
+1115 1365
+1116 2165
+1117 2165
+1118 196
+Finished timestepMax at time: 2019-03-23 22:12:31.639801

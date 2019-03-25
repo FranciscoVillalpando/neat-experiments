@@ -1,0 +1,2806 @@
+Starting python script!
+Using env(SonicTheHedgehog-Genesis, SpringYardZone.Act1.state)
+Observation space shape:(224, 320, 3)
+Start: 2019-03-22 15:17:43.956269
+Using the following config file: config.txt
+[NEAT]
+fitness_criterion     = max
+fitness_threshold     = 9000
+pop_size              = 60
+reset_on_extinction   = False
+
+[DefaultGenome]
+# node activation options
+activation_default      = sigmoid
+activation_mutate_rate  = 0.00
+activation_options      = sigmoid 
+#abs clamped cube exp gauss hat identity inv log relu sigmoid sin softplus square tanh
+
+# node aggregation options
+aggregation_default     = sum
+aggregation_mutate_rate = 0.00
+aggregation_options     = sum product min max mean median maxabs
+
+# node bias options
+bias_init_mean          = 0.05
+bias_init_stdev         = 1.0
+bias_max_value          = 50.0
+bias_min_value          = -50.0
+bias_mutate_power       = 0.5
+bias_mutate_rate        = 0.7
+bias_replace_rate       = 0.1
+
+# genome compatibility options
+compatibility_disjoint_coefficient = 1.0
+compatibility_weight_coefficient   = 0.5
+
+# connection add/remove rates
+conn_add_prob           = 0.6
+conn_delete_prob        = 0.1
+
+# connection enable options
+enabled_default         = True
+enabled_mutate_rate     = 0.05
+
+feed_forward            = True
+initial_connection      = unconnected
+#initial_connection     = partial_nodirect 0.4
+
+# node add/remove rates
+node_add_prob           = 0.7
+node_delete_prob        = 0.1
+
+# network parameters
+num_hidden              = 0
+num_inputs              = 17920
+num_outputs             = 12
+
+# node response options
+response_init_mean      = 1.0
+response_init_stdev     = 0.05
+response_max_value      = 30.0
+response_min_value      = -30.0
+response_mutate_power   = 0.1
+response_mutate_rate    = 0.75
+response_replace_rate   = 0.1
+
+# connection weight options
+weight_init_mean        = 0.1
+weight_init_stdev       = 1.0
+weight_max_value        = 30
+weight_min_value        = -30
+weight_mutate_power     = 0.5
+weight_mutate_rate      = 0.8
+weight_replace_rate     = 0.1
+
+[DefaultSpeciesSet]
+compatibility_threshold = 2.8
+
+[DefaultStagnation]
+species_fitness_func = max
+max_stagnation       = 200
+species_elitism      = 0
+
+[DefaultReproduction]
+elitism            = 3
+survival_threshold = 0.3
+
+
+
+End of config file
+
+ ****** Running generation 0 ****** 
+
+Gen timestep at time: 2019-03-22 15:17:43.965644
+1 48
+achieved fitness: 48 at timestep 303 time: 2019-03-22 15:17:44.377554
+Saving genome to file ./genomes/best_genome_run2_SpringYardZone.Act1.state_gen0.pkl
+2 48
+3 48
+4 48
+5 48
+6 48
+7 48
+8 48
+9 48
+10 48
+11 48
+12 48
+13 48
+14 48
+15 48
+16 48
+17 48
+18 48
+19 48
+20 48
+21 48
+22 48
+23 48
+24 48
+25 48
+26 48
+27 48
+28 48
+29 48
+30 48
+31 48
+32 48
+33 48
+34 48
+35 48
+36 48
+37 48
+38 48
+39 48
+40 48
+41 48
+42 48
+43 48
+44 48
+45 48
+46 48
+47 48
+48 48
+49 48
+50 48
+51 48
+52 48
+53 48
+54 48
+55 48
+56 48
+57 48
+58 48
+59 48
+60 48
+Total timesteps at end of gen: 18180
+Population's average fitness: 48.00000 stdev: 0.00000
+Best fitness: 48.00000 - size: (12, 0) - species 1 - id 1
+Average adjusted fitness: 0.000
+Mean genetic distance 0.992, standard deviation 0.529
+Population of 60 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    0    60     48.0    0.000     0
+Total extinctions: 0
+Generation time: 24.639 sec (24.639 average)
+
+ ****** Running generation 1 ****** 
+
+Gen timestep at time: 2019-03-22 15:18:08.604435
+1 48
+achieved fitness: 48 at timestep 18483 time: 2019-03-22 15:18:09.015018
+Saving genome to file ./genomes/best_genome_run2_SpringYardZone.Act1.state_gen1.pkl
+2 48
+3 48
+61 48
+62 48
+63 48
+64 48
+65 48
+66 48
+67 48
+68 48
+69 48
+70 48
+71 48
+72 48
+73 48
+74 48
+75 48
+76 48
+77 48
+78 48
+79 48
+80 48
+81 48
+82 48
+83 48
+84 48
+85 48
+86 48
+87 48
+88 48
+89 48
+90 48
+91 48
+92 48
+93 48
+94 48
+95 48
+96 165
+achieved fitness: 165 at timestep 30084 time: 2019-03-22 15:18:24.746094
+Saving genome to file ./genomes/best_genome_run2_SpringYardZone.Act1.state_gen1.pkl
+97 48
+98 48
+99 48
+100 48
+101 48
+102 48
+103 48
+104 48
+105 48
+106 48
+107 48
+108 48
+109 48
+110 48
+111 48
+112 48
+113 48
+114 48
+115 48
+116 48
+117 48
+Total timesteps at end of gen: 36447
+Population's average fitness: 49.95000 stdev: 14.97823
+Best fitness: 165.00000 - size: (12, 1) - species 1 - id 96
+Average adjusted fitness: 0.017
+Mean genetic distance 1.387, standard deviation 0.491
+Population of 60 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    1    60    165.0    0.017     0
+Total extinctions: 0
+Generation time: 24.789 sec (24.714 average)
+
+ ****** Running generation 2 ****** 
+
+Gen timestep at time: 2019-03-22 15:18:33.393774
+96 165
+achieved fitness: 165 at timestep 36837 time: 2019-03-22 15:18:33.923678
+Saving genome to file ./genomes/best_genome_run2_SpringYardZone.Act1.state_gen2.pkl
+1 48
+2 48
+118 48
+119 48
+120 48
+121 48
+122 48
+123 48
+124 48
+125 48
+126 48
+127 48
+128 165
+129 48
+130 48
+131 48
+132 48
+133 48
+134 48
+135 48
+136 48
+137 48
+138 165
+139 48
+140 165
+141 48
+142 48
+143 48
+144 48
+145 48
+146 48
+147 48
+148 48
+149 48
+150 48
+151 48
+152 48
+153 48
+154 48
+155 48
+156 48
+157 48
+158 48
+159 48
+160 48
+161 48
+162 48
+163 48
+164 165
+165 48
+166 48
+167 48
+168 48
+169 48
+170 48
+171 48
+172 48
+173 48
+174 48
+Total timesteps at end of gen: 55062
+Population's average fitness: 57.75000 stdev: 32.33709
+Best fitness: 165.00000 - size: (12, 1) - species 1 - id 96
+Average adjusted fitness: 0.083
+Mean genetic distance 1.658, standard deviation 0.149
+Population of 60 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    2    60    165.0    0.083     1
+Total extinctions: 0
+Generation time: 25.292 sec (24.907 average)
+
+ ****** Running generation 3 ****** 
+
+Gen timestep at time: 2019-03-22 15:18:58.685763
+128 165
+achieved fitness: 165 at timestep 55452 time: 2019-03-22 15:18:59.215228
+Saving genome to file ./genomes/best_genome_run2_SpringYardZone.Act1.state_gen3.pkl
+138 165
+140 165
+175 48
+176 165
+177 48
+178 48
+179 48
+180 48
+181 48
+182 48
+183 48
+184 48
+185 48
+186 48
+187 165
+188 48
+189 48
+190 165
+191 48
+192 48
+193 165
+194 48
+195 165
+196 48
+197 48
+198 165
+199 48
+200 48
+201 165
+202 48
+203 165
+204 48
+205 165
+206 48
+207 165
+208 48
+209 165
+210 48
+211 48
+212 48
+213 165
+214 48
+215 48
+216 48
+217 48
+218 48
+219 48
+220 48
+221 48
+222 48
+223 48
+224 48
+225 48
+226 48
+227 48
+228 48
+229 48
+230 48
+231 48
+Total timesteps at end of gen: 74547
+Population's average fitness: 77.25000 stdev: 50.66249
+Best fitness: 165.00000 - size: (13, 3) - species 1 - id 128
+Average adjusted fitness: 0.250
+Mean genetic distance 1.775, standard deviation 0.191
+Population of 60 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    3    60    165.0    0.250     2
+Total extinctions: 0
+Generation time: 26.583 sec (25.326 average)
+
+ ****** Running generation 4 ****** 
+
+Gen timestep at time: 2019-03-22 15:19:25.269073
+128 165
+achieved fitness: 165 at timestep 74937 time: 2019-03-22 15:19:25.798586
+Saving genome to file ./genomes/best_genome_run2_SpringYardZone.Act1.state_gen4.pkl
+138 165
+140 165
+232 165
+233 165
+234 165
+235 165
+236 165
+237 165
+238 48
+239 165
+240 165
+241 165
+242 48
+243 48
+244 48
+245 48
+246 165
+247 165
+248 48
+249 165
+250 165
+251 165
+252 48
+253 48
+254 165
+255 48
+256 48
+257 165
+258 165
+259 48
+260 165
+261 165
+262 165
+263 165
+264 48
+265 48
+266 165
+267 165
+268 165
+269 48
+270 48
+271 48
+272 165
+273 48
+274 165
+275 48
+276 165
+277 165
+278 48
+279 48
+280 165
+281 165
+282 48
+283 48
+284 165
+285 165
+286 165
+287 165
+288 48
+Total timesteps at end of gen: 95946
+Population's average fitness: 120.15000 stdev: 56.88521
+Best fitness: 165.00000 - size: (13, 3) - species 1 - id 128
+Average adjusted fitness: 0.617
+Mean genetic distance 1.951, standard deviation 0.292
+Population of 60 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    4    60    165.0    0.617     3
+Total extinctions: 0
+Generation time: 29.162 sec (26.093 average)
+Saving checkpoint to neat-checkpoint-4
+
+ ****** Running generation 5 ****** 
+
+Gen timestep at time: 2019-03-22 15:19:54.438294
+128 165
+achieved fitness: 165 at timestep 96336 time: 2019-03-22 15:19:54.967363
+Saving genome to file ./genomes/best_genome_run2_SpringYardZone.Act1.state_gen5.pkl
+257 165
+258 165
+289 165
+290 48
+291 48
+292 165
+293 756
+achieved fitness: 756 at timestep 99276 time: 2019-03-22 15:19:58.965264
+Saving genome to file ./genomes/best_genome_run2_SpringYardZone.Act1.state_gen5.pkl
+294 165
+295 48
+296 165
+297 165
+298 48
+299 165
+300 48
+301 165
+302 48
+303 165
+304 48
+305 165
+306 48
+307 48
+308 165
+309 165
+310 165
+311 48
+312 48
+313 165
+314 165
+315 165
+316 48
+317 48
+318 165
+319 48
+320 48
+321 48
+322 165
+323 48
+324 48
+325 165
+326 165
+327 165
+328 165
+329 192
+330 165
+331 165
+332 165
+333 48
+334 165
+335 48
+336 48
+337 165
+338 48
+339 48
+340 165
+341 48
+342 48
+343 165
+344 48
+345 165
+Total timesteps at end of gen: 117738
+Population's average fitness: 124.60000 stdev: 100.66400
+Best fitness: 756.00000 - size: (13, 5) - species 1 - id 293
+Average adjusted fitness: 0.108
+Mean genetic distance 1.934, standard deviation 0.403
+Population of 60 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    5    60    756.0    0.108     0
+Total extinctions: 0
+Generation time: 29.823 sec (26.715 average)
+
+ ****** Running generation 6 ****** 
+
+Gen timestep at time: 2019-03-22 15:20:24.261207
+293 756
+achieved fitness: 756 at timestep 118512 time: 2019-03-22 15:20:25.308066
+Saving genome to file ./genomes/best_genome_run2_SpringYardZone.Act1.state_gen6.pkl
+329 192
+313 165
+346 48
+347 165
+348 165
+349 165
+350 165
+351 357
+352 165
+353 165
+354 165
+355 165
+356 165
+357 48
+358 48
+359 48
+360 48
+361 165
+362 82
+363 173
+364 165
+365 165
+366 165
+367 191
+368 455
+369 48
+370 165
+371 165
+372 48
+373 165
+374 165
+375 171
+376 165
+377 48
+378 48
+379 165
+380 165
+381 165
+382 165
+383 48
+384 48
+385 165
+386 165
+387 165
+388 165
+389 188
+390 165
+391 271
+392 165
+393 165
+394 165
+395 48
+396 165
+397 165
+398 165
+399 165
+400 48
+401 165
+402 165
+Total timesteps at end of gen: 142218
+Population's average fitness: 159.41667 stdev: 105.39533
+Best fitness: 756.00000 - size: (13, 5) - species 1 - id 293
+Average adjusted fitness: 0.157
+Mean genetic distance 2.205, standard deviation 0.287
+Population of 60 members in 2 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    6    26    756.0    0.157     1
+     2    0    34       --       --     0
+Total extinctions: 0
+Generation time: 33.469 sec (27.680 average)
+
+ ****** Running generation 7 ****** 
+
+Gen timestep at time: 2019-03-22 15:20:57.730606
+293 756
+achieved fitness: 756 at timestep 142992 time: 2019-03-22 15:20:58.779167
+Saving genome to file ./genomes/best_genome_run2_SpringYardZone.Act1.state_gen7.pkl
+368 455
+351 357
+403 363
+404 171
+405 192
+406 48
+407 756
+408 165
+409 165
+410 48
+411 165
+412 48
+413 165
+414 165
+415 357
+416 191
+417 165
+418 756
+419 48
+420 48
+421 165
+422 48
+423 271
+424 48
+425 165
+426 48
+427 48
+428 171
+429 192
+430 48
+431 245
+432 489
+433 756
+434 171
+435 348
+436 188
+437 48
+438 48
+439 48
+440 191
+441 348
+442 165
+443 165
+444 48
+445 192
+446 48
+447 363
+448 171
+449 348
+450 171
+451 165
+452 191
+453 192
+454 165
+455 48
+456 171
+457 165
+458 165
+459 165
+Total timesteps at end of gen: 169740
+Population's average fitness: 212.76667 stdev: 180.01170
+Best fitness: 756.00000 - size: (13, 5) - species 1 - id 293
+Average adjusted fitness: 0.229
+Mean genetic distance 2.161, standard deviation 0.458
+Population of 60 members in 2 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    7     7    756.0    0.203     2
+     2    1    53    756.0    0.255     0
+Total extinctions: 0
+Generation time: 37.675 sec (28.929 average)
+
+ ****** Running generation 8 ****** 
+
+Gen timestep at time: 2019-03-22 15:21:35.405807
+407 756
+achieved fitness: 756 at timestep 170277 time: 2019-03-22 15:21:36.140814
+Saving genome to file ./genomes/best_genome_run2_SpringYardZone.Act1.state_gen8.pkl
+293 756
+403 363
+460 271
+461 743
+462 165
+463 165
+464 165
+465 171
+466 165
+467 412
+468 165
+469 270
+470 236
+471 165
+472 48
+473 171
+474 165
+475 165
+476 165
+477 165
+478 271
+479 756
+480 165
+481 757
+achieved fitness: 757 at timestep 181353 time: 2019-03-22 15:21:51.283810
+Saving genome to file ./genomes/best_genome_run2_SpringYardZone.Act1.state_gen8.pkl
+482 348
+483 171
+418 756
+433 756
+432 489
+484 48
+485 171
+486 756
+487 173
+488 48
+489 165
+490 165
+491 270
+492 756
+493 165
+494 171
+495 177
+496 48
+497 165
+498 48
+499 48
+500 48
+501 756
+502 48
+503 227
+504 165
+505 357
+506 123
+507 270
+508 171
+509 269
+510 48
+511 48
+512 272
+513 176
+Total timesteps at end of gen: 198300
+Population's average fitness: 277.80000 stdev: 231.54566
+Best fitness: 757.00000 - size: (16, 7) - species 2 - id 481
+Average adjusted fitness: 0.399
+Mean genetic distance 2.035, standard deviation 0.549
+Population of 60 members in 2 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    8    27    756.0    0.496     3
+     2    2    33    757.0    0.301     0
+Total extinctions: 0
+Generation time: 39.049 sec (30.053 average)
+
+ ****** Running generation 9 ****** 
+
+Gen timestep at time: 2019-03-22 15:22:14.454781
+479 756
+achieved fitness: 756 at timestep 198891 time: 2019-03-22 15:22:15.259017
+Saving genome to file ./genomes/best_genome_run2_SpringYardZone.Act1.state_gen9.pkl
+293 756
+461 743
+514 165
+515 48
+516 48
+517 165
+518 48
+519 165
+520 165
+521 750
+522 165
+523 165
+524 48
+525 48
+526 48
+527 165
+528 48
+529 563
+530 48
+531 48
+532 165
+481 757
+achieved fitness: 757 at timestep 207654 time: 2019-03-22 15:22:27.241776
+Saving genome to file ./genomes/best_genome_run2_SpringYardZone.Act1.state_gen9.pkl
+418 756
+407 756
+533 165
+534 165
+535 757
+536 165
+537 757
+538 48
+539 756
+540 173
+541 757
+542 756
+543 165
+544 226
+545 48
+546 756
+547 757
+548 48
+549 48
+550 48
+551 226
+552 48
+553 756
+554 171
+555 270
+556 348
+557 321
+558 337
+559 48
+560 399
+561 757
+562 192
+563 165
+564 165
+565 253
+566 165
+567 165
+Total timesteps at end of gen: 224661
+Population's average fitness: 316.16667 stdev: 281.33291
+Best fitness: 757.00000 - size: (16, 7) - species 2 - id 481
+Average adjusted fitness: 0.372
+Mean genetic distance 2.011, standard deviation 0.464
+Population of 60 members in 2 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    9    24    756.0    0.309     4
+     2    3    36    757.0    0.435     1
+Total extinctions: 0
+Generation time: 36.132 sec (30.661 average)
+Saving checkpoint to neat-checkpoint-9
+
+ ****** Running generation 10 ****** 
+
+Gen timestep at time: 2019-03-22 15:22:50.596037
+479 756
+achieved fitness: 756 at timestep 225252 time: 2019-03-22 15:22:51.399781
+Saving genome to file ./genomes/best_genome_run2_SpringYardZone.Act1.state_gen10.pkl
+539 756
+293 756
+568 48
+569 165
+570 757
+achieved fitness: 757 at timestep 227805 time: 2019-03-22 15:22:54.884003
+Saving genome to file ./genomes/best_genome_run2_SpringYardZone.Act1.state_gen10.pkl
+571 165
+572 48
+573 48
+574 48
+575 757
+576 236
+577 742
+578 756
+579 165
+580 747
+581 165
+582 757
+583 755
+584 165
+585 48
+586 757
+587 357
+588 48
+589 165
+590 165
+535 757
+537 757
+541 757
+591 747
+592 757
+593 757
+594 165
+595 165
+596 236
+597 269
+598 257
+599 757
+600 165
+601 757
+602 48
+603 165
+604 757
+605 165
+606 165
+607 757
+608 756
+609 756
+610 48
+611 757
+612 747
+613 165
+614 757
+615 412
+616 363
+617 747
+618 757
+619 236
+620 48
+621 757
+Total timesteps at end of gen: 252252
+Population's average fitness: 449.96667 stdev: 303.09019
+Best fitness: 757.00000 - size: (17, 11) - species 1 - id 570
+Average adjusted fitness: 0.545
+Mean genetic distance 2.014, standard deviation 0.429
+Population of 60 members in 2 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   10    15    757.0    0.434     0
+     2    4    45    757.0    0.655     2
+Total extinctions: 0
+Generation time: 37.721 sec (31.970 average)
+
+ ****** Running generation 11 ****** 
+
+Gen timestep at time: 2019-03-22 15:23:28.316744
+570 757
+achieved fitness: 757 at timestep 252801 time: 2019-03-22 15:23:29.064628
+Saving genome to file ./genomes/best_genome_run2_SpringYardZone.Act1.state_gen11.pkl
+575 757
+586 757
+622 756
+623 757
+624 757
+625 48
+626 48
+627 165
+628 757
+629 757
+630 48
+631 165
+632 165
+633 756
+634 755
+635 48
+636 236
+637 757
+638 757
+639 165
+640 757
+641 48
+535 757
+537 757
+541 757
+642 757
+643 757
+644 412
+645 757
+646 48
+647 48
+648 757
+649 756
+650 757
+651 165
+652 272
+653 165
+654 390
+655 757
+656 757
+657 48
+658 757
+659 486
+660 757
+661 48
+662 412
+663 757
+664 757
+665 188
+666 757
+667 747
+668 165
+669 757
+670 270
+671 757
+672 757
+673 757
+674 757
+675 757
+Total timesteps at end of gen: 281100
+Population's average fitness: 524.83333 stdev: 296.00615
+Best fitness: 757.00000 - size: (17, 11) - species 2 - id 570
+Average adjusted fitness: 0.596
+Mean genetic distance 2.202, standard deviation 0.506
+Population of 60 members in 2 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   11    19    757.0    0.444     1
+     2    5    41    757.0    0.749     3
+Total extinctions: 0
+Generation time: 39.471 sec (33.438 average)
+
+ ****** Running generation 12 ****** 
+
+Gen timestep at time: 2019-03-22 15:24:07.787430
+575 757
+achieved fitness: 757 at timestep 281739 time: 2019-03-22 15:24:08.657166
+Saving genome to file ./genomes/best_genome_run2_SpringYardZone.Act1.state_gen12.pkl
+586 757
+628 757
+676 757
+677 752
+678 756
+679 756
+680 756
+681 48
+682 165
+683 165
+684 757
+685 757
+686 165
+687 48
+688 756
+689 48
+690 165
+691 165
+537 757
+640 757
+642 757
+692 757
+693 757
+694 165
+695 249
+696 165
+697 757
+698 757
+699 254
+700 74
+701 757
+702 756
+703 757
+704 748
+705 756
+706 757
+707 757
+708 757
+709 757
+710 756
+711 757
+712 165
+713 757
+714 757
+715 756
+716 757
+717 485
+718 757
+719 165
+720 757
+721 756
+722 757
+723 757
+724 165
+725 757
+726 757
+727 757
+728 165
+729 757
+Total timesteps at end of gen: 312957
+Population's average fitness: 579.86667 stdev: 274.84041
+Best fitness: 757.00000 - size: (14, 7) - species 1 - id 575
+Average adjusted fitness: 0.716
+Mean genetic distance 2.169, standard deviation 0.688
+Population of 60 members in 2 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   12    23    757.0    0.622     2
+     2    6    37    757.0    0.810     4
+Total extinctions: 0
+Generation time: 43.574 sec (35.266 average)
+
+ ****** Running generation 13 ****** 
+
+Gen timestep at time: 2019-03-22 15:24:51.361291
+685 757
+achieved fitness: 757 at timestep 313593 time: 2019-03-22 15:24:52.228193
+Saving genome to file ./genomes/best_genome_run2_SpringYardZone.Act1.state_gen13.pkl
+676 757
+684 757
+730 390
+731 757
+732 165
+733 757
+734 757
+735 757
+736 757
+737 757
+738 757
+739 48
+740 757
+741 757
+742 757
+743 48
+744 757
+745 165
+746 756
+747 756
+748 48
+749 757
+537 757
+640 757
+642 757
+750 165
+751 757
+752 757
+753 757
+754 756
+755 165
+756 757
+757 363
+758 171
+759 165
+760 757
+761 757
+762 193
+763 756
+764 271
+765 171
+766 270
+767 412
+768 232
+769 757
+770 757
+771 757
+772 757
+773 757
+774 165
+775 756
+776 757
+777 165
+778 757
+779 757
+780 757
+781 747
+782 757
+783 165
+Total timesteps at end of gen: 346734
+Population's average fitness: 570.03333 stdev: 270.10171
+Best fitness: 757.00000 - size: (15, 8) - species 1 - id 685
+Average adjusted fitness: 0.743
+Mean genetic distance 2.237, standard deviation 0.647
+Population of 60 members in 2 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   13    27    757.0    0.774     3
+     2    7    33    757.0    0.713     5
+Total extinctions: 0
+Generation time: 46.182 sec (37.226 average)
+
+ ****** Running generation 14 ****** 
+
+Gen timestep at time: 2019-03-22 15:25:37.543624
+685 757
+achieved fitness: 757 at timestep 347370 time: 2019-03-22 15:25:38.411069
+Saving genome to file ./genomes/best_genome_run2_SpringYardZone.Act1.state_gen14.pkl
+676 757
+684 757
+784 248
+785 165
+786 165
+787 165
+788 48
+789 757
+790 756
+791 757
+792 165
+793 756
+794 165
+795 48
+796 165
+797 165
+798 48
+799 756
+800 757
+801 757
+802 757
+803 165
+804 757
+805 485
+806 757
+807 165
+537 757
+640 757
+642 757
+808 756
+809 757
+810 257
+811 757
+812 165
+813 757
+814 757
+815 756
+816 757
+817 757
+818 757
+819 757
+820 757
+821 756
+822 757
+823 757
+824 757
+825 165
+826 165
+827 757
+828 757
+829 757
+830 238
+831 756
+832 390
+833 757
+834 165
+835 757
+836 757
+837 251
+Total timesteps at end of gen: 376680
+Population's average fitness: 548.61667 stdev: 279.93500
+Best fitness: 757.00000 - size: (15, 8) - species 1 - id 685
+Average adjusted fitness: 0.694
+Mean genetic distance 2.212, standard deviation 0.682
+Population of 60 members in 2 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   14    26    757.0    0.570     4
+     2    8    34    757.0    0.818     6
+Total extinctions: 0
+Generation time: 41.105 sec (38.420 average)
+Saving checkpoint to neat-checkpoint-14
+
+ ****** Running generation 15 ****** 
+
+Gen timestep at time: 2019-03-22 15:26:18.658790
+685 757
+achieved fitness: 757 at timestep 377316 time: 2019-03-22 15:26:19.527086
+Saving genome to file ./genomes/best_genome_run2_SpringYardZone.Act1.state_gen15.pkl
+789 757
+791 757
+838 165
+839 165
+840 165
+841 48
+842 165
+843 165
+844 165
+845 757
+846 757
+847 48
+848 165
+849 733
+850 165
+851 48
+852 757
+853 165
+854 165
+855 735
+856 165
+857 165
+858 165
+859 757
+860 756
+537 757
+640 757
+642 757
+861 757
+862 757
+863 412
+864 757
+865 165
+866 165
+867 756
+868 165
+869 747
+870 757
+871 322
+872 757
+873 757
+874 250
+875 255
+876 757
+877 165
+878 757
+879 757
+880 171
+881 757
+882 756
+883 412
+884 485
+885 165
+886 171
+887 757
+888 757
+889 757
+890 757
+891 757
+Total timesteps at end of gen: 406059
+Population's average fitness: 483.33333 stdev: 289.28231
+Best fitness: 757.00000 - size: (15, 8) - species 1 - id 685
+Average adjusted fitness: 0.596
+Mean genetic distance 2.186, standard deviation 0.691
+Population of 60 members in 2 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   15    25    757.0    0.465     5
+     2    9    35    757.0    0.728     7
+Total extinctions: 0
+Generation time: 40.351 sec (39.473 average)
+
+ ****** Running generation 16 ****** 
+
+Gen timestep at time: 2019-03-22 15:26:59.009998
+685 757
+achieved fitness: 757 at timestep 406695 time: 2019-03-22 15:26:59.877262
+Saving genome to file ./genomes/best_genome_run2_SpringYardZone.Act1.state_gen16.pkl
+789 757
+791 757
+892 165
+893 757
+894 757
+895 48
+896 756
+897 757
+898 756
+899 48
+900 756
+901 757
+902 165
+903 756
+904 757
+905 165
+906 165
+907 756
+908 165
+909 165
+910 756
+911 485
+912 757
+913 739
+537 757
+640 757
+642 757
+914 756
+915 757
+916 757
+917 757
+918 238
+919 757
+920 322
+921 165
+922 757
+923 165
+924 757
+925 757
+926 165
+927 757
+928 757
+929 757
+930 757
+931 757
+932 267
+933 757
+934 757
+935 757
+936 48
+937 757
+938 256
+939 757
+940 757
+941 757
+942 412
+943 757
+944 173
+945 48
+Total timesteps at end of gen: 438708
+Population's average fitness: 568.08333 stdev: 274.09282
+Best fitness: 757.00000 - size: (15, 8) - species 1 - id 685
+Average adjusted fitness: 0.729
+Mean genetic distance 2.213, standard deviation 0.609
+Population of 60 members in 2 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   16    27    757.0    0.703     6
+     2   10    33    757.0    0.755     8
+Total extinctions: 0
+Generation time: 44.785 sec (40.604 average)
+
+ ****** Running generation 17 ****** 
+
+Gen timestep at time: 2019-03-22 15:27:43.794657
+685 757
+achieved fitness: 757 at timestep 439344 time: 2019-03-22 15:27:44.663730
+Saving genome to file ./genomes/best_genome_run2_SpringYardZone.Act1.state_gen17.pkl
+897 757
+901 757
+946 48
+947 48
+948 757
+949 755
+950 757
+951 165
+952 48
+953 757
+954 249
+955 165
+956 48
+957 165
+958 165
+959 757
+960 733
+961 48
+962 757
+963 757
+964 48
+965 165
+966 165
+967 48
+968 756
+969 48
+537 757
+915 757
+916 757
+970 756
+971 757
+972 165
+973 757
+974 757
+975 757
+976 757
+977 165
+978 186
+979 165
+980 757
+981 757
+982 757
+983 757
+984 757
+985 757
+986 757
+987 757
+988 740
+989 757
+990 757
+991 757
+992 747
+993 267
+994 747
+995 165
+996 757
+997 757
+998 757
+999 757
+Total timesteps at end of gen: 470433
+Population's average fitness: 536.56667 stdev: 300.99592
+Best fitness: 757.00000 - size: (15, 8) - species 1 - id 685
+Average adjusted fitness: 0.671
+Mean genetic distance 2.195, standard deviation 0.654
+Population of 60 members in 2 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   17    24    757.0    0.490     7
+     2   11    36    757.0    0.852     9
+Total extinctions: 0
+Generation time: 43.582 sec (41.195 average)
+
+ ****** Running generation 18 ****** 
+
+Gen timestep at time: 2019-03-22 15:28:27.377010
+685 757
+achieved fitness: 757 at timestep 471069 time: 2019-03-22 15:28:28.244365
+Saving genome to file ./genomes/best_genome_run2_SpringYardZone.Act1.state_gen18.pkl
+897 757
+901 757
+1000 165
+1001 756
+1002 757
+1003 757
+1004 757
+1005 757
+1006 48
+1007 748
+1008 165
+1009 756
+1010 756
+1011 165
+1012 165
+1013 756
+1014 757
+1015 757
+1016 757
+1017 48
+1018 757
+1019 48
+1020 757
+537 757
+915 757
+916 757
+1021 270
+1022 757
+1023 752
+1024 267
+1025 757
+1026 757
+1027 757
+1028 757
+1029 757
+1030 757
+1031 757
+1032 165
+1033 165
+1034 165
+1035 757
+1036 165
+1037 756
+1038 757
+1039 757
+1040 756
+1041 757
+1042 757
+1043 757
+1044 757
+1045 757
+1046 412
+1047 757
+1048 412
+1049 412
+1050 48
+1051 165
+1052 757
+1053 485
+Total timesteps at end of gen: 502245
+Population's average fitness: 582.53333 stdev: 266.05209
+Best fitness: 757.00000 - size: (15, 8) - species 1 - id 685
+Average adjusted fitness: 0.751
+Mean genetic distance 2.236, standard deviation 0.597
+Population of 60 members in 2 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   18    27    757.0    0.735     8
+     2   12    33    757.0    0.766    10
+Total extinctions: 0
+Generation time: 43.708 sec (41.661 average)
+
+ ****** Running generation 19 ****** 
+
+Gen timestep at time: 2019-03-22 15:29:11.084875
+685 757
+achieved fitness: 757 at timestep 502881 time: 2019-03-22 15:29:11.950902
+Saving genome to file ./genomes/best_genome_run2_SpringYardZone.Act1.state_gen19.pkl
+897 757
+901 757
+1054 757
+1055 165
+1056 48
+1057 48
+1058 48
+1059 165
+1060 388
+1061 48
+1062 733
+1063 756
+1064 48
+1065 757
+1066 48
+1067 744
+1068 757
+1069 165
+1070 48
+1071 735
+1072 165
+1073 757
+1074 231
+1075 757
+1076 165
+1077 753
+537 757
+1025 757
+1026 757
+1078 757
+1079 165
+1080 757
+1081 757
+1082 757
+1083 236
+1084 747
+1085 757
+1086 757
+1087 757
+1088 757
+1089 756
+1090 757
+1091 165
+1092 267
+1093 757
+1094 257
+1095 757
+1096 160
+1097 322
+1098 756
+1099 757
+1100 757
+1101 165
+1102 757
+1103 757
+1104 48
+1105 412
+1106 757
+1107 757
+Total timesteps at end of gen: 536427
+Population's average fitness: 519.21667 stdev: 296.45377
+Best fitness: 757.00000 - size: (15, 8) - species 1 - id 685
+Average adjusted fitness: 0.653
+Mean genetic distance 2.225, standard deviation 0.606
+Population of 60 members in 2 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   19    26    757.0    0.536     9
+     2   13    34    757.0    0.770    11
+Total extinctions: 0
+Generation time: 46.905 sec (42.738 average)
+Saving checkpoint to neat-checkpoint-19
+
+ ****** Running generation 20 ****** 
+
+Gen timestep at time: 2019-03-22 15:29:58.000745
+685 757
+achieved fitness: 757 at timestep 537063 time: 2019-03-22 15:29:58.872235
+Saving genome to file ./genomes/best_genome_run2_SpringYardZone.Act1.state_gen20.pkl
+897 757
+901 757
+1108 165
+1109 48
+1110 733
+1111 757
+1112 755
+1113 48
+1114 165
+1115 48
+1116 165
+1117 48
+1118 48
+1119 165
+1120 757
+1121 165
+1122 756
+1123 48
+1124 756
+1125 510
+1126 757
+1127 165
+1128 48
+1129 165
+1130 48
+537 757
+1025 757
+1026 757
+1131 747
+1132 757
+1133 165
+1134 165
+1135 757
+1136 747
+1137 757
+1138 757
+1139 757
+1140 757
+1141 757
+1142 757
+1143 757
+1144 757
+1145 757
+1146 757
+1147 757
+1148 757
+1149 757
+1150 757
+1151 757
+1152 165
+1153 757
+1154 267
+1155 757
+1156 757
+1157 271
+1158 757
+1159 757
+1160 48
+1161 269
+Total timesteps at end of gen: 566106
+Population's average fitness: 522.66667 stdev: 303.04767
+Best fitness: 757.00000 - size: (15, 8) - species 1 - id 685
+Average adjusted fitness: 0.644
+Mean genetic distance 2.251, standard deviation 0.580
+Population of 60 members in 2 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   20    24    757.0    0.453    10
+     2   14    36    757.0    0.835    12
+Total extinctions: 0
+Generation time: 40.837 sec (43.050 average)
+
+ ****** Running generation 21 ****** 
+
+Gen timestep at time: 2019-03-22 15:30:38.837277
+685 757
+achieved fitness: 757 at timestep 566742 time: 2019-03-22 15:30:39.704031
+Saving genome to file ./genomes/best_genome_run2_SpringYardZone.Act1.state_gen21.pkl
+897 757
+901 757
+1162 756
+1163 165
+1164 733
+1165 757
+1166 757
+1167 165
+1168 48
+1169 757
+1170 757
+1171 390
+1172 757
+1173 757
+1174 165
+1175 756
+1176 740
+1177 756
+1178 486
+1179 757
+1180 757
+1181 165
+1182 165
+537 757
+1025 757
+1026 757
+1183 757
+1184 757
+1185 757
+1186 757
+1187 314
+1188 757
+1189 757
+1190 165
+1191 238
+1192 165
+1193 48
+1194 757
+1195 757
+1196 756
+1197 488
+1198 165
+1199 757
+1200 757
+1201 171
+1202 757
+1203 757
+1204 165
+1205 757
+1206 757
+1207 757
+1208 757
+1209 238
+1210 48
+1211 257
+1212 757
+1213 757
+1214 757
+1215 757
+Total timesteps at end of gen: 596583
+Population's average fitness: 574.10000 stdev: 266.60837
+Best fitness: 757.00000 - size: (15, 8) - species 1 - id 685
+Average adjusted fitness: 0.742
+Mean genetic distance 2.294, standard deviation 0.614
+Population of 60 members in 2 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   21    27    757.0    0.744    11
+     2   15    33    757.0    0.741    13
+Total extinctions: 0
+Generation time: 41.856 sec (43.288 average)
+
+ ****** Running generation 22 ****** 
+
+Gen timestep at time: 2019-03-22 15:31:20.692858
+685 757
+achieved fitness: 757 at timestep 597219 time: 2019-03-22 15:31:21.560557
+Saving genome to file ./genomes/best_genome_run2_SpringYardZone.Act1.state_gen22.pkl
+897 757
+901 757
+1216 756
+1217 757
+1218 757
+1219 756
+1220 165
+1221 165
+1222 757
+1223 756
+1224 48
+1225 755
+1226 756
+1227 756
+1228 744
+1229 756
+1230 48
+1231 757
+1232 757
+1233 165
+1234 756
+1235 757
+1236 756
+1237 757
+1238 165
+1239 48
+537 757
+1025 757
+1026 757
+1240 757
+1241 173
+1242 756
+1243 757
+1244 165
+1245 757
+1246 757
+1247 390
+1248 757
+1249 757
+1250 757
+1251 757
+1252 757
+1253 756
+1254 48
+1255 757
+1256 757
+1257 757
+1258 757
+1259 165
+1260 165
+1261 165
+1262 757
+1263 165
+1264 48
+1265 171
+1266 238
+1267 267
+1268 757
+1269 757
+Total timesteps at end of gen: 629166
+Population's average fitness: 566.26667 stdev: 283.24353
+Best fitness: 757.00000 - size: (15, 8) - species 1 - id 685
+Average adjusted fitness: 0.734
+Mean genetic distance 2.310, standard deviation 0.557
+Population of 60 members in 2 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   22    29    757.0    0.764    12
+     2   16    31    757.0    0.704    14
+Total extinctions: 0
+Generation time: 44.646 sec (43.396 average)
+
+ ****** Running generation 23 ****** 
+
+Gen timestep at time: 2019-03-22 15:32:05.338731
+685 757
+achieved fitness: 757 at timestep 629802 time: 2019-03-22 15:32:06.210284
+Saving genome to file ./genomes/best_genome_run2_SpringYardZone.Act1.state_gen23.pkl
+897 757
+901 757
+1270 165
+1271 48
+1272 165
+1273 165
+1274 165
+1275 48
+1276 742
+1277 165
+1278 165
+1279 756
+1280 733
+1281 757
+1282 757
+1283 165
+1284 165
+1285 757
+1286 755
+1287 756
+1288 757
+1289 165
+1290 756
+1291 165
+1292 740
+1293 48
+1294 756
+1295 48
+537 757
+1025 757
+1026 757
+1296 757
+1297 757
+1298 757
+1299 757
+1300 165
+1301 757
+1302 757
+1303 757
+1304 48
+1305 757
+1306 165
+1307 757
+1308 757
+1309 757
+1310 757
+1311 757
+1312 48
+1313 757
+1314 48
+1315 257
+1316 299
+1317 756
+1318 756
+1319 757
+1320 757
+1321 757
+1322 757
+1323 757
+Total timesteps at end of gen: 660192
+Population's average fitness: 538.85000 stdev: 298.04456
+Best fitness: 757.00000 - size: (15, 8) - species 1 - id 685
+Average adjusted fitness: 0.688
+Mean genetic distance 2.307, standard deviation 0.576
+Population of 60 members in 2 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   23    27    757.0    0.571    13
+     2   17    33    757.0    0.806    15
+Total extinctions: 0
+Generation time: 42.638 sec (43.041 average)
+
+ ****** Running generation 24 ****** 
+
+Gen timestep at time: 2019-03-22 15:32:47.976759
+685 757
+achieved fitness: 757 at timestep 660828 time: 2019-03-22 15:32:48.845850
+Saving genome to file ./genomes/best_genome_run2_SpringYardZone.Act1.state_gen24.pkl
+897 757
+1281 757
+1324 48
+1325 757
+1326 756
+1327 757
+1328 757
+1329 48
+1330 165
+1331 756
+1332 757
+1333 48
+1334 756
+1335 165
+1336 757
+1337 48
+1338 756
+1339 757
+1340 757
+1341 757
+1342 165
+1343 756
+1344 748
+1345 757
+1346 756
+1347 757
+537 757
+1296 757
+1297 757
+1348 757
+1349 757
+1350 48
+1351 165
+1352 757
+1353 165
+1354 757
+1355 48
+1356 165
+1357 165
+1358 757
+1359 757
+1360 757
+1361 757
+1362 757
+1363 270
+1364 757
+1365 757
+1366 757
+1367 412
+1368 757
+1369 757
+1370 756
+1371 756
+1372 757
+1373 165
+1374 757
+1375 171
+1376 757
+1377 757
+Total timesteps at end of gen: 694203
+Population's average fitness: 583.25000 stdev: 280.12299
+Best fitness: 757.00000 - size: (15, 8) - species 1 - id 685
+Average adjusted fitness: 0.755
+Mean genetic distance 2.265, standard deviation 0.611
+Population of 60 members in 2 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   24    29    757.0    0.758    14
+     2   18    31    757.0    0.752    16
+Total extinctions: 0
+Generation time: 46.597 sec (43.590 average)
+Saving checkpoint to neat-checkpoint-24
+
+ ****** Running generation 25 ****** 
+
+Gen timestep at time: 2019-03-22 15:33:34.585319
+685 757
+achieved fitness: 757 at timestep 694839 time: 2019-03-22 15:33:35.450167
+Saving genome to file ./genomes/best_genome_run2_SpringYardZone.Act1.state_gen25.pkl
+897 757
+1281 757
+1378 48
+1379 165
+1380 757
+1381 48
+1382 165
+1383 755
+1384 48
+1385 757
+1386 48
+1387 165
+1388 757
+1389 165
+1390 756
+1391 757
+1392 165
+1393 757
+1394 756
+1395 485
+1396 48
+1397 165
+1398 756
+1399 48
+1400 48
+1401 757
+1402 740
+1403 48
+537 757
+1296 757
+1297 757
+1404 757
+1405 757
+1406 48
+1407 757
+1408 48
+1409 165
+1410 363
+1411 757
+1412 267
+1413 165
+1414 757
+1415 390
+1416 757
+1417 757
+1418 757
+1419 757
+1420 757
+1421 757
+1422 165
+1423 168
+1424 165
+1425 757
+1426 452
+1427 165
+1428 757
+1429 757
+1430 757
+1431 757
+Total timesteps at end of gen: 725793
+Population's average fitness: 489.65000 stdev: 306.52905
+Best fitness: 757.00000 - size: (15, 8) - species 1 - id 685
+Average adjusted fitness: 0.620
+Mean genetic distance 2.225, standard deviation 0.622
+Population of 60 members in 2 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   25    27    757.0    0.537    15
+     2   19    33    757.0    0.703    17
+Total extinctions: 0
+Generation time: 43.189 sec (43.874 average)
+
+ ****** Running generation 26 ****** 
+
+Gen timestep at time: 2019-03-22 15:34:17.774365
+685 757
+achieved fitness: 757 at timestep 726429 time: 2019-03-22 15:34:18.640854
+Saving genome to file ./genomes/best_genome_run2_SpringYardZone.Act1.state_gen26.pkl
+897 757
+1281 757
+1432 756
+1433 757
+1434 165
+1435 48
+1436 48
+1437 756
+1438 165
+1439 48
+1440 165
+1441 48
+1442 757
+1443 165
+1444 757
+1445 165
+1446 733
+1447 48
+1448 757
+1449 757
+1450 757
+1451 48
+1452 757
+1453 757
+1454 757
+1455 48
+537 757
+1411 757
+1414 757
+1456 757
+1457 757
+1458 254
+1459 756
+1460 756
+1461 48
+1462 757
+1463 165
+1464 757
+1465 165
+1466 757
+1467 755
+1468 165
+1469 757
+1470 757
+1471 757
+1472 757
+1473 757
+1474 757
+1475 757
+1476 165
+1477 757
+1478 757
+1479 165
+1480 757
+1481 757
+1482 756
+1483 48
+1484 757
+1485 757
+Total timesteps at end of gen: 755628
+Population's average fitness: 543.08333 stdev: 303.77466
+Best fitness: 757.00000 - size: (15, 8) - species 1 - id 685
+Average adjusted fitness: 0.688
+Mean genetic distance 2.216, standard deviation 0.662
+Population of 60 members in 2 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   26    26    757.0    0.585    16
+     2   20    34    757.0    0.791    18
+Total extinctions: 0
+Generation time: 40.881 sec (43.484 average)
+
+ ****** Running generation 27 ****** 
+
+Gen timestep at time: 2019-03-22 15:34:58.655731
+685 757
+achieved fitness: 757 at timestep 756264 time: 2019-03-22 15:34:59.522055
+Saving genome to file ./genomes/best_genome_run2_SpringYardZone.Act1.state_gen27.pkl
+897 757
+1281 757
+1486 757
+1487 165
+1488 757
+1489 757
+1490 48
+1491 757
+1492 165
+1493 48
+1494 165
+1495 48
+1496 757
+1497 757
+1498 756
+1499 757
+1500 48
+1501 748
+1502 743
+1503 757
+1504 165
+1505 165
+1506 756
+1507 165
+1508 757
+537 757
+1411 757
+1414 757
+1509 48
+1510 757
+1511 757
+1512 757
+1513 757
+1514 165
+1515 267
+1516 757
+1517 165
+1518 757
+1519 271
+1520 757
+1521 757
+1522 757
+1523 757
+1524 48
+1525 165
+1526 757
+1527 757
+1528 757
+1529 757
+1530 757
+1531 270
+1532 755
+1533 757
+1534 757
+1535 757
+1536 270
+1537 757
+1538 757
+1539 757
+Total timesteps at end of gen: 786666
+Population's average fitness: 564.35000 stdev: 285.60864
+Best fitness: 757.00000 - size: (15, 8) - species 1 - id 685
+Average adjusted fitness: 0.719
+Mean genetic distance 2.194, standard deviation 0.688
+Population of 60 members in 2 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   27    27    757.0    0.652    17
+     2   21    33    757.0    0.787    19
+Total extinctions: 0
+Generation time: 42.544 sec (43.380 average)
+
+ ****** Running generation 28 ****** 
+
+Gen timestep at time: 2019-03-22 15:35:41.199352
+685 757
+achieved fitness: 757 at timestep 787302 time: 2019-03-22 15:35:42.067486
+Saving genome to file ./genomes/best_genome_run2_SpringYardZone.Act1.state_gen28.pkl
+897 757
+1281 757
+1540 48
+1541 757
+1542 757
+1543 48
+1544 48
+1545 165
+1546 165
+1547 756
+1548 48
+1549 757
+1550 48
+1551 165
+1552 751
+1553 756
+1554 165
+1555 757
+1556 165
+1557 757
+1558 757
+1559 757
+1560 48
+1561 757
+1562 48
+1563 757
+537 757
+1411 757
+1537 757
+1564 757
+1565 756
+1566 757
+1567 165
+1568 48
+1569 180
+1570 48
+1571 48
+1572 757
+1573 757
+1574 757
+1575 258
+1576 757
+1577 165
+1578 757
+1579 48
+1580 757
+1581 165
+1582 257
+1583 271
+1584 757
+1585 757
+1586 757
+1587 757
+1588 757
+1589 48
+1590 48
+1591 757
+1592 757
+1593 753
+Total timesteps at end of gen: 816207
+Population's average fitness: 489.86667 stdev: 319.50829
+Best fitness: 757.00000 - size: (15, 8) - species 1 - id 685
+Average adjusted fitness: 0.620
+Mean genetic distance 2.176, standard deviation 0.661
+Population of 60 members in 2 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   28    28    757.0    0.586    18
+     2   22    32    757.0    0.654    20
+Total extinctions: 0
+Generation time: 40.555 sec (43.065 average)
+
+ ****** Running generation 29 ****** 
+
+Gen timestep at time: 2019-03-22 15:36:21.754738
+685 757
+achieved fitness: 757 at timestep 816843 time: 2019-03-22 15:36:22.619268
+Saving genome to file ./genomes/best_genome_run2_SpringYardZone.Act1.state_gen29.pkl
+897 757
+1281 757
+1594 165
+1595 757
+1596 48
+1597 757
+1598 757
+1599 165
+1600 165
+1601 165
+1602 165
+1603 756
+1604 165
+1605 757
+1606 165
+1607 165
+1608 165
+1609 756
+1610 165
+1611 165
+1612 165
+1613 756
+1614 48
+1615 757
+1616 165
+1617 165
+1618 757
+537 757
+1411 757
+1564 757
+1619 757
+1620 238
+1621 757
+1622 165
+1623 757
+1624 257
+1625 757
+1626 756
+1627 757
+1628 165
+1629 757
+1630 757
+1631 757
+1632 740
+1633 756
+1634 757
+1635 757
+1636 165
+1637 757
+1638 756
+1639 322
+1640 757
+1641 390
+1642 757
+1643 757
+1644 48
+1645 165
+1646 757
+1647 757
+Total timesteps at end of gen: 846567
+Population's average fitness: 513.21667 stdev: 291.38023
+Best fitness: 757.00000 - size: (15, 8) - species 1 - id 685
+Average adjusted fitness: 0.647
+Mean genetic distance 2.217, standard deviation 0.626
+Population of 60 members in 2 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   29    26    757.0    0.511    19
+     2   23    34    757.0    0.783    21
+Total extinctions: 0
+Generation time: 41.617 sec (42.536 average)
+Saving checkpoint to neat-checkpoint-29
+
+ ****** Running generation 30 ****** 
+
+Gen timestep at time: 2019-03-22 15:37:03.384402
+685 757
+achieved fitness: 757 at timestep 847203 time: 2019-03-22 15:37:04.249542
+Saving genome to file ./genomes/best_genome_run2_SpringYardZone.Act1.state_gen30.pkl
+897 757
+1281 757
+1648 757
+1649 48
+1650 757
+1651 757
+1652 757
+1653 165
+1654 165
+1655 165
+1656 165
+1657 165
+1658 487
+1659 48
+1660 757
+1661 165
+1662 165
+1663 165
+1664 165
+1665 165
+1666 757
+1667 165
+1668 742
+1669 735
+1670 165
+537 757
+1411 757
+1564 757
+1671 165
+1672 757
+1673 165
+1674 485
+1675 757
+1676 757
+1677 270
+1678 757
+1679 757
+1680 189
+1681 272
+1682 165
+1683 757
+1684 757
+1685 165
+1686 236
+1687 485
+1688 757
+1689 757
+1690 757
+1691 165
+1692 756
+1693 757
+1694 757
+1695 757
+1696 757
+1697 427
+1698 757
+1699 744
+1700 757
+1701 757
+Total timesteps at end of gen: 877260
+Population's average fitness: 511.36667 stdev: 281.07567
+Best fitness: 757.00000 - size: (15, 8) - species 1 - id 685
+Average adjusted fitness: 0.638
+Mean genetic distance 2.223, standard deviation 0.636
+Population of 60 members in 2 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   30    25    757.0    0.521    20
+     2   24    35    757.0    0.755    22
+Total extinctions: 0
+Generation time: 42.203 sec (42.673 average)
+
+ ****** Running generation 31 ****** 
+
+Gen timestep at time: 2019-03-22 15:37:45.586973
+685 757
+achieved fitness: 757 at timestep 877896 time: 2019-03-22 15:37:46.457420
+Saving genome to file ./genomes/best_genome_run2_SpringYardZone.Act1.state_gen31.pkl
+897 757
+1281 757
+1702 48
+1703 756
+1704 165
+1705 165
+1706 165
+1707 756
+1708 757
+1709 165
+1710 734
+1711 757
+1712 165
+1713 165
+1714 48
+1715 757
+1716 165
+1717 48
+1718 165
+1719 165
+1720 48
+1721 165
+1722 165
+1723 48
+537 757
+1411 757
+1672 757
+1724 757
+1725 757
+1726 48
+1727 165
+1728 757
+1729 756
+1730 757
+1731 757
+1732 757
+1733 757
+1734 166
+1735 744
+1736 757
+1737 757
+1738 757
+1739 744
+1740 757
+1741 756
+1742 757
+1743 757
+1744 757
+1745 757
+1746 757
+1747 756
+1748 757
+1749 757
+1750 48
+1751 757
+1752 757
+1753 486
+1754 757
+1755 757
+Total timesteps at end of gen: 908562
+Population's average fitness: 540.61667 stdev: 298.29024
+Best fitness: 757.00000 - size: (15, 8) - species 1 - id 685
+Average adjusted fitness: 0.657
+Mean genetic distance 2.219, standard deviation 0.580
+Population of 60 members in 2 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   31    22    757.0    0.431    21
+     2   25    38    757.0    0.883    23
+Total extinctions: 0
+Generation time: 42.933 sec (42.780 average)
+
+ ****** Running generation 32 ****** 
+
+Gen timestep at time: 2019-03-22 15:38:28.520372
+685 757
+achieved fitness: 757 at timestep 909198 time: 2019-03-22 15:38:29.387703
+Saving genome to file ./genomes/best_genome_run2_SpringYardZone.Act1.state_gen32.pkl
+897 757
+1281 757
+1756 757
+1757 48
+1758 757
+1759 165
+1760 756
+1761 48
+1762 744
+1763 757
+1764 757
+1765 1973
+achieved fitness: 1973 at timestep 917346 time: 2019-03-22 15:38:40.563673
+Saving genome to file ./genomes/best_genome_run2_SpringYardZone.Act1.state_gen32.pkl
+1766 165
+1767 165
+1768 486
+1769 756
+1770 165
+1771 748
+1772 165
+1773 165
+1774 165
+537 757
+1411 757
+1672 757
+1775 189
+1776 757
+1777 165
+1778 757
+1779 270
+1780 757
+1781 757
+1782 757
+1783 757
+1784 270
+1785 238
+1786 757
+1787 757
+1788 757
+1789 756
+1790 754
+1791 756
+1792 165
+1793 757
+1794 254
+1795 396
+1796 756
+1797 165
+1798 757
+1799 757
+1800 757
+1801 757
+1802 757
+1803 757
+1804 165
+1805 485
+1806 744
+1807 757
+1808 257
+1809 757
+Total timesteps at end of gen: 940536
+Population's average fitness: 578.25000 stdev: 323.25272
+Best fitness: 1973.00000 - size: (16, 9) - species 1 - id 1765
+Average adjusted fitness: 0.272
+Mean genetic distance 2.222, standard deviation 0.651
+Population of 60 members in 2 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   32    25   1973.0    0.259     0
+     2   26    35    757.0    0.285    24
+Total extinctions: 0
+Generation time: 43.896 sec (42.705 average)
+
+ ****** Running generation 33 ****** 
+
+Gen timestep at time: 2019-03-22 15:39:12.416075
+537 757
+achieved fitness: 757 at timestep 941085 time: 2019-03-22 15:39:13.160901
+Saving genome to file ./genomes/best_genome_run2_SpringYardZone.Act1.state_gen33.pkl
+1411 757
+1793 757
+1810 757
+1811 165
+1812 757
+1813 757
+1814 757
+1815 756
+1816 757
+1817 756
+1818 757
+1819 757
+1820 757
+1821 757
+1822 165
+1823 165
+1824 756
+1825 757
+1826 757
+1827 757
+1828 757
+1829 757
+1830 48
+1831 757
+1832 165
+1833 757
+1834 757
+1835 177
+1836 741
+1837 757
+1838 48
+1839 165
+1840 757
+1841 757
+1765 1973
+achieved fitness: 1973 at timestep 963054 time: 2019-03-22 15:39:43.137184
+Saving genome to file ./genomes/best_genome_run2_SpringYardZone.Act1.state_gen33.pkl
+685 757
+897 757
+1842 757
+1843 165
+1844 757
+1845 756
+1846 757
+1847 48
+1848 165
+1849 756
+1850 48
+1851 165
+1852 757
+1853 757
+1854 757
+1855 756
+1856 165
+1857 756
+1858 756
+1859 48
+1860 165
+1861 755
+1862 165
+1863 165
+Total timesteps at end of gen: 976305
+Population's average fitness: 589.68333 stdev: 337.99914
+Best fitness: 1973.00000 - size: (16, 9) - species 1 - id 1765
+Average adjusted fitness: 0.279
+Mean genetic distance 2.196, standard deviation 0.672
+Population of 60 members in 2 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   33    27   1973.0    0.263     1
+     2   27    33    757.0    0.294    25
+Total extinctions: 0
+Generation time: 48.902 sec (43.332 average)
+
+ ****** Running generation 34 ****** 
+
+Gen timestep at time: 2019-03-22 15:40:01.317800
+537 757
+achieved fitness: 757 at timestep 976854 time: 2019-03-22 15:40:02.067673
+Saving genome to file ./genomes/best_genome_run2_SpringYardZone.Act1.state_gen34.pkl
+1793 757
+1411 757
+1864 757
+1865 412
+1866 165
+1867 756
+1868 48
+1869 757
+1870 48
+1871 165
+1872 756
+1873 757
+1874 757
+1875 757
+1876 757
+1877 756
+1878 165
+1879 757
+1880 757
+1881 236
+1882 757
+1883 757
+1884 757
+1885 757
+1886 757
+1887 165
+1888 757
+1889 176
+1890 757
+1891 757
+1892 165
+1893 757
+1765 1973
+achieved fitness: 1973 at timestep 995094 time: 2019-03-22 15:40:27.003552
+Saving genome to file ./genomes/best_genome_run2_SpringYardZone.Act1.state_gen34.pkl
+685 757
+897 757
+1894 757
+1895 733
+1896 165
+1897 757
+1898 755
+Finished timestepMax at time: 2019-03-22 15:40:33.705687
