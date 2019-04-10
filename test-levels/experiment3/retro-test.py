@@ -9,8 +9,6 @@ import os
 from sonic_util import SonicDiscretizer
 
 file_prefix = ""
-#env = retro.make('SonicTheHedgehog-Genesis', 'GreenHillZone.Act1.state')
-#env = make_env(stack=False, scale_rew=False)
 env = None
 inx = 0
 iny = 0
