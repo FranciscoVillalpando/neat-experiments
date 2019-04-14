@@ -1,0 +1,154 @@
+Starting python script!
+Using env(SonicTheHedgehog-Genesis, ScrapBrainZone.Act1.state)
+Observation space shape:(224, 320, 3)
+Start: 2019-04-11 18:41:33.526881
+Using the following config file: config.txt
+[NEAT]
+fitness_criterion     = max
+fitness_threshold     = 9000
+pop_size              = 60
+reset_on_extinction   = False
+
+[DefaultGenome]
+# node activation options
+activation_default      = sigmoid
+activation_mutate_rate  = 0.00
+activation_options      = sigmoid 
+#abs clamped cube exp gauss hat identity inv log relu sigmoid sin softplus square tanh
+
+# node aggregation options
+aggregation_default     = sum
+aggregation_mutate_rate = 0.00
+aggregation_options     = sum product min max mean median maxabs
+
+# node bias options
+bias_init_mean          = 0.05
+bias_init_stdev         = 1.0
+bias_max_value          = 50.0
+bias_min_value          = -50.0
+bias_mutate_power       = 0.5
+bias_mutate_rate        = 0.7
+bias_replace_rate       = 0.1
+
+# genome compatibility options
+compatibility_disjoint_coefficient = 1.0
+compatibility_weight_coefficient   = 0.5
+
+# connection add/remove rates
+conn_add_prob           = 0.6
+conn_delete_prob        = 0.1
+
+# connection enable options
+enabled_default         = True
+enabled_mutate_rate     = 0.05
+
+feed_forward            = False
+initial_connection      = fs_neat_nohidden
+#initial_connection      = unconnected
+#initial_connection     = partial_nodirect 0.4
+
+# node add/remove rates
+node_add_prob           = 0.7
+node_delete_prob        = 0.1
+
+# network parameters
+num_hidden              = 0
+num_inputs              = 17920
+num_outputs             = 7
+
+# node response options
+response_init_mean      = 1.0
+response_init_stdev     = 0.05
+response_max_value      = 30.0
+response_min_value      = -30.0
+response_mutate_power   = 0.1
+response_mutate_rate    = 0.75
+response_replace_rate   = 0.1
+
+# connection weight options
+weight_init_mean        = 0.1
+weight_init_stdev       = 1.0
+weight_max_value        = 30
+weight_min_value        = -30
+weight_mutate_power     = 0.5
+weight_mutate_rate      = 0.8
+weight_replace_rate     = 0.1
+
+[DefaultSpeciesSet]
+compatibility_threshold = 10
+
+[DefaultStagnation]
+species_fitness_func = max
+max_stagnation       = 200
+species_elitism      = 0
+
+[DefaultReproduction]
+elitism            = 3
+survival_threshold = 0.3
+
+
+
+End of config file
+
+ ****** Running generation 0 ****** 
+
+Gen timestep at time: 2019-04-11 18:41:33.536123
+1 0.0
+2 92.55027461051941
+achieved fitness: 92.55027461051941 at timestep 72270 time: 2019-04-11 18:43:10.807210
+Saving genome to file ./genomes/best_genome_run4_ScrapBrainZone.Act1.state_gen0.pkl
+3 350.66270554065704
+achieved fitness: 350.66270554065704 at timestep 108405 time: 2019-04-11 18:43:59.875999
+Saving genome to file ./genomes/best_genome_run4_ScrapBrainZone.Act1.state_gen0.pkl
+4 0.0
+5 68.89853811264038
+6 0.0
+7 0.0
+8 613.916811466217
+achieved fitness: 613.916811466217 at timestep 253248 time: 2019-04-11 18:47:14.839116
+Saving genome to file ./genomes/best_genome_run4_ScrapBrainZone.Act1.state_gen0.pkl
+9 0.0
+10 0.0
+11 0.0
+12 0.0
+13 613.916811466217
+14 609.8034658432007
+15 0.0
+16 611.8601492643356
+17 609.8034658432007
+18 612.888475060463
+19 860.7175589799881
+achieved fitness: 860.7175589799881 at timestep 436140 time: 2019-04-11 18:51:20.982274
+Saving genome to file ./genomes/best_genome_run4_ScrapBrainZone.Act1.state_gen0.pkl
+20 0.0
+21 867.9158976078033
+achieved fitness: 867.9158976078033 at timestep 472647 time: 2019-04-11 18:52:10.055387
+Saving genome to file ./genomes/best_genome_run4_ScrapBrainZone.Act1.state_gen0.pkl
+22 611.8601386547089
+23 613.916811466217
+24 608.7751294374466
+25 0.0
+26 0.0
+27 589.2367377281189
+28 436.0146236419678
+29 597.4634289741516
+30 350.66270554065704
+31 602.6051110029221
+32 608.7751277685165
+33 0.0
+34 233.43235540390015
+35 0.0
+36 233.43235862255096
+37 613.916811466217
+38 609.8034658432007
+39 0.0
+40 475.09145867824554
+41 613.916811466217
+42 0.0
+43 0.0
+44 31.87842857837677
+45 0.0
+46 613.916811466217
+47 613.916811466217
+48 607.7467949390411
+Finished timestepMax at time: 2019-04-11 19:04:00.637440

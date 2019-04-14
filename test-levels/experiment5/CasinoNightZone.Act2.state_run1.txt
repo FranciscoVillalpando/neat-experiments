@@ -1,0 +1,129 @@
+Starting python script!
+Using env(SonicTheHedgehog2-Genesis, CasinoNightZone.Act2.state)
+Observation space shape:(224, 320, 3)
+Start: 2019-04-11 23:13:12.065212
+Using the following config file: config.txt
+[NEAT]
+fitness_criterion     = max
+fitness_threshold     = 9000
+pop_size              = 60
+reset_on_extinction   = False
+
+[DefaultGenome]
+# node activation options
+activation_default      = sigmoid
+activation_mutate_rate  = 0.00
+activation_options      = sigmoid 
+#abs clamped cube exp gauss hat identity inv log relu sigmoid sin softplus square tanh
+
+# node aggregation options
+aggregation_default     = sum
+aggregation_mutate_rate = 0.00
+aggregation_options     = sum product min max mean median maxabs
+
+# node bias options
+bias_init_mean          = 0.05
+bias_init_stdev         = 1.0
+bias_max_value          = 50.0
+bias_min_value          = -50.0
+bias_mutate_power       = 0.5
+bias_mutate_rate        = 0.7
+bias_replace_rate       = 0.1
+
+# genome compatibility options
+compatibility_disjoint_coefficient = 1.0
+compatibility_weight_coefficient   = 0.5
+
+# connection add/remove rates
+conn_add_prob           = 0.6
+conn_delete_prob        = 0.1
+
+# connection enable options
+enabled_default         = True
+enabled_mutate_rate     = 0.05
+
+feed_forward            = False
+initial_connection      = fs_neat_nohidden
+#initial_connection      = unconnected
+#initial_connection     = partial_nodirect 0.4
+
+# node add/remove rates
+node_add_prob           = 0.7
+node_delete_prob        = 0.1
+
+# network parameters
+num_hidden              = 0
+num_inputs              = 17920
+num_outputs             = 7
+
+# node response options
+response_init_mean      = 1.0
+response_init_stdev     = 0.05
+response_max_value      = 30.0
+response_min_value      = -30.0
+response_mutate_power   = 0.1
+response_mutate_rate    = 0.75
+response_replace_rate   = 0.1
+
+# connection weight options
+weight_init_mean        = 0.1
+weight_init_stdev       = 1.0
+weight_max_value        = 30
+weight_min_value        = -30
+weight_mutate_power     = 0.5
+weight_mutate_rate      = 0.8
+weight_replace_rate     = 0.1
+
+[DefaultSpeciesSet]
+compatibility_threshold = 10
+
+[DefaultStagnation]
+species_fitness_func = max
+max_stagnation       = 200
+species_elitism      = 0
+
+[DefaultReproduction]
+elitism            = 3
+survival_threshold = 0.3
+
+
+
+End of config file
+
+ ****** Running generation 0 ****** 
+
+Gen timestep at time: 2019-04-11 23:13:12.074511
+1 398.8149507045746
+achieved fitness: 398.8149507045746 at timestep 36099 time: 2019-04-11 23:14:02.151739
+Saving genome to file ./genomes/best_genome_run1_CasinoNightZone.Act2.state_gen0.pkl
+2 381.63183546066284
+3 0.0
+4 935.0889810323715
+achieved fitness: 935.0889810323715 at timestep 144399 time: 2019-04-11 23:16:31.431368
+Saving genome to file ./genomes/best_genome_run1_CasinoNightZone.Act2.state_gen0.pkl
+5 605.9083677530289
+6 0.0
+7 0.0
+8 506.4308809041977
+9 889.8714302778244
+10 1034.5663690567017
+achieved fitness: 1034.5663690567017 at timestep 360999 time: 2019-04-11 23:21:31.054124
+Saving genome to file ./genomes/best_genome_run1_CasinoNightZone.Act2.state_gen0.pkl
+11 0.0
+12 0.0
+13 0.0
+14 0.0
+15 466.6398718357086
+16 0.0
+17 0.0
+18 888.062748670578
+19 565.2131336927414
+20 0.0
+21 0.0
+22 501.9092787504196
+23 889.8713862895966
+24 0.0
+25 0.0
+26 0.0
+27 0.0
+Finished timestepMax at time: 2019-04-11 23:36:14.189908

@@ -1,0 +1,129 @@
+Starting python script!
+Using env(SonicAndKnuckles3-Genesis, FlyingBatteryZone.Act2.state)
+Observation space shape:(224, 320, 3)
+Start: 2019-04-12 03:09:10.977564
+Using the following config file: config.txt
+[NEAT]
+fitness_criterion     = max
+fitness_threshold     = 9000
+pop_size              = 60
+reset_on_extinction   = False
+
+[DefaultGenome]
+# node activation options
+activation_default      = sigmoid
+activation_mutate_rate  = 0.00
+activation_options      = sigmoid 
+#abs clamped cube exp gauss hat identity inv log relu sigmoid sin softplus square tanh
+
+# node aggregation options
+aggregation_default     = sum
+aggregation_mutate_rate = 0.00
+aggregation_options     = sum product min max mean median maxabs
+
+# node bias options
+bias_init_mean          = 0.05
+bias_init_stdev         = 1.0
+bias_max_value          = 50.0
+bias_min_value          = -50.0
+bias_mutate_power       = 0.5
+bias_mutate_rate        = 0.7
+bias_replace_rate       = 0.1
+
+# genome compatibility options
+compatibility_disjoint_coefficient = 1.0
+compatibility_weight_coefficient   = 0.5
+
+# connection add/remove rates
+conn_add_prob           = 0.6
+conn_delete_prob        = 0.1
+
+# connection enable options
+enabled_default         = True
+enabled_mutate_rate     = 0.05
+
+feed_forward            = False
+initial_connection      = fs_neat_nohidden
+#initial_connection      = unconnected
+#initial_connection     = partial_nodirect 0.4
+
+# node add/remove rates
+node_add_prob           = 0.7
+node_delete_prob        = 0.1
+
+# network parameters
+num_hidden              = 0
+num_inputs              = 17920
+num_outputs             = 7
+
+# node response options
+response_init_mean      = 1.0
+response_init_stdev     = 0.05
+response_max_value      = 30.0
+response_min_value      = -30.0
+response_mutate_power   = 0.1
+response_mutate_rate    = 0.75
+response_replace_rate   = 0.1
+
+# connection weight options
+weight_init_mean        = 0.1
+weight_init_stdev       = 1.0
+weight_max_value        = 30
+weight_min_value        = -30
+weight_mutate_power     = 0.5
+weight_mutate_rate      = 0.8
+weight_replace_rate     = 0.1
+
+[DefaultSpeciesSet]
+compatibility_threshold = 10
+
+[DefaultStagnation]
+species_fitness_func = max
+max_stagnation       = 200
+species_elitism      = 0
+
+[DefaultReproduction]
+elitism            = 3
+survival_threshold = 0.3
+
+
+
+End of config file
+
+ ****** Running generation 0 ****** 
+
+Gen timestep at time: 2019-04-12 03:09:10.986751
+1 52.082541823387146
+achieved fitness: 52.082541823387146 at timestep 36093 time: 2019-04-12 03:10:05.828178
+Saving genome to file ./genomes/best_genome_run1_FlyingBatteryZone.Act2.state_gen0.pkl
+2 869.6413829922676
+achieved fitness: 869.6413829922676 at timestep 72186 time: 2019-04-12 03:11:00.724101
+Saving genome to file ./genomes/best_genome_run1_FlyingBatteryZone.Act2.state_gen0.pkl
+3 32.8942369222641
+4 79.49440598487854
+5 869.6413865089417
+achieved fitness: 869.6413865089417 at timestep 180465 time: 2019-04-12 03:13:44.235762
+Saving genome to file ./genomes/best_genome_run1_FlyingBatteryZone.Act2.state_gen0.pkl
+6 0.0
+7 111.01804918050766
+8 869.6413829922676
+9 869.6413804292679
+10 0.0
+11 0.0
+12 0.0
+13 0.0
+14 0.0
+15 869.6413839459419
+16 0.0
+17 0.0
+18 779.1822828054428
+19 45.22957545518875
+20 0.0
+21 0.0
+22 869.6413829922676
+23 0.0
+24 869.6413829922676
+25 717.5055420994759
+26 0.0
+27 0.0
+Finished timestepMax at time: 2019-04-12 03:34:24.696243
