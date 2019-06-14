@@ -51,7 +51,7 @@ do
 
 		echo "Writing output to run$c.txt"
 		
-		python3 retro-test.py run$c ${GAME} ${LEVEL} >> ${LEVEL}_run${c}.txt
+		python3 retro-test.py run$c ${GAME} ${LEVEL} >> ${LEVEL}_test_run${c}.txt
 	done
 
 done

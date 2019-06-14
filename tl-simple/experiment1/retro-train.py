@@ -73,6 +73,7 @@ def eval_genomes(genomes, config):
     global timestepCount
     global last_gen_genomes 
     best_fitness = 0
+    max_generations = 2
 
     print("Gen timestep at time: " + str(datetime.datetime.now()))
 
@@ -99,7 +100,6 @@ def eval_genomes(genomes, config):
     print("Total timesteps at end of gen: " + str(timestepCount))
 
 def save_genome(filename, genome):
-
     # Create folder structure if it does not exist
     os.makedirs(os.path.dirname(filename), exist_ok=True)
 
@@ -107,28 +107,14 @@ def save_genome(filename, genome):
     with open(filename, 'wb') as output:
         pickle.dump(genome, output, 1)
                 
-if __name__ == "__main__":
-    configfile = 'config.txt'
-    max_generations = 250
+def run_game(run_name, configfile, game_name, state_name):
+    global env
+    global inx,iny
+    global last_gen_genomes
+    global file_prefix
+    max_generations = 2
 
     print("Starting python script!")
-
-    # If we have a file name argument use it as the file prefix
-    game_name = ""
-    state_name= ""
-    run_name = ""
-    if len(sys.argv) > 3:
-        run_name = sys.argv[1]
-        game_name = sys.argv[2]
-        state_name = sys.argv[3]
-    elif len(sys.argv) > 1:
-        run_name = sys.argv[1]
-        game_name = 'SonicTheHedgehog-Genesis'
-        state_name =  'GreenHillZone.Act1.state'
-    else:
-        run_name = 'runX'
-        game_name = 'SonicTheHedgehog-Genesis'
-        state_name =  'GreenHillZone.Act1.state'
 
     file_prefix = state_name + "_" + run_name
 
@@ -180,3 +166,68 @@ if __name__ == "__main__":
 
     with open('winner_'+file_prefix+'.pkl', 'wb') as output:
         pickle.dump(winner, output, 1)
+
+if __name__ == "__main__":
+
+    configfile = 'config.txt'
+
+    run_number = 1
+    if len(sys.argv) > 1:
+        run_number = int(sys.argv[1])
+
+    game_state_list = [
+        ("SonicAndKnuckles3-Genesis", "AngelIslandZone.Act1.state"),
+        ("SonicTheHedgehog2-Genesis", "AquaticRuinZone.Act1.state"),
+        ("SonicTheHedgehog2-Genesis", "AquaticRuinZone.Act2.state"),
+        ("SonicAndKnuckles3-Genesis", "CarnivalNightZone.Act1.state"),
+        ("SonicAndKnuckles3-Genesis", "CarnivalNightZone.Act2.state"),
+        ("SonicTheHedgehog2-Genesis", "CasinoNightZone.Act1.state"),
+        ("SonicTheHedgehog2-Genesis", "ChemicalPlantZone.Act1.state"),
+        ("SonicTheHedgehog2-Genesis", "ChemicalPlantZone.Act2.state"),
+        ("SonicTheHedgehog2-Genesis", "DeathEggZone.Act1.state"),
+        ("SonicTheHedgehog2-Genesis", "DeathEggZone.Act2.state"),
+        ("SonicTheHedgehog2-Genesis", "EmeraldHillZone.Act1.state"),
+        ("SonicTheHedgehog2-Genesis", "EmeraldHillZone.Act2.state"),
+        ("SonicAndKnuckles3-Genesis", "FlyingBatteryZone.Act1.state"),
+        ("SonicTheHedgehog-Genesis", "GreenHillZone.Act1.state"),
+        ("SonicTheHedgehog-Genesis", "GreenHillZone.Act3.state"),
+        ("SonicTheHedgehog2-Genesis", "HiddenPalaceZone.state"),
+        ("SonicTheHedgehog2-Genesis", "HillTopZone.Act1.state"),
+        ("SonicAndKnuckles3-Genesis", "HydrocityZone.Act2.state"),
+        ("SonicAndKnuckles3-Genesis", "IcecapZone.Act1.state"),
+        ("SonicAndKnuckles3-Genesis", "IcecapZone.Act2.state"),
+        ("SonicTheHedgehog-Genesis", "LabyrinthZone.Act1.state"),
+        ("SonicTheHedgehog-Genesis", "LabyrinthZone.Act2.state"),
+        ("SonicTheHedgehog-Genesis", "LabyrinthZone.Act3.state"),
+        ("SonicAndKnuckles3-Genesis", "LaunchBaseZone.Act1.state"),
+        ("SonicAndKnuckles3-Genesis", "LaunchBaseZone.Act2.state"),
+        ("SonicAndKnuckles3-Genesis", "LavaReefZone.Act2.state"),
+        ("SonicAndKnuckles3-Genesis", "MarbleGardenZone.Act1.state"),
+        ("SonicAndKnuckles3-Genesis", "MarbleGardenZone.Act2.state"),
+        ("SonicTheHedgehog-Genesis", "MarbleZone.Act1.state"),
+        ("SonicTheHedgehog-Genesis", "MarbleZone.Act2.state"),
+        ("SonicTheHedgehog-Genesis", "MarbleZone.Act3.state"),
+        ("SonicTheHedgehog2-Genesis", "MetropolisZone.Act1.state"),
+        ("SonicTheHedgehog2-Genesis", "MetropolisZone.Act2.state"),
+        ("SonicAndKnuckles3-Genesis", "MushroomHillZone.Act1.state"),
+        ("SonicAndKnuckles3-Genesis", "MushroomHillZone.Act2.state"),
+        ("SonicTheHedgehog2-Genesis", "MysticCaveZone.Act1.state"),
+        ("SonicTheHedgehog2-Genesis", "MysticCaveZone.Act2.state"),
+        ("SonicTheHedgehog2-Genesis", "OilOceanZone.Act1.state"),
+        ("SonicTheHedgehog2-Genesis", "OilOceanZone.Act2.state"),
+        ("SonicAndKnuckles3-Genesis", "SandopolisZone.Act1.state"),
+        ("SonicAndKnuckles3-Genesis", "SandopolisZone.Act2.state"),
+        ("SonicTheHedgehog-Genesis", "ScrapBrainZone.Act2.state"),
+        ("SonicTheHedgehog-Genesis", "SpringYardZone.Act2.state"),
+        ("SonicTheHedgehog-Genesis", "SpringYardZone.Act3.state"),
+        ("SonicTheHedgehog-Genesis", "StarLightZone.Act1.state"),
+        ("SonicTheHedgehog-Genesis", "StarLightZone.Act2.state"),
+        ("SonicTheHedgehog2-Genesis", "WingFortressZone.state")
+    ]
+    
+    for run in range(run_number):
+
+        for game_state in game_state_list:
+            game = game_state[0]
+            state = game_state[1]
+            run_game('run'+ str(run), configfile, game, state)
