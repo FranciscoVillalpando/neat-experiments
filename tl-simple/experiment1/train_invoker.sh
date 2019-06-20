@@ -124,7 +124,7 @@ do
 
 		echo "Writing output to ${LEVEL}_train_${timestamp}.txt"
 		
-		python3 retro-test.py $c ${GAME} ${LEVEL} >> ${LEVEL}_train_${c}.txt &
+		python3 retro-test.py $timestamp ${GAME} ${LEVEL} >> ${LEVEL}_train_${timestamp}.txt &
 		echo "===================================="
 
 		# Split processing in batches of 3 background processes
