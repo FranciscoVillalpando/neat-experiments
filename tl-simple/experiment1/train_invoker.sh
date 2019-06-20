@@ -112,7 +112,8 @@ COUNT=${#GAME_ARRAY[@]}
 for (( c=1; c<=$1; c++ ))
 do 
 
-	echo "Starting run $c "
+	timestamp=$(date +%s)
+	echo "Starting run $c with ID: ${timestamp} "
 
 	for ((i=0; i<$COUNT; i++))
 	do
@@ -121,14 +122,21 @@ do
 		echo "NAME ${GAME}"
 		echo "LEVEL ${LEVEL}"
 
- 
-
-		echo "Writing output to ${LEVEL}_train_run${c}.txt"
+		echo "Writing output to ${LEVEL}_train_${timestamp}.txt"
 		
-		python3 retro-test.py run$c ${GAME} ${LEVEL} >> ${LEVEL}_train_run${c}.txt
+		python3 retro-test.py $c ${GAME} ${LEVEL} >> ${LEVEL}_train_${c}.txt &
 		echo "===================================="
 
+		# Split processing in batches of 3 background processes
+		if (( ($i+1)%3 == 0 )); then
+			echo "Waiting for processes to finish"
+			wait
+		fi
+
 	done
+
+	echo "Waiting for processes to finish"
+	wait
 
 done
 

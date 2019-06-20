@@ -60,7 +60,7 @@ def eval_genome(genome, config):
         else:
             counter += 1
             
-        if done or counter == 150:
+        if done or counter == 110:
             done = True
             
     print(genome.key, fitness_current)     
@@ -109,7 +109,7 @@ def save_genome(filename, genome):
                 
 if __name__ == "__main__":
     configfile = 'config.txt'
-    max_generations = 250
+    max_generations = 200
 
     print("Starting python script!")
 
