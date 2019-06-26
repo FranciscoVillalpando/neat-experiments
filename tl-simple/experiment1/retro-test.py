@@ -187,12 +187,11 @@ if __name__ == "__main__":
 
     # setting initial state != None allows us to skip population generation
     p = neat.Population(config)
-    print(p.population)
 
     #Override population with pretrained population
     genome_files = get_top_genomes_file_names(config.pop_size, run_name)
+    print("Using files : " + str(genome_files))
     p.population = get_genomes_from_files(genome_files)
-    print(p.population)
 
     # Reporters and loggers
     p.add_reporter(neat.StdOutReporter(True))
