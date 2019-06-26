@@ -6,13 +6,13 @@ import pickle
 import datetime
 import sys
 import os
+import glob
 from sonic_util import SonicDiscretizer
 
 file_prefix = ""
 env = None
 inx = 0
 iny = 0
-last_gen_genomes = []
 
 current_gen = 1
 timestepCount = 0
@@ -51,16 +51,17 @@ def eval_genome(genome, config):
         fitness_current += rew 
 
         timestepCount += 3
-        #if timestepCount >= timestepMax :
-        #    print("Finished timestepMax at time: " + str(datetime.datetime.now()))
-        #    exit(0)
+        if timestepCount >= timestepMax :
+            print("Finished timestepMax at time: " + str(datetime.datetime.now()))
+            exit(0)
         if fitness_current > current_max_fitness:
             current_max_fitness = fitness_current
             counter = 0
         else:
             counter += 1
             
-        if done or counter == 110:
+        # Timeout in case of genome stalling
+        if done or counter == 500:
             done = True
             
     print(genome.key, fitness_current)     
@@ -71,17 +72,11 @@ def eval_genomes(genomes, config):
     global current_gen
     global file_prefix
     global timestepCount
-    global last_gen_genomes 
     best_fitness = 0
 
     print("Gen timestep at time: " + str(datetime.datetime.now()))
 
-    # last gen genomes
-    last_gen_genomes.clear()
-
     for genome_id, genome in genomes:
-
-        last_gen_genomes.append(genome)
 
         eval_genome(genome, config)
 
@@ -106,9 +101,46 @@ def save_genome(filename, genome):
     print("Saving genome to file " + str(filename))
     with open(filename, 'wb') as output:
         pickle.dump(genome, output, 1)
-                
+
+# Get the file names of the top genomes for each state
+# tries to get a uniform distribution accross states,
+# the remaining requested files are taken at random.
+def get_top_genomes_file_names(pop_size, id):
+    import random
+
+    # There are 47 train levels, prioritize variety
+    train_level_n = 47 
+    top_to_get = int (pop_size / train_level_n)
+    remaining_genomes = pop_size % train_level_n
+
+    path = "./last_gen_genomes/"+ str(id) + "/*" 
+    
+    # Get the topk genomes for every state
+    file_name_list = []
+    for i in range(1, top_to_get+1):
+        idx_list = glob.glob(path + "_"+str(i)+ ".pkl")
+        file_name_list.extend(idx_list)
+
+    # Get remaining genomes from random states
+    idx_list = glob.glob(path + "_"+str(top_to_get+1)+ ".pkl")
+    idx_list = random.sample(idx_list, remaining_genomes)
+    file_name_list.extend(idx_list)
+
+    return file_name_list
+
+# Gets a map of genomes from a list of files
+def get_genomes_from_files(file_list):
+
+    genome_map = {}
+    for idx, file_name in enumerate(file_list):
+        with open(file_name, 'rb') as genomefile:
+            genome = pickle.load(genomefile)
+            genome_map[idx+1] = genome
+
+    return genome_map
+
 if __name__ == "__main__":
-    configfile = 'config.txt'
+    configfile = 'config_test.txt'
     max_generations = 200
 
     print("Starting python script!")
@@ -126,9 +158,8 @@ if __name__ == "__main__":
         game_name = 'SonicTheHedgehog-Genesis'
         state_name =  'GreenHillZone.Act1.state'
     else:
-        run_name = 'runX'
-        game_name = 'SonicTheHedgehog-Genesis'
-        state_name =  'GreenHillZone.Act1.state'
+        print("Need run ID")
+        exit(1)
 
     file_prefix = state_name + "_" + run_name
 
@@ -154,7 +185,14 @@ if __name__ == "__main__":
                      neat.DefaultSpeciesSet, neat.DefaultStagnation,
                      configfile)
 
+    # setting initial state != None allows us to skip population generation
     p = neat.Population(config)
+    print(p.population)
+
+    #Override population with pretrained population
+    genome_files = get_top_genomes_file_names(config.pop_size, run_name)
+    p.population = get_genomes_from_files(genome_files)
+    print(p.population)
 
     # Reporters and loggers
     p.add_reporter(neat.StdOutReporter(True))
@@ -168,15 +206,6 @@ if __name__ == "__main__":
 
     print("Saving stats...")
     stats.save()
-
-    print("Storing last generation genomes")
-    i = 1
-    last_gen_genomes.sort(key=lambda x: x.fitness, reverse=True)
-    for genome in last_gen_genomes:
-        print(str(i) + ' ' +str(genome.fitness))
-        genome_name = './last_gen_genomes/'+run_name+'/'+state_name+'_'+str(i)+'.pkl'
-        save_genome(genome_name,genome)
-        i += 1
 
     with open('winner_'+file_prefix+'.pkl', 'wb') as output:
         pickle.dump(winner, output, 1)
