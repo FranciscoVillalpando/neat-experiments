@@ -108,7 +108,7 @@ def collapseByRun(fileNameList):
     for run in statsDict[statList[0]]:
         runList.append(run)
 
-    print(statList, runList)
+    #print(statList, runList)
 
     #collapsedStats[stat] = statsDict[stat]
 
@@ -122,7 +122,7 @@ def generateXLS(filename,fileNameList):
 
     for run in statsDict:
         # Create worksheet for each run
-        ws = wb.add_sheet(run)
+        ws = wb.add_sheet(run[0:31])
         ws.write(0, 0, "Generation")
 
         for columnIndex, statName in enumerate(statsDict[run]):
@@ -149,8 +149,8 @@ fileNameList = []
 if len(sys.argv) > 1:
     fileNameList = sys.argv[1:]
 else:
-    fileNameList = glob.glob("run*.txt")
+    fileNameList = glob.glob("*state_train_1560993029.txt")
 
 print(fileNameList)
 
-generateXLS("test.xls", fileNameList)
+generateXLS("summary_1560993029.xls", fileNameList)
