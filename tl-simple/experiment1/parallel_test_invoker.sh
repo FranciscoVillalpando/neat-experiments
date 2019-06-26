@@ -49,6 +49,6 @@ do
 
 done
 
-    parallel --jobs 4 < jobs 
+parallel --jobs 4 < jobs 
 
 echo "Finishing invoker script..."
