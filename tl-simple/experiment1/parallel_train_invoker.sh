@@ -1,12 +1,5 @@
 #!/bin/bash
 
-if [ "$1" == "" ]; then
-	echo "Need No. runs..."
-	exit 1
-fi
-
-echo "Starting invoker script..."
-echo "Running $1 cycles for each test game"
 
 # Ordered by table in paper
 GAME_0=("SonicAndKnuckles3-Genesis" "AngelIslandZone.Act1.state")
@@ -58,18 +51,18 @@ GAME_45=("SonicTheHedgehog-Genesis" "StarLightZone.Act2.state")
 GAME_46=("SonicTheHedgehog2-Genesis" "WingFortressZone.state")
 
 GAME_ARRAY=(
-#	GAME_0[@]
-#	GAME_1[@]
-#	GAME_2[@]
-#	GAME_3[@]
-#	GAME_4[@]
-#	GAME_5[@]
-#	GAME_6[@]
-#	GAME_7[@]
-#	GAME_8[@]
-#	GAME_9[@]
-#	GAME_10[@]
-#	GAME_11[@]
+	GAME_0[@]
+	GAME_1[@]
+	GAME_2[@]
+	GAME_3[@]
+	GAME_4[@]
+	GAME_5[@]
+	GAME_6[@]
+	GAME_7[@]
+	GAME_8[@]
+	GAME_9[@]
+	GAME_10[@]
+	GAME_11[@]
 	GAME_12[@]
 	GAME_13[@]
 	GAME_14[@]
@@ -109,21 +102,20 @@ GAME_ARRAY=(
 
 COUNT=${#GAME_ARRAY[@]}
 
-for (( c=1; c<=$1; c++ ))
-do 
-	
-	timestamp="1560993029" #$(date +%s)
-	echo "Starting run $c with ID: ${timestamp} "
-	echo "echo 'starting parallel jobs!'" > jobs
-	for ((i=0; i<$COUNT; i++))
-	do
-		GAME=${!GAME_ARRAY[i]:0:1}
-		LEVEL=${!GAME_ARRAY[i]:1:1}
-        echo "python3 retro-test.py $timestamp ${GAME} ${LEVEL} >> ${LEVEL}_train_${timestamp}.txt" >> jobs
+timestamp= $(date +%s)
 
-	done
+echo "Starting invoker script..."
+echo "Starting run with ID: ${timestamp} "
+echo "echo 'starting parallel jobs!'" > jobs
+mkdir -p ./run_logs/train/$timestamp
+for ((i=0; i<$COUNT; i++))
+do
+	GAME=${!GAME_ARRAY[i]:0:1}
+	LEVEL=${!GAME_ARRAY[i]:1:1}
+	echo "python3 retro-test.py $timestamp ${GAME} ${LEVEL} >> ./run_logs/train/$timestamp/${LEVEL}_train_${timestamp}.txt" >> jobs
 
-    parallel --jobs 4 < jobs 
 done
+
+parallel --jobs 4 < jobs 
 
 echo "Finishing invoker script..."

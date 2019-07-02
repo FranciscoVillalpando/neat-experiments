@@ -41,11 +41,12 @@ COUNT=${#GAME_ARRAY[@]}
 
 echo "Starting run with ID: $1 "
 echo "echo 'starting parallel jobs!'" > jobs
+mkdir -p ./run_logs/test/$1
 for ((i=0; i<$COUNT; i++))
 do
 	GAME=${!GAME_ARRAY[i]:0:1}
 	LEVEL=${!GAME_ARRAY[i]:1:1}
-	echo "python3 retro-test.py $1 ${GAME} ${LEVEL} >> ${LEVEL}_test_$1.txt" >> jobs
+	echo "python3 retro-test.py $1 ${GAME} ${LEVEL} &>> ./run_logs/test/$1/${LEVEL}_test_$1.txt" >> jobs
 
 done
 
