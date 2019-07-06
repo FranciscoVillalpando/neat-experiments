@@ -1,0 +1,475 @@
+Starting python script!
+Using env(SonicTheHedgehog2-Genesis, EmeraldHillZone.Act2.state)
+Observation space shape:(224, 320, 3)
+Start: 2019-06-20 16:31:04.103404
+Using the following config file: config.txt
+[NEAT]
+fitness_criterion     = max
+fitness_threshold     = 9000
+pop_size              = 60
+reset_on_extinction   = False
+
+[DefaultGenome]
+# node activation options
+activation_default      = sigmoid
+activation_mutate_rate  = 0.00
+activation_options      = sigmoid 
+#abs clamped cube exp gauss hat identity inv log relu sigmoid sin softplus square tanh
+
+# node aggregation options
+aggregation_default     = sum
+aggregation_mutate_rate = 0.00
+aggregation_options     = sum product min max mean median maxabs
+
+# node bias options
+bias_init_mean          = 0.05
+bias_init_stdev         = 1.0
+bias_max_value          = 50.0
+bias_min_value          = -50.0
+bias_mutate_power       = 0.5
+bias_mutate_rate        = 0.7
+bias_replace_rate       = 0.1
+
+# genome compatibility options
+compatibility_disjoint_coefficient = 1.0
+compatibility_weight_coefficient   = 0.5
+
+# connection add/remove rates
+conn_add_prob           = 0.6
+conn_delete_prob        = 0.1
+
+# connection enable options
+enabled_default         = True
+enabled_mutate_rate     = 0.05
+
+feed_forward            = False
+initial_connection      = fs_neat_nohidden
+#initial_connection      = unconnected
+#initial_connection     = partial_nodirect 0.4
+
+# node add/remove rates
+node_add_prob           = 0.6
+node_delete_prob        = 0.05
+
+# network parameters
+num_hidden              = 0
+num_inputs              = 17920
+num_outputs             = 7
+
+# node response options
+response_init_mean      = 1.0
+response_init_stdev     = 0.05
+response_max_value      = 30.0
+response_min_value      = -30.0
+response_mutate_power   = 0.1
+response_mutate_rate    = 0.75
+response_replace_rate   = 0.1
+
+# connection weight options
+weight_init_mean        = 0.1
+weight_init_stdev       = 1.0
+weight_max_value        = 30
+weight_min_value        = -30
+weight_mutate_power     = 0.5
+weight_mutate_rate      = 0.8
+weight_replace_rate     = 0.1
+
+[DefaultSpeciesSet]
+compatibility_threshold = 10
+
+[DefaultStagnation]
+species_fitness_func = max
+max_stagnation       = 200
+species_elitism      = 0
+
+[DefaultReproduction]
+elitism            = 3
+survival_threshold = 0.3
+
+
+
+End of config file
+
+ ****** Running generation 0 ****** 
+
+Gen timestep at time: 2019-06-20 16:31:04.113403
+1 0.0
+2 874.339129447937
+achieved fitness: 874.339129447937 at timestep 1014 time: 2019-06-20 16:31:05.767468
+Saving genome to file ./best_genomes/EmeraldHillZone.Act2.state_1561003155_gen1.pkl
+3 874.339129447937
+4 874.339129447937
+5 874.339129447937
+6 0.0
+7 874.339129447937
+8 0.0
+9 96.86555981636047
+10 874.339129447937
+11 88.36858075857162
+12 874.339129447937
+13 874.339129447937
+14 874.3391325473785
+achieved fitness: 874.3391325473785 at timestep 8130 time: 2019-06-20 16:31:17.469883
+Saving genome to file ./best_genomes/EmeraldHillZone.Act2.state_1561003155_gen1.pkl
+15 0.0
+16 0.0
+17 0.0
+18 874.339129447937
+19 0.0
+20 125.75528770685196
+21 874.3391354084015
+achieved fitness: 874.3391354084015 at timestep 11184 time: 2019-06-20 16:31:22.418735
+Saving genome to file ./best_genomes/EmeraldHillZone.Act2.state_1561003155_gen1.pkl
+22 874.3391355276108
+achieved fitness: 874.3391355276108 at timestep 11766 time: 2019-06-20 16:31:23.369694
+Saving genome to file ./best_genomes/EmeraldHillZone.Act2.state_1561003155_gen1.pkl
+23 874.339129447937
+24 874.339129447937
+25 874.339129447937
+26 0.0
+27 874.339129447937
+28 874.339129447937
+29 0.0
+30 874.339129626751
+31 0.0
+32 1418.9954824447632
+achieved fitness: 1418.9954824447632 at timestep 17334 time: 2019-06-20 16:31:32.554286
+Saving genome to file ./best_genomes/EmeraldHillZone.Act2.state_1561003155_gen1.pkl
+33 874.339129447937
+34 874.339129447937
+35 874.339129447937
+36 874.3391352891922
+37 0.0
+38 0.0
+39 874.339129447937
+40 0.0
+41 874.339129447937
+42 0.0
+43 874.339129447937
+44 874.339129447937
+45 0.0
+46 0.0
+47 0.0
+48 874.3391292095184
+49 874.3391355872154
+50 0.0
+51 0.0
+52 0.0
+53 874.3391307592392
+54 0.0
+55 874.339129447937
+56 0.0
+57 0.0
+58 0.0
+59 0.0
+60 874.339129447937
+Total timesteps at end of gen: 30927
+Population's average fitness: 480.57497 stdev: 445.12083
+Best fitness: 1418.99548 - size: (7, 7) - species 1 - id 32
+Average adjusted fitness: 0.339
+Mean genetic distance 2.567, standard deviation 0.270
+Population of 60 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    0    60   1419.0    0.339     0
+Total extinctions: 0
+Generation time: 50.724 sec (50.724 average)
+
+ ****** Running generation 1 ****** 
+
+Gen timestep at time: 2019-06-20 16:31:54.837414
+32 1418.9954824447632
+achieved fitness: 1418.9954824447632 at timestep 31512 time: 2019-06-20 16:31:55.788096
+Saving genome to file ./best_genomes/EmeraldHillZone.Act2.state_1561003155_gen2.pkl
+49 874.3391355872154
+22 874.3391355276108
+61 0.0
+62 2777.662426829338
+achieved fitness: 2777.662426829338 at timestep 34314 time: 2019-06-20 16:32:00.371489
+Saving genome to file ./best_genomes/EmeraldHillZone.Act2.state_1561003155_gen2.pkl
+63 0.0
+64 874.339129447937
+65 874.339129447937
+66 0.0
+67 874.339129447937
+68 659.3655651211739
+69 874.339129447937
+70 874.3391317129135
+71 874.339129447937
+72 0.0
+73 874.339129447937
+74 238.76510727405548
+75 1419.8451805114746
+76 874.339129447937
+77 2777.6624306440353
+achieved fitness: 2777.6624306440353 at timestep 43380 time: 2019-06-20 16:32:15.295485
+Saving genome to file ./best_genomes/EmeraldHillZone.Act2.state_1561003155_gen2.pkl
+78 874.3391325473785
+79 874.339129447937
+80 874.3391347527504
+81 874.3391325473785
+82 467.3338426351547
+83 874.339129447937
+84 874.339129447937
+85 1418.9954824447632
+86 874.339129447937
+87 1832.7983559966087
+88 0.0
+89 874.339129447937
+90 0.0
+91 874.339129447937
+92 874.339129447937
+93 0.0
+94 0.0
+95 874.3391324281693
+96 874.339129447937
+97 0.0
+98 874.339129447937
+99 874.339129447937
+100 874.339129447937
+101 874.339129447937
+102 874.339129447937
+103 874.339129447937
+104 874.339129447937
+105 874.3391355872154
+106 874.339129626751
+107 0.0
+108 172.48867279291153
+109 0.0
+110 874.3391306400299
+111 0.0
+112 874.339129447937
+113 874.339129447937
+114 874.339129447937
+115 0.0
+116 874.339129447937
+117 0.0
+Total timesteps at end of gen: 66771
+Population's average fitness: 744.33535 stdev: 575.20609
+Best fitness: 2777.66243 - size: (8, 9) - species 1 - id 77
+Average adjusted fitness: 0.268
+Mean genetic distance 2.548, standard deviation 0.274
+Population of 60 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    1    60   2777.7    0.268     0
+Total extinctions: 0
+Generation time: 58.927 sec (54.825 average)
+
+ ****** Running generation 2 ****** 
+
+Gen timestep at time: 2019-06-20 16:32:53.764136
+77 2777.6624306440353
+achieved fitness: 2777.6624306440353 at timestep 67914 time: 2019-06-20 16:32:55.631873
+Saving genome to file ./best_genomes/EmeraldHillZone.Act2.state_1561003155_gen3.pkl
+62 2777.662426829338
+87 1832.7983559966087
+118 0.0
+119 0.0
+120 874.3391360044479
+121 874.3391355872154
+122 874.3391355872154
+123 874.339129447937
+124 874.339129626751
+125 874.339129447937
+126 874.339129447937
+127 874.339129447937
+128 1091.8617928028107
+129 874.3391261696815
+130 874.3391307592392
+131 239.61480516195297
+132 2777.6624297499657
+133 874.33913230896
+134 874.3391355872154
+135 874.339129447937
+136 0.0
+137 874.339129447937
+138 874.339129447937
+139 874.339129447937
+140 0.0
+141 1418.9954824447632
+142 0.0
+143 0.0
+144 1920.3172524571419
+145 1418.9954824447632
+146 874.3391355276108
+147 1417.2960859537125
+148 874.339129626751
+149 874.3391297459602
+150 874.339129447937
+151 0.0
+152 165.6910895705223
+153 1920.3172524571419
+154 1419.845183134079
+155 0.0
+156 874.339129447937
+157 874.339129447937
+158 874.339129447937
+159 0.0
+160 874.339129447937
+161 874.3391374349594
+162 874.339129447937
+163 0.0
+164 1920.3172524571419
+165 874.3391317129135
+166 874.339129447937
+167 874.3391325473785
+168 1418.9954824447632
+169 244.71299248933792
+170 874.3391345739365
+171 874.3391355276108
+172 10660.38899832964
+achieved fitness: 10660.38899832964 at timestep 106191 time: 2019-06-20 16:33:56.818688
+Saving genome to file ./best_genomes/EmeraldHillZone.Act2.state_1561003155_gen3.pkl
+173 874.339129447937
+174 1418.9954847693443
+Total timesteps at end of gen: 107460
+Population's average fitness: 1080.34971 stdev: 1408.67311
+Best fitness: 10660.38900 - size: (8, 9) - species 1 - id 172
+
+Best individual in generation 2 meets fitness threshold - complexity: (8, 9)
+Winner!Key: 172
+Fitness: 10660.38899832964
+Nodes:
+	0 DefaultNodeGene(key=0, bias=-2.614556640258881, response=0.7324592767122182, activation=sigmoid, aggregation=sum)
+	1 DefaultNodeGene(key=1, bias=0.24877020444111464, response=0.9601858205966076, activation=sigmoid, aggregation=sum)
+	2 DefaultNodeGene(key=2, bias=-1.3507712194543335, response=0.8121334849681662, activation=sigmoid, aggregation=sum)
+	3 DefaultNodeGene(key=3, bias=0.900625227841747, response=0.8743974329361514, activation=sigmoid, aggregation=sum)
+	4 DefaultNodeGene(key=4, bias=0.6652975594922541, response=0.9191912423548391, activation=sigmoid, aggregation=sum)
+	5 DefaultNodeGene(key=5, bias=-0.6660370437072477, response=0.8286262285929176, activation=sigmoid, aggregation=sum)
+	6 DefaultNodeGene(key=6, bias=1.7218011113921339, response=1.418055222208561, activation=sigmoid, aggregation=sum)
+	8 DefaultNodeGene(key=8, bias=-0.20040144048625183, response=0.9120461846934041, activation=sigmoid, aggregation=sum)
+Connections:
+	DefaultConnectionGene(key=(-14377, 0), weight=0.8006703918043927, enabled=True)
+	DefaultConnectionGene(key=(-14377, 1), weight=0.75637086567908, enabled=False)
+	DefaultConnectionGene(key=(-14377, 2), weight=1.2190034943983241, enabled=True)
+	DefaultConnectionGene(key=(-14377, 3), weight=0.6347587685019538, enabled=True)
+	DefaultConnectionGene(key=(-14377, 4), weight=-1.2918909317714928, enabled=True)
+	DefaultConnectionGene(key=(-14377, 5), weight=-0.461247183686539, enabled=True)
+	DefaultConnectionGene(key=(-14377, 6), weight=-0.4415203624234835, enabled=True)
+	DefaultConnectionGene(key=(-14377, 8), weight=0.5452405212507924, enabled=True)
+	DefaultConnectionGene(key=(-12602, 5), weight=0.6729675138609783, enabled=True)
+	DefaultConnectionGene(key=(8, 1), weight=0.5869884064133934, enabled=True)
+End: 2019-06-20 16:33:58.827979
+Saving stats...
+Storing last generation genomes
+1 10660.38899832964
+Saving genome to file ./last_gen_genomes/1561003155/EmeraldHillZone.Act2.state_1.pkl
+2 2777.6624306440353
+Saving genome to file ./last_gen_genomes/1561003155/EmeraldHillZone.Act2.state_2.pkl
+3 2777.6624297499657
+Saving genome to file ./last_gen_genomes/1561003155/EmeraldHillZone.Act2.state_3.pkl
+4 2777.662426829338
+Saving genome to file ./last_gen_genomes/1561003155/EmeraldHillZone.Act2.state_4.pkl
+5 1920.3172524571419
+Saving genome to file ./last_gen_genomes/1561003155/EmeraldHillZone.Act2.state_5.pkl
+6 1920.3172524571419
+Saving genome to file ./last_gen_genomes/1561003155/EmeraldHillZone.Act2.state_6.pkl
+7 1920.3172524571419
+Saving genome to file ./last_gen_genomes/1561003155/EmeraldHillZone.Act2.state_7.pkl
+8 1832.7983559966087
+Saving genome to file ./last_gen_genomes/1561003155/EmeraldHillZone.Act2.state_8.pkl
+9 1419.845183134079
+Saving genome to file ./last_gen_genomes/1561003155/EmeraldHillZone.Act2.state_9.pkl
+10 1418.9954847693443
+Saving genome to file ./last_gen_genomes/1561003155/EmeraldHillZone.Act2.state_10.pkl
+11 1418.9954824447632
+Saving genome to file ./last_gen_genomes/1561003155/EmeraldHillZone.Act2.state_11.pkl
+12 1418.9954824447632
+Saving genome to file ./last_gen_genomes/1561003155/EmeraldHillZone.Act2.state_12.pkl
+13 1418.9954824447632
+Saving genome to file ./last_gen_genomes/1561003155/EmeraldHillZone.Act2.state_13.pkl
+14 1417.2960859537125
+Saving genome to file ./last_gen_genomes/1561003155/EmeraldHillZone.Act2.state_14.pkl
+15 1091.8617928028107
+Saving genome to file ./last_gen_genomes/1561003155/EmeraldHillZone.Act2.state_15.pkl
+16 874.3391374349594
+Saving genome to file ./last_gen_genomes/1561003155/EmeraldHillZone.Act2.state_16.pkl
+17 874.3391360044479
+Saving genome to file ./last_gen_genomes/1561003155/EmeraldHillZone.Act2.state_17.pkl
+18 874.3391355872154
+Saving genome to file ./last_gen_genomes/1561003155/EmeraldHillZone.Act2.state_18.pkl
+19 874.3391355872154
+Saving genome to file ./last_gen_genomes/1561003155/EmeraldHillZone.Act2.state_19.pkl
+20 874.3391355872154
+Saving genome to file ./last_gen_genomes/1561003155/EmeraldHillZone.Act2.state_20.pkl
+21 874.3391355276108
+Saving genome to file ./last_gen_genomes/1561003155/EmeraldHillZone.Act2.state_21.pkl
+22 874.3391355276108
+Saving genome to file ./last_gen_genomes/1561003155/EmeraldHillZone.Act2.state_22.pkl
+23 874.3391345739365
+Saving genome to file ./last_gen_genomes/1561003155/EmeraldHillZone.Act2.state_23.pkl
+24 874.3391325473785
+Saving genome to file ./last_gen_genomes/1561003155/EmeraldHillZone.Act2.state_24.pkl
+25 874.33913230896
+Saving genome to file ./last_gen_genomes/1561003155/EmeraldHillZone.Act2.state_25.pkl
+26 874.3391317129135
+Saving genome to file ./last_gen_genomes/1561003155/EmeraldHillZone.Act2.state_26.pkl
+27 874.3391307592392
+Saving genome to file ./last_gen_genomes/1561003155/EmeraldHillZone.Act2.state_27.pkl
+28 874.3391297459602
+Saving genome to file ./last_gen_genomes/1561003155/EmeraldHillZone.Act2.state_28.pkl
+29 874.339129626751
+Saving genome to file ./last_gen_genomes/1561003155/EmeraldHillZone.Act2.state_29.pkl
+30 874.339129626751
+Saving genome to file ./last_gen_genomes/1561003155/EmeraldHillZone.Act2.state_30.pkl
+31 874.339129447937
+Saving genome to file ./last_gen_genomes/1561003155/EmeraldHillZone.Act2.state_31.pkl
+32 874.339129447937
+Saving genome to file ./last_gen_genomes/1561003155/EmeraldHillZone.Act2.state_32.pkl
+33 874.339129447937
+Saving genome to file ./last_gen_genomes/1561003155/EmeraldHillZone.Act2.state_33.pkl
+34 874.339129447937
+Saving genome to file ./last_gen_genomes/1561003155/EmeraldHillZone.Act2.state_34.pkl
+35 874.339129447937
+Saving genome to file ./last_gen_genomes/1561003155/EmeraldHillZone.Act2.state_35.pkl
+36 874.339129447937
+Saving genome to file ./last_gen_genomes/1561003155/EmeraldHillZone.Act2.state_36.pkl
+37 874.339129447937
+Saving genome to file ./last_gen_genomes/1561003155/EmeraldHillZone.Act2.state_37.pkl
+38 874.339129447937
+Saving genome to file ./last_gen_genomes/1561003155/EmeraldHillZone.Act2.state_38.pkl
+39 874.339129447937
+Saving genome to file ./last_gen_genomes/1561003155/EmeraldHillZone.Act2.state_39.pkl
+40 874.339129447937
+Saving genome to file ./last_gen_genomes/1561003155/EmeraldHillZone.Act2.state_40.pkl
+41 874.339129447937
+Saving genome to file ./last_gen_genomes/1561003155/EmeraldHillZone.Act2.state_41.pkl
+42 874.339129447937
+Saving genome to file ./last_gen_genomes/1561003155/EmeraldHillZone.Act2.state_42.pkl
+43 874.339129447937
+Saving genome to file ./last_gen_genomes/1561003155/EmeraldHillZone.Act2.state_43.pkl
+44 874.339129447937
+Saving genome to file ./last_gen_genomes/1561003155/EmeraldHillZone.Act2.state_44.pkl
+45 874.339129447937
+Saving genome to file ./last_gen_genomes/1561003155/EmeraldHillZone.Act2.state_45.pkl
+46 874.339129447937
+Saving genome to file ./last_gen_genomes/1561003155/EmeraldHillZone.Act2.state_46.pkl
+47 874.3391261696815
+Saving genome to file ./last_gen_genomes/1561003155/EmeraldHillZone.Act2.state_47.pkl
+48 244.71299248933792
+Saving genome to file ./last_gen_genomes/1561003155/EmeraldHillZone.Act2.state_48.pkl
+49 239.61480516195297
+Saving genome to file ./last_gen_genomes/1561003155/EmeraldHillZone.Act2.state_49.pkl
+50 165.6910895705223
+Saving genome to file ./last_gen_genomes/1561003155/EmeraldHillZone.Act2.state_50.pkl
+51 0.0
+Saving genome to file ./last_gen_genomes/1561003155/EmeraldHillZone.Act2.state_51.pkl
+52 0.0
+Saving genome to file ./last_gen_genomes/1561003155/EmeraldHillZone.Act2.state_52.pkl
+53 0.0
+Saving genome to file ./last_gen_genomes/1561003155/EmeraldHillZone.Act2.state_53.pkl
+54 0.0
+Saving genome to file ./last_gen_genomes/1561003155/EmeraldHillZone.Act2.state_54.pkl
+55 0.0
+Saving genome to file ./last_gen_genomes/1561003155/EmeraldHillZone.Act2.state_55.pkl
+56 0.0
+Saving genome to file ./last_gen_genomes/1561003155/EmeraldHillZone.Act2.state_56.pkl
+57 0.0
+Saving genome to file ./last_gen_genomes/1561003155/EmeraldHillZone.Act2.state_57.pkl
+58 0.0
+Saving genome to file ./last_gen_genomes/1561003155/EmeraldHillZone.Act2.state_58.pkl
+59 0.0
+Saving genome to file ./last_gen_genomes/1561003155/EmeraldHillZone.Act2.state_59.pkl
+60 0.0
+Saving genome to file ./last_gen_genomes/1561003155/EmeraldHillZone.Act2.state_60.pkl
