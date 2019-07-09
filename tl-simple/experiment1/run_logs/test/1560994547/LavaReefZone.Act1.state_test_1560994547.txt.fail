@@ -1,0 +1,182 @@
+Starting python script!
+Using env(SonicAndKnuckles3-Genesis, LavaReefZone.Act1.state)
+Observation space shape:(224, 320, 3)
+Start: 2019-07-04 23:44:25.114848
+Using the following config file: config_test.txt
+[NEAT]
+fitness_criterion     = max
+fitness_threshold     = 9000
+pop_size              = 60
+reset_on_extinction   = False
+
+[DefaultGenome]
+# node activation options
+activation_default      = sigmoid
+activation_mutate_rate  = 0.00
+activation_options      = sigmoid 
+#abs clamped cube exp gauss hat identity inv log relu sigmoid sin softplus square tanh
+
+# node aggregation options
+aggregation_default     = sum
+aggregation_mutate_rate = 0.00
+aggregation_options     = sum product min max mean median maxabs
+
+# node bias options
+bias_init_mean          = 0.05
+bias_init_stdev         = 1.0
+bias_max_value          = 50.0
+bias_min_value          = -50.0
+bias_mutate_power       = 0.2
+bias_mutate_rate        = 0.1
+bias_replace_rate       = 0.1
+
+# genome compatibility options
+compatibility_disjoint_coefficient = 1.0
+compatibility_weight_coefficient   = 0.5
+
+# connection add/remove rates
+conn_add_prob           = 0.1
+conn_delete_prob        = 0.1
+
+# connection enable options
+enabled_default         = True
+enabled_mutate_rate     = 0.05
+
+feed_forward            = False
+initial_connection      = fs_neat_nohidden
+#initial_connection      = unconnected
+#initial_connection     = partial_nodirect 0.4
+
+# node add/remove rates
+node_add_prob           = 0.6
+node_delete_prob        = 0.05
+
+# network parameters
+num_hidden              = 0
+num_inputs              = 17920
+num_outputs             = 7
+
+# node response options
+response_init_mean      = 1.0
+response_init_stdev     = 0.05
+response_max_value      = 30.0
+response_min_value      = -30.0
+response_mutate_power   = 0.1
+response_mutate_rate    = 0.1
+response_replace_rate   = 0.1
+
+# connection weight options
+weight_init_mean        = 0.1
+weight_init_stdev       = 1.0
+weight_max_value        = 30
+weight_min_value        = -30
+weight_mutate_power     = 0.5
+weight_mutate_rate      = 0.1
+weight_replace_rate     = 0.1
+
+[DefaultSpeciesSet]
+compatibility_threshold = 10
+
+[DefaultStagnation]
+species_fitness_func = max
+max_stagnation       = 200
+species_elitism      = 0
+
+[DefaultReproduction]
+elitism            = 3
+survival_threshold = 0.3
+
+
+
+End of config file
+['./last_gen_genomes/1560994547/AquaticRuinZone.Act2.state_1.pkl', './last_gen_genomes/1560994547/CarnivalNightZone.Act1.state_1.pkl', './last_gen_genomes/1560994547/MushroomHillZone.Act2.state_1.pkl', './last_gen_genomes/1560994547/MarbleZone.Act1.state_1.pkl', './last_gen_genomes/1560994547/ScrapBrainZone.Act2.state_1.pkl', './last_gen_genomes/1560994547/DeathEggZone.Act1.state_1.pkl', './last_gen_genomes/1560994547/MysticCaveZone.Act1.state_1.pkl', './last_gen_genomes/1560994547/IcecapZone.Act2.state_1.pkl', './last_gen_genomes/1560994547/OilOceanZone.Act1.state_1.pkl', './last_gen_genomes/1560994547/MetropolisZone.Act1.state_1.pkl', './last_gen_genomes/1560994547/AngelIslandZone.Act1.state_1.pkl', './last_gen_genomes/1560994547/GreenHillZone.Act3.state_1.pkl', './last_gen_genomes/1560994547/MetropolisZone.Act2.state_1.pkl', './last_gen_genomes/1560994547/HydrocityZone.Act2.state_1.pkl', './last_gen_genomes/1560994547/OilOceanZone.Act2.state_1.pkl', './last_gen_genomes/1560994547/DeathEggZone.Act2.state_1.pkl', './last_gen_genomes/1560994547/IcecapZone.Act1.state_1.pkl', './last_gen_genomes/1560994547/MysticCaveZone.Act2.state_1.pkl', './last_gen_genomes/1560994547/LabyrinthZone.Act3.state_1.pkl', './last_gen_genomes/1560994547/MarbleZone.Act2.state_1.pkl', './last_gen_genomes/1560994547/MushroomHillZone.Act1.state_1.pkl', './last_gen_genomes/1560994547/SpringYardZone.Act2.state_1.pkl', './last_gen_genomes/1560994547/AquaticRuinZone.Act1.state_1.pkl', './last_gen_genomes/1560994547/CarnivalNightZone.Act2.state_1.pkl', './last_gen_genomes/1560994547/SandopolisZone.Act2.state_1.pkl', './last_gen_genomes/1560994547/LaunchBaseZone.Act2.state_1.pkl', './last_gen_genomes/1560994547/EmeraldHillZone.Act2.state_1.pkl', './last_gen_genomes/1560994547/MarbleGardenZone.Act1.state_1.pkl', './last_gen_genomes/1560994547/FlyingBatteryZone.Act1.state_1.pkl', './last_gen_genomes/1560994547/ChemicalPlantZone.Act1.state_1.pkl', './last_gen_genomes/1560994547/LabyrinthZone.Act1.state_1.pkl', './last_gen_genomes/1560994547/HillTopZone.Act1.state_1.pkl', './last_gen_genomes/1560994547/StarLightZone.Act1.state_1.pkl', './last_gen_genomes/1560994547/CasinoNightZone.Act1.state_1.pkl', './last_gen_genomes/1560994547/SpringYardZone.Act3.state_1.pkl', './last_gen_genomes/1560994547/StarLightZone.Act2.state_1.pkl', './last_gen_genomes/1560994547/LabyrinthZone.Act2.state_1.pkl', './last_gen_genomes/1560994547/MarbleZone.Act3.state_1.pkl', './last_gen_genomes/1560994547/ChemicalPlantZone.Act2.state_1.pkl', './last_gen_genomes/1560994547/LavaReefZone.Act2.state_1.pkl', './last_gen_genomes/1560994547/HiddenPalaceZone.state_1.pkl', './last_gen_genomes/1560994547/MarbleGardenZone.Act2.state_1.pkl', './last_gen_genomes/1560994547/GreenHillZone.Act1.state_1.pkl', './last_gen_genomes/1560994547/EmeraldHillZone.Act1.state_1.pkl', './last_gen_genomes/1560994547/WingFortressZone.state_1.pkl', './last_gen_genomes/1560994547/LaunchBaseZone.Act1.state_1.pkl', './last_gen_genomes/1560994547/SandopolisZone.Act1.state_1.pkl', './last_gen_genomes/1560994547/MysticCaveZone.Act2.state_2.pkl', './last_gen_genomes/1560994547/AngelIslandZone.Act1.state_2.pkl', './last_gen_genomes/1560994547/LaunchBaseZone.Act1.state_2.pkl', './last_gen_genomes/1560994547/EmeraldHillZone.Act1.state_2.pkl', './last_gen_genomes/1560994547/GreenHillZone.Act1.state_2.pkl', './last_gen_genomes/1560994547/CasinoNightZone.Act1.state_2.pkl', './last_gen_genomes/1560994547/SandopolisZone.Act2.state_2.pkl', './last_gen_genomes/1560994547/SpringYardZone.Act3.state_2.pkl', './last_gen_genomes/1560994547/AquaticRuinZone.Act1.state_2.pkl', './last_gen_genomes/1560994547/EmeraldHillZone.Act2.state_2.pkl', './last_gen_genomes/1560994547/OilOceanZone.Act1.state_2.pkl', './last_gen_genomes/1560994547/StarLightZone.Act1.state_2.pkl', './last_gen_genomes/1560994547/CarnivalNightZone.Act1.state_2.pkl']
+
+ ****** Running generation 0 ****** 
+
+Gen timestep at time: 2019-07-04 23:44:25.166116
+1 57.377047538757324
+achieved fitness: 57.377047538757324 at timestep 1665 time: 2019-07-04 23:44:30.887908
+Saving genome to file ./best_genomes/LavaReefZone.Act1.state_1560994547_gen1.pkl
+2 57.377047538757324
+3 57.37704610824585
+4 52.45901298522949
+5 57.377047538757324
+6 57.377047538757324
+7 57.377047538757324
+8 57.377047538757324
+9 109.83606243133545
+achieved fitness: 109.83606243133545 at timestep 15273 time: 2019-07-04 23:45:24.592402
+Saving genome to file ./best_genomes/LavaReefZone.Act1.state_1560994547_gen1.pkl
+10 57.377047538757324
+11 57.377047538757324
+12 57.377047538757324
+13 57.377047538757324
+14 350.8196620941162
+achieved fitness: 350.8196620941162 at timestep 22557 time: 2019-07-04 23:45:52.900078
+Saving genome to file ./best_genomes/LavaReefZone.Act1.state_1560994547_gen1.pkl
+15 54.09835910797119
+16 57.377047538757324
+17 725.4098153114319
+achieved fitness: 725.4098153114319 at timestep 28113 time: 2019-07-04 23:46:12.414207
+Saving genome to file ./best_genomes/LavaReefZone.Act1.state_1560994547_gen1.pkl
+18 57.377047538757324
+19 57.377047538757324
+20 57.377047538757324
+21 57.377047538757324
+22 57.377047538757324
+23 57.377047538757324
+24 57.377047538757324
+25 57.377047538757324
+26 0.0
+27 57.377047538757324
+28 -4.76837158203125e-07
+29 57.377047538757324
+30 57.377047538757324
+31 47.540982246398926
+32 725.4098153114319
+33 57.377047538757324
+34 57.377047538757324
+35 57.377047538757324
+36 57.377047538757324
+37 57.3770432472229
+38 81.96721076965332
+39 57.377047538757324
+40 57.377047538757324
+41 57.377047538757324
+42 57.377047538757324
+43 57.377047538757324
+44 57.377047538757324
+45 57.377047538757324
+46 55.73770332336426
+47 57.377047061920166
+48 57.377047538757324
+49 54.09835910797119
+50 54.09835910797119
+51 57.377047538757324
+52 57.377047538757324
+53 57.377047538757324
+54 57.377047538757324
+55 57.377047538757324
+56 57.377047538757324
+57 57.377047538757324
+58 57.377047538757324
+59 57.377047538757324
+60 57.377047538757324
+Total timesteps at end of gen: 99750
+Population's average fitness: 83.46994 stdev: 125.69079
+Best fitness: 725.40982 - size: (10, 12) - species 1 - id 17
+Average adjusted fitness: 0.115
+Traceback (most recent call last):
+  File "retro-test.py", line 205, in <module>
+    winner = p.run(eval_genomes, max_generations)
+  File "/anaconda3/lib/python3.6/site-packages/neat/population.py", line 112, in run
+    self.config.pop_size, self.generation)
+  File "/anaconda3/lib/python3.6/site-packages/neat/reproduction.py", line 184, in reproduce
+    child.mutate(config.genome_config)
+  File "/anaconda3/lib/python3.6/site-packages/neat/genome.py", line 286, in mutate
+    self.mutate_add_node(config)
+  File "/anaconda3/lib/python3.6/site-packages/neat/genome.py", line 313, in mutate_add_node
+    new_node_id = config.get_new_node_key(self.nodes)
+  File "/anaconda3/lib/python3.6/site-packages/neat/genome.py", line 116, in get_new_node_key
+    assert new_id not in node_dict
+AssertionError

@@ -1,0 +1,666 @@
+Starting python script!
+Using env(SonicTheHedgehog2-Genesis, HillTopZone.Act2.state)
+Observation space shape:(224, 320, 3)
+Start: 2019-07-06 15:11:04.586670
+Using the following config file: config_test.txt
+[NEAT]
+fitness_criterion     = max
+fitness_threshold     = 9000
+pop_size              = 60
+reset_on_extinction   = False
+
+[DefaultGenome]
+# node activation options
+activation_default      = sigmoid
+activation_mutate_rate  = 0.00
+activation_options      = sigmoid 
+#abs clamped cube exp gauss hat identity inv log relu sigmoid sin softplus square tanh
+
+# node aggregation options
+aggregation_default     = sum
+aggregation_mutate_rate = 0.00
+aggregation_options     = sum product min max mean median maxabs
+
+# node bias options
+bias_init_mean          = 0.05
+bias_init_stdev         = 1.0
+bias_max_value          = 50.0
+bias_min_value          = -50.0
+bias_mutate_power       = 0.2
+bias_mutate_rate        = 0.1
+bias_replace_rate       = 0.1
+
+# genome compatibility options
+compatibility_disjoint_coefficient = 1.0
+compatibility_weight_coefficient   = 0.5
+
+# connection add/remove rates
+conn_add_prob           = 0.1
+conn_delete_prob        = 0.1
+
+# connection enable options
+enabled_default         = True
+enabled_mutate_rate     = 0.05
+
+feed_forward            = False
+initial_connection      = fs_neat_nohidden
+#initial_connection      = unconnected
+#initial_connection     = partial_nodirect 0.4
+
+# node add/remove rates
+node_add_prob           = 0.6
+node_delete_prob        = 0.05
+
+# network parameters
+num_hidden              = 0
+num_inputs              = 17920
+num_outputs             = 7
+
+# node response options
+response_init_mean      = 1.0
+response_init_stdev     = 0.05
+response_max_value      = 30.0
+response_min_value      = -30.0
+response_mutate_power   = 0.1
+response_mutate_rate    = 0.1
+response_replace_rate   = 0.1
+
+# connection weight options
+weight_init_mean        = 0.1
+weight_init_stdev       = 1.0
+weight_max_value        = 30
+weight_min_value        = -30
+weight_mutate_power     = 0.5
+weight_mutate_rate      = 0.1
+weight_replace_rate     = 0.1
+
+[DefaultSpeciesSet]
+compatibility_threshold = 10
+
+[DefaultStagnation]
+species_fitness_func = max
+max_stagnation       = 200
+species_elitism      = 0
+
+[DefaultReproduction]
+elitism            = 3
+survival_threshold = 0.3
+
+
+
+End of config file
+['./last_gen_genomes/1561003155/AquaticRuinZone.Act2.state_1.pkl', './last_gen_genomes/1561003155/CarnivalNightZone.Act1.state_1.pkl', './last_gen_genomes/1561003155/MushroomHillZone.Act2.state_1.pkl', './last_gen_genomes/1561003155/MarbleZone.Act1.state_1.pkl', './last_gen_genomes/1561003155/ScrapBrainZone.Act2.state_1.pkl', './last_gen_genomes/1561003155/DeathEggZone.Act1.state_1.pkl', './last_gen_genomes/1561003155/MysticCaveZone.Act1.state_1.pkl', './last_gen_genomes/1561003155/IcecapZone.Act2.state_1.pkl', './last_gen_genomes/1561003155/OilOceanZone.Act1.state_1.pkl', './last_gen_genomes/1561003155/MetropolisZone.Act1.state_1.pkl', './last_gen_genomes/1561003155/AngelIslandZone.Act1.state_1.pkl', './last_gen_genomes/1561003155/GreenHillZone.Act3.state_1.pkl', './last_gen_genomes/1561003155/MetropolisZone.Act2.state_1.pkl', './last_gen_genomes/1561003155/HydrocityZone.Act2.state_1.pkl', './last_gen_genomes/1561003155/OilOceanZone.Act2.state_1.pkl', './last_gen_genomes/1561003155/DeathEggZone.Act2.state_1.pkl', './last_gen_genomes/1561003155/IcecapZone.Act1.state_1.pkl', './last_gen_genomes/1561003155/MysticCaveZone.Act2.state_1.pkl', './last_gen_genomes/1561003155/LabyrinthZone.Act3.state_1.pkl', './last_gen_genomes/1561003155/MarbleZone.Act2.state_1.pkl', './last_gen_genomes/1561003155/MushroomHillZone.Act1.state_1.pkl', './last_gen_genomes/1561003155/SpringYardZone.Act2.state_1.pkl', './last_gen_genomes/1561003155/AquaticRuinZone.Act1.state_1.pkl', './last_gen_genomes/1561003155/CarnivalNightZone.Act2.state_1.pkl', './last_gen_genomes/1561003155/SandopolisZone.Act2.state_1.pkl', './last_gen_genomes/1561003155/LaunchBaseZone.Act2.state_1.pkl', './last_gen_genomes/1561003155/EmeraldHillZone.Act2.state_1.pkl', './last_gen_genomes/1561003155/MarbleGardenZone.Act1.state_1.pkl', './last_gen_genomes/1561003155/FlyingBatteryZone.Act1.state_1.pkl', './last_gen_genomes/1561003155/ChemicalPlantZone.Act1.state_1.pkl', './last_gen_genomes/1561003155/LabyrinthZone.Act1.state_1.pkl', './last_gen_genomes/1561003155/HillTopZone.Act1.state_1.pkl', './last_gen_genomes/1561003155/StarLightZone.Act1.state_1.pkl', './last_gen_genomes/1561003155/CasinoNightZone.Act1.state_1.pkl', './last_gen_genomes/1561003155/SpringYardZone.Act3.state_1.pkl', './last_gen_genomes/1561003155/StarLightZone.Act2.state_1.pkl', './last_gen_genomes/1561003155/LabyrinthZone.Act2.state_1.pkl', './last_gen_genomes/1561003155/MarbleZone.Act3.state_1.pkl', './last_gen_genomes/1561003155/ChemicalPlantZone.Act2.state_1.pkl', './last_gen_genomes/1561003155/LavaReefZone.Act2.state_1.pkl', './last_gen_genomes/1561003155/HiddenPalaceZone.state_1.pkl', './last_gen_genomes/1561003155/MarbleGardenZone.Act2.state_1.pkl', './last_gen_genomes/1561003155/GreenHillZone.Act1.state_1.pkl', './last_gen_genomes/1561003155/EmeraldHillZone.Act1.state_1.pkl', './last_gen_genomes/1561003155/WingFortressZone.state_1.pkl', './last_gen_genomes/1561003155/LaunchBaseZone.Act1.state_1.pkl', './last_gen_genomes/1561003155/SandopolisZone.Act1.state_1.pkl', './last_gen_genomes/1561003155/MysticCaveZone.Act2.state_2.pkl', './last_gen_genomes/1561003155/ChemicalPlantZone.Act1.state_2.pkl', './last_gen_genomes/1561003155/SandopolisZone.Act1.state_2.pkl', './last_gen_genomes/1561003155/IcecapZone.Act2.state_2.pkl', './last_gen_genomes/1561003155/AquaticRuinZone.Act2.state_2.pkl', './last_gen_genomes/1561003155/LabyrinthZone.Act2.state_2.pkl', './last_gen_genomes/1561003155/HiddenPalaceZone.state_2.pkl', './last_gen_genomes/1561003155/LabyrinthZone.Act3.state_2.pkl', './last_gen_genomes/1561003155/MarbleGardenZone.Act2.state_2.pkl', './last_gen_genomes/1561003155/EmeraldHillZone.Act2.state_2.pkl', './last_gen_genomes/1561003155/MarbleGardenZone.Act1.state_2.pkl', './last_gen_genomes/1561003155/OilOceanZone.Act1.state_2.pkl', './last_gen_genomes/1561003155/StarLightZone.Act2.state_2.pkl']
+
+ ****** Running generation 0 ****** 
+
+Gen timestep at time: 2019-07-06 15:11:04.629547
+1 81.35767537355423
+achieved fitness: 81.35767537355423 at timestep 1803 time: 2019-07-06 15:11:11.192312
+Saving genome to file ./best_genomes/HillTopZone.Act2.state_1561003155_gen1.pkl
+2 160.4127516746521
+achieved fitness: 160.4127516746521 at timestep 3606 time: 2019-07-06 15:11:16.396659
+Saving genome to file ./best_genomes/HillTopZone.Act2.state_1561003155_gen1.pkl
+3 124.3390673995018
+4 10.745354771614075
+5 127.40916925668716
+6 0.0
+7 181.13593578338623
+achieved fitness: 181.13593578338623 at timestep 12984 time: 2019-07-06 15:11:49.322037
+Saving genome to file ./best_genomes/HillTopZone.Act2.state_1561003155_gen1.pkl
+8 648.558758854866
+achieved fitness: 648.558758854866 at timestep 15000 time: 2019-07-06 15:11:56.454050
+Saving genome to file ./best_genomes/HillTopZone.Act2.state_1561003155_gen1.pkl
+9 161.18028283119202
+10 5.372675955295563
+11 117.43132644891739
+12 648.5587505698204
+13 12.280402183532715
+14 0.0
+15 135.08441704511642
+16 178.0658392906189
+17 -1.1920928955078125e-05
+18 851.1853934526443
+achieved fitness: 851.1853934526443 at timestep 38400 time: 2019-07-06 15:13:06.158211
+Saving genome to file ./best_genomes/HillTopZone.Act2.state_1561003155_gen1.pkl
+19 160.4127516746521
+20 114.36123603582382
+21 0.0
+22 648.5587639808655
+23 158.11018133163452
+24 160.4127516746521
+25 178.8333585858345
+26 160.4127516746521
+27 160.4127516746521
+28 0.0
+29 150.4349309206009
+30 160.4127516746521
+31 23.793285071849823
+32 176.53079390525818
+33 169.6230475306511
+34 160.4127516746521
+35 46.05151575803757
+36 160.4127516746521
+37 118.96639144420624
+38 166.5529544353485
+39 160.4127516746521
+40 131.2467980980873
+41 187.2761556506157
+42 0.0
+43 119.73391652107239
+44 130.4792765378952
+45 1.1920928955078125e-06
+46 81.35766637325287
+47 0.0
+48 168.0880052447319
+49 160.4127516746521
+50 0.0
+51 160.4127516746521
+52 98.24321937561035
+53 114.3612453341484
+54 110.52361810207367
+55 160.4127516746521
+56 49.12160986661911
+57 851.1854096055031
+achieved fitness: 851.1854096055031 at timestep 118938 time: 2019-07-06 15:17:24.072137
+Saving genome to file ./best_genomes/HillTopZone.Act2.state_1561003155_gen1.pkl
+58 0.0
+59 70.61231863498688
+60 160.4127516746521
+Total timesteps at end of gen: 124158
+Population's average fitness: 157.20194 stdev: 186.27550
+Best fitness: 851.18541 - size: (8, 9) - species 1 - id 57
+Average adjusted fitness: 0.185
+Population of 57 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    0    57    851.2    0.185     0
+Total extinctions: 0
+Generation time: 397.077 sec
+
+ ****** Running generation 1 ****** 
+
+Gen timestep at time: 2019-07-06 15:17:41.706119
+57 160.4127516746521
+achieved fitness: 160.4127516746521 at timestep 125961 time: 2019-07-06 15:17:47.638603
+Saving genome to file ./best_genomes/HillTopZone.Act2.state_1561003155_gen2.pkl
+18 160.4127516746521
+22 0.0
+1 149.66739624738693
+2 0.0
+3 160.4127516746521
+4 160.4127516746521
+5 160.4127516746521
+6 160.4127516746521
+7 178.8333585858345
+achieved fitness: 178.8333585858345 at timestep 141648 time: 2019-07-06 15:18:38.845273
+Saving genome to file ./best_genomes/HillTopZone.Act2.state_1561003155_gen2.pkl
+8 181.13593578338623
+achieved fitness: 181.13593578338623 at timestep 143451 time: 2019-07-06 15:18:44.629191
+Saving genome to file ./best_genomes/HillTopZone.Act2.state_1561003155_gen2.pkl
+9 160.4127516746521
+10 1462.9029619693756
+achieved fitness: 1462.9029619693756 at timestep 148524 time: 2019-07-06 15:19:00.701711
+Saving genome to file ./best_genomes/HillTopZone.Act2.state_1561003155_gen2.pkl
+11 155.04007357358932
+12 181.13593578338623
+13 648.558758854866
+14 48.35408300161362
+15 0.0
+16 88.26539373397827
+17 70.6123109459877
+19 0.0
+20 851.1853917837143
+21 851.1854096055031
+23 160.4127516746521
+24 160.4127516746521
+25 160.4127516746521
+26 160.4127516746521
+27 1462.9029619693756
+28 0.0
+29 851.1853934526443
+30 0.0
+31 166.5529544353485
+32 0.0
+33 180.36840069293976
+34 187.2761556506157
+35 118.19886320829391
+36 160.4127516746521
+37 161.94782263040543
+38 0.0
+39 145.82979714870453
+40 181.13593578338623
+41 851.1854101419449
+42 0.0
+43 648.558758854866
+44 0.0
+45 851.1853917837143
+46 648.5587568283081
+47 160.4127516746521
+48 851.1854096055031
+49 96.70815849304199
+50 0.0
+51 648.5587639808655
+52 648.5587505698204
+53 55.26183485984802
+54 131.2467966079712
+55 160.4127516746521
+56 648.5587639212608
+Total timesteps at end of gen: 240741
+Population's average fitness: 292.06352 stdev: 351.12690
+Best fitness: 1462.90296 - size: (13, 17) - species 1 - id 10
+Average adjusted fitness: 0.200
+Population of 60 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    1    60   1462.9    0.200     0
+Total extinctions: 0
+Generation time: 436.823 sec (416.950 average)
+
+ ****** Running generation 2 ****** 
+
+Gen timestep at time: 2019-07-06 15:24:58.529306
+10 1462.9029619693756
+achieved fitness: 1462.9029619693756 at timestep 244011 time: 2019-07-06 15:25:13.117188
+Saving genome to file ./best_genomes/HillTopZone.Act2.state_1561003155_gen3.pkl
+27 1462.9029619693756
+41 851.1854101419449
+58 648.5587639808655
+59 0.0
+60 160.4127516746521
+61 160.4127516746521
+62 160.4127516746521
+63 851.1853934526443
+64 178.83337169885635
+65 648.5587639212608
+66 1502.0467362999916
+achieved fitness: 1502.0467362999916 at timestep 269982 time: 2019-07-06 15:27:01.492321
+Saving genome to file ./best_genomes/HillTopZone.Act2.state_1561003155_gen3.pkl
+67 0.0
+68 0.0
+69 648.5587639212608
+70 141.992169380188
+71 851.1854096055031
+72 11.51287704706192
+73 1.7702579498291016e-05
+74 0.0
+75 160.4127516746521
+76 160.4127516746521
+77 648.5587599277496
+78 851.1854096055031
+79 178.83337169885635
+80 851.1854096055031
+81 181.13593578338623
+82 851.1854043006897
+83 154.27257406711578
+84 160.4127516746521
+85 180.36841106414795
+86 1462.9029619693756
+87 851.1854096055031
+88 121.26897984743118
+89 851.1854043006897
+90 160.4127516746521
+91 0.0
+92 0.0
+93 0.0
+94 160.4127516746521
+95 648.5587639808655
+96 52.19170981645584
+97 0.0
+98 851.1853917837143
+99 174.22824847698212
+100 0.0
+101 0.0
+102 160.4127516746521
+103 112.05871766805649
+104 0.0
+105 160.4127516746521
+106 851.1853917837143
+107 -7.033348083496094e-06
+108 648.558758854866
+109 160.4127516746521
+110 44.51644575595856
+111 160.4127516746521
+112 1462.9029619693756
+113 0.0
+114 181.13593578338623
+Total timesteps at end of gen: 366267
+Population's average fitness: 389.90278 stdev: 447.98237
+Best fitness: 1502.04674 - size: (14, 17) - species 1 - id 66
+Average adjusted fitness: 0.260
+Population of 60 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    2    60   1502.0    0.260     0
+Total extinctions: 0
+Generation time: 442.931 sec (425.610 average)
+
+ ****** Running generation 3 ****** 
+
+Gen timestep at time: 2019-07-06 15:32:21.460565
+66 1502.0467362999916
+achieved fitness: 1502.0467362999916 at timestep 371196 time: 2019-07-06 15:32:39.173480
+Saving genome to file ./best_genomes/HillTopZone.Act2.state_1561003155_gen4.pkl
+10 1462.9029619693756
+27 1462.9029619693756
+115 802.0637831687927
+116 648.5587759017944
+117 12.280405342578888
+118 160.4127516746521
+119 160.4127516746521
+120 0.0
+121 851.1854096055031
+122 0.0
+123 1462.9029619693756
+124 0.0
+125 160.4127516746521
+126 160.4127516746521
+127 158.1102016568184
+128 851.1853917837143
+129 648.5587639212608
+130 160.4127516746521
+131 187.2761556506157
+132 95.17311203479767
+133 851.1853917837143
+134 168.85553640127182
+135 -7.152557373046875e-07
+136 648.5587639212608
+137 160.4127516746521
+138 851.1853934526443
+139 851.1854096055031
+140 120.50144863128662
+141 173.46069341897964
+142 1606.4301721453667
+achieved fitness: 1606.4301721453667 at timestep 439638 time: 2019-07-06 15:36:41.754317
+Saving genome to file ./best_genomes/HillTopZone.Act2.state_1561003155_gen4.pkl
+143 1462.9029619693756
+144 851.1854096055031
+145 851.1854043006897
+146 1473.648304283619
+147 648.5587639212608
+148 66.00716680288315
+149 1640.9688141942024
+achieved fitness: 1640.9688141942024 at timestep 457368 time: 2019-07-06 16:09:33.668004
+Saving genome to file ./best_genomes/HillTopZone.Act2.state_1561003155_gen4.pkl
+150 851.1853934526443
+151 0.0
+152 187.27613431215286
+153 1577.2642170190811
+154 187.2761556506157
+155 181.13593125343323
+156 181.13593125343323
+157 160.4127516746521
+158 161.9478054046631
+159 160.4127516746521
+160 160.4127516746521
+161 160.4127516746521
+162 0.0
+163 648.5587639808655
+164 851.1854096055031
+165 851.1853934526443
+166 181.13593125343323
+167 160.4127516746521
+168 160.4127516746521
+169 76.75254100561142
+170 160.4127516746521
+171 648.5587639212608
+Total timesteps at end of gen: 505971
+Population's average fitness: 518.01552 stdev: 512.23517
+Best fitness: 1640.96881 - size: (28, 42) - species 1 - id 149
+Average adjusted fitness: 0.316
+Population of 60 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    3    60   1641.0    0.316     0
+Total extinctions: 0
+Generation time: 18503.692 sec (4945.131 average)
+
+ ****** Running generation 4 ****** 
+
+Gen timestep at time: 2019-07-06 20:40:45.154792
+149 1640.9688141942024
+achieved fitness: 1640.9688141942024 at timestep 509367 time: 2019-07-06 20:58:53.128142
+Saving genome to file ./best_genomes/HillTopZone.Act2.state_1561003155_gen5.pkl
+142 1606.4301721453667
+153 1577.2642170190811
+172 168.0880052447319
+173 160.4127516746521
+174 160.4127516746521
+175 160.4127516746521
+176 187.2761556506157
+177 1560.3786466121674
+178 0.0
+179 168.85553175210953
+180 57.564385771751404
+181 100.54579293727875
+182 121.26897984743118
+183 156.57512593269348
+184 851.1854096055031
+185 851.1854096055031
+186 178.0658306479454
+187 0.0
+188 0.0
+189 160.4127516746521
+190 1479.020989537239
+191 851.1854096055031
+192 121.26899933815002
+193 160.4127516746521
+194 1545.028170824051
+195 851.1854096055031
+196 851.1854096055031
+197 1473.648304283619
+198 159.64521861076355
+199 160.4127516746521
+200 1462.9029619693756
+201 181.13593125343323
+202 1462.9029619693756
+203 173.46069341897964
+204 851.1854096055031
+205 167.3204766511917
+206 160.4127516746521
+207 66.00716680288315
+208 171.1581068634987
+209 0.0
+210 0.0
+211 0.0
+212 1599.522433102131
+213 1502.0467362999916
+214 851.1854096055031
+215 851.1853982806206
+216 187.27613431215286
+217 95.17311203479767
+218 1462.9029619693756
+219 851.1854096055031
+220 0.0
+221 128.1767070889473
+222 2036.2442539334297
+achieved fitness: 2036.2442539334297 at timestep 647466 time: 2019-07-06 22:17:36.567710
+Saving genome to file ./best_genomes/HillTopZone.Act2.state_1561003155_gen5.pkl
+223 0.0
+224 0.0
+225 178.83337169885635
+226 0.0
+227 648.5587639212608
+228 1592.6147099733353
+Total timesteps at end of gen: 659742
+Population's average fitness: 570.02815 stdev: 618.04434
+Best fitness: 2036.24425 - size: (15, 19) - species 1 - id 222
+Average adjusted fitness: 0.280
+Population of 60 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    4    60   2036.2    0.280     0
+Total extinctions: 0
+Generation time: 5850.638 sec (5126.232 average)
+
+ ****** Running generation 5 ****** 
+
+Gen timestep at time: 2019-07-06 22:18:15.790823
+222 2036.2442539334297
+achieved fitness: 2036.2442539334297 at timestep 662700 time: 2019-07-06 22:18:27.011197
+Saving genome to file ./best_genomes/HillTopZone.Act2.state_1561003155_gen6.pkl
+149 1640.9688141942024
+142 1606.4301721453667
+229 160.4127516746521
+230 0.0
+231 0.0
+232 118.1988655924797
+233 648.5587604641914
+234 1473.648304283619
+235 1545.795679628849
+236 160.41275107860565
+237 1473.6483029723167
+238 0.0
+239 160.4127516746521
+240 160.4127516746521
+241 0.0
+242 160.4127516746521
+243 8.442776501178741
+244 160.4127516746521
+245 160.4127516746521
+246 78.28755271434784
+247 1547.3307265639305
+248 1658.6218855977058
+249 648.5587543845177
+250 160.4127516746521
+251 102.0808442234993
+252 1552.7034041881561
+253 62.16954189538956
+254 160.4127516746521
+255 -3.594160079956055e-05
+256 175.76324623823166
+257 160.4127516746521
+258 158.8777214884758
+259 148.89989054203033
+260 2036.2442470788956
+261 1560.3786466121674
+262 851.1854096055031
+263 104.3834165930748
+264 648.5587522983551
+265 160.4127516746521
+266 0.0
+267 160.4127516746521
+268 160.4127516746521
+269 151.9699748158455
+270 1551.1683476567268
+271 1462.9029619693756
+272 648.5587639212608
+273 0.0
+274 33.77110719680786
+275 1546.5631985068321
+276 1462.9029619693756
+277 1595.6848051548004
+278 1560.3786466121674
+279 160.41275107860565
+280 1654.01669049263
+281 0.0
+282 46.0515216588974
+283 0.0
+284 160.4127516746521
+285 0.0
+Total timesteps at end of gen: 816081
+Population's average fitness: 600.10234 stdev: 688.23740
+Best fitness: 2036.24425 - size: (15, 19) - species 1 - id 222
+Average adjusted fitness: 0.295
+Population of 60 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    5    60   2036.2    0.295     1
+Total extinctions: 0
+Generation time: 727.715 sec (4393.146 average)
+
+ ****** Running generation 6 ****** 
+
+Gen timestep at time: 2019-07-06 22:30:23.506060
+222 2036.2442539334297
+achieved fitness: 2036.2442539334297 at timestep 819039 time: 2019-07-06 22:30:40.220907
+Saving genome to file ./best_genomes/HillTopZone.Act2.state_1561003155_gen7.pkl
+260 2036.2442470788956
+248 1658.6218855977058
+286 181.13593190908432
+287 160.4127516746521
+288 851.185391664505
+289 160.4127516746521
+290 157.34265053272247
+291 69.07725465297699
+292 160.4127516746521
+293 0.0
+294 648.5587560534477
+295 160.4127516746521
+296 1498.9766491651535
+297 52.19170981645584
+298 0.0
+299 162.71537041664124
+300 1620.2456160783768
+301 -3.3974647521972656e-06
+302 1619.4781023263931
+303 159.64522421360016
+304 1595.6848051548004
+305 851.1854059696198
+306 181.13593125343323
+307 0.0
+308 160.4127516746521
+309 130.47927677631378
+310 148.89989054203033
+311 160.4127516746521
+312 123.57153636217117
+313 103.61589455604553
+314 181.13593125343323
+315 160.4127516746521
+316 160.4127516746521
+317 1473.6483029723167
+318 2036.2442542910576
+achieved fitness: 2036.2442542910576 at timestep 901974 time: 2019-07-06 22:41:09.191732
+Saving genome to file ./best_genomes/HillTopZone.Act2.state_1561003155_gen7.pkl
+319 115.89630889892578
+320 128.9442239999771
+321 648.5587560534477
+322 1980.9824376702309
+323 112.05867117643356
+324 150.43494313955307
+325 134.3168961405754
+326 125.87412095069885
+327 8.442776501178741
+328 160.4127516746521
+329 148.13236701488495
+330 1583.4043978452682
+331 8.442776501178741
+332 1502.0467362999916
+333 648.5587560534477
+334 136.6194810271263
+335 1552.7034041881561
+336 851.185391664505
+337 1628.6883854866028
+338 73.6824283003807
+339 78.28755271434784
+340 2036.2442539334297
+341 178.83337169885635
+342 0.0
+Total timesteps at end of gen: 966570
+Population's average fitness: 580.88862 stdev: 697.04607
+Best fitness: 2036.24425 - size: (16, 21) - species 1 - id 318
+Average adjusted fitness: 0.285
+Population of 60 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    6    60   2036.2    0.285     0
+Total extinctions: 0
+Generation time: 885.589 sec (3892.066 average)
+
+ ****** Running generation 7 ****** 
+
+Gen timestep at time: 2019-07-06 22:45:09.095067
+318 2036.2442542910576
+achieved fitness: 2036.2442542910576 at timestep 969534 time: 2019-07-06 22:45:18.543856
+Saving genome to file ./best_genomes/HillTopZone.Act2.state_1561003155_gen8.pkl
+340 2036.2442539334297
+222 2036.2442539334297
+343 1628.6883854866028
+344 0.0
+345 132.7818442583084
+346 866.5358844399452
+347 160.4127516746521
+348 1498.9766491651535
+349 648.5587560534477
+350 1552.7033914923668
+351 1498.9766491651535
+Finished timestepMax at time: 2019-07-06 22:47:00.941474

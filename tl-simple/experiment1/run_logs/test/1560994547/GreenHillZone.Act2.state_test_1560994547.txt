@@ -1,0 +1,648 @@
+Starting python script!
+Using env(SonicTheHedgehog-Genesis, GreenHillZone.Act2.state)
+Observation space shape:(224, 320, 3)
+Start: 2019-07-04 22:45:05.681460
+Using the following config file: config_test.txt
+[NEAT]
+fitness_criterion     = max
+fitness_threshold     = 9000
+pop_size              = 60
+reset_on_extinction   = False
+
+[DefaultGenome]
+# node activation options
+activation_default      = sigmoid
+activation_mutate_rate  = 0.00
+activation_options      = sigmoid 
+#abs clamped cube exp gauss hat identity inv log relu sigmoid sin softplus square tanh
+
+# node aggregation options
+aggregation_default     = sum
+aggregation_mutate_rate = 0.00
+aggregation_options     = sum product min max mean median maxabs
+
+# node bias options
+bias_init_mean          = 0.05
+bias_init_stdev         = 1.0
+bias_max_value          = 50.0
+bias_min_value          = -50.0
+bias_mutate_power       = 0.2
+bias_mutate_rate        = 0.1
+bias_replace_rate       = 0.1
+
+# genome compatibility options
+compatibility_disjoint_coefficient = 1.0
+compatibility_weight_coefficient   = 0.5
+
+# connection add/remove rates
+conn_add_prob           = 0.1
+conn_delete_prob        = 0.1
+
+# connection enable options
+enabled_default         = True
+enabled_mutate_rate     = 0.05
+
+feed_forward            = False
+initial_connection      = fs_neat_nohidden
+#initial_connection      = unconnected
+#initial_connection     = partial_nodirect 0.4
+
+# node add/remove rates
+node_add_prob           = 0.6
+node_delete_prob        = 0.05
+
+# network parameters
+num_hidden              = 0
+num_inputs              = 17920
+num_outputs             = 7
+
+# node response options
+response_init_mean      = 1.0
+response_init_stdev     = 0.05
+response_max_value      = 30.0
+response_min_value      = -30.0
+response_mutate_power   = 0.1
+response_mutate_rate    = 0.1
+response_replace_rate   = 0.1
+
+# connection weight options
+weight_init_mean        = 0.1
+weight_init_stdev       = 1.0
+weight_max_value        = 30
+weight_min_value        = -30
+weight_mutate_power     = 0.5
+weight_mutate_rate      = 0.1
+weight_replace_rate     = 0.1
+
+[DefaultSpeciesSet]
+compatibility_threshold = 10
+
+[DefaultStagnation]
+species_fitness_func = max
+max_stagnation       = 200
+species_elitism      = 0
+
+[DefaultReproduction]
+elitism            = 3
+survival_threshold = 0.3
+
+
+
+End of config file
+['./last_gen_genomes/1560994547/AquaticRuinZone.Act2.state_1.pkl', './last_gen_genomes/1560994547/CarnivalNightZone.Act1.state_1.pkl', './last_gen_genomes/1560994547/MushroomHillZone.Act2.state_1.pkl', './last_gen_genomes/1560994547/MarbleZone.Act1.state_1.pkl', './last_gen_genomes/1560994547/ScrapBrainZone.Act2.state_1.pkl', './last_gen_genomes/1560994547/DeathEggZone.Act1.state_1.pkl', './last_gen_genomes/1560994547/MysticCaveZone.Act1.state_1.pkl', './last_gen_genomes/1560994547/IcecapZone.Act2.state_1.pkl', './last_gen_genomes/1560994547/OilOceanZone.Act1.state_1.pkl', './last_gen_genomes/1560994547/MetropolisZone.Act1.state_1.pkl', './last_gen_genomes/1560994547/AngelIslandZone.Act1.state_1.pkl', './last_gen_genomes/1560994547/GreenHillZone.Act3.state_1.pkl', './last_gen_genomes/1560994547/MetropolisZone.Act2.state_1.pkl', './last_gen_genomes/1560994547/HydrocityZone.Act2.state_1.pkl', './last_gen_genomes/1560994547/OilOceanZone.Act2.state_1.pkl', './last_gen_genomes/1560994547/DeathEggZone.Act2.state_1.pkl', './last_gen_genomes/1560994547/IcecapZone.Act1.state_1.pkl', './last_gen_genomes/1560994547/MysticCaveZone.Act2.state_1.pkl', './last_gen_genomes/1560994547/LabyrinthZone.Act3.state_1.pkl', './last_gen_genomes/1560994547/MarbleZone.Act2.state_1.pkl', './last_gen_genomes/1560994547/MushroomHillZone.Act1.state_1.pkl', './last_gen_genomes/1560994547/SpringYardZone.Act2.state_1.pkl', './last_gen_genomes/1560994547/AquaticRuinZone.Act1.state_1.pkl', './last_gen_genomes/1560994547/CarnivalNightZone.Act2.state_1.pkl', './last_gen_genomes/1560994547/SandopolisZone.Act2.state_1.pkl', './last_gen_genomes/1560994547/LaunchBaseZone.Act2.state_1.pkl', './last_gen_genomes/1560994547/EmeraldHillZone.Act2.state_1.pkl', './last_gen_genomes/1560994547/MarbleGardenZone.Act1.state_1.pkl', './last_gen_genomes/1560994547/FlyingBatteryZone.Act1.state_1.pkl', './last_gen_genomes/1560994547/ChemicalPlantZone.Act1.state_1.pkl', './last_gen_genomes/1560994547/LabyrinthZone.Act1.state_1.pkl', './last_gen_genomes/1560994547/HillTopZone.Act1.state_1.pkl', './last_gen_genomes/1560994547/StarLightZone.Act1.state_1.pkl', './last_gen_genomes/1560994547/CasinoNightZone.Act1.state_1.pkl', './last_gen_genomes/1560994547/SpringYardZone.Act3.state_1.pkl', './last_gen_genomes/1560994547/StarLightZone.Act2.state_1.pkl', './last_gen_genomes/1560994547/LabyrinthZone.Act2.state_1.pkl', './last_gen_genomes/1560994547/MarbleZone.Act3.state_1.pkl', './last_gen_genomes/1560994547/ChemicalPlantZone.Act2.state_1.pkl', './last_gen_genomes/1560994547/LavaReefZone.Act2.state_1.pkl', './last_gen_genomes/1560994547/HiddenPalaceZone.state_1.pkl', './last_gen_genomes/1560994547/MarbleGardenZone.Act2.state_1.pkl', './last_gen_genomes/1560994547/GreenHillZone.Act1.state_1.pkl', './last_gen_genomes/1560994547/EmeraldHillZone.Act1.state_1.pkl', './last_gen_genomes/1560994547/WingFortressZone.state_1.pkl', './last_gen_genomes/1560994547/LaunchBaseZone.Act1.state_1.pkl', './last_gen_genomes/1560994547/SandopolisZone.Act1.state_1.pkl', './last_gen_genomes/1560994547/SpringYardZone.Act3.state_2.pkl', './last_gen_genomes/1560994547/MetropolisZone.Act1.state_2.pkl', './last_gen_genomes/1560994547/GreenHillZone.Act1.state_2.pkl', './last_gen_genomes/1560994547/MysticCaveZone.Act2.state_2.pkl', './last_gen_genomes/1560994547/MarbleZone.Act2.state_2.pkl', './last_gen_genomes/1560994547/MetropolisZone.Act2.state_2.pkl', './last_gen_genomes/1560994547/ChemicalPlantZone.Act2.state_2.pkl', './last_gen_genomes/1560994547/LaunchBaseZone.Act2.state_2.pkl', './last_gen_genomes/1560994547/OilOceanZone.Act1.state_2.pkl', './last_gen_genomes/1560994547/StarLightZone.Act2.state_2.pkl', './last_gen_genomes/1560994547/AquaticRuinZone.Act2.state_2.pkl', './last_gen_genomes/1560994547/OilOceanZone.Act2.state_2.pkl', './last_gen_genomes/1560994547/ChemicalPlantZone.Act1.state_2.pkl']
+
+ ****** Running generation 0 ****** 
+
+Gen timestep at time: 2019-07-04 22:45:05.725516
+1 139.21026134490967
+achieved fitness: 139.21026134490967 at timestep 1599 time: 2019-07-04 22:45:10.211658
+Saving genome to file ./best_genomes/GreenHillZone.Act2.state_1560994547_gen1.pkl
+2 139.21026134490967
+3 22.635815143585205
+4 322.56036281585693
+achieved fitness: 322.56036281585693 at timestep 6027 time: 2019-07-04 22:45:23.054024
+Saving genome to file ./best_genomes/GreenHillZone.Act2.state_1560994547_gen1.pkl
+5 139.21026134490967
+6 2582.7464693784714
+achieved fitness: 2582.7464693784714 at timestep 13887 time: 2019-07-04 22:45:48.994665
+Saving genome to file ./best_genomes/GreenHillZone.Act2.state_1560994547_gen1.pkl
+7 139.21026134490967
+8 1128.3953597545624
+9 139.21026134490967
+10 323.6921535730362
+11 2196.805803179741
+12 139.21026134490967
+13 139.21026134490967
+14 0.0
+15 1128.3953714370728
+16 18.108652114868164
+17 133.5513093471527
+18 139.21026134490967
+19 139.21026134490967
+20 139.21026134490967
+21 139.21026134490967
+22 2196.8058017492294
+23 323.6921525001526
+24 139.21026134490967
+25 2196.805806517601
+26 139.21026134490967
+27 139.21026134490967
+28 1027.6659920215607
+29 139.21026134490967
+30 139.21026289463043
+31 510.4376275539398
+32 0.0
+33 397.2585507631302
+34 139.21026134490967
+35 139.21026134490967
+36 0.0
+37 0.0
+38 865.819927573204
+39 139.21026134490967
+40 139.21026134490967
+41 1269.8692132234573
+42 139.21026146411896
+43 139.21026134490967
+44 2196.8058091402054
+45 139.21026134490967
+46 321.4285750389099
+47 1128.395372390747
+48 139.21026134490967
+49 3743.963744044304
+achieved fitness: 3743.963744044304 at timestep 92091 time: 2019-07-04 22:50:30.597425
+Saving genome to file ./best_genomes/GreenHillZone.Act2.state_1560994547_gen1.pkl
+50 1128.3953555822372
+51 139.21026134490967
+52 139.2102620601654
+53 139.21026134490967
+54 139.21026134490967
+55 139.21026134490967
+56 139.21026134490967
+57 0.0
+58 0.0
+59 416.49899685382843
+60 139.21026289463043
+Total timesteps at end of gen: 110220
+Population's average fitness: 498.27087 stdev: 766.32061
+Best fitness: 3743.96374 - size: (15, 21) - species 1 - id 49
+Average adjusted fitness: 0.133
+Population of 57 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    0    57   3744.0    0.133     0
+Total extinctions: 0
+Generation time: 377.353 sec
+
+ ****** Running generation 1 ****** 
+
+Gen timestep at time: 2019-07-04 22:51:23.078931
+49 2615.568385243416
+achieved fitness: 2615.568385243416 at timestep 112962 time: 2019-07-04 22:51:31.006509
+Saving genome to file ./best_genomes/GreenHillZone.Act2.state_1560994547_gen2.pkl
+6 350.8551347255707
+44 139.21026134490967
+1 1128.3953589200974
+2 2196.805803179741
+3 2196.8058017492294
+4 2685.739405989647
+achieved fitness: 2685.739405989647 at timestep 125166 time: 2019-07-04 22:52:06.782602
+Saving genome to file ./best_genomes/GreenHillZone.Act2.state_1560994547_gen2.pkl
+5 177.69114756584167
+7 865.819927573204
+8 139.21026134490967
+9 1128.3953666687012
+10 2196.805806517601
+11 139.21026134490967
+12 3622.8621170520782
+achieved fitness: 3622.8621170520782 at timestep 144093 time: 2019-07-04 22:53:01.898056
+Saving genome to file ./best_genomes/GreenHillZone.Act2.state_1560994547_gen2.pkl
+13 2529.5522878170013
+14 2196.805806517601
+15 0.0
+16 139.21026134490967
+17 2196.8058091402054
+18 2196.805803179741
+19 1020.8752467632294
+20 2196.8058091402054
+21 485.53823387622833
+22 2613.3048012256622
+23 2426.5593214035034
+24 0.0
+25 2196.805806517601
+26 2196.805806517601
+27 2196.8058059215546
+28 3608.1488662958145
+29 2196.805803179741
+30 2612.1730140447617
+31 278.420526266098
+32 2493.334990501404
+33 415.36720645427704
+34 1145.3722187280655
+35 2493.334985613823
+36 0.0
+37 2614.4365943670273
+38 6379.904366493225
+achieved fitness: 6379.904366493225 at timestep 213450 time: 2019-07-04 22:56:24.586775
+Saving genome to file ./best_genomes/GreenHillZone.Act2.state_1560994547_gen2.pkl
+39 0.0
+40 0.0
+41 2262.449663043022
+42 139.210263133049
+43 139.21026134490967
+45 3743.963744044304
+46 0.0
+47 1269.8692132234573
+48 0.0
+50 2600.855109333992
+51 2587.27361369133
+52 1128.395368218422
+53 416.49899685382843
+54 139.21026134490967
+55 2596.327939271927
+56 0.0
+57 1128.395372390747
+Total timesteps at end of gen: 248526
+Population's average fitness: 1518.68446 stdev: 1310.04644
+Best fitness: 6379.90437 - size: (16, 23) - species 1 - id 38
+Average adjusted fitness: 0.238
+Population of 60 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    1    60   6379.9    0.238     0
+Total extinctions: 0
+Generation time: 404.360 sec (390.857 average)
+
+ ****** Running generation 2 ****** 
+
+Gen timestep at time: 2019-07-04 22:58:07.439090
+38 6379.904366493225
+achieved fitness: 6379.904366493225 at timestep 253128 time: 2019-07-04 22:58:20.878536
+Saving genome to file ./best_genomes/GreenHillZone.Act2.state_1560994547_gen3.pkl
+45 3743.963744044304
+12 3622.8621170520782
+58 2230.7595179080963
+59 139.21026134490967
+60 139.21026134490967
+61 2563.5060073137283
+62 139.21026134490967
+63 2196.8058112859726
+64 2589.5371873378754
+65 2196.8058025836945
+66 2510.311830997467
+67 2597.4597367048264
+68 1128.395354628563
+69 4496.604586362839
+70 2582.7464693784714
+71 3751.886281847954
+72 2196.805810213089
+73 139.21026134490967
+74 139.21026134490967
+75 2532.9476420879364
+76 1132.9225200414658
+77 0.0
+78 139.21026134490967
+79 0.0
+80 2615.568385243416
+81 1804.0744436979294
+82 2513.7072068452835
+83 0.0
+84 139.21026146411896
+85 2578.2192989587784
+86 139.21026134490967
+87 2596.327939271927
+88 3544.7685928344727
+89 2528.420503258705
+90 2196.8058084249496
+91 3556.086464524269
+92 139.21026134490967
+93 3802.816882967949
+94 2196.805805325508
+95 2592.93257188797
+96 0.0
+97 2498.9939374923706
+98 139.21026158332825
+99 0.0
+100 0.0
+101 3861.6699835062027
+102 2568.0332156419754
+103 0.0
+104 139.21026134490967
+105 139.21026146411896
+106 2196.8058067560196
+107 1386.443645477295
+108 139.210263133049
+109 0.0
+110 139.21026134490967
+111 322.56036400794983
+112 2615.5683856010437
+113 0.0
+114 139.21026134490967
+Total timesteps at end of gen: 394935
+Population's average fitness: 1641.98313 stdev: 1504.31617
+Best fitness: 6379.90437 - size: (16, 23) - species 1 - id 38
+Average adjusted fitness: 0.257
+Population of 60 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    2    60   6379.9    0.257     1
+Total extinctions: 0
+Generation time: 580.044 sec (453.919 average)
+
+ ****** Running generation 3 ****** 
+
+Gen timestep at time: 2019-07-04 23:07:47.482652
+38 6379.904366493225
+achieved fitness: 6379.904366493225 at timestep 399537 time: 2019-07-04 23:08:16.242594
+Saving genome to file ./best_genomes/GreenHillZone.Act2.state_1560994547_gen4.pkl
+69 4496.604586362839
+101 3861.6699835062027
+115 0.0
+116 139.21026146411896
+117 2570.296748280525
+118 3544.7685928344727
+119 139.21026134490967
+120 4496.604586362839
+121 139.21026134490967
+122 2196.805810213089
+123 0.0
+124 139.210263133049
+125 139.21026134490967
+126 2592.93257188797
+127 139.21026134490967
+128 2582.7464693784714
+129 713.0281674861908
+130 2597.4597367048264
+131 139.21026134490967
+132 3861.6699835062027
+133 2196.8058084249496
+134 1128.395357966423
+135 0.0
+136 139.21026134490967
+137 139.21026158332825
+138 2685.7394050359726
+139 0.0
+140 1128.3953582048416
+141 2605.382261276245
+142 2597.4597367048264
+143 2597.4597367048264
+144 139.21026134490967
+145 713.0281674861908
+146 2572.5603281259537
+147 139.21026134490967
+148 0.0
+149 0.0
+150 139.21026158332825
+151 0.0
+152 139.21026134490967
+153 139.21026170253754
+154 1170.2716166973114
+155 3622.8621170520782
+156 0.0
+157 36.21730422973633
+158 3743.963744044304
+159 0.0
+160 3556.086464524269
+161 139.21026134490967
+162 2685.7394053936005
+163 1128.395357966423
+164 139.21026134490967
+165 0.0
+166 0.0
+167 2532.9476420879364
+168 713.0281674861908
+169 2196.8058084249496
+170 3544.7685928344727
+171 2196.8058154582977
+Total timesteps at end of gen: 537408
+Population's average fitness: 1457.91623 stdev: 1576.77729
+Best fitness: 6379.90437 - size: (16, 23) - species 1 - id 38
+Average adjusted fitness: 0.229
+Population of 60 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    3    60   6379.9    0.229     2
+Total extinctions: 0
+Generation time: 768.428 sec (532.546 average)
+
+ ****** Running generation 4 ****** 
+
+Gen timestep at time: 2019-07-04 23:20:35.911041
+38 6379.904366493225
+achieved fitness: 6379.904366493225 at timestep 542010 time: 2019-07-04 23:20:49.592731
+Saving genome to file ./best_genomes/GreenHillZone.Act2.state_1560994547_gen5.pkl
+69 4496.604586362839
+120 4496.604586362839
+172 0.0
+173 321.42857122421265
+174 2577.0875051021576
+175 2444.667993426323
+176 95.07042360305786
+177 2196.8058111667633
+178 139.210263133049
+179 139.21026134490967
+180 139.21026134490967
+181 139.21026134490967
+182 2513.7072048187256
+183 139.21026134490967
+184 2594.064380645752
+185 139.21026134490967
+186 139.21026134490967
+187 2597.4597367048264
+188 3840.165947675705
+189 139.210263133049
+190 3544.7685928344727
+191 2597.4597367048264
+192 3743.963744044304
+193 139.21026146411896
+194 0.0
+195 2597.4597367048264
+196 139.21026134490967
+197 0.0
+198 2196.805803179741
+199 430.08048009872437
+200 3861.6699835062027
+201 0.0
+202 2607.6458411216736
+203 2529.5522878170013
+204 139.21026134490967
+205 4496.604586362839
+206 139.21026158332825
+207 0.0
+208 2510.311850309372
+209 2577.0875051021576
+210 0.0
+211 1128.3953573703766
+212 2601.986887216568
+213 139.21026134490967
+214 2426.5593296289444
+215 139.21026158332825
+216 2230.7595179080963
+217 2615.568383574486
+218 4496.604586362839
+219 139.21026134490967
+220 0.0
+221 3764.335993170738
+222 2597.4597367048264
+223 2685.7394053936005
+224 3743.963744044304
+225 2582.7464693784714
+226 3544.7685928344727
+227 0.0
+228 139.21026134490967
+Total timesteps at end of gen: 693198
+Population's average fitness: 1748.22056 stdev: 1652.70540
+Best fitness: 6379.90437 - size: (16, 23) - species 1 - id 38
+Average adjusted fitness: 0.274
+Population of 60 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    4    60   6379.9    0.274     3
+Total extinctions: 0
+Generation time: 475.841 sec (521.205 average)
+
+ ****** Running generation 5 ****** 
+
+Gen timestep at time: 2019-07-04 23:28:31.752312
+38 6379.904366493225
+achieved fitness: 6379.904366493225 at timestep 697800 time: 2019-07-04 23:28:45.758175
+Saving genome to file ./best_genomes/GreenHillZone.Act2.state_1560994547_gen6.pkl
+69 4496.604586362839
+205 4496.604586362839
+229 0.0
+230 139.21026134490967
+231 2196.8058153390884
+232 4496.604586362839
+233 139.21026158332825
+234 139.21026158332825
+235 139.21026146411896
+236 4496.604586362839
+237 0.0
+238 139.21026134490967
+239 0.0
+240 2196.8058111667633
+241 0.0
+242 2349.597554206848
+243 713.0281674861908
+244 2196.805810213089
+245 0.0
+246 1132.9225203990936
+247 0.0
+248 4496.604586362839
+249 139.21026134490967
+250 4496.604586362839
+251 2597.4597367048264
+252 2605.382262468338
+253 0.0
+254 0.0
+255 3622.8621170520782
+256 3544.7685928344727
+257 3743.963744044304
+258 2597.4597367048264
+259 3840.165947675705
+260 2528.420496225357
+261 0.0
+262 396.12675869464874
+263 4496.604586362839
+264 139.21026134490967
+265 3622.8621170520782
+266 2196.8058112859726
+267 4496.604586362839
+268 2570.2967561483383
+269 4496.604586362839
+270 2614.4365943670273
+271 2542.0019685029984
+272 713.0281674861908
+273 4496.604586362839
+274 139.21026158332825
+275 139.21026134490967
+276 139.21026134490967
+277 0.0
+278 139.21026146411896
+279 2582.7464574575424
+280 2606.5140665769577
+281 139.21026134490967
+282 1128.395357966423
+283 139.21026158332825
+284 139.21026158332825
+285 0.0
+Total timesteps at end of gen: 832311
+Population's average fitness: 1835.57594 stdev: 1812.85186
+Best fitness: 6379.90437 - size: (16, 23) - species 1 - id 38
+Average adjusted fitness: 0.288
+Population of 60 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    5    60   6379.9    0.288     4
+Total extinctions: 0
+Generation time: 451.329 sec (509.559 average)
+
+ ****** Running generation 6 ****** 
+
+Gen timestep at time: 2019-07-04 23:36:03.081477
+38 6379.904366493225
+achieved fitness: 6379.904366493225 at timestep 836913 time: 2019-07-04 23:36:18.416965
+Saving genome to file ./best_genomes/GreenHillZone.Act2.state_1560994547_gen7.pkl
+263 4496.604586362839
+267 4496.604586362839
+286 2482.0170661211014
+287 4496.604586362839
+288 2556.7152606248856
+289 3569.667959213257
+290 4496.604586362839
+291 2588.405404448509
+292 3840.165947675705
+293 0.0
+294 2685.739399909973
+295 0.0
+296 0.0
+297 139.210263133049
+298 3569.667959213257
+299 2196.805810213089
+300 139.21026158332825
+301 4496.604586362839
+302 0.0
+303 2615.568385243416
+304 0.0
+305 0.0
+306 0.0
+307 3622.8621170520782
+308 4496.604586362839
+309 139.21026158332825
+310 2587.273621559143
+311 730.0050288438797
+312 396.126757979393
+313 3840.165947675705
+314 139.21026158332825
+315 2196.8058111667633
+316 139.21026158332825
+317 2597.4597367048264
+318 0.0
+319 3622.8621170520782
+320 139.21026158332825
+321 2614.4365943670273
+322 0.0
+323 139.21026158332825
+324 0.0
+325 2513.7072048187256
+326 0.0
+327 4496.604586362839
+328 139.21026158332825
+329 139.21026182174683
+330 2614.4365943670273
+331 2587.27361369133
+332 0.0
+333 0.0
+334 3622.8621170520782
+335 4252.137780070305
+336 322.56036150455475
+337 0.0
+338 0.0
+339 2196.8058104515076
+340 2614.4365943670273
+341 139.21026158332825
+342 4496.604586362839
+Total timesteps at end of gen: 977736
+Population's average fitness: 1879.69691 stdev: 1820.13893
+Best fitness: 6379.90437 - size: (16, 23) - species 1 - id 38
+Average adjusted fitness: 0.295
+Population of 60 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    6    60   6379.9    0.295     5
+Total extinctions: 0
+Generation time: 504.265 sec (508.803 average)
+
+ ****** Running generation 7 ****** 
+
+Gen timestep at time: 2019-07-04 23:44:27.346786
+38 6379.904366493225
+achieved fitness: 6379.904366493225 at timestep 982338 time: 2019-07-04 23:44:42.779051
+Saving genome to file ./best_genomes/GreenHillZone.Act2.state_1560994547_gen8.pkl
+263 4496.604586362839
+267 4496.604586362839
+343 2083.6267453432083
+344 0.0
+345 2615.5683859586716
+346 0.0
+347 139.21026158332825
+Finished timestepMax at time: 2019-07-04 23:45:50.901645

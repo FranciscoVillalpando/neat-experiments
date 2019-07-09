@@ -7,7 +7,7 @@ fi
 
 
 echo "Starting invoker script..."
-echo "Using las_gen_genmoes/$1 as initial population"
+echo "Using last_gen_genmoes/$1 as initial population"
 
 # Ordered by table in paper
 GAME_0=("SonicTheHedgehog-Genesis" "SpringYardZone.Act1.state")

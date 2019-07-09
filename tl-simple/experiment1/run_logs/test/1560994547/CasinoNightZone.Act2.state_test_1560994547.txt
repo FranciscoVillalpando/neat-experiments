@@ -1,0 +1,321 @@
+Starting python script!
+Using env(SonicTheHedgehog2-Genesis, CasinoNightZone.Act2.state)
+Observation space shape:(224, 320, 3)
+Start: 2019-07-04 22:57:57.834735
+Using the following config file: config_test.txt
+[NEAT]
+fitness_criterion     = max
+fitness_threshold     = 9000
+pop_size              = 60
+reset_on_extinction   = False
+
+[DefaultGenome]
+# node activation options
+activation_default      = sigmoid
+activation_mutate_rate  = 0.00
+activation_options      = sigmoid 
+#abs clamped cube exp gauss hat identity inv log relu sigmoid sin softplus square tanh
+
+# node aggregation options
+aggregation_default     = sum
+aggregation_mutate_rate = 0.00
+aggregation_options     = sum product min max mean median maxabs
+
+# node bias options
+bias_init_mean          = 0.05
+bias_init_stdev         = 1.0
+bias_max_value          = 50.0
+bias_min_value          = -50.0
+bias_mutate_power       = 0.2
+bias_mutate_rate        = 0.1
+bias_replace_rate       = 0.1
+
+# genome compatibility options
+compatibility_disjoint_coefficient = 1.0
+compatibility_weight_coefficient   = 0.5
+
+# connection add/remove rates
+conn_add_prob           = 0.1
+conn_delete_prob        = 0.1
+
+# connection enable options
+enabled_default         = True
+enabled_mutate_rate     = 0.05
+
+feed_forward            = False
+initial_connection      = fs_neat_nohidden
+#initial_connection      = unconnected
+#initial_connection     = partial_nodirect 0.4
+
+# node add/remove rates
+node_add_prob           = 0.6
+node_delete_prob        = 0.05
+
+# network parameters
+num_hidden              = 0
+num_inputs              = 17920
+num_outputs             = 7
+
+# node response options
+response_init_mean      = 1.0
+response_init_stdev     = 0.05
+response_max_value      = 30.0
+response_min_value      = -30.0
+response_mutate_power   = 0.1
+response_mutate_rate    = 0.1
+response_replace_rate   = 0.1
+
+# connection weight options
+weight_init_mean        = 0.1
+weight_init_stdev       = 1.0
+weight_max_value        = 30
+weight_min_value        = -30
+weight_mutate_power     = 0.5
+weight_mutate_rate      = 0.1
+weight_replace_rate     = 0.1
+
+[DefaultSpeciesSet]
+compatibility_threshold = 10
+
+[DefaultStagnation]
+species_fitness_func = max
+max_stagnation       = 200
+species_elitism      = 0
+
+[DefaultReproduction]
+elitism            = 3
+survival_threshold = 0.3
+
+
+
+End of config file
+['./last_gen_genomes/1560994547/AquaticRuinZone.Act2.state_1.pkl', './last_gen_genomes/1560994547/CarnivalNightZone.Act1.state_1.pkl', './last_gen_genomes/1560994547/MushroomHillZone.Act2.state_1.pkl', './last_gen_genomes/1560994547/MarbleZone.Act1.state_1.pkl', './last_gen_genomes/1560994547/ScrapBrainZone.Act2.state_1.pkl', './last_gen_genomes/1560994547/DeathEggZone.Act1.state_1.pkl', './last_gen_genomes/1560994547/MysticCaveZone.Act1.state_1.pkl', './last_gen_genomes/1560994547/IcecapZone.Act2.state_1.pkl', './last_gen_genomes/1560994547/OilOceanZone.Act1.state_1.pkl', './last_gen_genomes/1560994547/MetropolisZone.Act1.state_1.pkl', './last_gen_genomes/1560994547/AngelIslandZone.Act1.state_1.pkl', './last_gen_genomes/1560994547/GreenHillZone.Act3.state_1.pkl', './last_gen_genomes/1560994547/MetropolisZone.Act2.state_1.pkl', './last_gen_genomes/1560994547/HydrocityZone.Act2.state_1.pkl', './last_gen_genomes/1560994547/OilOceanZone.Act2.state_1.pkl', './last_gen_genomes/1560994547/DeathEggZone.Act2.state_1.pkl', './last_gen_genomes/1560994547/IcecapZone.Act1.state_1.pkl', './last_gen_genomes/1560994547/MysticCaveZone.Act2.state_1.pkl', './last_gen_genomes/1560994547/LabyrinthZone.Act3.state_1.pkl', './last_gen_genomes/1560994547/MarbleZone.Act2.state_1.pkl', './last_gen_genomes/1560994547/MushroomHillZone.Act1.state_1.pkl', './last_gen_genomes/1560994547/SpringYardZone.Act2.state_1.pkl', './last_gen_genomes/1560994547/AquaticRuinZone.Act1.state_1.pkl', './last_gen_genomes/1560994547/CarnivalNightZone.Act2.state_1.pkl', './last_gen_genomes/1560994547/SandopolisZone.Act2.state_1.pkl', './last_gen_genomes/1560994547/LaunchBaseZone.Act2.state_1.pkl', './last_gen_genomes/1560994547/EmeraldHillZone.Act2.state_1.pkl', './last_gen_genomes/1560994547/MarbleGardenZone.Act1.state_1.pkl', './last_gen_genomes/1560994547/FlyingBatteryZone.Act1.state_1.pkl', './last_gen_genomes/1560994547/ChemicalPlantZone.Act1.state_1.pkl', './last_gen_genomes/1560994547/LabyrinthZone.Act1.state_1.pkl', './last_gen_genomes/1560994547/HillTopZone.Act1.state_1.pkl', './last_gen_genomes/1560994547/StarLightZone.Act1.state_1.pkl', './last_gen_genomes/1560994547/CasinoNightZone.Act1.state_1.pkl', './last_gen_genomes/1560994547/SpringYardZone.Act3.state_1.pkl', './last_gen_genomes/1560994547/StarLightZone.Act2.state_1.pkl', './last_gen_genomes/1560994547/LabyrinthZone.Act2.state_1.pkl', './last_gen_genomes/1560994547/MarbleZone.Act3.state_1.pkl', './last_gen_genomes/1560994547/ChemicalPlantZone.Act2.state_1.pkl', './last_gen_genomes/1560994547/LavaReefZone.Act2.state_1.pkl', './last_gen_genomes/1560994547/HiddenPalaceZone.state_1.pkl', './last_gen_genomes/1560994547/MarbleGardenZone.Act2.state_1.pkl', './last_gen_genomes/1560994547/GreenHillZone.Act1.state_1.pkl', './last_gen_genomes/1560994547/EmeraldHillZone.Act1.state_1.pkl', './last_gen_genomes/1560994547/WingFortressZone.state_1.pkl', './last_gen_genomes/1560994547/LaunchBaseZone.Act1.state_1.pkl', './last_gen_genomes/1560994547/SandopolisZone.Act1.state_1.pkl', './last_gen_genomes/1560994547/AquaticRuinZone.Act1.state_2.pkl', './last_gen_genomes/1560994547/OilOceanZone.Act1.state_2.pkl', './last_gen_genomes/1560994547/StarLightZone.Act2.state_2.pkl', './last_gen_genomes/1560994547/MarbleZone.Act1.state_2.pkl', './last_gen_genomes/1560994547/DeathEggZone.Act2.state_2.pkl', './last_gen_genomes/1560994547/SandopolisZone.Act2.state_2.pkl', './last_gen_genomes/1560994547/StarLightZone.Act1.state_2.pkl', './last_gen_genomes/1560994547/ScrapBrainZone.Act2.state_2.pkl', './last_gen_genomes/1560994547/WingFortressZone.state_2.pkl', './last_gen_genomes/1560994547/MarbleZone.Act3.state_2.pkl', './last_gen_genomes/1560994547/MysticCaveZone.Act2.state_2.pkl', './last_gen_genomes/1560994547/MushroomHillZone.Act2.state_2.pkl', './last_gen_genomes/1560994547/MysticCaveZone.Act1.state_2.pkl']
+
+ ****** Running generation 0 ****** 
+
+Gen timestep at time: 2019-07-04 22:57:57.884805
+1 558.8827040195465
+achieved fitness: 558.8827040195465 at timestep 7551 time: 2019-07-04 22:58:19.882366
+Saving genome to file ./best_genomes/CasinoNightZone.Act2.state_1560994547_gen1.pkl
+2 520.9003283977509
+3 0.0
+4 933.2798625230789
+achieved fitness: 933.2798625230789 at timestep 19119 time: 2019-07-04 22:58:53.198367
+Saving genome to file ./best_genomes/CasinoNightZone.Act2.state_1560994547_gen1.pkl
+5 889.8713965415955
+6 889.8713908195496
+7 889.8713898658752
+8 534.465435385704
+9 672.82958984375
+10 889.8713926076889
+11 472.97026348114014
+12 57.877814292907715
+13 889.8713889122009
+14 387.9622310400009
+15 6.33038604259491
+16 951.3666063547134
+achieved fitness: 951.3666063547134 at timestep 44004 time: 2019-07-04 23:00:07.401741
+Saving genome to file ./best_genomes/CasinoNightZone.Act2.state_1560994547_gen1.pkl
+17 889.8713955879211
+18 888.06272315979
+19 103.09485840797424
+20 0.0
+21 563.4043446779251
+22 889.8713932037354
+23 584.2042051553726
+24 567.926043510437
+25 423.2315615415573
+26 555.2652825117111
+27 889.8713819980621
+28 452.17042565345764
+29 431.3705835342407
+30 889.8713887929916
+31 0.0
+32 385.2492175102234
+33 472.97025847435
+34 889.8714023828506
+35 559.7869777679443
+36 377.1101328134537
+37 1110.531104683876
+achieved fitness: 1110.531104683876 at timestep 122274 time: 2019-07-04 23:04:57.036153
+Saving genome to file ./best_genomes/CasinoNightZone.Act2.state_1560994547_gen1.pkl
+38 0.0
+39 500.1005039215088
+40 550.743580698967
+41 1467.7451924085617
+achieved fitness: 1467.7451924085617 at timestep 130341 time: 2019-07-04 23:05:47.015076
+Saving genome to file ./best_genomes/CasinoNightZone.Act2.state_1560994547_gen1.pkl
+42 957.6969881057739
+43 432.27494847774506
+44 889.871386051178
+45 559.7869902849197
+46 0.0
+47 889.8713929653168
+48 567.0217088460922
+49 889.8713902235031
+50 377.1101328134537
+51 397.9100000858307
+52 545.317703962326
+53 0.0
+54 472.97025847435
+55 1049.939914226532
+56 537.1784695386887
+57 0.0
+58 889.8713984489441
+59 454.8834751844406
+60 889.8713898658752
+Total timesteps at end of gen: 187041
+Population's average fitness: 579.83323 stdev: 335.83253
+Best fitness: 1467.74519 - size: (13, 20) - species 1 - id 41
+Average adjusted fitness: 0.395
+Population of 57 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    0    57   1467.7    0.395     0
+Total extinctions: 0
+Generation time: 843.043 sec
+
+ ****** Running generation 1 ****** 
+
+Gen timestep at time: 2019-07-04 23:12:00.927935
+41 0.0
+37 563.4043419361115
+achieved fitness: 563.4043419361115 at timestep 192423 time: 2019-07-04 23:12:38.036429
+Saving genome to file ./best_genomes/CasinoNightZone.Act2.state_1560994547_gen2.pkl
+55 0.0
+1 1049.9398962259293
+achieved fitness: 1049.9398962259293 at timestep 204756 time: 2019-07-04 23:13:58.281397
+Saving genome to file ./best_genomes/CasinoNightZone.Act2.state_1560994547_gen2.pkl
+2 889.8714029788971
+3 604.0997005701065
+4 889.8713873624802
+5 538.9871528148651
+6 889.8713890314102
+7 889.8713929653168
+8 889.8713965415955
+9 572.447757601738
+10 306.57156896591187
+11 889.8713995218277
+12 482.0136774778366
+13 557.0739611387253
+14 0.0
+15 524.5176866054535
+16 482.0136774778366
+17 296.6238077878952
+18 423.23152673244476
+19 1110.531104683876
+achieved fitness: 1110.531104683876 at timestep 286200 time: 2019-07-04 23:20:16.560306
+Saving genome to file ./best_genomes/CasinoNightZone.Act2.state_1560994547_gen2.pkl
+20 1110.531104683876
+21 559.7869777679443
+22 563.4043468236923
+23 1302.250815153122
+achieved fitness: 1302.250815153122 at timestep 332010 time: 2019-07-04 23:22:35.112724
+Saving genome to file ./best_genomes/CasinoNightZone.Act2.state_1560994547_gen2.pkl
+24 301.1455235481262
+25 889.8713930845261
+26 889.8713932037354
+27 424.13588201999664
+28 2407.3553196191788
+achieved fitness: 2407.3553196191788 at timestep 342702 time: 2019-07-04 23:23:07.146169
+Saving genome to file ./best_genomes/CasinoNightZone.Act2.state_1560994547_gen2.pkl
+29 570.6390693187714
+30 0.0
+31 889.8713902235031
+32 889.8713932037354
+33 888.9675937891006
+34 877.2106177806854
+35 1049.939914226532
+36 889.8713891506195
+38 960.4100148677826
+39 889.8714048862457
+40 304.762867808342
+42 0.0
+43 1033.662120103836
+44 889.8713965415955
+45 1025.5229868888855
+46 7.234726905822754
+47 1049.939914226532
+48 889.8713887929916
+49 0.0
+50 30.747589349746704
+51 889.8713862895966
+52 130.22508430480957
+53 132.03376603126526
+54 216.1374704837799
+56 470.25723528862
+57 1049.9401196241379
+Total timesteps at end of gen: 572070
+Population's average fitness: 654.83803 stdev: 434.07932
+Best fitness: 2407.35532 - size: (13, 19) - species 1 - id 28
+Average adjusted fitness: 0.272
+Population of 60 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    1    60   2407.4    0.272     0
+Total extinctions: 0
+Generation time: 1390.121 sec (1116.582 average)
+
+ ****** Running generation 2 ****** 
+
+Gen timestep at time: 2019-07-04 23:35:11.048981
+28 2407.3553196191788
+achieved fitness: 2407.3553196191788 at timestep 574851 time: 2019-07-04 23:35:20.378555
+Saving genome to file ./best_genomes/CasinoNightZone.Act2.state_1560994547_gen3.pkl
+23 1302.250815153122
+19 1110.531104683876
+58 1135.8521528244019
+59 7.234726905822754
+60 1025.5229868888855
+61 510.9525878429413
+62 889.8714019060135
+63 889.8713965415955
+64 889.8713927268982
+65 0.0
+66 1049.939914226532
+67 564.3086838722229
+68 551.6479549407959
+69 0.0
+70 889.8713876008987
+71 889.8713965415955
+72 154.642284989357
+73 1049.939914226532
+74 478.3963121175766
+75 563.4043419361115
+76 1049.9397777318954
+77 1488.5450229644775
+78 1049.939914226532
+79 208.90273690223694
+80 0.0
+81 567.9260447025299
+82 538.9871773719788
+83 2406.4509946107864
+84 1049.0354673862457
+85 1033.662120103836
+86 889.8713965415955
+87 563.4043419361115
+88 561.5956680774689
+89 575.1607750654221
+90 339.12782526016235
+91 510.9525878429413
+92 990.253825545311
+93 1049.939914226532
+94 0.0
+95 889.8713965415955
+96 889.8713941574097
+97 889.8713965415955
+98 1049.9397777318954
+99 1049.939914226532
+100 559.7869777679443
+101 889.8713965415955
+102 1118.6701554059982
+103 567.0217045545578
+104 1025.5226917266846
+105 96.76447236537933
+106 559.7869777679443
+107 2407.3553196191788
+108 1049.939936041832
+109 877.2106122970581
+110 1025.5229868888855
+111 563.4043432474136
+Finished timestepMax at time: 2019-07-04 23:58:44.646043

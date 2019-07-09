@@ -1,0 +1,423 @@
+Starting python script!
+Using env(SonicTheHedgehog-Genesis, ScrapBrainZone.Act1.state)
+Observation space shape:(224, 320, 3)
+Start: 2019-07-04 22:45:05.661925
+Using the following config file: config_test.txt
+[NEAT]
+fitness_criterion     = max
+fitness_threshold     = 9000
+pop_size              = 60
+reset_on_extinction   = False
+
+[DefaultGenome]
+# node activation options
+activation_default      = sigmoid
+activation_mutate_rate  = 0.00
+activation_options      = sigmoid 
+#abs clamped cube exp gauss hat identity inv log relu sigmoid sin softplus square tanh
+
+# node aggregation options
+aggregation_default     = sum
+aggregation_mutate_rate = 0.00
+aggregation_options     = sum product min max mean median maxabs
+
+# node bias options
+bias_init_mean          = 0.05
+bias_init_stdev         = 1.0
+bias_max_value          = 50.0
+bias_min_value          = -50.0
+bias_mutate_power       = 0.2
+bias_mutate_rate        = 0.1
+bias_replace_rate       = 0.1
+
+# genome compatibility options
+compatibility_disjoint_coefficient = 1.0
+compatibility_weight_coefficient   = 0.5
+
+# connection add/remove rates
+conn_add_prob           = 0.1
+conn_delete_prob        = 0.1
+
+# connection enable options
+enabled_default         = True
+enabled_mutate_rate     = 0.05
+
+feed_forward            = False
+initial_connection      = fs_neat_nohidden
+#initial_connection      = unconnected
+#initial_connection     = partial_nodirect 0.4
+
+# node add/remove rates
+node_add_prob           = 0.6
+node_delete_prob        = 0.05
+
+# network parameters
+num_hidden              = 0
+num_inputs              = 17920
+num_outputs             = 7
+
+# node response options
+response_init_mean      = 1.0
+response_init_stdev     = 0.05
+response_max_value      = 30.0
+response_min_value      = -30.0
+response_mutate_power   = 0.1
+response_mutate_rate    = 0.1
+response_replace_rate   = 0.1
+
+# connection weight options
+weight_init_mean        = 0.1
+weight_init_stdev       = 1.0
+weight_max_value        = 30
+weight_min_value        = -30
+weight_mutate_power     = 0.5
+weight_mutate_rate      = 0.1
+weight_replace_rate     = 0.1
+
+[DefaultSpeciesSet]
+compatibility_threshold = 10
+
+[DefaultStagnation]
+species_fitness_func = max
+max_stagnation       = 200
+species_elitism      = 0
+
+[DefaultReproduction]
+elitism            = 3
+survival_threshold = 0.3
+
+
+
+End of config file
+['./last_gen_genomes/1560994547/AquaticRuinZone.Act2.state_1.pkl', './last_gen_genomes/1560994547/CarnivalNightZone.Act1.state_1.pkl', './last_gen_genomes/1560994547/MushroomHillZone.Act2.state_1.pkl', './last_gen_genomes/1560994547/MarbleZone.Act1.state_1.pkl', './last_gen_genomes/1560994547/ScrapBrainZone.Act2.state_1.pkl', './last_gen_genomes/1560994547/DeathEggZone.Act1.state_1.pkl', './last_gen_genomes/1560994547/MysticCaveZone.Act1.state_1.pkl', './last_gen_genomes/1560994547/IcecapZone.Act2.state_1.pkl', './last_gen_genomes/1560994547/OilOceanZone.Act1.state_1.pkl', './last_gen_genomes/1560994547/MetropolisZone.Act1.state_1.pkl', './last_gen_genomes/1560994547/AngelIslandZone.Act1.state_1.pkl', './last_gen_genomes/1560994547/GreenHillZone.Act3.state_1.pkl', './last_gen_genomes/1560994547/MetropolisZone.Act2.state_1.pkl', './last_gen_genomes/1560994547/HydrocityZone.Act2.state_1.pkl', './last_gen_genomes/1560994547/OilOceanZone.Act2.state_1.pkl', './last_gen_genomes/1560994547/DeathEggZone.Act2.state_1.pkl', './last_gen_genomes/1560994547/IcecapZone.Act1.state_1.pkl', './last_gen_genomes/1560994547/MysticCaveZone.Act2.state_1.pkl', './last_gen_genomes/1560994547/LabyrinthZone.Act3.state_1.pkl', './last_gen_genomes/1560994547/MarbleZone.Act2.state_1.pkl', './last_gen_genomes/1560994547/MushroomHillZone.Act1.state_1.pkl', './last_gen_genomes/1560994547/SpringYardZone.Act2.state_1.pkl', './last_gen_genomes/1560994547/AquaticRuinZone.Act1.state_1.pkl', './last_gen_genomes/1560994547/CarnivalNightZone.Act2.state_1.pkl', './last_gen_genomes/1560994547/SandopolisZone.Act2.state_1.pkl', './last_gen_genomes/1560994547/LaunchBaseZone.Act2.state_1.pkl', './last_gen_genomes/1560994547/EmeraldHillZone.Act2.state_1.pkl', './last_gen_genomes/1560994547/MarbleGardenZone.Act1.state_1.pkl', './last_gen_genomes/1560994547/FlyingBatteryZone.Act1.state_1.pkl', './last_gen_genomes/1560994547/ChemicalPlantZone.Act1.state_1.pkl', './last_gen_genomes/1560994547/LabyrinthZone.Act1.state_1.pkl', './last_gen_genomes/1560994547/HillTopZone.Act1.state_1.pkl', './last_gen_genomes/1560994547/StarLightZone.Act1.state_1.pkl', './last_gen_genomes/1560994547/CasinoNightZone.Act1.state_1.pkl', './last_gen_genomes/1560994547/SpringYardZone.Act3.state_1.pkl', './last_gen_genomes/1560994547/StarLightZone.Act2.state_1.pkl', './last_gen_genomes/1560994547/LabyrinthZone.Act2.state_1.pkl', './last_gen_genomes/1560994547/MarbleZone.Act3.state_1.pkl', './last_gen_genomes/1560994547/ChemicalPlantZone.Act2.state_1.pkl', './last_gen_genomes/1560994547/LavaReefZone.Act2.state_1.pkl', './last_gen_genomes/1560994547/HiddenPalaceZone.state_1.pkl', './last_gen_genomes/1560994547/MarbleGardenZone.Act2.state_1.pkl', './last_gen_genomes/1560994547/GreenHillZone.Act1.state_1.pkl', './last_gen_genomes/1560994547/EmeraldHillZone.Act1.state_1.pkl', './last_gen_genomes/1560994547/WingFortressZone.state_1.pkl', './last_gen_genomes/1560994547/LaunchBaseZone.Act1.state_1.pkl', './last_gen_genomes/1560994547/SandopolisZone.Act1.state_1.pkl', './last_gen_genomes/1560994547/MarbleZone.Act3.state_2.pkl', './last_gen_genomes/1560994547/MetropolisZone.Act2.state_2.pkl', './last_gen_genomes/1560994547/StarLightZone.Act1.state_2.pkl', './last_gen_genomes/1560994547/SandopolisZone.Act1.state_2.pkl', './last_gen_genomes/1560994547/HillTopZone.Act1.state_2.pkl', './last_gen_genomes/1560994547/WingFortressZone.state_2.pkl', './last_gen_genomes/1560994547/MysticCaveZone.Act2.state_2.pkl', './last_gen_genomes/1560994547/AquaticRuinZone.Act2.state_2.pkl', './last_gen_genomes/1560994547/LabyrinthZone.Act1.state_2.pkl', './last_gen_genomes/1560994547/MushroomHillZone.Act1.state_2.pkl', './last_gen_genomes/1560994547/OilOceanZone.Act2.state_2.pkl', './last_gen_genomes/1560994547/SpringYardZone.Act3.state_2.pkl', './last_gen_genomes/1560994547/DeathEggZone.Act2.state_2.pkl']
+
+ ****** Running generation 0 ****** 
+
+Gen timestep at time: 2019-07-04 22:45:05.704233
+1 873.0575728416443
+achieved fitness: 873.0575728416443 at timestep 351 time: 2019-07-04 22:45:06.779634
+Saving genome to file ./best_genomes/ScrapBrainZone.Act1.state_1560994547_gen1.pkl
+2 597.4634289741516
+3 0.0
+4 599.5201090574265
+5 609.8034658432007
+6 603.6334474086761
+7 867.9159157276154
+8 842.2074928283691
+9 600.5484409332275
+10 597.4634330272675
+11 0.0
+12 598.4917820692062
+13 0.0
+14 323.92596542835236
+15 309.5292533636093
+16 273.53748393058777
+17 599.5201046466827
+18 608.7751395702362
+19 412.3628956079483
+20 33.93510138988495
+21 874.0859264135361
+achieved fitness: 874.0859264135361 at timestep 23511 time: 2019-07-04 22:46:22.420740
+Saving genome to file ./best_genomes/ScrapBrainZone.Act1.state_1560994547_gen1.pkl
+22 603.6334470510483
+23 343.4643576145172
+24 609.8034658432007
+25 604.6617838144302
+26 0.0
+27 607.7468004226685
+28 1091.0648839473724
+achieved fitness: 1091.0648839473724 at timestep 31770 time: 2019-07-04 22:46:53.208592
+Saving genome to file ./best_genomes/ScrapBrainZone.Act1.state_1560994547_gen1.pkl
+29 591.2934155464172
+30 1091.0648938417435
+achieved fitness: 1091.0648938417435 at timestep 34032 time: 2019-07-04 22:47:02.744942
+Saving genome to file ./best_genomes/ScrapBrainZone.Act1.state_1560994547_gen1.pkl
+31 0.0
+32 0.0
+33 606.7184550762177
+34 589.2367377281189
+35 607.7467994689941
+36 601.576774597168
+37 610.8318005800247
+38 0.0
+39 613.916811466217
+40 0.0
+41 0.0
+42 1259.712054491043
+achieved fitness: 1259.712054491043 at timestep 44142 time: 2019-07-04 22:47:43.313061
+Saving genome to file ./best_genomes/ScrapBrainZone.Act1.state_1560994547_gen1.pkl
+43 865.859223484993
+44 600.548440694809
+45 605.6901339292526
+46 0.0
+47 0.0
+48 0.0
+49 0.0
+50 606.7184550762177
+51 0.0
+52 0.0
+53 613.9168117046356
+54 868.9442384243011
+55 868.9442272186279
+56 0.0
+57 860.7175531387329
+58 862.7742218971252
+59 607.7467994689941
+60 248.85741019248962
+Total timesteps at end of gen: 61761
+Population's average fitness: 471.14945 stdev: 344.65218
+Best fitness: 1259.71205 - size: (28, 41) - species 1 - id 42
+Average adjusted fitness: 0.374
+Population of 57 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    0    57   1259.7    0.374     0
+Total extinctions: 0
+Generation time: 232.713 sec
+
+ ****** Running generation 1 ****** 
+
+Gen timestep at time: 2019-07-04 22:48:58.417743
+42 609.8034675121307
+achieved fitness: 609.8034675121307 at timestep 62079 time: 2019-07-04 22:48:59.600425
+Saving genome to file ./best_genomes/ScrapBrainZone.Act1.state_1560994547_gen2.pkl
+30 602.6051110029221
+28 611.8601386547089
+achieved fitness: 611.8601386547089 at timestep 62685 time: 2019-07-04 22:49:01.688884
+Saving genome to file ./best_genomes/ScrapBrainZone.Act1.state_1560994547_gen2.pkl
+1 613.916811466217
+achieved fitness: 613.916811466217 at timestep 62988 time: 2019-07-04 22:49:02.792229
+Saving genome to file ./best_genomes/ScrapBrainZone.Act1.state_1560994547_gen2.pkl
+2 1091.0648938417435
+achieved fitness: 1091.0648938417435 at timestep 64941 time: 2019-07-04 22:49:09.042198
+Saving genome to file ./best_genomes/ScrapBrainZone.Act1.state_1560994547_gen2.pkl
+3 1091.0648839473724
+4 1008.7979757785797
+5 868.9442298412323
+6 868.9442272186279
+7 868.944251537323
+8 597.4634411334991
+9 605.6901202201843
+10 866.8875705003738
+11 0.0
+12 0.0
+13 0.0
+14 475.09139609336853
+15 597.4634337425232
+16 0.0
+17 607.7467930316925
+18 613.916811466217
+19 860.7175536155701
+20 865.859223484993
+21 865.859223484993
+22 1091.06489610672
+achieved fitness: 1091.06489610672 at timestep 82485 time: 2019-07-04 22:49:59.747157
+Saving genome to file ./best_genomes/ScrapBrainZone.Act1.state_1560994547_gen2.pkl
+23 613.916811466217
+24 872.0292364358902
+25 604.6617826223373
+26 613.916811466217
+27 1259.712067246437
+achieved fitness: 1259.712067246437 at timestep 84795 time: 2019-07-04 22:50:06.183361
+Saving genome to file ./best_genomes/ScrapBrainZone.Act1.state_1560994547_gen2.pkl
+29 611.8601386547089
+31 613.916811466217
+32 1091.0648938417435
+33 1005.7129666805267
+34 233.43235957622528
+35 0.0
+36 860.7175531387329
+37 842.2074928283691
+38 871.0009137392044
+39 1026.2796938419342
+40 1765.6535547971725
+achieved fitness: 1765.6535547971725 at timestep 96027 time: 2019-07-04 22:50:38.276866
+Saving genome to file ./best_genomes/ScrapBrainZone.Act1.state_1560994547_gen2.pkl
+41 868.9442272186279
+43 930.644421339035
+44 0.0
+45 610.8318022489548
+46 602.6051141023636
+47 613.916811466217
+48 205.66727948188782
+49 613.916811466217
+50 0.0
+51 1259.712054491043
+52 0.0
+53 603.6334457397461
+54 896.7093209028244
+55 1259.712054491043
+56 877.1709218025208
+57 613.916811466217
+Total timesteps at end of gen: 110571
+Population's average fitness: 686.44159 stdev: 375.15686
+Best fitness: 1765.65355 - size: (20, 27) - species 1 - id 40
+Average adjusted fitness: 0.389
+Population of 60 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    1    60   1765.7    0.389     0
+Total extinctions: 0
+Generation time: 141.489 sec (187.101 average)
+
+ ****** Running generation 2 ****** 
+
+Gen timestep at time: 2019-07-04 22:51:19.906998
+40 1765.6535547971725
+achieved fitness: 1765.6535547971725 at timestep 113211 time: 2019-07-04 22:51:27.434394
+Saving genome to file ./best_genomes/ScrapBrainZone.Act1.state_1560994547_gen3.pkl
+27 1259.712067246437
+51 1259.712054491043
+58 1044.7897604703903
+59 878.1992548704147
+60 517.2532057762146
+61 600.5484398603439
+62 878.1992548704147
+63 1259.712054491043
+64 1091.06489610672
+65 504.9131727218628
+66 860.7175379991531
+67 1758.455190896988
+68 1289.5338127613068
+69 0.0
+70 613.916811466217
+71 0.0
+72 878.1992548704147
+73 1091.0648938417435
+74 1091.0648938417435
+75 1273.0804405212402
+76 1091.0648839473724
+77 1005.7129666805267
+78 1091.0648889541626
+79 613.916811466217
+80 1011.882994055748
+81 1259.712054491043
+82 1259.712054491043
+83 1189.7851853370667
+84 1091.0649015903473
+85 1008.7979776859283
+86 602.6051123142242
+87 0.0
+88 0.0
+89 0.0
+90 609.8034658432007
+91 1091.0648938417435
+92 604.6617864370346
+93 613.916811466217
+94 1101.348263144493
+95 1009.8263127803802
+96 599.5201034545898
+97 875.1142456531525
+98 607.7467947006226
+99 1259.712054491043
+100 899.7943278551102
+101 896.7093209028244
+102 1091.064884185791
+103 1013.9396574497223
+104 1091.0648839473724
+105 607.7467930316925
+106 613.916811466217
+107 1005.7129666805267
+108 1189.7851855754852
+109 602.6051150560379
+110 0.0
+111 1091.06489610672
+112 1091.06489610672
+113 1091.06489610672
+114 1004.6846301555634
+Total timesteps at end of gen: 175350
+Population's average fitness: 880.06741 stdev: 397.33803
+Best fitness: 1765.65355 - size: (20, 27) - species 1 - id 40
+Average adjusted fitness: 0.498
+Population of 60 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    2    60   1765.7    0.498     1
+Total extinctions: 0
+Generation time: 187.802 sec (187.335 average)
+
+ ****** Running generation 3 ****** 
+
+Gen timestep at time: 2019-07-04 22:54:27.708689
+40 1765.6535547971725
+achieved fitness: 1765.6535547971725 at timestep 177990 time: 2019-07-04 22:54:35.589530
+Saving genome to file ./best_genomes/ScrapBrainZone.Act1.state_1560994547_gen4.pkl
+67 1758.455190896988
+68 1289.5338127613068
+115 0.0
+116 873.0575792789459
+117 1765.6535753011703
+achieved fitness: 1765.6535753011703 at timestep 186222 time: 2019-07-04 22:54:59.489722
+Saving genome to file ./best_genomes/ScrapBrainZone.Act1.state_1560994547_gen4.pkl
+118 1124.999999165535
+119 1091.0648938417435
+120 601.5767810344696
+121 878.1992548704147
+122 158.36380290985107
+123 604.6617826223373
+124 1008.7979753017426
+125 1008.7979753017426
+126 8.226691246032715
+127 1754.3418452739716
+128 0.0
+129 0.0
+130 0.0
+131 0.0
+132 1754.3418452739716
+133 0.0
+134 868.9442322254181
+135 603.6334505081177
+136 0.0
+137 873.0575768947601
+138 1288.5054733753204
+139 1091.06489610672
+140 1189.7851780653
+141 0.0
+142 1757.4268616437912
+143 609.8034658432007
+144 1091.0648938417435
+145 613.916811466217
+146 873.05757188797
+147 0.0
+148 594.3784211874008
+149 601.5767942667007
+150 0.0
+151 878.1992548704147
+152 873.0575768947601
+153 865.859228849411
+154 0.0
+155 227.2623438835144
+156 865.8592215776443
+157 812.385748386383
+158 0.0
+159 1091.064900279045
+160 896.7093209028244
+161 1091.0648938417435
+162 605.6901242733002
+163 1024.223035812378
+164 1765.65354514122
+165 0.0
+166 1258.6837184429169
+167 0.0
+168 110.03199350833893
+169 1010.8546478748322
+170 1015.996330499649
+171 1259.712054491043
+Total timesteps at end of gen: 246771
+Population's average fitness: 752.57084 stdev: 567.07684
+Best fitness: 1765.65358 - size: (19, 23) - species 1 - id 117
+Average adjusted fitness: 0.426
+Traceback (most recent call last):
+  File "retro-test.py", line 205, in <module>
+    winner = p.run(eval_genomes, max_generations)
+  File "/anaconda3/lib/python3.6/site-packages/neat/population.py", line 112, in run
+    self.config.pop_size, self.generation)
+  File "/anaconda3/lib/python3.6/site-packages/neat/reproduction.py", line 184, in reproduce
+    child.mutate(config.genome_config)
+  File "/anaconda3/lib/python3.6/site-packages/neat/genome.py", line 286, in mutate
+    self.mutate_add_node(config)
+  File "/anaconda3/lib/python3.6/site-packages/neat/genome.py", line 313, in mutate_add_node
+    new_node_id = config.get_new_node_key(self.nodes)
+  File "/anaconda3/lib/python3.6/site-packages/neat/genome.py", line 116, in get_new_node_key
+    assert new_id not in node_dict
+AssertionError

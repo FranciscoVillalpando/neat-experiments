@@ -1,0 +1,595 @@
+Starting python script!
+Using env(SonicAndKnuckles3-Genesis, FlyingBatteryZone.Act2.state)
+Observation space shape:(224, 320, 3)
+Start: 2019-07-04 23:44:46.361328
+Using the following config file: config_test.txt
+[NEAT]
+fitness_criterion     = max
+fitness_threshold     = 9000
+pop_size              = 60
+reset_on_extinction   = False
+
+[DefaultGenome]
+# node activation options
+activation_default      = sigmoid
+activation_mutate_rate  = 0.00
+activation_options      = sigmoid 
+#abs clamped cube exp gauss hat identity inv log relu sigmoid sin softplus square tanh
+
+# node aggregation options
+aggregation_default     = sum
+aggregation_mutate_rate = 0.00
+aggregation_options     = sum product min max mean median maxabs
+
+# node bias options
+bias_init_mean          = 0.05
+bias_init_stdev         = 1.0
+bias_max_value          = 50.0
+bias_min_value          = -50.0
+bias_mutate_power       = 0.2
+bias_mutate_rate        = 0.1
+bias_replace_rate       = 0.1
+
+# genome compatibility options
+compatibility_disjoint_coefficient = 1.0
+compatibility_weight_coefficient   = 0.5
+
+# connection add/remove rates
+conn_add_prob           = 0.1
+conn_delete_prob        = 0.1
+
+# connection enable options
+enabled_default         = True
+enabled_mutate_rate     = 0.05
+
+feed_forward            = False
+initial_connection      = fs_neat_nohidden
+#initial_connection      = unconnected
+#initial_connection     = partial_nodirect 0.4
+
+# node add/remove rates
+node_add_prob           = 0.6
+node_delete_prob        = 0.05
+
+# network parameters
+num_hidden              = 0
+num_inputs              = 17920
+num_outputs             = 7
+
+# node response options
+response_init_mean      = 1.0
+response_init_stdev     = 0.05
+response_max_value      = 30.0
+response_min_value      = -30.0
+response_mutate_power   = 0.1
+response_mutate_rate    = 0.1
+response_replace_rate   = 0.1
+
+# connection weight options
+weight_init_mean        = 0.1
+weight_init_stdev       = 1.0
+weight_max_value        = 30
+weight_min_value        = -30
+weight_mutate_power     = 0.5
+weight_mutate_rate      = 0.1
+weight_replace_rate     = 0.1
+
+[DefaultSpeciesSet]
+compatibility_threshold = 10
+
+[DefaultStagnation]
+species_fitness_func = max
+max_stagnation       = 200
+species_elitism      = 0
+
+[DefaultReproduction]
+elitism            = 3
+survival_threshold = 0.3
+
+
+
+End of config file
+['./last_gen_genomes/1560994547/AquaticRuinZone.Act2.state_1.pkl', './last_gen_genomes/1560994547/CarnivalNightZone.Act1.state_1.pkl', './last_gen_genomes/1560994547/MushroomHillZone.Act2.state_1.pkl', './last_gen_genomes/1560994547/MarbleZone.Act1.state_1.pkl', './last_gen_genomes/1560994547/ScrapBrainZone.Act2.state_1.pkl', './last_gen_genomes/1560994547/DeathEggZone.Act1.state_1.pkl', './last_gen_genomes/1560994547/MysticCaveZone.Act1.state_1.pkl', './last_gen_genomes/1560994547/IcecapZone.Act2.state_1.pkl', './last_gen_genomes/1560994547/OilOceanZone.Act1.state_1.pkl', './last_gen_genomes/1560994547/MetropolisZone.Act1.state_1.pkl', './last_gen_genomes/1560994547/AngelIslandZone.Act1.state_1.pkl', './last_gen_genomes/1560994547/GreenHillZone.Act3.state_1.pkl', './last_gen_genomes/1560994547/MetropolisZone.Act2.state_1.pkl', './last_gen_genomes/1560994547/HydrocityZone.Act2.state_1.pkl', './last_gen_genomes/1560994547/OilOceanZone.Act2.state_1.pkl', './last_gen_genomes/1560994547/DeathEggZone.Act2.state_1.pkl', './last_gen_genomes/1560994547/IcecapZone.Act1.state_1.pkl', './last_gen_genomes/1560994547/MysticCaveZone.Act2.state_1.pkl', './last_gen_genomes/1560994547/LabyrinthZone.Act3.state_1.pkl', './last_gen_genomes/1560994547/MarbleZone.Act2.state_1.pkl', './last_gen_genomes/1560994547/MushroomHillZone.Act1.state_1.pkl', './last_gen_genomes/1560994547/SpringYardZone.Act2.state_1.pkl', './last_gen_genomes/1560994547/AquaticRuinZone.Act1.state_1.pkl', './last_gen_genomes/1560994547/CarnivalNightZone.Act2.state_1.pkl', './last_gen_genomes/1560994547/SandopolisZone.Act2.state_1.pkl', './last_gen_genomes/1560994547/LaunchBaseZone.Act2.state_1.pkl', './last_gen_genomes/1560994547/EmeraldHillZone.Act2.state_1.pkl', './last_gen_genomes/1560994547/MarbleGardenZone.Act1.state_1.pkl', './last_gen_genomes/1560994547/FlyingBatteryZone.Act1.state_1.pkl', './last_gen_genomes/1560994547/ChemicalPlantZone.Act1.state_1.pkl', './last_gen_genomes/1560994547/LabyrinthZone.Act1.state_1.pkl', './last_gen_genomes/1560994547/HillTopZone.Act1.state_1.pkl', './last_gen_genomes/1560994547/StarLightZone.Act1.state_1.pkl', './last_gen_genomes/1560994547/CasinoNightZone.Act1.state_1.pkl', './last_gen_genomes/1560994547/SpringYardZone.Act3.state_1.pkl', './last_gen_genomes/1560994547/StarLightZone.Act2.state_1.pkl', './last_gen_genomes/1560994547/LabyrinthZone.Act2.state_1.pkl', './last_gen_genomes/1560994547/MarbleZone.Act3.state_1.pkl', './last_gen_genomes/1560994547/ChemicalPlantZone.Act2.state_1.pkl', './last_gen_genomes/1560994547/LavaReefZone.Act2.state_1.pkl', './last_gen_genomes/1560994547/HiddenPalaceZone.state_1.pkl', './last_gen_genomes/1560994547/MarbleGardenZone.Act2.state_1.pkl', './last_gen_genomes/1560994547/GreenHillZone.Act1.state_1.pkl', './last_gen_genomes/1560994547/EmeraldHillZone.Act1.state_1.pkl', './last_gen_genomes/1560994547/WingFortressZone.state_1.pkl', './last_gen_genomes/1560994547/LaunchBaseZone.Act1.state_1.pkl', './last_gen_genomes/1560994547/SandopolisZone.Act1.state_1.pkl', './last_gen_genomes/1560994547/SpringYardZone.Act3.state_2.pkl', './last_gen_genomes/1560994547/StarLightZone.Act1.state_2.pkl', './last_gen_genomes/1560994547/MysticCaveZone.Act1.state_2.pkl', './last_gen_genomes/1560994547/MetropolisZone.Act1.state_2.pkl', './last_gen_genomes/1560994547/EmeraldHillZone.Act2.state_2.pkl', './last_gen_genomes/1560994547/LaunchBaseZone.Act1.state_2.pkl', './last_gen_genomes/1560994547/MetropolisZone.Act2.state_2.pkl', './last_gen_genomes/1560994547/LabyrinthZone.Act3.state_2.pkl', './last_gen_genomes/1560994547/OilOceanZone.Act1.state_2.pkl', './last_gen_genomes/1560994547/HillTopZone.Act1.state_2.pkl', './last_gen_genomes/1560994547/AquaticRuinZone.Act1.state_2.pkl', './last_gen_genomes/1560994547/MarbleZone.Act2.state_2.pkl', './last_gen_genomes/1560994547/LaunchBaseZone.Act2.state_2.pkl']
+
+ ****** Running generation 0 ****** 
+
+Gen timestep at time: 2019-07-04 23:44:46.409607
+1 869.6413829922676
+achieved fitness: 869.6413829922676 at timestep 1824 time: 2019-07-04 23:44:54.576635
+Saving genome to file ./best_genomes/FlyingBatteryZone.Act2.state_1560994547_gen1.pkl
+2 869.6413867473602
+achieved fitness: 869.6413867473602 at timestep 3630 time: 2019-07-04 23:45:01.756034
+Saving genome to file ./best_genomes/FlyingBatteryZone.Act2.state_1560994547_gen1.pkl
+3 0.0
+4 780.5528309345245
+5 869.6413829922676
+6 662.6818078756332
+7 765.4763017892838
+8 740.8056131601334
+9 794.944055557251
+10 611.9698600769043
+11 781.9234197735786
+12 786.0351963043213
+13 665.4230005741119
+14 0.0
+15 531.1048457622528
+16 748.343886911869
+17 1408.9698018431664
+achieved fitness: 1408.9698018431664 at timestep 46437 time: 2019-07-04 23:47:32.037488
+Saving genome to file ./best_genomes/FlyingBatteryZone.Act2.state_1560994547_gen1.pkl
+18 995.0506544113159
+19 74.01203227043152
+20 762.7351088523865
+21 796.9999451041222
+22 0.0
+23 736.6938321590424
+24 869.6413829922676
+25 761.364523589611
+26 0.0
+27 1417.8786615729332
+achieved fitness: 1417.8786615729332 at timestep 98937 time: 2019-07-04 23:50:20.662176
+Saving genome to file ./best_genomes/FlyingBatteryZone.Act2.state_1560994547_gen1.pkl
+28 758.6233356595039
+29 869.6413869857788
+30 869.6413877010345
+31 339.9071111679077
+32 371.43075263500214
+33 869.6413851976395
+34 869.6413829922676
+35 869.6413829922676
+36 869.6413871049881
+37 0.0
+38 698.317230463028
+39 869.6413829922676
+40 622.9346120357513
+41 759.3086345791817
+42 742.176206767559
+43 746.9732908010483
+44 869.6413829922676
+45 869.6413829922676
+46 0.0
+47 869.6413828134537
+48 869.6413829922676
+49 869.6413851976395
+50 759.9939278960228
+51 773.699864923954
+52 492.7282492518425
+53 0.0
+54 749.0291835665703
+55 1042.33613717556
+56 699.0025283694267
+57 371.43075263500214
+58 776.441054224968
+59 505.0635938644409
+60 0.0
+Total timesteps at end of gen: 167166
+Population's average fitness: 665.77707 stdev: 328.63878
+Best fitness: 1417.87866 - size: (12, 14) - species 1 - id 27
+Average adjusted fitness: 0.470
+Population of 57 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    0    57   1417.9    0.470     0
+Total extinctions: 0
+Generation time: 532.101 sec
+
+ ****** Running generation 1 ****** 
+
+Gen timestep at time: 2019-07-04 23:53:38.510499
+27 869.6413829922676
+achieved fitness: 869.6413829922676 at timestep 168990 time: 2019-07-04 23:53:44.316944
+Saving genome to file ./best_genomes/FlyingBatteryZone.Act2.state_1560994547_gen2.pkl
+17 869.6413829922676
+55 869.6413877010345
+achieved fitness: 869.6413877010345 at timestep 172617 time: 2019-07-04 23:53:55.730584
+Saving genome to file ./best_genomes/FlyingBatteryZone.Act2.state_1560994547_gen2.pkl
+1 1417.8786575198174
+achieved fitness: 1417.8786575198174 at timestep 185694 time: 2019-07-04 23:54:32.390962
+Saving genome to file ./best_genomes/FlyingBatteryZone.Act2.state_1560994547_gen2.pkl
+2 707.9113910198212
+3 1417.8786575198174
+4 995.7359496355057
+5 869.6413851976395
+6 0.0
+7 772.3292660713196
+8 869.6413877010345
+9 869.6413829922676
+10 995.0506544113159
+11 989.568278670311
+12 869.6413867473602
+13 869.6413851976395
+14 869.6413849592209
+15 768.2174831032753
+16 869.6413829922676
+18 0.0
+19 869.6413843035698
+20 869.6413843035698
+21 1047.1331936120987
+22 674.3318527936935
+23 1417.878657758236
+achieved fitness: 1417.878657758236 at timestep 243129 time: 2019-07-04 23:57:49.842078
+Saving genome to file ./best_genomes/FlyingBatteryZone.Act2.state_1560994547_gen2.pkl
+24 869.6413829922676
+25 1044.3920040726662
+26 1417.8786615729332
+achieved fitness: 1417.8786615729332 at timestep 247929 time: 2019-07-04 23:58:04.275527
+Saving genome to file ./best_genomes/FlyingBatteryZone.Act2.state_1560994547_gen2.pkl
+28 995.0506544113159
+29 774.3851454257965
+30 869.6413848996162
+31 869.6413829922676
+32 869.6413829922676
+33 625.6757925152779
+34 995.0506544113159
+35 718.1908318400383
+36 869.641384601593
+37 869.641383588314
+38 1032.7419710755348
+39 869.6413871049881
+40 0.0
+41 1047.1331936120987
+42 744.9174119234085
+43 869.6413877010345
+44 869.6413829922676
+45 1042.33613717556
+46 869.641384601593
+47 869.6413851976395
+48 869.6413829922676
+49 869.6413884162903
+50 869.6413867473602
+51 869.6413829922676
+52 0.0
+53 1042.33613717556
+54 869.6413829922676
+56 869.6413829922676
+57 869.6413865089417
+Total timesteps at end of gen: 305430
+Population's average fitness: 855.67095 stdev: 286.06953
+Best fitness: 1417.87866 - size: (12, 15) - species 1 - id 26
+Average adjusted fitness: 0.603
+Population of 60 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    1    60   1417.9    0.603     1
+Total extinctions: 0
+Generation time: 467.671 sec (499.886 average)
+
+ ****** Running generation 2 ****** 
+
+Gen timestep at time: 2019-07-05 00:01:26.181945
+26 1417.8786615729332
+achieved fitness: 1417.8786615729332 at timestep 306480 time: 2019-07-05 00:01:29.203991
+Saving genome to file ./best_genomes/FlyingBatteryZone.Act2.state_1560994547_gen3.pkl
+23 1417.878657758236
+1 1417.8786575198174
+58 1417.8786615729332
+59 1417.8786615729332
+60 869.6413836479187
+61 869.6413829922676
+62 1023.8331124782562
+63 684.6113000512123
+64 63.7325833439827
+65 1417.878659427166
+66 869.6413816213608
+67 869.641383588314
+68 0.0
+69 869.6413857340813
+70 995.0506544113159
+71 1417.8786575198174
+72 1007.385991692543
+73 989.568278670311
+74 0.0
+75 869.6413829922676
+76 701.0584198832512
+77 869.6413883566856
+78 1007.3859915733337
+79 987.512393951416
+80 869.6413829922676
+81 869.6413862705231
+82 869.6413829922676
+83 0.0
+84 869.641383588314
+85 701.0584198832512
+86 869.6413884162903
+87 1417.8786615729332
+88 1417.8786584734917
+89 869.6413884162903
+90 869.6413838863373
+91 869.6413869857788
+92 995.0506544113159
+93 1417.8786615729332
+94 869.641383588314
+95 701.0584198832512
+96 1408.9698086380959
+97 1023.833113193512
+98 869.6413869857788
+99 1038.9096440076828
+100 1042.33613717556
+101 1031.3713834881783
+102 869.6413877010345
+103 869.6413838863373
+104 869.6413869857788
+105 1047.1331936120987
+106 1047.1331936120987
+107 1417.8786581754684
+108 1408.9698018431664
+109 869.6413858532906
+110 1023.8331132531166
+111 1024.5184179544449
+112 714.0790549516678
+113 817.5588369965553
+114 999.8477277159691
+Total timesteps at end of gen: 595041
+Population's average fitness: 955.74890 stdev: 338.26504
+Best fitness: 1417.87866 - size: (12, 15) - species 1 - id 26
+Average adjusted fitness: 0.674
+Population of 60 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    2    60   1417.9    0.674     2
+Total extinctions: 0
+Generation time: 1179.288 sec (726.353 average)
+
+ ****** Running generation 3 ****** 
+
+Gen timestep at time: 2019-07-05 00:21:05.469573
+26 1417.8786615729332
+achieved fitness: 1417.8786615729332 at timestep 596091 time: 2019-07-05 00:21:08.257043
+Saving genome to file ./best_genomes/FlyingBatteryZone.Act2.state_1560994547_gen4.pkl
+58 1417.8786615729332
+59 1417.8786615729332
+115 1417.8786590695381
+116 1417.8786615729332
+117 662.6818291544914
+118 760.6792259216309
+119 81.55029481649399
+120 0.0
+121 0.0
+122 1039.594939649105
+123 1032.7419753074646
+124 869.6413829922676
+125 869.6413829922676
+126 1414.4521741867065
+127 869.641383588314
+128 869.641383588314
+129 1417.8786615729332
+130 714.7643596529961
+131 0.0
+132 869.641384601593
+133 1408.969805598259
+134 869.6413829922676
+135 869.641383588314
+136 869.6413829922676
+137 1417.8786615729332
+138 869.641383588314
+139 1023.8331116437912
+140 1417.8786615729332
+141 869.6413831114769
+142 1417.8786615729332
+143 1408.9698018431664
+144 869.641383588314
+145 0.0
+146 869.641384601593
+147 1417.8786615729332
+148 869.6413829922676
+149 869.6413857340813
+150 0.0
+151 869.641383588314
+152 1023.833113193512
+153 1417.8786615729332
+154 869.6413888931274
+155 1417.8786615729332
+156 869.641383588314
+157 1417.8786613941193
+158 1417.8786615729332
+159 690.0936696529388
+160 7.5382625460624695
+161 1417.8786623477936
+achieved fitness: 1417.8786623477936 at timestep 758334 time: 2019-07-05 00:27:58.265169
+Saving genome to file ./best_genomes/FlyingBatteryZone.Act2.state_1560994547_gen4.pkl
+162 869.6413829922676
+163 869.6413834691048
+164 1417.8786615729332
+165 1417.8786615729332
+166 1417.8786615729332
+167 0.0
+168 869.6413829922676
+169 1035.4831659197807
+170 1023.833113193512
+171 0.0
+Total timesteps at end of gen: 790431
+Population's average fitness: 937.39437 stdev: 464.34149
+Best fitness: 1417.87866 - size: (18, 26) - species 1 - id 161
+Average adjusted fitness: 0.661
+Population of 60 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    3    60   1417.9    0.661     0
+Total extinctions: 0
+Generation time: 482.702 sec (665.440 average)
+
+ ****** Running generation 4 ****** 
+
+Gen timestep at time: 2019-07-05 00:29:08.171244
+161 1417.8786623477936
+achieved fitness: 1417.8786623477936 at timestep 791451 time: 2019-07-05 00:29:10.407359
+Saving genome to file ./best_genomes/FlyingBatteryZone.Act2.state_1560994547_gen5.pkl
+129 1417.8786615729332
+137 1417.8786615729332
+172 0.0
+173 1001.9036195278168
+174 869.6413881778717
+175 0.0
+176 869.6413829922676
+177 869.641383588314
+178 0.0
+179 869.641383588314
+180 1417.8786615729332
+181 1417.8786615729332
+182 1417.8786615729332
+183 0.0
+184 714.7643596529961
+185 1417.8786615729332
+186 869.6413881778717
+187 1417.8786615729332
+188 5.482372760772705
+189 869.641383588314
+190 742.1762082576752
+191 0.0
+192 1417.8786615729332
+193 1417.8786615729332
+194 869.6413829922676
+195 0.0
+196 1417.8786615729332
+197 869.641383588314
+198 1417.8786615729332
+199 869.641383588314
+200 742.1762082576752
+201 1417.8786615729332
+202 1417.8786615729332
+203 869.641383588314
+204 1417.8786615729332
+205 1417.8786615729332
+206 869.641383588314
+207 1417.8786615729332
+208 869.6413829922676
+209 1417.8786615729332
+210 1417.8786615729332
+211 1417.8786615729332
+212 1417.878661096096
+213 1417.8786615729332
+214 1417.8786615729332
+215 1030.0007899403572
+216 869.6413829922676
+217 869.6413829922676
+218 1417.8786623477936
+219 1417.8786615729332
+220 1044.3920040726662
+221 709.9672765731812
+222 1417.8786623477936
+223 0.0
+224 0.0
+225 1417.878661096096
+226 1417.8786615729332
+227 869.6413829922676
+228 869.6413829922676
+Total timesteps at end of gen: 877212
+Population's average fitness: 993.42879 stdev: 490.73244
+Best fitness: 1417.87866 - size: (18, 26) - species 1 - id 161
+Average adjusted fitness: 0.701
+Population of 60 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    4    60   1417.9    0.701     1
+Total extinctions: 0
+Generation time: 198.979 sec (572.148 average)
+
+ ****** Running generation 5 ****** 
+
+Gen timestep at time: 2019-07-05 00:32:27.150727
+161 1417.8786623477936
+achieved fitness: 1417.8786623477936 at timestep 878232 time: 2019-07-05 00:32:29.501178
+Saving genome to file ./best_genomes/FlyingBatteryZone.Act2.state_1560994547_gen6.pkl
+218 1417.8786623477936
+222 1417.8786623477936
+229 1417.8786615729332
+230 869.6413829922676
+231 1417.8786615729332
+232 1417.8786623477936
+233 12.335338711738586
+234 1408.96980625391
+235 1417.8786615729332
+236 1417.8786623477936
+237 1417.8786615729332
+238 869.641383588314
+239 12.335338711738586
+240 1417.878661096096
+241 869.6413829922676
+242 722.9879124164581
+243 1417.8786615729332
+244 1417.8786615729332
+245 869.641383588314
+246 1417.8786615729332
+247 1417.8786623477936
+248 996.4212650060654
+249 1417.8786615729332
+250 1417.8786615729332
+251 1417.8786623477936
+252 1417.8786615729332
+253 1417.8786623477936
+254 0.0
+255 0.0
+256 709.9672765731812
+257 1417.8786623477936
+258 869.6413829922676
+259 1417.8786615729332
+260 0.0
+261 1417.8786623477936
+262 869.6413829922676
+263 1417.8786623477936
+264 1417.8786615729332
+265 1044.3920040726662
+266 1408.96980625391
+267 1417.8786615729332
+268 1417.8786615729332
+269 1417.8786623477936
+270 1417.8786623477936
+271 1417.8786623477936
+272 1417.8786615729332
+273 1417.8786615729332
+274 869.6413848996162
+275 1417.8786623477936
+276 1417.8786623477936
+277 1417.8786615729332
+278 1417.8786615729332
+279 1417.8786615729332
+280 1417.8786623477936
+281 1417.8786615729332
+282 0.0
+283 869.641383588314
+284 869.6413829922676
+285 1417.8786615729332
+Total timesteps at end of gen: 963687
+Population's average fitness: 1157.34032 stdev: 445.83584
+Best fitness: 1417.87866 - size: (18, 26) - species 1 - id 161
+Average adjusted fitness: 0.816
+Population of 60 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    5    60   1417.9    0.816     2
+Total extinctions: 0
+Generation time: 201.756 sec (510.416 average)
+
+ ****** Running generation 6 ****** 
+
+Gen timestep at time: 2019-07-05 00:35:48.906985
+257 1417.8786623477936
+achieved fitness: 1417.8786623477936 at timestep 964707 time: 2019-07-05 00:35:51.261045
+Saving genome to file ./best_genomes/FlyingBatteryZone.Act2.state_1560994547_gen7.pkl
+261 1417.8786623477936
+263 1417.8786623477936
+286 996.4212430715561
+287 5.482372760772705
+288 869.6413829922676
+289 1417.8786623477936
+290 1417.8786623477936
+291 1417.8786623477936
+292 869.6413829922676
+293 0.0
+294 1417.8786623477936
+295 996.4212430715561
+296 1044.3920040726662
+297 1417.8786623477936
+298 1417.8786623477936
+299 1417.8786623477936
+300 1417.8786623477936
+301 1417.8786623477936
+302 1044.3920040726662
+303 1417.8786623477936
+304 1044.3920040726662
+305 1417.8786623477936
+306 1417.8786623477936
+307 1417.8786623477936
+308 0.0
+309 1417.8786623477936
+Finished timestepMax at time: 2019-07-05 00:37:12.929778
