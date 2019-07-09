@@ -25,7 +25,7 @@ parseMap = {
     } 
 }
 
-def getStatsDict(fileNameList, runsFirst = True):
+def getStatsDict(fileNameList, runsFirst = True, parse_map = parseMap):
     '''
         Extracts stats from multiple files
 
@@ -59,14 +59,14 @@ def getStatsDict(fileNameList, runsFirst = True):
 
         with open(statFileName, 'r') as statFile:
             for line in statFile:
-                for keyString in parseMap:
-                    if parseMap[keyString]['searchString'] in line:   
-                        parser = parseMap[keyString]['parser']
+                for keyString in parse_map:
+                    if parse_map[keyString]['searchString'] in line:   
+                        parser = parse_map[keyString]['parser']
                         parsedData = parser.parse(line)
 
                         # Use failback parser if something goes wrong
                         if parsedData == None:
-                            parser = parseMap[keyString]['alt_parser']
+                            parser = parse_map[keyString]['alt_parser']
                             parsedData = parser.parse(line)
                     
                         clean_name = statFileName.split("/")[-1]
@@ -78,14 +78,7 @@ def getStatsDict(fileNameList, runsFirst = True):
                                 statsDict[clean_name][statName].append(statValue)
                             else:
                                 statsDict[statName][clean_name].append(statValue)
-
-                        
-
     return statsDict
-    # print(statsDict['avg_fitness']['./run2.txt'])
-    # print(statsDict['best_genome_fitness']['./run5.txt'])
-    # print(statsDict['gen_time']['./run4.txt'])
-    # print(statsDict['gen_time']['./run4.txt'][10])
 
 def collapseByRun(fileNameList):
     ''' Returns a map collapsedStats[stat][aggregation][gen]
@@ -148,7 +141,7 @@ def generateScoreTable(filename, fileNameList):
     ws = wb.add_sheet("Scores")
 
     stateDict = defaultdict(lambda: defaultdict(float))
-    parser = compile("{:d}.txt")
+    parser = compile("{}.txt")
     # Generate state dict:
     #   dict ["state"][randRun]
     # note that since we dont care the order of the runs it is random in the list
@@ -158,14 +151,13 @@ def generateScoreTable(filename, fileNameList):
     for logName in statsDict['best_genome_fitness']:
 
         state = logName.split("_")[0]
-        run = parser.parse(logName.split("_")[2])[0]
+        run = parser.parse(logName.split("_")[-1])[0]
         print(state,run)
         stateDict[state][run]  =  max(statsDict['best_genome_fitness'][logName])
 
     print(stateDict)
     # Write XLS based on the contents of the stateDict
-    ws.write(0, 0, "State")
-    #ws.write(0, 1, "Best fitness")
+    ws.write(0, 0, "State/Run")
     # Get run names
     run_list = []
     for idx, run_id in enumerate((list(stateDict.values())[0])):
@@ -183,6 +175,84 @@ def generateScoreTable(filename, fileNameList):
     wb.save(filename)
     print("saved xls")
 
+def generateBruteScoreTable(filename, fileNameList):
+    ''' Creates a table of state score vs run in a XLS:
+                r1  r2  r3
+        State1   X   X   X
+        State2   X   X   X
+
+        This function works by reading fitness_achieved messages instead of end of gen messages
+    '''
+
+    # Use reduced map for faster parsing
+    trimmed_map = {
+        "fitness_achieved": {
+            'searchString':'achieved fitness',
+            "parser": compile("achieved fitness: {fitness:f} at timestep {timestep:d} time: {}")
+        }
+    }
+
+    statsDict = getStatsDict(fileNameList, False, trimmed_map)
+     
+    #the code for creating the workbook and worksheets
+    wb= xlwt.Workbook()
+    ws = wb.add_sheet("Scores")
+
+    stateDict = defaultdict(lambda: defaultdict(float))
+    parser = compile("{}.txt")
+    # Generate state dict:
+    #   dict ["state"][randRun]
+    # note that since we dont care the order of the runs it is random in the list
+    # i.e. dict["state"][0] does not correspond to the first run
+    # ex:
+    #   dict["SpringYardZone.Act1.state"][0-4] = someScore
+    print(statsDict)
+    for logName in statsDict['fitness']:
+
+        state = logName.split("_")[0]
+        run = parser.parse(logName.split("_")[-1])[0]
+        print(state,run)
+        stateDict[state][run]  =  max(statsDict['fitness'][logName])
+
+    print(stateDict)
+    # Write XLS based on the contents of the stateDict
+    ws.write(0, 0, "State/Run")
+    # Get run names
+    run_list = []
+    for idx, run_id in enumerate((list(stateDict.values())[0])):
+        run_list.append(run_id)
+        ws.write(0, idx+1, run_id)   
+
+    row = 1
+    for state in stateDict :
+        ws.write(row, 0, state)
+        for col, run_id in enumerate(run_list):
+            ws.write(row, col+1, stateDict[state][run_id])
+
+        row += 1
+
+    wb.save(filename)
+    print("saved xls")
+
+def generateLearnCurveByTimestep(filename, fileNameList):
+    '''
+    Generate learning curve vs timesteps 
+    gets a list containing (timestep,score) tuples
+    '''
+
+    # Use reduced map for faster parsing
+    trimmed_map = {
+        "gen_end_timesteps": {
+            'searchString':'Total timesteps',
+            "parser": compile("Total timesteps at end of gen: {gen_time:d}")
+        }  
+    }
+
+    print(trimmed_map)
+
+    stats_dict = getStatsDict(fileNameList, runsFirst = True, parse_map=trimmed_map)
+    print(stats_dict)
+
 if __name__ == "__main__":
 
     fileNameList = []
@@ -193,6 +263,8 @@ if __name__ == "__main__":
         fileNameList = sys.argv[2:]
     else:
         print("Need files to process")
-        exit
+        exit(1)
 
-    generateScoreTable(output_file_name, fileNameList)
+    #generateScoreTable(output_file_name, fileNameList)
+    generateBruteScoreTable(output_file_name, fileNameList)
+    #generateLearnCurveTimestep(output_file_name, fileNameList)
