@@ -1,0 +1,280 @@
+Starting python script!
+Using env(SonicAndKnuckles3-Genesis,AngelIslandZone.Act2.state)
+Observation space shape:(224, 320, 3)
+Start: 2019-07-09 11:12:11.213604
+Using the following config file: config_test.txt
+[NEAT]
+fitness_criterion     = max
+fitness_threshold     = 9000
+pop_size              = 60
+reset_on_extinction   = False
+
+[DefaultGenome]
+# node activation options
+activation_default      = sigmoid
+activation_mutate_rate  = 0.00
+activation_options      = sigmoid 
+#abs clamped cube exp gauss hat identity inv log relu sigmoid sin softplus square tanh
+
+# node aggregation options
+aggregation_default     = sum
+aggregation_mutate_rate = 0.00
+aggregation_options     = sum product min max mean median maxabs
+
+# node bias options
+bias_init_mean          = 0.05
+bias_init_stdev         = 1.0
+bias_max_value          = 50.0
+bias_min_value          = -50.0
+bias_mutate_power       = 0.2
+bias_mutate_rate        = 0.1
+bias_replace_rate       = 0.1
+
+# genome compatibility options
+compatibility_disjoint_coefficient = 1.0
+compatibility_weight_coefficient   = 0.5
+
+# connection add/remove rates
+conn_add_prob           = 0.1
+conn_delete_prob        = 0.1
+
+# connection enable options
+enabled_default         = True
+enabled_mutate_rate     = 0.05
+
+feed_forward            = False
+initial_connection      = fs_neat_nohidden
+#initial_connection      = unconnected
+#initial_connection     = partial_nodirect 0.4
+
+# node add/remove rates
+node_add_prob           = 0.6
+node_delete_prob        = 0.05
+
+# network parameters
+num_hidden              = 0
+num_inputs              = 17920
+num_outputs             = 7
+
+# node response options
+response_init_mean      = 1.0
+response_init_stdev     = 0.05
+response_max_value      = 30.0
+response_min_value      = -30.0
+response_mutate_power   = 0.1
+response_mutate_rate    = 0.1
+response_replace_rate   = 0.1
+
+# connection weight options
+weight_init_mean        = 0.1
+weight_init_stdev       = 1.0
+weight_max_value        = 30
+weight_min_value        = -30
+weight_mutate_power     = 0.5
+weight_mutate_rate      = 0.1
+weight_replace_rate     = 0.1
+
+[DefaultSpeciesSet]
+compatibility_threshold = 10
+
+[DefaultStagnation]
+species_fitness_func = max
+max_stagnation       = 200
+species_elitism      = 0
+
+[DefaultReproduction]
+elitism            = 3
+survival_threshold = 0.3
+
+
+
+End of config file
+['./../../train-levels/experiment1/last_gen_genomes/1560994547/AquaticRuinZone.Act2.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/CarnivalNightZone.Act1.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/MushroomHillZone.Act2.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/MarbleZone.Act1.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/ScrapBrainZone.Act2.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/DeathEggZone.Act1.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/MysticCaveZone.Act1.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/IcecapZone.Act2.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/OilOceanZone.Act1.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/MetropolisZone.Act1.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/AngelIslandZone.Act1.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/GreenHillZone.Act3.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/MetropolisZone.Act2.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/HydrocityZone.Act2.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/OilOceanZone.Act2.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/DeathEggZone.Act2.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/IcecapZone.Act1.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/MysticCaveZone.Act2.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/LabyrinthZone.Act3.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/MarbleZone.Act2.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/MushroomHillZone.Act1.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/SpringYardZone.Act2.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/AquaticRuinZone.Act1.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/CarnivalNightZone.Act2.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/SandopolisZone.Act2.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/LaunchBaseZone.Act2.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/EmeraldHillZone.Act2.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/MarbleGardenZone.Act1.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/FlyingBatteryZone.Act1.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/ChemicalPlantZone.Act1.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/LabyrinthZone.Act1.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/HillTopZone.Act1.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/StarLightZone.Act1.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/CasinoNightZone.Act1.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/SpringYardZone.Act3.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/StarLightZone.Act2.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/LabyrinthZone.Act2.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/MarbleZone.Act3.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/ChemicalPlantZone.Act2.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/LavaReefZone.Act2.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/HiddenPalaceZone.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/MarbleGardenZone.Act2.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/GreenHillZone.Act1.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/EmeraldHillZone.Act1.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/WingFortressZone.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/LaunchBaseZone.Act1.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/SandopolisZone.Act1.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/FlyingBatteryZone.Act1.state_2.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/ScrapBrainZone.Act2.state_2.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/IcecapZone.Act1.state_2.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/MarbleZone.Act2.state_2.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/GreenHillZone.Act1.state_2.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/CarnivalNightZone.Act2.state_2.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/MarbleZone.Act3.state_2.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/AquaticRuinZone.Act1.state_2.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/OilOceanZone.Act1.state_2.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/StarLightZone.Act2.state_2.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/ChemicalPlantZone.Act1.state_2.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/MetropolisZone.Act1.state_2.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/LaunchBaseZone.Act1.state_2.pkl']
+
+ ****** Running generation 0 ****** 
+
+Gen timestep at time: 2019-07-09 11:12:11.270760
+-- genome with id 1 done, fitness: 109.55882143974304
+achieved fitness: 109.55882143974304 at timestep 2025 time: 2019-07-09 11:12:17.783566
+Saving genome to file ./best_genomes/AngelIslandZone.Act2.state_1560994547_gen1.pkl
+-- genome with id 2 done, fitness: 109.55882143974304
+-- genome with id 3 done, fitness: 0.0
+-- genome with id 4 done, fitness: 374.2646987438202
+achieved fitness: 374.2646987438202 at timestep 42411 time: 2019-07-09 11:14:14.004636
+Saving genome to file ./best_genomes/AngelIslandZone.Act2.state_1560994547_gen1.pkl
+-- genome with id 5 done, fitness: 109.55882143974304
+-- genome with id 6 done, fitness: 109.55882143974304
+-- genome with id 7 done, fitness: 109.55882143974304
+-- genome with id 8 done, fitness: 109.55882143974304
+-- genome with id 9 done, fitness: 109.55882143974304
+-- genome with id 10 done, fitness: 0.0
+-- genome with id 11 done, fitness: 109.55882143974304
+-- genome with id 12 done, fitness: 394.85293316841125
+achieved fitness: 394.85293316841125 at timestep 91638 time: 2019-07-09 11:16:36.173631
+Saving genome to file ./best_genomes/AngelIslandZone.Act2.state_1560994547_gen1.pkl
+-- genome with id 13 done, fitness: 109.55882143974304
+-- genome with id 14 done, fitness: 0.0
+-- genome with id 15 done, fitness: 452.2058744430542
+achieved fitness: 452.2058744430542 at timestep 131925 time: 2019-07-09 11:18:31.956148
+Saving genome to file ./best_genomes/AngelIslandZone.Act2.state_1560994547_gen1.pkl
+-- genome with id 16 done, fitness: 109.55882143974304
+-- genome with id 17 done, fitness: 109.55882143974304
+-- genome with id 18 done, fitness: 109.55882143974304
+-- genome with id 19 done, fitness: 109.55882143974304
+-- genome with id 20 done, fitness: 109.55882143974304
+-- genome with id 21 done, fitness: 109.55882143974304
+-- genome with id 22 done, fitness: 0.0
+-- genome with id 23 done, fitness: 374.2646987438202
+-- genome with id 24 done, fitness: 109.55882143974304
+-- genome with id 25 done, fitness: 109.55882143974304
+-- genome with id 26 done, fitness: 0.0
+-- genome with id 27 done, fitness: 109.55882143974304
+-- genome with id 28 done, fitness: 30.882352352142334
+-- genome with id 29 done, fitness: 109.55882143974304
+-- genome with id 30 done, fitness: 109.55882143974304
+-- genome with id 31 done, fitness: 61.76470470428467
+-- genome with id 32 done, fitness: 0.0
+-- genome with id 33 done, fitness: 109.55882143974304
+-- genome with id 34 done, fitness: 109.55882143974304
+-- genome with id 35 done, fitness: 109.55882143974304
+-- genome with id 36 done, fitness: 109.55882143974304
+-- genome with id 37 done, fitness: 108.08823323249817
+-- genome with id 38 done, fitness: 0.0
+-- genome with id 39 done, fitness: 109.55882143974304
+-- genome with id 40 done, fitness: 452.20587372779846
+-- genome with id 41 done, fitness: 1495.5882070064545
+achieved fitness: 1495.5882070064545 at timestep 326796 time: 2019-07-09 11:27:55.100519
+Saving genome to file ./best_genomes/AngelIslandZone.Act2.state_1560994547_gen1.pkl
+-- genome with id 42 done, fitness: 109.55882143974304
+-- genome with id 43 done, fitness: 109.55882143974304
+-- genome with id 44 done, fitness: 109.55882143974304
+-- genome with id 45 done, fitness: 109.55882143974304
+-- genome with id 46 done, fitness: 433.08822679519653
+-- genome with id 47 done, fitness: 109.55882143974304
+-- genome with id 48 done, fitness: 109.55882143974304
+-- genome with id 49 done, fitness: 109.55882143974304
+-- genome with id 50 done, fitness: 109.55882167816162
+-- genome with id 51 done, fitness: 443.38234424591064
+-- genome with id 52 done, fitness: 109.55882143974304
+-- genome with id 53 done, fitness: 109.55882143974304
+-- genome with id 54 done, fitness: 74.26470446586609
+-- genome with id 55 done, fitness: 109.55882143974304
+-- genome with id 56 done, fitness: 109.55882143974304
+-- genome with id 57 done, fitness: 109.55882143974304
+-- genome with id 58 done, fitness: 109.55882143974304
+-- genome with id 59 done, fitness: 109.55882143974304
+-- genome with id 60 done, fitness: 109.55882143974304
+Total timesteps at end of gen: 366141
+Population's average fitness: 153.11274 stdev: 207.10140
+Best fitness: 1495.58821 - size: (13, 20) - species 1 - id 41
+Average adjusted fitness: 0.102
+Population of 57 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    0    57   1495.6    0.102     0
+Total extinctions: 0
+Generation time: 1056.476 sec
+
+ ****** Running generation 1 ****** 
+
+Gen timestep at time: 2019-07-09 11:29:47.747155
+-- genome with id 41 done, fitness: 449.99999141693115
+achieved fitness: 449.99999141693115 at timestep 368352 time: 2019-07-09 11:29:53.888588
+Saving genome to file ./best_genomes/AngelIslandZone.Act2.state_1560994547_gen2.pkl
+-- genome with id 15 done, fitness: 109.55882143974304
+-- genome with id 40 done, fitness: 109.55882143974304
+-- genome with id 1 done, fitness: 452.20587372779846
+achieved fitness: 452.20587372779846 at timestep 374649 time: 2019-07-09 11:30:11.884843
+Saving genome to file ./best_genomes/AngelIslandZone.Act2.state_1560994547_gen2.pkl
+-- genome with id 2 done, fitness: 109.55882143974304
+-- genome with id 3 done, fitness: 449.26469683647156
+-- genome with id 4 done, fitness: 109.55882143974304
+-- genome with id 5 done, fitness: 430.8823447227478
+-- genome with id 6 done, fitness: 450.73528480529785
+-- genome with id 7 done, fitness: 85.29411673545837
+-- genome with id 8 done, fitness: 674.2646934986115
+achieved fitness: 674.2646934986115 at timestep 423534 time: 2019-07-09 11:32:32.543732
+Saving genome to file ./best_genomes/AngelIslandZone.Act2.state_1560994547_gen2.pkl
+-- genome with id 9 done, fitness: 109.55882143974304
+-- genome with id 10 done, fitness: 438.9705801010132
+-- genome with id 11 done, fitness: 426.47058033943176
+-- genome with id 12 done, fitness: 37.49999928474426
+-- genome with id 13 done, fitness: 1495.5882070064545
+achieved fitness: 1495.5882070064545 at timestep 434619 time: 2019-07-09 11:33:04.341927
+Saving genome to file ./best_genomes/AngelIslandZone.Act2.state_1560994547_gen2.pkl
+-- genome with id 14 done, fitness: 109.55882143974304
+-- genome with id 16 done, fitness: 109.55882143974304
+-- genome with id 17 done, fitness: 109.55882143974304
+-- genome with id 18 done, fitness: 109.55882143974304
+-- genome with id 19 done, fitness: 109.55882143974304
+-- genome with id 20 done, fitness: 101.47058629989624
+-- genome with id 21 done, fitness: 374.2646987438202
+-- genome with id 22 done, fitness: 109.55882143974304
+-- genome with id 23 done, fitness: 109.55882143974304
+-- genome with id 24 done, fitness: 109.55882143974304
+-- genome with id 25 done, fitness: 109.55882143974304
+-- genome with id 26 done, fitness: 0.0
+-- genome with id 27 done, fitness: 374.2646987438202
+-- genome with id 28 done, fitness: 109.55882143974304
+-- genome with id 29 done, fitness: 0.0
+-- genome with id 30 done, fitness: 109.55882143974304
+-- genome with id 31 done, fitness: 109.55882143974304
+-- genome with id 32 done, fitness: 0.0
+-- genome with id 33 done, fitness: 447.05881452560425
+-- genome with id 34 done, fitness: 447.05881452560425
+-- genome with id 35 done, fitness: 1495.5882070064545
+-- genome with id 36 done, fitness: 109.55882143974304
+-- genome with id 37 done, fitness: 4.411764621734619
+-- genome with id 38 done, fitness: 109.55882143974304
+-- genome with id 39 done, fitness: 527.205872297287
+-- genome with id 42 done, fitness: 447.7941086292267
+-- genome with id 43 done, fitness: 455.88234424591064
+-- genome with id 44 done, fitness: 0.0
+-- genome with id 45 done, fitness: 427.20587396621704
+-- genome with id 46 done, fitness: 109.55882143974304
+-- genome with id 47 done, fitness: 0.0
+-- genome with id 48 done, fitness: 109.55882143974304
+-- genome with id 49 done, fitness: 109.55882143974304
+-- genome with id 50 done, fitness: 430.14704966545105
+-- genome with id 51 done, fitness: 109.55882143974304
+-- genome with id 52 done, fitness: 247.05881881713867
+-- genome with id 53 done, fitness: 109.55882143974304
+-- genome with id 54 done, fitness: 109.55882143974304
+-- genome with id 55 done, fitness: 1495.5882070064545
+-- genome with id 56 done, fitness: 109.55882143974304
+-- genome with id 57 done, fitness: 430.14704966545105
+Total timesteps at end of gen: 795639
+Population's average fitness: 279.73426 stdev: 334.76168
+Best fitness: 1495.58821 - size: (13, 20) - species 1 - id 13
+Average adjusted fitness: 0.187
+Population of 60 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    1    60   1495.6    0.187     1
+Total extinctions: 0
+Generation time: 2452.814 sec (1754.645 average)
+
+ ****** Running generation 2 ****** 
+
+Gen timestep at time: 2019-07-09 12:10:40.561605
+-- genome with id 13 done, fitness: 1495.5882070064545
+achieved fitness: 1495.5882070064545 at timestep 797805 time: 2019-07-09 12:10:46.128670
+Saving genome to file ./best_genomes/AngelIslandZone.Act2.state_1560994547_gen3.pkl
+-- genome with id 35 done, fitness: 1495.5882070064545
+-- genome with id 55 done, fitness: 1495.5882070064545
+-- genome with id 58 done, fitness: 374.2646987438202
+-- genome with id 59 done, fitness: 1586.0293946266174
+achieved fitness: 1586.0293946266174 at timestep 809232 time: 2019-07-09 12:11:18.118348
+Saving genome to file ./best_genomes/AngelIslandZone.Act2.state_1560994547_gen3.pkl
+-- genome with id 60 done, fitness: 374.2646987438202
+-- genome with id 61 done, fitness: 443.3823437690735
+-- genome with id 62 done, fitness: 1409.5588054656982
+-- genome with id 63 done, fitness: 527.205872297287
+-- genome with id 64 done, fitness: 0.0
+-- genome with id 65 done, fitness: 429.4117558002472
+-- genome with id 66 done, fitness: 308.82352352142334
+-- genome with id 67 done, fitness: 42.64705801010132
+-- genome with id 68 done, fitness: 466.1764612197876
+-- genome with id 69 done, fitness: 1495.5882070064545
+-- genome with id 70 done, fitness: 0.0
+Finished timestepMax at time: 2019-07-09 12:19:52.910056

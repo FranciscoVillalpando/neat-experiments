@@ -56,17 +56,8 @@ def eval_genome(genome, config):
         if timestepCount >= timestepMax :
             print("Finished timestepMax at time: " + str(datetime.datetime.now()))
             exit(0)
-        if fitness_current > current_max_fitness:
-            current_max_fitness = fitness_current
-            counter = 0
-        else:
-            counter += 1
             
-        # Timeout in case of genome stalling
-        if done or counter == 500:
-            done = True
-            
-    print(genome.key, fitness_current)     
+    print(   "-- genome with id {} done, fitness: {}".format(genome.key, fitness_current))     
     genome.fitness = fitness_current
 
 #Called once per generation
@@ -85,7 +76,7 @@ def eval_genomes(genomes, config):
         # Save this genome if it is the best individual of the generation
         if genome.fitness > best_fitness:
             best_fitness = genome.fitness
-            print("achieved fitness: " + str(best_fitness) + " at timestep " + str(timestepCount) + " time: " + str(datetime.datetime.now()))
+            print("achieved fitness: {} at timestep {} time: {}".format(best_fitness,timestepCount,datetime.datetime.now()))
             genome_name = './best_genomes/'+file_prefix+'_gen'+str(current_gen)+'.pkl'
             save_genome(genome_name,genome)
  
@@ -105,7 +96,7 @@ def save_genome(filename, genome):
 # Get the file names of the top genomes for each state
 # tries to get a uniform distribution accross states,
 # the remaining requested files are taken at random.
-def get_top_genomes_file_names(pop_size, id):
+def get_top_genomes_file_names(genome_path,pop_size):
     import random
 
     # There are 47 train levels, prioritize variety
@@ -113,7 +104,7 @@ def get_top_genomes_file_names(pop_size, id):
     top_to_get = int (pop_size / train_level_n)
     remaining_genomes = pop_size % train_level_n
 
-    path = "./last_gen_genomes/"+ str(id) + "/*" 
+    path = "./{}/*".format(genome_path) 
     
     # Get the topk genomes for every state
     file_name_list = []
@@ -149,22 +140,24 @@ if __name__ == "__main__":
     # If we have a file name argument use it as the file prefix
     game_name = ""
     state_name= ""
-    run_name = ""
-    if len(sys.argv) > 3:
-        run_name = sys.argv[1]
-        game_name = sys.argv[2]
-        state_name = sys.argv[3]
+    run_id = ""
+    initial_pop_path = ""
+    if len(sys.argv) > 4:
+        run_id = sys.argv[1]
+        initial_pop_path = sys.argv[2]
+        game_name = sys.argv[3]
+        state_name = sys.argv[4]
     elif len(sys.argv) > 1:
-        run_name = sys.argv[1]
+        run_id = sys.argv[1]
         game_name = 'SonicTheHedgehog-Genesis'
         state_name =  'ScrapBrainZone.Act1.state'
     else:
         print("Need run ID")
         exit(1)
 
-    file_prefix = state_name + "_" + run_name
+    file_prefix = "{}_{}".format(state_name,run_id)
 
-    print ("Using env(" + game_name + ", " + state_name + ")")
+    print ("Using env({},{})".format(game_name,state_name))
 
     env = retro.make(game_name, state_name, scenario="contest")
     env = SonicDiscretizer(env)
@@ -187,7 +180,7 @@ if __name__ == "__main__":
                      configfile)
 
     #Override population with pretrained population
-    genome_files = get_top_genomes_file_names(config.pop_size, run_name)
+    genome_files = get_top_genomes_file_names(initial_pop_path,config.pop_size)
     print(genome_files)
     initial_population = get_genomes_from_files(genome_files)
 
@@ -211,4 +204,4 @@ if __name__ == "__main__":
     stats.save()
 
     # Save winner genome
-    save_genome('./winner_genomes/winner_'+file_prefix+'.pkl',winner)
+    save_genome('./winner_genomes/winner_{}.pkl'.format(file_prefix),winner)
