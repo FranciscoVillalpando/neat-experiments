@@ -113,17 +113,18 @@ mkdir -p ./run_logs/$run_id
 
 # Run first level independently
 echo "GAME: ${GAME_0[0]} LEVEL: ${GAME_0[1]} " 
-python3 retro-train.py $run_id ${GAME_0[0]} ${GAME_0[1]} >> ./run_logs/$run_id/${GAME_0[1]}_train_${run_id}.txt
+python3 retro-train.py $run_id ${GAME_0[0]} ${GAME_0[1]} > ./run_logs/$run_id/${GAME_0[1]}_train_${run_id}.txt
 
+echo "echo 'Starting jobs!'" > jobs
 for ((i=1; i<$COUNT; i++))
 do
 	GAME=${!GAME_ARRAY[i]:0:1}
 	LEVEL=${!GAME_ARRAY[i]:1:1}
 
 	#echo "GAME: ${GAME} LEVEL: ${LEVEL} " 
-	echo "python3 retro-train.py $run_id ${GAME} ${LEVEL} ./last_gen_genomes/$run_id/GreenHillZone.Act1* >> ./run_logs/$run_id/${LEVEL}_train_${run_id}.txt" >> jobs
+	echo "python3 retro-train.py $run_id ${GAME} ${LEVEL} ./last_gen_genomes/$run_id/GreenHillZone.Act1* > ./run_logs/$run_id/${LEVEL}_train_${run_id}.txt" >> jobs
 done
 
-parallel --jobs 6 < jobs 
+parallel --jobs 4 < jobs 
 
 echo "Finishing invoker script..."

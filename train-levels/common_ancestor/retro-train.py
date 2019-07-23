@@ -182,6 +182,9 @@ if __name__ == "__main__":
 
     if(init_pop != ""):
 
+        if (len(init_pop) == 1):
+            init_pop = glob.glob(init_pop[0])
+
         initial_population = get_genomes_from_files(init_pop)
 
         print(f"Working with initial population: {initial_population}")
@@ -203,9 +206,6 @@ if __name__ == "__main__":
 
     print("Winner!" + str(winner))
     print( "End: " + str(datetime.datetime.now()))
-
-    print("Saving stats...")
-    stats.save()
 
     print("Storing last generation genomes")
     i = 1
