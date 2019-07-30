@@ -133,6 +133,9 @@ def generateScoreTable(filename, fileNameList):
                 r1  r2  r3
         State1   X   X   X
         State2   X   X   X
+
+        This Score Table takes uses best_genome_fitness (i.e. the best genome of the gen)
+        as the score for each  
     '''
     statsDict = getStatsDict(fileNameList, False)
      
@@ -145,7 +148,7 @@ def generateScoreTable(filename, fileNameList):
     # Generate state dict:
     #   dict ["state"][randRun]
     # note that since we dont care the order of the runs it is random in the list
-    # i.e. dict["state"][0] does not correspond to the first run
+    # i.e. dict["state"][0] may not correspond to the first run
     # ex:
     #   dict["SpringYardZone.Act1.state"][0-4] = someScore
     for logName in statsDict['best_genome_fitness']:
@@ -154,6 +157,62 @@ def generateScoreTable(filename, fileNameList):
         run = parser.parse(logName.split("_")[-1])[0]
         print(state,run)
         stateDict[state][run]  =  max(statsDict['best_genome_fitness'][logName])
+        
+
+    print(stateDict)
+    # Write XLS based on the contents of the stateDict
+    ws.write(0, 0, "State/Run")
+    # Get run names
+    run_list = []
+    for idx, run_id in enumerate((list(stateDict.values())[0])):
+        run_list.append(run_id)
+        ws.write(0, idx+1, run_id)   
+
+    row = 1
+    for state in stateDict :
+        ws.write(row, 0, state)
+        for col, run_id in enumerate(run_list):
+            ws.write(row, col+1, stateDict[state][run_id])
+
+        row += 1
+
+    wb.save(filename)
+    print("saved xls")
+
+
+def generateBenchmarkScoreTable(filename, fileNameList):
+    ''' Creates a table of state score vs run in a XLS:
+                r1  r2  r3
+        State1   X   X   X
+        State2   X   X   X
+
+        This Score Table takes uses best_genome_fitness (i.e. the best genome of the gen)
+        as the score for each gen and creates an average of all gens
+    '''
+    statsDict = getStatsDict(fileNameList, False)
+     
+    #the code for creating the workbook and worksheets
+    wb= xlwt.Workbook()
+    ws = wb.add_sheet("Scores")
+
+    stateDict = defaultdict(lambda: defaultdict(float))
+    parser = compile("{}.txt")
+    # Generate state dict:
+    #   dict ["state"][randRun]
+    # note that since we dont care the order of the runs it is random in the list
+    # i.e. dict["state"][0] may not correspond to the first run
+    # ex:
+    #   dict["SpringYardZone.Act1.state"][0-4] = someScore
+    for logName in statsDict['best_genome_fitness']:
+
+        state = logName.split("_")[0]
+        run = parser.parse(logName.split("_")[-1])[0]
+        print(state,run)
+
+        data = statsDict['best_genome_fitness'][logName]
+
+        stateDict[state][run] = sum(data)/len(data)
+        
 
     print(stateDict)
     # Write XLS based on the contents of the stateDict
@@ -266,5 +325,6 @@ if __name__ == "__main__":
         exit(1)
 
     #generateScoreTable(output_file_name, fileNameList)
-    generateBruteScoreTable(output_file_name, fileNameList)
+    #generateBruteScoreTable(output_file_name, fileNameList)
+    generateBenchmarkScoreTable(output_file_name, fileNameList)
     #generateLearnCurveTimestep(output_file_name, fileNameList)

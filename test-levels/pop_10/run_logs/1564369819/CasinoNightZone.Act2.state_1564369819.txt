@@ -1,0 +1,165 @@
+Starting python script!
+Using env(SonicTheHedgehog2-Genesis, CasinoNightZone.Act2.state)
+Observation space shape:(224, 320, 3)
+Start: 2019-07-29 00:17:52.486017
+Using the following config file: config.txt
+[NEAT]
+fitness_criterion     = max
+fitness_threshold     = 9000
+pop_size              = 10
+reset_on_extinction   = False
+
+[DefaultGenome]
+# node activation options
+activation_default      = sigmoid
+activation_mutate_rate  = 0.00
+activation_options      = sigmoid 
+#abs clamped cube exp gauss hat identity inv log relu sigmoid sin softplus square tanh
+
+# node aggregation options
+aggregation_default     = sum
+aggregation_mutate_rate = 0.00
+aggregation_options     = sum product min max mean median maxabs
+
+# node bias options
+bias_init_mean          = 0.05
+bias_init_stdev         = 1.0
+bias_max_value          = 50.0
+bias_min_value          = -50.0
+bias_mutate_power       = 0.5
+bias_mutate_rate        = 0.7
+bias_replace_rate       = 0.1
+
+# genome compatibility options
+compatibility_disjoint_coefficient = 1.0
+compatibility_weight_coefficient   = 0.5
+
+# connection add/remove rates
+conn_add_prob           = 0.6
+conn_delete_prob        = 0.1
+
+# connection enable options
+enabled_default         = True
+enabled_mutate_rate     = 0.05
+
+feed_forward            = False
+initial_connection      = fs_neat_nohidden
+#initial_connection      = unconnected
+#initial_connection     = partial_nodirect 0.4
+
+# node add/remove rates
+node_add_prob           = 0.7
+node_delete_prob        = 0.1
+
+# network parameters
+num_hidden              = 0
+num_inputs              = 17920
+num_outputs             = 12
+
+# node response options
+response_init_mean      = 1.0
+response_init_stdev     = 0.05
+response_max_value      = 30.0
+response_min_value      = -30.0
+response_mutate_power   = 0.1
+response_mutate_rate    = 0.75
+response_replace_rate   = 0.1
+
+# connection weight options
+weight_init_mean        = 0.1
+weight_init_stdev       = 1.0
+weight_max_value        = 30
+weight_min_value        = -30
+weight_mutate_power     = 0.5
+weight_mutate_rate      = 0.8
+weight_replace_rate     = 0.1
+
+[DefaultSpeciesSet]
+compatibility_threshold = 10
+
+[DefaultStagnation]
+species_fitness_func = max
+max_stagnation       = 200
+species_elitism      = 0
+
+[DefaultReproduction]
+elitism            = 3
+survival_threshold = 0.3
+
+
+
+End of config file
+
+ ****** Running generation 0 ****** 
+
+Gen timestep at time: 2019-07-29 00:17:52.494849
+1 0.0
+2 0.0
+3 0.0
+4 609.5262273550034
+achieved fitness: 609.5262273550034 at timestep 144411 time: 2019-07-29 00:25:58.864752
+Saving genome to file ./genomes/best_genome_1564369819_CasinoNightZone.Act2.state_gen0.pkl
+5 0.0
+6 0.0
+7 0.0
+8 0.0
+9 0.0
+10 0.0
+Total timesteps at end of gen: 361023
+Population's average fitness: 60.95262 stdev: 182.85787
+Best fitness: 609.52623 - size: (12, 12) - species 1 - id 4
+Average adjusted fitness: 0.100
+Mean genetic distance 2.232, standard deviation 0.738
+Population of 10 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    0    10    609.5    0.100     0
+Total extinctions: 0
+Generation time: 1239.235 sec
+Saving checkpoint to neat-checkpoint-0
+
+ ****** Running generation 1 ****** 
+
+Gen timestep at time: 2019-07-29 00:38:31.738680
+4 609.5262273550034
+achieved fitness: 609.5262273550034 at timestep 397128 time: 2019-07-29 00:40:41.471487
+Saving genome to file ./genomes/best_genome_1564369819_CasinoNightZone.Act2.state_gen1.pkl
+1 0.0
+2 0.0
+11 567.0217497348785
+12 612.2388026714325
+achieved fitness: 612.2388026714325 at timestep 541536 time: 2019-07-29 00:50:09.738527
+Saving genome to file ./genomes/best_genome_1564369819_CasinoNightZone.Act2.state_gen1.pkl
+13 0.0
+14 573.3521009683609
+15 0.0
+16 641.1776543855667
+achieved fitness: 641.1776543855667 at timestep 685944 time: 2019-07-29 00:58:22.625407
+Saving genome to file ./genomes/best_genome_1564369819_CasinoNightZone.Act2.state_gen1.pkl
+17 0.0
+Total timesteps at end of gen: 722046
+Population's average fitness: 300.33165 stdev: 300.95226
+Best fitness: 641.17765 - size: (13, 13) - species 1 - id 16
+Average adjusted fitness: 0.468
+Mean genetic distance 1.957, standard deviation 0.693
+Population of 10 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    1    10    641.2    0.468     0
+Total extinctions: 0
+Generation time: 1305.248 sec (1272.241 average)
+Saving checkpoint to neat-checkpoint-1
+
+ ****** Running generation 2 ****** 
+
+Gen timestep at time: 2019-07-29 01:00:16.995152
+16 641.1776543855667
+achieved fitness: 641.1776543855667 at timestep 758151 time: 2019-07-29 01:02:11.693183
+Saving genome to file ./genomes/best_genome_1564369819_CasinoNightZone.Act2.state_gen2.pkl
+12 612.2388026714325
+4 609.5262273550034
+18 576.06511926651
+19 630.3255693912506
+20 601.3866678476334
+21 479.30065512657166
+Finished timestepMax at time: 2019-07-29 01:18:01.633789
