@@ -196,7 +196,6 @@ def generateBenchmarkScoreTable(filename, fileNameList):
     ws = wb.add_sheet("Scores")
 
     stateDict = defaultdict(lambda: defaultdict(float))
-    parser = compile("{}.txt")
     # Generate state dict:
     #   dict ["state"][randRun]
     # note that since we dont care the order of the runs it is random in the list
@@ -204,9 +203,9 @@ def generateBenchmarkScoreTable(filename, fileNameList):
     # ex:
     #   dict["SpringYardZone.Act1.state"][0-4] = someScore
     for logName in statsDict['best_genome_fitness']:
-
         state = logName.split("_")[0]
-        run = parser.parse(logName.split("_")[-1])[0]
+        print(state)
+        run = parse("{}.{}",logName.split("_")[-1])[0]
         print(state,run)
 
         data = statsDict['best_genome_fitness'][logName]
@@ -323,6 +322,8 @@ if __name__ == "__main__":
     else:
         print("Need files to process")
         exit(1)
+
+    print(f"Creating xls with name {output_file_name} using files: {fileNameList}")
 
     #generateScoreTable(output_file_name, fileNameList)
     #generateBruteScoreTable(output_file_name, fileNameList)

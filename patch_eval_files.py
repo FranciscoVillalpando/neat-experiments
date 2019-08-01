@@ -32,7 +32,10 @@ if __name__ == "__main__":
 
                     found = True
                     break
-            assert found 
+            if not found:
+                with open(file_name+".patched", "w") as patched_file:
+                        patched_file.writelines(lines)
+                        patched_file.write(f"Best fitness: {0.0} - size: {(0,0)} - species 1 - id {0}")
 
 
             
