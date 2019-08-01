@@ -1,0 +1,558 @@
+Starting python script!
+Using env(SonicTheHedgehog-Genesis, GreenHillZone.Act1.state)
+Observation space shape:(224, 320, 3)
+Start: 2019-07-20 15:41:42.794218
+Using the following config file: config_train.txt
+[NEAT]
+fitness_criterion     = max
+fitness_threshold     = 9000
+pop_size              = 60
+reset_on_extinction   = False
+
+[DefaultGenome]
+# node activation options
+activation_default      = sigmoid
+activation_mutate_rate  = 0.00
+activation_options      = sigmoid 
+#abs clamped cube exp gauss hat identity inv log relu sigmoid sin softplus square tanh
+
+# node aggregation options
+aggregation_default     = sum
+aggregation_mutate_rate = 0.00
+aggregation_options     = sum product min max mean median maxabs
+
+# node bias options
+bias_init_mean          = 0.05
+bias_init_stdev         = 1.0
+bias_max_value          = 50.0
+bias_min_value          = -50.0
+bias_mutate_power       = 0.5
+bias_mutate_rate        = 0.6
+bias_replace_rate       = 0.1
+
+# genome compatibility options
+compatibility_disjoint_coefficient = 1.0
+compatibility_weight_coefficient   = 0.5
+
+# connection add/remove rates
+conn_add_prob           = 0.6
+conn_delete_prob        = 0.1
+
+# connection enable options
+enabled_default         = True
+enabled_mutate_rate     = 0.05
+
+feed_forward            = False
+initial_connection      = fs_neat_nohidden
+#initial_connection      = unconnected
+#initial_connection     = partial_nodirect 0.4
+
+# node add/remove rates
+node_add_prob           = 0.6
+node_delete_prob        = 0.05
+
+# network parameters
+num_hidden              = 0
+num_inputs              = 17920
+num_outputs             = 12
+
+# node response options
+response_init_mean      = 1.0
+response_init_stdev     = 0.05
+response_max_value      = 30.0
+response_min_value      = -30.0
+response_mutate_power   = 0.1
+response_mutate_rate    = 0.75
+response_replace_rate   = 0.1
+
+# connection weight options
+weight_init_mean        = 0.1
+weight_init_stdev       = 1.0
+weight_max_value        = 30
+weight_min_value        = -30
+weight_mutate_power     = 0.5
+weight_mutate_rate      = 0.8
+weight_replace_rate     = 0.1
+
+[DefaultSpeciesSet]
+compatibility_threshold = 10
+
+[DefaultStagnation]
+species_fitness_func = max
+max_stagnation       = 200
+species_elitism      = 0
+
+[DefaultReproduction]
+elitism            = 3
+survival_threshold = 0.3
+
+
+
+End of config file
+
+ ****** Running generation 0 ****** 
+
+Gen timestep at time: 2019-07-20 15:41:42.811391
+1 0.0
+2 0.0
+3 2159.88616669178
+achieved fitness: 2159.88616669178 at timestep 1827 time: 2019-07-20 15:41:48.745309
+Saving genome to file ./best_genomes/GreenHillZone.Act1.state_run3_gen1.pkl
+4 0.0
+5 0.0
+6 649.7681248188019
+7 0.0
+8 649.7681248188019
+9 0.0
+10 0.0
+11 0.0
+12 0.0
+13 644.0767269134521
+14 351.9182114005089
+15 0.0
+16 645.0252933502197
+17 0.0
+18 0.0
+19 649.7681248188019
+20 0.0
+21 0.0
+22 0.0
+23 0.0
+24 0.0
+25 0.0
+26 0.0
+27 0.0
+28 544.4772367477417
+29 0.0
+30 649.7681248188019
+31 649.7681248188019
+32 0.0
+33 0.0
+34 0.0
+35 0.0
+36 0.0
+37 0.0
+38 0.0
+39 0.0
+40 644.0767290592194
+41 0.0
+42 0.0
+43 0.0
+44 0.0
+45 0.0
+46 0.0
+47 0.0
+48 0.0
+49 0.0
+50 0.0
+51 0.0
+52 0.0
+53 0.0
+54 0.0
+55 0.0
+56 11.38279938697815
+57 0.0
+58 0.0
+59 0.0
+60 0.0
+Total timesteps at end of gen: 21159
+Population's average fitness: 137.49473 stdev: 348.99790
+Best fitness: 2159.88617 - size: (12, 12) - species 1 - id 3
+Average adjusted fitness: 0.064
+Mean genetic distance 2.524, standard deviation 0.273
+Population of 60 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    0    60   2159.9    0.064     0
+Total extinctions: 0
+Generation time: 67.443 sec
+
+ ****** Running generation 1 ****** 
+
+Gen timestep at time: 2019-07-20 15:42:50.254456
+3 2159.88616669178
+achieved fitness: 2159.88616669178 at timestep 22326 time: 2019-07-20 15:42:54.000009
+Saving genome to file ./best_genomes/GreenHillZone.Act1.state_run3_gen2.pkl
+6 649.7681248188019
+8 649.7681248188019
+61 5193.402179419994
+achieved fitness: 5193.402179419994 at timestep 24648 time: 2019-07-20 15:43:01.393887
+Saving genome to file ./best_genomes/GreenHillZone.Act1.state_run3_gen2.pkl
+62 644.0767292976379
+63 646.9224262237549
+64 649.7681248188019
+65 0.0
+66 0.0
+67 4129.1104427576065
+68 743.6762235164642
+69 0.0
+70 2159.8861685991287
+71 0.0
+72 649.7681248188019
+73 649.7681248188019
+74 0.0
+75 0.0
+76 0.0
+77 1031.0919080972672
+78 649.7681248188019
+79 0.0
+80 0.0
+81 0.0
+82 649.7681248188019
+83 0.0
+84 0.0
+85 645.0252933502197
+86 649.7681248188019
+87 0.0
+88 649.7681248188019
+89 0.0
+90 649.7681248188019
+91 0.0
+92 2038.4696434140205
+93 649.7681248188019
+94 1032.0404663085938
+95 277.9300174713135
+96 649.7681248188019
+97 543.5286655426025
+98 649.7681248188019
+99 642.1795947551727
+100 649.7681248188019
+101 649.7681248188019
+102 649.7681248188019
+103 649.7681248188019
+104 638.3853276968002
+105 648.8195583820343
+106 649.7681248188019
+107 649.7681248188019
+108 3618.7816141843796
+109 631.7453626394272
+110 647.8709905147552
+111 0.0
+112 0.0
+113 0.0
+114 0.0
+115 649.7681248188019
+116 649.7681248188019
+117 649.7681248188019
+Total timesteps at end of gen: 46878
+Population's average fitness: 706.12879 stdev: 968.99046
+Best fitness: 5193.40218 - size: (13, 13) - species 1 - id 61
+Average adjusted fitness: 0.136
+Mean genetic distance 2.405, standard deviation 0.508
+Population of 60 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    1    60   5193.4    0.136     0
+Total extinctions: 0
+Generation time: 82.106 sec (74.774 average)
+
+ ****** Running generation 2 ****** 
+
+Gen timestep at time: 2019-07-20 15:44:12.360068
+61 5193.402179419994
+achieved fitness: 5193.402179419994 at timestep 48618 time: 2019-07-20 15:44:17.986301
+Saving genome to file ./best_genomes/GreenHillZone.Act1.state_run3_gen3.pkl
+67 4129.1104427576065
+108 3618.7816141843796
+118 4141.441813886166
+119 175.4848238825798
+120 649.7681248188019
+121 0.0
+122 0.0
+123 649.7681248188019
+124 0.0
+125 0.0
+126 649.7681248188019
+127 0.0
+128 649.7681248188019
+129 0.0
+130 649.7681248188019
+131 0.0
+132 649.7681248188019
+133 644.0767269134521
+134 649.7681248188019
+135 649.7681248188019
+136 0.0
+137 484.71753734350204
+138 1977.7613807916641
+139 623.2082611322403
+140 0.0
+141 0.0
+142 0.0
+143 642.1795959472656
+144 0.0
+145 8018.233527600765
+achieved fitness: 8018.233527600765 at timestep 65901 time: 2019-07-20 15:45:13.200451
+Saving genome to file ./best_genomes/GreenHillZone.Act1.state_run3_gen3.pkl
+146 649.7681248188019
+147 649.7681248188019
+148 634.5910639762878
+149 0.0
+150 649.7681248188019
+151 649.7681248188019
+152 4141.441813886166
+153 649.7681248188019
+154 5102.339780807495
+155 649.7681248188019
+156 649.7681248188019
+157 649.7681248188019
+158 649.7681248188019
+159 1028.2462062835693
+160 649.7681248188019
+161 623.2082611322403
+162 649.7681248188019
+163 1032.0404663085938
+164 649.7681248188019
+165 0.0
+166 2827.6770622730255
+167 0.0
+168 1032.9890357255936
+169 649.7681248188019
+170 83.4738621711731
+171 649.7681248188019
+172 1977.7613831162453
+173 0.0
+174 0.0
+Total timesteps at end of gen: 79920
+Population's average fitness: 1040.45109 stdev: 1567.21286
+Best fitness: 8018.23353 - size: (13, 13) - species 1 - id 145
+Average adjusted fitness: 0.130
+Mean genetic distance 2.037, standard deviation 0.465
+Population of 60 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    2    60   8018.2    0.130     0
+Total extinctions: 0
+Generation time: 105.713 sec (85.087 average)
+
+ ****** Running generation 3 ****** 
+
+Gen timestep at time: 2019-07-20 15:45:58.073146
+145 8018.233527600765
+achieved fitness: 8018.233527600765 at timestep 82389 time: 2019-07-20 15:46:05.940085
+Saving genome to file ./best_genomes/GreenHillZone.Act1.state_run3_gen4.pkl
+61 5193.402179419994
+154 5102.339780807495
+175 1030.1433380246162
+176 1977.76137560606
+177 10702.055557131767
+achieved fitness: 10702.055557131767 at timestep 90000 time: 2019-07-20 15:46:29.241878
+Saving genome to file ./best_genomes/GreenHillZone.Act1.state_run3_gen4.pkl
+178 649.7681248188019
+179 644.0767269134521
+180 0.0
+181 1032.0404712557793
+182 1032.0404712557793
+183 3635.85581690073
+184 649.7681248188019
+185 1977.7613760232925
+186 0.0
+187 0.0
+188 1032.0404732227325
+189 2827.6770665049553
+190 2827.6770589351654
+191 2159.8861685991287
+192 0.0
+193 649.7681248188019
+194 0.0
+195 649.7681248188019
+196 0.0
+197 644.0767269134521
+198 649.7681248188019
+199 1028.2462062835693
+200 649.7681248188019
+201 4163.2588394880295
+202 0.0
+203 649.7681248188019
+204 0.0
+205 0.0
+206 649.7681248188019
+207 649.7681248188019
+208 0.0
+209 0.0
+210 1032.0404732227325
+211 0.0
+212 3635.8558123111725
+213 644.0767269134521
+214 649.7681248188019
+215 649.7681248188019
+216 616.5682952404022
+217 2827.6770629882812
+218 1977.7613902688026
+219 1029.1947655677795
+220 1032.0404732227325
+221 4151.87605124712
+222 649.7681248188019
+223 649.7681248188019
+224 649.7681248188019
+225 1032.0404735803604
+226 1977.7613706588745
+227 0.0
+228 3741.1466975808144
+229 1032.0404728651047
+230 0.0
+231 649.7681248188019
+Total timesteps at end of gen: 119592
+Population's average fitness: 1491.75292 stdev: 1984.13410
+Best fitness: 10702.05556 - size: (14, 15) - species 1 - id 177
+
+Best individual in generation 3 meets fitness threshold - complexity: (14, 15)
+Winner!Key: 177
+Fitness: 10702.055557131767
+Nodes:
+	0 DefaultNodeGene(key=0, bias=2.5763574724377625, response=0.9629060587186284, activation=sigmoid, aggregation=sum)
+	1 DefaultNodeGene(key=1, bias=-1.1818960467074622, response=1.0500482066949315, activation=sigmoid, aggregation=sum)
+	2 DefaultNodeGene(key=2, bias=2.5002819673915297, response=1.124985004580204, activation=sigmoid, aggregation=sum)
+	3 DefaultNodeGene(key=3, bias=-0.6786473119570818, response=0.9741867705246828, activation=sigmoid, aggregation=sum)
+	4 DefaultNodeGene(key=4, bias=-0.1664884661136472, response=0.9878202848104881, activation=sigmoid, aggregation=sum)
+	5 DefaultNodeGene(key=5, bias=-0.647923429911895, response=1.125748605869363, activation=sigmoid, aggregation=sum)
+	6 DefaultNodeGene(key=6, bias=-0.15552474587540704, response=1.035848035747373, activation=sigmoid, aggregation=sum)
+	7 DefaultNodeGene(key=7, bias=0.2041386836450093, response=0.8723308958572418, activation=sigmoid, aggregation=sum)
+	8 DefaultNodeGene(key=8, bias=1.9465876301847436, response=0.7008376498245157, activation=sigmoid, aggregation=sum)
+	9 DefaultNodeGene(key=9, bias=-1.2384808504845388, response=1.2920316553253697, activation=sigmoid, aggregation=sum)
+	10 DefaultNodeGene(key=10, bias=-1.35666016040524, response=1.2848717249872441, activation=sigmoid, aggregation=sum)
+	11 DefaultNodeGene(key=11, bias=-0.3064759875984471, response=1.07405141920985, activation=sigmoid, aggregation=sum)
+	12 DefaultNodeGene(key=12, bias=-0.0037787975281028396, response=1.0610648435310488, activation=sigmoid, aggregation=sum)
+	83 DefaultNodeGene(key=83, bias=-0.3543607394801387, response=0.7849658803189733, activation=sigmoid, aggregation=sum)
+Connections:
+	DefaultConnectionGene(key=(-13112, 8), weight=1.5681838288972498, enabled=True)
+	DefaultConnectionGene(key=(-12342, 83), weight=0.16344172937420864, enabled=True)
+	DefaultConnectionGene(key=(-4690, 7), weight=-0.13952290377846693, enabled=False)
+	DefaultConnectionGene(key=(-4690, 83), weight=1.6146788574743627, enabled=True)
+	DefaultConnectionGene(key=(-473, 0), weight=1.4360624655783314, enabled=True)
+	DefaultConnectionGene(key=(-473, 1), weight=2.7255825941831184, enabled=True)
+	DefaultConnectionGene(key=(-473, 2), weight=1.1905757643985333, enabled=True)
+	DefaultConnectionGene(key=(-473, 4), weight=-0.6114758446817459, enabled=True)
+	DefaultConnectionGene(key=(-473, 5), weight=-0.39935534759611657, enabled=True)
+	DefaultConnectionGene(key=(-473, 6), weight=-1.4710431786633498, enabled=True)
+	DefaultConnectionGene(key=(-473, 7), weight=3.3774836865928197, enabled=True)
+	DefaultConnectionGene(key=(-473, 8), weight=-1.7745240019257305, enabled=True)
+	DefaultConnectionGene(key=(-473, 9), weight=-0.26521528741601663, enabled=True)
+	DefaultConnectionGene(key=(-473, 10), weight=-1.6409384762543655, enabled=False)
+	DefaultConnectionGene(key=(-473, 11), weight=-0.9961011172882515, enabled=True)
+	DefaultConnectionGene(key=(-473, 12), weight=2.199835122388156, enabled=True)
+	DefaultConnectionGene(key=(12, 10), weight=-1.151122707589236, enabled=True)
+	DefaultConnectionGene(key=(83, 7), weight=-0.41166678404448737, enabled=False)
+End: 2019-07-20 15:47:52.814117
+Saving stats...
+Storing last generation genomes
+1 10702.055557131767
+Saving genome to file ./last_gen_genomes/run3/GreenHillZone.Act1.state_1.pkl
+2 8018.233527600765
+Saving genome to file ./last_gen_genomes/run3/GreenHillZone.Act1.state_2.pkl
+3 5193.402179419994
+Saving genome to file ./last_gen_genomes/run3/GreenHillZone.Act1.state_3.pkl
+4 5102.339780807495
+Saving genome to file ./last_gen_genomes/run3/GreenHillZone.Act1.state_4.pkl
+5 4163.2588394880295
+Saving genome to file ./last_gen_genomes/run3/GreenHillZone.Act1.state_5.pkl
+6 4151.87605124712
+Saving genome to file ./last_gen_genomes/run3/GreenHillZone.Act1.state_6.pkl
+7 3741.1466975808144
+Saving genome to file ./last_gen_genomes/run3/GreenHillZone.Act1.state_7.pkl
+8 3635.85581690073
+Saving genome to file ./last_gen_genomes/run3/GreenHillZone.Act1.state_8.pkl
+9 3635.8558123111725
+Saving genome to file ./last_gen_genomes/run3/GreenHillZone.Act1.state_9.pkl
+10 2827.6770665049553
+Saving genome to file ./last_gen_genomes/run3/GreenHillZone.Act1.state_10.pkl
+11 2827.6770629882812
+Saving genome to file ./last_gen_genomes/run3/GreenHillZone.Act1.state_11.pkl
+12 2827.6770589351654
+Saving genome to file ./last_gen_genomes/run3/GreenHillZone.Act1.state_12.pkl
+13 2159.8861685991287
+Saving genome to file ./last_gen_genomes/run3/GreenHillZone.Act1.state_13.pkl
+14 1977.7613902688026
+Saving genome to file ./last_gen_genomes/run3/GreenHillZone.Act1.state_14.pkl
+15 1977.7613760232925
+Saving genome to file ./last_gen_genomes/run3/GreenHillZone.Act1.state_15.pkl
+16 1977.76137560606
+Saving genome to file ./last_gen_genomes/run3/GreenHillZone.Act1.state_16.pkl
+17 1977.7613706588745
+Saving genome to file ./last_gen_genomes/run3/GreenHillZone.Act1.state_17.pkl
+18 1032.0404735803604
+Saving genome to file ./last_gen_genomes/run3/GreenHillZone.Act1.state_18.pkl
+19 1032.0404732227325
+Saving genome to file ./last_gen_genomes/run3/GreenHillZone.Act1.state_19.pkl
+20 1032.0404732227325
+Saving genome to file ./last_gen_genomes/run3/GreenHillZone.Act1.state_20.pkl
+21 1032.0404732227325
+Saving genome to file ./last_gen_genomes/run3/GreenHillZone.Act1.state_21.pkl
+22 1032.0404728651047
+Saving genome to file ./last_gen_genomes/run3/GreenHillZone.Act1.state_22.pkl
+23 1032.0404712557793
+Saving genome to file ./last_gen_genomes/run3/GreenHillZone.Act1.state_23.pkl
+24 1032.0404712557793
+Saving genome to file ./last_gen_genomes/run3/GreenHillZone.Act1.state_24.pkl
+25 1030.1433380246162
+Saving genome to file ./last_gen_genomes/run3/GreenHillZone.Act1.state_25.pkl
+26 1029.1947655677795
+Saving genome to file ./last_gen_genomes/run3/GreenHillZone.Act1.state_26.pkl
+27 1028.2462062835693
+Saving genome to file ./last_gen_genomes/run3/GreenHillZone.Act1.state_27.pkl
+28 649.7681248188019
+Saving genome to file ./last_gen_genomes/run3/GreenHillZone.Act1.state_28.pkl
+29 649.7681248188019
+Saving genome to file ./last_gen_genomes/run3/GreenHillZone.Act1.state_29.pkl
+30 649.7681248188019
+Saving genome to file ./last_gen_genomes/run3/GreenHillZone.Act1.state_30.pkl
+31 649.7681248188019
+Saving genome to file ./last_gen_genomes/run3/GreenHillZone.Act1.state_31.pkl
+32 649.7681248188019
+Saving genome to file ./last_gen_genomes/run3/GreenHillZone.Act1.state_32.pkl
+33 649.7681248188019
+Saving genome to file ./last_gen_genomes/run3/GreenHillZone.Act1.state_33.pkl
+34 649.7681248188019
+Saving genome to file ./last_gen_genomes/run3/GreenHillZone.Act1.state_34.pkl
+35 649.7681248188019
+Saving genome to file ./last_gen_genomes/run3/GreenHillZone.Act1.state_35.pkl
+36 649.7681248188019
+Saving genome to file ./last_gen_genomes/run3/GreenHillZone.Act1.state_36.pkl
+37 649.7681248188019
+Saving genome to file ./last_gen_genomes/run3/GreenHillZone.Act1.state_37.pkl
+38 649.7681248188019
+Saving genome to file ./last_gen_genomes/run3/GreenHillZone.Act1.state_38.pkl
+39 649.7681248188019
+Saving genome to file ./last_gen_genomes/run3/GreenHillZone.Act1.state_39.pkl
+40 649.7681248188019
+Saving genome to file ./last_gen_genomes/run3/GreenHillZone.Act1.state_40.pkl
+41 649.7681248188019
+Saving genome to file ./last_gen_genomes/run3/GreenHillZone.Act1.state_41.pkl
+42 649.7681248188019
+Saving genome to file ./last_gen_genomes/run3/GreenHillZone.Act1.state_42.pkl
+43 644.0767269134521
+Saving genome to file ./last_gen_genomes/run3/GreenHillZone.Act1.state_43.pkl
+44 644.0767269134521
+Saving genome to file ./last_gen_genomes/run3/GreenHillZone.Act1.state_44.pkl
+45 644.0767269134521
+Saving genome to file ./last_gen_genomes/run3/GreenHillZone.Act1.state_45.pkl
+46 616.5682952404022
+Saving genome to file ./last_gen_genomes/run3/GreenHillZone.Act1.state_46.pkl
+47 0.0
+Saving genome to file ./last_gen_genomes/run3/GreenHillZone.Act1.state_47.pkl
+48 0.0
+Saving genome to file ./last_gen_genomes/run3/GreenHillZone.Act1.state_48.pkl
+49 0.0
+Saving genome to file ./last_gen_genomes/run3/GreenHillZone.Act1.state_49.pkl
+50 0.0
+Saving genome to file ./last_gen_genomes/run3/GreenHillZone.Act1.state_50.pkl
+51 0.0
+Saving genome to file ./last_gen_genomes/run3/GreenHillZone.Act1.state_51.pkl
+52 0.0
+Saving genome to file ./last_gen_genomes/run3/GreenHillZone.Act1.state_52.pkl
+53 0.0
+Saving genome to file ./last_gen_genomes/run3/GreenHillZone.Act1.state_53.pkl
+54 0.0
+Saving genome to file ./last_gen_genomes/run3/GreenHillZone.Act1.state_54.pkl
+55 0.0
+Saving genome to file ./last_gen_genomes/run3/GreenHillZone.Act1.state_55.pkl
+56 0.0
+Saving genome to file ./last_gen_genomes/run3/GreenHillZone.Act1.state_56.pkl
+57 0.0
+Saving genome to file ./last_gen_genomes/run3/GreenHillZone.Act1.state_57.pkl
+58 0.0
+Saving genome to file ./last_gen_genomes/run3/GreenHillZone.Act1.state_58.pkl
+59 0.0
+Saving genome to file ./last_gen_genomes/run3/GreenHillZone.Act1.state_59.pkl
+60 0.0
+Saving genome to file ./last_gen_genomes/run3/GreenHillZone.Act1.state_60.pkl
