@@ -54,40 +54,40 @@ GAME_45=("SonicAndKnuckles3-Genesis" "DeathEggZone.Act1.state")
 GAME_46=("SonicAndKnuckles3-Genesis" "DeathEggZone.Act2.state")
 
 GAME_ARRAY=(
-	GAME_0[@]
-	GAME_1[@]
-	GAME_2[@]
-	GAME_3[@]
-	GAME_4[@]
-	GAME_5[@]
-	GAME_6[@]
-	GAME_7[@]
-	GAME_8[@]
-	GAME_9[@]
-	GAME_10[@]
-	GAME_11[@]
-	GAME_12[@]
-	GAME_13[@]
-	GAME_14[@]
-	GAME_15[@]
-	GAME_16[@]
-	GAME_17[@]
-	GAME_18[@]
-	GAME_19[@]
-	GAME_20[@]
-	GAME_21[@]
-	GAME_22[@]
-	GAME_23[@]
-	GAME_24[@]
-	GAME_25[@]
-	GAME_26[@]
-	GAME_27[@]
-	GAME_28[@]
-	GAME_29[@]
-	GAME_30[@]
-	GAME_31[@]
-	GAME_32[@]
-	GAME_33[@]
+	# GAME_0[@]
+	# GAME_1[@]
+	# GAME_2[@]
+	# GAME_3[@]
+	# GAME_4[@]
+	# GAME_5[@]
+	# GAME_6[@]
+	# GAME_7[@]
+	# GAME_8[@]
+	# GAME_9[@]
+	# GAME_10[@]
+	# GAME_11[@]
+	# GAME_12[@]
+	# GAME_13[@]
+	# GAME_14[@]
+	# GAME_15[@]
+	# GAME_16[@]
+	# GAME_17[@]
+	# GAME_18[@]
+	# GAME_19[@]
+	# GAME_20[@]
+	# GAME_21[@]
+	# GAME_22[@]
+	# GAME_23[@]
+	# GAME_24[@]
+	# GAME_25[@]
+	# GAME_26[@]
+	# GAME_27[@]
+	# GAME_28[@]
+	# GAME_29[@]
+	# GAME_30[@]
+	# GAME_31[@]
+	# GAME_32[@]
+	# GAME_33[@]
 	GAME_34[@]
 	GAME_35[@]
 	GAME_36[@]
@@ -105,7 +105,7 @@ GAME_ARRAY=(
 
 COUNT=${#GAME_ARRAY[@]}
 
-run_id=$(date +%s)
+run_id=1565063864 #$(date +%s)
 
 echo "Starting invoker script..."
 echo "Starting run with ID: ${run_id} "
@@ -113,7 +113,7 @@ mkdir -p ./run_logs/$run_id
 
 # Run first level independently
 echo "GAME: ${GAME_0[0]} LEVEL: ${GAME_0[1]} " 
-python3 retro-train.py $run_id ${GAME_0[0]} ${GAME_0[1]} >> ./run_logs/$run_id/${GAME_0[1]}_train_${run_id}.txt
+#python3 retro-train.py $run_id ${GAME_0[0]} ${GAME_0[1]} >> ./run_logs/$run_id/${GAME_0[1]}_train_${run_id}.txt
 
 for ((i=1; i<$COUNT; i++))
 do

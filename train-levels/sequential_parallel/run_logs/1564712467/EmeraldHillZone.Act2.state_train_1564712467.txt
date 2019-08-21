@@ -1,0 +1,946 @@
+Starting python script!
+Parameters: ['retro-train.py', '1564712467', 'SonicTheHedgehog2-Genesis', 'EmeraldHillZone.Act2.state', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_10.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_11.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_12.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_13.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_14.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_15.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_16.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_17.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_18.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_19.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_1.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_20.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_21.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_22.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_23.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_24.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_25.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_26.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_27.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_28.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_29.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_2.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_30.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_31.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_32.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_33.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_34.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_35.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_36.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_37.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_38.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_39.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_3.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_40.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_41.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_42.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_43.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_44.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_45.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_46.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_47.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_48.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_49.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_4.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_50.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_51.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_52.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_53.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_54.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_55.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_56.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_57.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_58.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_59.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_5.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_60.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_6.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_7.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_8.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_9.pkl']
+Start: 2019-08-02 10:04:47.661133
+Using the following config file: config.txt
+[NEAT]
+fitness_criterion     = max
+fitness_threshold     = 9000
+pop_size              = 60
+reset_on_extinction   = False
+
+[DefaultGenome]
+# node activation options
+activation_default      = sigmoid
+activation_mutate_rate  = 0.00
+activation_options      = sigmoid 
+
+# node aggregation options
+aggregation_default     = sum
+aggregation_mutate_rate = 0.00
+aggregation_options     = sum product min max mean median maxabs
+
+# node bias options
+bias_init_mean          = 0.05
+bias_init_stdev         = 1.0
+bias_max_value          = 50.0
+bias_min_value          = -50.0
+bias_mutate_power       = 0.5
+bias_mutate_rate        = 0.6
+bias_replace_rate       = 0.1
+
+# genome compatibility options
+compatibility_disjoint_coefficient = 1.0
+compatibility_weight_coefficient   = 0.5
+
+# connection add/remove rates
+conn_add_prob           = 0.6
+conn_delete_prob        = 0.1
+
+# connection enable options
+enabled_default         = True
+enabled_mutate_rate     = 0.05
+feed_forward            = False
+initial_connection      = fs_neat_nohidden
+
+# node add/remove rates
+node_add_prob           = 0.6
+node_delete_prob        = 0.05
+
+# network parameters
+num_hidden              = 0
+num_inputs              = 17920
+num_outputs             = 12
+
+# node response options
+response_init_mean      = 1.0
+response_init_stdev     = 0.05
+response_max_value      = 30.0
+response_min_value      = -30.0
+response_mutate_power   = 0.1
+response_mutate_rate    = 0.75
+response_replace_rate   = 0.1
+
+# connection weight options
+weight_init_mean        = 0.1
+weight_init_stdev       = 1.0
+weight_max_value        = 30
+weight_min_value        = -30
+weight_mutate_power     = 0.5
+weight_mutate_rate      = 0.8
+weight_replace_rate     = 0.1
+
+[DefaultSpeciesSet]
+compatibility_threshold = 10
+
+[DefaultStagnation]
+species_fitness_func = max
+max_stagnation       = 200
+species_elitism      = 0
+
+[DefaultReproduction]
+elitism            = 3
+survival_threshold = 0.3
+
+
+
+End of config file
+Genome files = ['./last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_10.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_11.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_12.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_13.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_14.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_15.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_16.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_17.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_18.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_19.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_1.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_20.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_21.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_22.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_23.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_24.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_25.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_26.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_27.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_28.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_29.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_2.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_30.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_31.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_32.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_33.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_34.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_35.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_36.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_37.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_38.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_39.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_3.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_40.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_41.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_42.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_43.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_44.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_45.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_46.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_47.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_48.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_49.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_4.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_50.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_51.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_52.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_53.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_54.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_55.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_56.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_57.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_58.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_59.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_5.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_60.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_6.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_7.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_8.pkl', './last_gen_genomes/1564712467/EmeraldHillZone.Act1.state_9.pkl']
+Working with initial population: {5986: <neat.genome.DefaultGenome object at 0x7f2666256240>, 5988: <neat.genome.DefaultGenome object at 0x7f2666256278>, 5990: <neat.genome.DefaultGenome object at 0x7f2666263cf8>, 5992: <neat.genome.DefaultGenome object at 0x7f26662ceb38>, 5994: <neat.genome.DefaultGenome object at 0x7f2666256208>, 5995: <neat.genome.DefaultGenome object at 0x7f2666163550>, 6000: <neat.genome.DefaultGenome object at 0x7f26661b3160>, 6003: <neat.genome.DefaultGenome object at 0x7f266613df98>, 6004: <neat.genome.DefaultGenome object at 0x7f2666263cc0>, 6005: <neat.genome.DefaultGenome object at 0x7f2666148048>, 6042: <neat.genome.DefaultGenome object at 0x7f26660f65f8>, 6007: <neat.genome.DefaultGenome object at 0x7f26660a18d0>, 6008: <neat.genome.DefaultGenome object at 0x7f2666051da0>, 6011: <neat.genome.DefaultGenome object at 0x7f2666087208>, 6012: <neat.genome.DefaultGenome object at 0x7f2666036550>, 6015: <neat.genome.DefaultGenome object at 0x7f2665fe4908>, 6021: <neat.genome.DefaultGenome object at 0x7f2665f8fe10>, 6026: <neat.genome.DefaultGenome object at 0x7f2665fc80b8>, 6032: <neat.genome.DefaultGenome object at 0x7f2665ed93c8>, 6033: <neat.genome.DefaultGenome object at 0x7f2665f24cf8>, 6034: <neat.genome.DefaultGenome object at 0x7f2665eb2f98>, 3063: <neat.genome.DefaultGenome object at 0x7f2665f755f8>, 6035: <neat.genome.DefaultGenome object at 0x7f2665ebd048>, 6041: <neat.genome.DefaultGenome object at 0x7f2665e6a550>, 6022: <neat.genome.DefaultGenome object at 0x7f2665e16940>, 6018: <neat.genome.DefaultGenome object at 0x7f2665e45dd8>, 6006: <neat.genome.DefaultGenome object at 0x7f2665dfa1d0>, 6002: <neat.genome.DefaultGenome object at 0x7f2665d9cf28>, 5999: <neat.genome.DefaultGenome object at 0x7f2665d594e0>, 6010: <neat.genome.DefaultGenome object at 0x7f2665d85c50>, 6025: <neat.genome.DefaultGenome object at 0x7f2665d3c0f0>, 5998: <neat.genome.DefaultGenome object at 0x7f2665cea7f0>, 5224: <neat.genome.DefaultGenome object at 0x7f2665c96cc0>, 5991: <neat.genome.DefaultGenome object at 0x7f2665c4d0f0>, 6014: <neat.genome.DefaultGenome object at 0x7f2665c7c3c8>, 6040: <neat.genome.DefaultGenome object at 0x7f2665c294e0>, 6036: <neat.genome.DefaultGenome object at 0x7f2665bd8780>, 6024: <neat.genome.DefaultGenome object at 0x7f2665c058d0>, 6037: <neat.genome.DefaultGenome object at 0x7f2665bb4b38>, 6017: <neat.genome.DefaultGenome object at 0x7f2665b63fd0>, 6001: <neat.genome.DefaultGenome object at 0x7f2665b192b0>, 6029: <neat.genome.DefaultGenome object at 0x7f2665b487f0>, 6013: <neat.genome.DefaultGenome object at 0x7f2665af4b00>, 4249: <neat.genome.DefaultGenome object at 0x7f2665aa3e80>, 5996: <neat.genome.DefaultGenome object at 0x7f2665a59320>, 6028: <neat.genome.DefaultGenome object at 0x7f2665a88550>, 5989: <neat.genome.DefaultGenome object at 0x7f2665a35860>, 6030: <neat.genome.DefaultGenome object at 0x7f26659e3c88>, 5997: <neat.genome.DefaultGenome object at 0x7f2665990eb8>, 5987: <neat.genome.DefaultGenome object at 0x7f2665949240>, 6020: <neat.genome.DefaultGenome object at 0x7f26659776d8>, 6016: <neat.genome.DefaultGenome object at 0x7f26659239b0>, 6027: <neat.genome.DefaultGenome object at 0x7f26658d2f28>, 6009: <neat.genome.DefaultGenome object at 0x7f2665889438>, 6023: <neat.genome.DefaultGenome object at 0x7f26658b6940>, 5993: <neat.genome.DefaultGenome object at 0x7f2665863e48>, 6039: <neat.genome.DefaultGenome object at 0x7f266581a208>, 6031: <neat.genome.DefaultGenome object at 0x7f26657c9780>, 6038: <neat.genome.DefaultGenome object at 0x7f26657f5d30>, 6019: <neat.genome.DefaultGenome object at 0x7f26657ab2e8>}
+
+ ****** Running generation 0 ****** 
+
+Gen timestep at time: 2019-08-02 10:04:47.776209
+Total timesteps at end of gen: 0
+Population's average fitness: 1485.08782 stdev: 1189.04280
+Best fitness: 7264.91703 - size: (162, 217) - species 1 - id 6018
+Average adjusted fitness: 0.204
+Population of 60 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    0    60   7264.9    0.204     0
+Total extinctions: 0
+Generation time: 25.954 sec
+
+ ****** Running generation 1 ****** 
+
+Gen timestep at time: 2019-08-02 10:05:13.729798
+Total timesteps at end of gen: 0
+Population's average fitness: 1396.56872 stdev: 1668.94720
+Best fitness: 9840.66678 - size: (160, 229) - species 1 - id 9
+
+Best individual in generation 1 meets fitness threshold - complexity: (160, 229)
+Winner!Key: 9
+Fitness: 9840.666783988476
+Nodes:
+	0 DefaultNodeGene(key=0, bias=-0.3939661617390284, response=0.9142335917513671, activation=sigmoid, aggregation=sum)
+	1 DefaultNodeGene(key=1, bias=1.1555127997643266, response=0.5043763800603722, activation=sigmoid, aggregation=sum)
+	2 DefaultNodeGene(key=2, bias=0.6072864399841026, response=0.9540919268478097, activation=sigmoid, aggregation=sum)
+	3 DefaultNodeGene(key=3, bias=1.3271014618837946, response=0.980613683652188, activation=sigmoid, aggregation=sum)
+	4 DefaultNodeGene(key=4, bias=-3.6614591845675717, response=1.041581569663153, activation=sigmoid, aggregation=sum)
+	5 DefaultNodeGene(key=5, bias=2.3630722425973145, response=1.3463710660844013, activation=sigmoid, aggregation=sum)
+	6 DefaultNodeGene(key=6, bias=-2.767620761516143, response=1.0110950363437643, activation=sigmoid, aggregation=sum)
+	7 DefaultNodeGene(key=7, bias=0.29159296786490235, response=0.7953594133788632, activation=sigmoid, aggregation=sum)
+	8 DefaultNodeGene(key=8, bias=-3.6706255566649926, response=1.036313654530357, activation=sigmoid, aggregation=sum)
+	9 DefaultNodeGene(key=9, bias=2.1264241249482305, response=1.0057784476722238, activation=sigmoid, aggregation=sum)
+	10 DefaultNodeGene(key=10, bias=0.016646090697021, response=1.6392046261745177, activation=sigmoid, aggregation=sum)
+	11 DefaultNodeGene(key=11, bias=1.1205726808987602, response=1.0628223874651983, activation=sigmoid, aggregation=sum)
+	67 DefaultNodeGene(key=67, bias=-1.3891687947351559, response=1.0250571222375708, activation=sigmoid, aggregation=sum)
+	200 DefaultNodeGene(key=200, bias=0.8679743027236568, response=0.9850003215110325, activation=sigmoid, aggregation=sum)
+	1141 DefaultNodeGene(key=1141, bias=2.0482371650568685, response=0.8206832582587875, activation=sigmoid, aggregation=sum)
+	1267 DefaultNodeGene(key=1267, bias=-1.2894181418590633, response=1.103298310333663, activation=sigmoid, aggregation=sum)
+	1287 DefaultNodeGene(key=1287, bias=5.620659318008104, response=1.0722227107694564, activation=sigmoid, aggregation=sum)
+	1385 DefaultNodeGene(key=1385, bias=0.9765511157652564, response=0.6698314510645211, activation=sigmoid, aggregation=sum)
+	1796 DefaultNodeGene(key=1796, bias=-2.374649449476491, response=0.8053728037744076, activation=sigmoid, aggregation=sum)
+	2290 DefaultNodeGene(key=2290, bias=-1.0588419788687404, response=1.2476414184756015, activation=sigmoid, aggregation=sum)
+	2490 DefaultNodeGene(key=2490, bias=0.6395392201061653, response=1.7457198361378023, activation=sigmoid, aggregation=sum)
+	3208 DefaultNodeGene(key=3208, bias=0.23181138763465103, response=0.42072615977559014, activation=sigmoid, aggregation=sum)
+	3264 DefaultNodeGene(key=3264, bias=1.3211874238844592, response=1.1303187045734426, activation=sigmoid, aggregation=sum)
+	3303 DefaultNodeGene(key=3303, bias=-0.41305669125523936, response=1.0501788872892808, activation=sigmoid, aggregation=sum)
+	3346 DefaultNodeGene(key=3346, bias=-3.792978820445266, response=0.779560691470338, activation=sigmoid, aggregation=sum)
+	3362 DefaultNodeGene(key=3362, bias=3.0447186494085763, response=1.0928862787269875, activation=sigmoid, aggregation=sum)
+	3510 DefaultNodeGene(key=3510, bias=1.9706285191688764, response=0.987674347642197, activation=sigmoid, aggregation=sum)
+	3534 DefaultNodeGene(key=3534, bias=-0.8046298353003465, response=1.2102135818173392, activation=sigmoid, aggregation=sum)
+	3641 DefaultNodeGene(key=3641, bias=0.13532211321061632, response=0.44762147460057244, activation=sigmoid, aggregation=sum)
+	6502 DefaultNodeGene(key=6502, bias=-3.7760746966719405, response=1.0102438690539468, activation=sigmoid, aggregation=sum)
+	6778 DefaultNodeGene(key=6778, bias=-0.9998685710191229, response=1.0364444512989557, activation=sigmoid, aggregation=sum)
+	8391 DefaultNodeGene(key=8391, bias=-0.25385791123325363, response=0.8757480563679226, activation=sigmoid, aggregation=sum)
+	8438 DefaultNodeGene(key=8438, bias=-2.7218112768149916, response=0.9878566074111305, activation=sigmoid, aggregation=sum)
+	8532 DefaultNodeGene(key=8532, bias=1.2180331033519576, response=1.0313104050627513, activation=sigmoid, aggregation=sum)
+	8577 DefaultNodeGene(key=8577, bias=0.453920794483043, response=1.2172425779860254, activation=sigmoid, aggregation=sum)
+	8583 DefaultNodeGene(key=8583, bias=0.3253028491055605, response=1.241904301116775, activation=sigmoid, aggregation=sum)
+	11912 DefaultNodeGene(key=11912, bias=-3.789108143915225, response=0.8730550323553914, activation=sigmoid, aggregation=sum)
+	16462 DefaultNodeGene(key=16462, bias=-0.4320539534133688, response=1.334826624121942, activation=sigmoid, aggregation=sum)
+	16534 DefaultNodeGene(key=16534, bias=-0.849141402477096, response=1.1088294403798133, activation=sigmoid, aggregation=sum)
+	16567 DefaultNodeGene(key=16567, bias=2.6938064104076975, response=1.2505812943855106, activation=sigmoid, aggregation=sum)
+	16558 DefaultNodeGene(key=16558, bias=-2.402498624560026, response=1.1212924654528005, activation=sigmoid, aggregation=sum)
+	18112 DefaultNodeGene(key=18112, bias=-0.25951612651638556, response=1.2290229208739476, activation=sigmoid, aggregation=sum)
+	21329 DefaultNodeGene(key=21329, bias=0.7786401424225713, response=0.9590377937941159, activation=sigmoid, aggregation=sum)
+	21565 DefaultNodeGene(key=21565, bias=-0.5464913569715737, response=0.9478153080128906, activation=sigmoid, aggregation=sum)
+	21714 DefaultNodeGene(key=21714, bias=1.5903184230075844, response=0.9623565551300425, activation=sigmoid, aggregation=sum)
+	24700 DefaultNodeGene(key=24700, bias=0.42631837740863154, response=1.0232457293459896, activation=sigmoid, aggregation=sum)
+	24777 DefaultNodeGene(key=24777, bias=-4.80162789776265, response=0.9386378604675562, activation=sigmoid, aggregation=sum)
+	24783 DefaultNodeGene(key=24783, bias=-1.0868503814057195, response=0.9440928031105199, activation=sigmoid, aggregation=sum)
+	25212 DefaultNodeGene(key=25212, bias=1.205322319407074, response=1.1081765520890425, activation=sigmoid, aggregation=sum)
+	25297 DefaultNodeGene(key=25297, bias=-0.416170586630372, response=0.9798953562182587, activation=sigmoid, aggregation=sum)
+	25346 DefaultNodeGene(key=25346, bias=1.2747038214216386, response=1.0024524222615108, activation=sigmoid, aggregation=sum)
+	25366 DefaultNodeGene(key=25366, bias=0.29095630605187106, response=0.98843148159167, activation=sigmoid, aggregation=sum)
+	25419 DefaultNodeGene(key=25419, bias=3.1457928877686654, response=-0.34897304307126215, activation=sigmoid, aggregation=sum)
+	25506 DefaultNodeGene(key=25506, bias=0.38412771970150944, response=1.081295777712149, activation=sigmoid, aggregation=sum)
+	25545 DefaultNodeGene(key=25545, bias=1.6253510381631133, response=0.6494647926132332, activation=sigmoid, aggregation=sum)
+	25656 DefaultNodeGene(key=25656, bias=0.1843321948015731, response=0.8637436240935777, activation=sigmoid, aggregation=sum)
+	25685 DefaultNodeGene(key=25685, bias=0.12160920093642344, response=0.47441419808996566, activation=sigmoid, aggregation=sum)
+	25721 DefaultNodeGene(key=25721, bias=-1.2656275813813898, response=1.010676602532437, activation=sigmoid, aggregation=sum)
+	25778 DefaultNodeGene(key=25778, bias=-0.050544815691837636, response=0.9907110212016887, activation=sigmoid, aggregation=sum)
+	25808 DefaultNodeGene(key=25808, bias=-0.21613775291070875, response=0.9623863846455621, activation=sigmoid, aggregation=sum)
+	25908 DefaultNodeGene(key=25908, bias=0.05118691999326619, response=1.0285608469422907, activation=sigmoid, aggregation=sum)
+	25961 DefaultNodeGene(key=25961, bias=-0.7520402482887095, response=1.0309061799232535, activation=sigmoid, aggregation=sum)
+	26231 DefaultNodeGene(key=26231, bias=-1.8190615865491502, response=0.9284541433209987, activation=sigmoid, aggregation=sum)
+	26267 DefaultNodeGene(key=26267, bias=0.6908162506963688, response=1.2841691036219252, activation=sigmoid, aggregation=sum)
+	26299 DefaultNodeGene(key=26299, bias=-2.1246262778743192, response=1.0053870148492803, activation=sigmoid, aggregation=sum)
+	26355 DefaultNodeGene(key=26355, bias=-0.0430208992250215, response=0.845804776460074, activation=sigmoid, aggregation=sum)
+	26375 DefaultNodeGene(key=26375, bias=3.5245886545249916, response=0.8152467391750119, activation=sigmoid, aggregation=sum)
+	26422 DefaultNodeGene(key=26422, bias=-0.1388203599616138, response=0.767452694801965, activation=sigmoid, aggregation=sum)
+	26497 DefaultNodeGene(key=26497, bias=-0.9690833987593372, response=0.8264092780943162, activation=sigmoid, aggregation=sum)
+	26600 DefaultNodeGene(key=26600, bias=-1.0722419267429988, response=0.8994653720484239, activation=sigmoid, aggregation=sum)
+	26682 DefaultNodeGene(key=26682, bias=-1.9758644276753927, response=0.77052359640712, activation=sigmoid, aggregation=sum)
+	26729 DefaultNodeGene(key=26729, bias=0.4530608508628301, response=0.9961466482791407, activation=sigmoid, aggregation=sum)
+	26758 DefaultNodeGene(key=26758, bias=0.6075525652593688, response=0.8867479653496907, activation=sigmoid, aggregation=sum)
+	26793 DefaultNodeGene(key=26793, bias=0.23451606259138352, response=1.0399954868119914, activation=sigmoid, aggregation=sum)
+	26963 DefaultNodeGene(key=26963, bias=1.1495163055299078, response=1.2404978236375572, activation=sigmoid, aggregation=sum)
+	26990 DefaultNodeGene(key=26990, bias=-1.8325045891815677, response=1.3862430869454072, activation=sigmoid, aggregation=sum)
+	27404 DefaultNodeGene(key=27404, bias=1.3115335315645515, response=0.8451912935382004, activation=sigmoid, aggregation=sum)
+	27685 DefaultNodeGene(key=27685, bias=0.6675577981420167, response=0.7430250867384375, activation=sigmoid, aggregation=sum)
+	27730 DefaultNodeGene(key=27730, bias=0.1642131535355868, response=1.2659780181834699, activation=sigmoid, aggregation=sum)
+	27796 DefaultNodeGene(key=27796, bias=-1.7355016497239204, response=0.8823649003168287, activation=sigmoid, aggregation=sum)
+	27826 DefaultNodeGene(key=27826, bias=0.1982980375209118, response=0.9933164744910713, activation=sigmoid, aggregation=sum)
+	31764 DefaultNodeGene(key=31764, bias=0.6341219767695905, response=0.9485977302056835, activation=sigmoid, aggregation=sum)
+	31796 DefaultNodeGene(key=31796, bias=-0.2635792180173358, response=0.8792085494624912, activation=sigmoid, aggregation=sum)
+	31817 DefaultNodeGene(key=31817, bias=2.059949954495964, response=0.9217640387311283, activation=sigmoid, aggregation=sum)
+	31853 DefaultNodeGene(key=31853, bias=0.30924117354536884, response=0.5143409799368407, activation=sigmoid, aggregation=sum)
+	32126 DefaultNodeGene(key=32126, bias=-1.0363843438259843, response=0.9854945537558385, activation=sigmoid, aggregation=sum)
+	32150 DefaultNodeGene(key=32150, bias=0.1941949520384436, response=1.2212896808351292, activation=sigmoid, aggregation=sum)
+	33302 DefaultNodeGene(key=33302, bias=-1.2317413969953999, response=0.8781968681851298, activation=sigmoid, aggregation=sum)
+	33365 DefaultNodeGene(key=33365, bias=-2.2438928308321935, response=0.9302883262315558, activation=sigmoid, aggregation=sum)
+	33390 DefaultNodeGene(key=33390, bias=0.6897459135245164, response=0.9654637908680849, activation=sigmoid, aggregation=sum)
+	33433 DefaultNodeGene(key=33433, bias=-0.7578788275811424, response=0.9945510211556545, activation=sigmoid, aggregation=sum)
+	33446 DefaultNodeGene(key=33446, bias=0.3477554460547808, response=1.0660051087465978, activation=sigmoid, aggregation=sum)
+	33495 DefaultNodeGene(key=33495, bias=0.6953143887354638, response=0.9053670585874217, activation=sigmoid, aggregation=sum)
+	34256 DefaultNodeGene(key=34256, bias=-0.6721159556218564, response=0.769773745933547, activation=sigmoid, aggregation=sum)
+	34309 DefaultNodeGene(key=34309, bias=1.6049118689289, response=0.9996840221380461, activation=sigmoid, aggregation=sum)
+	36905 DefaultNodeGene(key=36905, bias=-0.41195663681443406, response=1.2271746329598323, activation=sigmoid, aggregation=sum)
+	36934 DefaultNodeGene(key=36934, bias=-1.0273918353625464, response=1.3397154118246146, activation=sigmoid, aggregation=sum)
+	36982 DefaultNodeGene(key=36982, bias=0.5755481248953622, response=1.0259261551610932, activation=sigmoid, aggregation=sum)
+	34469 DefaultNodeGene(key=34469, bias=0.9078067605942178, response=0.9925266032843694, activation=sigmoid, aggregation=sum)
+	35227 DefaultNodeGene(key=35227, bias=7.341472958276679, response=1.2096572974245248, activation=sigmoid, aggregation=sum)
+	37614 DefaultNodeGene(key=37614, bias=-1.3004482977805394, response=1.6718337519458335, activation=sigmoid, aggregation=sum)
+	37658 DefaultNodeGene(key=37658, bias=-2.387382392955181, response=0.8871821577407358, activation=sigmoid, aggregation=sum)
+	37691 DefaultNodeGene(key=37691, bias=-1.1219700463183764, response=1.0206088713959853, activation=sigmoid, aggregation=sum)
+	37731 DefaultNodeGene(key=37731, bias=1.3054534452025248, response=1.3571503817063832, activation=sigmoid, aggregation=sum)
+	39435 DefaultNodeGene(key=39435, bias=-4.8143193790400405, response=1.4878139869836078, activation=sigmoid, aggregation=sum)
+	37038 DefaultNodeGene(key=37038, bias=-0.06092988869397757, response=0.8926707411546868, activation=sigmoid, aggregation=sum)
+	37067 DefaultNodeGene(key=37067, bias=2.2768848212367776, response=0.8773025325157062, activation=sigmoid, aggregation=sum)
+	37259 DefaultNodeGene(key=37259, bias=-1.617494812575484, response=0.9664548441579105, activation=sigmoid, aggregation=sum)
+	37480 DefaultNodeGene(key=37480, bias=1.7344916473143337, response=1.21885830974834, activation=sigmoid, aggregation=sum)
+	37516 DefaultNodeGene(key=37516, bias=-1.3720685302714017, response=1.7094466059731173, activation=sigmoid, aggregation=sum)
+	37579 DefaultNodeGene(key=37579, bias=2.9336042362485637, response=0.5353995646904863, activation=sigmoid, aggregation=sum)
+	37629 DefaultNodeGene(key=37629, bias=0.26284835900969505, response=1.3838191938970843, activation=sigmoid, aggregation=sum)
+	38171 DefaultNodeGene(key=38171, bias=-0.2296087465650484, response=1.2887062319928677, activation=sigmoid, aggregation=sum)
+	38453 DefaultNodeGene(key=38453, bias=0.707334500663222, response=1.0591985157936972, activation=sigmoid, aggregation=sum)
+	38493 DefaultNodeGene(key=38493, bias=1.0764594267194811, response=1.43614840515983, activation=sigmoid, aggregation=sum)
+	38508 DefaultNodeGene(key=38508, bias=0.8862177747770844, response=0.9380325898039866, activation=sigmoid, aggregation=sum)
+	38562 DefaultNodeGene(key=38562, bias=2.7069626450437663, response=0.13216097997365112, activation=sigmoid, aggregation=sum)
+	42031 DefaultNodeGene(key=42031, bias=0.49222599887695484, response=0.9965250843448484, activation=sigmoid, aggregation=sum)
+	42273 DefaultNodeGene(key=42273, bias=1.1400344358551018, response=0.9277907016025589, activation=sigmoid, aggregation=sum)
+	42341 DefaultNodeGene(key=42341, bias=0.2650464204248851, response=1.1294551299268198, activation=sigmoid, aggregation=sum)
+	42414 DefaultNodeGene(key=42414, bias=-1.362032901288436, response=0.7945385928534543, activation=sigmoid, aggregation=sum)
+	42520 DefaultNodeGene(key=42520, bias=1.0892554988880214, response=0.4532114612644017, activation=sigmoid, aggregation=sum)
+	42669 DefaultNodeGene(key=42669, bias=0.7589932236900092, response=0.984877291836601, activation=sigmoid, aggregation=sum)
+	42861 DefaultNodeGene(key=42861, bias=-2.3200730162229672, response=0.5092922442484751, activation=sigmoid, aggregation=sum)
+	42875 DefaultNodeGene(key=42875, bias=-0.5991821491752297, response=1.3880202246227773, activation=sigmoid, aggregation=sum)
+	43234 DefaultNodeGene(key=43234, bias=0.9213472379961812, response=0.6818629990397175, activation=sigmoid, aggregation=sum)
+	46945 DefaultNodeGene(key=46945, bias=1.429235205866143, response=0.2860808275467082, activation=sigmoid, aggregation=sum)
+	46972 DefaultNodeGene(key=46972, bias=-0.10968580440144776, response=0.1091089556574517, activation=sigmoid, aggregation=sum)
+	47000 DefaultNodeGene(key=47000, bias=0.2573599589488826, response=0.46722835160821974, activation=sigmoid, aggregation=sum)
+	47358 DefaultNodeGene(key=47358, bias=-1.5107255187824462, response=1.1159204671994172, activation=sigmoid, aggregation=sum)
+	48096 DefaultNodeGene(key=48096, bias=-0.2594108219258753, response=0.8076432822807528, activation=sigmoid, aggregation=sum)
+	48227 DefaultNodeGene(key=48227, bias=1.626203157297695, response=0.9808226952218252, activation=sigmoid, aggregation=sum)
+	48327 DefaultNodeGene(key=48327, bias=-1.2625947404497697, response=1.487558504540825, activation=sigmoid, aggregation=sum)
+	48385 DefaultNodeGene(key=48385, bias=1.9539247465717944, response=1.7948234100704705, activation=sigmoid, aggregation=sum)
+	48436 DefaultNodeGene(key=48436, bias=-0.8497220561343812, response=1.3601667594317906, activation=sigmoid, aggregation=sum)
+	48451 DefaultNodeGene(key=48451, bias=-1.9803539801498484, response=1.0001461386915638, activation=sigmoid, aggregation=sum)
+	48482 DefaultNodeGene(key=48482, bias=-0.24378444103050018, response=0.8065383175281603, activation=sigmoid, aggregation=sum)
+	48523 DefaultNodeGene(key=48523, bias=2.5243103096721975, response=0.8843878313236699, activation=sigmoid, aggregation=sum)
+	48549 DefaultNodeGene(key=48549, bias=-1.8368240380493286, response=0.9132112530848245, activation=sigmoid, aggregation=sum)
+	48594 DefaultNodeGene(key=48594, bias=-3.044930774731176, response=0.6740318351863714, activation=sigmoid, aggregation=sum)
+	48675 DefaultNodeGene(key=48675, bias=0.10070565286552943, response=1.3075762399099071, activation=sigmoid, aggregation=sum)
+	48709 DefaultNodeGene(key=48709, bias=1.1167347201930553, response=0.7446268113338328, activation=sigmoid, aggregation=sum)
+	52082 DefaultNodeGene(key=52082, bias=1.4615886586115874, response=1.049915006113618, activation=sigmoid, aggregation=sum)
+	52165 DefaultNodeGene(key=52165, bias=-0.24323822386428567, response=1.0328465416709183, activation=sigmoid, aggregation=sum)
+	52157 DefaultNodeGene(key=52157, bias=0.7936470616110072, response=0.912301772724343, activation=sigmoid, aggregation=sum)
+	55958 DefaultNodeGene(key=55958, bias=-1.6577989339381523, response=1.0118854616205246, activation=sigmoid, aggregation=sum)
+	55972 DefaultNodeGene(key=55972, bias=1.6250624986506823, response=0.791217206741307, activation=sigmoid, aggregation=sum)
+	56012 DefaultNodeGene(key=56012, bias=-0.9001460720293661, response=1.1182107694927972, activation=sigmoid, aggregation=sum)
+	56076 DefaultNodeGene(key=56076, bias=2.0261411781258354, response=0.7468644053048656, activation=sigmoid, aggregation=sum)
+	56116 DefaultNodeGene(key=56116, bias=0.29481672140810034, response=1.0477210013664195, activation=sigmoid, aggregation=sum)
+	57165 DefaultNodeGene(key=57165, bias=1.7419350778292952, response=1.3136752543730172, activation=sigmoid, aggregation=sum)
+	57206 DefaultNodeGene(key=57206, bias=-2.1677526508487874, response=0.7261408032691459, activation=sigmoid, aggregation=sum)
+	57222 DefaultNodeGene(key=57222, bias=-0.21540986857627298, response=1.280413348776101, activation=sigmoid, aggregation=sum)
+	57223 DefaultNodeGene(key=57223, bias=-0.7381931216495553, response=0.5502670183025267, activation=sigmoid, aggregation=sum)
+	58929 DefaultNodeGene(key=58929, bias=-0.7670016386152945, response=0.685664498210041, activation=sigmoid, aggregation=sum)
+	58967 DefaultNodeGene(key=58967, bias=0.14714350772969612, response=1.3321132290739413, activation=sigmoid, aggregation=sum)
+	60294 DefaultNodeGene(key=60294, bias=0.35042313162726113, response=0.9920195183438094, activation=sigmoid, aggregation=sum)
+	60307 DefaultNodeGene(key=60307, bias=1.3914207274758137, response=1.1652256316318905, activation=sigmoid, aggregation=sum)
+	60349 DefaultNodeGene(key=60349, bias=0.11512472214152393, response=0.6996665485747011, activation=sigmoid, aggregation=sum)
+	60848 DefaultNodeGene(key=60848, bias=-0.2142320512631718, response=1.1426038089183295, activation=sigmoid, aggregation=sum)
+Connections:
+	DefaultConnectionGene(key=(-17863, 5), weight=-1.814544376425469, enabled=False)
+	DefaultConnectionGene(key=(-17850, 16567), weight=1.0392932221614644, enabled=False)
+	DefaultConnectionGene(key=(-17767, 1267), weight=1.0629013447716233, enabled=False)
+	DefaultConnectionGene(key=(-17767, 57223), weight=1.8082921734659714, enabled=False)
+	DefaultConnectionGene(key=(-17644, 2290), weight=-1.7572164513044513, enabled=True)
+	DefaultConnectionGene(key=(-17598, 2490), weight=0.5762420010727214, enabled=True)
+	DefaultConnectionGene(key=(-17589, 2290), weight=3.480324533462138, enabled=False)
+	DefaultConnectionGene(key=(-17589, 48523), weight=1.762021180720124, enabled=True)
+	DefaultConnectionGene(key=(-17494, 25506), weight=2.9903201051135277, enabled=False)
+	DefaultConnectionGene(key=(-17494, 25778), weight=0.3460558855319802, enabled=True)
+	DefaultConnectionGene(key=(-17233, 26682), weight=-2.056106831095091, enabled=False)
+	DefaultConnectionGene(key=(-17168, 26375), weight=-3.02234991551796, enabled=True)
+	DefaultConnectionGene(key=(-17063, 25419), weight=1.1340393843294867, enabled=True)
+	DefaultConnectionGene(key=(-16996, 26729), weight=-0.6409498060142942, enabled=False)
+	DefaultConnectionGene(key=(-16860, 3208), weight=1.2509162026977647, enabled=False)
+	DefaultConnectionGene(key=(-16448, 27685), weight=-2.0346900844059417, enabled=False)
+	DefaultConnectionGene(key=(-16422, 2490), weight=0.1833703808548962, enabled=True)
+	DefaultConnectionGene(key=(-16422, 42031), weight=0.30272293445943554, enabled=True)
+	DefaultConnectionGene(key=(-16340, 200), weight=-1.3898223717419889, enabled=False)
+	DefaultConnectionGene(key=(-16340, 48482), weight=-0.12290106163831696, enabled=True)
+	DefaultConnectionGene(key=(-16340, 57206), weight=1.271742398457139, enabled=True)
+	DefaultConnectionGene(key=(-16210, 11), weight=2.7249338409124664, enabled=False)
+	DefaultConnectionGene(key=(-16210, 25366), weight=0.02340051721365488, enabled=False)
+	DefaultConnectionGene(key=(-16210, 37579), weight=1.4112358341874045, enabled=False)
+	DefaultConnectionGene(key=(-15949, 11), weight=0.41017493779864744, enabled=True)
+	DefaultConnectionGene(key=(-15949, 25721), weight=-0.3760325796429005, enabled=True)
+	DefaultConnectionGene(key=(-15949, 32126), weight=-0.7267541081959447, enabled=True)
+	DefaultConnectionGene(key=(-15873, 25778), weight=-2.8772764731666105, enabled=False)
+	DefaultConnectionGene(key=(-15393, 3303), weight=4.545433909703997, enabled=False)
+	DefaultConnectionGene(key=(-15249, 2), weight=0.9484034886987439, enabled=False)
+	DefaultConnectionGene(key=(-15187, 6502), weight=-1.031639437899195, enabled=False)
+	DefaultConnectionGene(key=(-15083, 2), weight=-1.2981755229527743, enabled=True)
+	DefaultConnectionGene(key=(-14930, 5), weight=-0.06755356212591032, enabled=True)
+	DefaultConnectionGene(key=(-14515, 21565), weight=-1.942409941112107, enabled=False)
+	DefaultConnectionGene(key=(-14314, 27796), weight=1.5331204825323526, enabled=False)
+	DefaultConnectionGene(key=(-14214, 8583), weight=1.2775412288724577, enabled=False)
+	DefaultConnectionGene(key=(-14214, 36934), weight=2.2512537445762426, enabled=False)
+	DefaultConnectionGene(key=(-14214, 48385), weight=2.000734132771793, enabled=True)
+	DefaultConnectionGene(key=(-14051, 25961), weight=2.811381194803672, enabled=False)
+	DefaultConnectionGene(key=(-13987, 18112), weight=4.17354217980101, enabled=True)
+	DefaultConnectionGene(key=(-13926, 2), weight=-0.28679109562766364, enabled=True)
+	DefaultConnectionGene(key=(-13926, 48436), weight=2.622873418721141, enabled=True)
+	DefaultConnectionGene(key=(-13722, 34469), weight=1.058793410092225, enabled=False)
+	DefaultConnectionGene(key=(-13708, 25506), weight=0.546594245705419, enabled=True)
+	DefaultConnectionGene(key=(-13333, 8), weight=-0.40150184299131786, enabled=True)
+	DefaultConnectionGene(key=(-13314, 25721), weight=3.636337785148109, enabled=True)
+	DefaultConnectionGene(key=(-13272, 24700), weight=-0.43903588576735875, enabled=False)
+	DefaultConnectionGene(key=(-13272, 31853), weight=3.965126373622482, enabled=True)
+	DefaultConnectionGene(key=(-13272, 48227), weight=1.8205793955913054, enabled=False)
+	DefaultConnectionGene(key=(-13094, 10), weight=-2.0406009561602243, enabled=False)
+	DefaultConnectionGene(key=(-13005, 24700), weight=-2.5591820704579495, enabled=True)
+	DefaultConnectionGene(key=(-12992, 48523), weight=-0.5153649812403083, enabled=False)
+	DefaultConnectionGene(key=(-12989, 2), weight=-1.3733087175374679, enabled=True)
+	DefaultConnectionGene(key=(-12898, 0), weight=-0.1848055133131477, enabled=True)
+	DefaultConnectionGene(key=(-12894, 24700), weight=-1.8317050591842654, enabled=False)
+	DefaultConnectionGene(key=(-12866, 67), weight=-0.8703296125511979, enabled=True)
+	DefaultConnectionGene(key=(-12866, 38171), weight=1.6682183737633178, enabled=False)
+	DefaultConnectionGene(key=(-12670, 3362), weight=0.20615832429529618, enabled=False)
+	DefaultConnectionGene(key=(-12670, 37691), weight=-0.8699239816477823, enabled=True)
+	DefaultConnectionGene(key=(-12670, 60294), weight=0.9659933567717445, enabled=True)
+	DefaultConnectionGene(key=(-12580, 8438), weight=-3.383040935257478, enabled=False)
+	DefaultConnectionGene(key=(-12537, 1267), weight=-0.03017099404264198, enabled=True)
+	DefaultConnectionGene(key=(-12482, 7), weight=4.490854091090091, enabled=True)
+	DefaultConnectionGene(key=(-12480, 26600), weight=2.9241149652586125, enabled=False)
+	DefaultConnectionGene(key=(-12431, 26355), weight=0.8384275502239682, enabled=True)
+	DefaultConnectionGene(key=(-12304, 16462), weight=1.2037194110318237, enabled=False)
+	DefaultConnectionGene(key=(-12304, 33446), weight=2.1492687356693003, enabled=False)
+	DefaultConnectionGene(key=(-12304, 37629), weight=0.7282057321920135, enabled=False)
+	DefaultConnectionGene(key=(-12021, 1385), weight=0.2939285217408301, enabled=False)
+	DefaultConnectionGene(key=(-12021, 39435), weight=0.6627150519390504, enabled=False)
+	DefaultConnectionGene(key=(-12001, 25419), weight=-0.4929917408386688, enabled=False)
+	DefaultConnectionGene(key=(-11941, 11), weight=0.7364269006990235, enabled=True)
+	DefaultConnectionGene(key=(-11941, 18112), weight=-0.9969851395574985, enabled=True)
+	DefaultConnectionGene(key=(-11941, 58967), weight=-0.6392316979948812, enabled=True)
+	DefaultConnectionGene(key=(-11877, 6778), weight=-0.05940826552262615, enabled=False)
+	DefaultConnectionGene(key=(-11735, 1267), weight=-0.1352637320814709, enabled=True)
+	DefaultConnectionGene(key=(-11735, 33302), weight=1.4057909922681264, enabled=False)
+	DefaultConnectionGene(key=(-11684, 11), weight=-0.24356771920866258, enabled=False)
+	DefaultConnectionGene(key=(-11684, 60848), weight=1.047264560171426, enabled=True)
+	DefaultConnectionGene(key=(-11374, 2290), weight=2.8401615289830273, enabled=True)
+	DefaultConnectionGene(key=(-11337, 8438), weight=-5.075659278493531, enabled=False)
+	DefaultConnectionGene(key=(-11325, 25419), weight=1.46511079374701, enabled=True)
+	DefaultConnectionGene(key=(-11257, 1287), weight=-0.43950667232294194, enabled=True)
+	DefaultConnectionGene(key=(-11257, 3264), weight=1.0310888181833415, enabled=False)
+	DefaultConnectionGene(key=(-11257, 3510), weight=-0.559323997830026, enabled=False)
+	DefaultConnectionGene(key=(-11257, 26729), weight=2.351446048647701, enabled=True)
+	DefaultConnectionGene(key=(-11257, 26963), weight=0.1554804023542995, enabled=False)
+	DefaultConnectionGene(key=(-11257, 37067), weight=1.069392325187008, enabled=True)
+	DefaultConnectionGene(key=(-11095, 25346), weight=-4.071545440922557, enabled=True)
+	DefaultConnectionGene(key=(-10928, 3346), weight=1.1795791759020768, enabled=True)
+	DefaultConnectionGene(key=(-10925, 1141), weight=8.233440192015712, enabled=True)
+	DefaultConnectionGene(key=(-10925, 52165), weight=-0.18559033677817496, enabled=True)
+	DefaultConnectionGene(key=(-10853, 5), weight=-0.5748267342870179, enabled=True)
+	DefaultConnectionGene(key=(-10851, 26497), weight=0.4495975667313995, enabled=True)
+	DefaultConnectionGene(key=(-10851, 47358), weight=1.2618019517817252, enabled=True)
+	DefaultConnectionGene(key=(-10710, 32126), weight=1.0555917962130614, enabled=True)
+	DefaultConnectionGene(key=(-10513, 16534), weight=1.2226943058604713, enabled=True)
+	DefaultConnectionGene(key=(-10438, 25685), weight=-1.1983059225043011, enabled=True)
+	DefaultConnectionGene(key=(-10267, 16534), weight=-1.4441345648942554, enabled=True)
+	DefaultConnectionGene(key=(-10252, 26729), weight=-1.0177977593644822, enabled=True)
+	DefaultConnectionGene(key=(-10131, 0), weight=2.464788978162696, enabled=True)
+	DefaultConnectionGene(key=(-10131, 1), weight=2.3434037837690007, enabled=False)
+	DefaultConnectionGene(key=(-10131, 2), weight=0.21554823081690644, enabled=True)
+	DefaultConnectionGene(key=(-10131, 3), weight=-1.4446041936448086, enabled=True)
+	DefaultConnectionGene(key=(-10131, 4), weight=-0.08546477439118297, enabled=True)
+	DefaultConnectionGene(key=(-10131, 5), weight=0.053496453691690427, enabled=False)
+	DefaultConnectionGene(key=(-10131, 8), weight=-0.45728341291839114, enabled=False)
+	DefaultConnectionGene(key=(-10131, 9), weight=-0.01902605484928155, enabled=True)
+	DefaultConnectionGene(key=(-10131, 10), weight=1.010128670209334, enabled=False)
+	DefaultConnectionGene(key=(-10131, 11), weight=-1.6535111417300308, enabled=False)
+	DefaultConnectionGene(key=(-10131, 67), weight=3.1053753783823517, enabled=True)
+	DefaultConnectionGene(key=(-10131, 200), weight=0.4260712123694954, enabled=True)
+	DefaultConnectionGene(key=(-10131, 2290), weight=2.2791016236981028, enabled=False)
+	DefaultConnectionGene(key=(-10131, 3208), weight=0.45380530774916994, enabled=False)
+	DefaultConnectionGene(key=(-10131, 3346), weight=0.6482314098005435, enabled=True)
+	DefaultConnectionGene(key=(-10131, 3534), weight=-0.431424586567074, enabled=False)
+	DefaultConnectionGene(key=(-10131, 8438), weight=-0.9671664903018591, enabled=False)
+	DefaultConnectionGene(key=(-10131, 16567), weight=1.8246058971757169, enabled=False)
+	DefaultConnectionGene(key=(-10131, 25297), weight=0.9351512095881067, enabled=False)
+	DefaultConnectionGene(key=(-10131, 25346), weight=-3.88383527390423, enabled=True)
+	DefaultConnectionGene(key=(-10131, 25419), weight=-1.1803723309229883, enabled=False)
+	DefaultConnectionGene(key=(-10131, 25656), weight=1.8142091792718977, enabled=True)
+	DefaultConnectionGene(key=(-10131, 25808), weight=-4.7679448366265555, enabled=True)
+	DefaultConnectionGene(key=(-10131, 26267), weight=0.9305398313266817, enabled=False)
+	DefaultConnectionGene(key=(-10131, 36905), weight=-0.6768868292877134, enabled=True)
+	DefaultConnectionGene(key=(-10131, 42669), weight=-0.03817129595240276, enabled=False)
+	DefaultConnectionGene(key=(-10076, 8438), weight=-1.887660544378447, enabled=True)
+	DefaultConnectionGene(key=(-9937, 8532), weight=0.8081699388232776, enabled=True)
+	DefaultConnectionGene(key=(-9921, 25908), weight=1.6260472667431363, enabled=False)
+	DefaultConnectionGene(key=(-9880, 26299), weight=-0.7309625589757913, enabled=False)
+	DefaultConnectionGene(key=(-9448, 24700), weight=-2.403432521495721, enabled=True)
+	DefaultConnectionGene(key=(-8812, 6502), weight=1.51202718017036, enabled=False)
+	DefaultConnectionGene(key=(-8756, 7), weight=2.7113435133622272, enabled=True)
+	DefaultConnectionGene(key=(-8752, 25366), weight=1.691841057265946, enabled=False)
+	DefaultConnectionGene(key=(-8752, 55972), weight=0.5709385718292611, enabled=True)
+	DefaultConnectionGene(key=(-8670, 39435), weight=0.34396033616522304, enabled=False)
+	DefaultConnectionGene(key=(-8670, 60307), weight=0.22574099883091936, enabled=True)
+	DefaultConnectionGene(key=(-8622, 200), weight=1.554844630015361, enabled=False)
+	DefaultConnectionGene(key=(-8622, 27685), weight=0.011736782301775328, enabled=True)
+	DefaultConnectionGene(key=(-8571, 1796), weight=-0.868731715645281, enabled=True)
+	DefaultConnectionGene(key=(-8563, 6778), weight=0.9202863150009266, enabled=True)
+	DefaultConnectionGene(key=(-8521, 67), weight=-2.6476532020820134, enabled=True)
+	DefaultConnectionGene(key=(-8436, 8), weight=-2.292321369936908, enabled=False)
+	DefaultConnectionGene(key=(-8436, 48451), weight=0.013006872254978985, enabled=True)
+	DefaultConnectionGene(key=(-8436, 57165), weight=1.1261304949772706, enabled=False)
+	DefaultConnectionGene(key=(-8351, 38508), weight=1.08609894305902, enabled=True)
+	DefaultConnectionGene(key=(-8343, 11), weight=-0.5051198259746512, enabled=True)
+	DefaultConnectionGene(key=(-8343, 2490), weight=0.5456088480781613, enabled=True)
+	DefaultConnectionGene(key=(-8343, 3303), weight=4.572266933906168, enabled=False)
+	DefaultConnectionGene(key=(-8343, 3362), weight=0.2837938340071614, enabled=False)
+	DefaultConnectionGene(key=(-8343, 26422), weight=-1.2119232076945743, enabled=True)
+	DefaultConnectionGene(key=(-8301, 6), weight=0.6414797518425812, enabled=False)
+	DefaultConnectionGene(key=(-8231, 6778), weight=-2.983879742316925, enabled=True)
+	DefaultConnectionGene(key=(-8231, 31796), weight=1.1023172120334443, enabled=False)
+	DefaultConnectionGene(key=(-8051, 1), weight=1.0009652992188536, enabled=True)
+	DefaultConnectionGene(key=(-8050, 48675), weight=-1.4565760322696772, enabled=True)
+	DefaultConnectionGene(key=(-7964, 11), weight=2.072823936410981, enabled=False)
+	DefaultConnectionGene(key=(-7964, 1141), weight=0.5270882963683664, enabled=True)
+	DefaultConnectionGene(key=(-7964, 1267), weight=-2.579664647076474, enabled=True)
+	DefaultConnectionGene(key=(-7964, 3641), weight=1.3901513307828726, enabled=True)
+	DefaultConnectionGene(key=(-7964, 6778), weight=-0.2817454445241041, enabled=True)
+	DefaultConnectionGene(key=(-7964, 21329), weight=0.16486707434554643, enabled=True)
+	DefaultConnectionGene(key=(-7964, 25961), weight=1.1742159879320626, enabled=False)
+	DefaultConnectionGene(key=(-7964, 26497), weight=2.0776292116172086, enabled=False)
+	DefaultConnectionGene(key=(-7964, 26682), weight=-2.125898803839852, enabled=True)
+	DefaultConnectionGene(key=(-7591, 16462), weight=3.6308073938917325, enabled=True)
+	DefaultConnectionGene(key=(-7591, 42341), weight=2.0951065848904267, enabled=False)
+	DefaultConnectionGene(key=(-7591, 56012), weight=-0.3226671137589308, enabled=True)
+	DefaultConnectionGene(key=(-7273, 3510), weight=2.054744160941323, enabled=True)
+	DefaultConnectionGene(key=(-6890, 37067), weight=0.7432297618350759, enabled=True)
+	DefaultConnectionGene(key=(-6869, 2), weight=-2.247487460395556, enabled=True)
+	DefaultConnectionGene(key=(-6746, 1796), weight=-0.5327831035333317, enabled=False)
+	DefaultConnectionGene(key=(-6654, 8), weight=-0.4829465414259266, enabled=True)
+	DefaultConnectionGene(key=(-6624, 37579), weight=1.092209280314438, enabled=True)
+	DefaultConnectionGene(key=(-6514, 8577), weight=0.23915512275964312, enabled=True)
+	DefaultConnectionGene(key=(-6514, 42520), weight=-2.010273603383594, enabled=True)
+	DefaultConnectionGene(key=(-6514, 57222), weight=-0.05835852192389235, enabled=True)
+	DefaultConnectionGene(key=(-6487, 24777), weight=-0.15542810251208508, enabled=False)
+	DefaultConnectionGene(key=(-6405, 26600), weight=2.104884373583916, enabled=True)
+	DefaultConnectionGene(key=(-6286, 8), weight=-0.3044016190201078, enabled=False)
+	DefaultConnectionGene(key=(-6059, 26231), weight=-3.1484118266257872, enabled=False)
+	DefaultConnectionGene(key=(-5854, 0), weight=-1.8555259920100036, enabled=True)
+	DefaultConnectionGene(key=(-5739, 27826), weight=1.4425340372924618, enabled=False)
+	DefaultConnectionGene(key=(-5679, 3), weight=-0.12111918189373783, enabled=False)
+	DefaultConnectionGene(key=(-5679, 52082), weight=0.7028656562150274, enabled=True)
+	DefaultConnectionGene(key=(-5623, 4), weight=0.2691105514059611, enabled=False)
+	DefaultConnectionGene(key=(-5418, 48385), weight=-2.7002920636941927, enabled=True)
+	DefaultConnectionGene(key=(-5418, 55958), weight=-2.6490598869018855, enabled=True)
+	DefaultConnectionGene(key=(-5372, 8391), weight=0.21574784335783487, enabled=False)
+	DefaultConnectionGene(key=(-5372, 60349), weight=0.22041928238177094, enabled=True)
+	DefaultConnectionGene(key=(-5235, 5), weight=-0.04670943808556405, enabled=False)
+	DefaultConnectionGene(key=(-5084, 3), weight=-0.5029650868864936, enabled=True)
+	DefaultConnectionGene(key=(-4983, 16567), weight=-0.6719929927266058, enabled=False)
+	DefaultConnectionGene(key=(-4983, 31764), weight=1.612146838104123, enabled=False)
+	DefaultConnectionGene(key=(-4541, 200), weight=1.0216341514242364, enabled=True)
+	DefaultConnectionGene(key=(-4481, 67), weight=-0.7103713921015608, enabled=True)
+	DefaultConnectionGene(key=(-4379, 0), weight=-0.48285997584964624, enabled=True)
+	DefaultConnectionGene(key=(-4353, 33365), weight=-1.0925187004237649, enabled=False)
+	DefaultConnectionGene(key=(-4149, 1385), weight=0.7829697535237728, enabled=True)
+	DefaultConnectionGene(key=(-4149, 38453), weight=1.58000399182135, enabled=True)
+	DefaultConnectionGene(key=(-4063, 6), weight=1.6041854113879856, enabled=False)
+	DefaultConnectionGene(key=(-4063, 33433), weight=2.5558799750906265, enabled=False)
+	DefaultConnectionGene(key=(-3955, 25419), weight=-0.17859440498195184, enabled=True)
+	DefaultConnectionGene(key=(-3927, 34309), weight=0.9911709154564212, enabled=True)
+	DefaultConnectionGene(key=(-3645, 27796), weight=1.6551965109521536, enabled=False)
+	DefaultConnectionGene(key=(-3599, 25346), weight=-0.6911003208944069, enabled=False)
+	DefaultConnectionGene(key=(-3596, 37731), weight=-1.3239945522541945, enabled=False)
+	DefaultConnectionGene(key=(-3364, 31853), weight=0.16862463938545513, enabled=False)
+	DefaultConnectionGene(key=(-3132, 25908), weight=-0.8123574810404588, enabled=True)
+	DefaultConnectionGene(key=(-3074, 6502), weight=0.07329279593382954, enabled=True)
+	DefaultConnectionGene(key=(-3060, 8), weight=-0.6134058973403775, enabled=True)
+	DefaultConnectionGene(key=(-3060, 26600), weight=-5.440645763892999, enabled=False)
+	DefaultConnectionGene(key=(-2652, 3264), weight=-0.09308764974498485, enabled=False)
+	DefaultConnectionGene(key=(-2557, 8438), weight=-0.4319040502392717, enabled=True)
+	DefaultConnectionGene(key=(-2473, 3534), weight=-1.0820812498815786, enabled=False)
+	DefaultConnectionGene(key=(-2308, 7), weight=2.5716436439253516, enabled=False)
+	DefaultConnectionGene(key=(-2237, 2490), weight=1.3814096803504743, enabled=False)
+	DefaultConnectionGene(key=(-2237, 25908), weight=1.8988026658088089, enabled=True)
+	DefaultConnectionGene(key=(-2230, 11), weight=1.8552762798746472, enabled=False)
+	DefaultConnectionGene(key=(-2216, 34469), weight=0.5421774715538263, enabled=False)
+	DefaultConnectionGene(key=(-2134, 25346), weight=-0.978532786093556, enabled=True)
+	DefaultConnectionGene(key=(-2127, 38562), weight=1.080731840278267, enabled=False)
+	DefaultConnectionGene(key=(-2068, 37614), weight=2.499269601409481, enabled=True)
+	DefaultConnectionGene(key=(-1897, 6778), weight=-1.7570701086545746, enabled=False)
+	DefaultConnectionGene(key=(-1897, 32150), weight=-2.072409042968734, enabled=False)
+	DefaultConnectionGene(key=(-1883, 1287), weight=1.1281490471317848, enabled=True)
+	DefaultConnectionGene(key=(-1842, 8577), weight=-2.6655149202595125, enabled=True)
+	DefaultConnectionGene(key=(-1757, 33446), weight=0.30125106452923855, enabled=True)
+	DefaultConnectionGene(key=(-1642, 2), weight=-2.184161583126478, enabled=True)
+	DefaultConnectionGene(key=(-1642, 27730), weight=4.0710476532634345, enabled=True)
+	DefaultConnectionGene(key=(-1642, 37614), weight=-1.8943189026217724, enabled=True)
+	DefaultConnectionGene(key=(-1349, 16462), weight=-0.19926646123373506, enabled=False)
+	DefaultConnectionGene(key=(-1349, 46972), weight=0.9419848905424509, enabled=False)
+	DefaultConnectionGene(key=(-1329, 67), weight=-1.0214473991187691, enabled=False)
+	DefaultConnectionGene(key=(-1109, 8), weight=0.5026092503503471, enabled=True)
+	DefaultConnectionGene(key=(-1015, 8391), weight=-0.8717624411079509, enabled=False)
+	DefaultConnectionGene(key=(-1015, 26793), weight=0.7880424302863656, enabled=True)
+	DefaultConnectionGene(key=(-1007, 1267), weight=1.9217035439923749, enabled=False)
+	DefaultConnectionGene(key=(-809, 21329), weight=0.3241905182180492, enabled=False)
+	DefaultConnectionGene(key=(-647, 1), weight=0.9509916890010706, enabled=True)
+	DefaultConnectionGene(key=(-412, 10), weight=-0.31795310869356497, enabled=True)
+	DefaultConnectionGene(key=(-390, 34309), weight=1.2103735904657398, enabled=False)
+	DefaultConnectionGene(key=(-323, 26375), weight=-0.11579015602496157, enabled=True)
+	DefaultConnectionGene(key=(-280, 1267), weight=-0.32791182728635543, enabled=False)
+	DefaultConnectionGene(key=(-220, 200), weight=0.19432440978697535, enabled=True)
+	DefaultConnectionGene(key=(-220, 33495), weight=0.04535373557405242, enabled=False)
+	DefaultConnectionGene(key=(67, 2), weight=-0.4182191241453609, enabled=True)
+	DefaultConnectionGene(key=(200, 2), weight=1.3492294059928156, enabled=False)
+	DefaultConnectionGene(key=(1141, 1385), weight=2.863095512610639, enabled=True)
+	DefaultConnectionGene(key=(1267, 11), weight=2.5554502653825124, enabled=False)
+	DefaultConnectionGene(key=(1287, 67), weight=-0.003747490449866493, enabled=True)
+	DefaultConnectionGene(key=(1287, 37731), weight=-0.5787238321540088, enabled=False)
+	DefaultConnectionGene(key=(1385, 11), weight=-0.3573050721607773, enabled=False)
+	DefaultConnectionGene(key=(2290, 1287), weight=-1.2758411354023298, enabled=False)
+	DefaultConnectionGene(key=(2290, 16462), weight=4.163222364118867, enabled=True)
+	DefaultConnectionGene(key=(2290, 24700), weight=-1.5369381924818362, enabled=False)
+	DefaultConnectionGene(key=(2290, 34309), weight=-1.1240131103545912, enabled=True)
+	DefaultConnectionGene(key=(2490, 11), weight=0.2707151080401329, enabled=True)
+	DefaultConnectionGene(key=(3208, 8), weight=2.1834103535286675, enabled=True)
+	DefaultConnectionGene(key=(3208, 8391), weight=-1.4879873145753812, enabled=True)
+	DefaultConnectionGene(key=(3208, 8577), weight=0.22424841686811497, enabled=True)
+	DefaultConnectionGene(key=(3208, 16534), weight=-2.164711653682801, enabled=False)
+	DefaultConnectionGene(key=(3208, 26758), weight=0.557327408346499, enabled=True)
+	DefaultConnectionGene(key=(3208, 33365), weight=-0.27234567594797265, enabled=False)
+	DefaultConnectionGene(key=(3208, 34256), weight=3.783323552054757, enabled=True)
+	DefaultConnectionGene(key=(3208, 37480), weight=6.035304506250963, enabled=False)
+	DefaultConnectionGene(key=(3264, 1287), weight=1.0508117730593576, enabled=False)
+	DefaultConnectionGene(key=(3303, 2490), weight=0.30387322024195973, enabled=False)
+	DefaultConnectionGene(key=(3346, 10), weight=-0.7861968007429315, enabled=False)
+	DefaultConnectionGene(key=(3510, 3264), weight=-2.381346551957967, enabled=False)
+	DefaultConnectionGene(key=(3510, 25212), weight=1.6142965531678852, enabled=False)
+	DefaultConnectionGene(key=(3641, 11), weight=1.8656288476487477, enabled=False)
+	DefaultConnectionGene(key=(3641, 21714), weight=-0.21702056873178852, enabled=True)
+	DefaultConnectionGene(key=(3641, 26375), weight=0.9157200659559348, enabled=False)
+	DefaultConnectionGene(key=(3641, 27826), weight=-1.1293070550128963, enabled=True)
+	DefaultConnectionGene(key=(3641, 33390), weight=-1.1226916789629202, enabled=False)
+	DefaultConnectionGene(key=(3641, 35227), weight=2.75981218677112, enabled=True)
+	DefaultConnectionGene(key=(3641, 38508), weight=0.9057090210898997, enabled=False)
+	DefaultConnectionGene(key=(3641, 38562), weight=0.6067750285874425, enabled=False)
+	DefaultConnectionGene(key=(6778, 1267), weight=0.1437478241401688, enabled=False)
+	DefaultConnectionGene(key=(8438, 3208), weight=2.2117025858106465, enabled=True)
+	DefaultConnectionGene(key=(8438, 58929), weight=-0.4705129274638039, enabled=True)
+	DefaultConnectionGene(key=(8532, 1141), weight=-0.11243019324994197, enabled=True)
+	DefaultConnectionGene(key=(8577, 8391), weight=-0.4578072559147891, enabled=True)
+	DefaultConnectionGene(key=(8583, 1141), weight=-0.8397713289455873, enabled=False)
+	DefaultConnectionGene(key=(11912, 1287), weight=-0.45409996671286557, enabled=True)
+	DefaultConnectionGene(key=(16462, 1287), weight=-0.5952140092905291, enabled=True)
+	DefaultConnectionGene(key=(16462, 25545), weight=0.20199649988358637, enabled=True)
+	DefaultConnectionGene(key=(16462, 56116), weight=0.6821666315393282, enabled=False)
+	DefaultConnectionGene(key=(16534, 8), weight=-1.2899510839895318, enabled=True)
+	DefaultConnectionGene(key=(16558, 37259), weight=2.7038168787046755, enabled=False)
+	DefaultConnectionGene(key=(16558, 48709), weight=-0.32376190259632187, enabled=True)
+	DefaultConnectionGene(key=(16567, 1287), weight=-0.6413549147266006, enabled=True)
+	DefaultConnectionGene(key=(18112, 11), weight=1.2742170499243928, enabled=True)
+	DefaultConnectionGene(key=(18112, 48327), weight=2.2018118818204124, enabled=False)
+	DefaultConnectionGene(key=(21329, 21565), weight=-0.6594410317117025, enabled=False)
+	DefaultConnectionGene(key=(21329, 37038), weight=1.074342102101587, enabled=True)
+	DefaultConnectionGene(key=(21329, 42861), weight=-0.6518115861473485, enabled=True)
+	DefaultConnectionGene(key=(21565, 1267), weight=-1.8688010883918331, enabled=True)
+	DefaultConnectionGene(key=(21714, 11), weight=2.3465324545360584, enabled=True)
+	DefaultConnectionGene(key=(21714, 48549), weight=-0.05974814481294721, enabled=True)
+	DefaultConnectionGene(key=(21714, 48594), weight=3.661360154975343, enabled=True)
+	DefaultConnectionGene(key=(24700, 26355), weight=0.0020109851733275397, enabled=True)
+	DefaultConnectionGene(key=(24777, 21714), weight=1.0922702698875273, enabled=False)
+	DefaultConnectionGene(key=(24783, 1267), weight=-0.6752479362830516, enabled=False)
+	DefaultConnectionGene(key=(24783, 47000), weight=-0.45873587337228683, enabled=False)
+	DefaultConnectionGene(key=(25212, 3264), weight=4.216099440864379, enabled=False)
+	DefaultConnectionGene(key=(25297, 0), weight=0.2733384985888576, enabled=True)
+	DefaultConnectionGene(key=(25346, 27796), weight=0.6472689188005093, enabled=True)
+	DefaultConnectionGene(key=(25346, 37516), weight=0.3621160973054243, enabled=True)
+	DefaultConnectionGene(key=(25346, 48675), weight=-0.47239358090452344, enabled=False)
+	DefaultConnectionGene(key=(25366, 11), weight=2.8199525714303117, enabled=False)
+	DefaultConnectionGene(key=(25366, 25685), weight=-1.7264790011621292, enabled=True)
+	DefaultConnectionGene(key=(25419, 4), weight=0.10181364571712725, enabled=False)
+	DefaultConnectionGene(key=(25506, 3), weight=0.35766139654501633, enabled=False)
+	DefaultConnectionGene(key=(25545, 1287), weight=0.8013547946884568, enabled=True)
+	DefaultConnectionGene(key=(25656, 10), weight=0.3494108263748942, enabled=False)
+	DefaultConnectionGene(key=(25685, 11), weight=6.158383269315146, enabled=True)
+	DefaultConnectionGene(key=(25721, 11), weight=1.0759536807160737, enabled=False)
+	DefaultConnectionGene(key=(25778, 3), weight=3.0210505189523404, enabled=True)
+	DefaultConnectionGene(key=(25778, 31817), weight=-0.42980063341521046, enabled=True)
+	DefaultConnectionGene(key=(25808, 25297), weight=4.05817370656516, enabled=True)
+	DefaultConnectionGene(key=(25808, 42273), weight=0.4489158061642841, enabled=True)
+	DefaultConnectionGene(key=(25908, 2490), weight=-0.7089611664289943, enabled=False)
+	DefaultConnectionGene(key=(25961, 1267), weight=0.41928826228156013, enabled=False)
+	DefaultConnectionGene(key=(26231, 2490), weight=-1.4350263107327939, enabled=True)
+	DefaultConnectionGene(key=(26267, 3346), weight=1.5494197350473118, enabled=False)
+	DefaultConnectionGene(key=(26267, 26299), weight=-2.67587849417319, enabled=False)
+	DefaultConnectionGene(key=(26299, 3346), weight=-0.5845952327363231, enabled=False)
+	DefaultConnectionGene(key=(26299, 37658), weight=2.56859385692552, enabled=False)
+	DefaultConnectionGene(key=(26355, 1287), weight=-2.886718798009071, enabled=True)
+	DefaultConnectionGene(key=(26375, 21714), weight=0.22676017593317, enabled=True)
+	DefaultConnectionGene(key=(26422, 3303), weight=-0.5343591236637961, enabled=False)
+	DefaultConnectionGene(key=(26497, 1141), weight=1.6635904636298968, enabled=False)
+	DefaultConnectionGene(key=(26497, 48096), weight=0.13389882972714656, enabled=True)
+	DefaultConnectionGene(key=(26600, 8), weight=1.4264677409282178, enabled=True)
+	DefaultConnectionGene(key=(26682, 1267), weight=0.46038449315024527, enabled=True)
+	DefaultConnectionGene(key=(26729, 1287), weight=-1.3298227759415038, enabled=False)
+	DefaultConnectionGene(key=(26758, 16534), weight=-2.517665169055409, enabled=False)
+	DefaultConnectionGene(key=(26758, 36982), weight=-1.9305798407473236, enabled=True)
+	DefaultConnectionGene(key=(26793, 8391), weight=-0.829379296540219, enabled=False)
+	DefaultConnectionGene(key=(26963, 26729), weight=-1.8084180770254579, enabled=True)
+	DefaultConnectionGene(key=(26963, 38493), weight=-1.6269268330072435, enabled=False)
+	DefaultConnectionGene(key=(26990, 11), weight=1.2739305251854012, enabled=False)
+	DefaultConnectionGene(key=(27404, 24783), weight=-0.36271084041881524, enabled=True)
+	DefaultConnectionGene(key=(27685, 200), weight=-0.5150257861317881, enabled=False)
+	DefaultConnectionGene(key=(27730, 2), weight=0.7550316336104652, enabled=True)
+	DefaultConnectionGene(key=(27796, 3534), weight=0.35565778581013713, enabled=False)
+	DefaultConnectionGene(key=(27826, 26375), weight=-0.9843077577200807, enabled=True)
+	DefaultConnectionGene(key=(31764, 16567), weight=1.4067061131768526, enabled=False)
+	DefaultConnectionGene(key=(31796, 6778), weight=0.32174090346604245, enabled=True)
+	DefaultConnectionGene(key=(31817, 3), weight=0.21173546599530096, enabled=True)
+	DefaultConnectionGene(key=(31853, 24700), weight=0.29004191516474087, enabled=False)
+	DefaultConnectionGene(key=(32126, 25721), weight=0.27032477939881705, enabled=False)
+	DefaultConnectionGene(key=(32150, 6778), weight=2.88689890242661, enabled=True)
+	DefaultConnectionGene(key=(33302, 1267), weight=0.40262626146389124, enabled=False)
+	DefaultConnectionGene(key=(33365, 26758), weight=-1.2522139931192504, enabled=False)
+	DefaultConnectionGene(key=(33390, 27826), weight=-3.029772390726963, enabled=True)
+	DefaultConnectionGene(key=(33433, 6), weight=-0.14724167218995532, enabled=True)
+	DefaultConnectionGene(key=(33433, 42414), weight=1.1565865147255858, enabled=False)
+	DefaultConnectionGene(key=(33446, 16462), weight=4.3492975292486005, enabled=True)
+	DefaultConnectionGene(key=(33495, 200), weight=-1.327794595882711, enabled=False)
+	DefaultConnectionGene(key=(34256, 8), weight=-0.2618522132414358, enabled=True)
+	DefaultConnectionGene(key=(34309, 1287), weight=0.21780132781048173, enabled=False)
+	DefaultConnectionGene(key=(35227, 26375), weight=-0.449130316945631, enabled=False)
+	DefaultConnectionGene(key=(36905, 0), weight=2.0420624861998156, enabled=True)
+	DefaultConnectionGene(key=(36934, 8583), weight=-0.5076471692773168, enabled=True)
+	DefaultConnectionGene(key=(36982, 16534), weight=2.7651600121447095, enabled=True)
+	DefaultConnectionGene(key=(37038, 21565), weight=0.6176335850239686, enabled=True)
+	DefaultConnectionGene(key=(37067, 1287), weight=0.6182282431299254, enabled=True)
+	DefaultConnectionGene(key=(37480, 8), weight=1.8915139986955503, enabled=True)
+	DefaultConnectionGene(key=(37516, 27796), weight=-3.1232888957982867, enabled=False)
+	DefaultConnectionGene(key=(37516, 52157), weight=0.5604791292453242, enabled=True)
+	DefaultConnectionGene(key=(37614, 2), weight=1.690800923389303, enabled=True)
+	DefaultConnectionGene(key=(37629, 16462), weight=1.2790353417071754, enabled=False)
+	DefaultConnectionGene(key=(37658, 3346), weight=1.4403728017884279, enabled=False)
+	DefaultConnectionGene(key=(37691, 3362), weight=-0.2540043644463531, enabled=False)
+	DefaultConnectionGene(key=(37731, 67), weight=-0.6370994394429141, enabled=True)
+	DefaultConnectionGene(key=(38171, 67), weight=-0.3890829981704079, enabled=False)
+	DefaultConnectionGene(key=(38453, 1385), weight=-4.88418961346282, enabled=False)
+	DefaultConnectionGene(key=(38453, 43234), weight=-0.5682366896734867, enabled=False)
+	DefaultConnectionGene(key=(38493, 26729), weight=0.18628124022893805, enabled=True)
+	DefaultConnectionGene(key=(38508, 33390), weight=1.4703618779324246, enabled=False)
+	DefaultConnectionGene(key=(38562, 35227), weight=-1.9344028442985997, enabled=False)
+	DefaultConnectionGene(key=(39435, 1385), weight=-2.8677904914158723, enabled=False)
+	DefaultConnectionGene(key=(42031, 2490), weight=0.5588043397731703, enabled=False)
+	DefaultConnectionGene(key=(42031, 46945), weight=-0.06956938341676655, enabled=False)
+	DefaultConnectionGene(key=(42273, 25297), weight=1.6240062931216426, enabled=True)
+	DefaultConnectionGene(key=(42341, 16462), weight=0.20681813990635228, enabled=False)
+	DefaultConnectionGene(key=(42414, 6), weight=-0.05849359301390458, enabled=True)
+	DefaultConnectionGene(key=(42520, 8577), weight=1.3669871967075409, enabled=False)
+	DefaultConnectionGene(key=(42669, 2), weight=0.9985941857036889, enabled=True)
+	DefaultConnectionGene(key=(42861, 1267), weight=1.4439854877886287, enabled=True)
+	DefaultConnectionGene(key=(42875, 1267), weight=0.35717482151402447, enabled=False)
+	DefaultConnectionGene(key=(43234, 1385), weight=0.2429018788537233, enabled=True)
+	DefaultConnectionGene(key=(46945, 2490), weight=1.0759771467065966, enabled=False)
+	DefaultConnectionGene(key=(46972, 16462), weight=3.321870039226739, enabled=False)
+	DefaultConnectionGene(key=(47000, 1267), weight=-1.6413929702386025, enabled=False)
+	DefaultConnectionGene(key=(47358, 26497), weight=-0.9483411430000214, enabled=False)
+	DefaultConnectionGene(key=(48096, 1141), weight=-0.9962682058204669, enabled=True)
+	DefaultConnectionGene(key=(48227, 24700), weight=-0.14642264333389277, enabled=True)
+	DefaultConnectionGene(key=(48327, 11), weight=-0.1721693593482811, enabled=False)
+	DefaultConnectionGene(key=(48385, 36934), weight=-0.9293255410859286, enabled=False)
+	DefaultConnectionGene(key=(48436, 2), weight=-1.6011947438586218, enabled=False)
+	DefaultConnectionGene(key=(48451, 8), weight=-2.5931245469315716, enabled=False)
+	DefaultConnectionGene(key=(48482, 200), weight=-3.5833720012341295, enabled=True)
+	DefaultConnectionGene(key=(48523, 2290), weight=-0.7358697708387898, enabled=True)
+	DefaultConnectionGene(key=(48549, 11), weight=-1.1753546824138716, enabled=True)
+	DefaultConnectionGene(key=(48594, 48549), weight=-2.6661942697819363, enabled=False)
+	DefaultConnectionGene(key=(48675, 27796), weight=0.12351340201387068, enabled=False)
+	DefaultConnectionGene(key=(52082, 3), weight=2.0521524912577824, enabled=False)
+	DefaultConnectionGene(key=(52082, 56076), weight=0.16878077415954018, enabled=True)
+	DefaultConnectionGene(key=(52157, 27796), weight=0.8365925237020364, enabled=True)
+	DefaultConnectionGene(key=(52165, 1141), weight=-3.900792461956721, enabled=True)
+	DefaultConnectionGene(key=(55958, 48385), weight=0.07974868799088394, enabled=True)
+	DefaultConnectionGene(key=(55972, 25366), weight=-0.9716350688761941, enabled=False)
+	DefaultConnectionGene(key=(56012, 42341), weight=-0.3011239841569101, enabled=True)
+	DefaultConnectionGene(key=(56076, 3), weight=4.012802703030095, enabled=True)
+	DefaultConnectionGene(key=(56116, 1287), weight=1.022413419354642, enabled=True)
+	DefaultConnectionGene(key=(57165, 48451), weight=-1.442437204998694, enabled=True)
+	DefaultConnectionGene(key=(57206, 48482), weight=-4.122588509579728, enabled=True)
+	DefaultConnectionGene(key=(57222, 42520), weight=0.9622885905213149, enabled=True)
+	DefaultConnectionGene(key=(57223, 1267), weight=3.8158261312473005, enabled=True)
+	DefaultConnectionGene(key=(58929, 3208), weight=0.01677129419616097, enabled=False)
+	DefaultConnectionGene(key=(58967, 18112), weight=0.4696401056666651, enabled=True)
+	DefaultConnectionGene(key=(60294, 3362), weight=-1.626483489998998, enabled=True)
+	DefaultConnectionGene(key=(60307, 39435), weight=0.5727581582199901, enabled=True)
+	DefaultConnectionGene(key=(60349, 8391), weight=0.9154838648962758, enabled=True)
+	DefaultConnectionGene(key=(60848, 11), weight=-0.8773606173817197, enabled=True)
+End: 2019-08-02 10:05:37.585358
+Storing last generation genomes
+1 9840.666783988476
+Saving genome to file ./last_gen_genomes/1564712467/EmeraldHillZone.Act2.state_1.pkl
+2 7264.917027711868
+Saving genome to file ./last_gen_genomes/1564712467/EmeraldHillZone.Act2.state_2.pkl
+3 4671.6390416026115
+Saving genome to file ./last_gen_genomes/1564712467/EmeraldHillZone.Act2.state_3.pkl
+4 3921.355786204338
+Saving genome to file ./last_gen_genomes/1564712467/EmeraldHillZone.Act2.state_4.pkl
+5 3674.0937141776085
+Saving genome to file ./last_gen_genomes/1564712467/EmeraldHillZone.Act2.state_5.pkl
+6 2777.6624334454536
+Saving genome to file ./last_gen_genomes/1564712467/EmeraldHillZone.Act2.state_6.pkl
+7 2777.662419974804
+Saving genome to file ./last_gen_genomes/1564712467/EmeraldHillZone.Act2.state_7.pkl
+8 2777.662417948246
+Saving genome to file ./last_gen_genomes/1564712467/EmeraldHillZone.Act2.state_8.pkl
+9 2564.3882407546043
+Saving genome to file ./last_gen_genomes/1564712467/EmeraldHillZone.Act2.state_9.pkl
+10 2451.378428220749
+Saving genome to file ./last_gen_genomes/1564712467/EmeraldHillZone.Act2.state_10.pkl
+11 1930.5136151909828
+Saving genome to file ./last_gen_genomes/1564712467/EmeraldHillZone.Act2.state_11.pkl
+12 1919.4675446748734
+Saving genome to file ./last_gen_genomes/1564712467/EmeraldHillZone.Act2.state_12.pkl
+13 1905.87238407135
+Saving genome to file ./last_gen_genomes/1564712467/EmeraldHillZone.Act2.state_13.pkl
+14 1905.8723837733269
+Saving genome to file ./last_gen_genomes/1564712467/EmeraldHillZone.Act2.state_14.pkl
+15 1862.5377821922302
+Saving genome to file ./last_gen_genomes/1564712467/EmeraldHillZone.Act2.state_15.pkl
+16 1418.9954816102982
+Saving genome to file ./last_gen_genomes/1564712467/EmeraldHillZone.Act2.state_16.pkl
+17 1418.9954816102982
+Saving genome to file ./last_gen_genomes/1564712467/EmeraldHillZone.Act2.state_17.pkl
+18 1147.0921582579613
+Saving genome to file ./last_gen_genomes/1564712467/EmeraldHillZone.Act2.state_18.pkl
+19 1147.0921533107758
+Saving genome to file ./last_gen_genomes/1564712467/EmeraldHillZone.Act2.state_19.pkl
+20 1060.4229682683945
+Saving genome to file ./last_gen_genomes/1564712467/EmeraldHillZone.Act2.state_20.pkl
+21 874.3391364216805
+Saving genome to file ./last_gen_genomes/1564712467/EmeraldHillZone.Act2.state_21.pkl
+22 874.3391342759132
+Saving genome to file ./last_gen_genomes/1564712467/EmeraldHillZone.Act2.state_22.pkl
+23 874.3391329050064
+Saving genome to file ./last_gen_genomes/1564712467/EmeraldHillZone.Act2.state_23.pkl
+24 874.3391324877739
+Saving genome to file ./last_gen_genomes/1564712467/EmeraldHillZone.Act2.state_24.pkl
+25 874.3391320705414
+Saving genome to file ./last_gen_genomes/1564712467/EmeraldHillZone.Act2.state_25.pkl
+26 874.339129447937
+Saving genome to file ./last_gen_genomes/1564712467/EmeraldHillZone.Act2.state_26.pkl
+27 874.339129447937
+Saving genome to file ./last_gen_genomes/1564712467/EmeraldHillZone.Act2.state_27.pkl
+28 874.339129447937
+Saving genome to file ./last_gen_genomes/1564712467/EmeraldHillZone.Act2.state_28.pkl
+29 874.339129447937
+Saving genome to file ./last_gen_genomes/1564712467/EmeraldHillZone.Act2.state_29.pkl
+30 874.339129447937
+Saving genome to file ./last_gen_genomes/1564712467/EmeraldHillZone.Act2.state_30.pkl
+31 874.339129447937
+Saving genome to file ./last_gen_genomes/1564712467/EmeraldHillZone.Act2.state_31.pkl
+32 874.339129447937
+Saving genome to file ./last_gen_genomes/1564712467/EmeraldHillZone.Act2.state_32.pkl
+33 874.339129447937
+Saving genome to file ./last_gen_genomes/1564712467/EmeraldHillZone.Act2.state_33.pkl
+34 874.339129447937
+Saving genome to file ./last_gen_genomes/1564712467/EmeraldHillZone.Act2.state_34.pkl
+35 874.339129447937
+Saving genome to file ./last_gen_genomes/1564712467/EmeraldHillZone.Act2.state_35.pkl
+36 874.339129447937
+Saving genome to file ./last_gen_genomes/1564712467/EmeraldHillZone.Act2.state_36.pkl
+37 874.339129447937
+Saving genome to file ./last_gen_genomes/1564712467/EmeraldHillZone.Act2.state_37.pkl
+38 874.339129447937
+Saving genome to file ./last_gen_genomes/1564712467/EmeraldHillZone.Act2.state_38.pkl
+39 874.339129447937
+Saving genome to file ./last_gen_genomes/1564712467/EmeraldHillZone.Act2.state_39.pkl
+40 874.339129447937
+Saving genome to file ./last_gen_genomes/1564712467/EmeraldHillZone.Act2.state_40.pkl
+41 874.339129447937
+Saving genome to file ./last_gen_genomes/1564712467/EmeraldHillZone.Act2.state_41.pkl
+42 874.339129447937
+Saving genome to file ./last_gen_genomes/1564712467/EmeraldHillZone.Act2.state_42.pkl
+43 874.339129447937
+Saving genome to file ./last_gen_genomes/1564712467/EmeraldHillZone.Act2.state_43.pkl
+44 874.339129447937
+Saving genome to file ./last_gen_genomes/1564712467/EmeraldHillZone.Act2.state_44.pkl
+45 874.339129447937
+Saving genome to file ./last_gen_genomes/1564712467/EmeraldHillZone.Act2.state_45.pkl
+46 874.339129447937
+Saving genome to file ./last_gen_genomes/1564712467/EmeraldHillZone.Act2.state_46.pkl
+47 874.339129447937
+Saving genome to file ./last_gen_genomes/1564712467/EmeraldHillZone.Act2.state_47.pkl
+48 874.3391293287277
+Saving genome to file ./last_gen_genomes/1564712467/EmeraldHillZone.Act2.state_48.pkl
+49 874.3391293287277
+Saving genome to file ./last_gen_genomes/1564712467/EmeraldHillZone.Act2.state_49.pkl
+50 0.0
+Saving genome to file ./last_gen_genomes/1564712467/EmeraldHillZone.Act2.state_50.pkl
+51 0.0
+Saving genome to file ./last_gen_genomes/1564712467/EmeraldHillZone.Act2.state_51.pkl
+52 0.0
+Saving genome to file ./last_gen_genomes/1564712467/EmeraldHillZone.Act2.state_52.pkl
+53 0.0
+Saving genome to file ./last_gen_genomes/1564712467/EmeraldHillZone.Act2.state_53.pkl
+54 0.0
+Saving genome to file ./last_gen_genomes/1564712467/EmeraldHillZone.Act2.state_54.pkl
+55 0.0
+Saving genome to file ./last_gen_genomes/1564712467/EmeraldHillZone.Act2.state_55.pkl
+56 0.0
+Saving genome to file ./last_gen_genomes/1564712467/EmeraldHillZone.Act2.state_56.pkl
+57 0.0
+Saving genome to file ./last_gen_genomes/1564712467/EmeraldHillZone.Act2.state_57.pkl
+58 0.0
+Saving genome to file ./last_gen_genomes/1564712467/EmeraldHillZone.Act2.state_58.pkl
+59 0.0
+Saving genome to file ./last_gen_genomes/1564712467/EmeraldHillZone.Act2.state_59.pkl
+60 0.0
+Saving genome to file ./last_gen_genomes/1564712467/EmeraldHillZone.Act2.state_60.pkl
+5988 874.339129447937
+6003 874.339129447937
+6005 874.339129447937
+6011 874.339129447937
+6026 874.339129447937
+3063 3535.592953801155
+5999 874.339129447937
+5998 874.3391324877739
+6014 874.339129447937
+6024 874.339129447937
+6029 874.3391367197037
+5996 874.3391324877739
+5989 1418.9954816102982
+5997 874.3391309976578
+6016 1795.411648929119
+6039 1914.3693551421165
+4249 4671.6390416026115
+6 874.3391293287277
+10 874.339129447937
+13 0.0
+15 0.0
+17 874.3391293287277
+21 874.339129447937
+25 2777.6624334454536
+30 0.0
+32 1147.0921582579613
+36 1147.0921533107758
+40 874.339129447937
+45 874.339129447937
+48 0.0
+51 1930.5136151909828
+54 0.0
+5986 874.339129447937
+5994 874.339129447937
+6007 874.339129447937
+6012 874.339129447937
+6032 874.339129447937
+6035 874.339129447937
+6018 7264.917027711868
+6040 2451.3784390091896
+6001 874.339128613472
+6013 2451.378430187702
+6030 1418.9954816102982
+6020 874.339137494564
+6027 1781.8164878487587
+6031 1147.0921557545662
+6018 7264.917027711868
+9 9840.666783988476
+22 874.339129447937
+27 1905.8723837733269
+35 0.0
+37 1919.4675446748734
+41 0.0
+44 0.0
+47 2777.662419974804
+52 2564.3882407546043
+57 0.0
+5990 874.339129447937
+5995 874.339129447937
+6004 874.339129447937
+6008 874.339129447937
+6021 874.339129447937
+6034 874.339129447937
+6022 874.339129447937
+6002 1417.2960892915726
+6010 874.339129447937
+5224 3921.355786204338
+6017 2451.378434419632
+6028 2777.662431001663
+5987 2777.662431061268
+6023 1419.8451842069626
+6038 1726.586121082306
+5224 3921.355786204338
+5 1418.9954816102982
+8 874.339129447937
+11 874.339129447937
+14 874.339129447937
+18 0.0
+20 874.339129447937
+24 1060.4229682683945
+28 874.339129447937
+31 874.3391342759132
+34 2451.378428220749
+39 874.339129447937
+43 2777.662417948246
+50 874.339129447937
+53 874.339129447937
+56 874.339129447937
+5992 874.339129447937
+6000 874.339129447937
+6042 1922.016635298729
+6015 874.339129447937
+6033 874.339129447937
+6041 874.339129447937
+6006 2594.1276790499687
+6025 874.339129447937
+5991 2777.6624304056168
+6036 874.339137494564
+6037 874.339129447937
+4249 4671.6390416026115
+6009 386.6125410795212
+5993 0.0
+6019 3605.26817291975
+1 874.3391329050064
+2 0.0
+3 874.339129447937
+4 874.339129447937
+7 1862.5377821922302
+12 874.339129447937
+16 874.339129447937
+19 874.339129447937
+23 1418.9954816102982
+26 874.339129447937
+29 874.3391324877739
+33 874.3391320705414
+38 874.339129447937
+42 874.3391364216805
+46 874.339129447937
+49 3674.0937141776085
+55 1905.87238407135

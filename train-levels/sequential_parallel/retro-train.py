@@ -93,7 +93,6 @@ def eval_genomes(genomes, config):
     pe.evaluate(genomes, config)
 
     last_gen_genomes = genomes
-    print(f"Last gen genomes: {last_gen_genomes}")
 
     # Increment generation couter
     current_gen += 1
@@ -187,8 +186,8 @@ if __name__ == "__main__":
 
     # Reporters and loggers
     p.add_reporter(neat.StdOutReporter(True))
-    pe = neat.ParallelEvaluator(6, eval_genome)
-    winner = p.run(eval_genomes)
+    pe = neat.ParallelEvaluator(4, eval_genome)
+    winner = p.run(eval_genomes, max_generations)
 
     print("Winner!" + str(winner))
     print( "End: " + str(datetime.datetime.now()))
