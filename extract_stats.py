@@ -292,24 +292,76 @@ def generateBruteScoreTable(filename, fileNameList):
     wb.save(filename)
     print("saved xls")
 
-def generateLearnCurveByTimestep(filename, fileNameList):
+def generateBestFitnessLearnCurveByTimestep(filename, fileNameList):
     '''
-    Generate learning curve vs timesteps 
+    Generate learning curve (of best achieved fitnesses) vs timesteps 
     gets a list containing (timestep,score) tuples
+
+    Usage: share the files *for a single run/seed* 
     '''
 
     # Use reduced map for faster parsing
     trimmed_map = {
-        "gen_end_timesteps": {
-            'searchString':'Total timesteps',
-            "parser": compile("Total timesteps at end of gen: {gen_time:d}")
+        "achieved_fitness": {
+            'searchString':'achieved fitness:',
+            "parser": compile("achieved fitness: {fitness:f} at timestep {timestep:d} time: {}")
         }  
     }
-
-    print(trimmed_map)
-
     stats_dict = getStatsDict(fileNameList, runsFirst = True, parse_map=trimmed_map)
-    print(stats_dict)
+    #print(stats_dict)
+
+  
+
+    # Array of one million elements (one per timestep) representing fitnes vs timestep
+    per_level_curves = {}
+
+
+    # now we have a [level_run]: fitness: [a,b], timestep:[x,y]
+    for level in stats_dict:
+        # init level curve for this level
+        print(f"level:{level}")
+        per_level_curves[level] = [0]* int(1e6)
+        #ws.write(0, idx+1, level)
+        for idx, fitness in enumerate(stats_dict[level]["fitness"]):
+            timestep = stats_dict[level]['timestep'][idx]
+            
+            print(f"fitness {fitness} timestep:{timestep}")
+            per_level_curves[level][timestep] = fitness
+
+    #now we have a pseudo training curve for each level with the correct fitness in specific timesteps
+    # but 0 on all other timesteps without data, we need to normalize this by filling in all the data
+    # with the last fitness recorded
+    for level_name in per_level_curves:
+        print(level_name)
+        level_curve = per_level_curves[level_name]
+        for idx, timestep in enumerate(level_curve):
+            if timestep == 0 and idx > 0:
+                level_curve[idx] = level_curve[idx-1]
+
+    # Create average of all level curves to have a single one
+    average_across_levels = [0] * int(1e6)
+    number_of_levels = len(per_level_curves)
+    print(number_of_levels)
+    for level_name in per_level_curves:
+        print(level_name)
+        level_curve = per_level_curves[level_name]
+        average_across_levels = [x + y for x, y in zip(average_across_levels, level_curve)]
+
+    average_across_levels = list(map((lambda x: x/number_of_levels), average_across_levels))
+
+    # now we have the real learning curve for all 1M timesteps, however this may be hard to plot, should compress
+
+    import matplotlib.pyplot as plt
+    plt.plot([average_across_levels])
+    plt.show()
+
+    #the code for creating the workbook and worksheets
+    # wb= xlwt.Workbook()
+    # ws = wb.add_sheet("learning curve")
+    # for idx, fitness in enumerate(average_across_levels):
+    #     ws.write(idx, 0, fitness)
+    # wb.save(filename)
+
 
 if __name__ == "__main__":
 
@@ -327,5 +379,6 @@ if __name__ == "__main__":
 
     #generateScoreTable(output_file_name, fileNameList)
     #generateBruteScoreTable(output_file_name, fileNameList)
-    generateBenchmarkScoreTable(output_file_name, fileNameList)
+    #generateBenchmarkScoreTable(output_file_name, fileNameList)
     #generateLearnCurveTimestep(output_file_name, fileNameList)
+    generateBestFitnessLearnCurveByTimestep(output_file_name, fileNameList)
