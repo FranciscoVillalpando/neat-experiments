@@ -292,7 +292,7 @@ def generateBruteScoreTable(filename, fileNameList):
     wb.save(filename)
     print("saved xls")
 
-def generateBestFitnessLearnCurveByTimestep(filename, fileNameList):
+def generateAccumulatedScoreByTimestep(fileNameList):
     '''
     Generate learning curve (of best achieved fitnesses) vs timesteps 
     gets a list containing (timestep,score) tuples
@@ -310,11 +310,8 @@ def generateBestFitnessLearnCurveByTimestep(filename, fileNameList):
     stats_dict = getStatsDict(fileNameList, runsFirst = True, parse_map=trimmed_map)
     #print(stats_dict)
 
-  
-
     # Array of one million elements (one per timestep) representing fitnes vs timestep
     per_level_curves = {}
-
 
     # now we have a [level_run]: fitness: [a,b], timestep:[x,y]
     for level in stats_dict:
@@ -351,9 +348,7 @@ def generateBestFitnessLearnCurveByTimestep(filename, fileNameList):
 
     # now we have the real learning curve for all 1M timesteps, however this may be hard to plot, should compress
 
-    import matplotlib.pyplot as plt
-    plt.plot([average_across_levels])
-    plt.show()
+    return average_across_levels
 
     #the code for creating the workbook and worksheets
     # wb= xlwt.Workbook()
@@ -361,6 +356,41 @@ def generateBestFitnessLearnCurveByTimestep(filename, fileNameList):
     # for idx, fitness in enumerate(average_across_levels):
     #     ws.write(idx, 0, fitness)
     # wb.save(filename)
+
+def printLearningCurveForRuns(fileNameList):
+    import matplotlib.pyplot as plt
+    runDict = getFileNamesByRun(fileNameList)
+    average_of_runs = [0] * int(1e6)
+    number_of_runs = len(runDict)
+
+    for run in runDict:
+        curve_for_run = generateAccumulatedScoreByTimestep(runDict[run])
+        average_of_runs  = [x + y for x, y in zip(average_of_runs, curve_for_run)]
+        plt.plot(curve_for_run)
+
+    average_of_runs = list(map((lambda x: x/number_of_runs), average_of_runs))
+    plt.ylabel('Average score')
+    plt.xlabel('Timestep')
+    plt.show()
+
+    plt.figure(2)
+    plt.plot(average_of_runs)
+    plt.show()
+
+def getFileNamesByRun(fileNameList):
+
+    runDict = {}
+    for fileName in fileNameList:
+        run = parse("{}.{}",fileName.split("_")[-1])[0]
+        print(run)
+
+        if run not in runDict.keys():
+            runDict[run] = []
+
+        runDict[run].append(fileName)
+
+    #print(runDict)
+    return runDict
 
 
 if __name__ == "__main__":
@@ -379,6 +409,6 @@ if __name__ == "__main__":
 
     #generateScoreTable(output_file_name, fileNameList)
     #generateBruteScoreTable(output_file_name, fileNameList)
-    #generateBenchmarkScoreTable(output_file_name, fileNameList)
+    generateBenchmarkScoreTable(output_file_name, fileNameList)
     #generateLearnCurveTimestep(output_file_name, fileNameList)
-    generateBestFitnessLearnCurveByTimestep(output_file_name, fileNameList)
+    #printLearningCurveForRuns(fileNameList)
