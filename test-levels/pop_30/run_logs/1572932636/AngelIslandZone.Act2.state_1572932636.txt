@@ -1,0 +1,168 @@
+Starting python script!
+Using env(SonicAndKnuckles3-Genesis, AngelIslandZone.Act2.state)
+Observation space shape:(224, 320, 3)
+Start: 2019-11-05 00:52:12.717421
+Using the following config file: config.txt
+[NEAT]
+fitness_criterion     = max
+fitness_threshold     = 9000
+pop_size              = 30
+reset_on_extinction   = False
+
+[DefaultGenome]
+# node activation options
+activation_default      = sigmoid
+activation_mutate_rate  = 0.00
+activation_options      = sigmoid 
+#abs clamped cube exp gauss hat identity inv log relu sigmoid sin softplus square tanh
+
+# node aggregation options
+aggregation_default     = sum
+aggregation_mutate_rate = 0.00
+aggregation_options     = sum product min max mean median maxabs
+
+# node bias options
+bias_init_mean          = 0.05
+bias_init_stdev         = 1.0
+bias_max_value          = 50.0
+bias_min_value          = -50.0
+bias_mutate_power       = 0.5
+bias_mutate_rate        = 0.7
+bias_replace_rate       = 0.1
+
+# genome compatibility options
+compatibility_disjoint_coefficient = 1.0
+compatibility_weight_coefficient   = 0.5
+
+# connection add/remove rates
+conn_add_prob           = 0.6
+conn_delete_prob        = 0.1
+
+# connection enable options
+enabled_default         = True
+enabled_mutate_rate     = 0.05
+
+feed_forward            = False
+initial_connection      = fs_neat_nohidden
+#initial_connection      = unconnected
+#initial_connection     = partial_nodirect 0.4
+
+# node add/remove rates
+node_add_prob           = 0.7
+node_delete_prob        = 0.1
+
+# network parameters
+num_hidden              = 0
+num_inputs              = 17920
+num_outputs             = 12
+
+# node response options
+response_init_mean      = 1.0
+response_init_stdev     = 0.05
+response_max_value      = 30.0
+response_min_value      = -30.0
+response_mutate_power   = 0.1
+response_mutate_rate    = 0.75
+response_replace_rate   = 0.1
+
+# connection weight options
+weight_init_mean        = 0.1
+weight_init_stdev       = 1.0
+weight_max_value        = 30
+weight_min_value        = -30
+weight_mutate_power     = 0.5
+weight_mutate_rate      = 0.8
+weight_replace_rate     = 0.1
+
+[DefaultSpeciesSet]
+compatibility_threshold = 10
+
+[DefaultStagnation]
+species_fitness_func = max
+max_stagnation       = 200
+species_elitism      = 0
+
+[DefaultReproduction]
+elitism            = 3
+survival_threshold = 0.3
+
+
+
+End of config file
+
+ ****** Running generation 0 ****** 
+
+Gen timestep at time: 2019-11-05 00:52:12.733273
+1 0.0
+2 109.55882143974304
+achieved fitness: 109.55882143974304 at timestep 38121 time: 2019-11-05 00:53:56.358082
+Saving genome to file ./genomes/best_genome_1572932636_AngelIslandZone.Act2.state_gen0.pkl
+3 67.64705753326416
+4 0.0
+5 0.0
+6 0.0
+7 109.55882143974304
+8 109.55882143974304
+9 0.0
+10 0.0
+11 0.0
+12 0.0
+13 0.0
+14 527.205872297287
+achieved fitness: 527.205872297287 at timestep 369123 time: 2019-11-05 01:07:33.922390
+Saving genome to file ./genomes/best_genome_1572932636_AngelIslandZone.Act2.state_gen0.pkl
+15 0.0
+16 0.0
+17 27.941175937652588
+18 0.0
+19 0.0
+20 30.882352352142334
+21 30.882352352142334
+22 109.55882143974304
+23 109.55882143974304
+24 0.0
+25 0.0
+26 109.55882143974304
+27 0.0
+28 109.55882143974304
+29 0.0
+30 30.882352352142334
+Total timesteps at end of gen: 708483
+Population's average fitness: 49.41176 stdev: 99.48874
+Best fitness: 527.20587 - size: (12, 12) - species 1 - id 14
+Average adjusted fitness: 0.094
+Mean genetic distance 2.589, standard deviation 0.292
+Population of 30 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    0    30    527.2    0.094     0
+Total extinctions: 0
+Generation time: 1795.307 sec
+Saving checkpoint to neat-checkpoint-0
+
+ ****** Running generation 1 ****** 
+
+Gen timestep at time: 2019-11-05 01:22:08.047774
+14 527.205872297287
+achieved fitness: 527.205872297287 at timestep 744591 time: 2019-11-05 01:23:38.571049
+Saving genome to file ./genomes/best_genome_1572932636_AngelIslandZone.Act2.state_gen1.pkl
+2 109.55882143974304
+7 109.55882143974304
+31 0.0
+32 109.55882143974304
+33 109.55882143974304
+34 0.0
+35 0.0
+36 109.55882143974304
+37 109.55882143974304
+38 527.205872297287
+39 0.0
+40 109.55882143974304
+41 109.55882143974304
+42 109.55882143974304
+43 109.55882143974304
+44 30.882352352142334
+45 109.55882143974304
+46 0.0
+47 109.55882143974304
+Finished timestepMax at time: 2019-11-05 01:32:55.944008

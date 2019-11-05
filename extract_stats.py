@@ -409,6 +409,6 @@ if __name__ == "__main__":
 
     #generateScoreTable(output_file_name, fileNameList)
     #generateBruteScoreTable(output_file_name, fileNameList)
-    generateBenchmarkScoreTable(output_file_name, fileNameList)
+    #generateBenchmarkScoreTable(output_file_name, fileNameList)
     #generateLearnCurveTimestep(output_file_name, fileNameList)
-    #printLearningCurveForRuns(fileNameList)
+    printLearningCurveForRuns(fileNameList)
