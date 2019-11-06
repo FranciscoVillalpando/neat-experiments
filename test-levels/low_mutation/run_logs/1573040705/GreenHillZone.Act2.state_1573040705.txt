@@ -1,0 +1,147 @@
+Starting python script!
+Using env(SonicTheHedgehog-Genesis, GreenHillZone.Act2.state)
+Observation space shape:(224, 320, 3)
+Start: 2019-11-06 11:45:05.744220
+Using the following config file: config.txt
+[NEAT]
+fitness_criterion     = max
+fitness_threshold     = 9000
+pop_size              = 20
+reset_on_extinction   = False
+
+[DefaultGenome]
+# node activation options
+activation_default      = sigmoid
+activation_mutate_rate  = 0.00
+activation_options      = sigmoid 
+#abs clamped cube exp gauss hat identity inv log relu sigmoid sin softplus square tanh
+
+# node aggregation options
+aggregation_default     = sum
+aggregation_mutate_rate = 0.00
+aggregation_options     = sum product min max mean median maxabs
+
+# node bias options
+bias_init_mean          = 0.05
+bias_init_stdev         = 1.0
+bias_max_value          = 50.0
+bias_min_value          = -50.0
+bias_mutate_power       = 0.5
+bias_mutate_rate        = 0.1
+bias_replace_rate       = 0.05
+
+# genome compatibility options
+compatibility_disjoint_coefficient = 1.0
+compatibility_weight_coefficient   = 0.5
+
+# connection add/remove rates
+conn_add_prob           = 0.1
+conn_delete_prob        = 0.05
+
+# connection enable options
+enabled_default         = True
+enabled_mutate_rate     = 0.05
+
+feed_forward            = False
+initial_connection      = fs_neat_nohidden
+#initial_connection      = unconnected
+#initial_connection     = partial_nodirect 0.4
+
+# node add/remove rates
+node_add_prob           = 0.1
+node_delete_prob        = 0.05
+
+# network parameters
+num_hidden              = 0
+num_inputs              = 17920
+num_outputs             = 12
+
+# node response options
+response_init_mean      = 1.0
+response_init_stdev     = 0.05
+response_max_value      = 30.0
+response_min_value      = -30.0
+response_mutate_power   = 0.1
+response_mutate_rate    = 0.1
+response_replace_rate   = 0.1
+
+# connection weight options
+weight_init_mean        = 0.1
+weight_init_stdev       = 1.0
+weight_max_value        = 30
+weight_min_value        = -30
+weight_mutate_power     = 0.5
+weight_mutate_rate      = 0.1
+weight_replace_rate     = 0.1
+
+[DefaultSpeciesSet]
+compatibility_threshold = 10
+
+[DefaultStagnation]
+species_fitness_func = max
+max_stagnation       = 200
+species_elitism      = 0
+
+[DefaultReproduction]
+elitism            = 3
+survival_threshold = 0.3
+
+
+
+End of config file
+
+ ****** Running generation 0 ****** 
+
+Gen timestep at time: 2019-11-06 11:45:05.756478
+1 0.0
+2 84.88430678844452
+achieved fitness: 84.88430678844452 at timestep 72282 time: 2019-11-06 11:49:52.972545
+Saving genome to file ./genomes/best_genome_1573040705_GreenHillZone.Act2.state_gen0.pkl
+3 0.0
+4 139.21026134490967
+achieved fitness: 139.21026134490967 at timestep 144564 time: 2019-11-06 11:54:39.775596
+Saving genome to file ./genomes/best_genome_1573040705_GreenHillZone.Act2.state_gen0.pkl
+5 0.0
+6 0.0
+7 139.2102620601654
+achieved fitness: 139.2102620601654 at timestep 252987 time: 2019-11-06 12:01:52.511105
+Saving genome to file ./genomes/best_genome_1573040705_GreenHillZone.Act2.state_gen0.pkl
+8 0.0
+9 0.0
+10 0.0
+11 0.0
+12 0.0
+13 0.0
+14 139.21026134490967
+15 0.0
+16 0.0
+17 0.0
+18 0.0
+19 0.0
+20 0.0
+Total timesteps at end of gen: 722829
+Population's average fitness: 25.12575 stdev: 51.34090
+Best fitness: 139.21026 - size: (12, 12) - species 1 - id 7
+Average adjusted fitness: 0.180
+Mean genetic distance 2.583, standard deviation 0.438
+Population of 20 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    0    20    139.2    0.180     0
+Total extinctions: 0
+Generation time: 2745.315 sec
+Saving checkpoint to neat-checkpoint-0
+
+ ****** Running generation 1 ****** 
+
+Gen timestep at time: 2019-11-06 12:30:51.079862
+7 139.2102620601654
+achieved fitness: 139.2102620601654 at timestep 758970 time: 2019-11-06 12:33:05.437036
+Saving genome to file ./genomes/best_genome_1573040705_GreenHillZone.Act2.state_gen1.pkl
+4 139.21026134490967
+14 139.21026134490967
+21 139.21026134490967
+22 0.0
+23 139.21026134490967
+24 139.21026134490967
+Finished timestepMax at time: 2019-11-06 12:48:01.142092
