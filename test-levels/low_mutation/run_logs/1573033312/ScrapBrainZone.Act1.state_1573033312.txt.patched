@@ -1,0 +1,148 @@
+Starting python script!
+Using env(SonicTheHedgehog-Genesis, ScrapBrainZone.Act1.state)
+Observation space shape:(224, 320, 3)
+Start: 2019-11-06 09:41:52.691169
+Using the following config file: config.txt
+[NEAT]
+fitness_criterion     = max
+fitness_threshold     = 9000
+pop_size              = 20
+reset_on_extinction   = False
+
+[DefaultGenome]
+# node activation options
+activation_default      = sigmoid
+activation_mutate_rate  = 0.00
+activation_options      = sigmoid 
+#abs clamped cube exp gauss hat identity inv log relu sigmoid sin softplus square tanh
+
+# node aggregation options
+aggregation_default     = sum
+aggregation_mutate_rate = 0.00
+aggregation_options     = sum product min max mean median maxabs
+
+# node bias options
+bias_init_mean          = 0.05
+bias_init_stdev         = 1.0
+bias_max_value          = 50.0
+bias_min_value          = -50.0
+bias_mutate_power       = 0.5
+bias_mutate_rate        = 0.1
+bias_replace_rate       = 0.05
+
+# genome compatibility options
+compatibility_disjoint_coefficient = 1.0
+compatibility_weight_coefficient   = 0.5
+
+# connection add/remove rates
+conn_add_prob           = 0.1
+conn_delete_prob        = 0.05
+
+# connection enable options
+enabled_default         = True
+enabled_mutate_rate     = 0.05
+
+feed_forward            = False
+initial_connection      = fs_neat_nohidden
+#initial_connection      = unconnected
+#initial_connection     = partial_nodirect 0.4
+
+# node add/remove rates
+node_add_prob           = 0.1
+node_delete_prob        = 0.05
+
+# network parameters
+num_hidden              = 0
+num_inputs              = 17920
+num_outputs             = 12
+
+# node response options
+response_init_mean      = 1.0
+response_init_stdev     = 0.05
+response_max_value      = 30.0
+response_min_value      = -30.0
+response_mutate_power   = 0.1
+response_mutate_rate    = 0.1
+response_replace_rate   = 0.1
+
+# connection weight options
+weight_init_mean        = 0.1
+weight_init_stdev       = 1.0
+weight_max_value        = 30
+weight_min_value        = -30
+weight_mutate_power     = 0.5
+weight_mutate_rate      = 0.1
+weight_replace_rate     = 0.1
+
+[DefaultSpeciesSet]
+compatibility_threshold = 10
+
+[DefaultStagnation]
+species_fitness_func = max
+max_stagnation       = 200
+species_elitism      = 0
+
+[DefaultReproduction]
+elitism            = 3
+survival_threshold = 0.3
+
+
+
+End of config file
+
+ ****** Running generation 0 ****** 
+
+Gen timestep at time: 2019-11-06 09:41:52.701205
+1 0.0
+2 0.0
+3 0.0
+4 0.0
+5 0.0
+6 0.0
+7 0.0
+8 0.0
+9 0.0
+10 0.0
+11 0.0
+12 0.0
+13 378.42778873443604
+achieved fitness: 378.42778873443604 at timestep 469755 time: 2019-11-06 10:11:00.743138
+Saving genome to file ./genomes/best_genome_1573033312_ScrapBrainZone.Act1.state_gen0.pkl
+14 609.8034641742706
+achieved fitness: 609.8034641742706 at timestep 470064 time: 2019-11-06 10:11:01.898727
+Saving genome to file ./genomes/best_genome_1573033312_ScrapBrainZone.Act1.state_gen0.pkl
+15 0.0
+16 0.0
+17 0.0
+18 308.5009175539017
+19 0.0
+20 0.0
+Total timesteps at end of gen: 686874
+Population's average fitness: 64.83661 stdev: 162.19817
+Best fitness: 609.80346 - size: (12, 12) - species 1 - id 14
+Average adjusted fitness: 0.106
+Mean genetic distance 2.264, standard deviation 0.612
+Population of 20 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    0    20    609.8    0.106     0
+Total extinctions: 0
+Generation time: 2549.606 sec
+Saving checkpoint to neat-checkpoint-0
+
+ ****** Running generation 1 ****** 
+
+Gen timestep at time: 2019-11-06 10:24:22.316193
+14 609.8034641742706
+achieved fitness: 609.8034641742706 at timestep 687183 time: 2019-11-06 10:24:23.472927
+Saving genome to file ./genomes/best_genome_1573033312_ScrapBrainZone.Act1.state_gen1.pkl
+13 378.42778873443604
+18 308.5009175539017
+21 378.42778873443604
+22 0.0
+23 0.0
+24 221.09232366085052
+25 378.42778873443604
+26 378.42778873443604
+Finished timestepMax at time: 2019-11-06 10:43:43.289402
+Best fitness: 609.8034641742706 - size: (0, 0) - species 1 - id 0
