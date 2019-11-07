@@ -1,0 +1,126 @@
+Starting python script!
+Using env(SonicAndKnuckles3-Genesis, LavaReefZone.Act1.state)
+Observation space shape:(224, 320, 3)
+Start: 2019-11-06 01:27:42.319626
+Using the following config file: config.txt
+[NEAT]
+fitness_criterion     = max
+fitness_threshold     = 9000
+pop_size              = 40
+reset_on_extinction   = False
+
+[DefaultGenome]
+# node activation options
+activation_default      = sigmoid
+activation_mutate_rate  = 0.00
+activation_options      = sigmoid 
+#abs clamped cube exp gauss hat identity inv log relu sigmoid sin softplus square tanh
+
+# node aggregation options
+aggregation_default     = sum
+aggregation_mutate_rate = 0.00
+aggregation_options     = sum product min max mean median maxabs
+
+# node bias options
+bias_init_mean          = 0.05
+bias_init_stdev         = 1.0
+bias_max_value          = 50.0
+bias_min_value          = -50.0
+bias_mutate_power       = 0.5
+bias_mutate_rate        = 0.7
+bias_replace_rate       = 0.1
+
+# genome compatibility options
+compatibility_disjoint_coefficient = 1.0
+compatibility_weight_coefficient   = 0.5
+
+# connection add/remove rates
+conn_add_prob           = 0.6
+conn_delete_prob        = 0.1
+
+# connection enable options
+enabled_default         = True
+enabled_mutate_rate     = 0.05
+
+feed_forward            = False
+initial_connection      = fs_neat_nohidden
+#initial_connection      = unconnected
+#initial_connection     = partial_nodirect 0.4
+
+# node add/remove rates
+node_add_prob           = 0.7
+node_delete_prob        = 0.1
+
+# network parameters
+num_hidden              = 0
+num_inputs              = 17920
+num_outputs             = 12
+
+# node response options
+response_init_mean      = 1.0
+response_init_stdev     = 0.05
+response_max_value      = 30.0
+response_min_value      = -30.0
+response_mutate_power   = 0.1
+response_mutate_rate    = 0.75
+response_replace_rate   = 0.1
+
+# connection weight options
+weight_init_mean        = 0.1
+weight_init_stdev       = 1.0
+weight_max_value        = 30
+weight_min_value        = -30
+weight_mutate_power     = 0.5
+weight_mutate_rate      = 0.8
+weight_replace_rate     = 0.1
+
+[DefaultSpeciesSet]
+compatibility_threshold = 10
+
+[DefaultStagnation]
+species_fitness_func = max
+max_stagnation       = 200
+species_elitism      = 0
+
+[DefaultReproduction]
+elitism            = 3
+survival_threshold = 0.3
+
+
+
+End of config file
+
+ ****** Running generation 0 ****** 
+
+Gen timestep at time: 2019-11-06 01:27:42.330668
+1 57.377047538757324
+achieved fitness: 57.377047538757324 at timestep 36066 time: 2019-11-06 01:30:17.834457
+Saving genome to file ./genomes/best_genome_1573025261_LavaReefZone.Act1.state_gen0.pkl
+2 57.377047538757324
+3 0.0
+4 57.377047538757324
+5 0.0
+6 0.0
+7 0.0
+8 0.0
+9 57.377047538757324
+10 42.62294960021973
+11 0.0
+12 0.0
+13 0.0
+14 57.377047538757324
+15 0.0
+16 57.377047538757324
+17 0.0
+18 0.0
+19 0.0
+20 0.0
+21 57.377047538757324
+22 0.0
+23 42.62294960021973
+24 57.377047538757324
+25 0.0
+26 0.0
+27 1.9073486328125e-06
+Finished timestepMax at time: 2019-11-06 02:48:11.447853
+Best fitness: 57.377047538757324 - size: (0, 0) - species 1 - id 0

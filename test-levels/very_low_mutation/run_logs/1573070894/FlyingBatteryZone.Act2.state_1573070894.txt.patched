@@ -1,0 +1,146 @@
+Starting python script!
+Using env(SonicAndKnuckles3-Genesis, FlyingBatteryZone.Act2.state)
+Observation space shape:(224, 320, 3)
+Start: 2019-11-06 20:59:25.374976
+Using the following config file: config.txt
+[NEAT]
+fitness_criterion     = max
+fitness_threshold     = 9000
+pop_size              = 20
+reset_on_extinction   = False
+
+[DefaultGenome]
+# node activation options
+activation_default      = sigmoid
+activation_mutate_rate  = 0.00
+activation_options      = sigmoid 
+#abs clamped cube exp gauss hat identity inv log relu sigmoid sin softplus square tanh
+
+# node aggregation options
+aggregation_default     = sum
+aggregation_mutate_rate = 0.00
+aggregation_options     = sum product min max mean median maxabs
+
+# node bias options
+bias_init_mean          = 0.05
+bias_init_stdev         = 1.0
+bias_max_value          = 50.0
+bias_min_value          = -50.0
+bias_mutate_power       = 0.5
+bias_mutate_rate        = 0.01
+bias_replace_rate       = 0.005
+
+# genome compatibility options
+compatibility_disjoint_coefficient = 1.0
+compatibility_weight_coefficient   = 0.5
+
+# connection add/remove rates
+conn_add_prob           = 0.01
+conn_delete_prob        = 0.005
+
+# connection enable options
+enabled_default         = True
+enabled_mutate_rate     = 0.005
+
+feed_forward            = False
+initial_connection      = fs_neat_nohidden
+#initial_connection      = unconnected
+#initial_connection     = partial_nodirect 0.4
+
+# node add/remove rates
+node_add_prob           = 0.01
+node_delete_prob        = 0.005
+
+# network parameters
+num_hidden              = 0
+num_inputs              = 17920
+num_outputs             = 12
+
+# node response options
+response_init_mean      = 1.0
+response_init_stdev     = 0.05
+response_max_value      = 30.0
+response_min_value      = -30.0
+response_mutate_power   = 0.1
+response_mutate_rate    = 0.01
+response_replace_rate   = 0.01
+
+# connection weight options
+weight_init_mean        = 0.1
+weight_init_stdev       = 1.0
+weight_max_value        = 30
+weight_min_value        = -30
+weight_mutate_power     = 0.5
+weight_mutate_rate      = 0.01
+weight_replace_rate     = 0.01
+
+[DefaultSpeciesSet]
+compatibility_threshold = 10
+
+[DefaultStagnation]
+species_fitness_func = max
+max_stagnation       = 200
+species_elitism      = 0
+
+[DefaultReproduction]
+elitism            = 3
+survival_threshold = 0.3
+
+
+
+End of config file
+
+ ****** Running generation 0 ****** 
+
+Gen timestep at time: 2019-11-06 20:59:25.385015
+1 0.0
+2 724.3582378029823
+achieved fitness: 724.3582378029823 at timestep 72186 time: 2019-11-06 21:02:55.849837
+Saving genome to file ./genomes/best_genome_1573070894_FlyingBatteryZone.Act2.state_gen0.pkl
+3 869.6413861513138
+achieved fitness: 869.6413861513138 at timestep 108279 time: 2019-11-06 21:04:18.774882
+Saving genome to file ./genomes/best_genome_1573070894_FlyingBatteryZone.Act2.state_gen0.pkl
+4 869.6413851976395
+5 0.0
+6 869.6413844823837
+7 0.0
+8 0.0
+9 751.0851057767868
+10 0.0
+11 0.0
+12 0.0
+13 0.0
+14 0.0
+15 0.0
+16 0.0
+17 0.0
+18 28.7824569940567
+19 0.0
+20 0.0
+Total timesteps at end of gen: 721857
+Population's average fitness: 205.65750 stdev: 354.44184
+Best fitness: 869.64139 - size: (12, 12) - species 1 - id 3
+Average adjusted fitness: 0.236
+Mean genetic distance 2.348, standard deviation 0.612
+Population of 20 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    0    20    869.6    0.236     0
+Total extinctions: 0
+Generation time: 1842.897 sec
+Saving checkpoint to neat-checkpoint-0
+
+ ****** Running generation 1 ****** 
+
+Gen timestep at time: 2019-11-06 21:30:08.288139
+3 869.6413861513138
+achieved fitness: 869.6413861513138 at timestep 757950 time: 2019-11-06 21:31:26.501309
+Saving genome to file ./genomes/best_genome_1573070894_FlyingBatteryZone.Act2.state_gen1.pkl
+4 869.6413851976395
+6 869.6413844823837
+21 869.6413853168488
+22 869.6413851976395
+23 869.6413861513138
+24 869.6413851976395
+Finished timestepMax at time: 2019-11-06 21:39:13.857310
+Best fitness: 869.6413861513138 - size: (0, 0) - species 1 - id 0

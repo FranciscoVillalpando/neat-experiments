@@ -1,0 +1,413 @@
+Starting python script!
+Using env(SonicAndKnuckles3-Genesis, AngelIslandZone.Act2.state)
+Observation space shape:(224, 320, 3)
+Start: 2019-11-06 22:38:38.636345
+Using the following config file: config.txt
+[NEAT]
+fitness_criterion     = max
+fitness_threshold     = 9000
+pop_size              = 20
+reset_on_extinction   = False
+
+[DefaultGenome]
+# node activation options
+activation_default      = sigmoid
+activation_mutate_rate  = 0.00
+activation_options      = sigmoid 
+#abs clamped cube exp gauss hat identity inv log relu sigmoid sin softplus square tanh
+
+# node aggregation options
+aggregation_default     = sum
+aggregation_mutate_rate = 0.00
+aggregation_options     = sum product min max mean median maxabs
+
+# node bias options
+bias_init_mean          = 0.05
+bias_init_stdev         = 1.0
+bias_max_value          = 50.0
+bias_min_value          = -50.0
+bias_mutate_power       = 0.5
+bias_mutate_rate        = 0.01
+bias_replace_rate       = 0.005
+
+# genome compatibility options
+compatibility_disjoint_coefficient = 1.0
+compatibility_weight_coefficient   = 0.5
+
+# connection add/remove rates
+conn_add_prob           = 0.01
+conn_delete_prob        = 0.005
+
+# connection enable options
+enabled_default         = True
+enabled_mutate_rate     = 0.005
+
+feed_forward            = False
+initial_connection      = fs_neat_nohidden
+#initial_connection      = unconnected
+#initial_connection     = partial_nodirect 0.4
+
+# node add/remove rates
+node_add_prob           = 0.01
+node_delete_prob        = 0.005
+
+# network parameters
+num_hidden              = 0
+num_inputs              = 17920
+num_outputs             = 12
+
+# node response options
+response_init_mean      = 1.0
+response_init_stdev     = 0.05
+response_max_value      = 30.0
+response_min_value      = -30.0
+response_mutate_power   = 0.1
+response_mutate_rate    = 0.01
+response_replace_rate   = 0.01
+
+# connection weight options
+weight_init_mean        = 0.1
+weight_init_stdev       = 1.0
+weight_max_value        = 30
+weight_min_value        = -30
+weight_mutate_power     = 0.5
+weight_mutate_rate      = 0.01
+weight_replace_rate     = 0.01
+
+[DefaultSpeciesSet]
+compatibility_threshold = 10
+
+[DefaultStagnation]
+species_fitness_func = max
+max_stagnation       = 200
+species_elitism      = 0
+
+[DefaultReproduction]
+elitism            = 3
+survival_threshold = 0.3
+
+
+
+End of config file
+
+ ****** Running generation 0 ****** 
+
+Gen timestep at time: 2019-11-06 22:38:38.646991
+1 0.0
+2 0.0
+3 0.0
+4 0.0
+5 74.26470446586609
+achieved fitness: 74.26470446586609 at timestep 146436 time: 2019-11-06 22:46:18.472049
+Saving genome to file ./genomes/best_genome_1573076806_AngelIslandZone.Act2.state_gen0.pkl
+6 57.35294008255005
+7 109.55882143974304
+achieved fitness: 109.55882143974304 at timestep 150477 time: 2019-11-06 22:46:32.641324
+Saving genome to file ./genomes/best_genome_1573076806_AngelIslandZone.Act2.state_gen0.pkl
+8 0.0
+9 0.0
+10 0.0
+11 0.0
+12 0.0
+13 0.0
+14 57.35294008255005
+15 0.0
+16 109.55882143974304
+17 0.0
+18 0.0
+19 0.0
+20 0.0
+Total timesteps at end of gen: 552996
+Population's average fitness: 20.40441 stdev: 37.26489
+Best fitness: 109.55882 - size: (12, 12) - species 1 - id 7
+Average adjusted fitness: 0.186
+Mean genetic distance 2.435, standard deviation 0.099
+Population of 20 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    0    20    109.6    0.186     0
+Total extinctions: 0
+Generation time: 1691.983 sec
+Saving checkpoint to neat-checkpoint-0
+
+ ****** Running generation 1 ****** 
+
+Gen timestep at time: 2019-11-06 23:06:50.636150
+7 109.55882143974304
+achieved fitness: 109.55882143974304 at timestep 555018 time: 2019-11-06 23:06:54.550630
+Saving genome to file ./genomes/best_genome_1573076806_AngelIslandZone.Act2.state_gen1.pkl
+16 109.55882143974304
+5 74.26470446586609
+21 109.55882143974304
+22 109.55882143974304
+23 109.55882143974304
+24 0.0
+25 109.55882143974304
+26 109.55882143974304
+27 58.82352828979492
+28 2.941176414489746
+29 109.55882143974304
+30 109.55882143974304
+31 109.55882143974304
+32 109.55882143974304
+33 109.55882143974304
+34 109.55882143974304
+35 109.55882143974304
+36 109.55882143974304
+37 57.35294008255005
+Total timesteps at end of gen: 661749
+Population's average fitness: 91.83823 stdev: 34.37679
+Best fitness: 109.55882 - size: (12, 12) - species 1 - id 7
+Average adjusted fitness: 0.838
+Mean genetic distance 1.827, standard deviation 0.937
+Population of 20 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    1    20    109.6    0.838     1
+Total extinctions: 0
+Generation time: 211.363 sec (951.673 average)
+
+ ****** Running generation 2 ****** 
+
+Gen timestep at time: 2019-11-06 23:10:21.998941
+7 109.55882143974304
+achieved fitness: 109.55882143974304 at timestep 663771 time: 2019-11-06 23:10:25.814403
+Saving genome to file ./genomes/best_genome_1573076806_AngelIslandZone.Act2.state_gen2.pkl
+16 109.55882143974304
+21 109.55882143974304
+38 109.55882143974304
+39 109.55882143974304
+40 109.55882143974304
+41 109.55882143974304
+42 109.55882143974304
+43 109.55882143974304
+44 109.55882143974304
+45 109.55882143974304
+46 109.55882143974304
+47 109.55882143974304
+48 109.55882143974304
+49 109.55882143974304
+50 109.55882143974304
+51 109.55882143974304
+52 109.55882143974304
+53 109.55882143974304
+54 109.55882143974304
+Total timesteps at end of gen: 702189
+Population's average fitness: 109.55882 stdev: 0.00000
+Best fitness: 109.55882 - size: (12, 12) - species 1 - id 7
+Average adjusted fitness: 0.000
+Mean genetic distance 1.021, standard deviation 1.055
+Population of 20 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    2    20    109.6    0.000     2
+Total extinctions: 0
+Generation time: 97.336 sec (666.894 average)
+Saving checkpoint to neat-checkpoint-2
+
+ ****** Running generation 3 ****** 
+
+Gen timestep at time: 2019-11-06 23:11:59.344510
+54 109.55882143974304
+achieved fitness: 109.55882143974304 at timestep 704211 time: 2019-11-06 23:12:06.274568
+Saving genome to file ./genomes/best_genome_1573076806_AngelIslandZone.Act2.state_gen3.pkl
+7 109.55882143974304
+16 109.55882143974304
+55 109.55882143974304
+56 109.55882143974304
+57 109.55882143974304
+58 109.55882143974304
+59 109.55882143974304
+60 109.55882143974304
+61 109.55882143974304
+62 109.55882143974304
+63 109.55882143974304
+64 109.55882143974304
+65 109.55882143974304
+66 109.55882143974304
+67 109.55882143974304
+68 109.55882143974304
+69 109.55882143974304
+70 109.55882143974304
+71 109.55882143974304
+Total timesteps at end of gen: 742629
+Population's average fitness: 109.55882 stdev: 0.00000
+Best fitness: 109.55882 - size: (12, 12) - species 1 - id 54
+Average adjusted fitness: 0.000
+Mean genetic distance 1.286, standard deviation 1.087
+Population of 20 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    3    20    109.6    0.000     3
+Total extinctions: 0
+Generation time: 136.271 sec (534.238 average)
+
+ ****** Running generation 4 ****** 
+
+Gen timestep at time: 2019-11-06 23:14:15.615612
+54 109.55882143974304
+achieved fitness: 109.55882143974304 at timestep 744651 time: 2019-11-06 23:14:22.403517
+Saving genome to file ./genomes/best_genome_1573076806_AngelIslandZone.Act2.state_gen4.pkl
+7 109.55882143974304
+16 109.55882143974304
+72 109.55882143974304
+73 109.55882143974304
+74 109.55882143974304
+75 109.55882143974304
+76 109.55882143974304
+77 109.55882143974304
+78 109.55882143974304
+79 109.55882143974304
+80 109.55882143974304
+81 109.55882143974304
+82 109.55882143974304
+83 109.55882143974304
+84 109.55882143974304
+85 109.55882143974304
+86 109.55882143974304
+87 109.55882143974304
+88 109.55882143974304
+Total timesteps at end of gen: 783069
+Population's average fitness: 109.55882 stdev: 0.00000
+Best fitness: 109.55882 - size: (12, 12) - species 1 - id 54
+Average adjusted fitness: 0.000
+Mean genetic distance 1.148, standard deviation 1.082
+Population of 20 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    4    20    109.6    0.000     4
+Total extinctions: 0
+Generation time: 135.757 sec (454.542 average)
+
+ ****** Running generation 5 ****** 
+
+Gen timestep at time: 2019-11-06 23:16:31.372667
+54 109.55882143974304
+achieved fitness: 109.55882143974304 at timestep 785091 time: 2019-11-06 23:16:38.165626
+Saving genome to file ./genomes/best_genome_1573076806_AngelIslandZone.Act2.state_gen5.pkl
+7 109.55882143974304
+16 109.55882143974304
+89 109.55882143974304
+90 109.55882143974304
+91 109.55882143974304
+92 109.55882143974304
+93 109.55882143974304
+94 109.55882143974304
+95 109.55882143974304
+96 109.55882143974304
+97 109.55882143974304
+98 109.55882143974304
+99 109.55882143974304
+100 109.55882143974304
+101 109.55882143974304
+102 109.55882143974304
+103 109.55882143974304
+104 109.55882143974304
+105 109.55882143974304
+Total timesteps at end of gen: 823509
+Population's average fitness: 109.55882 stdev: 0.00000
+Best fitness: 109.55882 - size: (12, 12) - species 1 - id 54
+Average adjusted fitness: 0.000
+Mean genetic distance 1.402, standard deviation 1.062
+Population of 20 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    5    20    109.6    0.000     5
+Total extinctions: 0
+Generation time: 136.337 sec (401.508 average)
+Saving checkpoint to neat-checkpoint-5
+
+ ****** Running generation 6 ****** 
+
+Gen timestep at time: 2019-11-06 23:18:47.718590
+54 109.55882143974304
+achieved fitness: 109.55882143974304 at timestep 825531 time: 2019-11-06 23:18:54.507456
+Saving genome to file ./genomes/best_genome_1573076806_AngelIslandZone.Act2.state_gen6.pkl
+7 109.55882143974304
+16 109.55882143974304
+106 109.55882143974304
+107 109.55882143974304
+108 109.55882143974304
+109 109.55882143974304
+110 109.55882143974304
+111 109.55882143974304
+112 109.55882143974304
+113 109.55882143974304
+114 109.55882143974304
+115 109.55882143974304
+116 109.55882143974304
+117 109.55882143974304
+118 109.55882143974304
+119 109.55882143974304
+120 109.55882143974304
+121 109.55882143974304
+122 109.55882143974304
+Total timesteps at end of gen: 863949
+Population's average fitness: 109.55882 stdev: 0.00000
+Best fitness: 109.55882 - size: (12, 12) - species 1 - id 54
+Average adjusted fitness: 0.000
+Mean genetic distance 1.005, standard deviation 1.017
+Population of 20 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    6    20    109.6    0.000     6
+Total extinctions: 0
+Generation time: 135.549 sec (363.514 average)
+
+ ****** Running generation 7 ****** 
+
+Gen timestep at time: 2019-11-06 23:21:03.267328
+54 109.55882143974304
+achieved fitness: 109.55882143974304 at timestep 865971 time: 2019-11-06 23:21:10.020308
+Saving genome to file ./genomes/best_genome_1573076806_AngelIslandZone.Act2.state_gen7.pkl
+7 109.55882143974304
+16 109.55882143974304
+123 109.55882143974304
+124 109.55882143974304
+125 109.55882143974304
+126 109.55882143974304
+127 109.55882143974304
+128 109.55882143974304
+129 109.55882143974304
+130 109.55882143974304
+131 109.55882143974304
+132 109.55882143974304
+133 109.55882143974304
+134 109.55882143974304
+135 109.55882143974304
+136 109.55882143974304
+137 109.55882143974304
+138 109.55882143974304
+139 109.55882143974304
+Total timesteps at end of gen: 904389
+Population's average fitness: 109.55882 stdev: 0.00000
+Best fitness: 109.55882 - size: (12, 12) - species 1 - id 54
+Average adjusted fitness: 0.000
+Mean genetic distance 1.792, standard deviation 0.905
+Population of 20 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    7    20    109.6    0.000     7
+Total extinctions: 0
+Generation time: 136.494 sec (335.136 average)
+
+ ****** Running generation 8 ****** 
+
+Gen timestep at time: 2019-11-06 23:23:19.761025
+54 109.55882143974304
+achieved fitness: 109.55882143974304 at timestep 906411 time: 2019-11-06 23:23:26.553902
+Saving genome to file ./genomes/best_genome_1573076806_AngelIslandZone.Act2.state_gen8.pkl
+128 109.55882143974304
+129 109.55882143974304
+140 109.55882143974304
+141 109.55882143974304
+142 109.55882143974304
+143 109.55882143974304
+144 0.0
+145 109.55882143974304
+146 109.55882143974304
+147 109.55882143974304
+148 0.0
+149 109.55882143974304
+Finished timestepMax at time: 2019-11-06 23:26:29.260468
+Best fitness: 109.55882143974304 - size: (0, 0) - species 1 - id 0

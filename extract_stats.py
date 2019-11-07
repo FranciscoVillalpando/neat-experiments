@@ -374,6 +374,8 @@ def printLearningCurveForRuns(fileNameList):
     plt.show()
 
     plt.figure(2)
+    plt.ylabel('Average score')
+    plt.xlabel('Timestep')
     plt.plot(average_of_runs)
     plt.show()
 
@@ -411,4 +413,4 @@ if __name__ == "__main__":
     #generateBruteScoreTable(output_file_name, fileNameList)
     generateBenchmarkScoreTable(output_file_name, fileNameList)
     #generateLearnCurveTimestep(output_file_name, fileNameList)
-    #rintLearningCurveForRuns(fileNameList)
+    # printLearningCurveForRuns(fileNameList)

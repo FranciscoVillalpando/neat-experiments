@@ -1,0 +1,146 @@
+Starting python script!
+Using env(SonicTheHedgehog2-Genesis, HillTopZone.Act2.state)
+Observation space shape:(224, 320, 3)
+Start: 2019-11-06 20:08:27.624351
+Using the following config file: config.txt
+[NEAT]
+fitness_criterion     = max
+fitness_threshold     = 9000
+pop_size              = 20
+reset_on_extinction   = False
+
+[DefaultGenome]
+# node activation options
+activation_default      = sigmoid
+activation_mutate_rate  = 0.00
+activation_options      = sigmoid 
+#abs clamped cube exp gauss hat identity inv log relu sigmoid sin softplus square tanh
+
+# node aggregation options
+aggregation_default     = sum
+aggregation_mutate_rate = 0.00
+aggregation_options     = sum product min max mean median maxabs
+
+# node bias options
+bias_init_mean          = 0.05
+bias_init_stdev         = 1.0
+bias_max_value          = 50.0
+bias_min_value          = -50.0
+bias_mutate_power       = 0.5
+bias_mutate_rate        = 0.01
+bias_replace_rate       = 0.005
+
+# genome compatibility options
+compatibility_disjoint_coefficient = 1.0
+compatibility_weight_coefficient   = 0.5
+
+# connection add/remove rates
+conn_add_prob           = 0.01
+conn_delete_prob        = 0.005
+
+# connection enable options
+enabled_default         = True
+enabled_mutate_rate     = 0.005
+
+feed_forward            = False
+initial_connection      = fs_neat_nohidden
+#initial_connection      = unconnected
+#initial_connection     = partial_nodirect 0.4
+
+# node add/remove rates
+node_add_prob           = 0.01
+node_delete_prob        = 0.005
+
+# network parameters
+num_hidden              = 0
+num_inputs              = 17920
+num_outputs             = 12
+
+# node response options
+response_init_mean      = 1.0
+response_init_stdev     = 0.05
+response_max_value      = 30.0
+response_min_value      = -30.0
+response_mutate_power   = 0.1
+response_mutate_rate    = 0.01
+response_replace_rate   = 0.01
+
+# connection weight options
+weight_init_mean        = 0.1
+weight_init_stdev       = 1.0
+weight_max_value        = 30
+weight_min_value        = -30
+weight_mutate_power     = 0.5
+weight_mutate_rate      = 0.01
+weight_replace_rate     = 0.01
+
+[DefaultSpeciesSet]
+compatibility_threshold = 10
+
+[DefaultStagnation]
+species_fitness_func = max
+max_stagnation       = 200
+species_elitism      = 0
+
+[DefaultReproduction]
+elitism            = 3
+survival_threshold = 0.3
+
+
+
+End of config file
+
+ ****** Running generation 0 ****** 
+
+Gen timestep at time: 2019-11-06 20:08:27.634755
+1 0.0
+2 0.0
+3 0.0
+4 0.0
+5 0.0
+6 0.0
+7 158.87757712602615
+achieved fitness: 158.87757712602615 at timestep 252753 time: 2019-11-06 20:21:12.134714
+Saving genome to file ./genomes/best_genome_1573070894_HillTopZone.Act2.state_gen0.pkl
+8 0.0
+9 0.0
+10 0.0
+11 0.0
+12 158.87757712602615
+13 0.0
+14 122.80408585071564
+15 648.5587324500084
+achieved fitness: 648.5587324500084 at timestep 541617 time: 2019-11-06 20:35:49.380832
+Saving genome to file ./genomes/best_genome_1573070894_HillTopZone.Act2.state_gen0.pkl
+16 158.87757712602615
+17 0.0
+18 21.49043220281601
+19 79.05496805906296
+20 0.0
+Total timesteps at end of gen: 722151
+Population's average fitness: 67.42705 stdev: 146.15384
+Best fitness: 648.55873 - size: (12, 12) - species 1 - id 15
+Average adjusted fitness: 0.104
+Mean genetic distance 2.507, standard deviation 0.519
+Population of 20 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    0    20    648.6    0.104     0
+Total extinctions: 0
+Generation time: 2189.695 sec
+Saving checkpoint to neat-checkpoint-0
+
+ ****** Running generation 1 ****** 
+
+Gen timestep at time: 2019-11-06 20:44:57.338666
+15 648.5587324500084
+achieved fitness: 648.5587324500084 at timestep 758265 time: 2019-11-06 20:46:47.876960
+Saving genome to file ./genomes/best_genome_1573070894_HillTopZone.Act2.state_gen1.pkl
+7 158.87757712602615
+12 158.87757712602615
+21 107.45353174209595
+22 158.87757712602615
+23 158.87757712602615
+24 648.5587324500084
+Finished timestepMax at time: 2019-11-06 20:59:01.483519
+Best fitness: 648.5587324500084 - size: (0, 0) - species 1 - id 0
