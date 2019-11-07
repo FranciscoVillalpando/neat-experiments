@@ -1,0 +1,222 @@
+Starting python script!
+Using env(SonicTheHedgehog-Genesis, GreenHillZone.Act2.state)
+Observation space shape:(224, 320, 3)
+Start: 2019-11-07 03:55:11.400973
+Using the following config file: config.txt
+[NEAT]
+fitness_criterion     = max
+fitness_threshold     = 9000
+pop_size              = 5
+reset_on_extinction   = False
+
+[DefaultGenome]
+# node activation options
+activation_default      = sigmoid
+activation_mutate_rate  = 0.00
+activation_options      = sigmoid 
+#abs clamped cube exp gauss hat identity inv log relu sigmoid sin softplus square tanh
+
+# node aggregation options
+aggregation_default     = sum
+aggregation_mutate_rate = 0.00
+aggregation_options     = sum product min max mean median maxabs
+
+# node bias options
+bias_init_mean          = 0.05
+bias_init_stdev         = 1.0
+bias_max_value          = 50.0
+bias_min_value          = -50.0
+bias_mutate_power       = 0.5
+bias_mutate_rate        = 0.7
+bias_replace_rate       = 0.1
+
+# genome compatibility options
+compatibility_disjoint_coefficient = 1.0
+compatibility_weight_coefficient   = 0.5
+
+# connection add/remove rates
+conn_add_prob           = 0.6
+conn_delete_prob        = 0.1
+
+# connection enable options
+enabled_default         = True
+enabled_mutate_rate     = 0.05
+
+feed_forward            = False
+initial_connection      = fs_neat_nohidden
+#initial_connection      = unconnected
+#initial_connection     = partial_nodirect 0.4
+
+# node add/remove rates
+node_add_prob           = 0.7
+node_delete_prob        = 0.1
+
+# network parameters
+num_hidden              = 0
+num_inputs              = 17920
+num_outputs             = 12
+
+# node response options
+response_init_mean      = 1.0
+response_init_stdev     = 0.05
+response_max_value      = 30.0
+response_min_value      = -30.0
+response_mutate_power   = 0.1
+response_mutate_rate    = 0.75
+response_replace_rate   = 0.1
+
+# connection weight options
+weight_init_mean        = 0.1
+weight_init_stdev       = 1.0
+weight_max_value        = 30
+weight_min_value        = -30
+weight_mutate_power     = 0.5
+weight_mutate_rate      = 0.8
+weight_replace_rate     = 0.1
+
+[DefaultSpeciesSet]
+compatibility_threshold = 10
+
+[DefaultStagnation]
+species_fitness_func = max
+max_stagnation       = 200
+species_elitism      = 0
+
+[DefaultReproduction]
+elitism            = 3
+survival_threshold = 0.3
+
+
+
+End of config file
+
+ ****** Running generation 0 ****** 
+
+Gen timestep at time: 2019-11-07 03:55:11.427839
+1 0.0
+2 0.0
+3 139.21026134490967
+achieved fitness: 139.21026134490967 at timestep 108423 time: 2019-11-07 04:01:49.869041
+Saving genome to file ./genomes/best_genome_1573098910_GreenHillZone.Act2.state_gen0.pkl
+4 2196.8058074712753
+achieved fitness: 2196.8058074712753 at timestep 144558 time: 2019-11-07 04:04:03.078810
+Saving genome to file ./genomes/best_genome_1573098910_GreenHillZone.Act2.state_gen0.pkl
+5 1246.1016092300415
+Total timesteps at end of gen: 180699
+Population's average fitness: 716.42354 stdev: 875.41888
+Best fitness: 2196.80581 - size: (12, 12) - species 1 - id 4
+Average adjusted fitness: 0.326
+Mean genetic distance 2.239, standard deviation 0.494
+Population of 5 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    0     5   2196.8    0.326     0
+Total extinctions: 0
+Generation time: 663.541 sec
+Saving checkpoint to neat-checkpoint-0
+
+ ****** Running generation 1 ****** 
+
+Gen timestep at time: 2019-11-07 04:06:14.976384
+4 2196.8058074712753
+achieved fitness: 2196.8058074712753 at timestep 216834 time: 2019-11-07 04:08:28.012047
+Saving genome to file ./genomes/best_genome_1573098910_GreenHillZone.Act2.state_gen1.pkl
+5 1246.1016092300415
+3 139.21026134490967
+6 2196.8058074712753
+7 3734.9093630313873
+achieved fitness: 3734.9093630313873 at timestep 361374 time: 2019-11-07 04:17:20.369502
+Saving genome to file ./genomes/best_genome_1573098910_GreenHillZone.Act2.state_gen1.pkl
+Total timesteps at end of gen: 361374
+Population's average fitness: 1902.76657 stdev: 1189.20184
+Best fitness: 3734.90936 - size: (13, 13) - species 1 - id 7
+Average adjusted fitness: 0.490
+Mean genetic distance 1.803, standard deviation 0.885
+Population of 5 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    1     5   3734.9    0.490     0
+Total extinctions: 0
+Generation time: 665.396 sec (664.469 average)
+Saving checkpoint to neat-checkpoint-1
+
+ ****** Running generation 2 ****** 
+
+Gen timestep at time: 2019-11-07 04:17:20.379976
+7 3734.9093630313873
+achieved fitness: 3734.9093630313873 at timestep 397497 time: 2019-11-07 04:19:34.309428
+Saving genome to file ./genomes/best_genome_1573098910_GreenHillZone.Act2.state_gen2.pkl
+6 2196.8058074712753
+4 2196.8058074712753
+8 2631.413590312004
+9 0.0
+Total timesteps at end of gen: 542034
+Population's average fitness: 2151.98691 stdev: 1214.13002
+Best fitness: 3734.90936 - size: (13, 13) - species 1 - id 7
+Average adjusted fitness: 0.576
+Mean genetic distance 2.098, standard deviation 0.743
+Population of 5 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    2     5   3734.9    0.576     1
+Total extinctions: 0
+Generation time: 667.860 sec (665.599 average)
+Saving checkpoint to neat-checkpoint-2
+
+ ****** Running generation 3 ****** 
+
+Gen timestep at time: 2019-11-07 04:28:28.248387
+7 3734.9093630313873
+achieved fitness: 3734.9093630313873 at timestep 578157 time: 2019-11-07 04:30:45.142459
+Saving genome to file ./genomes/best_genome_1573098910_GreenHillZone.Act2.state_gen3.pkl
+8 2631.413590312004
+6 2196.8058074712753
+10 730.0050314664841
+11 3645.4981194734573
+Total timesteps at end of gen: 722676
+Population's average fitness: 2587.72638 stdev: 1099.16022
+Best fitness: 3734.90936 - size: (13, 13) - species 1 - id 7
+Average adjusted fitness: 0.618
+Mean genetic distance 1.615, standard deviation 0.884
+Population of 5 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    3     5   3734.9    0.618     2
+Total extinctions: 0
+Generation time: 683.562 sec (670.090 average)
+Saving checkpoint to neat-checkpoint-3
+
+ ****** Running generation 4 ****** 
+
+Gen timestep at time: 2019-11-07 04:39:51.818588
+7 3734.9093630313873
+achieved fitness: 3734.9093630313873 at timestep 758799 time: 2019-11-07 04:42:07.942712
+Saving genome to file ./genomes/best_genome_1573098910_GreenHillZone.Act2.state_gen4.pkl
+11 3645.4981194734573
+8 2631.413590312004
+12 1204.2253390550613
+13 3773.3903628587723
+achieved fitness: 3773.3903628587723 at timestep 867786 time: 2019-11-07 04:48:58.107036
+Saving genome to file ./genomes/best_genome_1573098910_GreenHillZone.Act2.state_gen4.pkl
+Total timesteps at end of gen: 867786
+Population's average fitness: 2997.88735 stdev: 991.51727
+Best fitness: 3773.39036 - size: (13, 14) - species 1 - id 13
+Average adjusted fitness: 0.698
+Mean genetic distance 0.600, standard deviation 0.246
+Population of 5 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    4     5   3773.4    0.698     0
+Total extinctions: 0
+Generation time: 546.291 sec (645.330 average)
+Saving checkpoint to neat-checkpoint-4
+
+ ****** Running generation 5 ****** 
+
+Gen timestep at time: 2019-11-07 04:48:58.117582
+13 3773.3903628587723
+achieved fitness: 3773.3903628587723 at timestep 903906 time: 2019-11-07 04:51:14.242267
+Saving genome to file ./genomes/best_genome_1573098910_GreenHillZone.Act2.state_gen5.pkl
+7 3734.9093630313873
+11 3645.4981194734573
+Finished timestepMax at time: 2019-11-07 04:57:16.804849

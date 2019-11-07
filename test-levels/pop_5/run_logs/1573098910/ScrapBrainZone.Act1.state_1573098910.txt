@@ -1,0 +1,841 @@
+Starting python script!
+Using env(SonicTheHedgehog-Genesis, ScrapBrainZone.Act1.state)
+Observation space shape:(224, 320, 3)
+Start: 2019-11-07 03:55:11.399801
+Using the following config file: config.txt
+[NEAT]
+fitness_criterion     = max
+fitness_threshold     = 9000
+pop_size              = 5
+reset_on_extinction   = False
+
+[DefaultGenome]
+# node activation options
+activation_default      = sigmoid
+activation_mutate_rate  = 0.00
+activation_options      = sigmoid 
+#abs clamped cube exp gauss hat identity inv log relu sigmoid sin softplus square tanh
+
+# node aggregation options
+aggregation_default     = sum
+aggregation_mutate_rate = 0.00
+aggregation_options     = sum product min max mean median maxabs
+
+# node bias options
+bias_init_mean          = 0.05
+bias_init_stdev         = 1.0
+bias_max_value          = 50.0
+bias_min_value          = -50.0
+bias_mutate_power       = 0.5
+bias_mutate_rate        = 0.7
+bias_replace_rate       = 0.1
+
+# genome compatibility options
+compatibility_disjoint_coefficient = 1.0
+compatibility_weight_coefficient   = 0.5
+
+# connection add/remove rates
+conn_add_prob           = 0.6
+conn_delete_prob        = 0.1
+
+# connection enable options
+enabled_default         = True
+enabled_mutate_rate     = 0.05
+
+feed_forward            = False
+initial_connection      = fs_neat_nohidden
+#initial_connection      = unconnected
+#initial_connection     = partial_nodirect 0.4
+
+# node add/remove rates
+node_add_prob           = 0.7
+node_delete_prob        = 0.1
+
+# network parameters
+num_hidden              = 0
+num_inputs              = 17920
+num_outputs             = 12
+
+# node response options
+response_init_mean      = 1.0
+response_init_stdev     = 0.05
+response_max_value      = 30.0
+response_min_value      = -30.0
+response_mutate_power   = 0.1
+response_mutate_rate    = 0.75
+response_replace_rate   = 0.1
+
+# connection weight options
+weight_init_mean        = 0.1
+weight_init_stdev       = 1.0
+weight_max_value        = 30
+weight_min_value        = -30
+weight_mutate_power     = 0.5
+weight_mutate_rate      = 0.8
+weight_replace_rate     = 0.1
+
+[DefaultSpeciesSet]
+compatibility_threshold = 10
+
+[DefaultStagnation]
+species_fitness_func = max
+max_stagnation       = 200
+species_elitism      = 0
+
+[DefaultReproduction]
+elitism            = 3
+survival_threshold = 0.3
+
+
+
+End of config file
+
+ ****** Running generation 0 ****** 
+
+Gen timestep at time: 2019-11-07 03:55:11.428123
+1 0.0
+2 0.0
+3 601.5767738819122
+achieved fitness: 601.5767738819122 at timestep 72573 time: 2019-11-07 03:59:32.654106
+Saving genome to file ./genomes/best_genome_1573098910_ScrapBrainZone.Act1.state_gen0.pkl
+4 0.0
+5 34.96343779563904
+Total timesteps at end of gen: 144843
+Population's average fitness: 127.30804 stdev: 237.52068
+Best fitness: 601.57677 - size: (12, 12) - species 1 - id 3
+Average adjusted fitness: 0.212
+Mean genetic distance 2.310, standard deviation 0.817
+Population of 5 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    0     5    601.6    0.212     0
+Total extinctions: 0
+Generation time: 520.571 sec
+Saving checkpoint to neat-checkpoint-0
+
+ ****** Running generation 1 ****** 
+
+Gen timestep at time: 2019-11-07 04:03:52.006548
+3 601.5767738819122
+achieved fitness: 601.5767738819122 at timestep 145146 time: 2019-11-07 04:03:53.125260
+Saving genome to file ./genomes/best_genome_1573098910_ScrapBrainZone.Act1.state_gen1.pkl
+5 34.96343779563904
+1 0.0
+6 601.5767738819122
+7 34.96343779563904
+Total timesteps at end of gen: 253854
+Population's average fitness: 254.61608 stdev: 283.57975
+Best fitness: 601.57677 - size: (12, 12) - species 1 - id 3
+Average adjusted fitness: 0.423
+Mean genetic distance 1.972, standard deviation 0.734
+Population of 5 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    1     5    601.6    0.423     1
+Total extinctions: 0
+Generation time: 391.178 sec (455.874 average)
+Saving checkpoint to neat-checkpoint-1
+
+ ****** Running generation 2 ****** 
+
+Gen timestep at time: 2019-11-07 04:10:23.191883
+3 601.5767738819122
+achieved fitness: 601.5767738819122 at timestep 254157 time: 2019-11-07 04:10:24.306329
+Saving genome to file ./genomes/best_genome_1573098910_ScrapBrainZone.Act1.state_gen2.pkl
+6 601.5767738819122
+5 34.96343779563904
+8 601.5767738819122
+9 601.5767738819122
+Total timesteps at end of gen: 291201
+Population's average fitness: 488.25411 stdev: 226.64533
+Best fitness: 601.57677 - size: (12, 12) - species 1 - id 3
+Average adjusted fitness: 0.800
+Mean genetic distance 0.975, standard deviation 0.461
+Population of 5 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    2     5    601.6    0.800     2
+Total extinctions: 0
+Generation time: 134.794 sec (348.847 average)
+
+ ****** Running generation 3 ****** 
+
+Gen timestep at time: 2019-11-07 04:12:37.985534
+8 601.5767738819122
+achieved fitness: 601.5767738819122 at timestep 291504 time: 2019-11-07 04:12:39.107987
+Saving genome to file ./genomes/best_genome_1573098910_ScrapBrainZone.Act1.state_gen3.pkl
+3 601.5767738819122
+6 601.5767738819122
+10 601.5767738819122
+11 601.5767738819122
+Total timesteps at end of gen: 292716
+Population's average fitness: 601.57677 stdev: 0.00000
+Best fitness: 601.57677 - size: (13, 12) - species 1 - id 8
+Average adjusted fitness: 0.000
+Mean genetic distance 0.740, standard deviation 0.306
+Population of 5 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    3     5    601.6    0.000     3
+Total extinctions: 0
+Generation time: 5.585 sec (263.032 average)
+
+ ****** Running generation 4 ****** 
+
+Gen timestep at time: 2019-11-07 04:12:43.570985
+8 601.5767738819122
+achieved fitness: 601.5767738819122 at timestep 293019 time: 2019-11-07 04:12:44.674558
+Saving genome to file ./genomes/best_genome_1573098910_ScrapBrainZone.Act1.state_gen4.pkl
+3 601.5767738819122
+6 601.5767738819122
+12 601.5767738819122
+13 601.5767738819122
+Total timesteps at end of gen: 294231
+Population's average fitness: 601.57677 stdev: 0.00000
+Best fitness: 601.57677 - size: (13, 12) - species 1 - id 8
+Average adjusted fitness: 0.000
+Mean genetic distance 0.828, standard deviation 0.412
+Population of 5 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    4     5    601.6    0.000     4
+Total extinctions: 0
+Generation time: 5.526 sec (211.531 average)
+
+ ****** Running generation 5 ****** 
+
+Gen timestep at time: 2019-11-07 04:12:49.097481
+8 601.5767738819122
+achieved fitness: 601.5767738819122 at timestep 294534 time: 2019-11-07 04:12:50.213315
+Saving genome to file ./genomes/best_genome_1573098910_ScrapBrainZone.Act1.state_gen5.pkl
+3 601.5767738819122
+6 601.5767738819122
+14 0.0
+15 1288.5054870843887
+achieved fitness: 1288.5054870843887 at timestep 332220 time: 2019-11-07 04:15:06.505190
+Saving genome to file ./genomes/best_genome_1573098910_ScrapBrainZone.Act1.state_gen5.pkl
+Total timesteps at end of gen: 332220
+Population's average fitness: 618.64716 stdev: 407.99723
+Best fitness: 1288.50549 - size: (12, 10) - species 1 - id 15
+Average adjusted fitness: 0.480
+Mean genetic distance 0.757, standard deviation 0.298
+Population of 5 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    5     5   1288.5    0.480     0
+Total extinctions: 0
+Generation time: 137.410 sec (199.177 average)
+
+ ****** Running generation 6 ****** 
+
+Gen timestep at time: 2019-11-07 04:15:06.507602
+15 1288.5054870843887
+achieved fitness: 1288.5054870843887 at timestep 333165 time: 2019-11-07 04:15:09.977780
+Saving genome to file ./genomes/best_genome_1573098910_ScrapBrainZone.Act1.state_gen6.pkl
+8 601.5767738819122
+3 601.5767738819122
+16 601.5767738819122
+17 0.0
+Total timesteps at end of gen: 370209
+Population's average fitness: 618.64716 stdev: 407.99723
+Best fitness: 1288.50549 - size: (12, 10) - species 1 - id 15
+Average adjusted fitness: 0.480
+Mean genetic distance 0.765, standard deviation 0.314
+Population of 5 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    6     5   1288.5    0.480     1
+Total extinctions: 0
+Generation time: 137.885 sec (190.421 average)
+Saving checkpoint to neat-checkpoint-6
+
+ ****** Running generation 7 ****** 
+
+Gen timestep at time: 2019-11-07 04:17:24.400838
+15 1288.5054870843887
+achieved fitness: 1288.5054870843887 at timestep 371154 time: 2019-11-07 04:17:27.938248
+Saving genome to file ./genomes/best_genome_1573098910_ScrapBrainZone.Act1.state_gen7.pkl
+8 601.5767738819122
+3 601.5767738819122
+18 601.5767734050751
+19 0.0
+Total timesteps at end of gen: 408198
+Population's average fitness: 618.64716 stdev: 407.99723
+Best fitness: 1288.50549 - size: (12, 10) - species 1 - id 15
+Average adjusted fitness: 0.480
+Mean genetic distance 0.646, standard deviation 0.322
+Population of 5 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    7     5   1288.5    0.480     2
+Total extinctions: 0
+Generation time: 138.198 sec (183.893 average)
+
+ ****** Running generation 8 ****** 
+
+Gen timestep at time: 2019-11-07 04:19:42.598564
+15 1288.5054870843887
+achieved fitness: 1288.5054870843887 at timestep 409143 time: 2019-11-07 04:19:46.053483
+Saving genome to file ./genomes/best_genome_1573098910_ScrapBrainZone.Act1.state_gen8.pkl
+8 601.5767738819122
+3 601.5767738819122
+20 0.0
+21 601.5767738819122
+Total timesteps at end of gen: 446187
+Population's average fitness: 618.64716 stdev: 407.99723
+Best fitness: 1288.50549 - size: (12, 10) - species 1 - id 15
+Average adjusted fitness: 0.480
+Mean genetic distance 0.795, standard deviation 0.339
+Population of 5 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    8     5   1288.5    0.480     3
+Total extinctions: 0
+Generation time: 137.051 sec (178.689 average)
+
+ ****** Running generation 9 ****** 
+
+Gen timestep at time: 2019-11-07 04:21:59.649916
+15 1288.5054870843887
+achieved fitness: 1288.5054870843887 at timestep 447132 time: 2019-11-07 04:22:03.099630
+Saving genome to file ./genomes/best_genome_1573098910_ScrapBrainZone.Act1.state_gen9.pkl
+8 601.5767738819122
+3 601.5767738819122
+22 867.9158971309662
+23 0.0
+Total timesteps at end of gen: 484248
+Population's average fitness: 671.91499 stdev: 419.51517
+Best fitness: 1288.50549 - size: (12, 10) - species 1 - id 15
+Average adjusted fitness: 0.521
+Mean genetic distance 0.778, standard deviation 0.322
+Population of 5 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    9     5   1288.5    0.521     4
+Total extinctions: 0
+Generation time: 137.015 sec (174.521 average)
+Saving checkpoint to neat-checkpoint-9
+
+ ****** Running generation 10 ****** 
+
+Gen timestep at time: 2019-11-07 04:24:16.672823
+15 1288.5054870843887
+achieved fitness: 1288.5054870843887 at timestep 485193 time: 2019-11-07 04:24:20.133145
+Saving genome to file ./genomes/best_genome_1573098910_ScrapBrainZone.Act1.state_gen10.pkl
+22 867.9158971309662
+8 601.5767738819122
+24 246.80073738098145
+25 601.5767729282379
+Total timesteps at end of gen: 522309
+Population's average fitness: 721.27513 stdev: 345.55322
+Best fitness: 1288.50549 - size: (12, 10) - species 1 - id 15
+Average adjusted fitness: 0.455
+Mean genetic distance 0.746, standard deviation 0.302
+Population of 5 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   10     5   1288.5    0.455     5
+Total extinctions: 0
+Generation time: 137.342 sec (136.198 average)
+
+ ****** Running generation 11 ****** 
+
+Gen timestep at time: 2019-11-07 04:26:34.014381
+15 1288.5054870843887
+achieved fitness: 1288.5054870843887 at timestep 523254 time: 2019-11-07 04:26:37.470251
+Saving genome to file ./genomes/best_genome_1573098910_ScrapBrainZone.Act1.state_gen11.pkl
+22 867.9158971309662
+8 601.5767738819122
+26 601.5767732858658
+27 601.5767738819122
+Total timesteps at end of gen: 524535
+Population's average fitness: 792.23034 stdev: 268.72427
+Best fitness: 1288.50549 - size: (12, 10) - species 1 - id 15
+Average adjusted fitness: 0.278
+Mean genetic distance 0.681, standard deviation 0.252
+Population of 5 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   11     5   1288.5    0.278     6
+Total extinctions: 0
+Generation time: 8.151 sec (97.896 average)
+
+ ****** Running generation 12 ****** 
+
+Gen timestep at time: 2019-11-07 04:26:42.164910
+15 1288.5054870843887
+achieved fitness: 1288.5054870843887 at timestep 525480 time: 2019-11-07 04:26:45.640693
+Saving genome to file ./genomes/best_genome_1573098910_ScrapBrainZone.Act1.state_gen12.pkl
+22 867.9158971309662
+8 601.5767738819122
+28 601.5767734050751
+29 601.5767729282379
+Total timesteps at end of gen: 526764
+Population's average fitness: 792.23034 stdev: 268.72427
+Best fitness: 1288.50549 - size: (12, 10) - species 1 - id 15
+Average adjusted fitness: 0.278
+Mean genetic distance 0.776, standard deviation 0.340
+Population of 5 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   12     5   1288.5    0.278     7
+Total extinctions: 0
+Generation time: 8.175 sec (85.234 average)
+
+ ****** Running generation 13 ****** 
+
+Gen timestep at time: 2019-11-07 04:26:50.339664
+15 1288.5054870843887
+achieved fitness: 1288.5054870843887 at timestep 527709 time: 2019-11-07 04:26:53.829227
+Saving genome to file ./genomes/best_genome_1573098910_ScrapBrainZone.Act1.state_gen13.pkl
+22 867.9158971309662
+8 601.5767738819122
+30 601.5767734050751
+31 601.5767738819122
+Total timesteps at end of gen: 528990
+Population's average fitness: 792.23034 stdev: 268.72427
+Best fitness: 1288.50549 - size: (12, 10) - species 1 - id 15
+Average adjusted fitness: 0.278
+Mean genetic distance 0.729, standard deviation 0.284
+Population of 5 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   13     5   1288.5    0.278     8
+Total extinctions: 0
+Generation time: 8.181 sec (85.493 average)
+
+ ****** Running generation 14 ****** 
+
+Gen timestep at time: 2019-11-07 04:26:58.520452
+15 1288.5054870843887
+achieved fitness: 1288.5054870843887 at timestep 529935 time: 2019-11-07 04:27:01.987667
+Saving genome to file ./genomes/best_genome_1573098910_ScrapBrainZone.Act1.state_gen14.pkl
+22 867.9158971309662
+8 601.5767738819122
+32 601.5767729282379
+33 601.5767729282379
+Total timesteps at end of gen: 531222
+Population's average fitness: 792.23034 stdev: 268.72427
+Best fitness: 1288.50549 - size: (12, 10) - species 1 - id 15
+Average adjusted fitness: 0.278
+Mean genetic distance 0.755, standard deviation 0.304
+Population of 5 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   14     5   1288.5    0.278     9
+Total extinctions: 0
+Generation time: 8.201 sec (85.761 average)
+Saving checkpoint to neat-checkpoint-14
+
+ ****** Running generation 15 ****** 
+
+Gen timestep at time: 2019-11-07 04:27:06.729836
+15 1288.5054870843887
+achieved fitness: 1288.5054870843887 at timestep 532167 time: 2019-11-07 04:27:10.203504
+Saving genome to file ./genomes/best_genome_1573098910_ScrapBrainZone.Act1.state_gen15.pkl
+22 867.9158971309662
+8 601.5767738819122
+34 0.0
+35 601.5767738819122
+Total timesteps at end of gen: 569280
+Population's average fitness: 671.91499 stdev: 419.51517
+Best fitness: 1288.50549 - size: (12, 10) - species 1 - id 15
+Average adjusted fitness: 0.521
+Mean genetic distance 0.780, standard deviation 0.324
+Population of 5 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   15     5   1288.5    0.521    10
+Total extinctions: 0
+Generation time: 140.106 sec (86.030 average)
+
+ ****** Running generation 16 ****** 
+
+Gen timestep at time: 2019-11-07 04:29:26.836329
+15 1288.5054870843887
+achieved fitness: 1288.5054870843887 at timestep 570225 time: 2019-11-07 04:29:30.397719
+Saving genome to file ./genomes/best_genome_1573098910_ScrapBrainZone.Act1.state_gen16.pkl
+22 867.9158971309662
+8 601.5767738819122
+36 0.0
+37 601.5767738819122
+Total timesteps at end of gen: 607338
+Population's average fitness: 671.91499 stdev: 419.51517
+Best fitness: 1288.50549 - size: (12, 10) - species 1 - id 15
+Average adjusted fitness: 0.521
+Mean genetic distance 0.803, standard deviation 0.346
+Population of 5 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   16     5   1288.5    0.521    11
+Total extinctions: 0
+Generation time: 141.268 sec (86.369 average)
+
+ ****** Running generation 17 ****** 
+
+Gen timestep at time: 2019-11-07 04:31:48.103975
+15 1288.5054870843887
+achieved fitness: 1288.5054870843887 at timestep 608283 time: 2019-11-07 04:31:51.640508
+Saving genome to file ./genomes/best_genome_1573098910_ScrapBrainZone.Act1.state_gen17.pkl
+22 867.9158971309662
+8 601.5767738819122
+38 1288.505488872528
+achieved fitness: 1288.505488872528 at timestep 610128 time: 2019-11-07 04:31:58.557871
+Saving genome to file ./genomes/best_genome_1573098910_ScrapBrainZone.Act1.state_gen17.pkl
+39 601.5767734050751
+Total timesteps at end of gen: 610431
+Population's average fitness: 929.61608 stdev: 308.74899
+Best fitness: 1288.50549 - size: (13, 11) - species 1 - id 38
+Average adjusted fitness: 0.478
+Mean genetic distance 0.862, standard deviation 0.260
+Population of 5 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   17     5   1288.5    0.478     0
+Total extinctions: 0
+Generation time: 11.591 sec (73.708 average)
+
+ ****** Running generation 18 ****** 
+
+Gen timestep at time: 2019-11-07 04:31:59.695471
+38 1288.505488872528
+achieved fitness: 1288.505488872528 at timestep 611601 time: 2019-11-07 04:32:04.143804
+Saving genome to file ./genomes/best_genome_1573098910_ScrapBrainZone.Act1.state_gen18.pkl
+15 1288.5054870843887
+22 867.9158971309662
+40 601.5767738819122
+41 601.5767738819122
+Total timesteps at end of gen: 613524
+Population's average fitness: 929.61608 stdev: 308.74899
+Best fitness: 1288.50549 - size: (13, 11) - species 1 - id 38
+Average adjusted fitness: 0.478
+Mean genetic distance 0.729, standard deviation 0.284
+Population of 5 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   18     5   1288.5    0.478     1
+Total extinctions: 0
+Generation time: 11.664 sec (61.169 average)
+Saving checkpoint to neat-checkpoint-18
+
+ ****** Running generation 19 ****** 
+
+Gen timestep at time: 2019-11-07 04:32:11.367896
+38 1288.505488872528
+achieved fitness: 1288.505488872528 at timestep 614694 time: 2019-11-07 04:32:15.756412
+Saving genome to file ./genomes/best_genome_1573098910_ScrapBrainZone.Act1.state_gen19.pkl
+15 1288.5054870843887
+22 867.9158971309662
+42 601.5767734050751
+43 601.5767738819122
+Total timesteps at end of gen: 616617
+Population's average fitness: 929.61608 stdev: 308.74899
+Best fitness: 1288.50549 - size: (13, 11) - species 1 - id 38
+Average adjusted fitness: 0.478
+Mean genetic distance 0.776, standard deviation 0.313
+Population of 5 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   19     5   1288.5    0.478     2
+Total extinctions: 0
+Generation time: 11.584 sec (48.626 average)
+
+ ****** Running generation 20 ****** 
+
+Gen timestep at time: 2019-11-07 04:32:22.951562
+38 1288.505488872528
+achieved fitness: 1288.505488872528 at timestep 617787 time: 2019-11-07 04:32:27.354996
+Saving genome to file ./genomes/best_genome_1573098910_ScrapBrainZone.Act1.state_gen20.pkl
+15 1288.5054870843887
+22 867.9158971309662
+44 601.5767738819122
+45 593.3500820398331
+Total timesteps at end of gen: 619719
+Population's average fitness: 927.97075 stdev: 310.50965
+Best fitness: 1288.50549 - size: (13, 11) - species 1 - id 38
+Average adjusted fitness: 0.481
+Mean genetic distance 0.752, standard deviation 0.301
+Population of 5 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   20     5   1288.5    0.481     3
+Total extinctions: 0
+Generation time: 11.640 sec (36.056 average)
+
+ ****** Running generation 21 ****** 
+
+Gen timestep at time: 2019-11-07 04:32:34.591432
+38 1288.505488872528
+achieved fitness: 1288.505488872528 at timestep 620889 time: 2019-11-07 04:32:38.970218
+Saving genome to file ./genomes/best_genome_1573098910_ScrapBrainZone.Act1.state_gen21.pkl
+15 1288.5054870843887
+22 867.9158971309662
+46 601.5767738819122
+47 0.0
+Total timesteps at end of gen: 658647
+Population's average fitness: 809.30073 stdev: 481.83546
+Best fitness: 1288.50549 - size: (13, 11) - species 1 - id 38
+Average adjusted fitness: 0.628
+Mean genetic distance 0.644, standard deviation 0.236
+Population of 5 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   21     5   1288.5    0.628     4
+Total extinctions: 0
+Generation time: 144.094 sec (49.650 average)
+
+ ****** Running generation 22 ****** 
+
+Gen timestep at time: 2019-11-07 04:34:58.685030
+38 1288.505488872528
+achieved fitness: 1288.505488872528 at timestep 659817 time: 2019-11-07 04:35:03.099466
+Saving genome to file ./genomes/best_genome_1573098910_ScrapBrainZone.Act1.state_gen22.pkl
+15 1288.5054870843887
+22 867.9158971309662
+48 603.6334451436996
+49 0.0
+Total timesteps at end of gen: 697581
+Population's average fitness: 809.71206 stdev: 481.65880
+Best fitness: 1288.50549 - size: (13, 11) - species 1 - id 38
+Average adjusted fitness: 0.628
+Mean genetic distance 0.684, standard deviation 0.285
+Population of 5 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   22     5   1288.5    0.628     5
+Total extinctions: 0
+Generation time: 144.662 sec (63.299 average)
+Saving checkpoint to neat-checkpoint-22
+
+ ****** Running generation 23 ****** 
+
+Gen timestep at time: 2019-11-07 04:37:23.356027
+38 1288.505488872528
+achieved fitness: 1288.505488872528 at timestep 698751 time: 2019-11-07 04:37:27.767303
+Saving genome to file ./genomes/best_genome_1573098910_ScrapBrainZone.Act1.state_gen23.pkl
+15 1288.5054870843887
+22 867.9158971309662
+50 601.5767738819122
+51 1288.5054870843887
+Total timesteps at end of gen: 701316
+Population's average fitness: 1067.00183 stdev: 284.05890
+Best fitness: 1288.50549 - size: (13, 11) - species 1 - id 38
+Average adjusted fitness: 0.678
+Mean genetic distance 0.515, standard deviation 0.214
+Population of 5 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   23     5   1288.5    0.678     6
+Total extinctions: 0
+Generation time: 14.060 sec (63.887 average)
+
+ ****** Running generation 24 ****** 
+
+Gen timestep at time: 2019-11-07 04:37:37.416513
+38 1288.505488872528
+achieved fitness: 1288.505488872528 at timestep 702486 time: 2019-11-07 04:37:41.836936
+Saving genome to file ./genomes/best_genome_1573098910_ScrapBrainZone.Act1.state_gen24.pkl
+15 1288.5054870843887
+51 1288.5054870843887
+52 601.5767738819122
+53 600.5484393835068
+Total timesteps at end of gen: 704982
+Population's average fitness: 1013.52834 stdev: 336.77701
+Best fitness: 1288.50549 - size: (13, 11) - species 1 - id 38
+Average adjusted fitness: 0.600
+Mean genetic distance 0.731, standard deviation 0.297
+Population of 5 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   24     5   1288.5    0.600     7
+Total extinctions: 0
+Generation time: 13.804 sec (64.447 average)
+
+ ****** Running generation 25 ****** 
+
+Gen timestep at time: 2019-11-07 04:37:51.220830
+38 1288.505488872528
+achieved fitness: 1288.505488872528 at timestep 706152 time: 2019-11-07 04:37:55.609426
+Saving genome to file ./genomes/best_genome_1573098910_ScrapBrainZone.Act1.state_gen25.pkl
+15 1288.5054870843887
+51 1288.5054870843887
+54 601.5767734050751
+55 1189.785171866417
+Total timesteps at end of gen: 744483
+Population's average fitness: 1131.37568 stdev: 267.64450
+Best fitness: 1288.50549 - size: (13, 11) - species 1 - id 38
+Average adjusted fitness: 0.771
+Mean genetic distance 0.694, standard deviation 0.278
+Population of 5 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   25     5   1288.5    0.771     8
+Total extinctions: 0
+Generation time: 147.045 sec (65.141 average)
+
+ ****** Running generation 26 ****** 
+
+Gen timestep at time: 2019-11-07 04:40:18.265828
+38 1288.505488872528
+achieved fitness: 1288.505488872528 at timestep 745653 time: 2019-11-07 04:40:22.711361
+Saving genome to file ./genomes/best_genome_1573098910_ScrapBrainZone.Act1.state_gen26.pkl
+15 1288.5054870843887
+51 1288.5054870843887
+56 601.5767738819122
+57 437.0429540872574
+Total timesteps at end of gen: 783981
+Population's average fitness: 980.82724 stdev: 380.40241
+Best fitness: 1288.50549 - size: (13, 11) - species 1 - id 38
+Average adjusted fitness: 0.639
+Mean genetic distance 0.815, standard deviation 0.376
+Population of 5 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   26     5   1288.5    0.639     9
+Total extinctions: 0
+Generation time: 147.792 sec (65.794 average)
+Saving checkpoint to neat-checkpoint-26
+
+ ****** Running generation 27 ****** 
+
+Gen timestep at time: 2019-11-07 04:42:46.067753
+38 1288.505488872528
+achieved fitness: 1288.505488872528 at timestep 785151 time: 2019-11-07 04:42:50.487582
+Saving genome to file ./genomes/best_genome_1573098910_ScrapBrainZone.Act1.state_gen27.pkl
+15 1288.5054870843887
+51 1288.5054870843887
+58 0.0
+59 0.0
+Total timesteps at end of gen: 859311
+Population's average fitness: 773.10329 stdev: 631.23620
+Best fitness: 1288.50549 - size: (13, 11) - species 1 - id 38
+Average adjusted fitness: 0.600
+Mean genetic distance 0.690, standard deviation 0.298
+Population of 5 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   27     5   1288.5    0.600    10
+Total extinctions: 0
+Generation time: 280.894 sec (92.724 average)
+
+ ****** Running generation 28 ****** 
+
+Gen timestep at time: 2019-11-07 04:47:26.961631
+38 1288.505488872528
+achieved fitness: 1288.505488872528 at timestep 860481 time: 2019-11-07 04:47:31.353560
+Saving genome to file ./genomes/best_genome_1573098910_ScrapBrainZone.Act1.state_gen28.pkl
+15 1288.5054870843887
+51 1288.5054870843887
+60 601.5767729282379
+61 270.4524745941162
+Total timesteps at end of gen: 898812
+Population's average fitness: 947.50914 stdev: 430.56021
+Best fitness: 1288.50549 - size: (13, 11) - species 1 - id 38
+Average adjusted fitness: 0.665
+Mean genetic distance 0.680, standard deviation 0.263
+Population of 5 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   28     5   1288.5    0.665    11
+Total extinctions: 0
+Generation time: 146.748 sec (106.232 average)
+Saving checkpoint to neat-checkpoint-28
+
+ ****** Running generation 29 ****** 
+
+Gen timestep at time: 2019-11-07 04:49:53.718875
+38 1288.505488872528
+achieved fitness: 1288.505488872528 at timestep 899982 time: 2019-11-07 04:49:58.110121
+Saving genome to file ./genomes/best_genome_1573098910_ScrapBrainZone.Act1.state_gen29.pkl
+15 1288.5054870843887
+51 1288.5054870843887
+62 600.5484374761581
+63 867.9159071445465
+Total timesteps at end of gen: 902580
+Population's average fitness: 1066.79616 stdev: 284.39598
+Best fitness: 1288.50549 - size: (13, 11) - species 1 - id 38
+Average adjusted fitness: 0.678
+Mean genetic distance 0.610, standard deviation 0.252
+Population of 5 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   29     5   1288.5    0.678    12
+Total extinctions: 0
+Generation time: 14.213 sec (106.495 average)
+
+ ****** Running generation 30 ****** 
+
+Gen timestep at time: 2019-11-07 04:50:07.932260
+38 1288.505488872528
+achieved fitness: 1288.505488872528 at timestep 903750 time: 2019-11-07 04:50:12.380438
+Saving genome to file ./genomes/best_genome_1573098910_ScrapBrainZone.Act1.state_gen30.pkl
+15 1288.5054870843887
+51 1288.5054870843887
+64 601.5767738819122
+65 601.5767734050751
+Total timesteps at end of gen: 906246
+Population's average fitness: 1013.73400 stdev: 336.52497
+Best fitness: 1288.50549 - size: (13, 11) - species 1 - id 38
+Average adjusted fitness: 0.600
+Mean genetic distance 0.743, standard deviation 0.313
+Population of 5 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   30     5   1288.5    0.600    13
+Total extinctions: 0
+Generation time: 13.908 sec (106.722 average)
+
+ ****** Running generation 31 ****** 
+
+Gen timestep at time: 2019-11-07 04:50:21.840300
+38 1288.505488872528
+achieved fitness: 1288.505488872528 at timestep 907416 time: 2019-11-07 04:50:26.300279
+Saving genome to file ./genomes/best_genome_1573098910_ScrapBrainZone.Act1.state_gen31.pkl
+15 1288.5054870843887
+51 1288.5054870843887
+66 601.5767738819122
+67 601.5767734050751
+Total timesteps at end of gen: 909912
+Population's average fitness: 1013.73400 stdev: 336.52497
+Best fitness: 1288.50549 - size: (13, 11) - species 1 - id 38
+Average adjusted fitness: 0.600
+Mean genetic distance 0.725, standard deviation 0.320
+Population of 5 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   31     5   1288.5    0.600    14
+Total extinctions: 0
+Generation time: 14.002 sec (93.713 average)
+
+ ****** Running generation 32 ****** 
+
+Gen timestep at time: 2019-11-07 04:50:35.842667
+38 1288.505488872528
+achieved fitness: 1288.505488872528 at timestep 911082 time: 2019-11-07 04:50:40.329832
+Saving genome to file ./genomes/best_genome_1573098910_ScrapBrainZone.Act1.state_gen32.pkl
+15 1288.5054870843887
+51 1288.5054870843887
+68 0.0
+69 863.8025559186935
+Total timesteps at end of gen: 949482
+Population's average fitness: 945.86380 stdev: 500.71995
+Best fitness: 1288.50549 - size: (13, 11) - species 1 - id 38
+Average adjusted fitness: 0.734
+Mean genetic distance 0.735, standard deviation 0.300
+Population of 5 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   32     5   1288.5    0.734    15
+Total extinctions: 0
+Generation time: 147.967 sec (94.043 average)
+
+ ****** Running generation 33 ****** 
+
+Gen timestep at time: 2019-11-07 04:53:03.809234
+38 1288.505488872528
+achieved fitness: 1288.505488872528 at timestep 950652 time: 2019-11-07 04:53:08.316958
+Saving genome to file ./genomes/best_genome_1573098910_ScrapBrainZone.Act1.state_gen33.pkl
+15 1288.5054870843887
+51 1288.5054870843887
+70 0.0
+Finished timestepMax at time: 2019-11-07 04:56:13.689336
