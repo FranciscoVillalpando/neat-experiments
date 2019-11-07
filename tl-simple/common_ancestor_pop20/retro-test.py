@@ -79,7 +79,7 @@ def eval_genomes(genomes, config):
         if genome.fitness > best_genome_data[0]:
             best_genome_data[0] = genome.fitness
             best_genome_data[1] = genome.size()
-            print("achieved fitness: {} at timestep {} time: {}".format(best_fitness,timestepCount,datetime.datetime.now()))
+            print("achieved fitness: {} at timestep {} time: {}".format(genome.fitness,timestepCount,datetime.datetime.now()))
             genome_name = './best_genomes/'+file_prefix+'_gen'+str(current_gen)+'.pkl'
             save_genome(genome_name,genome)
  
