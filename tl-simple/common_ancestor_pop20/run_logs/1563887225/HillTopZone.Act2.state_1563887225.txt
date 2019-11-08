@@ -1,0 +1,146 @@
+Starting python script!
+['retro-test.py', '1563887225', 'SonicTheHedgehog2-Genesis', 'HillTopZone.Act2.state', '../../train-levels/common_ancestor/last_gen_genomes/1563887225/']
+Using env(SonicTheHedgehog2-Genesis,HillTopZone.Act2.state)
+Observation space shape:(224, 320, 3)
+Start: 2019-11-07 21:42:03.049182
+Using the following config file: config_test.txt
+[NEAT]
+fitness_criterion     = max
+fitness_threshold     = 9000
+pop_size              = 20
+reset_on_extinction   = False
+
+[DefaultGenome]
+# node activation options
+activation_default      = sigmoid
+activation_mutate_rate  = 0.00
+activation_options      = sigmoid 
+#abs clamped cube exp gauss hat identity inv log relu sigmoid sin softplus square tanh
+
+# node aggregation options
+aggregation_default     = sum
+aggregation_mutate_rate = 0.00
+aggregation_options     = sum product min max mean median maxabs
+
+# node bias options
+bias_init_mean          = 0.05
+bias_init_stdev         = 1.0
+bias_max_value          = 50.0
+bias_min_value          = -50.0
+bias_mutate_power       = 0.2
+bias_mutate_rate        = 0.1
+bias_replace_rate       = 0.1
+
+# genome compatibility options
+compatibility_disjoint_coefficient = 1.0
+compatibility_weight_coefficient   = 0.5
+
+# connection add/remove rates
+conn_add_prob           = 0.1
+conn_delete_prob        = 0.1
+
+# connection enable options
+enabled_default         = True
+enabled_mutate_rate     = 0.05
+
+feed_forward            = False
+initial_connection      = fs_neat_nohidden
+#initial_connection      = unconnected
+#initial_connection     = partial_nodirect 0.4
+
+# node add/remove rates
+node_add_prob           = 0.6
+node_delete_prob        = 0.05
+
+# network parameters
+num_hidden              = 0
+num_inputs              = 17920
+num_outputs             = 12
+
+# node response options
+response_init_mean      = 1.0
+response_init_stdev     = 0.05
+response_max_value      = 30.0
+response_min_value      = -30.0
+response_mutate_power   = 0.1
+response_mutate_rate    = 0.1
+response_replace_rate   = 0.1
+
+# connection weight options
+weight_init_mean        = 0.1
+weight_init_stdev       = 1.0
+weight_max_value        = 30
+weight_min_value        = -30
+weight_mutate_power     = 0.5
+weight_mutate_rate      = 0.1
+weight_replace_rate     = 0.1
+
+[DefaultSpeciesSet]
+compatibility_threshold = 10
+
+[DefaultStagnation]
+species_fitness_func = max
+max_stagnation       = 200
+species_elitism      = 0
+
+[DefaultReproduction]
+elitism            = 3
+survival_threshold = 0.3
+
+
+
+End of config file
+['../../train-levels/common_ancestor/last_gen_genomes/1563887225/AngelIslandZone.Act1.state_1.pkl', '../../train-levels/common_ancestor/last_gen_genomes/1563887225/FlyingBatteryZone.Act1.state_1.pkl', '../../train-levels/common_ancestor/last_gen_genomes/1563887225/EmeraldHillZone.Act1.state_1.pkl', '../../train-levels/common_ancestor/last_gen_genomes/1563887225/DeathEggZone.Act2.state_1.pkl', '../../train-levels/common_ancestor/last_gen_genomes/1563887225/SandopolisZone.Act1.state_1.pkl', '../../train-levels/common_ancestor/last_gen_genomes/1563887225/MushroomHillZone.Act1.state_1.pkl', '../../train-levels/common_ancestor/last_gen_genomes/1563887225/HiddenPalaceZone.state_1.pkl', '../../train-levels/common_ancestor/last_gen_genomes/1563887225/HydrocityZone.Act2.state_1.pkl', '../../train-levels/common_ancestor/last_gen_genomes/1563887225/LaunchBaseZone.Act2.state_1.pkl', '../../train-levels/common_ancestor/last_gen_genomes/1563887225/DeathEggZone.Act1.state_1.pkl', '../../train-levels/common_ancestor/last_gen_genomes/1563887225/AquaticRuinZone.Act1.state_1.pkl', '../../train-levels/common_ancestor/last_gen_genomes/1563887225/MarbleZone.Act3.state_1.pkl', '../../train-levels/common_ancestor/last_gen_genomes/1563887225/MarbleZone.Act2.state_1.pkl', '../../train-levels/common_ancestor/last_gen_genomes/1563887225/OilOceanZone.Act1.state_1.pkl', '../../train-levels/common_ancestor/last_gen_genomes/1563887225/ChemicalPlantZone.Act1.state_1.pkl', '../../train-levels/common_ancestor/last_gen_genomes/1563887225/StarLightZone.Act1.state_1.pkl', '../../train-levels/common_ancestor/last_gen_genomes/1563887225/EmeraldHillZone.Act2.state_1.pkl', '../../train-levels/common_ancestor/last_gen_genomes/1563887225/MarbleGardenZone.Act1.state_1.pkl', '../../train-levels/common_ancestor/last_gen_genomes/1563887225/IcecapZone.Act2.state_1.pkl', '../../train-levels/common_ancestor/last_gen_genomes/1563887225/WingFortressZone.state_1.pkl']
+
+ ****** Running generation 0 ****** 
+
+Gen timestep at time: 2019-11-07 21:42:03.228124
+-- genome with id 5228 done, fitness: 1980.982464492321
+achieved fitness: 1980.982464492321 at timestep 11652 time: 2019-11-07 21:42:38.331073
+Saving genome to file ./best_genomes/HillTopZone.Act2.state__gen1.pkl
+-- genome with id 6612 done, fitness: 158.87757712602615
+-- genome with id 205 done, fitness: 156.57513093948364
+-- genome with id 1791 done, fitness: 1535.0505570173264
+-- genome with id 7066 done, fitness: 1580.3342454433441
+-- genome with id 8262 done, fitness: 0.0
+-- genome with id 1375 done, fitness: 648.5587561130524
+-- genome with id 8249 done, fitness: 57.56431710720062
+-- genome with id 750 done, fitness: 125.87412869930267
+-- genome with id 2226 done, fitness: 851.1854130029678
+-- genome with id 2250 done, fitness: 162.71520870923996
+-- genome with id 6069 done, fitness: 168.0880088210106
+-- genome with id 3 done, fitness: 851.1853960752487
+-- genome with id 3807 done, fitness: 150.43494367599487
+-- genome with id 3450 done, fitness: 158.87757712602615
+-- genome with id 5212 done, fitness: 851.1853883266449
+-- genome with id 199 done, fitness: 135.08429807424545
+-- genome with id 6545 done, fitness: 114.36125713586807
+-- genome with id 5329 done, fitness: 138.9219185113907
+-- genome with id 4741 done, fitness: 851.1854107379913
+Total timesteps at end of gen: 697641
+Population's average fitness: 533.85210 stdev: 575.28278
+Best fitness: 1980.98246 - size: (24, 29) - species 1 - id 5228
+Average adjusted fitness: 0.269
+Population of 20 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    0    20   1981.0    0.269     0
+Total extinctions: 0
+Generation time: 2132.019 sec
+
+ ****** Running generation 1 ****** 
+
+Gen timestep at time: 2019-11-07 22:17:35.247438
+-- genome with id 5228 done, fitness: 1980.982464492321
+-- genome with id 7066 done, fitness: 1580.3342454433441
+-- genome with id 1791 done, fitness: 1535.0505570173264
+-- genome with id 1 done, fitness: 0.0
+-- genome with id 2 done, fitness: 2315.6235942840576
+achieved fitness: 2315.6235942840576 at timestep 853686 time: 2019-11-07 22:25:33.873733
+Saving genome to file ./best_genomes/HillTopZone.Act2.state__gen2.pkl
+-- genome with id 3 done, fitness: 802.0637878775597
+-- genome with id 4 done, fitness: 1630.9909337759018
+-- genome with id 5 done, fitness: 158.87757712602615
+-- genome with id 6 done, fitness: 0.0
+Finished timestepMax at time: 2019-11-07 22:32:57.746553
+Best fitness: 2315.6235942840576 - size: (36, 46) - species 1 - id 0
