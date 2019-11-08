@@ -1,0 +1,145 @@
+Starting python script!
+Using env(SonicAndKnuckles3-Genesis,LavaReefZone.Act1.state)
+Observation space shape:(224, 320, 3)
+Start: 2019-11-08 07:51:28.499853
+Using the following config file: config_test.txt
+[NEAT]
+fitness_criterion     = max
+fitness_threshold     = 9000
+pop_size              = 20
+reset_on_extinction   = False
+
+[DefaultGenome]
+# node activation options
+activation_default      = sigmoid
+activation_mutate_rate  = 0.00
+activation_options      = sigmoid 
+#abs clamped cube exp gauss hat identity inv log relu sigmoid sin softplus square tanh
+
+# node aggregation options
+aggregation_default     = sum
+aggregation_mutate_rate = 0.00
+aggregation_options     = sum product min max mean median maxabs
+
+# node bias options
+bias_init_mean          = 0.05
+bias_init_stdev         = 1.0
+bias_max_value          = 50.0
+bias_min_value          = -50.0
+bias_mutate_power       = 0.2
+bias_mutate_rate        = 0.1
+bias_replace_rate       = 0.1
+
+# genome compatibility options
+compatibility_disjoint_coefficient = 1.0
+compatibility_weight_coefficient   = 0.5
+
+# connection add/remove rates
+conn_add_prob           = 0.1
+conn_delete_prob        = 0.1
+
+# connection enable options
+enabled_default         = True
+enabled_mutate_rate     = 0.05
+
+feed_forward            = False
+initial_connection      = fs_neat_nohidden
+#initial_connection      = unconnected
+#initial_connection     = partial_nodirect 0.4
+
+# node add/remove rates
+node_add_prob           = 0.6
+node_delete_prob        = 0.05
+
+# network parameters
+num_hidden              = 0
+num_inputs              = 17920
+num_outputs             = 7
+
+# node response options
+response_init_mean      = 1.0
+response_init_stdev     = 0.05
+response_max_value      = 30.0
+response_min_value      = -30.0
+response_mutate_power   = 0.1
+response_mutate_rate    = 0.1
+response_replace_rate   = 0.1
+
+# connection weight options
+weight_init_mean        = 0.1
+weight_init_stdev       = 1.0
+weight_max_value        = 30
+weight_min_value        = -30
+weight_mutate_power     = 0.5
+weight_mutate_rate      = 0.1
+weight_replace_rate     = 0.1
+
+[DefaultSpeciesSet]
+compatibility_threshold = 10
+
+[DefaultStagnation]
+species_fitness_func = max
+max_stagnation       = 200
+species_elitism      = 0
+
+[DefaultReproduction]
+elitism            = 3
+survival_threshold = 0.3
+
+
+
+End of config file
+['./../../train-levels/experiment1/last_gen_genomes/1560994547/OilOceanZone.Act1.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/FlyingBatteryZone.Act1.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/IcecapZone.Act1.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/OilOceanZone.Act2.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/CarnivalNightZone.Act2.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/LabyrinthZone.Act1.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/AngelIslandZone.Act1.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/EmeraldHillZone.Act2.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/IcecapZone.Act2.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/LabyrinthZone.Act2.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/MarbleZone.Act1.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/ChemicalPlantZone.Act2.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/DeathEggZone.Act1.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/HillTopZone.Act1.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/WingFortressZone.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/ChemicalPlantZone.Act1.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/LaunchBaseZone.Act2.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/CarnivalNightZone.Act1.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/SpringYardZone.Act3.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/GreenHillZone.Act3.state_1.pkl']
+
+ ****** Running generation 0 ****** 
+
+Gen timestep at time: 2019-11-08 07:51:28.537078
+-- genome with id 1 done, fitness: 109.83606243133545
+achieved fitness: 109.83606243133545 at timestep 36069 time: 2019-11-08 07:53:20.878970
+Saving genome to file ./best_genomes/LavaReefZone.Act1.state_1560994547_gen1.pkl
+-- genome with id 2 done, fitness: 57.377047538757324
+-- genome with id 3 done, fitness: 725.4098153114319
+achieved fitness: 725.4098153114319 at timestep 108204 time: 2019-11-08 07:57:12.012355
+Saving genome to file ./best_genomes/LavaReefZone.Act1.state_1560994547_gen1.pkl
+-- genome with id 4 done, fitness: 54.09835910797119
+-- genome with id 5 done, fitness: 57.377047538757324
+-- genome with id 6 done, fitness: 49.999998569488525
+-- genome with id 7 done, fitness: 57.377047538757324
+-- genome with id 8 done, fitness: 57.377047538757324
+-- genome with id 9 done, fitness: 57.377047538757324
+-- genome with id 10 done, fitness: 57.3770432472229
+-- genome with id 11 done, fitness: 49.99999666213989
+-- genome with id 12 done, fitness: 57.377047538757324
+-- genome with id 13 done, fitness: 57.377047538757324
+-- genome with id 14 done, fitness: 725.4098153114319
+-- genome with id 15 done, fitness: 57.377047538757324
+-- genome with id 16 done, fitness: 57.377047538757324
+-- genome with id 17 done, fitness: 36.06557273864746
+-- genome with id 18 done, fitness: 57.377047538757324
+-- genome with id 19 done, fitness: 57.377047538757324
+-- genome with id 20 done, fitness: 57.377047538757324
+Total timesteps at end of gen: 721338
+Population's average fitness: 124.83606 stdev: 200.60495
+Best fitness: 725.40982 - size: (10, 12) - species 1 - id 3
+Average adjusted fitness: 0.129
+Population of 17 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    0    17    725.4    0.129     0
+Total extinctions: 0
+Generation time: 2256.419 sec
+
+ ****** Running generation 1 ****** 
+
+Gen timestep at time: 2019-11-08 08:29:04.955612
+-- genome with id 3 done, fitness: 725.4098153114319
+achieved fitness: 725.4098153114319 at timestep 757413 time: 2019-11-08 08:30:09.467275
+Saving genome to file ./best_genomes/LavaReefZone.Act1.state_1560994547_gen2.pkl
+-- genome with id 14 done, fitness: 83.60655498504639
+-- genome with id 1 done, fitness: 83.60655498504639
+-- genome with id 2 done, fitness: 57.377047538757324
+-- genome with id 4 done, fitness: 57.377047538757324
+-- genome with id 5 done, fitness: 57.377047538757324
+-- genome with id 6 done, fitness: 725.4098153114319
+Finished timestepMax at time: 2019-11-08 08:37:23.101090
+Best fitness: 725.4098153114319 - size: (0, 0) - species 1 - id 0

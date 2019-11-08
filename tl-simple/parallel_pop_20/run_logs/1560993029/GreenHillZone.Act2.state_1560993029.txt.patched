@@ -1,0 +1,154 @@
+Starting python script!
+Using env(SonicTheHedgehog-Genesis,GreenHillZone.Act2.state)
+Observation space shape:(224, 320, 3)
+Start: 2019-11-08 05:24:25.197186
+Using the following config file: config_test.txt
+[NEAT]
+fitness_criterion     = max
+fitness_threshold     = 9000
+pop_size              = 20
+reset_on_extinction   = False
+
+[DefaultGenome]
+# node activation options
+activation_default      = sigmoid
+activation_mutate_rate  = 0.00
+activation_options      = sigmoid 
+#abs clamped cube exp gauss hat identity inv log relu sigmoid sin softplus square tanh
+
+# node aggregation options
+aggregation_default     = sum
+aggregation_mutate_rate = 0.00
+aggregation_options     = sum product min max mean median maxabs
+
+# node bias options
+bias_init_mean          = 0.05
+bias_init_stdev         = 1.0
+bias_max_value          = 50.0
+bias_min_value          = -50.0
+bias_mutate_power       = 0.2
+bias_mutate_rate        = 0.1
+bias_replace_rate       = 0.1
+
+# genome compatibility options
+compatibility_disjoint_coefficient = 1.0
+compatibility_weight_coefficient   = 0.5
+
+# connection add/remove rates
+conn_add_prob           = 0.1
+conn_delete_prob        = 0.1
+
+# connection enable options
+enabled_default         = True
+enabled_mutate_rate     = 0.05
+
+feed_forward            = False
+initial_connection      = fs_neat_nohidden
+#initial_connection      = unconnected
+#initial_connection     = partial_nodirect 0.4
+
+# node add/remove rates
+node_add_prob           = 0.6
+node_delete_prob        = 0.05
+
+# network parameters
+num_hidden              = 0
+num_inputs              = 17920
+num_outputs             = 7
+
+# node response options
+response_init_mean      = 1.0
+response_init_stdev     = 0.05
+response_max_value      = 30.0
+response_min_value      = -30.0
+response_mutate_power   = 0.1
+response_mutate_rate    = 0.1
+response_replace_rate   = 0.1
+
+# connection weight options
+weight_init_mean        = 0.1
+weight_init_stdev       = 1.0
+weight_max_value        = 30
+weight_min_value        = -30
+weight_mutate_power     = 0.5
+weight_mutate_rate      = 0.1
+weight_replace_rate     = 0.1
+
+[DefaultSpeciesSet]
+compatibility_threshold = 10
+
+[DefaultStagnation]
+species_fitness_func = max
+max_stagnation       = 200
+species_elitism      = 0
+
+[DefaultReproduction]
+elitism            = 3
+survival_threshold = 0.3
+
+
+
+End of config file
+['./../../train-levels/experiment1/last_gen_genomes/1560993029/MarbleGardenZone.Act2.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560993029/LaunchBaseZone.Act1.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560993029/DeathEggZone.Act1.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560993029/MushroomHillZone.Act1.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560993029/CasinoNightZone.Act1.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560993029/ChemicalPlantZone.Act2.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560993029/MarbleZone.Act3.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560993029/HiddenPalaceZone.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560993029/LavaReefZone.Act2.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560993029/MarbleZone.Act1.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560993029/HillTopZone.Act1.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560993029/MarbleGardenZone.Act1.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560993029/CarnivalNightZone.Act1.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560993029/GreenHillZone.Act3.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560993029/CarnivalNightZone.Act2.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560993029/OilOceanZone.Act2.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560993029/StarLightZone.Act1.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560993029/AquaticRuinZone.Act2.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560993029/EmeraldHillZone.Act2.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560993029/MysticCaveZone.Act1.state_1.pkl']
+
+ ****** Running generation 0 ****** 
+
+Gen timestep at time: 2019-11-08 05:24:25.363366
+-- genome with id 1 done, fitness: 813.7575552463531
+achieved fitness: 813.7575552463531 at timestep 36138 time: 2019-11-08 05:26:17.051608
+Saving genome to file ./best_genomes/GreenHillZone.Act2.state_1560993029_gen1.pkl
+-- genome with id 2 done, fitness: 0.0
+-- genome with id 3 done, fitness: 1.1317907571792603
+-- genome with id 4 done, fitness: 139.21026134490967
+-- genome with id 5 done, fitness: 139.21026134490967
+-- genome with id 6 done, fitness: 1128.3953580856323
+achieved fitness: 1128.3953580856323 at timestep 216846 time: 2019-11-08 05:35:34.689217
+Saving genome to file ./best_genomes/GreenHillZone.Act2.state_1560993029_gen1.pkl
+-- genome with id 7 done, fitness: 139.21026134490967
+-- genome with id 8 done, fitness: 139.21026158332825
+-- genome with id 9 done, fitness: 323.6921538114548
+-- genome with id 10 done, fitness: 0.0
+-- genome with id 11 done, fitness: 1128.3953609466553
+achieved fitness: 1128.3953609466553 at timestep 361752 time: 2019-11-08 05:42:56.948164
+Saving genome to file ./best_genomes/GreenHillZone.Act2.state_1560993029_gen1.pkl
+-- genome with id 12 done, fitness: 2609.9093487262726
+achieved fitness: 2609.9093487262726 at timestep 397878 time: 2019-11-08 05:44:47.127351
+Saving genome to file ./best_genomes/GreenHillZone.Act2.state_1560993029_gen1.pkl
+-- genome with id 13 done, fitness: 139.21026134490967
+-- genome with id 14 done, fitness: 139.210263133049
+-- genome with id 15 done, fitness: 139.21026134490967
+-- genome with id 16 done, fitness: 2577.087592482567
+-- genome with id 17 done, fitness: 139.21026134490967
+-- genome with id 18 done, fitness: 2714.034133195877
+achieved fitness: 2714.034133195877 at timestep 601731 time: 2019-11-08 05:55:07.634122
+Saving genome to file ./best_genomes/GreenHillZone.Act2.state_1560993029_gen1.pkl
+-- genome with id 19 done, fitness: 139.21026134490967
+-- genome with id 20 done, fitness: 139.21026134490967
+Total timesteps at end of gen: 674013
+Population's average fitness: 634.42530 stdev: 902.11989
+Best fitness: 2714.03413 - size: (21, 24) - species 1 - id 18
+Average adjusted fitness: 0.234
+Population of 18 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    0    18   2714.0    0.234     0
+Total extinctions: 0
+Generation time: 2061.729 sec
+
+ ****** Running generation 1 ****** 
+
+Gen timestep at time: 2019-11-08 05:58:47.091951
+-- genome with id 18 done, fitness: 2714.034133195877
+achieved fitness: 2714.034133195877 at timestep 697179 time: 2019-11-08 05:59:57.482333
+Saving genome to file ./best_genomes/GreenHillZone.Act2.state_1560993029_gen2.pkl
+-- genome with id 12 done, fitness: 1585.6388235092163
+-- genome with id 16 done, fitness: 0.0
+-- genome with id 1 done, fitness: 1128.3953609466553
+-- genome with id 2 done, fitness: 2609.9093487262726
+-- genome with id 3 done, fitness: 1128.3953580856323
+-- genome with id 4 done, fitness: 393.8631786108017
+-- genome with id 5 done, fitness: 378.0181106328964
+-- genome with id 6 done, fitness: 1128.3953585624695
+-- genome with id 7 done, fitness: 2569.165035009384
+Finished timestepMax at time: 2019-11-08 06:15:23.052767
+Best fitness: 2714.034133195877 - size: (0, 0) - species 1 - id 0

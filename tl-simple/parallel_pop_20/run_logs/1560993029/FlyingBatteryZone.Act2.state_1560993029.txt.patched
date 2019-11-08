@@ -1,0 +1,155 @@
+Starting python script!
+Using env(SonicAndKnuckles3-Genesis,FlyingBatteryZone.Act2.state)
+Observation space shape:(224, 320, 3)
+Start: 2019-11-08 06:15:02.959107
+Using the following config file: config_test.txt
+[NEAT]
+fitness_criterion     = max
+fitness_threshold     = 9000
+pop_size              = 20
+reset_on_extinction   = False
+
+[DefaultGenome]
+# node activation options
+activation_default      = sigmoid
+activation_mutate_rate  = 0.00
+activation_options      = sigmoid 
+#abs clamped cube exp gauss hat identity inv log relu sigmoid sin softplus square tanh
+
+# node aggregation options
+aggregation_default     = sum
+aggregation_mutate_rate = 0.00
+aggregation_options     = sum product min max mean median maxabs
+
+# node bias options
+bias_init_mean          = 0.05
+bias_init_stdev         = 1.0
+bias_max_value          = 50.0
+bias_min_value          = -50.0
+bias_mutate_power       = 0.2
+bias_mutate_rate        = 0.1
+bias_replace_rate       = 0.1
+
+# genome compatibility options
+compatibility_disjoint_coefficient = 1.0
+compatibility_weight_coefficient   = 0.5
+
+# connection add/remove rates
+conn_add_prob           = 0.1
+conn_delete_prob        = 0.1
+
+# connection enable options
+enabled_default         = True
+enabled_mutate_rate     = 0.05
+
+feed_forward            = False
+initial_connection      = fs_neat_nohidden
+#initial_connection      = unconnected
+#initial_connection     = partial_nodirect 0.4
+
+# node add/remove rates
+node_add_prob           = 0.6
+node_delete_prob        = 0.05
+
+# network parameters
+num_hidden              = 0
+num_inputs              = 17920
+num_outputs             = 7
+
+# node response options
+response_init_mean      = 1.0
+response_init_stdev     = 0.05
+response_max_value      = 30.0
+response_min_value      = -30.0
+response_mutate_power   = 0.1
+response_mutate_rate    = 0.1
+response_replace_rate   = 0.1
+
+# connection weight options
+weight_init_mean        = 0.1
+weight_init_stdev       = 1.0
+weight_max_value        = 30
+weight_min_value        = -30
+weight_mutate_power     = 0.5
+weight_mutate_rate      = 0.1
+weight_replace_rate     = 0.1
+
+[DefaultSpeciesSet]
+compatibility_threshold = 10
+
+[DefaultStagnation]
+species_fitness_func = max
+max_stagnation       = 200
+species_elitism      = 0
+
+[DefaultReproduction]
+elitism            = 3
+survival_threshold = 0.3
+
+
+
+End of config file
+['./../../train-levels/experiment1/last_gen_genomes/1560993029/MarbleZone.Act1.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560993029/MysticCaveZone.Act2.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560993029/ScrapBrainZone.Act2.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560993029/SpringYardZone.Act3.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560993029/MetropolisZone.Act1.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560993029/GreenHillZone.Act1.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560993029/SpringYardZone.Act2.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560993029/OilOceanZone.Act1.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560993029/HiddenPalaceZone.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560993029/ChemicalPlantZone.Act2.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560993029/DeathEggZone.Act2.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560993029/StarLightZone.Act2.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560993029/EmeraldHillZone.Act1.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560993029/AngelIslandZone.Act1.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560993029/OilOceanZone.Act2.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560993029/MysticCaveZone.Act1.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560993029/MarbleGardenZone.Act1.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560993029/LavaReefZone.Act2.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560993029/AquaticRuinZone.Act2.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560993029/IcecapZone.Act1.state_1.pkl']
+
+ ****** Running generation 0 ****** 
+
+Gen timestep at time: 2019-11-08 06:15:02.979721
+-- genome with id 1 done, fitness: 708.5966836810112
+achieved fitness: 708.5966836810112 at timestep 36093 time: 2019-11-08 06:16:55.727781
+Saving genome to file ./best_genomes/FlyingBatteryZone.Act2.state_1560993029_gen1.pkl
+-- genome with id 2 done, fitness: 764.1057044863701
+achieved fitness: 764.1057044863701 at timestep 72186 time: 2019-11-08 06:18:50.061923
+Saving genome to file ./best_genomes/FlyingBatteryZone.Act2.state_1560993029_gen1.pkl
+-- genome with id 3 done, fitness: 758.6230804920197
+-- genome with id 4 done, fitness: 869.6413829922676
+achieved fitness: 869.6413829922676 at timestep 144372 time: 2019-11-08 06:21:43.284596
+Saving genome to file ./best_genomes/FlyingBatteryZone.Act2.state_1560993029_gen1.pkl
+-- genome with id 5 done, fitness: 329.62766563892365
+-- genome with id 6 done, fitness: 697.6319225430489
+-- genome with id 7 done, fitness: 18.50300806760788
+-- genome with id 8 done, fitness: 770.2733116745949
+-- genome with id 9 done, fitness: 777.8116469979286
+-- genome with id 10 done, fitness: 701.0584138631821
+-- genome with id 11 done, fitness: 681.1848227381706
+-- genome with id 12 done, fitness: 869.6413874030113
+achieved fitness: 869.6413874030113 at timestep 433119 time: 2019-11-08 06:36:05.080820
+Saving genome to file ./best_genomes/FlyingBatteryZone.Act2.state_1560993029_gen1.pkl
+-- genome with id 13 done, fitness: 731.896505355835
+-- genome with id 14 done, fitness: 694.8907507658005
+-- genome with id 15 done, fitness: 770.2732630372047
+-- genome with id 16 done, fitness: 869.6413838267326
+-- genome with id 17 done, fitness: 550.2931680679321
+-- genome with id 18 done, fitness: 677.7582949995995
+-- genome with id 19 done, fitness: 765.4762918353081
+-- genome with id 20 done, fitness: 776.4410474300385
+Total timesteps at end of gen: 721860
+Population's average fitness: 689.16849 stdev: 192.82049
+Best fitness: 869.64139 - size: (20, 27) - species 1 - id 12
+Average adjusted fitness: 0.788
+Population of 17 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    0    17    869.6    0.788     0
+Total extinctions: 0
+Generation time: 2053.780 sec
+
+ ****** Running generation 1 ****** 
+
+Gen timestep at time: 2019-11-08 06:49:16.759271
+-- genome with id 12 done, fitness: 869.6413829922676
+achieved fitness: 869.6413829922676 at timestep 757953 time: 2019-11-08 06:50:18.804668
+Saving genome to file ./best_genomes/FlyingBatteryZone.Act2.state_1560993029_gen2.pkl
+-- genome with id 16 done, fitness: 869.6413829922676
+-- genome with id 4 done, fitness: 869.6413834691048
+achieved fitness: 869.6413834691048 at timestep 830139 time: 2019-11-08 06:53:18.646313
+Saving genome to file ./best_genomes/FlyingBatteryZone.Act2.state_1560993029_gen2.pkl
+-- genome with id 1 done, fitness: 727.0994235277176
+-- genome with id 2 done, fitness: 869.6413838267326
+achieved fitness: 869.6413838267326 at timestep 902325 time: 2019-11-08 06:56:44.984235
+Saving genome to file ./best_genomes/FlyingBatteryZone.Act2.state_1560993029_gen2.pkl
+-- genome with id 3 done, fitness: 987.5121340155602
+achieved fitness: 987.5121340155602 at timestep 938418 time: 2019-11-08 06:58:38.078737
+Saving genome to file ./best_genomes/FlyingBatteryZone.Act2.state_1560993029_gen2.pkl
+-- genome with id 5 done, fitness: 869.6413829922676
+Finished timestepMax at time: 2019-11-08 07:00:26.081853
+Best fitness: 987.5121340155602 - size: (0, 0) - species 1 - id 0
