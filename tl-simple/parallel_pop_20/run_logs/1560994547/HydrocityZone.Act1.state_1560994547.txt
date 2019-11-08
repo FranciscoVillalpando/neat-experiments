@@ -1,0 +1,1073 @@
+Starting python script!
+Using env(SonicAndKnuckles3-Genesis,HydrocityZone.Act1.state)
+Observation space shape:(224, 320, 3)
+Start: 2019-11-08 07:51:30.289362
+Using the following config file: config_test.txt
+[NEAT]
+fitness_criterion     = max
+fitness_threshold     = 9000
+pop_size              = 20
+reset_on_extinction   = False
+
+[DefaultGenome]
+# node activation options
+activation_default      = sigmoid
+activation_mutate_rate  = 0.00
+activation_options      = sigmoid 
+#abs clamped cube exp gauss hat identity inv log relu sigmoid sin softplus square tanh
+
+# node aggregation options
+aggregation_default     = sum
+aggregation_mutate_rate = 0.00
+aggregation_options     = sum product min max mean median maxabs
+
+# node bias options
+bias_init_mean          = 0.05
+bias_init_stdev         = 1.0
+bias_max_value          = 50.0
+bias_min_value          = -50.0
+bias_mutate_power       = 0.2
+bias_mutate_rate        = 0.1
+bias_replace_rate       = 0.1
+
+# genome compatibility options
+compatibility_disjoint_coefficient = 1.0
+compatibility_weight_coefficient   = 0.5
+
+# connection add/remove rates
+conn_add_prob           = 0.1
+conn_delete_prob        = 0.1
+
+# connection enable options
+enabled_default         = True
+enabled_mutate_rate     = 0.05
+
+feed_forward            = False
+initial_connection      = fs_neat_nohidden
+#initial_connection      = unconnected
+#initial_connection     = partial_nodirect 0.4
+
+# node add/remove rates
+node_add_prob           = 0.6
+node_delete_prob        = 0.05
+
+# network parameters
+num_hidden              = 0
+num_inputs              = 17920
+num_outputs             = 7
+
+# node response options
+response_init_mean      = 1.0
+response_init_stdev     = 0.05
+response_max_value      = 30.0
+response_min_value      = -30.0
+response_mutate_power   = 0.1
+response_mutate_rate    = 0.1
+response_replace_rate   = 0.1
+
+# connection weight options
+weight_init_mean        = 0.1
+weight_init_stdev       = 1.0
+weight_max_value        = 30
+weight_min_value        = -30
+weight_mutate_power     = 0.5
+weight_mutate_rate      = 0.1
+weight_replace_rate     = 0.1
+
+[DefaultSpeciesSet]
+compatibility_threshold = 10
+
+[DefaultStagnation]
+species_fitness_func = max
+max_stagnation       = 200
+species_elitism      = 0
+
+[DefaultReproduction]
+elitism            = 3
+survival_threshold = 0.3
+
+
+
+End of config file
+['./../../train-levels/experiment1/last_gen_genomes/1560994547/MarbleZone.Act2.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/EmeraldHillZone.Act1.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/FlyingBatteryZone.Act1.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/MetropolisZone.Act2.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/LabyrinthZone.Act2.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/MarbleZone.Act1.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/IcecapZone.Act2.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/MarbleZone.Act3.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/MushroomHillZone.Act2.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/LaunchBaseZone.Act1.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/DeathEggZone.Act1.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/StarLightZone.Act2.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/AquaticRuinZone.Act1.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/HillTopZone.Act1.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/OilOceanZone.Act2.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/ChemicalPlantZone.Act2.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/SandopolisZone.Act2.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/SpringYardZone.Act2.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/GreenHillZone.Act1.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/MysticCaveZone.Act1.state_1.pkl']
+
+ ****** Running generation 0 ****** 
+
+Gen timestep at time: 2019-11-08 07:51:30.307208
+-- genome with id 1 done, fitness: 166.64147144556046
+achieved fitness: 166.64147144556046 at timestep 2013 time: 2019-11-08 07:51:36.710311
+Saving genome to file ./best_genomes/HydrocityZone.Act1.state_1560994547_gen1.pkl
+-- genome with id 2 done, fitness: 253.7031388282776
+achieved fitness: 253.7031388282776 at timestep 4026 time: 2019-11-08 07:51:43.159402
+Saving genome to file ./best_genomes/HydrocityZone.Act1.state_1560994547_gen1.pkl
+-- genome with id 3 done, fitness: 253.7031388282776
+-- genome with id 4 done, fitness: 253.7031388282776
+-- genome with id 5 done, fitness: 253.70314103364944
+achieved fitness: 253.70314103364944 at timestep 10065 time: 2019-11-08 07:52:02.515123
+Saving genome to file ./best_genomes/HydrocityZone.Act1.state_1560994547_gen1.pkl
+-- genome with id 6 done, fitness: 867.2158402204514
+achieved fitness: 867.2158402204514 at timestep 11205 time: 2019-11-08 07:52:06.093794
+Saving genome to file ./best_genomes/HydrocityZone.Act1.state_1560994547_gen1.pkl
+-- genome with id 7 done, fitness: 253.70313888788223
+-- genome with id 8 done, fitness: 172.08283245563507
+-- genome with id 9 done, fitness: 867.2158417105675
+achieved fitness: 867.2158417105675 at timestep 16566 time: 2019-11-08 07:52:23.421016
+Saving genome to file ./best_genomes/HydrocityZone.Act1.state_1560994547_gen1.pkl
+-- genome with id 10 done, fitness: 867.2158421278
+achieved fitness: 867.2158421278 at timestep 17481 time: 2019-11-08 07:52:26.324767
+Saving genome to file ./best_genomes/HydrocityZone.Act1.state_1560994547_gen1.pkl
+-- genome with id 11 done, fitness: 253.7031388282776
+-- genome with id 12 done, fitness: 253.7031388282776
+-- genome with id 13 done, fitness: 253.7031388282776
+-- genome with id 14 done, fitness: 1.9311904907226562e-05
+-- genome with id 15 done, fitness: 253.7031388282776
+-- genome with id 16 done, fitness: 253.7031388282776
+-- genome with id 17 done, fitness: 253.70314145088196
+-- genome with id 18 done, fitness: 867.2158389687538
+-- genome with id 19 done, fitness: 253.70314007997513
+-- genome with id 20 done, fitness: 253.7031388282776
+Total timesteps at end of gen: 36513
+Population's average fitness: 355.28642 stdev: 262.47047
+Best fitness: 867.21584 - size: (17, 20) - species 1 - id 10
+Average adjusted fitness: 0.410
+Population of 17 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    0    17    867.2    0.410     0
+Total extinctions: 0
+Generation time: 106.983 sec
+
+ ****** Running generation 1 ****** 
+
+Gen timestep at time: 2019-11-08 07:53:17.290114
+-- genome with id 10 done, fitness: 253.7031388282776
+achieved fitness: 253.7031388282776 at timestep 38526 time: 2019-11-08 07:53:23.646639
+Saving genome to file ./best_genomes/HydrocityZone.Act1.state_1560994547_gen2.pkl
+-- genome with id 9 done, fitness: 253.70314198732376
+achieved fitness: 253.70314198732376 at timestep 40539 time: 2019-11-08 07:53:29.912006
+Saving genome to file ./best_genomes/HydrocityZone.Act1.state_1560994547_gen2.pkl
+-- genome with id 6 done, fitness: 253.7031415104866
+-- genome with id 1 done, fitness: 64.6160916686058
+-- genome with id 2 done, fitness: 867.2158417105675
+achieved fitness: 867.2158417105675 at timestep 45480 time: 2019-11-08 07:53:45.489654
+Saving genome to file ./best_genomes/HydrocityZone.Act1.state_1560994547_gen2.pkl
+-- genome with id 3 done, fitness: 867.2158389687538
+-- genome with id 4 done, fitness: 867.2158416509628
+-- genome with id 5 done, fitness: 0.0
+-- genome with id 7 done, fitness: 253.7031388282776
+-- genome with id 8 done, fitness: 253.70314145088196
+-- genome with id 11 done, fitness: 867.2158418297768
+achieved fitness: 867.2158418297768 at timestep 88449 time: 2019-11-08 07:56:00.126624
+Saving genome to file ./best_genomes/HydrocityZone.Act1.state_1560994547_gen2.pkl
+-- genome with id 12 done, fitness: 253.70314145088196
+-- genome with id 13 done, fitness: 253.7031388282776
+-- genome with id 14 done, fitness: 867.2158421278
+achieved fitness: 867.2158421278 at timestep 93390 time: 2019-11-08 07:56:15.697016
+Saving genome to file ./best_genomes/HydrocityZone.Act1.state_1560994547_gen2.pkl
+-- genome with id 15 done, fitness: 867.2158418297768
+-- genome with id 16 done, fitness: 867.2158402204514
+-- genome with id 17 done, fitness: 253.70314198732376
+Total timesteps at end of gen: 97161
+Population's average fitness: 480.27954 stdev: 330.96804
+Best fitness: 867.21584 - size: (17, 21) - species 1 - id 14
+Average adjusted fitness: 0.554
+Population of 20 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    1    20    867.2    0.554     1
+Total extinctions: 0
+Generation time: 190.158 sec (148.570 average)
+
+ ****** Running generation 2 ****** 
+
+Gen timestep at time: 2019-11-08 07:56:27.447678
+-- genome with id 14 done, fitness: 867.2158421278
+achieved fitness: 867.2158421278 at timestep 98076 time: 2019-11-08 07:56:30.271298
+Saving genome to file ./best_genomes/HydrocityZone.Act1.state_1560994547_gen3.pkl
+-- genome with id 11 done, fitness: 867.2158418297768
+-- genome with id 15 done, fitness: 867.2158418297768
+-- genome with id 18 done, fitness: 867.215841948986
+-- genome with id 19 done, fitness: 867.2158421278
+-- genome with id 20 done, fitness: 253.7031388282776
+-- genome with id 21 done, fitness: 253.7031388282776
+-- genome with id 22 done, fitness: 867.2158415913582
+-- genome with id 23 done, fitness: 867.2158418297768
+-- genome with id 24 done, fitness: 253.70314079523087
+-- genome with id 25 done, fitness: 867.2158415913582
+-- genome with id 26 done, fitness: 253.7031415104866
+-- genome with id 27 done, fitness: 867.2158418297768
+-- genome with id 28 done, fitness: 253.7031415104866
+-- genome with id 29 done, fitness: 253.7031415104866
+-- genome with id 30 done, fitness: 253.7031415104866
+-- genome with id 31 done, fitness: 253.7031388282776
+-- genome with id 32 done, fitness: 867.2158415913582
+-- genome with id 33 done, fitness: 867.2158417105675
+-- genome with id 34 done, fitness: 867.2158415913582
+Total timesteps at end of gen: 123660
+Population's average fitness: 621.81076 stdev: 300.55861
+Best fitness: 867.21584 - size: (17, 21) - species 1 - id 14
+Average adjusted fitness: 0.600
+Population of 20 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    2    20    867.2    0.600     2
+Total extinctions: 0
+Generation time: 83.192 sec (126.777 average)
+
+ ****** Running generation 3 ****** 
+
+Gen timestep at time: 2019-11-08 07:57:50.639387
+-- genome with id 14 done, fitness: 867.2158421278
+achieved fitness: 867.2158421278 at timestep 124575 time: 2019-11-08 07:57:53.474798
+Saving genome to file ./best_genomes/HydrocityZone.Act1.state_1560994547_gen4.pkl
+-- genome with id 19 done, fitness: 867.2158421278
+-- genome with id 18 done, fitness: 867.215841948986
+-- genome with id 35 done, fitness: 253.7031388282776
+-- genome with id 36 done, fitness: 0.0
+-- genome with id 37 done, fitness: 253.7031388282776
+-- genome with id 38 done, fitness: 867.215841948986
+-- genome with id 39 done, fitness: 867.2158418297768
+-- genome with id 40 done, fitness: 867.2158421278
+-- genome with id 41 done, fitness: 867.2158418297768
+-- genome with id 42 done, fitness: 0.0
+-- genome with id 43 done, fitness: 0.0
+-- genome with id 44 done, fitness: 867.215841948986
+-- genome with id 45 done, fitness: 867.2158421278
+-- genome with id 46 done, fitness: 867.2158421278
+-- genome with id 47 done, fitness: 0.0
+-- genome with id 48 done, fitness: 0.0
+-- genome with id 49 done, fitness: 867.2158421278
+-- genome with id 50 done, fitness: 867.2158421278
+-- genome with id 51 done, fitness: 253.7031388282776
+Total timesteps at end of gen: 149871
+Population's average fitness: 558.38498 stdev: 386.13340
+Best fitness: 867.21584 - size: (17, 21) - species 1 - id 14
+Average adjusted fitness: 0.644
+Population of 20 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    3    20    867.2    0.644     3
+Total extinctions: 0
+Generation time: 82.142 sec (115.618 average)
+
+ ****** Running generation 4 ****** 
+
+Gen timestep at time: 2019-11-08 07:59:12.780924
+-- genome with id 14 done, fitness: 867.2158421278
+achieved fitness: 867.2158421278 at timestep 150786 time: 2019-11-08 07:59:15.646481
+Saving genome to file ./best_genomes/HydrocityZone.Act1.state_1560994547_gen5.pkl
+-- genome with id 19 done, fitness: 867.2158421278
+-- genome with id 40 done, fitness: 867.2158421278
+-- genome with id 52 done, fitness: 253.7031388282776
+-- genome with id 53 done, fitness: 867.2158421278
+-- genome with id 54 done, fitness: -2.2649765014648438e-05
+-- genome with id 55 done, fitness: 867.2158418297768
+-- genome with id 56 done, fitness: 0.0
+-- genome with id 57 done, fitness: 867.2158421278
+-- genome with id 58 done, fitness: 867.2158421278
+-- genome with id 59 done, fitness: 253.7031388282776
+-- genome with id 60 done, fitness: 253.7031388282776
+-- genome with id 61 done, fitness: 867.2158415913582
+-- genome with id 62 done, fitness: -2.9981136322021484e-05
+-- genome with id 63 done, fitness: 867.2158421278
+-- genome with id 64 done, fitness: 10.202509641647339
+-- genome with id 65 done, fitness: 867.2158421278
+-- genome with id 66 done, fitness: 867.2158421278
+-- genome with id 67 done, fitness: 253.70314174890518
+-- genome with id 68 done, fitness: 253.7031408548355
+Total timesteps at end of gen: 175995
+Population's average fitness: 540.90462 stdev: 370.34246
+Best fitness: 867.21584 - size: (17, 21) - species 1 - id 14
+Average adjusted fitness: 0.624
+Population of 20 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    4    20    867.2    0.624     4
+Total extinctions: 0
+Generation time: 82.398 sec (108.974 average)
+
+ ****** Running generation 5 ****** 
+
+Gen timestep at time: 2019-11-08 08:00:35.179227
+-- genome with id 14 done, fitness: 867.2158421278
+achieved fitness: 867.2158421278 at timestep 176910 time: 2019-11-08 08:00:38.090638
+Saving genome to file ./best_genomes/HydrocityZone.Act1.state_1560994547_gen6.pkl
+-- genome with id 19 done, fitness: 867.2158421278
+-- genome with id 40 done, fitness: 867.2158421278
+-- genome with id 69 done, fitness: 253.70314174890518
+-- genome with id 70 done, fitness: 253.7031388282776
+-- genome with id 71 done, fitness: 867.2158421278
+-- genome with id 72 done, fitness: 867.2158421278
+-- genome with id 73 done, fitness: 867.2158421278
+-- genome with id 74 done, fitness: 867.2158421278
+-- genome with id 75 done, fitness: 867.2158421278
+-- genome with id 76 done, fitness: 867.2158421278
+-- genome with id 77 done, fitness: 867.2158421278
+-- genome with id 78 done, fitness: 867.2158421278
+-- genome with id 79 done, fitness: 867.2158421278
+-- genome with id 80 done, fitness: 253.7031388282776
+-- genome with id 81 done, fitness: 867.2158417105675
+-- genome with id 82 done, fitness: 867.2158421278
+-- genome with id 83 done, fitness: 867.2158421278
+-- genome with id 84 done, fitness: 867.2158424258232
+achieved fitness: 867.2158424258232 at timestep 193737 time: 2019-11-08 08:01:31.051368
+Saving genome to file ./best_genomes/HydrocityZone.Act1.state_1560994547_gen6.pkl
+-- genome with id 85 done, fitness: 867.2158421278
+Total timesteps at end of gen: 194652
+Population's average fitness: 775.18894 stdev: 219.06785
+Best fitness: 867.21584 - size: (17, 18) - species 1 - id 84
+Average adjusted fitness: 0.850
+Population of 20 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    5    20    867.2    0.850     0
+Total extinctions: 0
+Generation time: 58.754 sec (100.604 average)
+
+ ****** Running generation 6 ****** 
+
+Gen timestep at time: 2019-11-08 08:01:33.932948
+-- genome with id 84 done, fitness: 867.2158424258232
+achieved fitness: 867.2158424258232 at timestep 195570 time: 2019-11-08 08:01:36.792306
+Saving genome to file ./best_genomes/HydrocityZone.Act1.state_1560994547_gen7.pkl
+-- genome with id 14 done, fitness: 867.2158421278
+-- genome with id 19 done, fitness: 867.2158421278
+-- genome with id 86 done, fitness: 867.2158421278
+-- genome with id 87 done, fitness: 867.2158421278
+-- genome with id 88 done, fitness: 867.2158421278
+-- genome with id 89 done, fitness: 867.2158424258232
+-- genome with id 90 done, fitness: 867.2158421278
+-- genome with id 91 done, fitness: 253.7031388282776
+-- genome with id 92 done, fitness: 253.7031388282776
+-- genome with id 93 done, fitness: -1.5497207641601562e-06
+-- genome with id 94 done, fitness: 867.215841948986
+-- genome with id 95 done, fitness: 867.2158421278
+-- genome with id 96 done, fitness: 867.2158421278
+-- genome with id 97 done, fitness: 867.2158421278
+-- genome with id 98 done, fitness: 867.2158424258232
+-- genome with id 99 done, fitness: 867.2158421278
+-- genome with id 100 done, fitness: 867.2158421278
+-- genome with id 101 done, fitness: 867.2158421278
+-- genome with id 102 done, fitness: 253.7031388282776
+Total timesteps at end of gen: 213462
+Population's average fitness: 731.82814 stdev: 275.19632
+Best fitness: 867.21584 - size: (17, 18) - species 1 - id 84
+Average adjusted fitness: 0.844
+Population of 20 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    6    20    867.2    0.844     1
+Total extinctions: 0
+Generation time: 59.166 sec (94.685 average)
+
+ ****** Running generation 7 ****** 
+
+Gen timestep at time: 2019-11-08 08:02:33.099181
+-- genome with id 84 done, fitness: 867.2158424258232
+achieved fitness: 867.2158424258232 at timestep 214380 time: 2019-11-08 08:02:35.945965
+Saving genome to file ./best_genomes/HydrocityZone.Act1.state_1560994547_gen8.pkl
+-- genome with id 89 done, fitness: 867.2158424258232
+-- genome with id 98 done, fitness: 867.2158424258232
+-- genome with id 103 done, fitness: 867.2158418297768
+-- genome with id 104 done, fitness: 867.2158415913582
+-- genome with id 105 done, fitness: 867.2158424258232
+-- genome with id 106 done, fitness: 867.215841948986
+-- genome with id 107 done, fitness: -2.9981136322021484e-05
+-- genome with id 108 done, fitness: 0.0
+-- genome with id 109 done, fitness: 867.2158421278
+-- genome with id 110 done, fitness: 867.215841948986
+-- genome with id 111 done, fitness: 867.2158415913582
+-- genome with id 112 done, fitness: 867.2158424258232
+-- genome with id 113 done, fitness: 867.2158421278
+-- genome with id 114 done, fitness: 253.7031388282776
+-- genome with id 115 done, fitness: 253.7031415104866
+-- genome with id 116 done, fitness: 867.2158418297768
+-- genome with id 117 done, fitness: 867.2158424258232
+-- genome with id 118 done, fitness: 253.7031388282776
+-- genome with id 119 done, fitness: 253.7031388282776
+Total timesteps at end of gen: 235434
+Population's average fitness: 657.79172 stdev: 326.53857
+Best fitness: 867.21584 - size: (17, 18) - species 1 - id 84
+Average adjusted fitness: 0.759
+Population of 20 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    7    20    867.2    0.759     2
+Total extinctions: 0
+Generation time: 69.141 sec (91.492 average)
+
+ ****** Running generation 8 ****** 
+
+Gen timestep at time: 2019-11-08 08:03:42.240351
+-- genome with id 84 done, fitness: 867.2158424258232
+achieved fitness: 867.2158424258232 at timestep 236352 time: 2019-11-08 08:03:45.089992
+Saving genome to file ./best_genomes/HydrocityZone.Act1.state_1560994547_gen9.pkl
+-- genome with id 89 done, fitness: 867.2158424258232
+-- genome with id 98 done, fitness: 867.2158424258232
+-- genome with id 120 done, fitness: 867.2158421278
+-- genome with id 121 done, fitness: 253.7031388282776
+-- genome with id 122 done, fitness: 867.2158424258232
+-- genome with id 123 done, fitness: 867.2158424258232
+-- genome with id 124 done, fitness: 867.2158424258232
+-- genome with id 125 done, fitness: 867.2158424258232
+-- genome with id 126 done, fitness: 10.202509641647339
+-- genome with id 127 done, fitness: 867.2158424258232
+-- genome with id 128 done, fitness: 253.7031388282776
+-- genome with id 129 done, fitness: 867.2158421278
+-- genome with id 130 done, fitness: 867.2158421278
+-- genome with id 131 done, fitness: 867.2158415913582
+-- genome with id 132 done, fitness: 253.7031388282776
+-- genome with id 133 done, fitness: 867.2158421278
+-- genome with id 134 done, fitness: 867.2158424258232
+-- genome with id 135 done, fitness: 253.7031415104866
+-- genome with id 136 done, fitness: 867.2158418297768
+Total timesteps at end of gen: 256917
+Population's average fitness: 701.66264 stdev: 290.85270
+Best fitness: 867.21584 - size: (17, 18) - species 1 - id 84
+Average adjusted fitness: 0.807
+Population of 20 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    8    20    867.2    0.807     3
+Total extinctions: 0
+Generation time: 67.886 sec (88.869 average)
+
+ ****** Running generation 9 ****** 
+
+Gen timestep at time: 2019-11-08 08:04:50.126620
+-- genome with id 84 done, fitness: 867.2158424258232
+achieved fitness: 867.2158424258232 at timestep 257835 time: 2019-11-08 08:04:53.016079
+Saving genome to file ./best_genomes/HydrocityZone.Act1.state_1560994547_gen10.pkl
+-- genome with id 134 done, fitness: 867.2158424258232
+-- genome with id 89 done, fitness: 867.2158424258232
+-- genome with id 137 done, fitness: 867.2158415913582
+-- genome with id 138 done, fitness: 867.215841948986
+-- genome with id 139 done, fitness: 867.2158415913582
+-- genome with id 140 done, fitness: 867.215841948986
+-- genome with id 141 done, fitness: 867.215841948986
+-- genome with id 142 done, fitness: 867.2158424258232
+-- genome with id 143 done, fitness: 867.2158424258232
+-- genome with id 144 done, fitness: 253.7031408548355
+-- genome with id 145 done, fitness: 253.7031388282776
+-- genome with id 146 done, fitness: 867.2158415913582
+-- genome with id 147 done, fitness: 0.0
+-- genome with id 148 done, fitness: 253.7031388282776
+-- genome with id 149 done, fitness: 10.202509641647339
+-- genome with id 150 done, fitness: 253.7031408548355
+-- genome with id 151 done, fitness: 253.7031388282776
+-- genome with id 152 done, fitness: 253.7031388282776
+-- genome with id 153 done, fitness: 253.7031388282776
+Total timesteps at end of gen: 283377
+Population's average fitness: 566.27494 stdev: 339.85375
+Best fitness: 867.21584 - size: (17, 18) - species 1 - id 84
+Average adjusted fitness: 0.653
+Population of 20 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    9    20    867.2    0.653     4
+Total extinctions: 0
+Generation time: 67.119 sec (86.694 average)
+
+ ****** Running generation 10 ****** 
+
+Gen timestep at time: 2019-11-08 08:05:57.245197
+-- genome with id 84 done, fitness: 867.2158424258232
+achieved fitness: 867.2158424258232 at timestep 284295 time: 2019-11-08 08:06:00.102167
+Saving genome to file ./best_genomes/HydrocityZone.Act1.state_1560994547_gen11.pkl
+-- genome with id 134 done, fitness: 867.2158424258232
+-- genome with id 142 done, fitness: 867.2158424258232
+-- genome with id 154 done, fitness: 867.2158421278
+-- genome with id 155 done, fitness: 867.2158424258232
+-- genome with id 156 done, fitness: -2.9802322387695312e-05
+-- genome with id 157 done, fitness: 253.7031388282776
+-- genome with id 158 done, fitness: 867.2158424258232
+-- genome with id 159 done, fitness: 253.7031388282776
+-- genome with id 160 done, fitness: 867.2158424258232
+-- genome with id 161 done, fitness: 867.2158415913582
+-- genome with id 162 done, fitness: 253.7031408548355
+-- genome with id 163 done, fitness: 253.7031415104866
+-- genome with id 164 done, fitness: 253.7031388282776
+-- genome with id 165 done, fitness: 867.2158424258232
+-- genome with id 166 done, fitness: 867.215841948986
+-- genome with id 167 done, fitness: 867.2158417105675
+-- genome with id 168 done, fitness: 867.215841948986
+-- genome with id 169 done, fitness: 253.70314174890518
+-- genome with id 170 done, fitness: 253.7031388282776
+Total timesteps at end of gen: 307854
+Population's average fitness: 609.12560 stdev: 320.51808
+Best fitness: 867.21584 - size: (17, 18) - species 1 - id 84
+Average adjusted fitness: 0.702
+Population of 20 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   10    20    867.2    0.702     5
+Total extinctions: 0
+Generation time: 77.184 sec (83.714 average)
+
+ ****** Running generation 11 ****** 
+
+Gen timestep at time: 2019-11-08 08:07:14.429353
+-- genome with id 84 done, fitness: 867.2158424258232
+achieved fitness: 867.2158424258232 at timestep 308772 time: 2019-11-08 08:07:17.276366
+Saving genome to file ./best_genomes/HydrocityZone.Act1.state_1560994547_gen12.pkl
+-- genome with id 134 done, fitness: 867.2158424258232
+-- genome with id 142 done, fitness: 867.2158424258232
+-- genome with id 171 done, fitness: 867.2158421278
+-- genome with id 172 done, fitness: 867.2158424258232
+-- genome with id 173 done, fitness: 867.2158421278
+-- genome with id 174 done, fitness: 253.70314121246338
+-- genome with id 175 done, fitness: 7.152557373046875e-07
+-- genome with id 176 done, fitness: 867.2158417105675
+-- genome with id 177 done, fitness: 253.7031388282776
+-- genome with id 178 done, fitness: 867.2158415913582
+-- genome with id 179 done, fitness: 253.7031388282776
+-- genome with id 180 done, fitness: 253.7031388282776
+-- genome with id 181 done, fitness: 867.2158424258232
+-- genome with id 182 done, fitness: 253.7031388282776
+-- genome with id 183 done, fitness: 867.2158421278
+-- genome with id 184 done, fitness: 867.215841948986
+-- genome with id 185 done, fitness: 253.7031388282776
+-- genome with id 186 done, fitness: 253.70314174890518
+-- genome with id 187 done, fitness: 253.7031388282776
+Total timesteps at end of gen: 333420
+Population's average fitness: 578.44997 stdev: 323.69209
+Best fitness: 867.21584 - size: (17, 18) - species 1 - id 84
+Average adjusted fitness: 0.667
+Population of 20 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   11    20    867.2    0.667     6
+Total extinctions: 0
+Generation time: 80.707 sec (72.769 average)
+
+ ****** Running generation 12 ****** 
+
+Gen timestep at time: 2019-11-08 08:08:35.136505
+-- genome with id 84 done, fitness: 867.2158424258232
+achieved fitness: 867.2158424258232 at timestep 334338 time: 2019-11-08 08:08:37.976329
+Saving genome to file ./best_genomes/HydrocityZone.Act1.state_1560994547_gen13.pkl
+-- genome with id 134 done, fitness: 867.2158424258232
+-- genome with id 142 done, fitness: 867.2158424258232
+-- genome with id 188 done, fitness: 253.70314079523087
+-- genome with id 189 done, fitness: 867.2158415913582
+-- genome with id 190 done, fitness: 867.2158424258232
+-- genome with id 191 done, fitness: 867.2158415913582
+-- genome with id 192 done, fitness: 867.2158415913582
+-- genome with id 193 done, fitness: 867.2158421278
+-- genome with id 194 done, fitness: 867.2158421278
+-- genome with id 195 done, fitness: 867.2158424258232
+-- genome with id 196 done, fitness: 867.2158424258232
+-- genome with id 197 done, fitness: 253.7031388282776
+-- genome with id 198 done, fitness: 867.2158424258232
+-- genome with id 199 done, fitness: 253.70314079523087
+-- genome with id 200 done, fitness: 867.2158415913582
+-- genome with id 201 done, fitness: 867.2158421278
+-- genome with id 202 done, fitness: 253.7031408548355
+-- genome with id 203 done, fitness: 867.2158424258232
+-- genome with id 204 done, fitness: 867.2158421278
+Total timesteps at end of gen: 352332
+Population's average fitness: 744.51330 stdev: 245.40508
+Best fitness: 867.21584 - size: (17, 18) - species 1 - id 84
+Average adjusted fitness: 0.800
+Population of 20 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   12    20    867.2    0.800     7
+Total extinctions: 0
+Generation time: 59.247 sec (70.374 average)
+
+ ****** Running generation 13 ****** 
+
+Gen timestep at time: 2019-11-08 08:09:34.383778
+-- genome with id 84 done, fitness: 867.2158424258232
+achieved fitness: 867.2158424258232 at timestep 353250 time: 2019-11-08 08:09:37.251255
+Saving genome to file ./best_genomes/HydrocityZone.Act1.state_1560994547_gen14.pkl
+-- genome with id 134 done, fitness: 867.2158424258232
+-- genome with id 142 done, fitness: 867.2158424258232
+-- genome with id 205 done, fitness: 867.2158421278
+-- genome with id 206 done, fitness: 253.7031408548355
+-- genome with id 207 done, fitness: 253.70314472913742
+-- genome with id 208 done, fitness: 867.2158424258232
+-- genome with id 209 done, fitness: 867.2158424258232
+-- genome with id 210 done, fitness: 867.2158421278
+-- genome with id 211 done, fitness: 867.2158424258232
+-- genome with id 212 done, fitness: 253.7031388282776
+-- genome with id 213 done, fitness: 867.2158421278
+-- genome with id 214 done, fitness: 867.2158424258232
+-- genome with id 215 done, fitness: 253.7031388282776
+-- genome with id 216 done, fitness: 867.2158415913582
+-- genome with id 217 done, fitness: 867.2158424258232
+-- genome with id 218 done, fitness: 867.2158424258232
+-- genome with id 219 done, fitness: 867.2158424258232
+-- genome with id 220 done, fitness: 867.2158424258232
+-- genome with id 221 done, fitness: 253.70314174890518
+Total timesteps at end of gen: 374112
+Population's average fitness: 713.83767 stdev: 265.65879
+Best fitness: 867.21584 - size: (17, 18) - species 1 - id 84
+Average adjusted fitness: 0.750
+Population of 20 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   13    20    867.2    0.750     8
+Total extinctions: 0
+Generation time: 61.557 sec (68.316 average)
+
+ ****** Running generation 14 ****** 
+
+Gen timestep at time: 2019-11-08 08:10:35.941229
+-- genome with id 84 done, fitness: 867.2158424258232
+achieved fitness: 867.2158424258232 at timestep 375030 time: 2019-11-08 08:10:37.524323
+Saving genome to file ./best_genomes/HydrocityZone.Act1.state_1560994547_gen15.pkl
+-- genome with id 134 done, fitness: 867.2158424258232
+-- genome with id 142 done, fitness: 867.2158424258232
+-- genome with id 222 done, fitness: 253.7031388282776
+-- genome with id 223 done, fitness: 253.7031408548355
+-- genome with id 224 done, fitness: -2.9981136322021484e-05
+-- genome with id 225 done, fitness: 253.70314174890518
+-- genome with id 226 done, fitness: 253.7031415104866
+-- genome with id 227 done, fitness: 253.7031388282776
+-- genome with id 228 done, fitness: 31.967925548553467
+-- genome with id 229 done, fitness: 867.2158421278
+-- genome with id 230 done, fitness: 253.7031388282776
+-- genome with id 231 done, fitness: 253.7031415104866
+-- genome with id 232 done, fitness: 867.2158424258232
+-- genome with id 233 done, fitness: 10.202509641647339
+-- genome with id 234 done, fitness: 867.2158421278
+-- genome with id 235 done, fitness: 253.70314079523087
+-- genome with id 236 done, fitness: 10.202509641647339
+-- genome with id 237 done, fitness: 867.2158421278
+-- genome with id 238 done, fitness: 867.2158424258232
+Total timesteps at end of gen: 405027
+Population's average fitness: 450.98624 stdev: 351.06176
+Best fitness: 867.21584 - size: (17, 18) - species 1 - id 84
+Average adjusted fitness: 0.520
+Population of 20 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   14    20    867.2    0.520     9
+Total extinctions: 0
+Generation time: 54.279 sec (65.504 average)
+
+ ****** Running generation 15 ****** 
+
+Gen timestep at time: 2019-11-08 08:11:30.220700
+-- genome with id 84 done, fitness: 867.2158424258232
+achieved fitness: 867.2158424258232 at timestep 405945 time: 2019-11-08 08:11:31.801995
+Saving genome to file ./best_genomes/HydrocityZone.Act1.state_1560994547_gen16.pkl
+-- genome with id 134 done, fitness: 867.2158424258232
+-- genome with id 142 done, fitness: 867.2158424258232
+-- genome with id 239 done, fitness: 867.2158415913582
+-- genome with id 240 done, fitness: 253.7031388282776
+-- genome with id 241 done, fitness: 867.2158424258232
+-- genome with id 242 done, fitness: 253.7031388282776
+-- genome with id 243 done, fitness: 253.7031388282776
+-- genome with id 244 done, fitness: 253.7031388282776
+-- genome with id 245 done, fitness: 867.2158424258232
+-- genome with id 246 done, fitness: 867.2158424258232
+-- genome with id 247 done, fitness: 867.2158417105675
+-- genome with id 248 done, fitness: 867.2158424258232
+-- genome with id 249 done, fitness: 867.2158424258232
+-- genome with id 250 done, fitness: 253.7031388282776
+-- genome with id 251 done, fitness: 10.202509641647339
+-- genome with id 252 done, fitness: 867.2158424258232
+-- genome with id 253 done, fitness: 253.7031388282776
+-- genome with id 254 done, fitness: 867.2158424258232
+-- genome with id 255 done, fitness: 867.2158424258232
+Total timesteps at end of gen: 428442
+Population's average fitness: 640.31136 stdev: 313.30066
+Best fitness: 867.21584 - size: (17, 18) - species 1 - id 84
+Average adjusted fitness: 0.735
+Population of 20 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   15    20    867.2    0.735    10
+Total extinctions: 0
+Generation time: 40.998 sec (63.729 average)
+
+ ****** Running generation 16 ****** 
+
+Gen timestep at time: 2019-11-08 08:12:11.219014
+-- genome with id 84 done, fitness: 867.2158424258232
+achieved fitness: 867.2158424258232 at timestep 429360 time: 2019-11-08 08:12:12.804291
+Saving genome to file ./best_genomes/HydrocityZone.Act1.state_1560994547_gen17.pkl
+-- genome with id 134 done, fitness: 867.2158424258232
+-- genome with id 142 done, fitness: 867.2158424258232
+-- genome with id 256 done, fitness: 253.7031388282776
+-- genome with id 257 done, fitness: 253.7031388282776
+-- genome with id 258 done, fitness: 253.70314079523087
+-- genome with id 259 done, fitness: 253.7031388282776
+-- genome with id 260 done, fitness: 867.2158424258232
+-- genome with id 261 done, fitness: 253.7031388282776
+-- genome with id 262 done, fitness: 253.7031388282776
+-- genome with id 263 done, fitness: 867.2158424258232
+-- genome with id 264 done, fitness: 867.2158421278
+-- genome with id 265 done, fitness: 253.7031408548355
+-- genome with id 266 done, fitness: 867.2158424258232
+-- genome with id 267 done, fitness: 867.2158424258232
+-- genome with id 268 done, fitness: 867.2158424258232
+-- genome with id 269 done, fitness: -2.9981136322021484e-05
+-- genome with id 270 done, fitness: 867.2158424258232
+-- genome with id 271 done, fitness: 253.7031388282776
+-- genome with id 272 done, fitness: 867.215841948986
+Total timesteps at end of gen: 454917
+Population's average fitness: 578.44997 stdev: 323.69210
+Best fitness: 867.21584 - size: (17, 18) - species 1 - id 84
+Average adjusted fitness: 0.667
+Population of 20 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   16    20    867.2    0.667    11
+Total extinctions: 0
+Generation time: 46.179 sec (62.430 average)
+
+ ****** Running generation 17 ****** 
+
+Gen timestep at time: 2019-11-08 08:12:57.397669
+-- genome with id 84 done, fitness: 867.2158424258232
+achieved fitness: 867.2158424258232 at timestep 455835 time: 2019-11-08 08:12:58.987854
+Saving genome to file ./best_genomes/HydrocityZone.Act1.state_1560994547_gen18.pkl
+-- genome with id 260 done, fitness: 867.2158424258232
+-- genome with id 134 done, fitness: 867.2158424258232
+-- genome with id 273 done, fitness: 867.2158424258232
+-- genome with id 274 done, fitness: 867.2158415913582
+-- genome with id 275 done, fitness: 867.2158424258232
+-- genome with id 276 done, fitness: 253.7031388282776
+-- genome with id 277 done, fitness: 867.2158424258232
+-- genome with id 278 done, fitness: 867.2158424258232
+-- genome with id 279 done, fitness: 867.2158424258232
+-- genome with id 280 done, fitness: 867.2158421278
+-- genome with id 281 done, fitness: 867.2158424258232
+-- genome with id 282 done, fitness: 253.7031415104866
+-- genome with id 283 done, fitness: 867.2158421278
+-- genome with id 284 done, fitness: 867.2158424258232
+-- genome with id 285 done, fitness: 253.70314174890518
+-- genome with id 286 done, fitness: 867.2158421278
+-- genome with id 287 done, fitness: 867.2158424258232
+-- genome with id 288 done, fitness: 867.215841948986
+-- genome with id 289 done, fitness: 867.2158424258232
+Total timesteps at end of gen: 474510
+Population's average fitness: 775.18894 stdev: 219.06785
+Best fitness: 867.21584 - size: (17, 18) - species 1 - id 84
+Average adjusted fitness: 0.850
+Population of 20 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   17    20    867.2    0.850    12
+Total extinctions: 0
+Generation time: 34.583 sec (58.974 average)
+
+ ****** Running generation 18 ****** 
+
+Gen timestep at time: 2019-11-08 08:13:31.980347
+-- genome with id 84 done, fitness: 867.2158424258232
+achieved fitness: 867.2158424258232 at timestep 475428 time: 2019-11-08 08:13:33.561603
+Saving genome to file ./best_genomes/HydrocityZone.Act1.state_1560994547_gen19.pkl
+-- genome with id 260 done, fitness: 867.2158424258232
+-- genome with id 134 done, fitness: 867.2158424258232
+-- genome with id 290 done, fitness: 253.7031388282776
+-- genome with id 291 done, fitness: 867.2158424258232
+-- genome with id 292 done, fitness: 253.7031415104866
+-- genome with id 293 done, fitness: 867.2158415913582
+-- genome with id 294 done, fitness: 253.7031415104866
+-- genome with id 295 done, fitness: 8.940696716308594e-07
+-- genome with id 296 done, fitness: 867.2158424258232
+-- genome with id 297 done, fitness: 253.7031415104866
+-- genome with id 298 done, fitness: 253.7031388282776
+-- genome with id 299 done, fitness: 253.7031415104866
+-- genome with id 300 done, fitness: 867.2158424258232
+-- genome with id 301 done, fitness: 867.2158424258232
+-- genome with id 302 done, fitness: 867.2158424258232
+-- genome with id 303 done, fitness: 867.2158415913582
+-- genome with id 304 done, fitness: 253.7031388282776
+-- genome with id 305 done, fitness: 867.2158424258232
+-- genome with id 306 done, fitness: 867.2158424258232
+Total timesteps at end of gen: 499581
+Population's average fitness: 609.12560 stdev: 320.51808
+Best fitness: 867.21584 - size: (17, 18) - species 1 - id 84
+Average adjusted fitness: 0.702
+Population of 20 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   18    20    867.2    0.702    13
+Total extinctions: 0
+Generation time: 43.704 sec (56.556 average)
+
+ ****** Running generation 19 ****** 
+
+Gen timestep at time: 2019-11-08 08:14:15.684272
+-- genome with id 84 done, fitness: 867.2158424258232
+achieved fitness: 867.2158424258232 at timestep 500499 time: 2019-11-08 08:14:17.259441
+Saving genome to file ./best_genomes/HydrocityZone.Act1.state_1560994547_gen20.pkl
+-- genome with id 260 done, fitness: 867.2158424258232
+-- genome with id 134 done, fitness: 867.2158424258232
+-- genome with id 307 done, fitness: 867.2158424258232
+-- genome with id 308 done, fitness: 253.7031388282776
+-- genome with id 309 done, fitness: 867.2158421278
+-- genome with id 310 done, fitness: 867.2158421278
+-- genome with id 311 done, fitness: 867.2158424258232
+-- genome with id 312 done, fitness: 867.2158421278
+-- genome with id 313 done, fitness: 867.2158424258232
+-- genome with id 314 done, fitness: 867.2158415913582
+-- genome with id 315 done, fitness: 867.2158424258232
+-- genome with id 316 done, fitness: 867.2158424258232
+-- genome with id 317 done, fitness: 253.7031388282776
+-- genome with id 318 done, fitness: 867.2158424258232
+-- genome with id 319 done, fitness: 253.7031388282776
+-- genome with id 320 done, fitness: 867.2158424258232
+-- genome with id 321 done, fitness: 867.2158424258232
+-- genome with id 322 done, fitness: 867.2158424258232
+-- genome with id 323 done, fitness: 867.2158424258232
+Total timesteps at end of gen: 520347
+Population's average fitness: 775.18894 stdev: 219.06785
+Best fitness: 867.21584 - size: (17, 18) - species 1 - id 84
+Average adjusted fitness: 0.850
+Population of 20 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   19    20    867.2    0.850    14
+Total extinctions: 0
+Generation time: 52.721 sec (55.116 average)
+
+ ****** Running generation 20 ****** 
+
+Gen timestep at time: 2019-11-08 08:15:08.405323
+-- genome with id 84 done, fitness: 867.2158424258232
+achieved fitness: 867.2158424258232 at timestep 521265 time: 2019-11-08 08:15:11.277411
+Saving genome to file ./best_genomes/HydrocityZone.Act1.state_1560994547_gen21.pkl
+-- genome with id 260 done, fitness: 867.2158424258232
+-- genome with id 134 done, fitness: 867.2158424258232
+-- genome with id 324 done, fitness: 867.2158421278
+-- genome with id 325 done, fitness: 253.7031388282776
+-- genome with id 326 done, fitness: 253.70314079523087
+-- genome with id 327 done, fitness: 867.2158421278
+-- genome with id 328 done, fitness: 867.2158424258232
+-- genome with id 329 done, fitness: 867.2158421278
+-- genome with id 330 done, fitness: 146.23639452457428
+-- genome with id 331 done, fitness: 867.2158424258232
+-- genome with id 332 done, fitness: 253.7031408548355
+-- genome with id 333 done, fitness: 867.2158418297768
+-- genome with id 334 done, fitness: 867.2158415913582
+-- genome with id 335 done, fitness: 253.7031388282776
+-- genome with id 336 done, fitness: 7.152557373046875e-07
+-- genome with id 337 done, fitness: 867.2158421278
+-- genome with id 338 done, fitness: 253.7031388282776
+-- genome with id 339 done, fitness: 867.2158424258232
+-- genome with id 340 done, fitness: 253.7031415104866
+Total timesteps at end of gen: 546870
+Population's average fitness: 603.75227 stdev: 327.26141
+Best fitness: 867.21584 - size: (17, 18) - species 1 - id 84
+Average adjusted fitness: 0.696
+Population of 20 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   20    20    867.2    0.696    15
+Total extinctions: 0
+Generation time: 83.172 sec (55.715 average)
+
+ ****** Running generation 21 ****** 
+
+Gen timestep at time: 2019-11-08 08:16:31.577787
+-- genome with id 84 done, fitness: 867.2158424258232
+achieved fitness: 867.2158424258232 at timestep 547788 time: 2019-11-08 08:16:34.458548
+Saving genome to file ./best_genomes/HydrocityZone.Act1.state_1560994547_gen22.pkl
+-- genome with id 260 done, fitness: 867.2158424258232
+-- genome with id 134 done, fitness: 867.2158424258232
+-- genome with id 341 done, fitness: 867.2158424258232
+-- genome with id 342 done, fitness: 867.2158424258232
+-- genome with id 343 done, fitness: 867.2158424258232
+-- genome with id 344 done, fitness: 867.2158424258232
+-- genome with id 345 done, fitness: 86.38146889209747
+-- genome with id 346 done, fitness: 867.2158421278
+-- genome with id 347 done, fitness: 867.2158424258232
+-- genome with id 348 done, fitness: 867.2158424258232
+-- genome with id 349 done, fitness: 867.2158424258232
+-- genome with id 350 done, fitness: 867.2158424258232
+-- genome with id 351 done, fitness: 867.2158421278
+-- genome with id 352 done, fitness: 253.7031388282776
+-- genome with id 353 done, fitness: 867.2158421278
+-- genome with id 354 done, fitness: 253.7031415104866
+-- genome with id 355 done, fitness: 867.2158418297768
+-- genome with id 356 done, fitness: 2209.869998574257
+achieved fitness: 2209.869998574257 at timestep 568461 time: 2019-11-08 08:17:39.261410
+Saving genome to file ./best_genomes/HydrocityZone.Act1.state_1560994547_gen22.pkl
+-- genome with id 357 done, fitness: 867.2158424258232
+Total timesteps at end of gen: 569379
+Population's average fitness: 833.95556 stdev: 396.42737
+Best fitness: 2209.87000 - size: (18, 25) - species 1 - id 356
+Average adjusted fitness: 0.352
+Population of 20 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   21    20   2209.9    0.352     0
+Total extinctions: 0
+Generation time: 70.539 sec (54.698 average)
+
+ ****** Running generation 22 ****** 
+
+Gen timestep at time: 2019-11-08 08:17:42.116696
+-- genome with id 356 done, fitness: 2209.869998574257
+achieved fitness: 2209.869998574257 at timestep 572334 time: 2019-11-08 08:17:51.421730
+Saving genome to file ./best_genomes/HydrocityZone.Act1.state_1560994547_gen23.pkl
+-- genome with id 84 done, fitness: 867.2158424258232
+-- genome with id 260 done, fitness: 867.2158424258232
+-- genome with id 358 done, fitness: 867.2158415913582
+-- genome with id 359 done, fitness: 2209.8699974417686
+-- genome with id 360 done, fitness: 253.7031415104866
+-- genome with id 361 done, fitness: 867.2158424258232
+-- genome with id 362 done, fitness: 253.7031388282776
+-- genome with id 363 done, fitness: 253.7031388282776
+-- genome with id 364 done, fitness: 867.2158424258232
+-- genome with id 365 done, fitness: 867.2158424258232
+-- genome with id 366 done, fitness: 253.7031388282776
+-- genome with id 367 done, fitness: 166.64147371053696
+-- genome with id 368 done, fitness: 253.70314174890518
+-- genome with id 369 done, fitness: 867.2158421278
+-- genome with id 370 done, fitness: 867.2158424258232
+-- genome with id 371 done, fitness: 253.7031388282776
+-- genome with id 372 done, fitness: 253.7031388282776
+-- genome with id 373 done, fitness: 253.7031415104866
+-- genome with id 374 done, fitness: 867.2158424258232
+Total timesteps at end of gen: 599868
+Population's average fitness: 721.04746 stdev: 577.93268
+Best fitness: 2209.87000 - size: (18, 25) - species 1 - id 356
+Average adjusted fitness: 0.271
+Population of 20 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   22    20   2209.9    0.271     1
+Total extinctions: 0
+Generation time: 96.170 sec (58.390 average)
+
+ ****** Running generation 23 ****** 
+
+Gen timestep at time: 2019-11-08 08:19:18.286639
+-- genome with id 356 done, fitness: 2209.869998574257
+achieved fitness: 2209.869998574257 at timestep 602823 time: 2019-11-08 08:19:27.601224
+Saving genome to file ./best_genomes/HydrocityZone.Act1.state_1560994547_gen24.pkl
+-- genome with id 359 done, fitness: 2209.8699974417686
+-- genome with id 84 done, fitness: 867.2158424258232
+-- genome with id 375 done, fitness: 867.2158424258232
+-- genome with id 376 done, fitness: 867.2158424258232
+-- genome with id 377 done, fitness: 2234.356091439724
+achieved fitness: 2234.356091439724 at timestep 609087 time: 2019-11-08 08:19:47.419674
+Saving genome to file ./best_genomes/HydrocityZone.Act1.state_1560994547_gen24.pkl
+-- genome with id 378 done, fitness: 867.2158418297768
+-- genome with id 379 done, fitness: 253.7031388282776
+-- genome with id 380 done, fitness: 867.2158418297768
+-- genome with id 381 done, fitness: 867.2158421278
+-- genome with id 382 done, fitness: 253.7031388282776
+-- genome with id 383 done, fitness: 253.7031388282776
+-- genome with id 384 done, fitness: 2653.340367913246
+achieved fitness: 2653.340367913246 at timestep 620841 time: 2019-11-08 08:20:24.713356
+Saving genome to file ./best_genomes/HydrocityZone.Act1.state_1560994547_gen24.pkl
+-- genome with id 385 done, fitness: 253.7031388282776
+-- genome with id 386 done, fitness: 253.7031388282776
+-- genome with id 387 done, fitness: 867.2158424258232
+-- genome with id 388 done, fitness: 867.2158418297768
+-- genome with id 389 done, fitness: 166.64147371053696
+-- genome with id 390 done, fitness: 2209.869998574257
+-- genome with id 391 done, fitness: 867.2158418297768
+Total timesteps at end of gen: 632583
+Population's average fitness: 1037.87031 stdev: 782.87319
+Best fitness: 2653.34037 - size: (19, 26) - species 1 - id 384
+Average adjusted fitness: 0.350
+Population of 20 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   23    20   2653.3    0.350     0
+Total extinctions: 0
+Generation time: 103.465 sec (62.581 average)
+
+ ****** Running generation 24 ****** 
+
+Gen timestep at time: 2019-11-08 08:21:01.751343
+-- genome with id 384 done, fitness: 2653.340367913246
+achieved fitness: 2653.340367913246 at timestep 635550 time: 2019-11-08 08:21:11.089203
+Saving genome to file ./best_genomes/HydrocityZone.Act1.state_1560994547_gen25.pkl
+-- genome with id 377 done, fitness: 2234.356091439724
+-- genome with id 390 done, fitness: 2209.869998574257
+-- genome with id 392 done, fitness: 867.2158424258232
+-- genome with id 393 done, fitness: 867.2158424258232
+-- genome with id 394 done, fitness: 1907.8748406171799
+-- genome with id 395 done, fitness: 1907.874840438366
+-- genome with id 396 done, fitness: 867.2158417105675
+-- genome with id 397 done, fitness: 253.70314174890518
+-- genome with id 398 done, fitness: 2919.9667202830315
+achieved fitness: 2919.9667202830315 at timestep 720180 time: 2019-11-08 08:25:39.104124
+Saving genome to file ./best_genomes/HydrocityZone.Act1.state_1560994547_gen25.pkl
+-- genome with id 399 done, fitness: 253.7031415104866
+-- genome with id 400 done, fitness: 2209.869998574257
+-- genome with id 401 done, fitness: 253.7031388282776
+-- genome with id 402 done, fitness: 253.70314174890518
+-- genome with id 403 done, fitness: 253.7031388282776
+-- genome with id 404 done, fitness: 2234.356091439724
+-- genome with id 405 done, fitness: 166.64147126674652
+-- genome with id 406 done, fitness: 2209.869998574257
+-- genome with id 407 done, fitness: 2234.356091439724
+-- genome with id 408 done, fitness: 253.7031388282776
+Total timesteps at end of gen: 741696
+Population's average fitness: 1350.61214 stdev: 965.94770
+Best fitness: 2919.96672 - size: (19, 27) - species 1 - id 398
+Average adjusted fitness: 0.430
+Population of 20 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   24    20   2920.0    0.430     0
+Total extinctions: 0
+Generation time: 345.233 sec (91.676 average)
+
+ ****** Running generation 25 ****** 
+
+Gen timestep at time: 2019-11-08 08:26:46.984044
+-- genome with id 398 done, fitness: 2919.9667202830315
+achieved fitness: 2919.9667202830315 at timestep 744651 time: 2019-11-08 08:26:56.312064
+Saving genome to file ./best_genomes/HydrocityZone.Act1.state_1560994547_gen26.pkl
+-- genome with id 384 done, fitness: 2653.340367913246
+-- genome with id 404 done, fitness: 2234.356091439724
+-- genome with id 409 done, fitness: 253.70314121246338
+-- genome with id 410 done, fitness: 2223.4733870625496
+-- genome with id 411 done, fitness: 1907.8748358488083
+-- genome with id 412 done, fitness: 253.7031415104866
+-- genome with id 413 done, fitness: 2653.340363562107
+-- genome with id 414 done, fitness: 146.23639452457428
+-- genome with id 415 done, fitness: 1907.8748444318771
+-- genome with id 416 done, fitness: 146.23639452457428
+-- genome with id 417 done, fitness: 253.7031388282776
+-- genome with id 418 done, fitness: 253.7031415104866
+-- genome with id 419 done, fitness: 867.2158421278
+-- genome with id 420 done, fitness: 1907.8748405575752
+-- genome with id 421 done, fitness: 147.5967337489128
+-- genome with id 422 done, fitness: 253.7031388282776
+-- genome with id 423 done, fitness: 1907.8748397827148
+-- genome with id 424 done, fitness: 253.7031388282776
+-- genome with id 425 done, fitness: 253.7031388282776
+Total timesteps at end of gen: 919587
+Population's average fitness: 1169.95918 stdev: 1024.54497
+Best fitness: 2919.96672 - size: (19, 27) - species 1 - id 398
+Average adjusted fitness: 0.369
+Population of 20 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1   25    20   2920.0    0.369     1
+Total extinctions: 0
+Generation time: 467.212 sec (134.298 average)
+
+ ****** Running generation 26 ****** 
+
+Gen timestep at time: 2019-11-08 08:34:34.196252
+-- genome with id 398 done, fitness: 2919.9667202830315
+achieved fitness: 2919.9667202830315 at timestep 922542 time: 2019-11-08 08:34:39.483166
+Saving genome to file ./best_genomes/HydrocityZone.Act1.state_1560994547_gen27.pkl
+-- genome with id 384 done, fitness: 2653.340367913246
+-- genome with id 413 done, fitness: 2653.340363562107
+-- genome with id 426 done, fitness: 867.2158424258232
+-- genome with id 427 done, fitness: 2653.3403629660606
+-- genome with id 428 done, fitness: 2653.340363562107
+-- genome with id 429 done, fitness: 253.7031388282776
+-- genome with id 430 done, fitness: 2209.869998574257
+-- genome with id 431 done, fitness: 2223.4733870625496
+-- genome with id 432 done, fitness: 867.2158424258232
+-- genome with id 433 done, fitness: 253.7031388282776
+-- genome with id 434 done, fitness: 867.2158421278
+-- genome with id 435 done, fitness: 1907.8748397827148
+Finished timestepMax at time: 2019-11-08 08:36:57.475712

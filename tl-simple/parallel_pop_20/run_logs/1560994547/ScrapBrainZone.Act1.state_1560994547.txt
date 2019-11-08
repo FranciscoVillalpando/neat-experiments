@@ -1,0 +1,372 @@
+Starting python script!
+Using env(SonicTheHedgehog-Genesis,ScrapBrainZone.Act1.state)
+Observation space shape:(224, 320, 3)
+Start: 2019-11-08 07:01:21.826581
+Using the following config file: config_test.txt
+[NEAT]
+fitness_criterion     = max
+fitness_threshold     = 9000
+pop_size              = 20
+reset_on_extinction   = False
+
+[DefaultGenome]
+# node activation options
+activation_default      = sigmoid
+activation_mutate_rate  = 0.00
+activation_options      = sigmoid 
+#abs clamped cube exp gauss hat identity inv log relu sigmoid sin softplus square tanh
+
+# node aggregation options
+aggregation_default     = sum
+aggregation_mutate_rate = 0.00
+aggregation_options     = sum product min max mean median maxabs
+
+# node bias options
+bias_init_mean          = 0.05
+bias_init_stdev         = 1.0
+bias_max_value          = 50.0
+bias_min_value          = -50.0
+bias_mutate_power       = 0.2
+bias_mutate_rate        = 0.1
+bias_replace_rate       = 0.1
+
+# genome compatibility options
+compatibility_disjoint_coefficient = 1.0
+compatibility_weight_coefficient   = 0.5
+
+# connection add/remove rates
+conn_add_prob           = 0.1
+conn_delete_prob        = 0.1
+
+# connection enable options
+enabled_default         = True
+enabled_mutate_rate     = 0.05
+
+feed_forward            = False
+initial_connection      = fs_neat_nohidden
+#initial_connection      = unconnected
+#initial_connection     = partial_nodirect 0.4
+
+# node add/remove rates
+node_add_prob           = 0.6
+node_delete_prob        = 0.05
+
+# network parameters
+num_hidden              = 0
+num_inputs              = 17920
+num_outputs             = 7
+
+# node response options
+response_init_mean      = 1.0
+response_init_stdev     = 0.05
+response_max_value      = 30.0
+response_min_value      = -30.0
+response_mutate_power   = 0.1
+response_mutate_rate    = 0.1
+response_replace_rate   = 0.1
+
+# connection weight options
+weight_init_mean        = 0.1
+weight_init_stdev       = 1.0
+weight_max_value        = 30
+weight_min_value        = -30
+weight_mutate_power     = 0.5
+weight_mutate_rate      = 0.1
+weight_replace_rate     = 0.1
+
+[DefaultSpeciesSet]
+compatibility_threshold = 10
+
+[DefaultStagnation]
+species_fitness_func = max
+max_stagnation       = 200
+species_elitism      = 0
+
+[DefaultReproduction]
+elitism            = 3
+survival_threshold = 0.3
+
+
+
+End of config file
+['./../../train-levels/experiment1/last_gen_genomes/1560994547/MysticCaveZone.Act2.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/CasinoNightZone.Act1.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/OilOceanZone.Act1.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/SandopolisZone.Act2.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/OilOceanZone.Act2.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/GreenHillZone.Act3.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/MushroomHillZone.Act2.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/CarnivalNightZone.Act2.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/EmeraldHillZone.Act1.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/GreenHillZone.Act1.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/LaunchBaseZone.Act2.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/CarnivalNightZone.Act1.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/AngelIslandZone.Act1.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/AquaticRuinZone.Act1.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/MarbleGardenZone.Act2.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/WingFortressZone.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/LabyrinthZone.Act2.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/MarbleZone.Act2.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/IcecapZone.Act1.state_1.pkl', './../../train-levels/experiment1/last_gen_genomes/1560994547/FlyingBatteryZone.Act1.state_1.pkl']
+
+ ****** Running generation 0 ****** 
+
+Gen timestep at time: 2019-11-08 07:01:21.973038
+-- genome with id 1 done, fitness: 608.7751395702362
+achieved fitness: 608.7751395702362 at timestep 387 time: 2019-11-08 07:01:23.137550
+Saving genome to file ./best_genomes/ScrapBrainZone.Act1.state_1560994547_gen1.pkl
+-- genome with id 2 done, fitness: 589.2367377281189
+-- genome with id 3 done, fitness: 600.5484409332275
+-- genome with id 4 done, fitness: 604.6617838144302
+-- genome with id 5 done, fitness: 309.5292533636093
+-- genome with id 6 done, fitness: 598.4917820692062
+-- genome with id 7 done, fitness: 0.0
+-- genome with id 8 done, fitness: 609.8034658432007
+achieved fitness: 609.8034658432007 at timestep 74424 time: 2019-11-08 07:05:05.085984
+Saving genome to file ./best_genomes/ScrapBrainZone.Act1.state_1560994547_gen1.pkl
+-- genome with id 9 done, fitness: 600.548440694809
+-- genome with id 10 done, fitness: 865.859223484993
+achieved fitness: 865.859223484993 at timestep 75117 time: 2019-11-08 07:05:07.222210
+Saving genome to file ./best_genomes/ScrapBrainZone.Act1.state_1560994547_gen1.pkl
+-- genome with id 11 done, fitness: 0.0
+-- genome with id 12 done, fitness: 597.4634289741516
+-- genome with id 13 done, fitness: 0.0
+-- genome with id 14 done, fitness: 347.57770323753357
+-- genome with id 15 done, fitness: 1259.712054491043
+achieved fitness: 1259.712054491043 at timestep 184290 time: 2019-11-08 07:10:33.972958
+Saving genome to file ./best_genomes/ScrapBrainZone.Act1.state_1560994547_gen1.pkl
+-- genome with id 16 done, fitness: 605.6901339292526
+-- genome with id 17 done, fitness: 610.8318005800247
+-- genome with id 18 done, fitness: 33.93510138988495
+-- genome with id 19 done, fitness: 599.5201046466827
+-- genome with id 20 done, fitness: 591.2934155464172
+Total timesteps at end of gen: 221946
+Population's average fitness: 501.67390 stdev: 305.09066
+Best fitness: 1259.71205 - size: (28, 41) - species 1 - id 15
+Average adjusted fitness: 0.398
+Population of 17 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    0    17   1259.7    0.398     0
+Total extinctions: 0
+Generation time: 664.470 sec
+
+ ****** Running generation 1 ****** 
+
+Gen timestep at time: 2019-11-08 07:12:26.442706
+-- genome with id 15 done, fitness: 0.0
+-- genome with id 10 done, fitness: 865.859223484993
+achieved fitness: 865.859223484993 at timestep 258456 time: 2019-11-08 07:14:15.805787
+Saving genome to file ./best_genomes/ScrapBrainZone.Act1.state_1560994547_gen2.pkl
+-- genome with id 17 done, fitness: 605.6901185512543
+-- genome with id 1 done, fitness: 613.916811466217
+-- genome with id 2 done, fitness: 0.0
+-- genome with id 3 done, fitness: 603.6334474086761
+-- genome with id 4 done, fitness: 0.0
+-- genome with id 5 done, fitness: 1015.996330499649
+achieved fitness: 1015.996330499649 at timestep 332073 time: 2019-11-08 07:17:56.132072
+Saving genome to file ./best_genomes/ScrapBrainZone.Act1.state_1560994547_gen2.pkl
+-- genome with id 6 done, fitness: 865.859223484993
+-- genome with id 7 done, fitness: 608.7751370668411
+-- genome with id 8 done, fitness: 157.33546650409698
+-- genome with id 9 done, fitness: 598.49176633358
+-- genome with id 11 done, fitness: 1189.785191655159
+achieved fitness: 1189.785191655159 at timestep 405444 time: 2019-11-08 07:21:37.001787
+Saving genome to file ./best_genomes/ScrapBrainZone.Act1.state_1560994547_gen2.pkl
+-- genome with id 12 done, fitness: 865.859223484993
+-- genome with id 13 done, fitness: 605.6901185512543
+-- genome with id 14 done, fitness: 599.5201017856598
+-- genome with id 16 done, fitness: 862.7742302417755
+Total timesteps at end of gen: 407517
+Population's average fitness: 591.71685 stdev: 349.54844
+Best fitness: 1189.78519 - size: (21, 26) - species 1 - id 11
+Average adjusted fitness: 0.497
+Population of 20 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    1    20   1189.8    0.497     1
+Total extinctions: 0
+Generation time: 556.925 sec (610.697 average)
+
+ ****** Running generation 2 ****** 
+
+Gen timestep at time: 2019-11-08 07:21:43.367247
+-- genome with id 11 done, fitness: 1189.785191655159
+achieved fitness: 1189.785191655159 at timestep 443655 time: 2019-11-08 07:23:31.851869
+Saving genome to file ./best_genomes/ScrapBrainZone.Act1.state_1560994547_gen3.pkl
+-- genome with id 5 done, fitness: 1015.996330499649
+-- genome with id 6 done, fitness: 865.859223484993
+-- genome with id 18 done, fitness: 865.8592282533646
+-- genome with id 19 done, fitness: 861.7458842992783
+-- genome with id 20 done, fitness: 869.9725738763809
+-- genome with id 21 done, fitness: 865.859223484993
+-- genome with id 22 done, fitness: 869.972573518753
+-- genome with id 23 done, fitness: 1280.2787821292877
+achieved fitness: 1280.2787821292877 at timestep 447339 time: 2019-11-08 07:23:43.096612
+Saving genome to file ./best_genomes/ScrapBrainZone.Act1.state_1560994547_gen3.pkl
+-- genome with id 24 done, fitness: 1005.7129666805267
+-- genome with id 25 done, fitness: 603.6334505081177
+-- genome with id 26 done, fitness: 1189.785191655159
+-- genome with id 27 done, fitness: 866.8875638246536
+-- genome with id 28 done, fitness: 1259.712054491043
+-- genome with id 29 done, fitness: 865.859223484993
+-- genome with id 30 done, fitness: 865.859223484993
+-- genome with id 31 done, fitness: 1005.7129666805267
+-- genome with id 32 done, fitness: 865.859223484993
+-- genome with id 33 done, fitness: 591.2934234142303
+-- genome with id 34 done, fitness: 865.859223484993
+Total timesteps at end of gen: 487611
+Population's average fitness: 933.57518 stdev: 180.39824
+Best fitness: 1280.27878 - size: (29, 39) - species 1 - id 23
+Average adjusted fitness: 0.497
+Population of 20 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    2    20   1280.3    0.497     0
+Total extinctions: 0
+Generation time: 240.860 sec (487.418 average)
+
+ ****** Running generation 3 ****** 
+
+Gen timestep at time: 2019-11-08 07:25:44.227193
+-- genome with id 23 done, fitness: 1280.2787821292877
+achieved fitness: 1280.2787821292877 at timestep 488082 time: 2019-11-08 07:25:45.684561
+Saving genome to file ./best_genomes/ScrapBrainZone.Act1.state_1560994547_gen4.pkl
+-- genome with id 28 done, fitness: 1259.712054491043
+-- genome with id 11 done, fitness: 1189.785191655159
+-- genome with id 35 done, fitness: 156.30713021755219
+-- genome with id 36 done, fitness: 1189.7851893901825
+-- genome with id 37 done, fitness: 600.548438668251
+-- genome with id 38 done, fitness: 867.9159065485001
+-- genome with id 39 done, fitness: 1005.7129666805267
+-- genome with id 40 done, fitness: 611.8601386547089
+-- genome with id 41 done, fitness: 861.7458778619766
+-- genome with id 42 done, fitness: 1015.996330499649
+-- genome with id 43 done, fitness: 1014.9679939746857
+-- genome with id 44 done, fitness: 863.8025579452515
+-- genome with id 45 done, fitness: 865.8592215776443
+-- genome with id 46 done, fitness: 50.38848280906677
+-- genome with id 47 done, fitness: 1189.7851989269257
+-- genome with id 48 done, fitness: 869.9725695848465
+-- genome with id 49 done, fitness: 852.4908709526062
+-- genome with id 50 done, fitness: 1259.712054491043
+-- genome with id 51 done, fitness: 1280.2787821292877
+Total timesteps at end of gen: 674697
+Population's average fitness: 914.34529 stdev: 338.33490
+Best fitness: 1280.27878 - size: (29, 39) - species 1 - id 23
+Average adjusted fitness: 0.702
+Population of 20 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    3    20   1280.3    0.702     1
+Total extinctions: 0
+Generation time: 561.324 sec (505.895 average)
+
+ ****** Running generation 4 ****** 
+
+Gen timestep at time: 2019-11-08 07:35:05.551184
+-- genome with id 23 done, fitness: 1280.2787821292877
+achieved fitness: 1280.2787821292877 at timestep 675168 time: 2019-11-08 07:35:07.028993
+Saving genome to file ./best_genomes/ScrapBrainZone.Act1.state_1560994547_gen5.pkl
+-- genome with id 51 done, fitness: 1280.2787821292877
+-- genome with id 28 done, fitness: 1259.712054491043
+-- genome with id 52 done, fitness: 1256.6270549297333
+-- genome with id 53 done, fitness: 1013.9396574497223
+-- genome with id 54 done, fitness: 865.859223484993
+-- genome with id 55 done, fitness: 873.0575968027115
+-- genome with id 56 done, fitness: 1259.712054491043
+-- genome with id 57 done, fitness: 606.7184582948685
+-- genome with id 58 done, fitness: 600.5484410524368
+-- genome with id 59 done, fitness: 1651.5082063674927
+achieved fitness: 1651.5082063674927 at timestep 680028 time: 2019-11-08 07:35:22.083193
+Saving genome to file ./best_genomes/ScrapBrainZone.Act1.state_1560994547_gen5.pkl
+-- genome with id 60 done, fitness: 1276.1654379367828
+-- genome with id 61 done, fitness: 1261.7687250375748
+-- genome with id 62 done, fitness: 1015.996330499649
+-- genome with id 63 done, fitness: 860.7175487279892
+-- genome with id 64 done, fitness: 605.6901282072067
+-- genome with id 65 done, fitness: 1280.2787821292877
+-- genome with id 66 done, fitness: 1026.2796947956085
+-- genome with id 67 done, fitness: 1009.8263127803802
+-- genome with id 68 done, fitness: 864.8308860063553
+Total timesteps at end of gen: 683925
+Population's average fitness: 1057.48971 stdev: 272.24130
+Best fitness: 1651.50821 - size: (30, 42) - species 1 - id 59
+Average adjusted fitness: 0.435
+Population of 20 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    4    20   1651.5    0.435     0
+Total extinctions: 0
+Generation time: 28.594 sec (410.434 average)
+
+ ****** Running generation 5 ****** 
+
+Gen timestep at time: 2019-11-08 07:35:34.145241
+-- genome with id 59 done, fitness: 1651.5082063674927
+achieved fitness: 1651.5082063674927 at timestep 684663 time: 2019-11-08 07:35:36.423391
+Saving genome to file ./best_genomes/ScrapBrainZone.Act1.state_1560994547_gen6.pkl
+-- genome with id 23 done, fitness: 1280.2787821292877
+-- genome with id 51 done, fitness: 1280.2787821292877
+-- genome with id 69 done, fitness: 1009.8263127803802
+-- genome with id 70 done, fitness: 1280.2787821292877
+-- genome with id 71 done, fitness: 604.6617864370346
+-- genome with id 72 done, fitness: 860.7175587415695
+-- genome with id 73 done, fitness: 871.0009047985077
+-- genome with id 74 done, fitness: 607.7467930316925
+-- genome with id 75 done, fitness: 1011.8829848766327
+-- genome with id 76 done, fitness: 1008.7979753017426
+-- genome with id 77 done, fitness: 1259.712054491043
+-- genome with id 78 done, fitness: 1259.712054491043
+-- genome with id 79 done, fitness: 869.9725686311722
+-- genome with id 80 done, fitness: 601.5767906904221
+-- genome with id 81 done, fitness: 859.6892045736313
+-- genome with id 82 done, fitness: 1280.2787821292877
+-- genome with id 83 done, fitness: 1280.2787821292877
+-- genome with id 84 done, fitness: 1091.0648839473724
+-- genome with id 85 done, fitness: 8.226691246032715
+Total timesteps at end of gen: 765276
+Population's average fitness: 998.87453 stdev: 352.55298
+Best fitness: 1651.50821 - size: (30, 42) - species 1 - id 59
+Average adjusted fitness: 0.603
+Population of 20 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    5    20   1651.5    0.603     1
+Total extinctions: 0
+Generation time: 245.900 sec (383.012 average)
+
+ ****** Running generation 6 ****** 
+
+Gen timestep at time: 2019-11-08 07:39:40.045182
+-- genome with id 59 done, fitness: 1651.5082063674927
+achieved fitness: 1651.5082063674927 at timestep 766014 time: 2019-11-08 07:39:42.323552
+Saving genome to file ./best_genomes/ScrapBrainZone.Act1.state_1560994547_gen7.pkl
+-- genome with id 82 done, fitness: 1280.2787821292877
+-- genome with id 23 done, fitness: 1280.2787821292877
+-- genome with id 86 done, fitness: 1009.8263127803802
+-- genome with id 87 done, fitness: 1280.2787821292877
+-- genome with id 88 done, fitness: 1008.7979753017426
+-- genome with id 89 done, fitness: 1091.064885377884
+-- genome with id 90 done, fitness: 1019.0813391208649
+-- genome with id 91 done, fitness: 1258.6837093830109
+-- genome with id 92 done, fitness: 1281.3071172237396
+-- genome with id 93 done, fitness: 601.5767750740051
+-- genome with id 94 done, fitness: 1091.064883351326
+-- genome with id 95 done, fitness: 1280.2787821292877
+-- genome with id 96 done, fitness: 1091.0648826360703
+-- genome with id 97 done, fitness: 1091.0648839473724
+-- genome with id 98 done, fitness: 1280.2787821292877
+-- genome with id 99 done, fitness: 1277.193773984909
+-- genome with id 100 done, fitness: 1280.2787821292877
+-- genome with id 101 done, fitness: 1276.1654379367828
+-- genome with id 102 done, fitness: 157.33546769618988
+Total timesteps at end of gen: 952815
+Population's average fitness: 1129.37042 stdev: 296.87999
+Best fitness: 1651.50821 - size: (30, 42) - species 1 - id 59
+Average adjusted fitness: 0.651
+Population of 20 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    6    20   1651.5    0.651     2
+Total extinctions: 0
+Generation time: 564.821 sec (408.985 average)
+
+ ****** Running generation 7 ****** 
+
+Gen timestep at time: 2019-11-08 07:49:04.866069
+-- genome with id 59 done, fitness: 1651.5082063674927
+achieved fitness: 1651.5082063674927 at timestep 953553 time: 2019-11-08 07:49:07.147097
+Saving genome to file ./best_genomes/ScrapBrainZone.Act1.state_1560994547_gen8.pkl
+-- genome with id 92 done, fitness: 1281.3071172237396
+-- genome with id 82 done, fitness: 1280.2787821292877
+-- genome with id 103 done, fitness: 1011.8829848766327
+-- genome with id 104 done, fitness: 1281.3071172237396
+-- genome with id 105 done, fitness: 1091.064887046814
+-- genome with id 106 done, fitness: 1009.8263113498688
+-- genome with id 107 done, fitness: 609.8034658432007
+-- genome with id 108 done, fitness: 1280.2787821292877
+-- genome with id 109 done, fitness: 603.6334505081177
+Finished timestepMax at time: 2019-11-08 07:51:27.630176
