@@ -1,0 +1,145 @@
+Starting python script!
+Using env(SonicAndKnuckles3-Genesis, FlyingBatteryZone.Act2.state)
+Observation space shape:(224, 320, 3)
+Start: 2019-12-08 10:02:26.320028
+Using the following config file: config.txt
+[NEAT]
+fitness_criterion     = max
+fitness_threshold     = 9000
+pop_size              = 20
+reset_on_extinction   = False
+
+[DefaultGenome]
+# node activation options
+activation_default      = sigmoid
+activation_mutate_rate  = 0.00
+activation_options      = sigmoid 
+#abs clamped cube exp gauss hat identity inv log relu sigmoid sin softplus square tanh
+
+# node aggregation options
+aggregation_default     = sum
+aggregation_mutate_rate = 0.00
+aggregation_options     = sum product min max mean median maxabs
+
+# node bias options
+bias_init_mean          = 0.05
+bias_init_stdev         = 1.0
+bias_max_value          = 50.0
+bias_min_value          = -50.0
+bias_mutate_power       = 0.5
+bias_mutate_rate        = 0.7
+bias_replace_rate       = 0.1
+
+# genome compatibility options
+compatibility_disjoint_coefficient = 1.0
+compatibility_weight_coefficient   = 0.5
+
+# connection add/remove rates
+conn_add_prob           = 0.6
+conn_delete_prob        = 0.1
+
+# connection enable options
+enabled_default         = True
+enabled_mutate_rate     = 0.05
+
+feed_forward            = False
+initial_connection      = fs_neat_nohidden
+#initial_connection      = unconnected
+#initial_connection     = partial_nodirect 0.4
+
+# node add/remove rates
+node_add_prob           = 0.7
+node_delete_prob        = 0.1
+
+# network parameters
+num_hidden              = 0
+num_inputs              = 4480
+num_outputs             = 12
+
+# node response options
+response_init_mean      = 1.0
+response_init_stdev     = 0.05
+response_max_value      = 30.0
+response_min_value      = -30.0
+response_mutate_power   = 0.1
+response_mutate_rate    = 0.75
+response_replace_rate   = 0.1
+
+# connection weight options
+weight_init_mean        = 0.1
+weight_init_stdev       = 1.0
+weight_max_value        = 30
+weight_min_value        = -30
+weight_mutate_power     = 0.5
+weight_mutate_rate      = 0.8
+weight_replace_rate     = 0.1
+
+[DefaultSpeciesSet]
+compatibility_threshold = 10
+
+[DefaultStagnation]
+species_fitness_func = max
+max_stagnation       = 200
+species_elitism      = 0
+
+[DefaultReproduction]
+elitism            = 3
+survival_threshold = 0.3
+
+
+
+End of config file
+
+ ****** Running generation 0 ****** 
+
+Gen timestep at time: 2019-12-08 10:02:26.327988
+1 869.6413838267326
+achieved fitness: 869.6413838267326 at timestep 36093 time: 2019-12-08 10:03:41.496023
+Saving genome to file ./genomes/best_genome_1575797422_FlyingBatteryZone.Act2.state_gen0.pkl
+2 0.0
+3 0.0
+4 0.0
+5 642.8081839680672
+6 869.6413859128952
+achieved fitness: 869.6413859128952 at timestep 216558 time: 2019-12-08 10:09:51.853158
+Saving genome to file ./genomes/best_genome_1575797422_FlyingBatteryZone.Act2.state_gen0.pkl
+7 0.0
+8 0.0
+9 869.6413850188255
+10 0.0
+11 869.6413848996162
+12 0.0
+13 80.8649982213974
+14 0.0
+15 693.5202448368073
+16 0.0
+17 0.0
+18 0.0
+19 0.0
+20 26.726567208766937
+Total timesteps at end of gen: 721857
+Population's average fitness: 246.12428 stdev: 368.44182
+Best fitness: 869.64139 - size: (12, 12) - species 1 - id 6
+Average adjusted fitness: 0.283
+Mean genetic distance 2.476, standard deviation 0.318
+Population of 20 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    0    20    869.6    0.283     0
+Total extinctions: 0
+Generation time: 1385.521 sec
+Saving checkpoint to neat-checkpoint-0
+
+ ****** Running generation 1 ****** 
+
+Gen timestep at time: 2019-12-08 10:25:31.852427
+6 869.6413859128952
+achieved fitness: 869.6413859128952 at timestep 757950 time: 2019-12-08 10:26:26.168305
+Saving genome to file ./genomes/best_genome_1575797422_FlyingBatteryZone.Act2.state_gen1.pkl
+9 869.6413850188255
+11 869.6413848996162
+21 869.6413859128952
+22 869.6413859128952
+23 0.0
+24 0.0
+Finished timestepMax at time: 2019-12-08 10:33:32.087481
