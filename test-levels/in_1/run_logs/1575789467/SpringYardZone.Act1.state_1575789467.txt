@@ -1,0 +1,268 @@
+Starting python script!
+Using env(SonicTheHedgehog-Genesis, SpringYardZone.Act1.state)
+Observation space shape:(224, 320, 3)
+Start: 2019-12-08 07:17:58.880636
+Using the following config file: config.txt
+[NEAT]
+fitness_criterion     = max
+fitness_threshold     = 9000
+pop_size              = 20
+reset_on_extinction   = False
+
+[DefaultGenome]
+# node activation options
+activation_default      = sigmoid
+activation_mutate_rate  = 0.00
+activation_options      = sigmoid 
+#abs clamped cube exp gauss hat identity inv log relu sigmoid sin softplus square tanh
+
+# node aggregation options
+aggregation_default     = sum
+aggregation_mutate_rate = 0.00
+aggregation_options     = sum product min max mean median maxabs
+
+# node bias options
+bias_init_mean          = 0.05
+bias_init_stdev         = 1.0
+bias_max_value          = 50.0
+bias_min_value          = -50.0
+bias_mutate_power       = 0.5
+bias_mutate_rate        = 0.7
+bias_replace_rate       = 0.1
+
+# genome compatibility options
+compatibility_disjoint_coefficient = 1.0
+compatibility_weight_coefficient   = 0.5
+
+# connection add/remove rates
+conn_add_prob           = 0.6
+conn_delete_prob        = 0.1
+
+# connection enable options
+enabled_default         = True
+enabled_mutate_rate     = 0.05
+
+feed_forward            = False
+initial_connection      = fs_neat_nohidden
+#initial_connection      = unconnected
+#initial_connection     = partial_nodirect 0.4
+
+# node add/remove rates
+node_add_prob           = 0.7
+node_delete_prob        = 0.1
+
+# network parameters
+num_hidden              = 0
+num_inputs              = 71680
+num_outputs             = 12
+
+# node response options
+response_init_mean      = 1.0
+response_init_stdev     = 0.05
+response_max_value      = 30.0
+response_min_value      = -30.0
+response_mutate_power   = 0.1
+response_mutate_rate    = 0.75
+response_replace_rate   = 0.1
+
+# connection weight options
+weight_init_mean        = 0.1
+weight_init_stdev       = 1.0
+weight_max_value        = 30
+weight_min_value        = -30
+weight_mutate_power     = 0.5
+weight_mutate_rate      = 0.8
+weight_replace_rate     = 0.1
+
+[DefaultSpeciesSet]
+compatibility_threshold = 10
+
+[DefaultStagnation]
+species_fitness_func = max
+max_stagnation       = 200
+species_elitism      = 0
+
+[DefaultReproduction]
+elitism            = 3
+survival_threshold = 0.3
+
+
+
+End of config file
+
+ ****** Running generation 0 ****** 
+
+Gen timestep at time: 2019-12-08 07:17:58.907218
+1 0.0
+2 0.0
+3 0.0
+4 0.0
+5 250.77708458900452
+achieved fitness: 250.77708458900452 at timestep 144711 time: 2019-12-08 07:38:26.494915
+Saving genome to file ./genomes/best_genome_1575789467_SpringYardZone.Act1.state_gen0.pkl
+6 0.0
+7 0.0
+8 116.89609122276306
+9 0.0
+10 0.0
+11 0.0
+12 0.0
+13 116.89609122276306
+14 116.89609122276306
+15 0.0
+16 0.0
+17 0.0
+18 116.89609122276306
+19 0.0
+20 116.89609122276306
+Total timesteps at end of gen: 509736
+Population's average fitness: 41.76288 stdev: 69.40096
+Best fitness: 250.77708 - size: (12, 12) - species 1 - id 5
+Average adjusted fitness: 0.167
+Mean genetic distance 2.529, standard deviation 0.121
+Population of 20 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    0    20    250.8    0.167     0
+Total extinctions: 0
+Generation time: 4329.258 sec
+Saving checkpoint to neat-checkpoint-0
+
+ ****** Running generation 1 ****** 
+
+Gen timestep at time: 2019-12-08 08:30:08.191324
+5 250.77708458900452
+achieved fitness: 250.77708458900452 at timestep 509991 time: 2019-12-08 08:30:10.344213
+Saving genome to file ./genomes/best_genome_1575789467_SpringYardZone.Act1.state_gen1.pkl
+8 116.89609122276306
+13 116.89609122276306
+21 0.0
+22 116.89609122276306
+23 116.89609122276306
+24 116.89609122276306
+25 116.89609122276306
+26 0.0
+27 116.89609122276306
+28 0.0
+29 0.0
+30 116.89609122276306
+31 250.77708458900452
+32 116.89609122276306
+33 116.89609122276306
+34 116.89609122276306
+35 116.89609122276306
+36 250.77708458900452
+37 250.77708458900452
+Total timesteps at end of gen: 664539
+Population's average fitness: 120.29307 stdev: 79.41174
+Best fitness: 250.77708 - size: (12, 12) - species 1 - id 5
+Average adjusted fitness: 0.480
+Mean genetic distance 2.655, standard deviation 0.137
+Population of 20 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    1    20    250.8    0.480     1
+Total extinctions: 0
+Generation time: 1291.855 sec (2810.557 average)
+Saving checkpoint to neat-checkpoint-1
+
+ ****** Running generation 2 ****** 
+
+Gen timestep at time: 2019-12-08 08:51:40.072586
+5 250.77708458900452
+achieved fitness: 250.77708458900452 at timestep 664794 time: 2019-12-08 08:51:42.242578
+Saving genome to file ./genomes/best_genome_1575789467_SpringYardZone.Act1.state_gen2.pkl
+31 250.77708458900452
+36 250.77708458900452
+38 116.89609122276306
+39 0.0
+40 116.89609122276306
+41 116.89609122276306
+42 250.77708458900452
+43 116.89609122276306
+44 252.7753083705902
+achieved fitness: 252.7753083705902 at timestep 705036 time: 2019-12-08 08:57:19.033343
+Saving genome to file ./genomes/best_genome_1575789467_SpringYardZone.Act1.state_gen2.pkl
+45 0.0
+46 116.89609122276306
+47 0.0
+48 0.0
+49 116.89609122276306
+50 0.0
+51 116.89609122276306
+52 0.0
+53 250.77708458900452
+54 0.0
+Total timesteps at end of gen: 924306
+Population's average fitness: 116.24667 stdev: 100.92775
+Best fitness: 252.77531 - size: (13, 14) - species 1 - id 44
+Average adjusted fitness: 0.460
+Mean genetic distance 1.996, standard deviation 0.701
+Population of 20 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    2    20    252.8    0.460     0
+Total extinctions: 0
+Generation time: 2169.906 sec (2597.006 average)
+Saving checkpoint to neat-checkpoint-2
+
+ ****** Running generation 3 ****** 
+
+Gen timestep at time: 2019-12-08 09:27:50.004457
+44 252.7753083705902
+achieved fitness: 252.7753083705902 at timestep 924561 time: 2019-12-08 09:27:52.163370
+Saving genome to file ./genomes/best_genome_1575789467_SpringYardZone.Act1.state_gen3.pkl
+5 250.77708458900452
+31 250.77708458900452
+55 437.6110110282898
+achieved fitness: 437.6110110282898 at timestep 925416 time: 2019-12-08 09:27:59.377672
+Saving genome to file ./genomes/best_genome_1575789467_SpringYardZone.Act1.state_gen3.pkl
+56 250.77708458900452
+57 116.89609122276306
+58 116.89609122276306
+59 116.89609122276306
+60 250.77708458900452
+61 250.77708458900452
+62 116.89609122276306
+63 116.89609122276306
+64 250.77708458900452
+65 116.89609122276306
+66 252.7753083705902
+67 436.6118977069855
+68 250.77708458900452
+69 116.89609122276306
+70 250.77708458900452
+71 250.77708458900452
+Total timesteps at end of gen: 933252
+Population's average fitness: 222.75200 stdev: 94.65997
+Best fitness: 437.61101 - size: (13, 14) - species 1 - id 55
+Average adjusted fitness: 0.330
+Mean genetic distance 1.292, standard deviation 0.242
+Population of 20 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    3    20    437.6    0.330     0
+Total extinctions: 0
+Generation time: 75.178 sec (1966.549 average)
+
+ ****** Running generation 4 ****** 
+
+Gen timestep at time: 2019-12-08 09:29:05.182289
+55 437.6110110282898
+achieved fitness: 437.6110110282898 at timestep 933597 time: 2019-12-08 09:29:08.089775
+Saving genome to file ./genomes/best_genome_1575789467_SpringYardZone.Act1.state_gen4.pkl
+67 436.6118977069855
+44 252.7753083705902
+72 116.89609122276306
+73 116.89609122276306
+74 116.89609122276306
+75 252.7753083705902
+76 437.6110110282898
+77 226.7983992099762
+78 250.77708458900452
+79 116.89609122276306
+80 116.89609122276306
+81 250.77708458900452
+82 0.0
+83 116.89609122276306
+Finished timestepMax at time: 2019-12-08 09:38:20.503433
