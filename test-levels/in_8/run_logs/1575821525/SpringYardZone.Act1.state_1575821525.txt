@@ -1,0 +1,219 @@
+Starting python script!
+Using env(SonicTheHedgehog-Genesis, SpringYardZone.Act1.state)
+Observation space shape:(224, 320, 3)
+Start: 2019-12-08 16:12:05.819077
+Using the following config file: config.txt
+[NEAT]
+fitness_criterion     = max
+fitness_threshold     = 9000
+pop_size              = 20
+reset_on_extinction   = False
+
+[DefaultGenome]
+# node activation options
+activation_default      = sigmoid
+activation_mutate_rate  = 0.00
+activation_options      = sigmoid 
+#abs clamped cube exp gauss hat identity inv log relu sigmoid sin softplus square tanh
+
+# node aggregation options
+aggregation_default     = sum
+aggregation_mutate_rate = 0.00
+aggregation_options     = sum product min max mean median maxabs
+
+# node bias options
+bias_init_mean          = 0.05
+bias_init_stdev         = 1.0
+bias_max_value          = 50.0
+bias_min_value          = -50.0
+bias_mutate_power       = 0.5
+bias_mutate_rate        = 0.7
+bias_replace_rate       = 0.1
+
+# genome compatibility options
+compatibility_disjoint_coefficient = 1.0
+compatibility_weight_coefficient   = 0.5
+
+# connection add/remove rates
+conn_add_prob           = 0.6
+conn_delete_prob        = 0.1
+
+# connection enable options
+enabled_default         = True
+enabled_mutate_rate     = 0.05
+
+feed_forward            = False
+initial_connection      = fs_neat_nohidden
+#initial_connection      = unconnected
+#initial_connection     = partial_nodirect 0.4
+
+# node add/remove rates
+node_add_prob           = 0.7
+node_delete_prob        = 0.1
+
+# network parameters
+num_hidden              = 0
+num_inputs              = 1120
+num_outputs             = 12
+
+# node response options
+response_init_mean      = 1.0
+response_init_stdev     = 0.05
+response_max_value      = 30.0
+response_min_value      = -30.0
+response_mutate_power   = 0.1
+response_mutate_rate    = 0.75
+response_replace_rate   = 0.1
+
+# connection weight options
+weight_init_mean        = 0.1
+weight_init_stdev       = 1.0
+weight_max_value        = 30
+weight_min_value        = -30
+weight_mutate_power     = 0.5
+weight_mutate_rate      = 0.8
+weight_replace_rate     = 0.1
+
+[DefaultSpeciesSet]
+compatibility_threshold = 10
+
+[DefaultStagnation]
+species_fitness_func = max
+max_stagnation       = 200
+species_elitism      = 0
+
+[DefaultReproduction]
+elitism            = 3
+survival_threshold = 0.3
+
+
+
+End of config file
+
+ ****** Running generation 0 ****** 
+
+Gen timestep at time: 2019-12-08 16:12:05.826199
+1 116.89609122276306
+achieved fitness: 116.89609122276306 at timestep 777 time: 2019-12-08 16:12:06.991148
+Saving genome to file ./genomes/best_genome_1575821525_SpringYardZone.Act1.state_gen0.pkl
+2 0.0
+3 0.0
+4 0.0
+5 116.89609122276306
+6 0.0
+7 0.0
+8 0.0
+9 116.89609122276306
+10 0.0
+11 0.0
+12 0.0
+13 0.0
+14 0.0
+15 0.0
+16 114.89786744117737
+17 0.0
+18 0.0
+19 116.89609122276306
+20 0.0
+Total timesteps at end of gen: 546591
+Population's average fitness: 29.12411 stdev: 50.44602
+Best fitness: 116.89609 - size: (12, 12) - species 1 - id 1
+Average adjusted fitness: 0.249
+Mean genetic distance 1.941, standard deviation 0.811
+Population of 20 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    0    20    116.9    0.249     0
+Total extinctions: 0
+Generation time: 805.867 sec
+Saving checkpoint to neat-checkpoint-0
+
+ ****** Running generation 1 ****** 
+
+Gen timestep at time: 2019-12-08 16:25:31.697019
+1 116.89609122276306
+achieved fitness: 116.89609122276306 at timestep 547368 time: 2019-12-08 16:25:32.852587
+Saving genome to file ./genomes/best_genome_1575821525_SpringYardZone.Act1.state_gen1.pkl
+5 116.89609122276306
+9 116.89609122276306
+21 116.89609122276306
+22 116.89609122276306
+23 116.89609122276306
+24 116.89609122276306
+25 0.0
+26 116.89609122276306
+27 0.0
+28 0.0
+29 116.89609122276306
+30 116.89609122276306
+31 0.0
+32 0.0
+33 0.0
+34 109.90230798721313
+35 116.89609122276306
+36 116.89609122276306
+37 0.0
+Total timesteps at end of gen: 811977
+Population's average fitness: 75.63277 stdev: 55.51961
+Best fitness: 116.89609 - size: (12, 12) - species 1 - id 1
+Average adjusted fitness: 0.647
+Mean genetic distance 1.844, standard deviation 0.816
+Population of 20 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    1    20    116.9    0.647     1
+Total extinctions: 0
+Generation time: 390.684 sec (598.276 average)
+Saving checkpoint to neat-checkpoint-1
+
+ ****** Running generation 2 ****** 
+
+Gen timestep at time: 2019-12-08 16:32:02.384416
+1 116.89609122276306
+achieved fitness: 116.89609122276306 at timestep 812754 time: 2019-12-08 16:32:03.552212
+Saving genome to file ./genomes/best_genome_1575821525_SpringYardZone.Act1.state_gen2.pkl
+5 116.89609122276306
+9 116.89609122276306
+38 0.0
+39 116.89609122276306
+40 116.89609122276306
+41 0.0
+42 0.0
+43 116.89609122276306
+44 116.89609122276306
+45 116.89609122276306
+46 0.0
+47 116.89609122276306
+48 116.89609122276306
+49 116.89609122276306
+50 116.89609122276306
+51 116.89609122276306
+52 116.89609122276306
+53 116.89609122276306
+54 116.89609122276306
+Total timesteps at end of gen: 968865
+Population's average fitness: 93.51687 stdev: 46.75844
+Best fitness: 116.89609 - size: (12, 12) - species 1 - id 1
+Average adjusted fitness: 0.800
+Mean genetic distance 1.975, standard deviation 0.759
+Population of 20 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    2    20    116.9    0.800     2
+Total extinctions: 0
+Generation time: 230.575 sec (475.709 average)
+
+ ****** Running generation 3 ****** 
+
+Gen timestep at time: 2019-12-08 16:35:52.959150
+1 116.89609122276306
+achieved fitness: 116.89609122276306 at timestep 969642 time: 2019-12-08 16:35:54.125715
+Saving genome to file ./genomes/best_genome_1575821525_SpringYardZone.Act1.state_gen3.pkl
+5 116.89609122276306
+9 116.89609122276306
+55 116.89609122276306
+56 116.89609122276306
+57 116.89609122276306
+58 116.89609122276306
+59 116.89609122276306
+Finished timestepMax at time: 2019-12-08 16:36:39.268246
