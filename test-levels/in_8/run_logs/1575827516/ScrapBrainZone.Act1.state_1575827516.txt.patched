@@ -1,0 +1,192 @@
+Starting python script!
+Using env(SonicTheHedgehog-Genesis, ScrapBrainZone.Act1.state)
+Observation space shape:(224, 320, 3)
+Start: 2019-12-08 17:51:57.355889
+Using the following config file: config.txt
+[NEAT]
+fitness_criterion     = max
+fitness_threshold     = 9000
+pop_size              = 20
+reset_on_extinction   = False
+
+[DefaultGenome]
+# node activation options
+activation_default      = sigmoid
+activation_mutate_rate  = 0.00
+activation_options      = sigmoid 
+#abs clamped cube exp gauss hat identity inv log relu sigmoid sin softplus square tanh
+
+# node aggregation options
+aggregation_default     = sum
+aggregation_mutate_rate = 0.00
+aggregation_options     = sum product min max mean median maxabs
+
+# node bias options
+bias_init_mean          = 0.05
+bias_init_stdev         = 1.0
+bias_max_value          = 50.0
+bias_min_value          = -50.0
+bias_mutate_power       = 0.5
+bias_mutate_rate        = 0.7
+bias_replace_rate       = 0.1
+
+# genome compatibility options
+compatibility_disjoint_coefficient = 1.0
+compatibility_weight_coefficient   = 0.5
+
+# connection add/remove rates
+conn_add_prob           = 0.6
+conn_delete_prob        = 0.1
+
+# connection enable options
+enabled_default         = True
+enabled_mutate_rate     = 0.05
+
+feed_forward            = False
+initial_connection      = fs_neat_nohidden
+#initial_connection      = unconnected
+#initial_connection     = partial_nodirect 0.4
+
+# node add/remove rates
+node_add_prob           = 0.7
+node_delete_prob        = 0.1
+
+# network parameters
+num_hidden              = 0
+num_inputs              = 1120
+num_outputs             = 12
+
+# node response options
+response_init_mean      = 1.0
+response_init_stdev     = 0.05
+response_max_value      = 30.0
+response_min_value      = -30.0
+response_mutate_power   = 0.1
+response_mutate_rate    = 0.75
+response_replace_rate   = 0.1
+
+# connection weight options
+weight_init_mean        = 0.1
+weight_init_stdev       = 1.0
+weight_max_value        = 30
+weight_min_value        = -30
+weight_mutate_power     = 0.5
+weight_mutate_rate      = 0.8
+weight_replace_rate     = 0.1
+
+[DefaultSpeciesSet]
+compatibility_threshold = 10
+
+[DefaultStagnation]
+species_fitness_func = max
+max_stagnation       = 200
+species_elitism      = 0
+
+[DefaultReproduction]
+elitism            = 3
+survival_threshold = 0.3
+
+
+
+End of config file
+
+ ****** Running generation 0 ****** 
+
+Gen timestep at time: 2019-12-08 17:51:57.363410
+1 0.0
+2 0.0
+3 528.5649057626724
+achieved fitness: 528.5649057626724 at timestep 72789 time: 2019-12-08 17:53:43.965456
+Saving genome to file ./genomes/best_genome_1575827516_ScrapBrainZone.Act1.state_gen0.pkl
+4 0.0
+5 0.0
+6 0.0
+7 0.0
+8 0.0
+9 606.7184566259384
+achieved fitness: 606.7184566259384 at timestep 253767 time: 2019-12-08 17:58:09.990461
+Saving genome to file ./genomes/best_genome_1575827516_ScrapBrainZone.Act1.state_gen0.pkl
+10 0.0
+11 0.0
+12 0.0
+13 0.0
+14 0.0
+15 597.4634277820587
+16 0.0
+17 0.0
+18 0.0
+19 601.5767724514008
+20 0.0
+Total timesteps at end of gen: 579591
+Population's average fitness: 116.71618 stdev: 233.86876
+Best fitness: 606.71846 - size: (12, 12) - species 1 - id 9
+Average adjusted fitness: 0.192
+Mean genetic distance 2.435, standard deviation 0.438
+Population of 20 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    0    20    606.7    0.192     0
+Total extinctions: 0
+Generation time: 851.578 sec
+Saving checkpoint to neat-checkpoint-0
+
+ ****** Running generation 1 ****** 
+
+Gen timestep at time: 2019-12-08 18:06:08.945026
+9 606.7184566259384
+achieved fitness: 606.7184566259384 at timestep 579894 time: 2019-12-08 18:06:09.405109
+Saving genome to file ./genomes/best_genome_1575827516_ScrapBrainZone.Act1.state_gen1.pkl
+19 601.5767724514008
+15 597.4634277820587
+21 604.6617996692657
+22 860.7175419330597
+achieved fitness: 860.7175419330597 at timestep 581382 time: 2019-12-08 18:06:11.646653
+Saving genome to file ./genomes/best_genome_1575827516_ScrapBrainZone.Act1.state_gen1.pkl
+23 860.7175390720367
+24 0.0
+25 607.7467908859253
+26 601.5767724514008
+27 601.5767724514008
+28 0.0
+29 0.0
+30 0.0
+31 597.4634268283844
+32 610.8318144083023
+33 609.8034664392471
+34 602.6051179170609
+35 0.0
+36 597.4634277820587
+37 602.605110168457
+Total timesteps at end of gen: 765216
+Population's average fitness: 478.17641 stdev: 286.31348
+Best fitness: 860.71754 - size: (12, 12) - species 1 - id 22
+Average adjusted fitness: 0.556
+Mean genetic distance 2.153, standard deviation 0.570
+Population of 20 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    1    20    860.7    0.556     0
+Total extinctions: 0
+Generation time: 272.972 sec (562.275 average)
+
+ ****** Running generation 2 ****** 
+
+Gen timestep at time: 2019-12-08 18:10:41.917363
+22 860.7175419330597
+achieved fitness: 860.7175419330597 at timestep 765570 time: 2019-12-08 18:10:42.452768
+Saving genome to file ./genomes/best_genome_1575827516_ScrapBrainZone.Act1.state_gen2.pkl
+23 860.7175390720367
+32 610.8318144083023
+38 597.4634257555008
+39 0.0
+40 597.4634277820587
+41 0.0
+42 597.4634306430817
+43 354.7760533094406
+44 0.0
+45 607.7467908859253
+46 0.0
+47 0.0
+48 609.8034653663635
+Finished timestepMax at time: 2019-12-08 18:16:27.768283
+Best fitness: 860.7175419330597 - size: (0, 0) - species 1 - id 0

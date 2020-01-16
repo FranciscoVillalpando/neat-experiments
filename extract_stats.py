@@ -12,11 +12,13 @@ from collections import defaultdict
 parseMap = {
     "avg_fitness": {  # this name does not really matter
         'searchString':'average fitness',  # String that will be used to search for the stat
-        'parser':compile("Population's average fitness: {avg_fitness:f} stdev: {stdev:f}") # String used to parse data in the searched line
+        'parser':compile("Population's average fitness: {avg_fitness:f} stdev: {stdev:f}"), # String used to parse data in the searched line
+        "alt_parser": compile("Population's average fitness: {avg_fitness:f} stdev: {stdev:f} {}")# Failback parser
     },
     "best_genome": {
         'searchString':'Best fitness',
-        "parser": compile("Best fitness: {best_genome_fitness:f} - size: {best_genome_size} - species {best_genome_species:d} - id {best_genome_id:d}")
+        "parser": compile("Best fitness: {best_genome_fitness:f} - size: {best_genome_size} - species {best_genome_species:d} - id {best_genome_id:d}"),
+        "alt_parser": compile("Best fitness: {best_genome_fitness:f} - size: {best_genome_size} - species {best_genome_species:d} - id {best_genome_id:d} {}")# Failback parser
     },
     "gen_time": {
         'searchString':'Generation time',
@@ -66,12 +68,15 @@ def getStatsDict(fileNameList, runsFirst = True, parse_map = parseMap):
 
                         # Use failback parser if something goes wrong
                         if parsedData == None:
+                            print(line)
                             parser = parse_map[keyString]['alt_parser']
                             parsedData = parser.parse(line)
                     
                         clean_name = statFileName.split("/")[-1]
 
                         #print(clean_name)
+
+                        #print(f"parsedData:{parsedData}")
                         for statName, statValue in parsedData.named.items():
                             # Add result to dictionary
                             if runsFirst:
@@ -189,7 +194,17 @@ def generateBenchmarkScoreTable(filename, fileNameList):
         This Score Table takes uses best_genome_fitness (i.e. the best genome of the gen)
         as the score for each gen and creates an average of all gens
     '''
-    statsDict = getStatsDict(fileNameList, False)
+
+    # Use reduced map for faster parsing
+    trimmed_map = {
+        "best_genome": {
+            'searchString':'Best fitness',
+            "parser": compile("Best fitness: {best_genome_fitness:f} - size: {best_genome_size} - species {best_genome_species:d} - id {best_genome_id:g}"),
+            "alt_parser": compile("Best fitness: {best_genome_fitness:f} - size: {best_genome_size} - species {best_genome_species:d} - id {best_genome_id:g} {}")# Failback parser
+        }
+    }
+
+    statsDict = getStatsDict(fileNameList, False, trimmed_map)
      
     #the code for creating the workbook and worksheets
     wb= xlwt.Workbook()
@@ -411,6 +426,6 @@ if __name__ == "__main__":
 
     #generateScoreTable(output_file_name, fileNameList)
     #generateBruteScoreTable(output_file_name, fileNameList)
-    generateBenchmarkScoreTable(output_file_name, fileNameList)
+    #generateBenchmarkScoreTable(output_file_name, fileNameList)
     #generateLearnCurveTimestep(output_file_name, fileNameList)
-    # printLearningCurveForRuns(fileNameList)
+    printLearningCurveForRuns(fileNameList)

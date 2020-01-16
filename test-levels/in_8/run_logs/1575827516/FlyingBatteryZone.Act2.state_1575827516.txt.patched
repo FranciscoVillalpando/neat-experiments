@@ -1,0 +1,150 @@
+Starting python script!
+Using env(SonicAndKnuckles3-Genesis, FlyingBatteryZone.Act2.state)
+Observation space shape:(224, 320, 3)
+Start: 2019-12-08 18:16:36.926705
+Using the following config file: config.txt
+[NEAT]
+fitness_criterion     = max
+fitness_threshold     = 9000
+pop_size              = 20
+reset_on_extinction   = False
+
+[DefaultGenome]
+# node activation options
+activation_default      = sigmoid
+activation_mutate_rate  = 0.00
+activation_options      = sigmoid 
+#abs clamped cube exp gauss hat identity inv log relu sigmoid sin softplus square tanh
+
+# node aggregation options
+aggregation_default     = sum
+aggregation_mutate_rate = 0.00
+aggregation_options     = sum product min max mean median maxabs
+
+# node bias options
+bias_init_mean          = 0.05
+bias_init_stdev         = 1.0
+bias_max_value          = 50.0
+bias_min_value          = -50.0
+bias_mutate_power       = 0.5
+bias_mutate_rate        = 0.7
+bias_replace_rate       = 0.1
+
+# genome compatibility options
+compatibility_disjoint_coefficient = 1.0
+compatibility_weight_coefficient   = 0.5
+
+# connection add/remove rates
+conn_add_prob           = 0.6
+conn_delete_prob        = 0.1
+
+# connection enable options
+enabled_default         = True
+enabled_mutate_rate     = 0.05
+
+feed_forward            = False
+initial_connection      = fs_neat_nohidden
+#initial_connection      = unconnected
+#initial_connection     = partial_nodirect 0.4
+
+# node add/remove rates
+node_add_prob           = 0.7
+node_delete_prob        = 0.1
+
+# network parameters
+num_hidden              = 0
+num_inputs              = 1120
+num_outputs             = 12
+
+# node response options
+response_init_mean      = 1.0
+response_init_stdev     = 0.05
+response_max_value      = 30.0
+response_min_value      = -30.0
+response_mutate_power   = 0.1
+response_mutate_rate    = 0.75
+response_replace_rate   = 0.1
+
+# connection weight options
+weight_init_mean        = 0.1
+weight_init_stdev       = 1.0
+weight_max_value        = 30
+weight_min_value        = -30
+weight_mutate_power     = 0.5
+weight_mutate_rate      = 0.8
+weight_replace_rate     = 0.1
+
+[DefaultSpeciesSet]
+compatibility_threshold = 10
+
+[DefaultStagnation]
+species_fitness_func = max
+max_stagnation       = 200
+species_elitism      = 0
+
+[DefaultReproduction]
+elitism            = 3
+survival_threshold = 0.3
+
+
+
+End of config file
+
+ ****** Running generation 0 ****** 
+
+Gen timestep at time: 2019-12-08 18:16:36.933863
+1 869.6413829922676
+achieved fitness: 869.6413829922676 at timestep 36093 time: 2019-12-08 18:17:35.176853
+Saving genome to file ./genomes/best_genome_1575827516_FlyingBatteryZone.Act2.state_gen0.pkl
+2 869.641385436058
+achieved fitness: 869.641385436058 at timestep 72186 time: 2019-12-08 18:18:33.128806
+Saving genome to file ./genomes/best_genome_1575827516_FlyingBatteryZone.Act2.state_gen0.pkl
+3 869.6413829922676
+4 1021.7772303819656
+achieved fitness: 1021.7772303819656 at timestep 144372 time: 2019-12-08 18:20:14.798581
+Saving genome to file ./genomes/best_genome_1575827516_FlyingBatteryZone.Act2.state_gen0.pkl
+5 217.92431783676147
+6 0.0
+7 0.0
+8 0.0
+9 0.0
+10 869.6413841843605
+11 0.0
+12 0.0
+13 0.0
+14 0.0
+15 0.0
+16 0.0
+17 0.0
+18 0.0
+19 0.0
+20 0.0
+Total timesteps at end of gen: 721878
+Population's average fitness: 235.91335 stdev: 387.52562
+Best fitness: 1021.77723 - size: (12, 12) - species 1 - id 4
+Average adjusted fitness: 0.231
+Mean genetic distance 2.521, standard deviation 0.307
+Population of 20 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    0    20   1021.8    0.231     0
+Total extinctions: 0
+Generation time: 1049.464 sec
+Saving checkpoint to neat-checkpoint-0
+
+ ****** Running generation 1 ****** 
+
+Gen timestep at time: 2019-12-08 18:34:06.401008
+4 1021.7772303819656
+achieved fitness: 1021.7772303819656 at timestep 757971 time: 2019-12-08 18:35:04.685132
+Saving genome to file ./genomes/best_genome_1575827516_FlyingBatteryZone.Act2.state_gen1.pkl
+2 869.641385436058
+10 869.6413841843605
+21 869.6413829922676
+22 869.6413829922676
+23 1022.4625264406204
+achieved fitness: 1022.4625264406204 at timestep 938436 time: 2019-12-08 18:39:26.745934
+Saving genome to file ./genomes/best_genome_1575827516_FlyingBatteryZone.Act2.state_gen1.pkl
+24 0.0
+Finished timestepMax at time: 2019-12-08 18:40:30.196270
+Best fitness: 1022.4625264406204 - size: (0, 0) - species 1 - id 0

@@ -1,0 +1,375 @@
+Starting python script!
+Using env(SonicTheHedgehog2-Genesis, MetropolisZone.Act3.state)
+Observation space shape:(224, 320, 3)
+Start: 2019-12-08 07:21:34.913752
+Using the following config file: config.txt
+[NEAT]
+fitness_criterion     = max
+fitness_threshold     = 9000
+pop_size              = 20
+reset_on_extinction   = False
+
+[DefaultGenome]
+# node activation options
+activation_default      = sigmoid
+activation_mutate_rate  = 0.00
+activation_options      = sigmoid 
+#abs clamped cube exp gauss hat identity inv log relu sigmoid sin softplus square tanh
+
+# node aggregation options
+aggregation_default     = sum
+aggregation_mutate_rate = 0.00
+aggregation_options     = sum product min max mean median maxabs
+
+# node bias options
+bias_init_mean          = 0.05
+bias_init_stdev         = 1.0
+bias_max_value          = 50.0
+bias_min_value          = -50.0
+bias_mutate_power       = 0.5
+bias_mutate_rate        = 0.7
+bias_replace_rate       = 0.1
+
+# genome compatibility options
+compatibility_disjoint_coefficient = 1.0
+compatibility_weight_coefficient   = 0.5
+
+# connection add/remove rates
+conn_add_prob           = 0.6
+conn_delete_prob        = 0.1
+
+# connection enable options
+enabled_default         = True
+enabled_mutate_rate     = 0.05
+
+feed_forward            = False
+initial_connection      = fs_neat_nohidden
+#initial_connection      = unconnected
+#initial_connection     = partial_nodirect 0.4
+
+# node add/remove rates
+node_add_prob           = 0.7
+node_delete_prob        = 0.1
+
+# network parameters
+num_hidden              = 0
+num_inputs              = 4480
+num_outputs             = 12
+
+# node response options
+response_init_mean      = 1.0
+response_init_stdev     = 0.05
+response_max_value      = 30.0
+response_min_value      = -30.0
+response_mutate_power   = 0.1
+response_mutate_rate    = 0.75
+response_replace_rate   = 0.1
+
+# connection weight options
+weight_init_mean        = 0.1
+weight_init_stdev       = 1.0
+weight_max_value        = 30
+weight_min_value        = -30
+weight_mutate_power     = 0.5
+weight_mutate_rate      = 0.8
+weight_replace_rate     = 0.1
+
+[DefaultSpeciesSet]
+compatibility_threshold = 10
+
+[DefaultStagnation]
+species_fitness_func = max
+max_stagnation       = 200
+species_elitism      = 0
+
+[DefaultReproduction]
+elitism            = 3
+survival_threshold = 0.3
+
+
+
+End of config file
+
+ ****** Running generation 0 ****** 
+
+Gen timestep at time: 2019-12-08 07:21:34.921499
+1 0.0
+2 0.0
+3 0.0
+4 0.0
+5 311.4893629550934
+achieved fitness: 311.4893629550934 at timestep 6789 time: 2019-12-08 07:21:47.856392
+Saving genome to file ./genomes/best_genome_1575789694_MetropolisZone.Act3.state_gen0.pkl
+6 0.0
+7 302.1276569366455
+8 0.0
+9 0.0
+10 0.0
+11 0.0
+12 0.0
+13 2.5531915426254272
+14 0.0
+15 0.0
+16 0.0
+17 0.0
+18 327.6595742702484
+achieved fitness: 327.6595742702484 at timestep 61032 time: 2019-12-08 07:23:30.963222
+Saving genome to file ./genomes/best_genome_1575789694_MetropolisZone.Act3.state_gen0.pkl
+19 0.0
+20 0.0
+Total timesteps at end of gen: 64092
+Population's average fitness: 47.19149 stdev: 112.05653
+Best fitness: 327.65957 - size: (12, 12) - species 1 - id 18
+Average adjusted fitness: 0.144
+Mean genetic distance 2.415, standard deviation 0.428
+Population of 20 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    0    20    327.7    0.144     0
+Total extinctions: 0
+Generation time: 121.906 sec
+
+ ****** Running generation 1 ****** 
+
+Gen timestep at time: 2019-12-08 07:23:36.827692
+18 327.6595742702484
+achieved fitness: 327.6595742702484 at timestep 64389 time: 2019-12-08 07:23:37.398801
+Saving genome to file ./genomes/best_genome_1575789694_MetropolisZone.Act3.state_gen1.pkl
+5 311.4893629550934
+7 302.1276569366455
+21 323.4042558670044
+22 286.808510184288
+23 282.5531882047653
+24 327.6595742702484
+25 327.6595742702484
+26 327.6595742702484
+27 0.0
+28 327.6595742702484
+29 323.4042558670044
+30 2.5531915426254272
+31 0.0
+32 0.0
+33 3.4042553901672363
+34 0.0
+35 0.0
+36 0.0
+37 0.0
+Total timesteps at end of gen: 153897
+Population's average fitness: 173.70213 stdev: 156.99623
+Best fitness: 327.65957 - size: (12, 12) - species 1 - id 18
+Average adjusted fitness: 0.530
+Mean genetic distance 2.072, standard deviation 0.676
+Population of 20 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    1    20    327.7    0.530     1
+Total extinctions: 0
+Generation time: 172.010 sec (146.958 average)
+
+ ****** Running generation 2 ****** 
+
+Gen timestep at time: 2019-12-08 07:26:28.838107
+18 327.6595742702484
+achieved fitness: 327.6595742702484 at timestep 154194 time: 2019-12-08 07:26:29.398638
+Saving genome to file ./genomes/best_genome_1575789694_MetropolisZone.Act3.state_gen2.pkl
+24 327.6595742702484
+25 327.6595742702484
+38 327.6595742702484
+39 327.6595742702484
+40 0.0
+41 327.6595742702484
+42 327.6595742702484
+43 0.0
+44 327.6595742702484
+45 319.1489381790161
+46 327.6595742702484
+47 320.00000166893005
+48 1515.7446610927582
+achieved fitness: 1515.7446610927582 at timestep 196695 time: 2019-12-08 07:27:52.155486
+Saving genome to file ./genomes/best_genome_1575789694_MetropolisZone.Act3.state_gen2.pkl
+49 0.0
+50 327.6595742702484
+51 0.0
+52 327.6595742702484
+53 320.00000166893005
+54 327.6595742702484
+Total timesteps at end of gen: 201270
+Population's average fitness: 320.34042 stdev: 303.32390
+Best fitness: 1515.74466 - size: (14, 16) - species 1 - id 48
+Average adjusted fitness: 0.211
+Mean genetic distance 1.359, standard deviation 0.282
+Population of 20 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    2    20   1515.7    0.211     0
+Total extinctions: 0
+Generation time: 92.080 sec (128.665 average)
+Saving checkpoint to neat-checkpoint-2
+
+ ****** Running generation 3 ****** 
+
+Gen timestep at time: 2019-12-08 07:28:00.923277
+48 1515.7446610927582
+achieved fitness: 1515.7446610927582 at timestep 237411 time: 2019-12-08 07:29:11.800176
+Saving genome to file ./genomes/best_genome_1575789694_MetropolisZone.Act3.state_gen3.pkl
+18 327.6595742702484
+24 327.6595742702484
+55 327.6595742702484
+56 327.6595742702484
+57 327.6595742702484
+58 0.0
+59 327.6595742702484
+60 874.8936121463776
+61 327.6595742702484
+62 237.44681179523468
+63 0.0
+64 327.6595742702484
+65 319.1489381790161
+66 327.6595742702484
+67 0.0
+68 327.6595742702484
+69 327.6595742702484
+70 0.0
+71 327.6595742702484
+Total timesteps at end of gen: 248298
+Population's average fitness: 343.95745 stdev: 327.36469
+Best fitness: 1515.74466 - size: (14, 16) - species 1 - id 48
+Average adjusted fitness: 0.227
+Mean genetic distance 1.410, standard deviation 0.270
+Population of 20 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    3    20   1515.7    0.227     1
+Total extinctions: 0
+Generation time: 91.662 sec (119.415 average)
+
+ ****** Running generation 4 ****** 
+
+Gen timestep at time: 2019-12-08 07:29:32.585185
+48 1515.7446610927582
+achieved fitness: 1515.7446610927582 at timestep 284439 time: 2019-12-08 07:30:43.283323
+Saving genome to file ./genomes/best_genome_1575789694_MetropolisZone.Act3.state_gen4.pkl
+60 874.8936121463776
+24 327.6595742702484
+72 327.6595742702484
+73 320.00000166893005
+74 327.6595742702484
+75 327.6595742702484
+76 327.6595742702484
+77 320.00000166893005
+78 1624.6808344125748
+achieved fitness: 1624.6808344125748 at timestep 323112 time: 2019-12-08 07:31:58.543998
+Saving genome to file ./genomes/best_genome_1575789694_MetropolisZone.Act3.state_gen4.pkl
+79 0.0
+80 0.0
+81 327.6595742702484
+82 0.0
+83 327.6595742702484
+84 327.6595742702484
+85 327.6595742702484
+86 327.6595742702484
+87 327.6595742702484
+88 327.6595742702484
+Total timesteps at end of gen: 329781
+Population's average fitness: 429.36170 stdev: 418.84417
+Best fitness: 1624.68083 - size: (14, 16) - species 1 - id 78
+Average adjusted fitness: 0.264
+Mean genetic distance 1.671, standard deviation 0.254
+Population of 20 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    4    20   1624.7    0.264     0
+Total extinctions: 0
+Generation time: 158.686 sec (127.269 average)
+
+ ****** Running generation 5 ****** 
+
+Gen timestep at time: 2019-12-08 07:32:11.273599
+78 1624.6808344125748
+achieved fitness: 1624.6808344125748 at timestep 365913 time: 2019-12-08 07:33:22.003268
+Saving genome to file ./genomes/best_genome_1575789694_MetropolisZone.Act3.state_gen5.pkl
+48 1515.7446610927582
+60 874.8936121463776
+89 841.7021219730377
+90 327.6595742702484
+91 327.6595742702484
+92 0.0
+93 327.6595742702484
+94 242.55318903923035
+95 320.00000166893005
+96 327.6595742702484
+97 0.0
+98 0.0
+99 322.55319249629974
+100 327.6595742702484
+101 327.6595742702484
+102 1624.680846452713
+achieved fitness: 1624.680846452713 at timestep 482262 time: 2019-12-08 07:37:08.983537
+Saving genome to file ./genomes/best_genome_1575789694_MetropolisZone.Act3.state_gen5.pkl
+103 319.1489381790161
+104 324.25531935691833
+105 327.6595742702484
+Total timesteps at end of gen: 483159
+Population's average fitness: 515.19149 stdev: 498.29255
+Best fitness: 1624.68085 - size: (14, 17) - species 1 - id 102
+Average adjusted fitness: 0.317
+Mean genetic distance 1.879, standard deviation 0.277
+Population of 20 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    5    20   1624.7    0.317     0
+Total extinctions: 0
+Generation time: 299.427 sec (155.962 average)
+Saving checkpoint to neat-checkpoint-5
+
+ ****** Running generation 6 ****** 
+
+Gen timestep at time: 2019-12-08 07:37:10.706061
+102 1624.680846452713
+achieved fitness: 1624.680846452713 at timestep 519291 time: 2019-12-08 07:38:21.639073
+Saving genome to file ./genomes/best_genome_1575789694_MetropolisZone.Act3.state_gen6.pkl
+78 1624.6808344125748
+48 1515.7446610927582
+106 1624.6808323860168
+107 1624.6808454990387
+108 1624.68084359169
+109 661.2765983343124
+110 327.65957379341125
+111 1624.6808364391327
+112 3114.0425424575806
+achieved fitness: 3114.0425424575806 at timestep 773346 time: 2019-12-08 07:46:39.266985
+Saving genome to file ./genomes/best_genome_1575789694_MetropolisZone.Act3.state_gen6.pkl
+113 327.6595742702484
+114 1624.6808301210403
+115 1624.6808315515518
+116 880.8510556221008
+117 807.6595658063889
+118 1624.6808432340622
+119 322.55319249629974
+120 0.0
+121 327.6595742702484
+122 327.6595742702484
+Total timesteps at end of gen: 885564
+Population's average fitness: 1161.74467 stdev: 746.89365
+Best fitness: 3114.04254 - size: (15, 18) - species 1 - id 112
+Average adjusted fitness: 0.373
+Mean genetic distance 1.677, standard deviation 0.513
+Population of 20 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    6    20   3114.0    0.373     0
+Total extinctions: 0
+Generation time: 788.241 sec (246.287 average)
+Saving checkpoint to neat-checkpoint-6
+
+ ****** Running generation 7 ****** 
+
+Gen timestep at time: 2019-12-08 07:50:18.952641
+112 3114.0425424575806
+achieved fitness: 3114.0425424575806 at timestep 921723 time: 2019-12-08 07:51:28.995809
+Saving genome to file ./genomes/best_genome_1575789694_MetropolisZone.Act3.state_gen7.pkl
+102 1624.680846452713
+107 1624.6808454990387
+123 320.00000166893005
+Finished timestepMax at time: 2019-12-08 07:54:02.413944
+Best fitness: 3114.0425424575806 - size: (0, 0) - species 1 - id 0
