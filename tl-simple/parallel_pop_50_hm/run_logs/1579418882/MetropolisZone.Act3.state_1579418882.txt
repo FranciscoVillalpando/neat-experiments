@@ -1,0 +1,185 @@
+Starting python script!
+Using env(SonicTheHedgehog2-Genesis,MetropolisZone.Act3.state)
+Observation space shape:(224, 320, 3)
+Start: 2020-01-22 08:36:26.278832
+Using the following config file: config_test.txt
+[NEAT]
+fitness_criterion     = max
+fitness_threshold     = 9000
+pop_size              = 50
+reset_on_extinction   = False
+
+[DefaultGenome]
+# node activation options
+activation_default      = sigmoid
+activation_mutate_rate  = 0.00
+activation_options      = sigmoid 
+#abs clamped cube exp gauss hat identity inv log relu sigmoid sin softplus square tanh
+
+# node aggregation options
+aggregation_default     = sum
+aggregation_mutate_rate = 0.00
+aggregation_options     = sum product min max mean median maxabs
+
+# node bias options
+bias_init_mean          = 0.05
+bias_init_stdev         = 1.0
+bias_max_value          = 50.0
+bias_min_value          = -50.0
+bias_mutate_power       = 0.5
+bias_mutate_rate        = 0.7
+bias_replace_rate       = 0.1
+
+# genome compatibility options
+compatibility_disjoint_coefficient = 1.0
+compatibility_weight_coefficient   = 0.5
+
+# connection add/remove rates
+conn_add_prob           = 0.6
+conn_delete_prob        = 0.1
+
+# connection enable options
+enabled_default         = True
+enabled_mutate_rate     = 0.05
+
+feed_forward            = False
+initial_connection      = fs_neat_nohidden
+#initial_connection      = unconnected
+#initial_connection     = partial_nodirect 0.4
+
+# node add/remove rates
+node_add_prob           = 0.7
+node_delete_prob        = 0.1
+
+# network parameters
+num_hidden              = 0
+num_inputs              = 17920
+num_outputs             = 12
+
+# node response options
+response_init_mean      = 1.0
+response_init_stdev     = 0.05
+response_max_value      = 30.0
+response_min_value      = -30.0
+response_mutate_power   = 0.1
+response_mutate_rate    = 0.75
+response_replace_rate   = 0.1
+
+# connection weight options
+weight_init_mean        = 0.1
+weight_init_stdev       = 1.0
+weight_max_value        = 30
+weight_min_value        = -30
+weight_mutate_power     = 0.5
+weight_mutate_rate      = 0.8
+weight_replace_rate     = 0.1
+
+[DefaultSpeciesSet]
+compatibility_threshold = 10
+
+[DefaultStagnation]
+species_fitness_func = max
+max_stagnation       = 200
+species_elitism      = 0
+
+[DefaultReproduction]
+elitism            = 3
+survival_threshold = 0.3
+
+
+
+End of config file
+['./../../train-levels/parallel/last_gen_genomes/1579418882/EmeraldHillZone.Act1.state_1.pkl', './../../train-levels/parallel/last_gen_genomes/1579418882/MetropolisZone.Act1.state_1.pkl', './../../train-levels/parallel/last_gen_genomes/1579418882/OilOceanZone.Act2.state_1.pkl', './../../train-levels/parallel/last_gen_genomes/1579418882/CarnivalNightZone.Act2.state_1.pkl', './../../train-levels/parallel/last_gen_genomes/1579418882/MysticCaveZone.Act2.state_1.pkl', './../../train-levels/parallel/last_gen_genomes/1579418882/CarnivalNightZone.Act1.state_1.pkl', './../../train-levels/parallel/last_gen_genomes/1579418882/MysticCaveZone.Act1.state_1.pkl', './../../train-levels/parallel/last_gen_genomes/1579418882/AquaticRuinZone.Act2.state_1.pkl', './../../train-levels/parallel/last_gen_genomes/1579418882/HiddenPalaceZone.state_1.pkl', './../../train-levels/parallel/last_gen_genomes/1579418882/LabyrinthZone.Act1.state_1.pkl', './../../train-levels/parallel/last_gen_genomes/1579418882/StarLightZone.Act2.state_1.pkl', './../../train-levels/parallel/last_gen_genomes/1579418882/DeathEggZone.Act1.state_1.pkl', './../../train-levels/parallel/last_gen_genomes/1579418882/HydrocityZone.Act2.state_1.pkl', './../../train-levels/parallel/last_gen_genomes/1579418882/FlyingBatteryZone.Act1.state_1.pkl', './../../train-levels/parallel/last_gen_genomes/1579418882/MarbleGardenZone.Act1.state_1.pkl', './../../train-levels/parallel/last_gen_genomes/1579418882/MetropolisZone.Act2.state_1.pkl', './../../train-levels/parallel/last_gen_genomes/1579418882/AngelIslandZone.Act1.state_1.pkl', './../../train-levels/parallel/last_gen_genomes/1579418882/LabyrinthZone.Act2.state_1.pkl', './../../train-levels/parallel/last_gen_genomes/1579418882/SpringYardZone.Act3.state_1.pkl', './../../train-levels/parallel/last_gen_genomes/1579418882/GreenHillZone.Act3.state_1.pkl', './../../train-levels/parallel/last_gen_genomes/1579418882/ChemicalPlantZone.Act2.state_1.pkl', './../../train-levels/parallel/last_gen_genomes/1579418882/ChemicalPlantZone.Act1.state_1.pkl', './../../train-levels/parallel/last_gen_genomes/1579418882/LaunchBaseZone.Act2.state_1.pkl', './../../train-levels/parallel/last_gen_genomes/1579418882/LavaReefZone.Act2.state_1.pkl', './../../train-levels/parallel/last_gen_genomes/1579418882/WingFortressZone.state_1.pkl', './../../train-levels/parallel/last_gen_genomes/1579418882/EmeraldHillZone.Act2.state_1.pkl', './../../train-levels/parallel/last_gen_genomes/1579418882/AquaticRuinZone.Act1.state_1.pkl', './../../train-levels/parallel/last_gen_genomes/1579418882/LaunchBaseZone.Act1.state_1.pkl', './../../train-levels/parallel/last_gen_genomes/1579418882/DeathEggZone.Act2.state_1.pkl', './../../train-levels/parallel/last_gen_genomes/1579418882/IcecapZone.Act2.state_1.pkl', './../../train-levels/parallel/last_gen_genomes/1579418882/OilOceanZone.Act1.state_1.pkl', './../../train-levels/parallel/last_gen_genomes/1579418882/MarbleZone.Act1.state_1.pkl', './../../train-levels/parallel/last_gen_genomes/1579418882/MushroomHillZone.Act1.state_1.pkl', './../../train-levels/parallel/last_gen_genomes/1579418882/LabyrinthZone.Act3.state_1.pkl', './../../train-levels/parallel/last_gen_genomes/1579418882/ScrapBrainZone.Act2.state_1.pkl', './../../train-levels/parallel/last_gen_genomes/1579418882/MarbleGardenZone.Act2.state_1.pkl', './../../train-levels/parallel/last_gen_genomes/1579418882/MushroomHillZone.Act2.state_1.pkl', './../../train-levels/parallel/last_gen_genomes/1579418882/MarbleZone.Act2.state_1.pkl', './../../train-levels/parallel/last_gen_genomes/1579418882/SpringYardZone.Act2.state_1.pkl', './../../train-levels/parallel/last_gen_genomes/1579418882/SandopolisZone.Act1.state_1.pkl', './../../train-levels/parallel/last_gen_genomes/1579418882/HillTopZone.Act1.state_1.pkl', './../../train-levels/parallel/last_gen_genomes/1579418882/IcecapZone.Act1.state_1.pkl', './../../train-levels/parallel/last_gen_genomes/1579418882/SandopolisZone.Act2.state_1.pkl', './../../train-levels/parallel/last_gen_genomes/1579418882/CasinoNightZone.Act1.state_1.pkl', './../../train-levels/parallel/last_gen_genomes/1579418882/MarbleZone.Act3.state_1.pkl', './../../train-levels/parallel/last_gen_genomes/1579418882/GreenHillZone.Act1.state_1.pkl', './../../train-levels/parallel/last_gen_genomes/1579418882/StarLightZone.Act1.state_1.pkl', './../../train-levels/parallel/last_gen_genomes/1579418882/AquaticRuinZone.Act2.state_2.pkl', './../../train-levels/parallel/last_gen_genomes/1579418882/CarnivalNightZone.Act2.state_2.pkl', './../../train-levels/parallel/last_gen_genomes/1579418882/IcecapZone.Act2.state_2.pkl']
+
+ ****** Running generation 0 ****** 
+
+Gen timestep at time: 2020-01-22 08:36:26.316704
+-- genome with id 1 done, fitness: 1624.6808279752731
+achieved fitness: 1624.6808279752731 at timestep 36132 time: 2020-01-22 08:38:20.847387
+Saving genome to file ./best_genomes/MetropolisZone.Act3.state_1579418882_gen1.pkl
+-- genome with id 2 done, fitness: 1624.6808387041092
+achieved fitness: 1624.6808387041092 at timestep 72264 time: 2020-01-22 08:40:18.186046
+Saving genome to file ./best_genomes/MetropolisZone.Act3.state_1579418882_gen1.pkl
+-- genome with id 3 done, fitness: 299.5744686126709
+-- genome with id 4 done, fitness: 1624.6808276176453
+-- genome with id 5 done, fitness: 330.2127627134323
+-- genome with id 6 done, fitness: 327.6595742702484
+-- genome with id 7 done, fitness: 1624.6808329820633
+-- genome with id 8 done, fitness: 3085.957439303398
+achieved fitness: 3085.957439303398 at timestep 181581 time: 2020-01-22 08:46:11.471222
+Saving genome to file ./best_genomes/MetropolisZone.Act3.state_1579418882_gen1.pkl
+-- genome with id 9 done, fitness: 1247.6595635414124
+-- genome with id 10 done, fitness: 317.44681000709534
+-- genome with id 11 done, fitness: 327.6595742702484
+-- genome with id 12 done, fitness: 1515.7446553707123
+-- genome with id 13 done, fitness: 0.0
+-- genome with id 14 done, fitness: 321.7021293640137
+-- genome with id 15 done, fitness: 327.659575343132
+-- genome with id 16 done, fitness: 807.6595619916916
+-- genome with id 17 done, fitness: 332.7659546136856
+-- genome with id 18 done, fitness: 1515.744671702385
+-- genome with id 19 done, fitness: 1624.6808376312256
+-- genome with id 20 done, fitness: 3089.361930370331
+achieved fitness: 3089.361930370331 at timestep 365715 time: 2020-01-22 08:56:03.027642
+Saving genome to file ./best_genomes/MetropolisZone.Act3.state_1579418882_gen1.pkl
+-- genome with id 21 done, fitness: 746.3829773664474
+-- genome with id 22 done, fitness: 883.4042438268661
+-- genome with id 23 done, fitness: 334.46808183193207
+-- genome with id 24 done, fitness: 1624.680848121643
+-- genome with id 25 done, fitness: 1561.7021116018295
+-- genome with id 26 done, fitness: 807.6595712900162
+-- genome with id 27 done, fitness: 9.3617023229599
+-- genome with id 28 done, fitness: 331.06382620334625
+-- genome with id 29 done, fitness: 1515.7446579933167
+-- genome with id 30 done, fitness: 1167.6595711708069
+-- genome with id 31 done, fitness: 331.06382620334625
+-- genome with id 32 done, fitness: 1624.680834889412
+-- genome with id 33 done, fitness: 292.76595747470856
+-- genome with id 34 done, fitness: 3.4042553901672363
+-- genome with id 35 done, fitness: 1624.6808406114578
+-- genome with id 36 done, fitness: 807.6595772504807
+-- genome with id 37 done, fitness: 325.10638451576233
+-- genome with id 38 done, fitness: 357.446809053421
+-- genome with id 39 done, fitness: 330.2127653360367
+-- genome with id 40 done, fitness: 318.2978712320328
+-- genome with id 41 done, fitness: 1515.744679093361
+-- genome with id 42 done, fitness: 1624.6808499097824
+-- genome with id 43 done, fitness: 1624.6808377504349
+-- genome with id 44 done, fitness: 331.06382620334625
+-- genome with id 45 done, fitness: 221.27659440040588
+-- genome with id 46 done, fitness: 339.57446587085724
+-- genome with id 47 done, fitness: 331.06382620334625
+-- genome with id 48 done, fitness: 882.5531822443008
+-- genome with id 49 done, fitness: 807.6595638990402
+-- genome with id 50 done, fitness: 1085.1063841581345
+Total timesteps at end of gen: 738261
+Population's average fitness: 914.62128 stdev: 723.44510
+Best fitness: 3089.36193 - size: (17, 19) - species 1 - id 20
+Average adjusted fitness: 0.296
+Population of 47 members in 1 species:
+   ID   age  size  fitness  adj fit  stag
+  ====  ===  ====  =======  =======  ====
+     1    0    47   3089.4    0.296     0
+Total extinctions: 0
+Generation time: 2373.269 sec
+
+ ****** Running generation 1 ****** 
+
+Gen timestep at time: 2020-01-22 09:15:59.586132
+-- genome with id 20 done, fitness: 332.7659555673599
+achieved fitness: 332.7659555673599 at timestep 738540 time: 2020-01-22 09:16:00.465785
+Saving genome to file ./best_genomes/MetropolisZone.Act3.state_1579418882_gen2.pkl
+-- genome with id 8 done, fitness: 1624.6808413267136
+achieved fitness: 1624.6808413267136 at timestep 774672 time: 2020-01-22 09:17:56.103650
+Saving genome to file ./best_genomes/MetropolisZone.Act3.state_1579418882_gen2.pkl
+-- genome with id 42 done, fitness: 0.0
+-- genome with id 1 done, fitness: 1624.6808401346207
+-- genome with id 2 done, fitness: 1624.680836558342
+-- genome with id 3 done, fitness: 1624.6808499097824
+achieved fitness: 1624.6808499097824 at timestep 884598 time: 2020-01-22 09:23:47.124214
+Saving genome to file ./best_genomes/MetropolisZone.Act3.state_1579418882_gen2.pkl
+-- genome with id 4 done, fitness: 1624.680836558342
+-- genome with id 5 done, fitness: 1624.6808305978775
+-- genome with id 6 done, fitness: 1167.6595689058304
+-- genome with id 7 done, fitness: 0.0
+Finished timestepMax at time: 2020-01-22 09:29:58.740326
